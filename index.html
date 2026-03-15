@@ -3396,7 +3396,6 @@ function render() {
     { ic:ICONS.politics,    n:win.filter(e=>e.sport==='politics').length,                                                                     lb:'Politics',      f:'politics',    cls:'pol' },
     { ic:ICONS.celeb,       n:win.filter(e=>e.sport==='celeb').length,                                                                        lb:'Celebrity',     f:'celeb',       cls:'cel' },
     { ic:ICONS.calendar,    n:win.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return d.getMonth()===mo&&d.getFullYear()===yr; }).length, lb:'This Month',    f:null,          cls:null  },
-    { ic:`<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="13.5" fill="url(#cel-g)"/><polygon points="14,4.5 16.8,11.5 24,11.5 18.2,15.8 20.5,23 14,18.5 7.5,23 9.8,15.8 4,11.5 11.2,11.5" fill="#ffd740" opacity="0.9"/><circle cx="14" cy="14" r="13.5" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/></svg>`, n:savedIds.size, lb:'Saved', f:null, cls:null, sav:true },
   ];
   document.getElementById('stats').innerHTML = statDefs.map(({ic,n,lb,f,cls,sav}) => {
     const active = f ? activeFilters.has(f) : sav ? showSavedOnly : false;
