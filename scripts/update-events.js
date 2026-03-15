@@ -13,10 +13,11 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE  = join(__dirname, '../data/live-events.json');
 
-// ── API KEY (from GitHub Secrets) ────────────────────────────────────────────
-const API_KEY = process.env.SERPAPI_KEY_1;
+// ── API KEYS (from GitHub Secrets) ───────────────────────────────────────────
+const API_KEY_1 = process.env.SERPAPI_KEY_1;
+const API_KEY_2 = process.env.SERPAPI_KEY_2;
 
-if (!API_KEY) {
+if (!API_KEY_1) {
   console.error('No SERPAPI_KEY_1 env var set. Add it as a GitHub Secret.');
   process.exit(1);
 }
@@ -34,9 +35,8 @@ const ALL_QUERIES = [
   { q: 'firma autografos futbolista OR autografi calciatore 2026',     lang: 'en' },
   { q: 'meet and greet sports player autograph signing 2026',          lang: 'en' },
 ];
-// Pick 3 queries for today based on day-of-year, cycling through all 10
-const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(),0,0)) / 86400000);
-const QUERIES = [0,1,2].map(i => ALL_QUERIES[(dayOfYear * 3 + i) % ALL_QUERIES.length]);
+// Split queries between two keys — first 5 on key 1, last 5 on key 2
+const QUERIES = ALL_QUERIES;
 
 const RELEVANT_WORDS = [
   'meet','sign','greet','autograph','dinner','firma','dédicace','autografi',
@@ -113,9 +113,11 @@ async function main() {
 
   const results = [];
 
-  for (const { q, lang } of QUERIES) {
-    console.log(`  Searching: "${q.substring(0, 60)}"`);
-    const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${API_KEY}`;
+  for (const [i, { q, lang }] of QUERIES.entries()) {
+    // First 5 queries use KEY_1, last 5 use KEY_2 (falls back to KEY_1 if KEY_2 missing)
+    const key = (i < 5 || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
+    console.log(`  Searching [key${i < 5 || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
+    const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${key}`;
     const data = await fetchWithRetry(url);
     if (data) {
       const found = parseOrganic(data, lang);

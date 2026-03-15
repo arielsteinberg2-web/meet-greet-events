@@ -24,6 +24,7 @@ jobs:
         run: node scripts/update-events.js
         env:
           SERPAPI_KEY_1: ${{ secrets.SERPAPI_KEY_1 }}
+          SERPAPI_KEY_2: ${{ secrets.SERPAPI_KEY_2 }}
 
       - name: Inject static HTML + update sitemap lastmod
         run: node scripts/inject-static-html.js
