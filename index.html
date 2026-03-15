@@ -39,7 +39,6 @@
       border-bottom: 1px solid var(--border);
       padding: 18px 32px; display: flex; align-items: center;
       justify-content: space-between; flex-wrap: wrap; gap: 12px;
-      position: sticky; top: 0; z-index: 100;
     }
     header h1 {
       font-size: 1.4rem; font-weight: 700;
@@ -62,6 +61,9 @@
             border-radius:50%; animation:spin .7s linear infinite; display:none; }
     .btn.loading .spin { display:block; }
     @keyframes spin { to { transform:rotate(360deg); } }
+
+    /* ── STICKY TOP ── */
+    .sticky-header { position:sticky; top:0; z-index:100; }
 
     /* ── CONTROLS ── */
     .controls {
@@ -371,7 +373,7 @@
     <button class="btn btn-s" onclick="toggleSources()"><span>📚 Sources</span></button>
   </div>
 </header>
-
+<div class="sticky-header">
 <div class="bar" id="barWrap">
   <div class="bar-left" id="barTxt">Loading…</div>
   <div class="bar-ts" id="barTs"><span class="ts-dot never" id="tsDot"></span><span id="tsLabel">Last web update: checking…</span></div>
@@ -417,6 +419,7 @@
     <button class="vt-btn" id="vt-list" onclick="toggleView('list')" title="List view">☰</button>
   </div>
 </div>
+</div><!-- /sticky-header -->
 
 <div class="main">
   <div class="stats" id="stats"></div>
