@@ -560,10 +560,16 @@
     }
     .card:hover { border-color:#1a4a46; transform:translateY(-2px); box-shadow:0 8px 32px rgba(0,229,204,.12), 0 2px 8px rgba(0,0,0,.5); }
     .card.soc { border-left:3px solid var(--green);  background:rgba(80,168,232,0.07); }
-    .card.bsk { border-left:3px solid var(--orange); background:rgba(16,56,184,0.09); }
+    .card.bsk { border-left:3px solid var(--orange); background:rgba(0,48,176,0.10); }
     .card.oth { border-left:3px solid var(--purple); background:rgba(0,184,216,0.07); }
-    .card.pol { border-left:3px solid var(--blue);   background:rgba(8,32,176,0.10); }
+    .card.pol { border-left:3px solid var(--blue);   background:rgba(0,24,160,0.11); }
     .card.cel { border-left:3px solid var(--pink);   background:rgba(72,184,248,0.07); }
+    /* All non-avatar icons match card's sport color */
+    .card.soc .di,.card.soc .ibtn,.card.soc .act-btn { filter:hue-rotate(28deg) brightness(1.05); }
+    .card.bsk .di,.card.bsk .ibtn,.card.bsk .act-btn { filter:hue-rotate(48deg) saturate(.75) brightness(.6); }
+    .card.oth .di,.card.oth .ibtn,.card.oth .act-btn { filter:hue-rotate(10deg) brightness(1.0); }
+    .card.pol .di,.card.pol .ibtn,.card.pol .act-btn { filter:hue-rotate(52deg) saturate(.65) brightness(.5); }
+    .card.cel .di,.card.cel .ibtn,.card.cel .act-btn { filter:hue-rotate(25deg) brightness(1.05); }
     .card.past { opacity:.55; }
 
     .ch { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
@@ -584,11 +590,11 @@
         0 0 22px rgba(0,200,255,0.18);
     }
     /* coin face — per-sport teal shades (fallback bg; SVG provides the gradient face) */
-    .av.soc { background:#002848; }
-    .av.bsk { background:#000830; }
-    .av.oth { background:#003850; }
-    .av.pol { background:#000428; }
-    .av.cel { background:#002048; }
+    .av.soc { background:#002848; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),inset 0 -2px 5px rgba(255,255,255,.07),0 0 0 3px rgba(80,168,232,.15),0 6px 18px rgba(80,168,232,.35),0 0 22px rgba(80,168,232,.22); }
+    .av.bsk { background:#000428; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),inset 0 -2px 5px rgba(255,255,255,.07),0 0 0 3px rgba(0,48,176,.2),0 6px 18px rgba(0,48,176,.4),0 0 22px rgba(0,48,176,.28); }
+    .av.oth { background:#003850; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),inset 0 -2px 5px rgba(255,255,255,.07),0 0 0 3px rgba(0,184,216,.15),0 6px 18px rgba(0,184,216,.35),0 0 22px rgba(0,184,216,.22); }
+    .av.pol { background:#000320; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),inset 0 -2px 5px rgba(255,255,255,.07),0 0 0 3px rgba(0,24,160,.2),0 6px 18px rgba(0,24,160,.4),0 0 22px rgba(0,24,160,.28); }
+    .av.cel { background:#002048; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),inset 0 -2px 5px rgba(255,255,255,.07),0 0 0 3px rgba(72,184,248,.15),0 6px 18px rgba(72,184,248,.35),0 0 22px rgba(72,184,248,.22); }
     .av-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top center; display:none; border-radius:50%; }
     /* SVG icon fills the coin face */
     .av-fb  { position:absolute; inset:0; z-index:1; display:flex; align-items:center; justify-content:center; }
@@ -838,9 +844,9 @@
     </radialGradient>
     <!-- Basketball: dark navy blue -->
     <radialGradient id="bsk-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#7090d8"/>
-      <stop offset="45%"  stop-color="#1038b8"/>
-      <stop offset="100%" stop-color="#000630"/>
+      <stop offset="0%"   stop-color="#3068d8"/>
+      <stop offset="45%"  stop-color="#0030b0"/>
+      <stop offset="100%" stop-color="#000428"/>
     </radialGradient>
     <!-- Other sports: cyan -->
     <radialGradient id="oth-g" cx="36%" cy="28%" r="72%">
@@ -850,9 +856,9 @@
     </radialGradient>
     <!-- Politics: deep navy / dark indigo-blue (no purple) -->
     <radialGradient id="pol-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#6080e0"/>
-      <stop offset="45%"  stop-color="#0820b0"/>
-      <stop offset="100%" stop-color="#000428"/>
+      <stop offset="0%"   stop-color="#3050d0"/>
+      <stop offset="45%"  stop-color="#0018a0"/>
+      <stop offset="100%" stop-color="#000320"/>
     </radialGradient>
     <!-- Celebrity: cornflower / medium sky blue -->
     <radialGradient id="cel-g" cx="36%" cy="28%" r="72%">
@@ -3052,7 +3058,7 @@ function countdown(date) {
 
 // ─── SVG ICON LIBRARY ─────────────────────────────────────────────────────────
 const _rim = `<circle cx="14" cy="14" r="13.4" fill="url(#coin-recess)"/><circle cx="14" cy="14" r="13.4" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>`;
-const _rimSm = `<circle cx="10" cy="10" r="9.5" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="0.7"/>`;
+const _rimSm = `<circle cx="10" cy="10" r="9.5" fill="url(#coin-recess)"/><circle cx="10" cy="10" r="9.5" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="0.7"/>`;
 
 const ICONS = {
 
