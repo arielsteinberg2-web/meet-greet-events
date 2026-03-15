@@ -3323,12 +3323,11 @@ async function loadLiveEvents() {
     }
     if (added > 0) { save(); render(); }
 
-    // Store generatedAt as the last-updated timestamp
+    // Update timestamp chip directly from JSON response
     const gAt = data.generatedAt || data.updatedAt;
-    if (gAt) {
-      localStorage.setItem(UPDATE_KEY, String(new Date(gAt).getTime()));
-    }
-    updateBar();
+    const ts = gAt ? new Date(gAt).getTime() : Date.now();
+    localStorage.setItem(UPDATE_KEY, String(ts));
+    updateBar(ts);
   } catch (err) {
     console.info('live-events.json not yet available:', err.message);
   }
@@ -4047,19 +4046,19 @@ function toast(type, title, body) {
 }
 
 // ─── TIMESTAMP CHIP ───────────────────────────────────────────────────────────
-function updateBar() {
+function updateBar(tsOverride) {
   const dot = document.getElementById('tsDot');
   const lbl = document.getElementById('tsLabel');
   if (!dot || !lbl) return;
 
-  const last = localStorage.getItem(UPDATE_KEY);
-  if (!last) {
+  const stored = tsOverride || localStorage.getItem(UPDATE_KEY);
+  if (!stored) {
     dot.className = 'ts-dot never';
     lbl.textContent = 'Loading…';
     return;
   }
 
-  const ts  = parseInt(last, 10);
+  const ts  = typeof stored === 'number' ? stored : parseInt(stored, 10);
   const ago = Date.now() - ts;
   const dt  = new Date(ts);
 
