@@ -21,8 +21,8 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-// ── QUERIES (trimmed to 10 to stay under 100/month free limit) ───────────────
-const QUERIES = [
+// ── QUERIES — rotated daily, 3/day × 31 days = ~93/month (under 100 free limit)
+const ALL_QUERIES = [
   { q: 'soccer football player meet greet autograph signing 2026',     lang: 'en' },
   { q: 'NBA basketball player autograph signing meet greet 2026',      lang: 'en' },
   { q: 'celebrity actor musician meet greet fan signing event 2026',   lang: 'en' },
@@ -34,6 +34,9 @@ const QUERIES = [
   { q: 'firma autografos futbolista OR autografi calciatore 2026',     lang: 'en' },
   { q: 'meet and greet sports player autograph signing 2026',          lang: 'en' },
 ];
+// Pick 3 queries for today based on day-of-year, cycling through all 10
+const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(),0,0)) / 86400000);
+const QUERIES = [0,1,2].map(i => ALL_QUERIES[(dayOfYear * 3 + i) % ALL_QUERIES.length]);
 
 const RELEVANT_WORDS = [
   'meet','sign','greet','autograph','dinner','firma','dédicace','autografi',
