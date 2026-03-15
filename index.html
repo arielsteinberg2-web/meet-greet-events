@@ -3,7 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sports Meet &amp; Greet Finder</title>
+  <title>Meet &amp; Greet Events – Sports, Celebrities &amp; Politicians | meetandgreet.events</title>
+  <meta name="description" content="Find upcoming fan meet &amp; greet events with soccer stars, NBA players, celebrities and politicians near you. New York, London, worldwide. Updated automatically." />
+  <link rel="canonical" href="https://meetandgreet.events" />
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="meetandgreet.events" />
+  <meta property="og:title"       content="Meet &amp; Greet Events – Sports, Celebrities &amp; Politicians" />
+  <meta property="og:description" content="Find upcoming fan meet &amp; greet events with soccer stars, NBA players, celebrities and politicians. Updated automatically." />
+  <meta property="og:url"         content="https://meetandgreet.events" />
+  <meta property="og:image"       content="https://meetandgreet.events/og-image.png" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Meet &amp; Greet Events" />
+  <meta name="twitter:description" content="Find upcoming fan meet &amp; greet events with soccer stars, NBA players, celebrities and politicians." />
+  <meta name="twitter:image"       content="https://meetandgreet.events/og-image.png" />
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Meet & Greet Events",
+   "url":"https://meetandgreet.events","applicationCategory":"Entertainment",
+   "description":"Find upcoming fan meet & greet events with sports stars, celebrities and politicians worldwide.",
+   "operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
   <style>
     :root {
       --bg: #0f1117; --surface: #1a1d27; --card: #20232f; --border: #2d3147;
@@ -145,7 +166,17 @@
       display:flex; align-items:center; justify-content:center; font-size:.72rem; transition:all .2s;
     }
     .ibtn:hover { background:var(--border); color:var(--text); }
-    .ibtn.del:hover { background:rgba(244,67,54,.2); color:#f44336; border-color:#f44336; }
+    .ibtn.del:hover  { background:rgba(244,67,54,.2); color:#f44336; border-color:#f44336; }
+    .ibtn.sav-on { color:#ffd740; border-color:rgba(255,215,64,.45); background:rgba(255,215,64,.08); }
+    .ibtn.sav-on:hover { background:rgba(255,215,64,.18); }
+    .card-acts { display:flex; gap:7px; margin-top:8px; }
+    .act-btn {
+      flex:1; padding:7px 4px; border-radius:7px; border:1px solid var(--border);
+      background:var(--surface); color:var(--dim); cursor:pointer; font-size:.75rem;
+      font-weight:600; transition:all .2s; display:flex; align-items:center; justify-content:center; gap:4px;
+    }
+    .act-btn:hover { background:var(--border); color:var(--text); }
+    .stat.active-sav { border-color:#ffd740; background:rgba(255,215,64,.1); }
 
     .dets { display:flex; flex-direction:column; gap:7px; }
     .dr { display:flex; align-items:flex-start; gap:9px; font-size:.83rem; }
@@ -847,7 +878,7 @@
 
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v11';  // bump version → forces fresh seed load
+const KEY        = 'mng_v12';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last fetchLive() run
 
 // ─── LANGUAGE MAP ─────────────────────────────────────────────────────────────
@@ -1480,6 +1511,53 @@ const SEEDS = [
 let events = [];
 let activeFilters = new Set(); // empty = all sports shown
 let countryFlagMap = {};
+let savedIds = new Set(JSON.parse(localStorage.getItem('mng_saved') || '[]'));
+let showSavedOnly = false;
+
+function toggleSave(id) {
+  if (savedIds.has(id)) savedIds.delete(id);
+  else savedIds.add(id);
+  localStorage.setItem('mng_saved', JSON.stringify([...savedIds]));
+  render();
+}
+function toggleSavedFilter() {
+  showSavedOnly = !showSavedOnly;
+  render();
+}
+function shareEvent(id) {
+  const e = events.find(x => x.id === id); if (!e) return;
+  const txt = `${e.player}\n📅 ${fmtDate(e.date, e.time)}\n📍 ${e.venue}${e.city ? ', ' + e.city : ''}\n👉 https://meetandgreet.events`;
+  if (navigator.share) {
+    navigator.share({ title: e.player, text: txt, url: 'https://meetandgreet.events' }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(txt).then(() => toast('ok', 'Copied!', 'Event details copied to clipboard'));
+  }
+}
+function exportICS(id) {
+  const e = events.find(x => x.id === id); if (!e) return;
+  const dt = e.date.replace(/-/g, '');
+  const hh = e.time ? e.time.split(':')[0] : '12', mm = e.time ? e.time.split(':')[1] : '00';
+  const endHH = String((parseInt(hh) + 2) % 24).padStart(2, '0');
+  const vDate = e.time ? '' : ';VALUE=DATE';
+  const startDT = e.time ? `${dt}T${hh}${mm}00` : dt;
+  const endDT   = e.time ? `${dt}T${endHH}${mm}00` : dt;
+  const desc = [e.notes, e.link].filter(Boolean).join(' — ').replace(/[\r\n]+/g, '\\n');
+  const loc  = [e.venue, e.city].filter(Boolean).join(', ');
+  const ics = [
+    'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//meetandgreet.events//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    `DTSTART${vDate}:${startDT}`, `DTEND${vDate}:${endDT}`,
+    `SUMMARY:${e.player.replace(/[,;\\]/g, s => '\\'+s)}`,
+    `DESCRIPTION:${desc}`, `LOCATION:${loc}`,
+    `URL:${e.link || 'https://meetandgreet.events'}`,
+    `UID:${e.id}@meetandgreet.events`,
+    'END:VEVENT','END:VCALENDAR'
+  ].join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar;charset=utf-8' }));
+  a.download = e.player.substring(0, 40).replace(/[^a-z0-9]/gi, '_') + '.ics';
+  a.click();
+}
 
 async function loadCountries() {
   try {
@@ -1571,6 +1649,7 @@ function render() {
     const d = new Date(e.date + 'T12:00:00');
     if (isNaN(d) || d > end || d < cutoff) return false;
     if (activeFilters.size > 0 && !activeFilters.has(e.sport)) return false;
+    if (showSavedOnly && !savedIds.has(e.id)) return false;
     if (!matchRegion(e.city, rgn)) return false;
     if (q) {
       const h = [e.player,e.venue,e.city,e.notes,e.source].join(' ').toLowerCase();
@@ -1596,10 +1675,14 @@ function render() {
     { ic:'🏛️', n:win.filter(e=>e.sport==='politics').length,                                                                    lb:'Politics',      f:'politics',    cls:'pol' },
     { ic:'⭐', n:win.filter(e=>e.sport==='celeb').length,                                                                        lb:'Celebrity',     f:'celeb',       cls:'cel' },
     { ic:'🗓', n:win.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return d.getMonth()===mo&&d.getFullYear()===yr; }).length, lb:'This Month',    f:null,          cls:null  },
+    { ic:'⭐', n:savedIds.size, lb:'Saved',          f:null,          cls:null, sav:true },
   ];
-  document.getElementById('stats').innerHTML = statDefs.map(({ic,n,lb,f,cls}) => {
-    const active = f && activeFilters.has(f);
-    return `<div class="stat${f?' filterable':''}${active?` active-${cls}`:''}"${f?` onclick="toggleFilter('${f}')" title="Click to filter · click again to deselect"`:''}>
+  document.getElementById('stats').innerHTML = statDefs.map(({ic,n,lb,f,cls,sav}) => {
+    const active = f ? activeFilters.has(f) : sav ? showSavedOnly : false;
+    const activeCls = f ? `active-${cls}` : sav ? 'active-sav' : '';
+    const onclick = f ? `toggleFilter('${f}')` : sav ? 'toggleSavedFilter()' : '';
+    const filterable = !!(f || sav);
+    return `<div class="stat${filterable?' filterable':''}${active?' '+activeCls:''}"${filterable?` onclick="${onclick}" title="${sav?'Show saved events only · click again to clear':'Click to filter · click again to deselect'}"`:''}>
       <span style="font-size:1.3rem">${ic}</span><div><div class="stat-n">${n}</div><div class="stat-l">${lb}</div></div>
     </div>`;
   }).join('');
@@ -1733,6 +1816,7 @@ function cardHTML(e) {
         <span class="badge ${cls}">${icon} ${lbl}</span>${transBadge}
       </div>
       <div class="cbns">
+        <button class="ibtn${savedIds.has(e.id)?' sav-on':''}" onclick="toggleSave('${e.id}')" title="${savedIds.has(e.id)?'Remove from saved':'Save event'}">${savedIds.has(e.id)?'⭐':'☆'}</button>
         <button class="ibtn" onclick="openEdit('${e.id}')" title="Edit">✏️</button>
         <button class="ibtn del" onclick="delEvt('${e.id}')" title="Delete">🗑</button>
       </div>
@@ -1747,6 +1831,10 @@ function cardHTML(e) {
         ? `<a href="${esc(e.link)}" target="_blank" rel="noopener" class="rl ${linkCls}">${linkTxt}</a>`
         : `<span class="rl none">${linkTxt}</span>`}
       ${e.source?`<div class="src">🔗 ${esc(e.source)}</div>`:''}
+      <div class="card-acts">
+        <button class="act-btn" onclick="exportICS('${e.id}')">📅 Add to Calendar</button>
+        <button class="act-btn" onclick="shareEvent('${e.id}')">📤 Share</button>
+      </div>
     </div>
   </div>`;
 }
