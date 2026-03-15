@@ -3405,7 +3405,7 @@ function render() {
     const onclick = f ? `toggleFilter('${f}')` : '';
     const filterable = !!f;
     return `<div class="stat${filterable?' filterable':''}${active?' '+activeCls:''}"${filterable?` onclick="${onclick}" title="Click to filter · click again to deselect"`:''}>
-      <span class="stat-coin ${cls}"><span class="ci">${ic}</span></span><div><div class="stat-n" data-target="${n}">0</div><div class="stat-l">${lb}${sub?`<br><span style="font-size:.65rem;opacity:.55">(${sub})</span>`:''}</div></div>
+      <span class="stat-coin ${cls}"><span class="ci">${ic}</span></span><div><div class="stat-n" data-target="${n}">0</div><div class="stat-l">${lb}${sub?`<br><span style="font-size:.68rem;font-weight:700;color:#29b6f6;text-shadow:0 0 8px rgba(41,182,246,.6)">(${sub})</span>`:''}</div></div>
     </div>`;
   }).join('');
   document.querySelectorAll('.stat-n[data-target]').forEach(el => animateCounter(el, +el.dataset.target));
