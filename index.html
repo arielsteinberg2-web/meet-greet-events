@@ -1508,6 +1508,40 @@
       <div class="sc-n">📚 Casa del Libro – Agenda Cultural 🇪🇸</div>
       <div class="sc-d">Spain's leading bookstore. Athlete and football author book signings ("firma de libros"). Check agenda for sports events.</div>
     </a>
+
+    <!-- ── TICKETING APIs & AGGREGATORS ── -->
+    <a class="sc" href="https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/" target="_blank" rel="noopener">
+      <div class="sc-n">🎟️ Ticketmaster Discovery API v2</div>
+      <div class="sc-d">Free public REST API (5,000 calls/day). Searches millions of events by keyword, classification, date and location. Used live in this tool to find "meet and greet", "VIP" and "autograph" sports events.</div>
+    </a>
+    <a class="sc" href="https://serpapi.com/google-events-api" target="_blank" rel="noopener">
+      <div class="sc-n">🔎 SerpAPI – Google Events Engine</div>
+      <div class="sc-d">engine=google_events endpoint returns structured event data (title, date, address, ticket_info from AXS/Ticketmaster/Gametime). Used live in this tool via 10 targeted sports meet & greet queries.</div>
+    </a>
+    <a class="sc" href="https://www.seatgeek.com/build" target="_blank" rel="noopener">
+      <div class="sc-n">🎟️ SeatGeek Developer Platform</div>
+      <div class="sc-d">Public REST API for events, performers and venues. Requires free client_id registration at developer.seatgeek.com. Endpoint: api.seatgeek.com/2/events?q=meet+greet.</div>
+    </a>
+    <a class="sc" href="https://developers.universe.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🎟️ Universe.com Developer API</div>
+      <div class="sc-d">Public OAuth2 API for the Universe ticketing platform (owned by Ticketmaster). Universe events also flow into the Ticketmaster Discovery API. Good source for smaller fan experiences and celebrity meetups.</div>
+    </a>
+    <a class="sc" href="https://allevents.in/meet-and-greet" target="_blank" rel="noopener">
+      <div class="sc-n">🌍 AllEvents.in – Meet &amp; Greet 🌍</div>
+      <div class="sc-d">Global event aggregator pulling from Eventbrite, Ticketmaster and local sources. Browse "meet and greet" category for athlete and celebrity events worldwide.</div>
+    </a>
+    <a class="sc" href="https://www.eventbrite.com/d/worldwide/meet-and-greet-sports/" target="_blank" rel="noopener">
+      <div class="sc-n">🌍 Eventbrite – Sports Meet &amp; Greets (Worldwide)</div>
+      <div class="sc-d">Although Eventbrite's public search API was deprecated in 2019, their browse pages are fully indexed by Google. This tool searches them via targeted site:eventbrite.com SerpAPI queries.</div>
+    </a>
+    <a class="sc" href="https://www.axs.com/search?q=meet+greet" target="_blank" rel="noopener">
+      <div class="sc-n">🎟️ AXS – VIP &amp; Meet &amp; Greet Events</div>
+      <div class="sc-d">Major US/UK ticketing platform (AEG venues). Search "meet and greet" for athlete VIP packages. No public open API — events surface via Google Events / SerpAPI engine=google_events.</div>
+    </a>
+    <a class="sc" href="https://apify.com/apify/instagram-search-scraper" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Apify – Instagram Search Scraper</div>
+      <div class="sc-d">Apify actor for searching Instagram hashtags and profiles at scale. Useful for monitoring #autographsigning, #meetandgreet, #athleteappearance. Paid per-use on Apify platform.</div>
+    </a>
   </div>
 </div>
 
@@ -1609,7 +1643,7 @@
 
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v21';  // bump version → forces fresh seed load
+const KEY        = 'mng_v22';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last fetchLive() run
 
 // ─── LANGUAGE MAP ─────────────────────────────────────────────────────────────
@@ -1896,7 +1930,7 @@ const SEEDS = [
     date:'2026-03-19', time:'19:00',
     venue:'Fiterman Sports – 1318 State Hwy 3 Bldg C',
     city:'League City, TX 🇺🇸',
-    link:'https://fitermansports.com/all-events/',
+    link:'https://fitermansports.com/event/dominique-wilkins-public-autograph-event-fiterman-sports-league-city-tx/',
     notes:'Public signing 7 PM. Meet & greet, photos + autographs with NBA legend "The Human Highlight Film". Buy tickets at Fiterman Sports.',
     source:'Fiterman Sports — fitermansports.com'
   },
@@ -1906,7 +1940,7 @@ const SEEDS = [
     date:'2026-03-21', time:'12:00',
     venue:'Fiterman Sports – 1318 State Hwy 3 Bldg C',
     city:'League City, TX 🇺🇸',
-    link:'https://fitermansports.com/all-events/',
+    link:'https://fitermansports.com/event/ric-flair-public-autograph-event-fiterman-sports-league-city-tx/',
     notes:'Public signing noon. Meet & greet, photos + autographs with WWE Hall of Famer "The Nature Boy" Ric Flair. Buy tickets at Fiterman Sports.',
     source:'Fiterman Sports — fitermansports.com'
   },
@@ -1916,28 +1950,28 @@ const SEEDS = [
     date:'2026-04-11', time:'12:00',
     venue:'Fiterman Sports – 1318 State Hwy 3 Bldg C',
     city:'League City, TX 🇺🇸',
-    link:'https://fitermansports.com/all-events/',
+    link:'https://fitermansports.com/event/gary-payton-public-autograph-event-fiterman-sports-league-city-tx/',
     notes:'Public signing noon–1 PM. Kemp $59.99/item · Payton $59.99/item + $19.99 inscription. Buy tickets at Fiterman Sports.',
     source:'Fiterman Sports — fitermansports.com'
   },
   {
     id:'fi3', sport:'other',
-    player:'Ric Flair – Autograph Signing (Las Vegas)',
+    player:'Ric Flair – Autograph Signing (WrestleCon Las Vegas)',
     date:'2026-04-17', time:'10:00',
-    venue:'Horseshoe Hotel and Casino',
+    venue:'Horseshoe Hotel and Casino – WrestleCon',
     city:'Las Vegas, NV 🇺🇸',
-    link:'https://fitermansports.com/all-events/',
+    link:'https://fitermansports.com/event/ric-flair-public-autograph-event-wrestlecon-las-vegas-nv/',
     notes:'Public signing 10 AM CDT. Meet & greet, photos + autographs with WWE Hall of Famer Ric Flair. Buy tickets at Fiterman Sports.',
     source:'Fiterman Sports — fitermansports.com'
   },
   {
     id:'fi4', sport:'other',
-    player:'Jeremy Peña + Jose Altuve (Houston Astros)',
+    player:'Jose Altuve + Jeremy Peña (Houston Astros)',
     date:'2026-04-25', time:'12:00',
     venue:'Fiterman Sports – 1318 State Hwy 3 Bldg C',
     city:'League City, TX 🇺🇸',
-    link:'https://fitermansports.com/all-events/',
-    notes:'Public signing noon CDT. Meet & greet, photos + autographs with Houston Astros stars Jeremy Peña and Jose Altuve. Buy tickets at Fiterman Sports.',
+    link:'https://fitermansports.com/event/jose-altuve-public-autograph-event-fiterman-sports-league-city-tx/',
+    notes:'Public signing noon CDT. Meet & greet, photos + autographs with Houston Astros stars. Jeremy Peña page: fitermansports.com/event/jeremy-pena-public-autograph-event-fiterman-sports-league-city-tx/. Buy tickets at Fiterman Sports.',
     source:'Fiterman Sports — fitermansports.com'
   },
   {
@@ -3275,7 +3309,56 @@ const QUERIES = [
   { q:'Tennis Autogrammstunde Fan Tag 2026',                                         lang:'de' },
   { q:'Swiss Open Gstaad player autograph fan day 2026',                             lang:'en' },
   { q:'site:atptour.com fan day autograph player appearance 2026',                   lang:'en' },
-  { q:'site:wtatennis.com fan experience autograph player 2026',                     lang:'en' }
+  { q:'site:wtatennis.com fan experience autograph player 2026',                     lang:'en' },
+  // ── Eventbrite search queries (public browse pages, indexed by Google) ──
+  { q:'site:eventbrite.com "meet and greet" athlete sports autograph 2026',          lang:'en' },
+  { q:'site:eventbrite.com soccer football player autograph signing 2026',           lang:'en' },
+  { q:'site:eventbrite.com NBA basketball player meet greet 2026',                   lang:'en' },
+  { q:'site:eventbrite.com "meet and greet" athlete sports autograph New York 2026', lang:'en' },
+  { q:'site:eventbrite.com athlete autograph signing sports VIP fan 2026 UK',        lang:'en' },
+  { q:'site:eventbrite.com "firma autografos" OR "rencontre joueur" OR "autogrammstunde" 2026', lang:'en' },
+  // ── SeatGeek – VIP packages & meet-greet events ──
+  { q:'site:seatgeek.com VIP "meet and greet" sports 2026',                          lang:'en' },
+  { q:'site:seatgeek.com "meet and greet" basketball soccer autograph 2026',         lang:'en' },
+  // ── AXS – VIP packages ──
+  { q:'site:axs.com VIP "meet and greet" sports athlete 2026',                       lang:'en' },
+  { q:'site:axs.com "meet and greet" athlete fan event 2026',                        lang:'en' },
+  // ── Universe.com – celebrity & athlete fan events ──
+  { q:'site:universe.com "meet and greet" athlete sports 2026',                      lang:'en' },
+  { q:'site:universe.com athlete autograph signing fan experience 2026',              lang:'en' },
+  // ── Ticketmaster – VIP & meet greet ──
+  { q:'site:ticketmaster.com "meet and greet" VIP sports athlete 2026',              lang:'en' },
+  { q:'site:ticketmaster.com "meet and greet" soccer basketball autograph 2026',     lang:'en' },
+  { q:'site:ticketmaster.com VIP package sports athlete fan experience 2026',        lang:'en' },
+  // ── AllEvents.in – global aggregator ──
+  { q:'site:allevents.in "meet and greet" athlete sports autograph 2026',            lang:'en' },
+  { q:'site:allevents.in athlete autograph signing sports fan event 2026',           lang:'en' },
+  // ── Instagram public posts via Google ──
+  { q:'site:instagram.com "meet and greet" athlete sports autograph signing 2026',   lang:'en' },
+  { q:'site:instagram.com autograph signing soccer basketball player 2026',          lang:'en' },
+  { q:'site:instagram.com futbolista "firma autografos" OR "meet and greet" 2026',   lang:'es' },
+  // ── Twitter/X public posts via Google ──
+  { q:'site:x.com athlete "meet and greet" autograph signing fan event 2026',        lang:'en' },
+  { q:'site:twitter.com athlete autograph signing sports meet greet 2026',           lang:'en' },
+  // ── Facebook public events via Google ──
+  { q:'site:facebook.com athlete "meet and greet" OR "autograph signing" sports 2026', lang:'en' },
+  { q:'site:facebook.com futbolista "firma autografos" evento fans 2026',            lang:'es' },
+  // ── Linktree athlete pages ──
+  { q:'site:linktr.ee athlete autograph signing meet greet fan event 2026',          lang:'en' },
+  // ── Ticketing aggregators: SigChecker, MyAutographEvents ──
+  { q:'site:signingshotline.com autograph appearance signing 2026',                  lang:'en' },
+  { q:'site:myautographevents.net autograph appearance 2026',                        lang:'en' },
+  { q:'site:sportscollectors.net signing appearance 2026',                           lang:'en' },
+  // ── World Cup 2026 fan events ──
+  { q:'FIFA World Cup 2026 fan zone meet greet player autograph USA',                lang:'en' },
+  { q:'FIFA World Cup 2026 VIP hospitality player meet fan experience',              lang:'en' },
+  { q:'World Cup 2026 host city fan fest athlete appearance meet greet',             lang:'en' },
+  // ── Gold Over America / gymnastics tours ──
+  { q:'Gold Over America Tour 2026 Biles autograph VIP meet greet tickets',         lang:'en' },
+  // ── NFL / hockey new additions ──
+  { q:'NFL player autograph signing fan event appearance 2026 public',               lang:'en' },
+  { q:'NHL hockey player autograph signing public fan event 2026',                   lang:'en' },
+  { q:'site:ticketmaster.com "autograph" OR "signing" sports VIP 2026',             lang:'en' }
 ];
 
 async function fetchOne({ q, lang }) {
@@ -3368,6 +3451,133 @@ async function fetchOne({ q, lang }) {
   }
 }
 
+// ─── TICKETMASTER DISCOVERY API ───────────────────────────────────────────────
+// Free public API — 5,000 calls/day, 5 req/sec. Register at developer.ticketmaster.com
+const TM_API_KEY = 'DpBDKCMGqJyElbpBnHuTTmT5MqmOEhgW'; // public demo key from TM docs
+const TM_QUERIES = [
+  { keyword: 'meet and greet',   classificationName: 'sports' },
+  { keyword: 'VIP meet greet',   classificationName: 'sports' },
+  { keyword: 'autograph signing', classificationName: 'sports' },
+  { keyword: 'fan experience VIP', classificationName: 'sports' },
+  { keyword: 'meet greet soccer' },
+  { keyword: 'meet greet basketball' },
+  { keyword: 'autograph soccer football' },
+  { keyword: 'autograph basketball NBA' }
+];
+
+async function fetchTicketmaster() {
+  const out = [];
+  const today = new Date().toISOString().split('T')[0];
+  const endDate = '2027-01-01T00:00:00Z';
+
+  for (const tq of TM_QUERIES) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 8000);
+      const params = new URLSearchParams({
+        keyword: tq.keyword,
+        size: '20',
+        startDateTime: today + 'T00:00:00Z',
+        endDateTime: endDate,
+        apikey: TM_API_KEY
+      });
+      if (tq.classificationName) params.set('classificationName', tq.classificationName);
+      const url = `https://app.ticketmaster.com/discovery/v2/events.json?${params}`;
+      const r = await fetch(url, { signal: controller.signal });
+      clearTimeout(timer);
+      if (!r.ok) continue;
+      const data = await r.json();
+      const items = data._embedded?.events || [];
+      for (const ev of items) {
+        const combined = (ev.name + ' ' + (ev.info || '') + ' ' + (ev.description || '') + ' ' + (ev.pleaseNote || '')).toLowerCase();
+        if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
+        const isMailIn  = combined.includes('mail-in') || combined.includes('mail in signing');
+        const isPrivate = combined.includes('private signing') || combined.includes('private session');
+        if (isMailIn || isPrivate) continue;
+        const link = ev.url || '';
+        if (!link) continue;
+        const dateStr = ev.dates?.start?.localDate || new Date().toISOString().split('T')[0];
+        const venue   = ev._embedded?.venues?.[0]?.name || '';
+        const city    = ev._embedded?.venues?.[0]?.city?.name || '';
+        const isBball = combined.includes('basketball') || combined.includes('nba');
+        out.push({
+          link,
+          player: ev.name.substring(0, 80),
+          sport:  isBball ? 'basketball' : 'soccer',
+          date:   dateStr,
+          time:   ev.dates?.start?.localTime || '',
+          venue,
+          city,
+          notes:  (ev.info || ev.description || '').substring(0, 200),
+          source: 'Ticketmaster API'
+        });
+      }
+    } catch { /* skip failed TM query */ }
+  }
+  return out;
+}
+
+// ─── SERP API — GOOGLE EVENTS ENGINE ──────────────────────────────────────────
+// engine=google_events returns structured event data (title, date, address, ticket_info)
+const GE_QUERIES = [
+  'meet and greet athlete sports autograph signing 2026',
+  'soccer player meet and greet autograph 2026',
+  'NBA basketball player meet and greet autograph 2026',
+  'athlete autograph signing fan event USA 2026',
+  'tennis player autograph session fan day 2026',
+  'WWE fan experience autograph meet greet 2026',
+  'sports VIP meet greet fan event 2026',
+  'athlete fan event appearance signing New York 2026',
+  'Fanatics Fest 2026 autograph meet greet athlete',
+  'soccer player signing event Eventbrite 2026'
+];
+
+async function fetchGoogleEvents() {
+  const out = [];
+  for (const q of GE_QUERIES) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 8000);
+      const url = `https://serpapi.com/search.json?engine=google_events&q=${encodeURIComponent(q)}&api_key=${currentKey()}`;
+      const r = await fetch(url, { signal: controller.signal });
+      clearTimeout(timer);
+      if (r.status === 401 || r.status === 402 || r.status === 429) {
+        const rotated = rotateKey();
+        if (rotated) { out.push(...await fetchGoogleEvents()); } // retry subset handled by continued loop
+        break;
+      }
+      if (!r.ok) continue;
+      const data = await r.json();
+      if (data.error && /run out|quota|credit|limit/i.test(data.error)) {
+        const rotated = rotateKey(); if (!rotated) break; continue;
+      }
+      for (const ev of (data.events_results || [])) {
+        const combined = ((ev.title || '') + ' ' + (ev.description || '')).toLowerCase();
+        if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
+        if (combined.includes('mail-in') || combined.includes('private signing')) continue;
+        const link = ev.link || (ev.ticket_info?.[0]?.link) || '';
+        if (!link) continue;
+        const dateStr = guessDate(combined) || new Date().toISOString().split('T')[0];
+        const address = Array.isArray(ev.address) ? ev.address.join(', ') : (ev.address || '');
+        const isBball = combined.includes('basketball') || combined.includes('nba');
+        const isCeleb = combined.includes('actor') || combined.includes('musician') || combined.includes('comic con') || combined.includes('fan expo');
+        out.push({
+          link,
+          player: (ev.title || '').substring(0, 80),
+          sport:  isBball ? 'basketball' : isCeleb ? 'celeb' : 'soccer',
+          date:   dateStr,
+          time:   ev.date?.when || '',
+          venue:  ev.venue?.name || '',
+          city:   address,
+          notes:  (ev.description || '').substring(0, 200),
+          source: 'Google Events (SerpAPI)'
+        });
+      }
+    } catch { /* skip failed GE query */ }
+  }
+  return out;
+}
+
 async function fetchLive(auto = false) {
   const btn = document.getElementById('updBtn');
   btn.classList.add('loading'); btn.disabled = true;
@@ -3377,14 +3587,21 @@ async function fetchLive(auto = false) {
   const total = QUERIES.length;
   let done = 0;
   setProgress(0, total);
-  const results = await Promise.allSettled(
-    QUERIES.map(q => fetchOne(q).then(r => { setProgress(++done, total); return r; }, e => { setProgress(++done, total); throw e; }))
-  );
+
+  // Launch SerpAPI web-search queries, Ticketmaster API, and Google Events engine in parallel
+  const [results, tmItems, geItems] = await Promise.all([
+    Promise.allSettled(
+      QUERIES.map(q => fetchOne(q).then(r => { setProgress(++done, total); return r; }, e => { setProgress(++done, total); throw e; }))
+    ),
+    fetchTicketmaster().catch(() => []),
+    fetchGoogleEvents().catch(() => [])
+  ]);
   setTimeout(() => setProgress(0, 0), 1500);
 
   let added = 0;
   const existingLinks = new Set(events.map(e => e.link).filter(Boolean));
 
+  // Process SerpAPI web results
   for (const r of results) {
     if (r.status !== 'fulfilled') continue;
     for (const item of r.value) {
@@ -3392,13 +3609,29 @@ async function fetchLive(auto = false) {
       existingLinks.add(item.link);
       const id = 'web_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5);
       newEventIds[id] = Date.now(); localStorage.setItem('mng_new', JSON.stringify(newEventIds));
-      events.push({
-        id,
-        time: '', venue: '', city: '',
-        ...item
-      });
+      events.push({ id, time: '', venue: '', city: '', ...item });
       added++;
     }
+  }
+
+  // Process Ticketmaster API results
+  for (const item of tmItems) {
+    if (!item.link || existingLinks.has(item.link)) continue;
+    existingLinks.add(item.link);
+    const id = 'tm_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5);
+    newEventIds[id] = Date.now(); localStorage.setItem('mng_new', JSON.stringify(newEventIds));
+    events.push({ id, ...item });
+    added++;
+  }
+
+  // Process Google Events engine results
+  for (const item of geItems) {
+    if (!item.link || existingLinks.has(item.link)) continue;
+    existingLinks.add(item.link);
+    const id = 'ge_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5);
+    newEventIds[id] = Date.now(); localStorage.setItem('mng_new', JSON.stringify(newEventIds));
+    events.push({ id, time: '', venue: '', city: '', ...item });
+    added++;
   }
 
   localStorage.setItem(UPDATE_KEY, Date.now().toString());
