@@ -40,8 +40,11 @@ const html = events.length === 0 ? '' : `
 </section>`;
 
 // Inject into index.html
+const liveData = JSON.parse(readFileSync(join(ROOT, 'data/live-events.json'), 'utf8'));
+const builtAt = liveData.generatedAt || new Date().toISOString();
 let page = readFileSync(join(ROOT, 'index.html'), 'utf8');
 page = page.replace('<!-- STATIC_EVENTS_PLACEHOLDER -->', html || '<!-- STATIC_EVENTS_PLACEHOLDER -->');
+page = page.replace("'LAST_UPDATED_PLACEHOLDER'", `'${builtAt}'`);
 writeFileSync(join(ROOT, 'index.html'), page);
 console.log(`Injected ${events.length} events into index.html`);
 
