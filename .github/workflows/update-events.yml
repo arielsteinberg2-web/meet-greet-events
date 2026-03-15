@@ -1,4 +1,4 @@
-name: Auto-update meet & greet events
+name: Auto-update meet and greet events
 
 on:
   schedule:
