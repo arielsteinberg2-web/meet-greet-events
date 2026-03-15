@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Meet &amp; Greet Finder</title>
+  <style>
+    :root {
+      --bg: #0f1117; --surface: #1a1d27; --card: #20232f; --border: #2d3147;
+      --green: #00c853; --orange: #ff6d00; --purple: #7c4dff; --blue: #448aff; --pink: #ff4081; --text: #e8eaf0; --dim: #7a7f9a; --r: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; }
+
+    /* ── HEADER ── */
+    header {
+      background: linear-gradient(135deg,#1a1d27,#0f1117);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 32px; display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap; gap: 12px;
+      position: sticky; top: 0; z-index: 100;
+    }
+    header h1 {
+      font-size: 1.4rem; font-weight: 700;
+      background: linear-gradient(90deg,#00c853,#ff6d00);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    header p { font-size: 0.75rem; color: var(--dim); margin-top: 2px; }
+    .hbtns { display: flex; gap: 8px; flex-wrap: wrap; }
+    .btn {
+      padding: 8px 15px; border-radius: 8px; border: none; cursor: pointer;
+      font-size: 0.82rem; font-weight: 600; transition: all .2s;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .btn-g  { background: linear-gradient(135deg,#00c853,#009624); color:#fff; }
+    .btn-o  { background: linear-gradient(135deg,#ff6d00,#e65100); color:#fff; }
+    .btn-s  { background: var(--card); color: var(--text); border: 1px solid var(--border); }
+    .btn:hover:not(:disabled) { filter: brightness(1.15); transform: translateY(-1px); }
+    .btn:disabled { opacity:.5; cursor:not-allowed; transform:none!important; }
+    .spin { width:13px; height:13px; border:2px solid rgba(255,255,255,.3); border-top-color:#fff;
+            border-radius:50%; animation:spin .7s linear infinite; display:none; }
+    .btn.loading .spin { display:block; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+
+    /* ── CONTROLS ── */
+    .controls {
+      padding: 14px 32px; display: flex; gap: 10px; align-items: center;
+      flex-wrap: wrap; background: var(--surface); border-bottom: 1px solid var(--border);
+    }
+    .sbox { flex:1; min-width:180px; position:relative; }
+    .sbox input {
+      width:100%; padding:9px 14px 9px 34px; background:var(--card);
+      border:1px solid var(--border); border-radius:8px; color:var(--text); font-size:.88rem;
+      outline:none; transition:border-color .2s;
+    }
+    .sbox input:focus { border-color:var(--green); }
+    .sbox::before { content:'🔍'; position:absolute; left:10px; top:50%; transform:translateY(-50%); font-size:.8rem; }
+    select.sort {
+      padding:8px 11px; background:var(--card); border:1px solid var(--border);
+      border-radius:8px; color:var(--text); font-size:.83rem; outline:none; cursor:pointer;
+    }
+    input.rgn-in {
+      padding:8px 11px 8px 28px; background:var(--card); border:1px solid var(--border);
+      border-radius:8px; color:var(--text); font-size:.83rem; outline:none; width:170px;
+      transition:border-color .2s;
+    }
+    input.rgn-in:focus { border-color:var(--green); }
+    .rgn-wrap { position:relative; flex-shrink:0; }
+    .rgn-wrap::before { content:'🌍'; position:absolute; left:8px; top:50%; transform:translateY(-50%); font-size:.78rem; pointer-events:none; }
+
+    /* ── MAIN ── */
+    .main { padding: 26px 32px; max-width:1400px; margin:0 auto; }
+    .bar {
+      font-size:.72rem; color:var(--dim); padding:7px 32px;
+      background:var(--surface); border-bottom:1px solid var(--border);
+      display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    }
+    .bar-left { flex:1; }
+    .bar-ts { white-space:nowrap; color:var(--dim); display:flex; align-items:center; gap:5px; }
+    .bar-ts .ts-dot { width:7px; height:7px; border-radius:50%; background:var(--green); flex-shrink:0; }
+    .bar-ts .ts-dot.stale { background:#ffd740; }
+    .bar-ts .ts-dot.never { background:var(--dim); }
+
+    /* ── STATS ── */
+    .stats { display:flex; gap:14px; margin-bottom:22px; flex-wrap:wrap; }
+    .stat {
+      background:var(--surface); border:1px solid var(--border); border-radius:var(--r);
+      padding:12px 18px; display:flex; align-items:center; gap:10px; transition:all .18s;
+    }
+    .stat.filterable { cursor:pointer; user-select:none; }
+    .stat.filterable:hover { border-color:#3d4160; transform:translateY(-1px); }
+    .stat.active-soc { border-color:var(--green);   background:rgba(0,200,83,.1); }
+    .stat.active-bsk { border-color:var(--orange);  background:rgba(255,109,0,.1); }
+    .stat.active-oth { border-color:var(--purple);  background:rgba(124,77,255,.1); }
+    .stat.active-pol { border-color:var(--blue);    background:rgba(68,138,255,.1); }
+    .stat.active-cel { border-color:var(--pink);    background:rgba(255,64,129,.1); }
+    .stat-n { font-size:1.4rem; font-weight:700; line-height:1; }
+    .stat-l { font-size:.72rem; color:var(--dim); margin-top:2px; }
+
+    /* ── GRID ── */
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:16px; }
+
+    /* ── CARD ── */
+    .card {
+      background:var(--card); border:1px solid var(--border); border-radius:var(--r);
+      padding:18px; display:flex; flex-direction:column; gap:12px;
+      transition:border-color .2s, transform .2s, box-shadow .2s;
+    }
+    .card:hover { border-color:#3d4160; transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.4); }
+    .card.soc { border-left:3px solid var(--green); }
+    .card.bsk { border-left:3px solid var(--orange); }
+    .card.oth { border-left:3px solid var(--purple); }
+    .card.pol { border-left:3px solid var(--blue); }
+    .card.cel { border-left:3px solid var(--pink); }
+    .card.past { opacity:.55; }
+
+    .ch { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
+    .av {
+      width:46px; height:46px; border-radius:50%; display:flex;
+      align-items:center; justify-content:center; font-size:1.35rem; flex-shrink:0;
+      overflow:hidden; position:relative;
+    }
+    .av.soc { background:rgba(0,200,83,.14); }
+    .av.bsk { background:rgba(255,109,0,.14); }
+    .av.oth { background:rgba(124,77,255,.14); }
+    .av.pol { background:rgba(68,138,255,.14); }
+    .av.cel { background:rgba(255,64,129,.14); }
+    .av-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top center; display:none; border-radius:50%; }
+    .av-fb  { line-height:1; position:relative; z-index:1; }
+    .pname { font-size:1rem; font-weight:700; line-height:1.2; }
+    .badge {
+      display:inline-flex; align-items:center; gap:3px; padding:2px 8px;
+      border-radius:20px; font-size:.68rem; font-weight:700; margin-top:4px;
+      text-transform:uppercase; letter-spacing:.04em;
+    }
+    .badge.soc { background:rgba(0,200,83,.14); color:var(--green); }
+    .badge.bsk { background:rgba(255,109,0,.14); color:var(--orange); }
+    .badge.oth { background:rgba(124,77,255,.14); color:var(--purple); }
+    .badge.pol { background:rgba(68,138,255,.14); color:var(--blue); }
+    .badge.cel { background:rgba(255,64,129,.14); color:var(--pink); }
+    .cbns { display:flex; gap:5px; }
+    .ibtn {
+      width:26px; height:26px; border-radius:5px; border:1px solid var(--border);
+      background:var(--surface); color:var(--dim); cursor:pointer;
+      display:flex; align-items:center; justify-content:center; font-size:.72rem; transition:all .2s;
+    }
+    .ibtn:hover { background:var(--border); color:var(--text); }
+    .ibtn.del:hover { background:rgba(244,67,54,.2); color:#f44336; border-color:#f44336; }
+
+    .dets { display:flex; flex-direction:column; gap:7px; }
+    .dr { display:flex; align-items:flex-start; gap:9px; font-size:.83rem; }
+    .di { flex-shrink:0; width:15px; text-align:center; margin-top:1px; }
+    .dt { color:var(--text); line-height:1.4; }
+    .dd { color:var(--dim); }
+
+    .cf { margin-top:auto; padding-top:11px; border-top:1px solid var(--border); }
+    .rl {
+      display:block; width:100%; padding:9px; border-radius:7px;
+      text-align:center; font-size:.83rem; font-weight:600; text-decoration:none; transition:all .2s;
+    }
+    .rl.soc  { background:rgba(0,200,83,.14); color:var(--green); border:1px solid rgba(0,200,83,.28); }
+    .rl.soc:hover  { background:rgba(0,200,83,.25); }
+    .rl.bsk  { background:rgba(255,109,0,.14); color:var(--orange); border:1px solid rgba(255,109,0,.28); }
+    .rl.bsk:hover  { background:rgba(255,109,0,.25); }
+    .rl.oth  { background:rgba(124,77,255,.12); color:#a57aff; border:1px solid rgba(124,77,255,.28); }
+    .rl.oth:hover  { background:rgba(124,77,255,.22); }
+    .rl.pol  { background:rgba(68,138,255,.12);  color:#82b1ff; border:1px solid rgba(68,138,255,.28); }
+    .rl.pol:hover  { background:rgba(68,138,255,.22); }
+    .rl.cel  { background:rgba(255,64,129,.12);  color:#ff80ab; border:1px solid rgba(255,64,129,.28); }
+    .rl.cel:hover  { background:rgba(255,64,129,.22); }
+    .rl.none { background:var(--surface); color:var(--dim); border:1px solid var(--border); cursor:default; pointer-events:none; }
+    .rl.social-lnk { background:rgba(29,161,242,.12); color:#4fc3f7; border:1px solid rgba(29,161,242,.28); }
+    .rl.social-lnk:hover { background:rgba(29,161,242,.22); }
+    .src { font-size:.68rem; color:var(--dim); margin-top:7px; }
+    .past-tag {
+      display:inline-block; padding:1px 7px; border-radius:4px; font-size:.68rem; font-weight:700;
+      background:rgba(244,67,54,.13); color:#f44336; border:1px solid rgba(244,67,54,.28); margin-bottom:6px;
+    }
+
+    .empty { grid-column:1/-1; text-align:center; padding:60px 20px; color:var(--dim); }
+    .empty .ei { font-size:2.8rem; margin-bottom:10px; }
+
+    /* ── MODAL ── */
+    .mo {
+      display:none; position:fixed; inset:0; background:rgba(0,0,0,.72);
+      z-index:200; align-items:center; justify-content:center; padding:16px;
+    }
+    .mo.open { display:flex; }
+    .md {
+      background:var(--surface); border:1px solid var(--border); border-radius:16px;
+      padding:24px; width:100%; max-width:500px; max-height:90vh; overflow-y:auto;
+    }
+    .md h2 { font-size:1.1rem; font-weight:700; margin-bottom:18px; }
+    .fg { margin-bottom:14px; }
+    .fg label { display:block; font-size:.75rem; font-weight:600; color:var(--dim);
+                margin-bottom:5px; text-transform:uppercase; letter-spacing:.05em; }
+    .fg input, .fg select, .fg textarea {
+      width:100%; padding:9px 12px; background:var(--card); border:1px solid var(--border);
+      border-radius:7px; color:var(--text); font-size:.88rem; outline:none;
+      transition:border-color .2s; font-family:inherit;
+    }
+    .fg input:focus, .fg select:focus, .fg textarea:focus { border-color:var(--green); }
+    .fg textarea { resize:vertical; min-height:60px; }
+    .fr { display:flex; gap:10px; }
+    .fr .fg { flex:1; }
+    .mf { display:flex; justify-content:flex-end; gap:8px; margin-top:18px; }
+
+    /* ── TOAST ── */
+    .toast {
+      position:fixed; bottom:18px; right:18px; background:var(--surface);
+      border:1px solid var(--border); border-radius:var(--r); padding:12px 16px;
+      max-width:320px; font-size:.78rem; z-index:300;
+      transform:translateY(80px); opacity:0; transition:all .3s;
+    }
+    .toast.show { transform:translateY(0); opacity:1; }
+    .toast.ok { border-color:var(--green); }
+    .toast.err { border-color:#f44336; }
+    .toast-t { font-weight:700; margin-bottom:3px; }
+
+    /* ── SOURCES PANEL ── */
+    .spanel { background:var(--surface); border-top:1px solid var(--border); padding:24px 32px; }
+    .spanel h2 { font-size:.95rem; font-weight:700; color:var(--dim); margin-bottom:14px; }
+    .sgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:9px; }
+    .sc {
+      display:block; background:var(--card); border:1px solid var(--border);
+      border-radius:var(--r); padding:12px 14px; text-decoration:none; transition:all .2s;
+    }
+    .sc:hover { border-color:#3d4160; transform:translateY(-1px); }
+    .sc-n { font-size:.82rem; font-weight:700; color:var(--text); margin-bottom:3px; }
+    .sc-d { font-size:.72rem; color:var(--dim); line-height:1.4; }
+
+    @media (max-width:600px) {
+      header, .controls, .main, .spanel { padding-left:14px; padding-right:14px; }
+      .grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>⚽ Meet &amp; Greet Finder 🏀🏛️⭐</h1>
+    <p>Sports · Politics · Celebrities · USA 🇺🇸 UK 🇬🇧 France 🇫🇷 Italy 🇮🇹 Spain 🇪🇸 &amp; more 🌍 · Named people only · Rolling 5-Month Window</p>
+  </div>
+  <div class="hbtns">
+    <button class="btn btn-s" onclick="openAdd()">＋ Add Event</button>
+    <button class="btn btn-o" id="updBtn" onclick="fetchLive()">
+      <div class="spin"></div>🔄 Update from Web
+    </button>
+    <button class="btn btn-s" onclick="exportData()">⬇ Export</button>
+    <button class="btn btn-s" onclick="toggleSources()">📚 Sources</button>
+  </div>
+</header>
+
+<div class="bar" id="barWrap">
+  <div class="bar-left" id="barTxt">Loading…</div>
+  <div class="bar-ts" id="barTs"><span class="ts-dot never" id="tsDot"></span><span id="tsLabel">Last web update: checking…</span></div>
+</div>
+
+<div class="controls">
+  <div class="rgn-wrap">
+    <input id="rgn" class="rgn-in" list="rgn-list" placeholder="Region or country…" oninput="render()" autocomplete="off" />
+    <datalist id="rgn-list">
+      <option value="Americas">
+      <option value="UK &amp; Ireland">
+      <option value="Europe">
+      <option value="USA">
+      <option value="United Kingdom">
+      <option value="France">
+      <option value="Italy">
+      <option value="Spain">
+      <option value="Germany">
+      <option value="Canada">
+      <option value="Hungary">
+      <option value="Ireland">
+      <option value="Portugal">
+      <option value="Netherlands">
+      <option value="Belgium">
+      <option value="Austria">
+      <option value="Switzerland">
+      <option value="Poland">
+      <option value="Greece">
+      <option value="Sweden">
+      <option value="Norway">
+      <option value="Denmark">
+    </datalist>
+  </div>
+  <div class="sbox"><input id="q" type="text" placeholder="Search player, venue, city…" oninput="render()" /></div>
+  <select class="sort" id="srt" onchange="render()">
+    <option value="date-asc">Date ↑ Soonest</option>
+    <option value="date-desc">Date ↓ Latest</option>
+    <option value="player">Player A–Z</option>
+  </select>
+</div>
+
+<div class="main">
+  <div class="stats" id="stats"></div>
+  <div class="grid"  id="grid"></div>
+</div>
+
+<!-- SOURCES PANEL -->
+<div class="spanel" id="spanel" style="display:none">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+    <h2>📚 Where to Find More Events — Aggregator &amp; Official Sites</h2>
+    <button class="btn btn-s" style="font-size:.75rem;padding:5px 10px" onclick="toggleSources()">Hide</button>
+  </div>
+  <div class="sgrid">
+    <a class="sc" href="https://www.cravetheauto.com/autograph-appearances/?tag=NBA" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 Crave The Auto – NBA Signings</div>
+      <div class="sc-d">Live NBA autograph appearances across USA, updated daily. Best US aggregator.</div>
+    </a>
+    <a class="sc" href="https://www.cravetheauto.com/autograph-appearances/?tag=Soccer" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Crave The Auto – Soccer Signings</div>
+      <div class="sc-d">Soccer player appearances across USA. Updated daily.</div>
+    </a>
+    <a class="sc" href="https://www.superstarspeakers.co.uk/tickets" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Superstar Speakers – All Events 🇬🇧</div>
+      <div class="sc-d">UK football legends dinners: Man Utd, Liverpool, England. Ongoing 2026 dates.</div>
+    </a>
+    <a class="sc" href="https://www.tickettailor.com/all-events/legends72" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Legends 7 – Sporting Dinners 🇬🇧</div>
+      <div class="sc-d">Cantona, Bruce, Pallister, Allardyce and more. Bespoke UK football legends events.</div>
+    </a>
+    <a class="sc" href="https://www.galahospitality.co.uk/showcase/an-evening-with-the-football-legends/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Gala Hospitality – Football Legends Dinners 🇬🇧</div>
+      <div class="sc-d">UK bespoke sporting dinners: Hoddle, Ferdinand, Dublin, Merson and more.</div>
+    </a>
+    <a class="sc" href="https://lofootball.co.uk/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Legends of Football (Nordoff Robbins) 🇬🇧</div>
+      <div class="sc-d">Annual charity awards dinner with top football legends. October each year, London.</div>
+    </a>
+    <a class="sc" href="https://www.signingshotline.com/" target="_blank" rel="noopener">
+      <div class="sc-n">📋 SigningsHotline.com</div>
+      <div class="sc-d">Every athlete autograph appearance in US &amp; Canada, all sports.</div>
+    </a>
+    <a class="sc" href="https://www.sportscollectors.net/Signings.aspx" target="_blank" rel="noopener">
+      <div class="sc-n">📋 SportsCollectors.net</div>
+      <div class="sc-d">Community-sourced signing database. NBA + soccer by date.</div>
+    </a>
+    <a class="sc" href="https://www.mailordermike.com/collections/basketball-autograph-signings" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 Mail Order Mike</div>
+      <div class="sc-d">Mail-in NBA legend autograph signings. Ship your item worldwide.</div>
+    </a>
+    <a class="sc" href="https://fitermansports.com/all-events/" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 Fiterman Sports</div>
+      <div class="sc-d">200+ signings/yr. NBA legends public events. Texas + national.</div>
+    </a>
+    <a class="sc" href="https://powerssportsmemorabilia.com/pages/upcoming-autograph-signings" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 Powers Sports Memorabilia</div>
+      <div class="sc-d">NBA in-person + mail-in signings. Kemp, Iverson, Curry past events.</div>
+    </a>
+    <a class="sc" href="https://www.bighornautographs.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 Big Horn Autographs</div>
+      <div class="sc-d">Colorado-based public NBA player signings. Jokic, Gordon + more.</div>
+    </a>
+    <a class="sc" href="https://www.sportswaxpromotions.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🏀⚽ Sports Wax Promotions</div>
+      <div class="sc-d">Multi-sport Collectors Jam shows. Iverson + more in Concord NC.</div>
+    </a>
+    <a class="sc" href="https://www.nsccshow.com/autograph-details" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 NSCC – National Sports Collectors Convention</div>
+      <div class="sc-d">Largest US autograph show. Jul 29–Aug 3 2026 Chicago. Guests TBA.</div>
+    </a>
+    <a class="sc" href="https://tristarproductions.com/National/tickets.html" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 Tri-Star Productions – NSCC Autograph Tickets</div>
+      <div class="sc-d">Official autograph ticket provider for NSCC and major collector shows.</div>
+    </a>
+    <a class="sc" href="https://nbaexperiences.com/calendar-of-events" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 NBA Experiences – Official Events</div>
+      <div class="sc-d">Official NBA VIP packages: rookie dinners, player meet &amp; greets, shootarounds.</div>
+    </a>
+    <a class="sc" href="https://www.meetandgreetticket.com/Sports/Basketball/Professional-NBA" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 MeetAndGreetTicket – NBA</div>
+      <div class="sc-d">VIP &amp; meet &amp; greet packages for NBA games and events. $375–$5k.</div>
+    </a>
+    <a class="sc" href="https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026" target="_blank" rel="noopener">
+      <div class="sc-n">🏀⚽ Fanatics Fest 2026 – Buy Tickets</div>
+      <div class="sc-d">Jul 16–19 NYC. NBA stars + Midge Purce. GA from $70. Sessions extra.</div>
+    </a>
+    <a class="sc" href="https://www.ussoccer.com/insiders-worldcup-2026" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ US Soccer Insiders – World Cup 2026</div>
+      <div class="sc-d">Register for USMNT/USWNT player meet &amp; greets + free fan events.</div>
+    </a>
+    <a class="sc" href="https://www.newyorkredbulls.com/tickets/rm-autograph-session" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ NY Red Bulls – Member Autograph Sessions</div>
+      <div class="sc-d">Exclusive autograph sessions for Red Members at Sports Illustrated Stadium.</div>
+    </a>
+    <a class="sc" href="https://eastcoastcollectorsservice.com/upcoming-signings/" target="_blank" rel="noopener">
+      <div class="sc-n">🏀⚽ East Coast Collector's Service</div>
+      <div class="sc-d">Northeast US signing events. Basketball &amp; soccer categories.</div>
+    </a>
+    <a class="sc" href="https://www.palmbeachautographs.com/collections/signings" target="_blank" rel="noopener">
+      <div class="sc-n">🏀⚽ Palm Beach Autographs</div>
+      <div class="sc-d">Florida-based. 500+ private signings, 100+ public events. NBA + soccer.</div>
+    </a>
+    <a class="sc" href="https://legadodeldeporte.com/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽🏀 Legado del Deporte 🇪🇸</div>
+      <div class="sc-d">Spanish sports memorabilia platform. Follow @legadodeldeporte on Instagram for player appearance announcements.</div>
+    </a>
+    <a class="sc" href="https://spainemotions.com/en/meetgreet/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Spain Emotions – VIP Meet &amp; Greet 🇪🇸</div>
+      <div class="sc-d">Custom exclusive meetings with La Liga legends (Real Madrid, Barça, Atlético). Contact for bespoke packages.</div>
+    </a>
+    <a class="sc" href="https://rfef.es/es/quieres-conocer-tus-idolos-participa-nuestro-proximo-meetgreet" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ RFEF – Spanish National Team Meet &amp; Greet 🇪🇸</div>
+      <div class="sc-d">Official Spanish football federation fan meet &amp; greet program. Double-pass draws for selected matches.</div>
+    </a>
+    <a class="sc" href="https://www.icons-series.com/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Icons Series – Legends Football Events 🌍</div>
+      <div class="sc-d">International legends tournaments (Terry, Giggs, Robben, Ribéry, Gullit, Ginola, Shevchenko, Batistuta). VIP hospitality packages.</div>
+    </a>
+
+    <!-- ── ITALIAN SOURCES 🇮🇹 ── -->
+    <a class="sc" href="https://www.ticketone.it/sport/calcio/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ TicketOne – Calcio 🇮🇹</div>
+      <div class="sc-d">Italy's largest ticketing platform. Search "meet and greet calciatore" or "firma autografi" for player events.</div>
+    </a>
+    <a class="sc" href="https://www.vivaticket.com/it/categoria/calcio" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ VivaTicket – Calcio 🇮🇹</div>
+      <div class="sc-d">Italian ticketing platform for football events. Search "incontro con giocatori" or "firma autografi".</div>
+    </a>
+    <a class="sc" href="https://www.acmilan.com/en/fans/meet-greet" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ AC Milan Official Meet &amp; Greet 🇮🇹</div>
+      <div class="sc-d">Regular player store events in Milan. Follow official AC Milan website for next announced date and player.</div>
+    </a>
+    <a class="sc" href="https://torinofc.charitystars.com/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Torino FC CharityStars – VIP Experiences 🇮🇹</div>
+      <div class="sc-d">Charity auction: pitch access, walkabout, player meet & greet at Olimpico Grande Torino.</div>
+    </a>
+
+    <!-- ── FRENCH SOURCES 🇫🇷 ── -->
+    <a class="sc" href="https://www.fnacspectacles.com/sport/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Fnac Spectacles – Sport 🇫🇷</div>
+      <div class="sc-d">French ticketing. Search "rencontre joueur" or "séance dédicaces football" for player events.</div>
+    </a>
+    <a class="sc" href="https://www.france.billet.com/sport" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ France Billet – Sport 🇫🇷</div>
+      <div class="sc-d">Official French ticketing (Ticketmaster group). Search "match des légendes" or "dédicaces footballeur".</div>
+    </a>
+    <a class="sc" href="https://billetterie.clermontfoot.com/fr/nos-offres/match_des_l%C3%A9gendes" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Clermont Foot – Match des Légendes 🇫🇷</div>
+      <div class="sc-d">Jun 7 2026: Emmanuel Petit, Franck Leboeuf, Robert Pirès. Clermont vs C.I.F. (Club of French Internationals).</div>
+    </a>
+    <a class="sc" href="https://billetterie.fcnantes.com/fr/match-des-legendes" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ FC Nantes – Match des Légendes 🇫🇷</div>
+      <div class="sc-d">Jun 3 2026: Nantes legends vs Variétés Club de France at La Beaujoire. Ongoing legends match series.</div>
+    </a>
+
+    <!-- ── SPANISH SOURCES 🇪🇸 ── -->
+    <a class="sc" href="https://www.entradas.com/deporte/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Entradas.com – Deporte 🇪🇸</div>
+      <div class="sc-d">Spain's main ticketing platform. Search "firma autógrafos futbolista" or "meet and greet jugador".</div>
+    </a>
+    <a class="sc" href="https://www.boletmovil.com/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽🏀 BoletMovil 🇪🇸🌎</div>
+      <div class="sc-d">Spanish/Latin American ticketing. Search "meet and greet deportista" or "firma futbolista" for player events in Spain and LATAM.</div>
+    </a>
+    <a class="sc" href="https://www.ticketmaster.es/es/deportes" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Ticketmaster España – Deportes 🇪🇸</div>
+      <div class="sc-d">Ticketmaster Spain. Check "experiencias deportivas" for VIP player meet & greet packages.</div>
+    </a>
+    <a class="sc" href="https://rfef.es/es/quieres-conocer-tus-idolos-participa-nuestro-proximo-meetgreet" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ RFEF – Spanish National Team Meet &amp; Greet 🇪🇸</div>
+      <div class="sc-d">Official Spanish football federation fan meet & greet program. Double-pass draws for selected national team matches.</div>
+    </a>
+
+    <!-- ── GERMAN SOURCES 🇩🇪 ── -->
+    <a class="sc" href="https://www.eventim.de/sport/fussball/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Eventim – Fußball 🇩🇪</div>
+      <div class="sc-d">Germany's largest ticketing platform. Search "Autogrammstunde Fußballer" or "meet and greet Fußball" for player signing events.</div>
+    </a>
+
+    <!-- ── INTERNATIONAL AGGREGATORS ── -->
+    <a class="sc" href="https://www.eventbrite.com/d/online/meet-and-greet-sports/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽🏀 Eventbrite – Sports Meet &amp; Greets 🌍</div>
+      <div class="sc-d">Global event platform. Search "meet and greet" + player name or "firma autógrafos" / "séance dédicaces" for local events in any country.</div>
+    </a>
+    <a class="sc" href="https://www.dallascardshow.com/2026schedule" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 Dallas Card Show 2026 Schedule</div>
+      <div class="sc-d">Major US card shows with multi-sport autograph sessions. Aug 2026 dates: Northern Kentucky (Aug 14–16), Houston (Aug 21–23).</div>
+    </a>
+    <a class="sc" href="https://www.trifectacollectibles.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🏀 Trifecta Sports Collectibles</div>
+      <div class="sc-d">Private NBA signing sessions (Curry, etc.). Follow for mail-in and private signing announcements.</div>
+    </a>
+
+    <!-- ── NYC-SPECIFIC SOURCES 🗽 ── -->
+    <a class="sc" href="https://www.nyshows.org/" target="_blank" rel="noopener">
+      <div class="sc-n">🗽 JP's Sports &amp; Rock Solid Promotions – NYC</div>
+      <div class="sc-d">Largest athlete signing shows in the NY Tri-State area. Every major sport. Check for upcoming in-person signing events.</div>
+    </a>
+    <a class="sc" href="https://www.steinersports.com/upcoming-autograph-signings/" target="_blank" rel="noopener">
+      <div class="sc-n">🗽 Steiner Sports – NY Autograph Signings</div>
+      <div class="sc-d">Official partner of Yankees, Red Sox, Cowboys, Cubs. 2,000+ athlete relationships. New Rochelle, NY. Check upcoming signings page.</div>
+    </a>
+    <a class="sc" href="https://cardvaultbytombrady.com/pages/store-locations" target="_blank" rel="noopener">
+      <div class="sc-n">🗽 CardVault by Tom Brady – NYC (SoHo &amp; Brooklyn)</div>
+      <div class="sc-d">Tom Brady's card shop — SoHo + Downtown Brooklyn (opened Mar 2026). Regular athlete signing events. Follow @cardvaultbytombrady for announcements.</div>
+    </a>
+    <a class="sc" href="https://www.facebook.com/dacwNYC/" target="_blank" rel="noopener">
+      <div class="sc-n">🗽 Dave &amp; Adam's Card World – NYC (Herald Square)</div>
+      <div class="sc-d">1350 Broadway, Manhattan. NYC's largest card shop. In-store athlete signings — follow Facebook page for event announcements.</div>
+    </a>
+    <a class="sc" href="https://coachscollectiblesny.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🗽 Coach's Collectibles NY</div>
+      <div class="sc-d">100% authentic NY sports memorabilia. Upcoming athlete signing schedule on site.</div>
+    </a>
+    <a class="sc" href="https://allevents.in/new-york/meet-and-greet" target="_blank" rel="noopener">
+      <div class="sc-n">🗽 AllEvents.in – NYC Meet &amp; Greets</div>
+      <div class="sc-d">Aggregates all NYC athlete/celebrity meet &amp; greet events from Eventbrite, Ticketmaster and local organizers.</div>
+    </a>
+
+    <!-- ── SPORTING GOODS STORE EVENTS ── -->
+    <a class="sc" href="https://www.dickssportinggoods.com/s/dsg-events" target="_blank" rel="noopener">
+      <div class="sc-n">🏪 Dick's House of Sports / DSG – Athlete Events</div>
+      <div class="sc-d">Dick's Sporting Goods and House of Sports locations host regular athlete meet & greet and signing events. Check DSG events page and follow @dickssportinggoods on Instagram.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/dickssportinggoods/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Dick's Sporting Goods – Instagram</div>
+      <div class="sc-d">Follow for athlete appearance announcements at DSG and House of Sports locations. Events often announced 1–2 weeks ahead.</div>
+    </a>
+    <a class="sc" href="https://www.footlocker.com/en/category/events.html" target="_blank" rel="noopener">
+      <div class="sc-n">🏪 Foot Locker – Athlete Events</div>
+      <div class="sc-d">Foot Locker and Kids Foot Locker stores host NBA and soccer player appearances for shoe launches and promotions.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/footlocker/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Foot Locker – Instagram</div>
+      <div class="sc-d">Follow for in-store athlete appearance announcements tied to sneaker launches and brand events.</div>
+    </a>
+    <a class="sc" href="https://www.underarmour.com/en-us/c/brand-house-events/" target="_blank" rel="noopener">
+      <div class="sc-n">🏪 Under Armour Brand House – Events</div>
+      <div class="sc-d">Under Armour flagship stores (Baltimore, Chicago, NYC) host athlete meet & greets for product launches.</div>
+    </a>
+
+    <!-- ── SOCIAL MEDIA — KEY SOCCER PLAYERS ── -->
+    <a class="sc" href="https://www.instagram.com/leomessi/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Lionel Messi – Instagram</div>
+      <div class="sc-d">Monitor for fan event, meet & greet, or signing announcements. Check posts he's tagged in from venue/organiser accounts.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/cristiano/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Cristiano Ronaldo – Instagram</div>
+      <div class="sc-d">Monitor for fan event and signing posts. Also check @cr7 and tagged posts from Al Nassr and brand partners.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/kylianmbappe/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Kylian Mbappé – Instagram</div>
+      <div class="sc-d">Monitor for Real Madrid / Nike fan events and meet & greet posts.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/erling.haaland/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Erling Haaland – Instagram</div>
+      <div class="sc-d">Monitor for Man City / Nike / Puma fan appearances and signing events.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/jbellingham/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Jude Bellingham – Instagram</div>
+      <div class="sc-d">Monitor for Real Madrid and Adidas fan event posts. Often announces appearances via Instagram stories.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/cpulisic/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Christian Pulisic – Instagram</div>
+      <div class="sc-d">USMNT captain. Monitor for US fan events, Nike appearances, AC Milan promotions, and World Cup 2026 events.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/trinityrodman/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Trinity Rodman – Instagram</div>
+      <div class="sc-d">USWNT star. Monitor for NWSL and USWNT fan event announcements, Nike appearances.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/vinijr/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Vinícius Jr – Instagram</div>
+      <div class="sc-d">Monitor for Real Madrid, Nike, and LaLiga fan event posts in Spanish and English.</div>
+    </a>
+
+    <!-- ── SOCIAL MEDIA — KEY NBA PLAYERS ── -->
+    <a class="sc" href="https://www.instagram.com/kingjames/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 LeBron James – Instagram</div>
+      <div class="sc-d">Monitor for Nike, SpringHill, and fan event appearances. Check posts tagged by organiser accounts.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/stephencurry30/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Stephen Curry – Instagram</div>
+      <div class="sc-d">Monitor for Under Armour, Curry Brand store appearances and fan events.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/giannis_an34/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Giannis Antetokounmpo – Instagram</div>
+      <div class="sc-d">Monitor for Nike and Milwaukee fan events. Often does community meet & greets.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/luka7doncic/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Luka Dončić – Instagram</div>
+      <div class="sc-d">Monitor for Nike / Jordan Brand and Dallas/LA fan event posts.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/jamorant/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Ja Morant – Instagram</div>
+      <div class="sc-d">Monitor for Nike and Memphis/Golden State fan appearance posts.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/jaytatum0/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Jayson Tatum – Instagram</div>
+      <div class="sc-d">Monitor for Jordan Brand, Celtics fan events, and signing appearances.</div>
+    </a>
+    <a class="sc" href="https://www.instagram.com/jokicnikola/" target="_blank" rel="noopener">
+      <div class="sc-n">📱 Nikola Jokić – Instagram</div>
+      <div class="sc-d">Monitor for Denver Nuggets, Nike fan event, and Serbian community appearance posts.</div>
+    </a>
+
+    <!-- ── BRAND STORE ATHLETE EVENTS ── -->
+    <a class="sc" href="https://www.nike.com/experiences/events" target="_blank" rel="noopener">
+      <div class="sc-n">👟 Nike – Official Events &amp; Athlete Appearances</div>
+      <div class="sc-d">Nike's official events hub. Athlete appearances, in-store activations, House of Innovation NYC events. Updated regularly.</div>
+    </a>
+    <a class="sc" href="https://www.nike.com/retail/s/nike-nyc-house-of-innovation-000" target="_blank" rel="noopener">
+      <div class="sc-n">👟 Nike House of Innovation NYC (650 5th Ave)</div>
+      <div class="sc-d">Nike's NYC flagship. Regular athlete activations and product-launch meet &amp; greets. Check store page for upcoming events.</div>
+    </a>
+    <a class="sc" href="https://www.adidas.com/us/sports_events" target="_blank" rel="noopener">
+      <div class="sc-n">👟 Adidas – Sports Events &amp; Athlete Appearances</div>
+      <div class="sc-d">Adidas official events hub: track nationals, NBA All-Star activations, Atlanta City Games (meet &amp; greet with Olympians). Updated regularly.</div>
+    </a>
+    <a class="sc" href="https://about.puma.com/en/newsroom/corporate-news/2026" target="_blank" rel="noopener">
+      <div class="sc-n">👟 PUMA – 2026 Events &amp; Athlete News</div>
+      <div class="sc-d">PUMA's official newsroom for 2026 athlete appearances and in-store events. Includes London flagship and NYC activations.</div>
+    </a>
+    <a class="sc" href="https://news.adidas.com/" target="_blank" rel="noopener">
+      <div class="sc-n">👟 Adidas Newsroom – Athlete Events</div>
+      <div class="sc-d">Official Adidas news: athlete meet &amp; greets, store openings, campaign launch events. Subscribe for alerts.</div>
+    </a>
+
+    <!-- ── OTHER SPORTS ── -->
+    <a class="sc" href="https://bilesinvitational.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🏅 Biles Invitational – Simone Biles Appearances</div>
+      <div class="sc-d">Official Simone Biles invitational site. Check for autograph signing announcements — session pages are released closer to event dates.</div>
+    </a>
+    <a class="sc" href="https://www.goldoveramericatour.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🏅 Gold Over America Tour 2026 – Simone Biles &amp; Cast</div>
+      <div class="sc-d">Fall 2026 30-city gymnastics tour: Biles, Jade Carey, Jordan Chiles + more. VIP meet &amp; greet packages at select venues.</div>
+    </a>
+    <a class="sc" href="https://worldathletics.org/competitions/world-athletics-ultimate-championship/2026" target="_blank" rel="noopener">
+      <div class="sc-n">🏅 World Athletics Ultimate Championship 2026 – Usain Bolt</div>
+      <div class="sc-d">Sep 13–21, Budapest. Bolt as "Ultimate Legend" with fan access during evening sessions. Check for hospitality packages.</div>
+    </a>
+    <a class="sc" href="https://www.athletespeakers.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🏅 AthleteSpeakers.com – Book Any Olympic Athlete</div>
+      <div class="sc-d">Book Usain Bolt, Katie Ledecky, Simone Biles and 10,000+ athletes for appearances, signings, and meet &amp; greets worldwide.</div>
+    </a>
+
+    <!-- ── US AUTOGRAPH SHOWS & CARD CONVENTIONS ── -->
+    <a class="sc" href="https://halloffamesignings.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🏅 Hall of Fame Signings</div>
+      <div class="sc-d">Multi-sport public signing events across USA. NFL, NBA, MLB, NHL Hall of Famers. Updated schedule on site.</div>
+    </a>
+    <a class="sc" href="https://myautographevents.net/" target="_blank" rel="noopener">
+      <div class="sc-n">🏅 My Autograph Events</div>
+      <div class="sc-d">National autograph show listings for all major sports. Comprehensive multi-city calendar of upcoming signing events.</div>
+    </a>
+    <a class="sc" href="https://csac.biz/" target="_blank" rel="noopener">
+      <div class="sc-n">🏅 Chicago Sports Spectacular (CSAC)</div>
+      <div class="sc-d">Major Midwest multi-sport card show. Rosemont IL, multiple dates per year. NFL, NBA, NHL, MLB celebrity guests.</div>
+    </a>
+    <a class="sc" href="https://www.latitudesm.com/signings" target="_blank" rel="noopener">
+      <div class="sc-n">🏅 Latitude Sports Marketing – Colorado Signings</div>
+      <div class="sc-d">Colorado-based sports signing events. Avalanche, Broncos, Nuggets legends. Public and private signings.</div>
+    </a>
+    <a class="sc" href="https://www.gtsportsshows.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🏅 GT Sports Shows – NJ Card Shows</div>
+      <div class="sc-d">New Jersey / Northeast US card shows. Multi-sport celebrity guests: NFL, NBA, NHL. Edison NJ main venue.</div>
+    </a>
+    <a class="sc" href="https://baseballhall.org/hall-of-fame-weekend" target="_blank" rel="noopener">
+      <div class="sc-n">⚾ Baseball Hall of Fame Weekend – Cooperstown</div>
+      <div class="sc-d">Annual July induction weekend in Cooperstown NY. Public autograph sessions with new inductees and returning HOFers.</div>
+    </a>
+
+    <!-- ── UK SIGNED MEMORABILIA & FOOTBALL LEGENDS ── -->
+    <a class="sc" href="https://www.sportagraphs.co.uk/football-autographs" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Sportagraphs – Football Autograph Events 🇬🇧</div>
+      <div class="sc-d">UK football autograph signing events. Premier League, international legends. Public in-person signings.</div>
+    </a>
+    <a class="sc" href="https://www.firmastella.com/football" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ Firma Stella – Football Signings 🇬🇧</div>
+      <div class="sc-d">UK-based football memorabilia and in-person signing events. Premier League and international players.</div>
+    </a>
+
+    <!-- ── THE MESSI EXPERIENCE ── -->
+    <a class="sc" href="https://themessiexperience.com/" target="_blank" rel="noopener">
+      <div class="sc-n">⚽ The Messi Experience – Immersive Tour 🌍</div>
+      <div class="sc-d">Global immersive Messi exhibition touring worldwide. Check site for current city, VIP packages, and any in-person Messi appearance dates.</div>
+    </a>
+
+    <!-- ── EVENTBRITE REGIONAL PAGES ── -->
+    <a class="sc" href="https://www.eventbrite.co.uk/d/united-kingdom/sports--autograph/" target="_blank" rel="noopener">
+      <div class="sc-n">🌍 Eventbrite UK – Sports Autograph Events 🇬🇧</div>
+      <div class="sc-d">UK-local Eventbrite listings for athlete signings, meet &amp; greets, and sports fan events.</div>
+    </a>
+    <a class="sc" href="https://www.eventbrite.fr/d/france/sport--rencontre-joueur/" target="_blank" rel="noopener">
+      <div class="sc-n">🌍 Eventbrite France – Rencontre Sportifs 🇫🇷</div>
+      <div class="sc-d">French Eventbrite listings. Search "séance dédicaces" or "rencontre footballeur" for local player events in France.</div>
+    </a>
+    <a class="sc" href="https://www.eventbrite.de/d/germany/sport--autogramm/" target="_blank" rel="noopener">
+      <div class="sc-n">🌍 Eventbrite Deutschland – Autogramm Events 🇩🇪</div>
+      <div class="sc-d">German Eventbrite listings. Search "Autogrammstunde" for athlete signing events in Germany and Austria.</div>
+    </a>
+    <a class="sc" href="https://www.eventbrite.com.au/d/australia/sports--meet-and-greet/" target="_blank" rel="noopener">
+      <div class="sc-n">🌍 Eventbrite Australia – Sports Meet &amp; Greets 🇦🇺</div>
+      <div class="sc-d">Australian Eventbrite listings for local sports fan and athlete meet &amp; greet events.</div>
+    </a>
+    <a class="sc" href="https://www.eventbrite.ca/d/canada/sports--autograph/" target="_blank" rel="noopener">
+      <div class="sc-n">🌍 Eventbrite Canada – Autograph Events 🇨🇦</div>
+      <div class="sc-d">Canadian Eventbrite listings for athlete signings and sports fan events across major cities.</div>
+    </a>
+
+    <!-- ── US REGIONAL DEALERS ── -->
+    <a class="sc" href="https://dynastysports.com/signings" target="_blank" rel="noopener">
+      <div class="sc-n">🏅 Dynasty Sports – Philadelphia Signings</div>
+      <div class="sc-d">Philadelphia-based sports signing events. Eagles, Phillies, 76ers legends. In-person and private signing packages.</div>
+    </a>
+
+    <!-- ── POLITICS 🏛️ — NAMED LEADERS ── -->
+    <a class="sc" href="https://www.speakersagency.com/tony-blair" target="_blank" rel="noopener">
+      <div class="sc-n">🏛️ Tony Blair – Speaking &amp; Appearances</div>
+      <div class="sc-d">Tony Blair Institute and speaker agency listings for appearances, book events, and VIP meet &amp; greet opportunities.</div>
+    </a>
+    <a class="sc" href="https://www.obamaoffice.com/" target="_blank" rel="noopener">
+      <div class="sc-n">🏛️ Barack &amp; Michelle Obama – Official Office</div>
+      <div class="sc-d">Official Obama post-presidency site. Check for book tour announcements, foundation events, and public appearances with VIP access.</div>
+    </a>
+    <a class="sc" href="https://www.hillaryclinton.com/events/" target="_blank" rel="noopener">
+      <div class="sc-n">🏛️ Hillary Clinton – Events</div>
+      <div class="sc-d">Hillary Clinton's official events page. Book signings, speaking engagements, and VIP meet &amp; greet opportunities.</div>
+    </a>
+    <a class="sc" href="https://www.whspeakersbureau.com/speakers/political/" target="_blank" rel="noopener">
+      <div class="sc-n">🏛️ Washington Speaker Bureau – Political Speakers</div>
+      <div class="sc-d">Listings for former presidents, senators, and world leaders available for public events with VIP packages including meet &amp; greet.</div>
+    </a>
+
+    <!-- ── POLITICS 🏛️ ── -->
+    <a class="sc" href="https://www.eventbrite.com/d/online/politician-meet-greet/" target="_blank" rel="noopener">
+      <div class="sc-n">🏛️ Eventbrite – Political Meet &amp; Greets 🌍</div>
+      <div class="sc-d">Search Eventbrite for politician town halls, book signings, and constituent meet &amp; greet events worldwide.</div>
+    </a>
+    <a class="sc" href="https://www.barnesandnoble.com/b/bn-events/_/N-8q8?Nrpp=16&Ns=P_Publication_Date%7C1" target="_blank" rel="noopener">
+      <div class="sc-n">🏛️ Barnes &amp; Noble – Political Author Events</div>
+      <div class="sc-d">Politicians and political authors regularly do B&amp;N in-store signings. Filter by "Politics" category for upcoming events.</div>
+    </a>
+    <a class="sc" href="https://www.politico.com/events" target="_blank" rel="noopener">
+      <div class="sc-n">🏛️ Politico Events</div>
+      <div class="sc-d">Politico-hosted forums, luncheons, and summits with political figures. Often include VIP receptions and meet &amp; greet access.</div>
+    </a>
+    <a class="sc" href="https://thehill.com/events/" target="_blank" rel="noopener">
+      <div class="sc-n">🏛️ The Hill Events</div>
+      <div class="sc-d">The Hill's policy events with members of Congress and cabinet officials. Check for public meet &amp; greet components.</div>
+    </a>
+
+    <!-- ── CELEBRITIES ⭐ ── -->
+    <a class="sc" href="https://www.barnesandnoble.com/b/bn-events/_/N-8q8" target="_blank" rel="noopener">
+      <div class="sc-n">⭐📚 Barnes &amp; Noble – Celebrity Meet &amp; Greet Events</div>
+      <div class="sc-d">B&amp;N in-store events include celebrity authors, actors, and musicians. Many offer VIP early-entry meet &amp; greet packages. Filter by "Entertainment" or search by celebrity name.</div>
+    </a>
+    <a class="sc" href="https://www.comic-con.org/cci" target="_blank" rel="noopener">
+      <div class="sc-n">⭐ San Diego Comic-Con – Autographs &amp; Photo Ops</div>
+      <div class="sc-d">World's largest pop culture convention. July 2026, San Diego. Celebrity autograph signings and photo ops announced closer to the event at comic-con.org.</div>
+    </a>
+    <a class="sc" href="https://fanexpohq.com/home/events/" target="_blank" rel="noopener">
+      <div class="sc-n">⭐ Fan Expo – All USA Events</div>
+      <div class="sc-d">Major celebrity fan conventions across the US. Philadelphia (May 29–31), Denver (May 28–31), Boston (Aug 7–9), Dallas (Sep 11–13) + more. Autograph sessions and photo ops at every show.</div>
+    </a>
+    <a class="sc" href="https://www.creationent.com/calendar.htm" target="_blank" rel="noopener">
+      <div class="sc-n">⭐ Creation Entertainment – All Conventions</div>
+      <div class="sc-d">Star Trek Las Vegas (Aug 5–9), Supernatural Tour (NJ Aug 21–23, Boston Jun 12–14, Charlotte Sep 25–27). Cast autograph and photo op packages at every event.</div>
+    </a>
+    <a class="sc" href="https://awesome-con.com/guest/" target="_blank" rel="noopener">
+      <div class="sc-n">⭐ Awesome Con – Washington DC</div>
+      <div class="sc-d">Mar 13–15 2026. Walter E. Washington Convention Center. Firefly reunion, Gillian Anderson, Paul Giamatti + more. Photo ops from $70, autographs from $50.</div>
+    </a>
+    <a class="sc" href="https://motorcitycomiccon.com/guest/celebrity-guests/" target="_blank" rel="noopener">
+      <div class="sc-n">⭐ Motor City Comic Con – Novi, MI</div>
+      <div class="sc-d">May 15–17 2026 at Vibe Credit Union Showplace. Henry Winkler + more guests TBA. Photo op schedule live by May 1.</div>
+    </a>
+    <a class="sc" href="https://galaxycon.com/" target="_blank" rel="noopener">
+      <div class="sc-n">⭐ GalaxyCon – USA Events</div>
+      <div class="sc-d">New Orleans (Jul 10–12), San Jose (Aug 21–23), Columbus (Dec 4–6) 2026. Celebrity guests, photo ops, autograph sessions.</div>
+    </a>
+    <a class="sc" href="https://fanexpohq.com/home/wizard-world/" target="_blank" rel="noopener">
+      <div class="sc-n">⭐ Wizard World (Fan Expo HQ)</div>
+      <div class="sc-d">Merged with Fan Expo HQ. Multi-city US celebrity convention circuit. Actors, musicians, athletes. Autograph tables and photo ops at every city stop.</div>
+    </a>
+    <a class="sc" href="https://www.autographfair.com/" target="_blank" rel="noopener">
+      <div class="sc-n">⭐ Autograph Fair – Celebrity Signings 🇬🇧</div>
+      <div class="sc-d">UK-based celebrity autograph events. Film and TV stars, musicians. Regular shows in London and across the UK.</div>
+    </a>
+    <a class="sc" href="https://allevents.in/celebrity-meet-and-greet" target="_blank" rel="noopener">
+      <div class="sc-n">⭐ AllEvents.in – Celebrity Meet &amp; Greets 🌍</div>
+      <div class="sc-d">Global aggregator for celebrity fan meet &amp; greet events. Covers actors, musicians, influencers and more across all countries.</div>
+    </a>
+    <a class="sc" href="https://www.universe.com/browse/celebrities" target="_blank" rel="noopener">
+      <div class="sc-n">⭐ Universe – Celebrity Fan Events</div>
+      <div class="sc-d">Ticketing platform for celebrity fan meetups and experiences. Browse by celebrity or category.</div>
+    </a>
+
+    <!-- ── ATHLETE BOOK SIGNINGS 📚 ── -->
+    <a class="sc" href="https://www.barnesandnoble.com/b/bn-events/_/N-8q8" target="_blank" rel="noopener">
+      <div class="sc-n">📚 Barnes &amp; Noble – Author Events (USA)</div>
+      <div class="sc-d">Major US bookstore hosts athlete/sports author book signings and talks. Filter by "Sports" category for athlete appearances.</div>
+    </a>
+    <a class="sc" href="https://www.waterstones.com/events" target="_blank" rel="noopener">
+      <div class="sc-n">📚 Waterstones – Author Events 🇬🇧</div>
+      <div class="sc-d">UK's largest bookstore chain. Athlete and sports author book signings across all UK branches. Filter by "Sport" category.</div>
+    </a>
+    <a class="sc" href="https://www.fnac.com/Evenements-Fnac/n-10/Deddicaces-BD-Livres/c6074/" target="_blank" rel="noopener">
+      <div class="sc-n">📚 Fnac – Dédicaces Livres 🇫🇷</div>
+      <div class="sc-d">French Fnac stores host author dédicaces (signings). Filter for sport/football book signings by athletes and managers.</div>
+    </a>
+    <a class="sc" href="https://www.mondadoristore.it/eventi/" target="_blank" rel="noopener">
+      <div class="sc-n">📚 Mondadori Store – Eventi 🇮🇹</div>
+      <div class="sc-d">Italian Mondadori bookstores host athlete book presentations ("presentazione libro"). Search by sport or player name.</div>
+    </a>
+    <a class="sc" href="https://www.thalia.de/veranstaltungen/" target="_blank" rel="noopener">
+      <div class="sc-n">📚 Thalia – Veranstaltungen 🇩🇪</div>
+      <div class="sc-d">Germany's largest bookstore chain. Athlete book signings ("Buchpräsentation / Lesung"). Search "Sport" category.</div>
+    </a>
+    <a class="sc" href="https://www.casadellibro.com/agenda-cultural" target="_blank" rel="noopener">
+      <div class="sc-n">📚 Casa del Libro – Agenda Cultural 🇪🇸</div>
+      <div class="sc-d">Spain's leading bookstore. Athlete and football author book signings ("firma de libros"). Check agenda for sports events.</div>
+    </a>
+  </div>
+</div>
+
+<!-- ADD/EDIT MODAL -->
+<div class="mo" id="mo">
+  <div class="md">
+    <h2 id="mtitle">Add Event</h2>
+    <input type="hidden" id="eid" />
+    <div class="fr">
+      <div class="fg"><label>Player / Event Name *</label><input id="fp" type="text" placeholder="e.g. LeBron James" /></div>
+      <div class="fg"><label>Sport *</label>
+        <select id="fs"><option value="soccer">⚽ Soccer</option><option value="basketball">🏀 Basketball</option><option value="other">🏅 Other Sport</option></select>
+      </div>
+    </div>
+    <div class="fr">
+      <div class="fg"><label>Date *</label><input id="fd" type="date" /></div>
+      <div class="fg"><label>Time</label><input id="ft" type="time" /></div>
+    </div>
+    <div class="fg"><label>Venue *</label><input id="fv" type="text" placeholder="Arena / venue name" /></div>
+    <div class="fg"><label>City, Country</label><input id="fc" type="text" placeholder="e.g. London, UK 🇬🇧" /></div>
+    <div class="fg"><label>Registration / Ticket Link</label><input id="fl" type="url" placeholder="https://…" /></div>
+    <div class="fg"><label>Notes</label><textarea id="fn" placeholder="Price, session details, requirements…"></textarea></div>
+    <div class="fg"><label>Source</label><input id="fsr" type="text" placeholder="e.g. Fanatics Fest" /></div>
+    <div class="mf">
+      <button class="btn btn-s" onclick="closeMo()">Cancel</button>
+      <button class="btn btn-g" onclick="saveEvt()">Save</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><div class="toast-t" id="toast-t"></div><div id="toast-b"></div></div>
+
+<script>
+// ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
+const KEY        = 'mng_v11';  // bump version → forces fresh seed load
+const UPDATE_KEY = 'mng_last_auto'; // timestamp of last fetchLive() run
+
+// ─── LANGUAGE MAP ─────────────────────────────────────────────────────────────
+const LANG_FLAGS = { fr:'🇫🇷', it:'🇮🇹', es:'🇪🇸', de:'🇩🇪', pt:'🇵🇹', nl:'🇳🇱', ja:'🇯🇵' };
+const LANG_NAMES = { fr:'French', it:'Italian', es:'Spanish', de:'German', pt:'Portuguese', nl:'Dutch', ja:'Japanese' };
+
+// ─── SEED EVENTS ──────────────────────────────────────────────────────────────
+// RULES: every event must have a NAMED player and a DIRECT registration link.
+// No generic VIP packages where the player is unnamed.
+const SEEDS = [
+
+  // ════════════ ⚽ SOCCER — USA ════════════
+  {
+    id:'su4', sport:'soccer',
+    player:'Tim Howard + Rebecca Lowe + Robbie Earle – Premier League Mornings Live',
+    date:'2026-04-18', time:'09:00',
+    venue:'Armature Works',
+    city:'Tampa Bay, FL 🇺🇸',
+    link:'https://plmltampabaygen26.splashthat.com/',
+    notes:'FREE 2-day fan festival Apr 18–19. Tim Howard, Rebecca Lowe, Robbie Earle + more live on USA Network. Giant screens for Premier League matches. Free tickets required at link.',
+    source:'Premier League Mornings Live — premierleague.com'
+  },
+  {
+    id:'su5', sport:'soccer',
+    player:'Midge Purce (NWSL) – Autograph & Photo Op, Fanatics Fest',
+    date:'2026-07-16', time:'10:00',
+    venue:'Jacob K. Javits Convention Center',
+    city:'New York, NY 🇺🇸',
+    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
+    notes:'Confirmed for autographs and photo ops at Fanatics Fest NYC (Jul 16–19). Buy GA first ($70–$240), then autograph session separately at fanaticsfest.com/talent.',
+    source:'Fanatics Fest — fanaticsfest.com/talent'
+  },
+
+  // ════════════ ⚽ SOCCER — UK 🇬🇧 (Superstar Speakers) ════════════
+  {
+    id:'se9', sport:'soccer',
+    player:'England Legends – Stuart Pearce, Mark Wright, Chris Waddle, Des Walker (Italia \'90)',
+    date:'2026-03-20', time:'18:00',
+    venue:'Chester Crowne Plaza Hotel',
+    city:'Chester, UK 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-england-legends-20th-march-2026',
+    notes:'Italia \'90 retrospective. Meet & greet photos + autographs with 4 confirmed England legends. Dinner included. 6 PM–10:30 PM.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+  {
+    id:'se10', sport:'soccer',
+    player:'Ryan Giggs – Chester',
+    date:'2026-03-26', time:'18:00',
+    venue:'Chester Crowne Plaza Hotel',
+    city:'Chester, UK 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-ryan-giggs-chester-crowne-plaza-26th-march-2026',
+    notes:'An Evening with Ryan Giggs. Meet & greet photos + autographs. Platinum guests receive signed Manchester United shirt. Dinner included.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+  {
+    id:'se11', sport:'soccer',
+    player:'Ryan Giggs – Hotel Football Manchester',
+    date:'2026-03-27', time:'18:00',
+    venue:'Hotel Football, Old Trafford',
+    city:'Manchester, UK 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-ryan-giggs-hotel-football-27th-march-2026',
+    notes:'An Evening with Ryan Giggs at Old Trafford. Meet & greet photos + autographs. Platinum guests receive signed Manchester United shirt.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+  {
+    id:'se1', sport:'soccer',
+    player:'Liverpool Legends – Steve McMahon, Peter Beardsley, Mark Wright, John Aldridge',
+    date:'2026-04-23', time:'18:00',
+    venue:'Chester Crowne Plaza Hotel',
+    city:'Chester, UK 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-liverpool-legends-chester-crowne-plaza-23rd-april-2026',
+    notes:'Meet & greet photos + autographs with Liverpool FC legends. 1985–86 Double Winning Season stars. Dinner included.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+  {
+    id:'se2', sport:'soccer',
+    player:'Liverpool Legends – Steve McMahon, Peter Beardsley, Mark Wright, John Aldridge',
+    date:'2026-04-24', time:'18:00',
+    venue:'Chester Crowne Plaza Hotel',
+    city:'Chester, UK 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-liverpool-legends-chester-crowne-plaza-24th-april-2026',
+    notes:'Second date — same Liverpool Legends lineup. Meet & greet + autographs. Dinner included.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+  {
+    id:'se12', sport:'soccer',
+    player:'Duncan Ferguson (Everton Legend)',
+    date:'2026-05-08', time:'18:00',
+    venue:'Chester Crowne Plaza Hotel',
+    city:'Chester, UK 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-everton-legend-duncan-ferguson-chester-27th-march-2026',
+    notes:'Rescheduled from Mar 27. Photo sessions 6:30 PM, on-stage interview 7:45 PM. Meet & greet + autographs. Dinner included.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+  {
+    id:'se3', sport:'soccer',
+    player:'Liverpool Legends 1984 European Cup Winners – Phil Thompson, Sammy Lee, Mark Lawrenson, Bruce Grobbelaar, Ronnie Whelan',
+    date:'2026-05-16', time:'18:00',
+    venue:'Crowne Plaza Belfast',
+    city:'Belfast, Northern Ireland 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-liverpool-legends-1984-european-cup-winners-belfast-16th-may-2026',
+    notes:'Celebrating the 1984 European Cup. Meet & greet photos + autographs with 5 confirmed legends. Dinner included.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+  {
+    id:'se4', sport:'soccer',
+    player:'Manchester United Legends 1993 Premier League Squad',
+    date:'2026-06-04', time:'18:15',
+    venue:'Hotel Football, Old Trafford',
+    city:'Manchester, UK 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-manchester-united-legends-4th-june-2026',
+    notes:'Meet & greet + photos + autographs with ≥4 legends from the first-ever Premier League-winning 1993 squad. Dinner included. Smart casual.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+  {
+    id:'se13', sport:'soccer',
+    player:'Manchester United Legends 1993 Premier League Squad',
+    date:'2026-06-27', time:'18:15',
+    venue:'Hotel Football, Old Trafford',
+    city:'Manchester, UK 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-manchester-united-legends-hotel-football-27th-june',
+    notes:'Second date — same Man Utd 1993 squad lineup. Meet & greet + photos + autographs. Dinner included.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+  {
+    id:'se8', sport:'soccer',
+    player:'John Barnes & John Aldridge – An Audience with Liverpool Legends',
+    date:'2026-05-01', time:'19:00',
+    venue:'Storyhouse',
+    city:'Chester, UK 🇬🇧',
+    link:'https://www.storyhouse.com/whats-on/liverpool-legends-an-audience-with-john-barnes/',
+    notes:'Q&A + meet & greet with John Barnes and John Aldridge. Book tickets at Storyhouse Chester.',
+    source:'Storyhouse Chester — storyhouse.com'
+  },
+  {
+    id:'se5', sport:'soccer',
+    player:'Football Legends Dinner – Les Ferdinand, Andrew Cole, Bruce Grobbelaar + more',
+    date:'2026-04-01', time:'18:30',
+    venue:'Various Venues',
+    city:'Multiple UK Cities 🇬🇧',
+    link:'https://www.galahospitality.co.uk/showcase/an-evening-with-the-football-legends/',
+    notes:'Bespoke UK sporting dinner with named Premier League legends. Meet & greet, autographs, Q&A. Check Gala Hospitality for confirmed venue and lineup per date.',
+    source:'Gala Hospitality UK — galahospitality.co.uk'
+  },
+
+  // ════════════ ⚽ SOCCER — UK 🇬🇧 (Legends 7) ════════════
+  {
+    id:'sl1', sport:'soccer',
+    player:'Sam Allardyce – An Evening with Big Sam',
+    date:'2026-05-09', time:'18:15',
+    venue:'TBA',
+    city:'UK 🇬🇧',
+    link:'https://www.tickettailor.com/events/legends72/1875111',
+    notes:'Sporting dinner hosted by Legends 7. 6:15 PM–11 PM. Q&A, meet & greet, autographs. Buy tickets directly at link.',
+    source:'Legends 7 — legends7.co.uk'
+  },
+  {
+    id:'sl2', sport:'soccer',
+    player:'Steve Bruce & Gary Pallister – Man Utd Legends Evening',
+    date:'2026-05-15', time:'18:15',
+    venue:'TBA',
+    city:'UK 🇬🇧',
+    link:'https://www.tickettailor.com/events/legends72/2044214',
+    notes:'Sporting dinner with Manchester United legends Steve Bruce & Gary Pallister. Meet & greet + autographs. Buy tickets at link.',
+    source:'Legends 7 — legends7.co.uk'
+  },
+  {
+    id:'sl3', sport:'soccer',
+    player:'Eric Cantona – An Evening with The King',
+    date:'2026-09-25', time:'18:15',
+    venue:'TBA',
+    city:'UK 🇬🇧',
+    link:'https://www.tickettailor.com/events/legends72/1956729',
+    notes:'Sporting dinner with Eric Cantona. 6:15 PM–11 PM. Meet & greet + autographs. Buy tickets at link. (Note: outside current 5-month window — check back closer to date.)',
+    source:'Legends 7 — legends7.co.uk'
+  },
+  {
+    id:'sl4', sport:'soccer',
+    player:'Eric Cantona – An Evening with The King (2nd date)',
+    date:'2026-09-26', time:'18:15',
+    venue:'TBA',
+    city:'UK 🇬🇧',
+    link:'https://buytickets.at/legends72/2104454',
+    notes:'Second date — Eric Cantona sporting dinner. Meet & greet + autographs. Buy tickets at link.',
+    source:'Legends 7 — legends7.co.uk'
+  },
+
+  // ════════════ ⚽ SOCCER — UK 🇬🇧 (Gala Hospitality) ════════════
+  {
+    id:'sg1', sport:'soccer',
+    player:'Glenn Hoddle & Frank Bruno – Gold Cup Lunch',
+    date:'2026-03-13', time:'11:00',
+    venue:'The Kia Oval',
+    city:'London, UK 🇬🇧',
+    link:'https://www.galahospitality.co.uk/',
+    notes:'Cheltenham Gold Cup Lunch with England legend Glenn Hoddle. 3-course lunch, meet & greet, Q&A. From £275/person.',
+    source:'Gala Hospitality UK — galahospitality.co.uk'
+  },
+  {
+    id:'sg2', sport:'soccer',
+    player:'Gareth Barry, Matthew Upson & Steve Bull – England v Ghana Watch Event',
+    date:'2026-06-23', time:'12:00',
+    venue:'Edgbaston Stadium',
+    city:'Birmingham, UK 🇬🇧',
+    link:'https://www.galahospitality.co.uk/',
+    notes:'World Cup watch event with England football legends Gareth Barry, Matthew Upson & Steve Bull. From £145/person. Includes hospitality and meet & greet.',
+    source:'Gala Hospitality UK — galahospitality.co.uk'
+  },
+
+  // ════════════ 🏀 BASKETBALL — IN-PERSON USA ════════════
+  {
+    id:'bi1', sport:'basketball',
+    player:'Dylan Cardwell (Sacramento Kings)',
+    date:'2026-03-21', time:'10:00',
+    venue:'True Sports Cards & Collectibles, 6661 Stanford Ranch Rd',
+    city:'Rocklin, CA 🇺🇸',
+    link:'https://truesportscards.com/products/dylan-cardwell-in-person-autograph-ticket-march-21st-2026',
+    notes:'$20 cards · $25 standard · $35 premium · +$10 inscription · +$20 JSA auth. One item per ticket.',
+    source:'True Sports Cards (via CraveTheAuto) — truesportscards.com'
+  },
+  {
+    id:'bi2', sport:'basketball',
+    player:'Walt Frazier (NY Knicks Legend)',
+    date:'2026-03-21', time:'10:30',
+    venue:'CardVault – 1 American Dream Way',
+    city:'East Rutherford, NJ 🇺🇸',
+    link:'https://www.instagram.com/p/DVbukQNFH1z/',
+    notes:'Public autograph signing 10:30–11:00 AM. Confirm pricing at Instagram link or call CardVault: (201) 777-8706.',
+    source:'CardVault (via CraveTheAuto) — cravetheauto.com'
+  },
+  {
+    id:'bi3', sport:'basketball',
+    player:'Derek Fisher (LA Lakers Legend)',
+    date:'2026-03-21', time:'11:30',
+    venue:'Rizo Sports – 400 Broadway',
+    city:'Santa Monica, CA 🇺🇸',
+    link:'https://www.instagram.com/p/DUcLPqTFJMn/',
+    notes:'Public autograph signing 11:30 AM–1:30 PM. Confirm pricing at Instagram link.',
+    source:'Rizo Sports (via CraveTheAuto) — cravetheauto.com'
+  },
+  {
+    id:'bi4', sport:'basketball',
+    player:'Miles McBride (NY Knicks)',
+    date:'2026-03-21', time:'15:00',
+    venue:"Mustang Harry's – 352 7th Ave",
+    city:'New York, NY 🇺🇸',
+    link:'https://www.instagram.com/p/DUt6MnDDYUB/',
+    notes:'Public signing 3–5 PM. $75 general admission. Confirm at Instagram link.',
+    source:"Mustang Harry's (via CraveTheAuto) — cravetheauto.com"
+  },
+  {
+    id:'bi5', sport:'basketball',
+    player:'Drew Eubanks (Sacramento Kings)',
+    date:'2026-03-21', time:'15:00',
+    venue:'CardVault Sacramento – 405 K Street',
+    city:'Sacramento, CA 🇺🇸',
+    link:'https://www.instagram.com/p/DVjdBu-D8xn/',
+    notes:'Public signing 3–4 PM. Confirm pricing at Instagram link or call (279) 254-0927.',
+    source:'CardVault Sacramento (via CraveTheAuto) — cravetheauto.com'
+  },
+  {
+    id:'bi6', sport:'basketball',
+    player:'Aaron Gordon (Denver Nuggets)',
+    date:'2026-03-21', time:'18:00',
+    venue:'Waxxed Sportscards – 9579 S University Blvd',
+    city:'Highlands Ranch, CO 🇺🇸',
+    link:'https://www.bighornautographs.com/product/aaron-gordon-public-signing/25MLX5CDAELXJUNQ2PQAOLXR',
+    notes:'Public signing 6–7 PM. $135 autograph · +$40 inscription. Buy ticket directly at Big Horn Autographs.',
+    source:'Big Horn Autographs (via CraveTheAuto) — bighornautographs.com'
+  },
+  {
+    id:'bi7', sport:'basketball',
+    player:'Will Richard (Golden State Warriors)',
+    date:'2026-04-04', time:'15:00',
+    venue:'CardVault San Francisco – 761 3rd Street',
+    city:'San Francisco, CA 🇺🇸',
+    link:'https://www.instagram.com/p/DVjdQe5jMt3/',
+    notes:'Public signing 3–4 PM. Confirm pricing at Instagram link or call (510) 926-3006.',
+    source:'CardVault SF (via CraveTheAuto) — cravetheauto.com'
+  },
+  {
+    id:'fi1', sport:'basketball',
+    player:'Dominique Wilkins (Atlanta Hawks Legend)',
+    date:'2026-03-19', time:'19:00',
+    venue:'Fiterman Sports – 1318 State Hwy 3 Bldg C',
+    city:'League City, TX 🇺🇸',
+    link:'https://fitermansports.com/all-events/',
+    notes:'Public signing 7 PM. Meet & greet, photos + autographs with NBA legend "The Human Highlight Film". Buy tickets at Fiterman Sports.',
+    source:'Fiterman Sports — fitermansports.com'
+  },
+  {
+    id:'fi2', sport:'other',
+    player:'Ric Flair – Autograph Signing',
+    date:'2026-03-21', time:'12:00',
+    venue:'Fiterman Sports – 1318 State Hwy 3 Bldg C',
+    city:'League City, TX 🇺🇸',
+    link:'https://fitermansports.com/all-events/',
+    notes:'Public signing noon. Meet & greet, photos + autographs with WWE Hall of Famer "The Nature Boy" Ric Flair. Buy tickets at Fiterman Sports.',
+    source:'Fiterman Sports — fitermansports.com'
+  },
+  {
+    id:'bi8', sport:'basketball',
+    player:'Gary Payton + Shawn Kemp (Seattle SuperSonics Legends)',
+    date:'2026-04-11', time:'12:00',
+    venue:'Fiterman Sports – 1318 State Hwy 3 Bldg C',
+    city:'League City, TX 🇺🇸',
+    link:'https://fitermansports.com/all-events/',
+    notes:'Public signing noon–1 PM. Kemp $59.99/item · Payton $59.99/item + $19.99 inscription. Buy tickets at Fiterman Sports.',
+    source:'Fiterman Sports — fitermansports.com'
+  },
+  {
+    id:'fi3', sport:'other',
+    player:'Ric Flair – Autograph Signing (Las Vegas)',
+    date:'2026-04-17', time:'10:00',
+    venue:'Horseshoe Hotel and Casino',
+    city:'Las Vegas, NV 🇺🇸',
+    link:'https://fitermansports.com/all-events/',
+    notes:'Public signing 10 AM CDT. Meet & greet, photos + autographs with WWE Hall of Famer Ric Flair. Buy tickets at Fiterman Sports.',
+    source:'Fiterman Sports — fitermansports.com'
+  },
+  {
+    id:'fi4', sport:'other',
+    player:'Jeremy Peña + Jose Altuve (Houston Astros)',
+    date:'2026-04-25', time:'12:00',
+    venue:'Fiterman Sports – 1318 State Hwy 3 Bldg C',
+    city:'League City, TX 🇺🇸',
+    link:'https://fitermansports.com/all-events/',
+    notes:'Public signing noon CDT. Meet & greet, photos + autographs with Houston Astros stars Jeremy Peña and Jose Altuve. Buy tickets at Fiterman Sports.',
+    source:'Fiterman Sports — fitermansports.com'
+  },
+  {
+    id:'bi10', sport:'basketball',
+    player:'Dennis Rodman – Niagara Falls Comic Con',
+    date:'2026-06-05', time:'15:00',
+    venue:'Niagara Falls Convention Center – 6815 Stanley Ave',
+    city:'Niagara Falls, ON 🇨🇦',
+    link:'https://www.nfcomiccon.com',
+    notes:'Fri 3–8 PM · Sat 10 AM–6 PM · Sun 10 AM–4 PM. Autographs + photo ops. Buy tickets at nfcomiccon.com.',
+    source:'NF Comic Con (via CraveTheAuto) — nfcomiccon.com'
+  },
+
+  // ════════════ 🏀 BASKETBALL — FANATICS FEST NYC Jul 16–19 ════════════
+  {
+    id:'bf8', sport:'basketball',
+    player:'Jalen Brunson – Fanatics Fest NYC',
+    date:'2026-07-16', time:'10:00',
+    venue:'Jacob K. Javits Convention Center',
+    city:'New York, NY 🇺🇸',
+    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
+    notes:'Day TBA. Buy GA then check fanaticsfest.com/talent.',
+    source:'Fanatics Fest — fanaticsfest.com/talent'
+  },
+  {
+    id:'bf9', sport:'basketball',
+    player:'Karl-Anthony Towns – Fanatics Fest NYC',
+    date:'2026-07-16', time:'10:00',
+    venue:'Jacob K. Javits Convention Center',
+    city:'New York, NY 🇺🇸',
+    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
+    notes:'Day TBA. Buy GA then check fanaticsfest.com/talent.',
+    source:'Fanatics Fest — fanaticsfest.com/talent'
+  },
+  {
+    id:'bf10', sport:'basketball',
+    player:'Josh Hart + Draymond Green – Fanatics Fest NYC',
+    date:'2026-07-16', time:'10:00',
+    venue:'Jacob K. Javits Convention Center',
+    city:'New York, NY 🇺🇸',
+    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
+    notes:'Days TBA. Buy GA then check fanaticsfest.com/talent for confirmed sessions.',
+    source:'Fanatics Fest — fanaticsfest.com/talent'
+  },
+  {
+    id:'bf1', sport:'basketball',
+    player:'Trae Young – Autographs & Photo Op (Fri Jul 17)',
+    date:'2026-07-17', time:'10:00',
+    venue:'Jacob K. Javits Convention Center',
+    city:'New York, NY 🇺🇸',
+    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
+    notes:'Friday Jul 17. Step 1: Buy GA ($70/day). Step 2: Add Trae Young autograph session at fanaticsfest.com/talent. Sessions sell out fast.',
+    source:'Fanatics Fest — fanaticsfest.com/talent'
+  },
+  {
+    id:'bf2', sport:'basketball',
+    player:'Allen Iverson – Autographs & Photo Op (Fri Jul 17)',
+    date:'2026-07-17', time:'10:00',
+    venue:'Jacob K. Javits Convention Center',
+    city:'New York, NY 🇺🇸',
+    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
+    notes:'Friday Jul 17. GA ($70) + separate autograph session at fanaticsfest.com/talent.',
+    source:'Fanatics Fest — fanaticsfest.com/talent'
+  },
+  {
+    id:'bf3', sport:'basketball',
+    player:'Klay Thompson – Autographs & Photo Op (Fri Jul 17)',
+    date:'2026-07-17', time:'10:00',
+    venue:'Jacob K. Javits Convention Center',
+    city:'New York, NY 🇺🇸',
+    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
+    notes:'Friday Jul 17. GA ($70) + session at fanaticsfest.com/talent.',
+    source:'Fanatics Fest — fanaticsfest.com/talent'
+  },
+  {
+    id:'bf4', sport:'basketball',
+    player:'Paolo Banchero – Autographs & Photo Op (Fri Jul 17)',
+    date:'2026-07-17', time:'10:00',
+    venue:'Jacob K. Javits Convention Center',
+    city:'New York, NY 🇺🇸',
+    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
+    notes:'Friday Jul 17. GA ($70) + session at fanaticsfest.com/talent.',
+    source:'Fanatics Fest — fanaticsfest.com/talent'
+  },
+  {
+    id:'bf5', sport:'basketball',
+    player:'Patrick Ewing – Autographs & Photo Op (Sat Jul 18)',
+    date:'2026-07-18', time:'10:00',
+    venue:'Jacob K. Javits Convention Center',
+    city:'New York, NY 🇺🇸',
+    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
+    notes:'Saturday Jul 18. GA ($80/Sat) + session at fanaticsfest.com/talent.',
+    source:'Fanatics Fest — fanaticsfest.com/talent'
+  },
+  {
+    id:'bf6', sport:'basketball',
+    player:'Grant Hill – Autographs & Photo Op (Sat Jul 18)',
+    date:'2026-07-18', time:'10:00',
+    venue:'Jacob K. Javits Convention Center',
+    city:'New York, NY 🇺🇸',
+    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
+    notes:'Saturday Jul 18. GA ($80) + session at fanaticsfest.com/talent.',
+    source:'Fanatics Fest — fanaticsfest.com/talent'
+  },
+
+  // ════════════ ⚽ SOCCER — ITALY 🇮🇹 ════════════
+  {
+    id:'si2', sport:'soccer', lang:'it',
+    player:'Francesco Totti, Zvonimir Boban, Javier Zanetti + 300 Football Legends – Operazione Nostalgia',
+    date:'2026-03-28', time:'20:00',
+    venue:'Palazzo dello Sport (Palalottomatica), Piazzale Pier Luigi Nervi 1',
+    city:'Rome, Italy 🇮🇹',
+    link:'https://www.ticketone.it/event/operazione-nostalgia-palazzo-dello-sport-20666083/',
+    notes:'5-a-side legends tournament: Italy vs Europe vs Rest of World with 300+ former footballers. Fan Village opens 10:00 AM (autographs + selfies). Preliminaries 18:00, main tournament 20:00. Totti (captain), Boban, Zanetti confirmed. Tickets at TicketOne.',
+    source:'TicketOne 🇮🇹 — ticketone.it (Italian)'
+  },
+  {
+    id:'si3', sport:'soccer', lang:'it',
+    player:'Davide Bartesaghi (AC Milan)',
+    date:'2026-03-12', time:'17:00',
+    venue:'AC Milan Flagship Store, Via Dante',
+    city:'Milan, Italy 🇮🇹',
+    link:'https://www.acmilan.com/en/news/articles/community/2026-03-09/bartesaghi-is-coming-to-the-flagship-store',
+    notes:'In-store meet & greet: autographs and selfies with AC Milan defender Davide Bartesaghi. Free entry. Follow AC Milan official site for next store event announcement.',
+    source:'AC Milan Official — acmilan.com (Italian)'
+  },
+
+  // ════════════ ⚽ SOCCER — FRANCE 🇫🇷 ════════════
+  {
+    id:'sf1', sport:'soccer', lang:'fr',
+    player:'Kévin Gameiro, Jérémy Morel & Christophe Jallet – FC Lorient Centenary Legends Match',
+    date:'2026-04-06', time:'',
+    venue:'Stade du Moustoir',
+    city:'Lorient, France 🇫🇷',
+    link:'https://www.fclorient.bzh/centenaire-du-fc-lorient-le-match-des-legendes-le-6-avril/',
+    notes:'FC Lorient centenary legends match. Confirmed players: Kévin Gameiro, Jérémy Morel, Christophe Jallet and other club legends. Meet & greet and autograph opportunities on the day. Tickets at FC Lorient official site.',
+    source:'FC Lorient Official 🇫🇷 — fclorient.bzh (French)'
+  },
+  {
+    id:'sf2', sport:'soccer', lang:'fr',
+    player:'Emmanuel Petit, Franck Leboeuf & Robert Pirès – Clermont Foot Legends Match',
+    date:'2026-06-07', time:'',
+    venue:'Stade Gabriel Montpied',
+    city:'Clermont-Ferrand, France 🇫🇷',
+    link:'https://billetterie.clermontfoot.com/fr/nos-offres/match_des_l%C3%A9gendes',
+    notes:'Clermont Foot 63 vs C.I.F. (Club of French Internationals). Confirmed legends: Emmanuel Petit, Franck Leboeuf, Robert Pirès. Fan meet & greet included. Buy tickets at Clermont Foot official site.',
+    source:'Clermont Foot 🇫🇷 — billetterie.clermontfoot.com (French)'
+  },
+
+  // ════════════ 🏅 OTHER SPORTS — GYMNASTICS ════════════
+  {
+    id:'gy2', sport:'other',
+    player:'Simone Biles, Jade Carey, Jordan Chiles, Hezly Rivera, Paul Juda & Brody Malone – Gold Over America Tour',
+    date:'2026-09-15', time:'',
+    venue:'Various arenas (30-city nationwide tour)',
+    city:'Nationwide, USA 🇺🇸',
+    link:'https://www.goldoveramericatour.com/goat/tickets.html',
+    notes:'Fall 2026 30-arena tour headlined by Simone Biles. Cast: Jade Carey, Jordan Chiles, Hezly Rivera, Paul Juda, Brody Malone. VIP meet & greet packages available at select venues. Check site for city-by-city schedule.',
+    source:'Gold Over America Tour — goldoveramericatour.com'
+  },
+
+  // ════════════ 🏅 OTHER SPORTS — TRACK & FIELD ════════════
+  {
+    id:'tr1', sport:'other',
+    player:'Usain Bolt – World Athletics Ultimate Championship (Official "Ultimate Legend" Appearance)',
+    date:'2026-09-13', time:'',
+    venue:'National Athletics Centre',
+    city:'Budapest, Hungary 🇭🇺',
+    link:'https://worldathletics.org/competitions/world-athletics-ultimate-championship/2026',
+    notes:'Usain Bolt confirmed as official "Ultimate Legend" at the World Athletics Ultimate Championship (Sep 13–21). Special appearances during select evening sessions. Check World Athletics for fan hospitality and access packages.',
+    source:'World Athletics — worldathletics.org'
+  },
+
+  // ════════════ ⚽ SOCCER — UK 🇬🇧 (additional Superstar Speakers date) ════════════
+  {
+    id:'se14', sport:'soccer',
+    player:'Manchester United Legends 1993 Premier League Squad',
+    date:'2026-09-26', time:'18:00',
+    venue:'Hotel Football, Old Trafford',
+    city:'Manchester, UK 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-manchester-united-legends-26th-september-2026',
+    notes:'Third date — Man Utd 1993 squad. Early arrival meet & greet, photos, autographs, 2-part player interview. Dinner included.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+
+  // ════════════ 🏅 OTHER SPORTS — MULTI-SPORT CARD SHOWS & NFL ════════════
+  {
+    id:'cs1', sport:'other',
+    player:'John Elway, Brandon Marshall, Anthony Munoz, Ed Belfour – Chicago Sports Spectacular',
+    date:'2026-03-14', time:'10:00',
+    venue:'Donald E. Stephens Convention Center',
+    city:'Rosemont, IL 🇺🇸',
+    link:'https://csac.biz/',
+    notes:'Mar 13–15 2026. Multi-sport card show with named celebrity guests: John Elway, Brandon Marshall, Anthony Munoz (football); Ed Belfour (hockey) + more. Buy tickets and check full guest schedule at csac.biz.',
+    source:'Chicago Sports Spectacular (CSAC) — csac.biz'
+  },
+  {
+    id:'rm1', sport:'other',
+    player:'Randy Moss – Autograph Signing',
+    date:'2026-04-11', time:'12:00',
+    venue:'Ridgedale Center',
+    city:'Minnetonka, MN 🇺🇸',
+    link:'https://halloffamesignings.com/',
+    notes:'Public autograph signing with NFL Hall of Fame wide receiver Randy Moss. Buy ticket packages at Hall of Fame Signings. Pricing and exact time TBA — check link for updates.',
+    source:'Hall of Fame Signings — halloffamesignings.com'
+  },
+  {
+    id:'gt1', sport:'other',
+    player:'Justin Fields, Derrick Henry, Bo Jackson, Terry Bradshaw, Peter Forsberg, Teemu Selanne, Chris Mullin + more – GT Sports NJ Card Show',
+    date:'2026-04-17', time:'10:00',
+    venue:'NJ Convention & Expo Center',
+    city:'Edison, NJ 🇺🇸',
+    link:'https://www.gtsportsshows.com/',
+    notes:'Apr 17–19 2026. Major multi-sport card show. Confirmed celebrity guests: Justin Fields, Derrick Henry, Bo Jackson, Terry Bradshaw (NFL); Peter Forsberg, Teemu Selanne (NHL); Chris Mullin (NBA) + more. Buy autograph tickets per player at gtsportsshows.com.',
+    source:'GT Sports Shows — gtsportsshows.com'
+  },
+  {
+    id:'nfl1', sport:'other',
+    player:'NFL Players – NFL Draft Experience (free fan autograph stage)',
+    date:'2026-04-23', time:'09:00',
+    venue:'Downtown Pittsburgh (outdoor fan festival)',
+    city:'Pittsburgh, PA 🇺🇸',
+    link:'https://www.nfl.com/news/nfl-draft-fan-experience',
+    notes:'Apr 23–25 2026. Free outdoor NFL Draft fan festival with autograph stage featuring active NFL players. Free admission. Check nfl.com for full guest and schedule announcement closer to date.',
+    source:'NFL Draft Experience — nfl.com'
+  },
+  {
+    id:'coop1', sport:'other',
+    player:'Baseball Hall of Fame Inductees 2026 – Hall of Fame Weekend (autograph sessions)',
+    date:'2026-07-24', time:'',
+    venue:'National Baseball Hall of Fame and Museum',
+    city:'Cooperstown, NY 🇺🇸',
+    link:'https://baseballhall.org/hall-of-fame-weekend',
+    notes:'Jul 24–27 2026. Annual Induction Weekend. Hall of Famers sign autographs throughout the weekend. Public autograph sessions with inductees and returning HOFers in Cooperstown. Check Hall of Fame site for full schedule and player list.',
+    source:'Baseball Hall of Fame — baseballhall.org'
+  },
+
+  // ════════════ ⭐ CELEBRITY — Conventions & Comic-Cons ════════════
+  {
+    id:'ac1', sport:'celeb',
+    player:'Nathan Fillion + Alan Tudyk + Morena Baccarin + Gina Torres – Firefly Reunion, Awesome Con DC',
+    date:'2026-03-13', time:'13:00',
+    venue:'Walter E. Washington Convention Center',
+    city:'Washington, DC 🇺🇸',
+    link:'https://awesome-con.com/guest/',
+    notes:'Mar 13–15 2026. Firefly cast reunion (Fillion, Tudyk, Baccarin, Torres, Staite, Maher, Glau) plus Gillian Anderson, Paul Giamatti, George Takei. Photo ops from $70, autographs from $50 — purchased separately from badge.',
+    source:'Awesome Con — awesome-con.com'
+  },
+  {
+    id:'fep1', sport:'celeb',
+    player:'Elijah Wood + Sean Astin + Dominic Monaghan + Billy Boyd + Orlando Bloom – LotR 25th Anniversary, Fan Expo Philadelphia',
+    date:'2026-05-29', time:'10:00',
+    venue:'Pennsylvania Convention Center',
+    city:'Philadelphia, PA 🇺🇸',
+    link:'https://fanexpohq.com/fanexpophiladelphia/celebrities/',
+    notes:'May 29–31 2026. All four Hobbits plus Orlando Bloom (Legolas) for "An Evening with the Hobbits: In Celebration of 25 Years." Also: Jonathan Frakes, Brent Spiner, Gates McFadden (TNG). Photo ops and autographs available.',
+    source:'Fan Expo Philadelphia — fanexpohq.com'
+  },
+  {
+    id:'fed1', sport:'celeb',
+    player:'Elijah Wood + Sean Astin + Dominic Monaghan + Billy Boyd – LotR 25th Anniversary Tour, Fan Expo Denver',
+    date:'2026-05-28', time:'12:00',
+    venue:'Colorado Convention Center',
+    city:'Denver, CO 🇺🇸',
+    link:'https://fanexpohq.com/fanexpodenver/photo-ops/',
+    notes:'May 28–31 2026 (Thu–Sun). The Four Hobbits appear as part of the LotR 25th Anniversary tour. Photo ops and autographs available at the venue.',
+    source:'Fan Expo Denver — fanexpohq.com'
+  },
+  {
+    id:'mccc1', sport:'celeb',
+    player:'Henry Winkler – Motor City Comic Con',
+    date:'2026-05-15', time:'10:00',
+    venue:'Vibe Credit Union Showplace',
+    city:'Novi, MI 🇺🇸',
+    link:'https://motorcitycomiccon.com/guest/celebrity-guests/',
+    notes:'May 15–17 2026. Henry Winkler (The Fonz, Happy Days; Barry) attends all three days for autographs, selfies, and professional photo ops. More guests TBA — photo op schedule live by May 1.',
+    source:'Motor City Comic Con — motorcitycomiccon.com'
+  },
+  {
+    id:'stlv1', sport:'celeb',
+    player:'William Shatner + Scott Bakula + Kate Mulgrew + George Takei – Star Trek Las Vegas 60th Anniversary',
+    date:'2026-08-05', time:'10:00',
+    venue:'Las Vegas Convention Center',
+    city:'Las Vegas, NV 🇺🇸',
+    link:'https://creationent.com/events/stlv-26/guests/',
+    notes:'Aug 5–9 2026. 60th Anniversary Star Trek convention. 30+ cast members across all series. William Shatner (photo op $165, autograph $145), Scott Bakula ($150 each), Kate Mulgrew ($90/$80), George Takei ($120), Jonathan Frakes ($80), Brent Spiner ($80), Michael Dorn ($80) and many more. Gold Weekend package includes complimentary autographs.',
+    source:'Creation Entertainment — creationent.com/events/stlv-26'
+  },
+  {
+    id:'cspn1', sport:'celeb',
+    player:'Jensen Ackles + Jared Padalecki + Misha Collins – Supernatural Creation Tour, New Jersey',
+    date:'2026-08-21', time:'10:00',
+    venue:'Hanover Marriott Hotel',
+    city:'Whippany, NJ 🇺🇸',
+    link:'https://creationent.com/events/ce-nj26/',
+    notes:'Aug 21–23 2026. Supernatural fan convention with 20+ cast members. Jensen Ackles, Jared Padalecki, Misha Collins, Mark Sheppard headlining. Photo ops, autograph sessions, VIP packages with Gold admission available. Also check: Las Vegas (dates TBA), Boston (Jun 12–14), Charlotte (Sep 25–27).',
+    source:'Creation Entertainment — creationent.com'
+  }
+];
+
+// ─── STATE ───────────────────────────────────────────────────────────────────
+let events = [];
+let activeFilters = new Set(); // empty = all sports shown
+let countryFlagMap = {};
+
+async function loadCountries() {
+  try {
+    const r = await fetch('https://restcountries.com/v3.1/all?fields=name,flag');
+    const countries = await r.json();
+    const dl = document.getElementById('rgn-list');
+    countries.sort((a,b) => a.name.common.localeCompare(b.name.common));
+    countries.forEach(c => {
+      countryFlagMap[c.name.common.toLowerCase()] = c.flag;
+      const opt = document.createElement('option');
+      opt.value = c.name.common;
+      dl.appendChild(opt);
+    });
+  } catch { /* fail silently */ }
+}
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+function init() {
+  const raw = localStorage.getItem(KEY);
+  if (raw) {
+    try {
+      const saved = JSON.parse(raw);
+      // Always inject latest seeds; preserve user-added custom events
+      const custom = saved.filter(e => !SEEDS.find(s => s.id === e.id));
+      events = [...SEEDS, ...custom];
+    } catch { events = [...SEEDS]; }
+  } else {
+    events = [...SEEDS];
+  }
+  save();
+  render();
+  updateBar();
+  loadCountries();
+  // Auto-update from web if 24+ hours since last run
+  checkAutoUpdate();
+}
+
+function save() { localStorage.setItem(KEY, JSON.stringify(events)); }
+
+function windowDates() {
+  const now = new Date(); now.setHours(0,0,0,0);
+  const end = new Date(now); end.setMonth(end.getMonth() + 5);
+  return { now, end };
+}
+
+// ─── AUTO-UPDATE ──────────────────────────────────────────────────────────────
+function checkAutoUpdate() {
+  const last = localStorage.getItem(UPDATE_KEY);
+  const now  = Date.now();
+  const MS_24H = 24 * 60 * 60 * 1000;
+  if (!last || (now - parseInt(last, 10)) > MS_24H) {
+    fetchLive(true);
+  }
+}
+
+// ─── REGION FILTER ────────────────────────────────────────────────────────────
+// Maps typed region names → flag emojis present in city fields.
+// If the typed value isn't in this map, it falls back to plain text search in city.
+const REGION_MAP = {
+  'americas':       ['🇺🇸','🇨🇦','🇲🇽','🇧🇷','🇦🇷','🇨🇴','🇵🇪','🇨🇱'],
+  'uk & ireland':   ['🇬🇧','🇮🇪'],
+  'europe':         ['🇫🇷','🇮🇹','🇪🇸','🇩🇪','🇵🇹','🇳🇱','🇧🇪','🇦🇹','🇨🇭','🇵🇱','🇭🇺','🇬🇷','🇸🇪','🇩🇰','🇳🇴','🇫🇮','🇷🇴','🇨🇿','🇷🇺'],
+  'usa':            ['🇺🇸'],  'united states':  ['🇺🇸'],  'america':        ['🇺🇸'],
+  'uk':             ['🇬🇧'],  'united kingdom': ['🇬🇧'],  'britain':        ['🇬🇧'],  'england':        ['🇬🇧'],
+  'ireland':        ['🇮🇪'],
+  'france':         ['🇫🇷'],  'italy':          ['🇮🇹'],  'spain':          ['🇪🇸'],  'germany':        ['🇩🇪'],
+  'canada':         ['🇨🇦'],  'hungary':        ['🇭🇺'],  'portugal':       ['🇵🇹'],  'netherlands':    ['🇳🇱'],
+  'belgium':        ['🇧🇪'],  'austria':        ['🇦🇹'],  'switzerland':    ['🇨🇭'],  'poland':         ['🇵🇱'],
+  'greece':         ['🇬🇷'],  'sweden':         ['🇸🇪'],  'norway':         ['🇳🇴'],  'denmark':        ['🇩🇰'],
+};
+
+function matchRegion(city, q) {
+  if (!q) return true;
+  const flags = REGION_MAP[q];
+  if (flags) return flags.some(f => (city || '').includes(f));
+  // Free-text fallback: search city string directly (e.g. "New York", "London", "Texas")
+  return (city || '').toLowerCase().includes(q);
+}
+
+// ─── RENDER ───────────────────────────────────────────────────────────────────
+function render() {
+  const q   = document.getElementById('q').value.toLowerCase().trim();
+  const srt = document.getElementById('srt').value;
+  const rgn = document.getElementById('rgn').value.trim().toLowerCase();
+  const { now, end } = windowDates();
+  const cutoff = new Date(now); cutoff.setDate(cutoff.getDate() - 14);
+
+  let list = events.filter(e => {
+    const d = new Date(e.date + 'T12:00:00');
+    if (isNaN(d) || d > end || d < cutoff) return false;
+    if (activeFilters.size > 0 && !activeFilters.has(e.sport)) return false;
+    if (!matchRegion(e.city, rgn)) return false;
+    if (q) {
+      const h = [e.player,e.venue,e.city,e.notes,e.source].join(' ').toLowerCase();
+      if (!h.includes(q)) return false;
+    }
+    return true;
+  });
+
+  list.sort((a,b) => {
+    if (srt === 'date-asc')  return new Date(a.date) - new Date(b.date);
+    if (srt === 'date-desc') return new Date(b.date) - new Date(a.date);
+    return a.player.localeCompare(b.player);
+  });
+
+  // stats
+  const win = events.filter(e => { const d = new Date(e.date+'T12:00:00'); return !isNaN(d) && d >= now && d <= end; });
+  const mo  = now.getMonth(), yr = now.getFullYear();
+  const statDefs = [
+    { ic:'📅', n:win.length,                                                                                                     lb:'Total Events',  f:null,          cls:null  },
+    { ic:'⚽', n:win.filter(e=>e.sport==='soccer').length,                                                                       lb:'Soccer',        f:'soccer',      cls:'soc' },
+    { ic:'🏀', n:win.filter(e=>e.sport==='basketball').length,                                                                   lb:'Basketball',    f:'basketball',  cls:'bsk' },
+    { ic:'🏅', n:win.filter(e=>e.sport==='other').length,                                                                        lb:'Other Sports',  f:'other',       cls:'oth' },
+    { ic:'🏛️', n:win.filter(e=>e.sport==='politics').length,                                                                    lb:'Politics',      f:'politics',    cls:'pol' },
+    { ic:'⭐', n:win.filter(e=>e.sport==='celeb').length,                                                                        lb:'Celebrity',     f:'celeb',       cls:'cel' },
+    { ic:'🗓', n:win.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return d.getMonth()===mo&&d.getFullYear()===yr; }).length, lb:'This Month',    f:null,          cls:null  },
+  ];
+  document.getElementById('stats').innerHTML = statDefs.map(({ic,n,lb,f,cls}) => {
+    const active = f && activeFilters.has(f);
+    return `<div class="stat${f?' filterable':''}${active?` active-${cls}`:''}"${f?` onclick="toggleFilter('${f}')" title="Click to filter · click again to deselect"`:''}>
+      <span style="font-size:1.3rem">${ic}</span><div><div class="stat-n">${n}</div><div class="stat-l">${lb}</div></div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('grid').innerHTML = list.length
+    ? list.map(cardHTML).join('')
+    : `<div class="empty"><div class="ei">🔍</div><p>No events found. Adjust filters or click Update from Web.</p></div>`;
+  loadPhotos();
+}
+
+function fmtDate(date, time) {
+  const d = new Date(date + 'T12:00:00');
+  let s = d.toLocaleDateString('en-GB', {weekday:'short', day:'numeric', month:'short', year:'numeric'});
+  if (time) { const [h,m]=time.split(':'); const t=new Date(); t.setHours(+h,+m); s+=' · '+t.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}); }
+  return s;
+}
+
+function countdown(date) {
+  const now = new Date(); now.setHours(0,0,0,0);
+  const d = new Date(date+'T12:00:00');
+  if (d < now) return '<span style="color:#f44336">Past</span>';
+  const diff = Math.round((d-now)/86400000);
+  if (diff===0) return '<span style="color:var(--orange);font-weight:700">Today!</span>';
+  if (diff===1) return '<span style="color:var(--orange)">Tomorrow</span>';
+  if (diff<=7)  return `<span style="color:#ffd740">In ${diff} days</span>`;
+  return `<span style="color:var(--dim)">In ${diff} days</span>`;
+}
+
+const SPORT_META = {
+  soccer:     { icon:'⚽', cls:'soc', lbl:'Soccer' },
+  basketball: { icon:'🏀', cls:'bsk', lbl:'Basketball' },
+  other:      { icon:'🏅', cls:'oth', lbl:'Other Sport' },
+  politics:   { icon:'🏛️', cls:'pol', lbl:'Politics' },
+  celeb:      { icon:'⭐', cls:'cel', lbl:'Celebrity' }
+};
+
+// ─── PLAYER PHOTO LOOKUP ──────────────────────────────────────────────────────
+const photoCache = {}; // playerName → url | 'none' | 'loading'
+
+// Extract the most recognisable single player name from the player field.
+function extractMainPlayer(str) {
+  const GENERIC = ['legends','players','inductees','squad','team','stars',
+                   'hall','nfl','nba','mlb','nhl','wnba','experience','draft',
+                   'festival','spectacular','convention','weekend','event','show'];
+  function isGeneric(name) {
+    const l = name.toLowerCase();
+    return GENERIC.some(w => l.includes(w)) || name.split(' ').length > 4;
+  }
+  function firstPerson(seg) {
+    const parts = seg.split(/[,&+]/).map(s => s.trim().replace(/\s*\(.*?\)/g,'').trim()).filter(s=>s.length>1);
+    return parts[0] || '';
+  }
+  const segs = str.split(/\s*[–—]\s*/);
+  for (const seg of segs) {
+    const name = firstPerson(seg);
+    if (!name || isGeneric(name)) continue;
+    const words = name.split(' ').filter(Boolean);
+    if (words.length >= 2 && words.length <= 4 && /^[A-ZÀ-ÿ]/.test(words[0])) return name;
+  }
+  return null;
+}
+
+async function fetchWikiPhoto(name) {
+  if (photoCache[name] !== undefined) return photoCache[name] === 'none' || photoCache[name] === 'loading' ? null : photoCache[name];
+  photoCache[name] = 'loading';
+  try {
+    const url = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(name)}&prop=pageimages&pithumbsize=120&format=json&origin=*`;
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 5000);
+    const r = await fetch(url, { signal: ctrl.signal });
+    clearTimeout(t);
+    const data = await r.json();
+    const pages = Object.values(data?.query?.pages || {});
+    const thumb = pages[0]?.thumbnail?.source || null;
+    photoCache[name] = thumb || 'none';
+    return thumb;
+  } catch { photoCache[name] = 'none'; return null; }
+}
+
+function applyPhoto(img, src) {
+  if (img.dataset.loaded === '1') return;
+  img.dataset.loaded = '1';
+  img.onload = () => {
+    img.style.display = 'block';
+    const fb = img.nextElementSibling;
+    if (fb) fb.style.display = 'none';
+  };
+  img.onerror = () => { photoCache[img.dataset.player] = 'none'; img.dataset.loaded = ''; };
+  img.src = src;
+}
+
+function loadPhotos() {
+  document.querySelectorAll('.av-img[data-player]').forEach(img => {
+    const name = img.dataset.player;
+    const cached = photoCache[name];
+    if (cached && cached !== 'loading' && cached !== 'none') { applyPhoto(img, cached); return; }
+    if (cached === 'none') return;
+    if (cached === 'loading') return;
+    fetchWikiPhoto(name).then(url => {
+      if (!url) return;
+      document.querySelectorAll('.av-img[data-player]').forEach(el => {
+        if (el.dataset.player === name) applyPhoto(el, url);
+      });
+    });
+  });
+}
+
+function cardHTML(e) {
+  const { icon, cls, lbl } = SPORT_META[e.sport] || SPORT_META.other;
+  const past  = new Date(e.date+'T12:00:00') < new Date();
+  const hasLink = e.link && e.link.startsWith('http');
+  const isSocial = hasLink && /(instagram\.com|twitter\.com|x\.com\/\w+\/status|facebook\.com|tiktok\.com)/.test(e.link);
+  const linkCls = !hasLink ? 'none' : isSocial ? 'social-lnk' : cls;
+  const linkTxt = !hasLink ? 'Registration link TBA' : isSocial ? '📱 View Post →' : `🎟 Register / Get Tickets →`;
+  const langFlag = e.lang && LANG_FLAGS[e.lang] ? LANG_FLAGS[e.lang] : '';
+  const langName = e.lang && LANG_NAMES[e.lang] ? LANG_NAMES[e.lang] : '';
+  const transBadge = langFlag
+    ? `<span style="display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:20px;font-size:.65rem;font-weight:700;background:rgba(255,255,255,.06);color:var(--dim);border:1px solid var(--border);margin-left:5px;">🌐 ${langFlag} Translated from ${langName}</span>`
+    : '';
+  const mainPlayer = extractMainPlayer(e.player);
+  const avInner = mainPlayer
+    ? `<img class="av-img" data-player="${esc(mainPlayer)}" alt="${esc(mainPlayer)}" /><span class="av-fb">${icon}</span>`
+    : icon;
+
+  return `<div class="card ${cls}${past?' past':''}" id="c-${e.id}">
+    ${past ? '<span class="past-tag">⚠️ Past Event — Reference</span>' : ''}
+    <div class="ch">
+      <div class="av ${cls}">${avInner}</div>
+      <div style="flex:1">
+        <div class="pname">${esc(e.player)}</div>
+        <span class="badge ${cls}">${icon} ${lbl}</span>${transBadge}
+      </div>
+      <div class="cbns">
+        <button class="ibtn" onclick="openEdit('${e.id}')" title="Edit">✏️</button>
+        <button class="ibtn del" onclick="delEvt('${e.id}')" title="Delete">🗑</button>
+      </div>
+    </div>
+    <div class="dets">
+      <div class="dr"><span class="di">📅</span><div><span class="dt">${fmtDate(e.date,e.time)}</span><br><span class="dd" style="font-size:.74rem">${countdown(e.date)}</span></div></div>
+      <div class="dr"><span class="di">📍</span><div><span class="dt">${esc(e.venue)}</span>${e.city?`<br><span class="dd">${esc(e.city)}</span>`:''}</div></div>
+      ${e.notes?`<div class="dr"><span class="di">ℹ️</span><span class="dt dd" style="font-size:.8rem">${esc(e.notes)}</span></div>`:''}
+    </div>
+    <div class="cf">
+      ${hasLink
+        ? `<a href="${esc(e.link)}" target="_blank" rel="noopener" class="rl ${linkCls}">${linkTxt}</a>`
+        : `<span class="rl none">${linkTxt}</span>`}
+      ${e.source?`<div class="src">🔗 ${esc(e.source)}</div>`:''}
+    </div>
+  </div>`;
+}
+
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ─── FILTER ───────────────────────────────────────────────────────────────────
+function toggleFilter(sport) {
+  if (activeFilters.has(sport)) activeFilters.delete(sport);
+  else activeFilters.add(sport);
+  render();
+}
+
+// ─── ADD / EDIT ───────────────────────────────────────────────────────────────
+function openAdd() {
+  document.getElementById('mtitle').textContent = 'Add Event';
+  document.getElementById('eid').value = '';
+  ['fp','fv','fc','fl','fn','fsr','ft'].forEach(id => document.getElementById(id).value='');
+  document.getElementById('fs').value = 'soccer';
+  document.getElementById('fd').value = new Date().toISOString().split('T')[0];
+  document.getElementById('mo').classList.add('open');
+}
+function openEdit(id) {
+  const e = events.find(x=>x.id===id); if(!e) return;
+  document.getElementById('mtitle').textContent = 'Edit Event';
+  document.getElementById('eid').value  = id;
+  document.getElementById('fp').value   = e.player||'';
+  document.getElementById('fs').value   = e.sport||'soccer';
+  document.getElementById('fd').value   = e.date||'';
+  document.getElementById('ft').value   = e.time||'';
+  document.getElementById('fv').value   = e.venue||'';
+  document.getElementById('fc').value   = e.city||'';
+  document.getElementById('fl').value   = e.link||'';
+  document.getElementById('fn').value   = e.notes||'';
+  document.getElementById('fsr').value  = e.source||'';
+  document.getElementById('mo').classList.add('open');
+}
+function closeMo() { document.getElementById('mo').classList.remove('open'); }
+function saveEvt() {
+  const player = document.getElementById('fp').value.trim();
+  const date   = document.getElementById('fd').value;
+  const venue  = document.getElementById('fv').value.trim();
+  if (!player||!date||!venue) { alert('Player name, date and venue are required.'); return; }
+  const id = document.getElementById('eid').value;
+  const data = { player, sport:document.getElementById('fs').value, date,
+    time:document.getElementById('ft').value, venue,
+    city:document.getElementById('fc').value.trim(),
+    link:document.getElementById('fl').value.trim(),
+    notes:document.getElementById('fn').value.trim(),
+    source:document.getElementById('fsr').value.trim()||'Manual entry' };
+  if (id) { const i=events.findIndex(e=>e.id===id); if(i!==-1) events[i]={...events[i],...data}; }
+  else    { data.id='evt_'+Date.now(); events.push(data); }
+  save(); closeMo(); render(); toast('ok','Saved!',player);
+}
+function delEvt(id) {
+  const e=events.find(x=>x.id===id); if(!e) return;
+  if(!confirm(`Delete "${e.player}"?`)) return;
+  events=events.filter(x=>x.id!==id); save(); render(); toast('ok','Deleted','');
+}
+
+// ─── WEB UPDATE ───────────────────────────────────────────────────────────────
+const API_KEY = '5e933de55172278f15273bac3e53127532dc2df7a07d55efb3bd64583261f756';
+
+// Keywords for relevance filtering across all supported languages
+const RELEVANT_WORDS = ['meet','sign','greet','autograph','dinner','firma','dédicace','autografi','incontro','légende','leyenda','autogramm','signing','appari','book signing','book tour','book launch','firma libro','dédicace livre','buchsign','presentacion libro','vip package','vip meet','fan event','fan day','player appearance','athlete appearance'];
+
+const QUERIES = [
+  // ── Soccer / Football ──
+  { q:'soccer football player meet greet autograph signing 2026',         lang:'en' },
+  { q:'football legends dinner autograph 2026 UK',                        lang:'en' },
+  { q:'MLS soccer player meet greet fan event 2026',                      lang:'en' },
+  { q:'firma autografos futbolista 2026',                                  lang:'es' },
+  { q:'cena leyendas futbol jugador 2026',                                 lang:'es' },
+  { q:'La Liga jugador firma autografos evento fans 2026',                 lang:'es' },
+  { q:'seance dedicaces footballeur 2026 france',                          lang:'fr' },
+  { q:'firma autografi calciatore 2026',                                   lang:'it' },
+  { q:'Autogrammstunde Fussball 2026',                                     lang:'de' },
+  // ── Basketball ──
+  { q:'NBA basketball player autograph signing meet greet 2026',          lang:'en' },
+  { q:'basketball player fan event autograph New York 2026',              lang:'en' },
+  // ── Other Sports ──
+  { q:'Simone Biles autograph signing meet greet 2026',                   lang:'en' },
+  { q:'olympic athlete gymnast autograph signing fan event 2026',         lang:'en' },
+  { q:'Usain Bolt fan event appearance 2026',                              lang:'en' },
+  // ── Brand stores ──
+  { q:'Nike store athlete appearance meet greet event 2026',              lang:'en' },
+  { q:'Adidas store athlete meet greet signing 2026',                     lang:'en' },
+  { q:'Puma Under Armour store athlete appearance event 2026',            lang:'en' },
+  // ── NYC-specific ──
+  { q:'athlete autograph signing New York 2026',                          lang:'en' },
+  { q:'sports signing event New York City 2026 eventbrite',               lang:'en' },
+  // ── Venue-specific direct queries (catch events generic searches miss) ──
+  { q:'site:fitermansports.com autograph signing 2026',                   lang:'en' },
+  { q:'site:cravetheauto.com autograph signing basketball soccer 2026',   lang:'en' },
+  { q:'site:sportswaxpromotions.com autograph signing guest 2026',        lang:'en' },
+  { q:'site:halloffamesignings.com autograph signing 2026',               lang:'en' },
+  { q:'site:gtsportsshows.com autograph signing 2026',                    lang:'en' },
+  // ── Card shows & multi-sport conventions ──
+  { q:'NFL MLB NBA autograph signing card show convention 2026',          lang:'en' },
+  { q:'sports card show celebrity guest autograph 2026 USA',              lang:'en' },
+  // ── Baseball & Hall of Fame ──
+  { q:'baseball Hall of Fame autograph signing 2026',                     lang:'en' },
+  // ── Book signings / talks ──
+  { q:'athlete sports star book signing tour meet fans 2026',             lang:'en' },
+  { q:'footballer soccer player book signing bookshop 2026',              lang:'en' },
+  { q:'NBA basketball player book signing event 2026',                    lang:'en' },
+  { q:'firma libro futbolista deportista presentacion 2026',              lang:'es' },
+  { q:'dédicace livre footballeur sportif 2026',                          lang:'fr' },
+  { q:'presentazione libro calciatore firma copie 2026',                  lang:'it' },
+  { q:'Buchsignierung Buchpräsentation Sportler Fussball 2026',           lang:'de' },
+  // ── Social media – Soccer player posts ──
+  { q:'Messi Ronaldo Mbappe Haaland Bellingham meet greet fan event 2026 instagram', lang:'en' },
+  { q:'Pulisic "Trinity Rodman" "Sophia Smith" Vinicius meet greet signing 2026',    lang:'en' },
+  { q:'soccer footballer meet greet fan appearance 2026 site:instagram.com',         lang:'en' },
+  { q:'futbolista firma autografos meet greet 2026 instagram twitter',               lang:'es' },
+  { q:'footballeur rencontre fans séance dédicaces 2026 instagram',                  lang:'fr' },
+  // ── Social media – NBA player posts ──
+  { q:'LeBron Curry Giannis "Luka Doncic" Jokic meet greet fan event 2026 instagram', lang:'en' },
+  { q:'Tatum Embiid Lillard "Ja Morant" "Jaylen Brown" meet greet signing 2026',      lang:'en' },
+  { q:'NBA player meet greet fan day appearance 2026 site:instagram.com',              lang:'en' },
+  // ── Politics – named leaders ──
+  { q:'"Tony Blair" meet greet book signing VIP fans 2026',                            lang:'en' },
+  { q:'"Barack Obama" OR "Michelle Obama" book signing meet greet VIP 2026',           lang:'en' },
+  { q:'"Hillary Clinton" OR "Bill Clinton" book signing meet greet 2026',              lang:'en' },
+  { q:'"Boris Johnson" book signing meet greet VIP 2026',                              lang:'en' },
+  { q:'"Keir Starmer" OR "Rishi Sunak" meet greet public event 2026',                 lang:'en' },
+  { q:'"Emmanuel Macron" OR "Angela Merkel" rencontre dédicace livre 2026',           lang:'fr' },
+  { q:'"Donald Trump" OR "Kamala Harris" book signing meet greet fans 2026',          lang:'en' },
+  // ── Politics – general ──
+  { q:'politician senator governor president meet greet book signing VIP 2026',        lang:'en' },
+  { q:'political book signing author VIP meet fans town hall 2026',                    lang:'en' },
+  { q:'politician rencontre citoyens signature livre VIP 2026',                        lang:'fr' },
+  { q:'politico firma libro encuentro ciudadanos VIP 2026',                            lang:'es' },
+  { q:'Politiker Bürgerdialog Autogrammstunde Buch 2026',                              lang:'de' },
+  // ── Celebrities ──
+  { q:'celebrity actor musician meet greet fan signing event 2026',                   lang:'en' },
+  { q:'comic con celebrity autograph photo op fan meet 2026',                          lang:'en' },
+  { q:'fan expo celebrity guest autograph signing 2026',                               lang:'en' },
+  { q:'site:barnesandnoble.com celebrity author meet greet signing event 2026',       lang:'en' },
+  { q:'barnes noble celebrity author meet greet book signing 2026',                   lang:'en' },
+  { q:'celebrity rencontre fans dédicace 2026',                                        lang:'fr' },
+  { q:'famoso firma autografos encuentro fans 2026',                                   lang:'es' },
+  // ── Convention / Comic-Con venue-specific ──
+  { q:'site:fanexpohq.com celebrity guests photo op autograph 2026',                  lang:'en' },
+  { q:'site:awesome-con.com celebrity guests photo op autograph 2026',                lang:'en' },
+  { q:'site:motorcitycomiccon.com celebrity guests photo op 2026',                    lang:'en' },
+  { q:'site:creationent.com convention guests photo op autograph 2026',               lang:'en' },
+  { q:'site:galaxycon.com celebrity guests photo op autograph 2026',                  lang:'en' },
+  { q:'"fan expo" celebrity guest autograph photo op 2026 USA',                       lang:'en' },
+  { q:'"galaxy con" celebrity guest autograph photo op 2026',                          lang:'en' },
+  { q:'"wizard world" OR "awesome con" celebrity autograph photo op 2026',            lang:'en' },
+  { q:'comic con celebrity autograph photo op VIP meet greet 2026 USA',               lang:'en' }
+];
+
+async function fetchOne({ q, lang }) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 8000);
+  try {
+    const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${API_KEY}`;
+    const r = await fetch(url, { signal: controller.signal });
+    clearTimeout(timer);
+    if (!r.ok) return [];
+    const data = await r.json();
+    const out = [];
+    for (const res of (data.organic_results || [])) {
+      const combined = (res.title + ' ' + (res.snippet || '')).toLowerCase();
+      if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
+      if (!combined.includes('2026')) continue;
+      if (!res.link) continue;
+      // Exclude mail-in signings and private-only sessions
+      const isMailIn  = combined.includes('mail-in') || combined.includes('mail in signing') || combined.includes('ship your') || combined.includes('mail order');
+      const isPrivate = combined.includes('private signing') || combined.includes('private session') || combined.includes('private autograph');
+      if (isMailIn || isPrivate) continue;
+
+      // Political book talks only pass if they include a meet & greet / VIP / signing component
+      const isPoliticalBook = (combined.includes('book') || combined.includes('livre') || combined.includes('libro') || combined.includes('buch')) &&
+        (combined.includes('politician') || combined.includes('senator') || combined.includes('president') ||
+         combined.includes('minister') || combined.includes('governor') || combined.includes('blair') ||
+         combined.includes('obama') || combined.includes('clinton') || combined.includes('trump') ||
+         combined.includes('macron') || combined.includes('starmer') || combined.includes('johnson'));
+      if (isPoliticalBook) {
+        const hasMeetVIP = ['meet','greet','vip','signing','sign','autograph','reception','photo'].some(w => combined.includes(w));
+        if (!hasMeetVIP) continue;
+      }
+      // Legends games/matches only pass if they include a meet & greet or VIP option
+      const isLegendsGame = combined.includes('legends game') || combined.includes('legends match') ||
+        combined.includes('match des légendes') || combined.includes('partido de leyendas') ||
+        combined.includes('partita delle leggende') || combined.includes('spiel der legenden') ||
+        combined.includes('legends cup') || combined.includes('classic match');
+      if (isLegendsGame) {
+        const hasMeetOption = ['meet','greet','autograph','vip','signing','firma','dédicace','photo op','photo session'].some(w => combined.includes(w));
+        if (!hasMeetOption) continue;
+      }
+      const isBball    = combined.includes('basketball') || combined.includes('nba') || combined.includes('baloncesto');
+      const isPolitics = !isBball && (
+        combined.includes('senator') || combined.includes('congressman') || combined.includes('president') ||
+        combined.includes('governor') || combined.includes('politician') || combined.includes('town hall') ||
+        combined.includes('campaign meet') || combined.includes('political meet') || combined.includes('ministre') ||
+        combined.includes('politico') || combined.includes('diputado') || combined.includes('alcalde')
+      );
+      const isCeleb    = !isBball && !isPolitics && (
+        combined.includes('actor') || combined.includes('actress') || combined.includes('musician') ||
+        combined.includes('singer') || combined.includes('comedian') || combined.includes('comic con') ||
+        combined.includes('fan convention') || combined.includes('fan expo') || combined.includes('celebrity meet') ||
+        combined.includes('celebrity signing') || combined.includes('cast member') || combined.includes('youtuber') ||
+        combined.includes('influencer meet') || combined.includes('entertainer')
+      );
+      const isOther    = !isBball && !isPolitics && !isCeleb && (
+        combined.includes('gymnast') || combined.includes('olympic') || combined.includes('swimmer') ||
+        combined.includes('athletics') || combined.includes('biles') || combined.includes('bolt') ||
+        combined.includes('ledecky') || combined.includes('nike store') || combined.includes('adidas store') ||
+        combined.includes('puma store') || combined.includes('nfl') || combined.includes('mlb') ||
+        combined.includes('baseball') || combined.includes('football player') || combined.includes('nhl') ||
+        combined.includes('hockey') || combined.includes('card show') || combined.includes('convention')
+      );
+      out.push({
+        link:   res.link,
+        player: res.title.substring(0, 80),
+        sport:  isBball ? 'basketball' : isPolitics ? 'politics' : isCeleb ? 'celeb' : isOther ? 'other' : 'soccer',
+        date:   guessDate(combined) || new Date().toISOString().split('T')[0],
+        notes:  (res.snippet || '').substring(0, 200) + (lang !== 'en' ? ` [${LANG_NAMES[lang] || lang}]` : ''),
+        source: res.displayed_link || 'Web search',
+        lang:   lang !== 'en' ? lang : undefined
+      });
+    }
+    return out;
+  } catch {
+    clearTimeout(timer);
+    return [];
+  }
+}
+
+async function fetchLive(auto = false) {
+  const btn = document.getElementById('updBtn');
+  btn.classList.add('loading'); btn.disabled = true;
+  if (!auto) toast('ok', '🔄 Searching…', 'Checking all sources in parallel…');
+
+  // Run ALL queries in parallel — no blocking on a single slow/failed query
+  const results = await Promise.allSettled(QUERIES.map(fetchOne));
+
+  let added = 0;
+  const existingLinks = new Set(events.map(e => e.link).filter(Boolean));
+
+  for (const r of results) {
+    if (r.status !== 'fulfilled') continue;
+    for (const item of r.value) {
+      if (existingLinks.has(item.link)) continue;
+      existingLinks.add(item.link);
+      events.push({
+        id: 'web_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5),
+        time: '', venue: '', city: '',
+        ...item
+      });
+      added++;
+    }
+  }
+
+  localStorage.setItem(UPDATE_KEY, Date.now().toString());
+  save(); render(); updateBar();
+
+  const ok = results.some(r => r.status === 'fulfilled' && r.value.length >= 0);
+  if (!ok) {
+    toast('err', 'API Error', 'Could not reach SerpAPI. Check your connection or API key.');
+  } else if (!auto || added > 0) {
+    toast('ok', auto ? 'Auto-updated' : 'Update complete', added > 0 ? `${added} new events found` : 'Already up to date.');
+  }
+
+  btn.classList.remove('loading'); btn.disabled = false;
+}
+
+function guessDate(t) {
+  const m={'january':'01','february':'02','march':'03','april':'04','may':'05','june':'06',
+           'july':'07','august':'08','september':'09','october':'10','november':'11','december':'12'};
+  for (const [n,v] of Object.entries(m)) {
+    const x=t.match(new RegExp(n+'\\s+(\\d{1,2})[,\\s]+2026'));
+    if(x) return `2026-${v}-${x[1].padStart(2,'0')}`;
+  }
+  return null;
+}
+
+// ─── EXPORT ───────────────────────────────────────────────────────────────────
+function exportData() {
+  const {now,end} = windowDates();
+  const exp = events.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return !isNaN(d)&&d>=now&&d<=end; });
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(exp,null,2)],{type:'application/json'}));
+  a.download=`meet-greet-${new Date().toISOString().split('T')[0]}.json`; a.click();
+}
+
+// ─── SOURCES PANEL ───────────────────────────────────────────────────────────
+function toggleSources() {
+  const p = document.getElementById('spanel');
+  const hidden = getComputedStyle(p).display === 'none';
+  p.style.display = hidden ? 'block' : 'none';
+  if (hidden) setTimeout(() => p.scrollIntoView({ behavior: 'smooth', block: 'start' }), 30);
+}
+
+// ─── TOAST ───────────────────────────────────────────────────────────────────
+function toast(type, title, body) {
+  const el=document.getElementById('toast');
+  document.getElementById('toast-t').textContent=title;
+  document.getElementById('toast-b').textContent=body;
+  el.className=`toast ${type} show`;
+  setTimeout(()=>el.classList.remove('show'),5000);
+}
+
+// ─── UPDATE BAR (with last-run timestamp) ─────────────────────────────────────
+function updateBar() {
+  const {now,end}=windowDates();
+  const n=events.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return !isNaN(d)&&d>=now&&d<=end; }).length;
+
+  document.getElementById('barTxt').textContent =
+    `${n} events · Sports ⚽🏀🏅 · Politics 🏛️ · Celebrity ⭐ · `+
+    `USA 🇺🇸 UK 🇬🇧 France 🇫🇷 Italy 🇮🇹 Spain 🇪🇸 + more 🌍 · Auto-updates daily → 📚 Sources`;
+
+  const last = localStorage.getItem(UPDATE_KEY);
+  const dot  = document.getElementById('tsDot');
+  const lbl  = document.getElementById('tsLabel');
+  if (!last) {
+    dot.className = 'ts-dot never';
+    lbl.textContent = 'Last web update: not yet run';
+  } else {
+    const ago = Date.now() - parseInt(last, 10);
+    const MS_2H  = 2  * 60 * 60 * 1000;
+    const MS_24H = 24 * 60 * 60 * 1000;
+    const dt = new Date(parseInt(last, 10));
+    const formatted = dt.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})
+                    + ' ' + dt.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
+    dot.className = 'ts-dot' + (ago < MS_2H ? '' : ago < MS_24H ? ' stale' : ' never');
+    lbl.textContent = `Last web update: ${formatted}`;
+  }
+}
+
+// ─── MODAL CLOSE ON BACKDROP ─────────────────────────────────────────────────
+document.getElementById('mo').addEventListener('click', e => { if(e.target===e.currentTarget) closeMo(); });
+
+init();
+</script>
+</body>
+</html>
