@@ -260,9 +260,97 @@
     .sc-n { font-size:.82rem; font-weight:700; color:var(--text); margin-bottom:3px; }
     .sc-d { font-size:.72rem; color:var(--dim); line-height:1.4; }
 
-    @media (max-width:600px) {
+    /* ── CARD ENTRY ANIMATION ── */
+    @keyframes cardIn { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
+    .card { animation: cardIn .32s ease both; }
+
+    /* ── MARK / HIGHLIGHT ── */
+    mark { background:rgba(255,215,64,.32); color:inherit; border-radius:2px; padding:0 1px; }
+
+    /* ── NEW BADGE ── */
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+    .new-badge {
+      display:inline-block; padding:1px 7px; border-radius:4px; font-size:.65rem; font-weight:800;
+      background:rgba(0,200,83,.15); color:var(--green); border:1px solid rgba(0,200,83,.35);
+      margin-bottom:6px; animation:pulse 2s ease infinite; letter-spacing:.06em;
+    }
+
+    /* ── VIEW TOGGLE ── */
+    .view-toggle { display:flex; gap:3px; background:var(--card); border:1px solid var(--border); border-radius:8px; padding:3px; flex-shrink:0; }
+    .vt-btn { padding:5px 9px; border-radius:5px; border:none; background:transparent; color:var(--dim); cursor:pointer; font-size:.85rem; transition:all .2s; }
+    .vt-btn.active { background:var(--surface); color:var(--text); }
+    .grid.list-view { grid-template-columns:1fr; gap:8px; }
+    .grid.list-view .card { flex-direction:row; align-items:flex-start; padding:12px 16px; gap:14px; flex-wrap:wrap; }
+    .grid.list-view .card .ch { flex:1; min-width:200px; }
+    .grid.list-view .card .dets { flex:2; min-width:200px; flex-direction:row; flex-wrap:wrap; gap:6px 18px; }
+    .grid.list-view .card .cf { flex:0 0 180px; margin-top:0; padding-top:0; border-top:none; border-left:1px solid var(--border); padding-left:14px; }
+    .grid.list-view .card .card-acts { flex-direction:column; margin-top:6px; gap:4px; }
+    .grid.list-view .card .act-btn { font-size:.7rem; padding:5px 8px; white-space:nowrap; }
+
+    /* ── TIMELINE GROUPS ── */
+    .tgroup { margin-bottom:28px; }
+    .tgroup-header {
+      font-size:.76rem; font-weight:800; color:var(--dim); text-transform:uppercase;
+      letter-spacing:.1em; margin-bottom:12px; padding-bottom:8px;
+      border-bottom:1px solid var(--border); display:flex; align-items:center; gap:8px;
+    }
+    .tgroup-header .tc {
+      background:var(--surface); border:1px solid var(--border);
+      border-radius:20px; padding:1px 8px; font-size:.68rem; font-weight:700; color:var(--dim);
+    }
+    .tgroup.spotlight .tgroup-header { color:var(--orange); border-color:rgba(255,109,0,.28); }
+    .tgroup.spotlight .grid {
+      padding:14px; background:rgba(255,109,0,.04); border-radius:12px;
+      border:1px solid rgba(255,109,0,.12);
+    }
+
+    /* ── MOBILE DRAWER ── */
+    .filter-fab {
+      display:none; position:fixed; bottom:22px; left:50%; transform:translateX(-50%);
+      background:linear-gradient(135deg,var(--green),#009624); color:#fff; border:none;
+      border-radius:24px; padding:11px 24px; font-size:.85rem; font-weight:700;
+      box-shadow:0 4px 20px rgba(0,200,83,.4); cursor:pointer; z-index:150;
+      gap:7px; align-items:center; white-space:nowrap;
+    }
+    .drawer-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.55); z-index:160; }
+    .drawer-overlay.open { display:block; }
+    .filter-drawer {
+      position:fixed; bottom:0; left:0; right:0; z-index:170;
+      background:var(--surface); border-top:1px solid var(--border);
+      border-radius:20px 20px 0 0; padding:16px 20px 36px;
+      transform:translateY(100%); transition:transform .3s cubic-bezier(.4,0,.2,1);
+      max-height:85vh; overflow-y:auto;
+    }
+    .filter-drawer.open { transform:translateY(0); }
+    .drawer-handle { width:40px; height:4px; background:var(--border); border-radius:2px; margin:0 auto 16px; }
+
+    /* ── THEME BUTTON ── */
+    .theme-btn { width:34px; height:34px; border-radius:8px; border:1px solid var(--border); background:var(--card); cursor:pointer; font-size:1rem; display:flex; align-items:center; justify-content:center; transition:all .2s; }
+    .theme-btn:hover { background:var(--border); }
+
+    /* ── LIGHT MODE ── */
+    body.light {
+      --bg:#f0f2f8; --surface:#ffffff; --card:#f8f9ff; --border:#dde1f0; --text:#1a1d2e; --dim:#6b7280;
+    }
+    body.light header { background:linear-gradient(135deg,#ffffff,#f0f2f8); }
+    body.light .btn-s { background:#f0f2f8; color:#1a1d2e; }
+    body.light .card:hover { box-shadow:0 8px 24px rgba(0,0,0,.1); }
+    body.light mark { background:rgba(255,193,7,.45); }
+    body.light .stat { background:#ffffff; }
+    body.light select.sort, body.light .sbox input, body.light input.rgn-in { background:#f8f9ff; color:#1a1d2e; }
+
+    /* ── PROGRESS BAR ── */
+    .upd-bar { height:3px; background:var(--border); }
+    .upd-bar-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--green),var(--orange)); transition:width .25s ease; }
+
+    @media (max-width:700px) {
       header, .controls, .main, .spanel { padding-left:14px; padding-right:14px; }
-      .grid { grid-template-columns:1fr; }
+      .hbtns .btn span { display:none; }
+      .controls { display:none; }
+      .filter-fab { display:flex; }
+      .stats { overflow-x:auto; flex-wrap:nowrap; padding-bottom:6px; }
+      .stat { flex-shrink:0; }
+      .main { padding-bottom:80px; }
     }
   </style>
 </head>
@@ -274,12 +362,13 @@
     <p>Sports · Politics · Celebrities · USA 🇺🇸 UK 🇬🇧 France 🇫🇷 Italy 🇮🇹 Spain 🇪🇸 &amp; more 🌍 · Named people only · Rolling 5-Month Window</p>
   </div>
   <div class="hbtns">
-    <button class="btn btn-s" onclick="openAdd()">＋ Add Event</button>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle light/dark mode">☀️</button>
+    <button class="btn btn-s" onclick="openAdd()"><span>＋ Add Event</span></button>
     <button class="btn btn-o" id="updBtn" onclick="fetchLive()">
-      <div class="spin"></div>🔄 Update from Web
+      <div class="spin"></div><span>🔄 Update from Web</span>
     </button>
-    <button class="btn btn-s" onclick="exportData()">⬇ Export</button>
-    <button class="btn btn-s" onclick="toggleSources()">📚 Sources</button>
+    <button class="btn btn-s" onclick="exportData()"><span>⬇ Export</span></button>
+    <button class="btn btn-s" onclick="toggleSources()"><span>📚 Sources</span></button>
   </div>
 </header>
 
@@ -287,6 +376,7 @@
   <div class="bar-left" id="barTxt">Loading…</div>
   <div class="bar-ts" id="barTs"><span class="ts-dot never" id="tsDot"></span><span id="tsLabel">Last web update: checking…</span></div>
 </div>
+<div class="upd-bar" id="updBar" style="display:none"><div class="upd-bar-fill" id="updFill"></div></div>
 
 <div class="controls">
   <div class="rgn-wrap">
@@ -322,11 +412,15 @@
     <option value="date-desc">Date ↓ Latest</option>
     <option value="player">Player A–Z</option>
   </select>
+  <div class="view-toggle">
+    <button class="vt-btn" id="vt-grid" onclick="toggleView('grid')" title="Grid view">⊞</button>
+    <button class="vt-btn" id="vt-list" onclick="toggleView('list')" title="List view">☰</button>
+  </div>
 </div>
 
 <div class="main">
   <div class="stats" id="stats"></div>
-  <div class="grid"  id="grid"></div>
+  <div id="grid"></div>
 </div>
 
 <!-- SOURCES PANEL -->
@@ -876,9 +970,31 @@
 
 <div class="toast" id="toast"><div class="toast-t" id="toast-t"></div><div id="toast-b"></div></div>
 
+<!-- Mobile filter drawer -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+<div class="filter-drawer" id="filterDrawer">
+  <div class="drawer-handle"></div>
+  <div style="font-size:.85rem;font-weight:700;margin-bottom:14px">🎛️ Filters &amp; Search</div>
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <div class="rgn-wrap" style="width:100%">
+      <input id="rgn2" class="rgn-in" style="width:100%" list="rgn-list" placeholder="Region or country…" oninput="document.getElementById('rgn').value=this.value;render()" autocomplete="off" />
+    </div>
+    <div class="sbox">
+      <input id="q2" type="text" placeholder="Search player, venue, city…" oninput="document.getElementById('q').value=this.value;render()" />
+    </div>
+    <select class="sort" style="width:100%" onchange="document.getElementById('srt').value=this.value;render()">
+      <option value="date-asc">Date ↑ Soonest</option>
+      <option value="date-desc">Date ↓ Latest</option>
+      <option value="player">Player A–Z</option>
+    </select>
+  </div>
+  <button class="btn btn-g" style="width:100%;margin-top:16px" onclick="closeDrawer()">Apply</button>
+</div>
+<button class="filter-fab" id="filterFab" onclick="openDrawer()">🎛️ Filters</button>
+
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v12';  // bump version → forces fresh seed load
+const KEY        = 'mng_v13';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last fetchLive() run
 
 // ─── LANGUAGE MAP ─────────────────────────────────────────────────────────────
@@ -1513,6 +1629,10 @@ let activeFilters = new Set(); // empty = all sports shown
 let countryFlagMap = {};
 let savedIds = new Set(JSON.parse(localStorage.getItem('mng_saved') || '[]'));
 let showSavedOnly = false;
+let newEventIds = JSON.parse(localStorage.getItem('mng_new') || '{}');
+let viewMode = localStorage.getItem('mng_view') || 'grid';
+let currentQ = '';
+let theme = localStorage.getItem('mng_theme') || (window.matchMedia('(prefers-color-scheme:light)').matches ? 'light' : 'dark');
 
 function toggleSave(id) {
   if (savedIds.has(id)) savedIds.delete(id);
@@ -1588,6 +1708,7 @@ function init() {
     events = [...SEEDS];
   }
   save();
+  applyTheme();
   render();
   updateBar();
   loadCountries();
@@ -1639,7 +1760,8 @@ function matchRegion(city, q) {
 
 // ─── RENDER ───────────────────────────────────────────────────────────────────
 function render() {
-  const q   = document.getElementById('q').value.toLowerCase().trim();
+  currentQ = document.getElementById('q').value.toLowerCase().trim();
+  const q   = currentQ;
   const srt = document.getElementById('srt').value;
   const rgn = document.getElementById('rgn').value.trim().toLowerCase();
   const { now, end } = windowDates();
@@ -1683,13 +1805,41 @@ function render() {
     const onclick = f ? `toggleFilter('${f}')` : sav ? 'toggleSavedFilter()' : '';
     const filterable = !!(f || sav);
     return `<div class="stat${filterable?' filterable':''}${active?' '+activeCls:''}"${filterable?` onclick="${onclick}" title="${sav?'Show saved events only · click again to clear':'Click to filter · click again to deselect'}"`:''}>
-      <span style="font-size:1.3rem">${ic}</span><div><div class="stat-n">${n}</div><div class="stat-l">${lb}</div></div>
+      <span style="font-size:1.3rem">${ic}</span><div><div class="stat-n" data-target="${n}">0</div><div class="stat-l">${lb}</div></div>
     </div>`;
   }).join('');
+  document.querySelectorAll('.stat-n[data-target]').forEach(el => animateCounter(el, +el.dataset.target));
 
-  document.getElementById('grid').innerHTML = list.length
-    ? list.map(cardHTML).join('')
-    : `<div class="empty"><div class="ei">🔍</div><p>No events found. Adjust filters or click Update from Web.</p></div>`;
+  // ── Timeline grouping ──
+  const now2 = new Date(); now2.setHours(0,0,0,0);
+  const weekEnd = new Date(now2); weekEnd.setDate(weekEnd.getDate()+7);
+  const groups = [];
+  const thisWeekEvts = list.filter(e => { const d=new Date(e.date+'T12:00:00'); return d>=now2&&d<weekEnd; });
+  const futureEvts   = list.filter(e => { const d=new Date(e.date+'T12:00:00'); return d>=weekEnd; });
+  const pastEvts     = list.filter(e => { const d=new Date(e.date+'T12:00:00'); return d<now2; });
+  if(thisWeekEvts.length) groups.push({label:'🔥 This Week', events:thisWeekEvts, spotlight:true});
+  const byMonth={};
+  futureEvts.forEach(e=>{
+    const d=new Date(e.date+'T12:00:00');
+    const k=d.toLocaleDateString('en-US',{month:'long',year:'numeric'});
+    (byMonth[k]=byMonth[k]||[]).push(e);
+  });
+  Object.entries(byMonth).forEach(([k,evts])=>groups.push({label:'📅 '+k, events:evts, spotlight:false}));
+  if(pastEvts.length) groups.push({label:'📁 Past Events', events:pastEvts, spotlight:false});
+
+  const emptyHTML = `<div class="empty"><div class="ei">🔍</div><p>No events found. Adjust filters or click Update from Web.</p></div>`;
+  let idx=0;
+  const gridCls = viewMode==='list' ? 'grid list-view' : 'grid';
+  if(!groups.length) {
+    document.getElementById('grid').innerHTML = emptyHTML;
+  } else {
+    document.getElementById('grid').innerHTML = groups.map(g=>`
+      <div class="tgroup${g.spotlight?' spotlight':''}">
+        <div class="tgroup-header">${g.label}<span class="tc">${g.events.length}</span></div>
+        <div class="${gridCls}">${g.events.map(e=>cardHTML(e,idx++)).join('')}</div>
+      </div>`).join('');
+  }
+  document.querySelectorAll('.vt-btn').forEach(b=>b.classList.toggle('active', b.id==='vt-'+viewMode));
   loadPhotos();
 }
 
@@ -1790,7 +1940,14 @@ function loadPhotos() {
   });
 }
 
-function cardHTML(e) {
+function hl(str, q) {
+  if(!q||q.length<2) return esc(str);
+  const safe = esc(str);
+  const re = new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
+  return safe.replace(re,'<mark>$1</mark>');
+}
+
+function cardHTML(e, i) {
   const { icon, cls, lbl } = SPORT_META[e.sport] || SPORT_META.other;
   const past  = new Date(e.date+'T12:00:00') < new Date();
   const hasLink = e.link && e.link.startsWith('http');
@@ -1806,13 +1963,16 @@ function cardHTML(e) {
   const avInner = mainPlayer
     ? `<img class="av-img" data-player="${esc(mainPlayer)}" alt="${esc(mainPlayer)}" /><span class="av-fb">${icon}</span>`
     : icon;
+  const isNew = newEventIds[e.id] && (Date.now()-newEventIds[e.id]) < 172800000;
+  const delay = typeof i === 'number' ? `style="animation-delay:${i*0.04}s"` : '';
 
-  return `<div class="card ${cls}${past?' past':''}" id="c-${e.id}">
+  return `<div class="card ${cls}${past?' past':''}" id="c-${e.id}" ${delay}>
     ${past ? '<span class="past-tag">⚠️ Past Event — Reference</span>' : ''}
+    ${isNew ? '<span class="new-badge">✨ NEW</span>' : ''}
     <div class="ch">
       <div class="av ${cls}">${avInner}</div>
       <div style="flex:1">
-        <div class="pname">${esc(e.player)}</div>
+        <div class="pname">${hl(e.player, currentQ)}</div>
         <span class="badge ${cls}">${icon} ${lbl}</span>${transBadge}
       </div>
       <div class="cbns">
@@ -1823,8 +1983,8 @@ function cardHTML(e) {
     </div>
     <div class="dets">
       <div class="dr"><span class="di">📅</span><div><span class="dt">${fmtDate(e.date,e.time)}</span><br><span class="dd" style="font-size:.74rem">${countdown(e.date)}</span></div></div>
-      <div class="dr"><span class="di">📍</span><div><span class="dt">${esc(e.venue)}</span>${e.city?`<br><span class="dd">${esc(e.city)}</span>`:''}</div></div>
-      ${e.notes?`<div class="dr"><span class="di">ℹ️</span><span class="dt dd" style="font-size:.8rem">${esc(e.notes)}</span></div>`:''}
+      <div class="dr"><span class="di">📍</span><div><span class="dt">${hl(e.venue, currentQ)}</span>${e.city?`<br><span class="dd">${hl(e.city, currentQ)}</span>`:''}</div></div>
+      ${e.notes?`<div class="dr"><span class="di">ℹ️</span><span class="dt dd" style="font-size:.8rem">${hl(e.notes, currentQ)}</span></div>`:''}
     </div>
     <div class="cf">
       ${hasLink
@@ -1841,6 +2001,46 @@ function cardHTML(e) {
 
 function esc(s) {
   return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function animateCounter(el, target) {
+  const start = performance.now(), from = 0, dur = 600;
+  function step(now) {
+    const p = Math.min((now-start)/dur,1), ease=1-Math.pow(1-p,3);
+    el.textContent = Math.round(from+(target-from)*ease);
+    if(p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+function toggleView(m) { viewMode=m; localStorage.setItem('mng_view',m); render(); }
+
+function toggleTheme() {
+  theme = theme==='dark' ? 'light' : 'dark';
+  localStorage.setItem('mng_theme', theme);
+  applyTheme();
+}
+function applyTheme() {
+  document.body.classList.toggle('light', theme==='light');
+  const btn = document.getElementById('themeBtn');
+  if(btn) btn.textContent = theme==='dark' ? '☀️' : '🌙';
+}
+
+function setProgress(done, total) {
+  const bar = document.getElementById('updBar');
+  const fill = document.getElementById('updFill');
+  if(!total) { bar.style.display='none'; fill.style.width='0%'; return; }
+  bar.style.display='block';
+  fill.style.width = (done/total*100)+'%';
+}
+
+function openDrawer() {
+  document.getElementById('filterDrawer').classList.add('open');
+  document.getElementById('drawerOverlay').classList.add('open');
+}
+function closeDrawer() {
+  document.getElementById('filterDrawer').classList.remove('open');
+  document.getElementById('drawerOverlay').classList.remove('open');
 }
 
 // ─── FILTER ───────────────────────────────────────────────────────────────────
@@ -2075,7 +2275,13 @@ async function fetchLive(auto = false) {
   if (!auto) toast('ok', '🔄 Searching…', 'Checking all sources in parallel…');
 
   // Run ALL queries in parallel — no blocking on a single slow/failed query
-  const results = await Promise.allSettled(QUERIES.map(fetchOne));
+  const total = QUERIES.length;
+  let done = 0;
+  setProgress(0, total);
+  const results = await Promise.allSettled(
+    QUERIES.map(q => fetchOne(q).then(r => { setProgress(++done, total); return r; }, e => { setProgress(++done, total); throw e; }))
+  );
+  setTimeout(() => setProgress(0, 0), 1500);
 
   let added = 0;
   const existingLinks = new Set(events.map(e => e.link).filter(Boolean));
@@ -2085,8 +2291,10 @@ async function fetchLive(auto = false) {
     for (const item of r.value) {
       if (existingLinks.has(item.link)) continue;
       existingLinks.add(item.link);
+      const id = 'web_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5);
+      newEventIds[id] = Date.now(); localStorage.setItem('mng_new', JSON.stringify(newEventIds));
       events.push({
-        id: 'web_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5),
+        id,
         time: '', venue: '', city: '',
         ...item
       });
