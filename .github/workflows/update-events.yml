@@ -28,6 +28,10 @@ jobs:
       - name: Inject static HTML + update sitemap lastmod
         run: node scripts/inject-static-html.js
 
+      - name: Ping IndexNow (Bing, Yandex, DuckDuckGo)
+        run: |
+          curl -s "https://api.indexnow.org/indexnow?url=https%3A%2F%2Fmeetandgreet.events%2F&key=0933d461e362695c1ee02c77b16a950a" && echo "IndexNow pinged"
+
       - name: Commit and push if changed
         run: |
           git config user.name  "github-actions[bot]"
