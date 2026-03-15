@@ -30,11 +30,10 @@ const html = events.length === 0 ? '' : `
     <meta itemprop="eventStatus" content="https://schema.org/EventScheduled"/>
     <time itemprop="startDate" datetime="${esc(e.date)}">${esc(e.date)}</time>
     <span itemprop="description">${esc(e.notes || '')}</span>
-    ${e.venue || e.city ? `
     <span itemprop="location" itemscope itemtype="https://schema.org/Place">
-      ${e.venue ? `<span itemprop="name">${esc(e.venue)}</span>` : ''}
-      ${e.city  ? `<span itemprop="address">${esc(e.city)}</span>` : ''}
-    </span>` : ''}
+      <span itemprop="name">${esc(e.venue || e.city || 'Venue TBA')}</span>
+      ${e.city ? `<span itemprop="address">${esc(e.city)}</span>` : ''}
+    </span>
     <span>${sportLabel[e.sport] || e.sport}</span>
     ${e.link ? `<a href="${esc(e.link)}" itemprop="url" rel="noopener">Event details</a>` : ''}
   </article>`).join('')}
