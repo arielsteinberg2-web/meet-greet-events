@@ -23,9 +23,7 @@ jobs:
       - name: Run update script
         run: node scripts/update-events.js
         env:
-          SERPAPI_KEY_1: ${{ secrets.SERPAPI_KEY_1 }}
-          SERPAPI_KEY_2: ${{ secrets.SERPAPI_KEY_2 }}
-          SERPAPI_KEY_3: ${{ secrets.SERPAPI_KEY_3 }}
+          EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
 
       - name: Commit and push if data changed
         run: |
