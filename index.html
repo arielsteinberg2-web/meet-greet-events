@@ -1609,7 +1609,7 @@
 
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v20';  // bump version → forces fresh seed load
+const KEY        = 'mng_v21';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last fetchLive() run
 
 // ─── LANGUAGE MAP ─────────────────────────────────────────────────────────────
@@ -3117,7 +3117,22 @@ function delEvt(id) {
 }
 
 // ─── WEB UPDATE ───────────────────────────────────────────────────────────────
-const API_KEY = '5e933de55172278f15273bac3e53127532dc2df7a07d55efb3bd64583261f756';
+const API_KEYS = [
+  '5e933de55172278f15273bac3e53127532dc2df7a07d55efb3bd64583261f756',
+  'AIzaSyDxWtysEYfKE6kGZ8-_joiL9rRJ79-XP5c',
+  'AIzaSyDCIWGG3kPbSRlsCf-iJtZKkzRN2qnPapo'
+];
+let apiKeyIndex = +(localStorage.getItem('mng_key_idx') || 0);
+function currentKey() { return API_KEYS[apiKeyIndex] || API_KEYS[0]; }
+function rotateKey() {
+  if (apiKeyIndex < API_KEYS.length - 1) {
+    apiKeyIndex++;
+    localStorage.setItem('mng_key_idx', apiKeyIndex);
+    console.warn(`API key quota reached — switched to key ${apiKeyIndex + 1}/${API_KEYS.length}`);
+    return true; // rotated successfully
+  }
+  return false; // all keys exhausted
+}
 
 // Keywords for relevance filtering across all supported languages
 const RELEVANT_WORDS = ['meet','sign','greet','autograph','dinner','firma','dédicace','autografi','incontro','légende','leyenda','autogramm','signing','appari','book signing','book tour','book launch','firma libro','dédicace livre','buchsign','presentacion libro','vip package','vip meet','fan event','fan day','player appearance','athlete appearance'];
@@ -3267,11 +3282,23 @@ async function fetchOne({ q, lang }) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 8000);
   try {
-    const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${API_KEY}`;
+    const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${currentKey()}`;
     const r = await fetch(url, { signal: controller.signal });
     clearTimeout(timer);
+    // Rotate key on quota / auth errors (402 = payment required / quota, 401 = auth)
+    if (r.status === 401 || r.status === 402 || r.status === 429) {
+      const rotated = rotateKey();
+      if (rotated) return fetchOne({ q, lang }); // retry with new key
+      return [];
+    }
     if (!r.ok) return [];
     const data = await r.json();
+    // Check JSON body for SerpAPI quota message
+    if (data.error && /run out|quota|credit|limit/i.test(data.error)) {
+      const rotated = rotateKey();
+      if (rotated) return fetchOne({ q, lang });
+      return [];
+    }
     const out = [];
     for (const res of (data.organic_results || [])) {
       const combined = (res.title + ' ' + (res.snippet || '')).toLowerCase();
