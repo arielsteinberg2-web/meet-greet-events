@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://meetandgreet.events/</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://meetandgreet.events/"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://meetandgreet.events/"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://meetandgreet.events/"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://meetandgreet.events/"/>
+    <xhtml:link rel="alternate" hreflang="it"       href="https://meetandgreet.events/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://meetandgreet.events/"/>
+  </url>
+
+  <!-- Sport category anchors (single-page app, hash URLs) -->
+  <url>
+    <loc>https://meetandgreet.events/#sports</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://meetandgreet.events/#tennis</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://meetandgreet.events/#nba</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://meetandgreet.events/#soccer</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://meetandgreet.events/#celebrity</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meetandgreet.events/#wwe</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meetandgreet.events/#boxing</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://meetandgreet.events/#local-nj</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
