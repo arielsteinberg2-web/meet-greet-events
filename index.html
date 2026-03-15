@@ -453,7 +453,7 @@
   <style>
     :root {
       --bg: #07100f; --surface: #0c1a19; --card: #102220; --border: #1a3533;
-      --green: #50b8f0; --orange: #1040c8; --purple: #00c0e0; --blue: #0828b8; --pink: #50c8f8;
+      --green: #29b6f6; --orange: #ff6d00; --purple: #00e5ff; --blue: #1565c0; --pink: #e91e8c;
       --text: #d4f2ee; --dim: #5a9490; --r: 12px;
       --glow: 0 0 10px rgba(0,229,204,0.7), 0 0 20px rgba(0,229,204,0.35);
       --glow-sm: 0 0 6px rgba(0,229,204,0.6);
@@ -548,11 +548,11 @@
     }
     .stat.filterable { cursor:pointer; user-select:none; }
     .stat.filterable:hover { border-color:#1a4a46; transform:translateY(-1px); }
-    .stat.active-soc { border-color:var(--green);   background:rgba(0,229,204,.1);  box-shadow:0 0 12px rgba(0,229,204,.15); }
-    .stat.active-bsk { border-color:var(--orange);  background:rgba(0,191,176,.1);  box-shadow:0 0 12px rgba(0,191,176,.15); }
-    .stat.active-oth { border-color:var(--purple);  background:rgba(38,212,200,.1); box-shadow:0 0 12px rgba(38,212,200,.15); }
-    .stat.active-pol { border-color:var(--blue);    background:rgba(0,172,193,.1);  box-shadow:0 0 12px rgba(0,172,193,.15); }
-    .stat.active-cel { border-color:var(--pink);    background:rgba(128,236,230,.1);box-shadow:0 0 12px rgba(128,236,230,.15); }
+    .stat.active-soc { border-color:#29b6f6; background:rgba(41,182,246,.1);  box-shadow:0 0 12px rgba(41,182,246,.2); }
+    .stat.active-bsk { border-color:#ff6d00; background:rgba(255,109,0,.1);   box-shadow:0 0 12px rgba(255,109,0,.2); }
+    .stat.active-oth { border-color:#00e5ff; background:rgba(0,229,255,.1);   box-shadow:0 0 12px rgba(0,229,255,.2); }
+    .stat.active-pol { border-color:#1565c0; background:rgba(21,101,192,.1);  box-shadow:0 0 12px rgba(21,101,192,.2); }
+    .stat.active-cel { border-color:#e91e8c; background:rgba(233,30,140,.1);  box-shadow:0 0 12px rgba(233,30,140,.2); }
     .stat-n { font-size:1.4rem; font-weight:700; line-height:1; }
     .stat-l { font-size:.72rem; color:var(--dim); margin-top:2px; }
 
@@ -561,22 +561,24 @@
 
     /* ── CARD ── */
     .card {
-      background:var(--card); border:1px solid var(--border); border-radius:var(--r);
+      background:var(--card); border:1px solid var(--border); border-radius:14px;
+      border-top:1px solid rgba(255,255,255,0.08);
       padding:18px; display:flex; flex-direction:column; gap:12px;
       transition:border-color .2s, transform .2s, box-shadow .2s;
+      backdrop-filter:blur(8px);
     }
-    .card:hover { border-color:#1a4a46; transform:translateY(-2px); box-shadow:0 8px 32px rgba(0,229,204,.12), 0 2px 8px rgba(0,0,0,.5); }
-    .card.soc { border-left:3px solid var(--green);  background:rgba(80,168,232,0.07); }
-    .card.bsk { border-left:3px solid var(--orange); background:rgba(0,48,176,0.10); }
-    .card.oth { border-left:3px solid var(--purple); background:rgba(0,184,216,0.07); }
-    .card.pol { border-left:3px solid var(--blue);   background:rgba(0,24,160,0.11); }
-    .card.cel { border-left:3px solid var(--pink);   background:rgba(72,184,248,0.07); }
+    .card:hover { border-color:#1a4a46; transform:translateY(-2px); box-shadow:0 10px 40px rgba(0,0,0,.6), 0 4px 12px rgba(0,0,0,.4), 0 0 20px rgba(0,229,204,.08); }
+    .card.soc { border-left:3px solid #29b6f6; background:rgba(41,182,246,0.07); }
+    .card.bsk { border-left:3px solid #ff6d00; background:rgba(255,109,0,0.07); }
+    .card.oth { border-left:3px solid #00e5ff; background:rgba(0,229,255,0.07); }
+    .card.pol { border-left:3px solid #1565c0; background:rgba(21,101,192,0.09); }
+    .card.cel { border-left:3px solid #e91e8c; background:rgba(233,30,140,0.07); }
     /* All non-avatar icons match card's sport color */
-    .card.soc .di,.card.soc .ibtn,.card.soc .act-btn { filter:hue-rotate(28deg) brightness(1.05); }
-    .card.bsk .di,.card.bsk .ibtn,.card.bsk .act-btn { filter:hue-rotate(48deg) saturate(.75) brightness(.6); }
-    .card.oth .di,.card.oth .ibtn,.card.oth .act-btn { filter:hue-rotate(10deg) brightness(1.0); }
-    .card.pol .di,.card.pol .ibtn,.card.pol .act-btn { filter:hue-rotate(52deg) saturate(.65) brightness(.5); }
-    .card.cel .di,.card.cel .ibtn,.card.cel .act-btn { filter:hue-rotate(25deg) brightness(1.05); }
+    .card.soc .di,.card.soc .ibtn,.card.soc .act-btn { filter:hue-rotate(20deg) brightness(1.1) saturate(1.2); }
+    .card.bsk .di,.card.bsk .ibtn,.card.bsk .act-btn { filter:hue-rotate(-155deg) brightness(1.3) saturate(1.8); }
+    .card.oth .di,.card.oth .ibtn,.card.oth .act-btn { filter:hue-rotate(5deg) brightness(1.1); }
+    .card.pol .di,.card.pol .ibtn,.card.pol .act-btn { filter:hue-rotate(35deg) brightness(0.9) saturate(1.1); }
+    .card.cel .di,.card.cel .ibtn,.card.cel .act-btn { filter:hue-rotate(150deg) brightness(1.2) saturate(1.5); }
     .card.past { opacity:.55; }
 
     .ch { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
@@ -597,11 +599,11 @@
         0 0 22px rgba(0,200,255,0.18);
     }
     /* coin face — per-sport teal shades (fallback bg; SVG provides the gradient face) */
-    .av.soc { background:#002848; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),inset 0 -2px 5px rgba(255,255,255,.07),0 0 0 3px rgba(80,168,232,.15),0 6px 18px rgba(80,168,232,.35),0 0 22px rgba(80,168,232,.22); }
-    .av.bsk { background:#000428; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),inset 0 -2px 5px rgba(255,255,255,.07),0 0 0 3px rgba(0,48,176,.2),0 6px 18px rgba(0,48,176,.4),0 0 22px rgba(0,48,176,.28); }
-    .av.oth { background:#003850; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),inset 0 -2px 5px rgba(255,255,255,.07),0 0 0 3px rgba(0,184,216,.15),0 6px 18px rgba(0,184,216,.35),0 0 22px rgba(0,184,216,.22); }
-    .av.pol { background:#000320; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),inset 0 -2px 5px rgba(255,255,255,.07),0 0 0 3px rgba(0,24,160,.2),0 6px 18px rgba(0,24,160,.4),0 0 22px rgba(0,24,160,.28); }
-    .av.cel { background:#002048; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),inset 0 -2px 5px rgba(255,255,255,.07),0 0 0 3px rgba(72,184,248,.15),0 6px 18px rgba(72,184,248,.35),0 0 22px rgba(72,184,248,.22); }
+    .av.soc { background:#01579b; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(41,182,246,.2),0 6px 18px rgba(41,182,246,.4),0 0 22px rgba(41,182,246,.25); }
+    .av.bsk { background:#bf360c; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(255,109,0,.2),0 6px 18px rgba(255,109,0,.4),0 0 22px rgba(255,109,0,.25); }
+    .av.oth { background:#006064; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(0,229,255,.2),0 6px 18px rgba(0,229,255,.35),0 0 22px rgba(0,229,255,.22); }
+    .av.pol { background:#0d47a1; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(30,136,229,.2),0 6px 18px rgba(30,136,229,.4),0 0 22px rgba(30,136,229,.28); }
+    .av.cel { background:#880e4f; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(233,30,140,.2),0 6px 18px rgba(233,30,140,.4),0 0 22px rgba(233,30,140,.25); }
     .av-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top center; display:none; border-radius:50%; }
     /* SVG icon fills the coin face */
     .av-fb  { position:absolute; inset:0; z-index:1; display:flex; align-items:center; justify-content:center; }
@@ -629,11 +631,11 @@
       border-radius:20px; font-size:.68rem; font-weight:700; margin-top:4px;
       text-transform:uppercase; letter-spacing:.04em;
     }
-    .badge.soc { background:rgba(0,229,204,.14); color:var(--green); }
-    .badge.bsk { background:rgba(0,191,176,.14); color:var(--orange); }
-    .badge.oth { background:rgba(38,212,200,.14); color:var(--purple); }
-    .badge.pol { background:rgba(0,172,193,.14); color:var(--blue); }
-    .badge.cel { background:rgba(128,236,230,.14); color:var(--pink); }
+    .badge.soc { background:rgba(41,182,246,.15); color:#29b6f6; }
+    .badge.bsk { background:rgba(255,109,0,.15); color:#ff6d00; }
+    .badge.oth { background:rgba(0,229,255,.15); color:#00e5ff; }
+    .badge.pol { background:rgba(30,136,229,.15); color:#1e88e5; }
+    .badge.cel { background:rgba(233,30,140,.15); color:#e91e8c; }
     .cbns { display:flex; gap:5px; }
     .ibtn {
       width:26px; height:26px; border-radius:5px; border:1px solid var(--border);
@@ -667,10 +669,10 @@
       display:block; width:100%; padding:9px; border-radius:7px;
       text-align:center; font-size:.83rem; font-weight:600; text-decoration:none; transition:all .2s;
     }
-    .rl.soc  { background:rgba(0,229,204,.12); color:var(--green); border:1px solid rgba(0,229,204,.28); }
-    .rl.soc:hover  { background:rgba(0,229,204,.22); box-shadow:0 0 12px rgba(0,229,204,.2); }
-    .rl.bsk  { background:rgba(0,191,176,.12); color:var(--orange); border:1px solid rgba(0,191,176,.28); }
-    .rl.bsk:hover  { background:rgba(0,191,176,.22); box-shadow:0 0 12px rgba(0,191,176,.2); }
+    .rl.soc  { background:rgba(41,182,246,.12); color:#29b6f6; border:1px solid rgba(41,182,246,.28); }
+    .rl.soc:hover  { background:rgba(41,182,246,.22); box-shadow:0 0 12px rgba(41,182,246,.2); }
+    .rl.bsk  { background:rgba(255,109,0,.12); color:#ff6d00; border:1px solid rgba(255,109,0,.28); }
+    .rl.bsk:hover  { background:rgba(255,109,0,.22); box-shadow:0 0 12px rgba(255,109,0,.2); }
     .rl.oth  { background:rgba(38,212,200,.12); color:#26d4c8; border:1px solid rgba(38,212,200,.28); }
     .rl.oth:hover  { background:rgba(38,212,200,.22); box-shadow:0 0 12px rgba(38,212,200,.2); }
     .rl.pol  { background:rgba(0,172,193,.12); color:#00e5ff; border:1px solid rgba(0,172,193,.28); }
@@ -843,35 +845,35 @@
     <!-- Clip path: shared by all 28×28 sport coin SVGs -->
     <clipPath id="coin-clip"><circle cx="14" cy="14" r="13.4"/></clipPath>
 
-    <!-- Soccer: light sky blue -->
+    <!-- Soccer: sky blue -->
     <radialGradient id="soc-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#d8f0ff"/>
-      <stop offset="45%"  stop-color="#50a8e8"/>
-      <stop offset="100%" stop-color="#001840"/>
+      <stop offset="0%"   stop-color="#e1f5fe"/>
+      <stop offset="45%"  stop-color="#29b6f6"/>
+      <stop offset="100%" stop-color="#01579b"/>
     </radialGradient>
-    <!-- Basketball: dark navy blue -->
+    <!-- Basketball: vivid orange -->
     <radialGradient id="bsk-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#3068d8"/>
-      <stop offset="45%"  stop-color="#0030b0"/>
-      <stop offset="100%" stop-color="#000428"/>
+      <stop offset="0%"   stop-color="#fff3e0"/>
+      <stop offset="45%"  stop-color="#ff6d00"/>
+      <stop offset="100%" stop-color="#bf360c"/>
     </radialGradient>
     <!-- Other sports: cyan -->
     <radialGradient id="oth-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#9cfff8"/>
-      <stop offset="45%"  stop-color="#00b8d8"/>
-      <stop offset="100%" stop-color="#003850"/>
+      <stop offset="0%"   stop-color="#e0f7fa"/>
+      <stop offset="45%"  stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#006064"/>
     </radialGradient>
-    <!-- Politics: deep navy / dark indigo-blue (no purple) -->
+    <!-- Politics: royal blue -->
     <radialGradient id="pol-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#3050d0"/>
-      <stop offset="45%"  stop-color="#0018a0"/>
-      <stop offset="100%" stop-color="#000320"/>
+      <stop offset="0%"   stop-color="#e3f2fd"/>
+      <stop offset="45%"  stop-color="#1e88e5"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
     </radialGradient>
-    <!-- Celebrity: cornflower / medium sky blue -->
+    <!-- Celebrity: hot pink -->
     <radialGradient id="cel-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#c8e8ff"/>
-      <stop offset="45%"  stop-color="#48b8f8"/>
-      <stop offset="100%" stop-color="#002048"/>
+      <stop offset="0%"   stop-color="#fce4ec"/>
+      <stop offset="45%"  stop-color="#e91e8c"/>
+      <stop offset="100%" stop-color="#880e4f"/>
     </radialGradient>
     <!-- UI detail icons: mid teal -->
     <radialGradient id="ui-g" cx="36%" cy="28%" r="72%">
@@ -881,10 +883,10 @@
     </radialGradient>
     <!-- Recessed overlay: dark top shadow, faint bottom highlight — layered on all sport coins -->
     <linearGradient id="coin-recess" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"   stop-color="#000000" stop-opacity="0.58"/>
-      <stop offset="30%"  stop-color="#000000" stop-opacity="0.18"/>
-      <stop offset="65%"  stop-color="#000000" stop-opacity="0.04"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.09"/>
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0.72"/>
+      <stop offset="25%"  stop-color="#000000" stop-opacity="0.38"/>
+      <stop offset="55%"  stop-color="#000000" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.18"/>
     </linearGradient>
   </defs>
 </svg>
@@ -3440,7 +3442,7 @@ function countdown(date) {
 }
 
 // ─── SVG ICON LIBRARY ─────────────────────────────────────────────────────────
-const _rim = `<circle cx="14" cy="14" r="13.4" fill="url(#coin-recess)"/><circle cx="14" cy="14" r="13.4" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>`;
+const _rim = `<circle cx="14" cy="14" r="13.4" fill="url(#coin-recess)"/><circle cx="14" cy="14" r="13.4" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="0.8"/><circle cx="14" cy="14" r="12.2" fill="none" stroke="rgba(0,0,0,0.45)" stroke-width="1.2"/>`;
 const _rimSm = `<circle cx="10" cy="10" r="9.5" fill="url(#coin-recess)"/><circle cx="10" cy="10" r="9.5" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="0.7"/>`;
 
 const ICONS = {
@@ -3679,7 +3681,6 @@ function cardHTML(e, i) {
         <span class="badge ${cls}">${icon} ${lbl}</span>${transBadge}
       </div>
       <div class="cbns">
-        <button class="ibtn${savedIds.has(e.id)?' sav-on':''}" onclick="toggleSave('${e.id}')" title="${savedIds.has(e.id)?'Remove from saved':'Save event'}">${savedIds.has(e.id)?ICONS.saveOn:ICONS.saveOff}</button>
       </div>
     </div>
     <div class="dets">
