@@ -446,7 +446,7 @@
   <style>
     :root {
       --bg: #07100f; --surface: #0c1a19; --card: #102220; --border: #1a3533;
-      --green: #00e5cc; --orange: #00bfb0; --purple: #26d4c8; --blue: #00acc1; --pink: #80ece6;
+      --green: #00e5cc; --orange: #0095f0; --purple: #00c8e8; --blue: #1048d0; --pink: #58d0ff;
       --text: #d4f2ee; --dim: #5a9490; --r: 12px;
       --glow: 0 0 10px rgba(0,229,204,0.7), 0 0 20px rgba(0,229,204,0.35);
       --glow-sm: 0 0 6px rgba(0,229,204,0.6);
@@ -559,11 +559,11 @@
       transition:border-color .2s, transform .2s, box-shadow .2s;
     }
     .card:hover { border-color:#1a4a46; transform:translateY(-2px); box-shadow:0 8px 32px rgba(0,229,204,.12), 0 2px 8px rgba(0,0,0,.5); }
-    .card.soc { border-left:3px solid var(--green); }
-    .card.bsk { border-left:3px solid var(--orange); }
-    .card.oth { border-left:3px solid var(--purple); }
-    .card.pol { border-left:3px solid var(--blue); }
-    .card.cel { border-left:3px solid var(--pink); }
+    .card.soc { border-left:3px solid var(--green);  background:rgba(0,229,204,0.07); }
+    .card.bsk { border-left:3px solid var(--orange); background:rgba(0,149,240,0.07); }
+    .card.oth { border-left:3px solid var(--purple); background:rgba(0,200,232,0.07); }
+    .card.pol { border-left:3px solid var(--blue);   background:rgba(16,72,208,0.09); }
+    .card.cel { border-left:3px solid var(--pink);   background:rgba(88,208,255,0.07); }
     .card.past { opacity:.55; }
 
     .ch { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
@@ -574,8 +574,11 @@
       /* coin base */
       border: 2px solid rgba(0,255,220,0.25);
       box-shadow:
-        inset 0 2px 4px rgba(255,255,255,0.22),
-        inset 0 -2px 4px rgba(0,0,0,0.4),
+        inset 0 4px 8px rgba(0,0,0,0.55),
+        inset 0 -2px 4px rgba(0,0,0,0.3),
+        inset 3px 0 6px rgba(0,0,0,0.35),
+        inset -3px 0 6px rgba(0,0,0,0.35),
+        inset 0 -1px 3px rgba(255,255,255,0.08),
         0 0 0 3px rgba(0,200,180,0.1),
         0 6px 18px rgba(0,200,180,0.3),
         0 0 22px rgba(0,229,204,0.25);
@@ -827,35 +830,35 @@
     <!-- Clip path: shared by all 28×28 sport coin SVGs -->
     <clipPath id="coin-clip"><circle cx="14" cy="14" r="13.4"/></clipPath>
 
-    <!-- Soccer: green-teal -->
+    <!-- Soccer: bright turquoise-green -->
     <radialGradient id="soc-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#b0ffea"/>
-      <stop offset="45%"  stop-color="#00d8a8"/>
-      <stop offset="100%" stop-color="#005540"/>
+      <stop offset="0%"   stop-color="#b0ffe8"/>
+      <stop offset="45%"  stop-color="#00d8a0"/>
+      <stop offset="100%" stop-color="#004d38"/>
     </radialGradient>
-    <!-- Basketball: vivid sky-blue -->
+    <!-- Basketball: vivid royal blue -->
     <radialGradient id="bsk-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#90e8ff"/>
-      <stop offset="45%"  stop-color="#0095e0"/>
-      <stop offset="100%" stop-color="#002868"/>
+      <stop offset="0%"   stop-color="#a0d8ff"/>
+      <stop offset="45%"  stop-color="#0080e8"/>
+      <stop offset="100%" stop-color="#001858"/>
     </radialGradient>
-    <!-- Other sports: pure cyan-teal -->
+    <!-- Other sports: mid cyan -->
     <radialGradient id="oth-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#a0fff4"/>
-      <stop offset="45%"  stop-color="#00c8c0"/>
-      <stop offset="100%" stop-color="#004858"/>
+      <stop offset="0%"   stop-color="#9cfff8"/>
+      <stop offset="45%"  stop-color="#00b8d8"/>
+      <stop offset="100%" stop-color="#003850"/>
     </radialGradient>
-    <!-- Politics: periwinkle / indigo-blue -->
+    <!-- Politics: deep navy blue -->
     <radialGradient id="pol-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#b8c8ff"/>
-      <stop offset="45%"  stop-color="#3860d8"/>
-      <stop offset="100%" stop-color="#000f50"/>
+      <stop offset="0%"   stop-color="#90a8f8"/>
+      <stop offset="45%"  stop-color="#1848d0"/>
+      <stop offset="100%" stop-color="#000a40"/>
     </radialGradient>
-    <!-- Celebrity: cornflower-blue / powder blue -->
+    <!-- Celebrity: light sky blue -->
     <radialGradient id="cel-g" cx="36%" cy="28%" r="72%">
-      <stop offset="0%"   stop-color="#d0eeff"/>
-      <stop offset="45%"  stop-color="#3898d8"/>
-      <stop offset="100%" stop-color="#003060"/>
+      <stop offset="0%"   stop-color="#d8f0ff"/>
+      <stop offset="45%"  stop-color="#48c0f8"/>
+      <stop offset="100%" stop-color="#002850"/>
     </radialGradient>
     <!-- UI detail icons: mid teal -->
     <radialGradient id="ui-g" cx="36%" cy="28%" r="72%">
@@ -3050,13 +3053,13 @@ const ICONS = {
   // Soccer: green-teal coin, proper pentagon-patch pattern (clipped to circle)
   soccer: `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="14" cy="14" r="13.4" fill="url(#soc-g)"/>
-    <g clip-path="url(#coin-clip)" fill="#00150e" opacity="0.82">
-      <polygon points="14,8.5 19.2,12.3 17.2,18.5 10.8,18.5 8.8,12.3"/>
-      <polygon points="14,8 9.2,1.5 11.2,6.8 16.8,6.8 18.8,1.5"/>
-      <polygon points="19.2,11.8 26,9 24,13.5 21,15.8 19.8,13.8"/>
-      <polygon points="17.1,18.8 23.5,23.5 20.5,27 17.5,24.5 17.5,20.5"/>
-      <polygon points="10.9,18.8 4.5,23.5 7.5,27 10.5,24.5 10.5,20.5"/>
-      <polygon points="8.8,11.8 2,9 4,13.5 7,15.8 8.2,13.8"/>
+    <g clip-path="url(#coin-clip)" fill="#003520" opacity="0.88">
+      <polygon points="14,9 18.8,12.5 17,18 11,18 9.2,12.5"/>
+      <polygon points="14,-1 18,3 16.5,8.5 11.5,8.5 10,3"/>
+      <polygon points="21,6.5 27,9 27,15 22,15.5 19,12.5"/>
+      <polygon points="23,22 20,27.4 14,27.4 12.5,22 17,18.5"/>
+      <polygon points="5,22 8,27.4 14,27.4 15.5,22 11,18.5"/>
+      <polygon points="7,6.5 1,9 1,15 6,15.5 9,12.5"/>
     </g>
     ${_rim}
   </svg>`,
