@@ -638,6 +638,20 @@
       <div class="sc-d">Aggregates all NYC athlete/celebrity meet &amp; greet events from Eventbrite, Ticketmaster and local organizers.</div>
     </a>
 
+    <!-- ── LOCAL VENUE APPEARANCES — NJ/NY ── -->
+    <a class="sc" href="https://woodbridgebrewingco.com/event/" target="_blank" rel="noopener">
+      <div class="sc-n">🍺 Woodbridge Brewing Co – Athlete Appearances 🗽</div>
+      <div class="sc-d">33 Main St, Woodbridge NJ. Most active local venue in NJ/NY for athlete meet & greets — Rangers, Yankees, Giants, Knicks, Mets, Jets legends every 1–2 weeks. ~$60–$180. Call 732-977-9481.</div>
+    </a>
+    <a class="sc" href="https://nynjsportsworld.com/category/autograph-appearance/" target="_blank" rel="noopener">
+      <div class="sc-n">🗽 NY NJ Sports World – Autograph Appearances</div>
+      <div class="sc-d">Dedicated NJ/NY blog covering every local player appearance. Thorough coverage of Woodbridge Brewing Co, card shops, and collector shows in the tri-state area.</div>
+    </a>
+    <a class="sc" href="https://www.njshows.org/" target="_blank" rel="noopener">
+      <div class="sc-n">🗽 NJ Shows – JP's Sports & Rock Solid Promotions</div>
+      <div class="sc-d">NJ's major card show promoters. Edison, Secaucus, and other NJ venues. Multi-sport celebrity guest signings including NFL, NBA, MLB, NHL legends.</div>
+    </a>
+
     <!-- ── SPORTING GOODS STORE EVENTS ── -->
     <a class="sc" href="https://www.dickssportinggoods.com/s/dsg-events" target="_blank" rel="noopener">
       <div class="sc-n">🏪 Dick's House of Sports / DSG – Athlete Events</div>
@@ -1055,7 +1069,7 @@
 
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v15';  // bump version → forces fresh seed load
+const KEY        = 'mng_v16';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last fetchLive() run
 
 // ─── LANGUAGE MAP ─────────────────────────────────────────────────────────────
@@ -1855,6 +1869,150 @@ const SEEDS = [
     link:'https://germanfilmcomiccon.com/en/home/',
     notes:'Dec 5–6 2026 (Sat 10am–6pm, Sun 10am–5pm). All celebrity guests appear both days for autographs, selfies/photos, and Q&A panels. Guest roster announced ~2 weeks before — previous editions: Elijah Wood, Tom Welling, Hayley Atwell, David Bradley. Autographs and photo ops are paid add-ons on site.',
     source:'German Film Comic Con — germanfilmcomiccon.com'
+  },
+
+  // ── Woodbridge Brewing Co, Woodbridge NJ — ongoing local venue series ──
+  {
+    id:'wbc1', sport:'other',
+    player:'David Tyree – Woodbridge Brewing Co',
+    date:'2026-03-14', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'$89. NY Giants WR — hero of Super Bowl XLII "helmet catch." Autograph on 1 item + photo. ~5–7 PM. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — woodbridgebrewingco.com'
+  },
+  {
+    id:'wbc2', sport:'other',
+    player:'Mika Zibanejad – Woodbridge Brewing Co',
+    date:'2026-03-20', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'$179. NY Rangers C — franchise cornerstone, 5× All-Star. Autograph on 1 item + photo. ~5–7 PM. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — woodbridgebrewingco.com'
+  },
+  {
+    id:'wbc3', sport:'basketball',
+    player:'Charles Oakley – Woodbridge Brewing Co',
+    date:'2026-03-23', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'Price TBD. NY Knicks enforcer legend — 5× All-Defensive Team. Autograph on 1 item + photo. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — woodbridgebrewingco.com'
+  },
+  {
+    id:'wbc4', sport:'other',
+    player:'Jacob Trouba – Woodbridge Brewing Co',
+    date:'2026-03-24', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'Price TBD. NY Rangers D. Autograph on 1 item + photo. ~5–7 PM. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — woodbridgebrewingco.com'
+  },
+  {
+    id:'wbc5', sport:'other',
+    player:'Mariano Rivera – Woodbridge Brewing Co',
+    date:'2026-04-13', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'Price TBD. NY Yankees HOF closer — unanimous first-ballot Hall of Famer, 5× World Series champion. Autograph on 1 item + photo. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — woodbridgebrewingco.com'
+  },
+  {
+    id:'wbc6', sport:'other',
+    player:'Harrison Bader – Woodbridge Brewing Co',
+    date:'2026-04-14', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'Price TBD. NY Mets OF. Autograph on 1 item + photo. ~5–7 PM. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — woodbridgebrewingco.com'
+  },
+  {
+    id:'wbc7', sport:'other',
+    player:'Mark Gastineau – Woodbridge Brewing Co',
+    date:'2026-04-26', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'$99. NY Jets DE legend — 4× Pro Bowl, held single-season sack record. Autograph on 1 item + photo. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — woodbridgebrewingco.com'
+  },
+  {
+    id:'wbc8', sport:'other',
+    player:'Jose Canseco – Woodbridge Brewing Co',
+    date:'2026-04-27', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'Price TBD. MLB OF — 6× All-Star, 1988 AL MVP, first 40-40 player in history. Autograph on 1 item + photo. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — woodbridgebrewingco.com'
+  },
+  {
+    id:'wbc9', sport:'other',
+    player:'Paul O\'Neill – Woodbridge Brewing Co',
+    date:'2026-05-16', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'$149. NY Yankees legend — 5× World Series champion, 1994 AL batting champion. Autograph on 1 item + photo. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — nynjsportsworld.com/2026/02/23/meet-ex-yankee-icon-paul-oneill-at-woodbridge-brewing-co-on-may-16/'
+  },
+  {
+    id:'wbc10', sport:'other',
+    player:'Harry Carson – Woodbridge Brewing Co',
+    date:'2026-05-31', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'$99. NY Giants HOF LB — 9× Pro Bowl, 2 Super Bowl rings. Autograph on 1 item + photo. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — woodbridgebrewingco.com'
+  },
+  {
+    id:'wbc11', sport:'basketball',
+    player:'Allen Iverson – Woodbridge Brewing Co',
+    date:'2026-09-27', time:'17:00',
+    venue:'Woodbridge Brewing Co',
+    city:'Woodbridge, NJ 🇺🇸',
+    link:'https://woodbridgebrewingco.com/event/',
+    notes:'$179. NBA HOF PG — 4× scoring champion, 2001 MVP, 11× All-Star. Autograph on 1 item + photo. Tickets: 732-977-9481.',
+    source:'Woodbridge Brewing Co — woodbridgebrewingco.com'
+  },
+
+  // ── Other NJ local venue signings ──
+  {
+    id:'cv1', sport:'basketball',
+    player:'Walt Frazier – CardVault NJ',
+    date:'2026-03-21', time:'',
+    venue:'CardVault',
+    city:'East Rutherford, NJ 🇺🇸',
+    link:'https://nynjsportsworld.com/category/autograph-appearance/',
+    notes:'NY Knicks HOF PG — 7× All-Star, 2× NBA champion (1970, 1973). Autograph signing. Exact time and price TBD — check nynjsportsworld.com for updates.',
+    source:'NY NJ Sports World — nynjsportsworld.com'
+  },
+  {
+    id:'njmce1', sport:'other',
+    player:'MLB Legends – NJ Memorabilia & Card Expo',
+    date:'2026-03-28', time:'',
+    venue:'Secaucus Recreation Center',
+    city:'Secaucus, NJ 🇺🇸',
+    link:'https://www.njshows.org/',
+    notes:'$5 admission. Multi-sport autograph show: baseball legends including Santiago, Candelaria, Velez + others. Individual autograph prices on-site.',
+    source:'NJ Shows — njshows.org'
+  },
+  {
+    id:'njacs1', sport:'other',
+    player:'Multi-Sport Legends – NJ Autograph & Card Show',
+    date:'2026-04-17', time:'',
+    venue:'NJ Convention & Expo Center',
+    city:'Edison, NJ 🇺🇸',
+    link:'https://www.njshows.org/',
+    notes:'Apr 17–19, 2026. NFL, NBA, MLB, NHL celebrity guest autograph sessions. Specific guests TBA closer to date.',
+    source:'NJ Shows / GT Sports Shows — njshows.org'
   }
 ];
 
@@ -2448,7 +2606,16 @@ const QUERIES = [
   { q:'National Sports Collectors Convention NSCC autograph signers 2026',            lang:'en' },
   { q:'TRISTAR autograph pavilion athlete signers 2026',                               lang:'en' },
   { q:'Roland Garros Tenniseum meet players tennis legends 2026',                     lang:'en' },
-  { q:'NHL player signing fan event public appearance 2026',                           lang:'en' }
+  { q:'NHL player signing fan event public appearance 2026',                           lang:'en' },
+  // ── Local venue appearances (NJ/NY breweries, card shops, sports bars) ──
+  { q:'site:woodbridgebrewingco.com athlete appearance signing 2026',                 lang:'en' },
+  { q:'site:nynjsportsworld.com autograph appearance signing 2026',                   lang:'en' },
+  { q:'Woodbridge Brewing athlete meet greet signing Rangers Yankees Giants 2026',    lang:'en' },
+  { q:'NJ local venue brewery sports player autograph appearance 2026',               lang:'en' },
+  { q:'site:cravetheauto.com NJ New Jersey autograph signing 2026',                   lang:'en' },
+  { q:'Coach\'s Collectibles NJ athlete signing meet greet 2026',                     lang:'en' },
+  { q:'GT Sports Shows NJ Edison athlete celebrity autograph 2026',                   lang:'en' },
+  { q:'NJ memorabilia card expo autograph show 2026',                                 lang:'en' }
 ];
 
 async function fetchOne({ q, lang }) {
