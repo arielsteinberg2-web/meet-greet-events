@@ -3677,8 +3677,6 @@ function cardHTML(e, i) {
       </div>
       <div class="cbns">
         <button class="ibtn${savedIds.has(e.id)?' sav-on':''}" onclick="toggleSave('${e.id}')" title="${savedIds.has(e.id)?'Remove from saved':'Save event'}">${savedIds.has(e.id)?ICONS.saveOn:ICONS.saveOff}</button>
-        <button class="ibtn" onclick="openEdit('${e.id}')" title="Edit">${ICONS.edit}</button>
-        <button class="ibtn del" onclick="delEvt('${e.id}')" title="Delete">${ICONS.trash}</button>
       </div>
     </div>
     <div class="dets">
