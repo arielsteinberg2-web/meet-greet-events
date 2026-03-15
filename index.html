@@ -445,23 +445,27 @@
   </script>
   <style>
     :root {
-      --bg: #0f1117; --surface: #1a1d27; --card: #20232f; --border: #2d3147;
-      --green: #00c853; --orange: #ff6d00; --purple: #7c4dff; --blue: #448aff; --pink: #ff4081; --text: #e8eaf0; --dim: #7a7f9a; --r: 12px;
+      --bg: #07100f; --surface: #0c1a19; --card: #102220; --border: #1a3533;
+      --green: #00e5cc; --orange: #00bfb0; --purple: #26d4c8; --blue: #00acc1; --pink: #80ece6;
+      --text: #d4f2ee; --dim: #5a9490; --r: 12px;
+      --glow: 0 0 10px rgba(0,229,204,0.7), 0 0 20px rgba(0,229,204,0.35);
+      --glow-sm: 0 0 6px rgba(0,229,204,0.6);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; }
 
     /* ── HEADER ── */
     header {
-      background: linear-gradient(135deg,#1a1d27,#0f1117);
+      background: linear-gradient(135deg,#0c1a19,#07100f);
       border-bottom: 1px solid var(--border);
       padding: 18px 32px; display: flex; align-items: center;
       justify-content: space-between; flex-wrap: wrap; gap: 12px;
     }
     header h1 {
       font-size: 1.4rem; font-weight: 700;
-      background: linear-gradient(90deg,#00c853,#ff6d00);
+      background: linear-gradient(90deg,#00e5cc,#00bfff,#00e5cc);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      filter: drop-shadow(0 0 12px rgba(0,229,204,0.5));
     }
     header p { font-size: 0.75rem; color: var(--dim); margin-top: 2px; }
     .hbtns { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -470,8 +474,8 @@
       font-size: 0.82rem; font-weight: 600; transition: all .2s;
       display: flex; align-items: center; gap: 6px;
     }
-    .btn-g  { background: linear-gradient(135deg,#00c853,#009624); color:#fff; }
-    .btn-o  { background: linear-gradient(135deg,#ff6d00,#e65100); color:#fff; }
+    .btn-g  { background: linear-gradient(135deg,#00e5cc,#008878); color:#07100f; font-weight:700; box-shadow:0 0 14px rgba(0,229,204,0.35); }
+    .btn-o  { background: linear-gradient(135deg,#00bfb0,#006b63); color:#07100f; font-weight:700; }
     .btn-s  { background: var(--card); color: var(--text); border: 1px solid var(--border); }
     .btn:hover:not(:disabled) { filter: brightness(1.15); transform: translateY(-1px); }
     .btn:disabled { opacity:.5; cursor:not-allowed; transform:none!important; }
@@ -495,7 +499,7 @@
       outline:none; transition:border-color .2s;
     }
     .sbox input:focus { border-color:var(--green); }
-    .sbox::before { content:'🔍'; position:absolute; left:10px; top:50%; transform:translateY(-50%); font-size:.8rem; }
+    .sbox::before { content:'🔍'; position:absolute; left:10px; top:50%; transform:translateY(-50%); font-size:.8rem; filter:drop-shadow(0 0 5px rgba(0,229,204,.7)); }
     select.sort {
       padding:8px 11px; background:var(--card); border:1px solid var(--border);
       border-radius:8px; color:var(--text); font-size:.83rem; outline:none; cursor:pointer;
@@ -507,7 +511,7 @@
     }
     input.rgn-in:focus { border-color:var(--green); }
     .rgn-wrap { position:relative; flex-shrink:0; }
-    .rgn-wrap::before { content:'🌍'; position:absolute; left:8px; top:50%; transform:translateY(-50%); font-size:.78rem; pointer-events:none; }
+    .rgn-wrap::before { content:'🌍'; position:absolute; left:8px; top:50%; transform:translateY(-50%); font-size:.78rem; pointer-events:none; filter:drop-shadow(0 0 5px rgba(0,229,204,.7)); }
 
     /* ── MAIN ── */
     .main { padding: 26px 32px; max-width:1400px; margin:0 auto; }
@@ -518,9 +522,16 @@
     }
     .bar-left { flex:1; }
     .bar-ts { white-space:nowrap; color:var(--dim); display:flex; align-items:center; gap:5px; }
-    .bar-ts .ts-dot { width:7px; height:7px; border-radius:50%; background:var(--green); flex-shrink:0; }
-    .bar-ts .ts-dot.stale { background:#ffd740; }
-    .bar-ts .ts-dot.never { background:var(--dim); }
+    .ts-dot { width:7px; height:7px; border-radius:50%; background:var(--green); flex-shrink:0; }
+    .ts-dot.stale { background:#ffd740; }
+    .ts-dot.never { background:var(--dim); }
+    /* Timestamp chip in header */
+    .ts-chip {
+      display:flex; align-items:center; gap:6px; padding:5px 10px;
+      background:var(--card); border:1px solid var(--border); border-radius:20px;
+      font-size:.72rem; color:var(--dim); white-space:nowrap; cursor:default;
+    }
+    .ts-chip .ts-dot { box-shadow:0 0 5px currentColor; }
 
     /* ── STATS ── */
     .stats { display:flex; gap:14px; margin-bottom:22px; flex-wrap:wrap; }
@@ -529,12 +540,12 @@
       padding:12px 18px; display:flex; align-items:center; gap:10px; transition:all .18s;
     }
     .stat.filterable { cursor:pointer; user-select:none; }
-    .stat.filterable:hover { border-color:#3d4160; transform:translateY(-1px); }
-    .stat.active-soc { border-color:var(--green);   background:rgba(0,200,83,.1); }
-    .stat.active-bsk { border-color:var(--orange);  background:rgba(255,109,0,.1); }
-    .stat.active-oth { border-color:var(--purple);  background:rgba(124,77,255,.1); }
-    .stat.active-pol { border-color:var(--blue);    background:rgba(68,138,255,.1); }
-    .stat.active-cel { border-color:var(--pink);    background:rgba(255,64,129,.1); }
+    .stat.filterable:hover { border-color:#1a4a46; transform:translateY(-1px); }
+    .stat.active-soc { border-color:var(--green);   background:rgba(0,229,204,.1);  box-shadow:0 0 12px rgba(0,229,204,.15); }
+    .stat.active-bsk { border-color:var(--orange);  background:rgba(0,191,176,.1);  box-shadow:0 0 12px rgba(0,191,176,.15); }
+    .stat.active-oth { border-color:var(--purple);  background:rgba(38,212,200,.1); box-shadow:0 0 12px rgba(38,212,200,.15); }
+    .stat.active-pol { border-color:var(--blue);    background:rgba(0,172,193,.1);  box-shadow:0 0 12px rgba(0,172,193,.15); }
+    .stat.active-cel { border-color:var(--pink);    background:rgba(128,236,230,.1);box-shadow:0 0 12px rgba(128,236,230,.15); }
     .stat-n { font-size:1.4rem; font-weight:700; line-height:1; }
     .stat-l { font-size:.72rem; color:var(--dim); margin-top:2px; }
 
@@ -547,7 +558,7 @@
       padding:18px; display:flex; flex-direction:column; gap:12px;
       transition:border-color .2s, transform .2s, box-shadow .2s;
     }
-    .card:hover { border-color:#3d4160; transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.4); }
+    .card:hover { border-color:#1a4a46; transform:translateY(-2px); box-shadow:0 8px 32px rgba(0,229,204,.12), 0 2px 8px rgba(0,0,0,.5); }
     .card.soc { border-left:3px solid var(--green); }
     .card.bsk { border-left:3px solid var(--orange); }
     .card.oth { border-left:3px solid var(--purple); }
@@ -557,34 +568,64 @@
 
     .ch { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
     .av {
-      width:46px; height:46px; border-radius:50%; display:flex;
-      align-items:center; justify-content:center; font-size:1.35rem; flex-shrink:0;
+      width:48px; height:48px; border-radius:50%; display:flex;
+      align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0;
       overflow:hidden; position:relative;
+      /* coin base */
+      border: 2px solid rgba(0,255,220,0.25);
+      box-shadow:
+        inset 0 2px 4px rgba(255,255,255,0.22),
+        inset 0 -2px 4px rgba(0,0,0,0.4),
+        0 0 0 3px rgba(0,200,180,0.1),
+        0 6px 18px rgba(0,200,180,0.3),
+        0 0 22px rgba(0,229,204,0.25);
     }
-    .av.soc { background:rgba(0,200,83,.14); }
-    .av.bsk { background:rgba(255,109,0,.14); }
-    .av.oth { background:rgba(124,77,255,.14); }
-    .av.pol { background:rgba(68,138,255,.14); }
-    .av.cel { background:rgba(255,64,129,.14); }
+    /* coin face — per-sport teal shades (fallback bg; SVG provides the gradient face) */
+    .av.soc { background:#006860; }
+    .av.bsk { background:#005870; }
+    .av.oth { background:#005c5c; }
+    .av.pol { background:#004868; }
+    .av.cel { background:#208898; }
     .av-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top center; display:none; border-radius:50%; }
-    .av-fb  { line-height:1; position:relative; z-index:1; }
+    /* SVG icon fills the coin face */
+    .av-fb  { position:absolute; inset:0; z-index:1; display:flex; align-items:center; justify-content:center; }
+    .av-fb svg { width:82%; height:82%; display:block; }
+    /* ── STAT COIN ICONS ── */
+    .stat-coin {
+      width:38px; height:38px; border-radius:50%; display:inline-flex;
+      align-items:center; justify-content:center; flex-shrink:0;
+      border: 2px solid rgba(0,255,220,0.22);
+      box-shadow:
+        inset 0 2px 3px rgba(255,255,255,0.18),
+        inset 0 -2px 3px rgba(0,0,0,0.35),
+        0 0 14px rgba(0,229,204,0.22),
+        0 4px 10px rgba(0,0,0,0.3);
+      background: transparent; overflow:hidden;
+    }
+    .stat-coin.sav { border-color:rgba(255,215,64,.3); box-shadow:inset 0 2px 3px rgba(255,255,255,0.18),inset 0 -2px 3px rgba(0,0,0,0.35),0 0 14px rgba(255,215,64,.22),0 4px 10px rgba(0,0,0,0.3); }
+    /* SVG fills the coin face */
+    .stat-coin .ci { display:flex; align-items:center; justify-content:center; width:100%; height:100%; }
+    .stat-coin .ci svg { width:100%; height:100%; display:block; }
+
     .pname { font-size:1rem; font-weight:700; line-height:1.2; }
     .badge {
       display:inline-flex; align-items:center; gap:3px; padding:2px 8px;
       border-radius:20px; font-size:.68rem; font-weight:700; margin-top:4px;
       text-transform:uppercase; letter-spacing:.04em;
     }
-    .badge.soc { background:rgba(0,200,83,.14); color:var(--green); }
-    .badge.bsk { background:rgba(255,109,0,.14); color:var(--orange); }
-    .badge.oth { background:rgba(124,77,255,.14); color:var(--purple); }
-    .badge.pol { background:rgba(68,138,255,.14); color:var(--blue); }
-    .badge.cel { background:rgba(255,64,129,.14); color:var(--pink); }
+    .badge.soc { background:rgba(0,229,204,.14); color:var(--green); }
+    .badge.bsk { background:rgba(0,191,176,.14); color:var(--orange); }
+    .badge.oth { background:rgba(38,212,200,.14); color:var(--purple); }
+    .badge.pol { background:rgba(0,172,193,.14); color:var(--blue); }
+    .badge.cel { background:rgba(128,236,230,.14); color:var(--pink); }
     .cbns { display:flex; gap:5px; }
     .ibtn {
       width:26px; height:26px; border-radius:5px; border:1px solid var(--border);
       background:var(--surface); color:var(--dim); cursor:pointer;
       display:flex; align-items:center; justify-content:center; font-size:.72rem; transition:all .2s;
     }
+    .ibtn svg { pointer-events:none; }
+    .act-btn svg { pointer-events:none; flex-shrink:0; }
     .ibtn:hover { background:var(--border); color:var(--text); }
     .ibtn.del:hover  { background:rgba(244,67,54,.2); color:#f44336; border-color:#f44336; }
     .ibtn.sav-on { color:#ffd740; border-color:rgba(255,215,64,.45); background:rgba(255,215,64,.08); }
@@ -600,7 +641,8 @@
 
     .dets { display:flex; flex-direction:column; gap:7px; }
     .dr { display:flex; align-items:flex-start; gap:9px; font-size:.83rem; }
-    .di { flex-shrink:0; width:15px; text-align:center; margin-top:1px; }
+    .di { flex-shrink:0; width:22px; height:22px; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+    .di svg { display:block; width:20px; height:20px; flex-shrink:0; }
     .dt { color:var(--text); line-height:1.4; }
     .dd { color:var(--dim); }
 
@@ -609,27 +651,29 @@
       display:block; width:100%; padding:9px; border-radius:7px;
       text-align:center; font-size:.83rem; font-weight:600; text-decoration:none; transition:all .2s;
     }
-    .rl.soc  { background:rgba(0,200,83,.14); color:var(--green); border:1px solid rgba(0,200,83,.28); }
-    .rl.soc:hover  { background:rgba(0,200,83,.25); }
-    .rl.bsk  { background:rgba(255,109,0,.14); color:var(--orange); border:1px solid rgba(255,109,0,.28); }
-    .rl.bsk:hover  { background:rgba(255,109,0,.25); }
-    .rl.oth  { background:rgba(124,77,255,.12); color:#a57aff; border:1px solid rgba(124,77,255,.28); }
-    .rl.oth:hover  { background:rgba(124,77,255,.22); }
-    .rl.pol  { background:rgba(68,138,255,.12);  color:#82b1ff; border:1px solid rgba(68,138,255,.28); }
-    .rl.pol:hover  { background:rgba(68,138,255,.22); }
-    .rl.cel  { background:rgba(255,64,129,.12);  color:#ff80ab; border:1px solid rgba(255,64,129,.28); }
-    .rl.cel:hover  { background:rgba(255,64,129,.22); }
+    .rl.soc  { background:rgba(0,229,204,.12); color:var(--green); border:1px solid rgba(0,229,204,.28); }
+    .rl.soc:hover  { background:rgba(0,229,204,.22); box-shadow:0 0 12px rgba(0,229,204,.2); }
+    .rl.bsk  { background:rgba(0,191,176,.12); color:var(--orange); border:1px solid rgba(0,191,176,.28); }
+    .rl.bsk:hover  { background:rgba(0,191,176,.22); box-shadow:0 0 12px rgba(0,191,176,.2); }
+    .rl.oth  { background:rgba(38,212,200,.12); color:#26d4c8; border:1px solid rgba(38,212,200,.28); }
+    .rl.oth:hover  { background:rgba(38,212,200,.22); box-shadow:0 0 12px rgba(38,212,200,.2); }
+    .rl.pol  { background:rgba(0,172,193,.12); color:#00e5ff; border:1px solid rgba(0,172,193,.28); }
+    .rl.pol:hover  { background:rgba(0,172,193,.22); box-shadow:0 0 12px rgba(0,172,193,.2); }
+    .rl.cel  { background:rgba(128,236,230,.1); color:#80ece6; border:1px solid rgba(128,236,230,.28); }
+    .rl.cel:hover  { background:rgba(128,236,230,.2); box-shadow:0 0 12px rgba(128,236,230,.2); }
     .rl.none { background:var(--surface); color:var(--dim); border:1px solid var(--border); cursor:default; pointer-events:none; }
-    .rl.social-lnk { background:rgba(29,161,242,.12); color:#4fc3f7; border:1px solid rgba(29,161,242,.28); }
-    .rl.social-lnk:hover { background:rgba(29,161,242,.22); }
-    .src { font-size:.68rem; color:var(--dim); margin-top:7px; }
+    .rl.social-lnk { background:rgba(0,229,204,.1); color:#00e5cc; border:1px solid rgba(0,229,204,.28); }
+    .rl.social-lnk:hover { background:rgba(0,229,204,.2); }
+    .src { font-size:.68rem; color:var(--dim); margin-top:7px; display:flex; align-items:center; gap:5px; }
+    .src svg { width:14px; height:14px; flex-shrink:0; }
     .past-tag {
       display:inline-block; padding:1px 7px; border-radius:4px; font-size:.68rem; font-weight:700;
       background:rgba(244,67,54,.13); color:#f44336; border:1px solid rgba(244,67,54,.28); margin-bottom:6px;
     }
 
     .empty { grid-column:1/-1; text-align:center; padding:60px 20px; color:var(--dim); }
-    .empty .ei { font-size:2.8rem; margin-bottom:10px; }
+    .empty .ei { margin-bottom:10px; display:flex; justify-content:center; }
+    .empty .ei svg { filter:drop-shadow(0 0 12px rgba(0,190,180,.4)); }
 
     /* ── MODAL ── */
     .mo {
@@ -664,7 +708,7 @@
       transform:translateY(80px); opacity:0; transition:all .3s;
     }
     .toast.show { transform:translateY(0); opacity:1; }
-    .toast.ok { border-color:var(--green); }
+    .toast.ok { border-color:var(--green); box-shadow:0 0 16px rgba(0,229,204,.2); }
     .toast.err { border-color:#f44336; }
     .toast-t { font-weight:700; margin-bottom:3px; }
 
@@ -676,7 +720,7 @@
       display:block; background:var(--card); border:1px solid var(--border);
       border-radius:var(--r); padding:12px 14px; text-decoration:none; transition:all .2s;
     }
-    .sc:hover { border-color:#3d4160; transform:translateY(-1px); }
+    .sc:hover { border-color:#1a4a46; transform:translateY(-1px); box-shadow:0 4px 16px rgba(0,229,204,.1); }
     .sc-n { font-size:.82rem; font-weight:700; color:var(--text); margin-bottom:3px; }
     .sc-d { font-size:.72rem; color:var(--dim); line-height:1.4; }
 
@@ -691,8 +735,9 @@
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
     .new-badge {
       display:inline-block; padding:1px 7px; border-radius:4px; font-size:.65rem; font-weight:800;
-      background:rgba(0,200,83,.15); color:var(--green); border:1px solid rgba(0,200,83,.35);
+      background:rgba(0,229,204,.15); color:var(--green); border:1px solid rgba(0,229,204,.4);
       margin-bottom:6px; animation:pulse 2s ease infinite; letter-spacing:.06em;
+      box-shadow:0 0 8px rgba(0,229,204,.3);
     }
 
     /* ── VIEW TOGGLE ── */
@@ -714,22 +759,23 @@
       letter-spacing:.1em; margin-bottom:12px; padding-bottom:8px;
       border-bottom:1px solid var(--border); display:flex; align-items:center; gap:8px;
     }
+    .tgroup-header svg { width:16px; height:16px; flex-shrink:0; }
     .tgroup-header .tc {
       background:var(--surface); border:1px solid var(--border);
       border-radius:20px; padding:1px 8px; font-size:.68rem; font-weight:700; color:var(--dim);
     }
-    .tgroup.spotlight .tgroup-header { color:var(--orange); border-color:rgba(255,109,0,.28); }
+    .tgroup.spotlight .tgroup-header { color:var(--green); border-color:rgba(0,229,204,.28); }
     .tgroup.spotlight .grid {
-      padding:14px; background:rgba(255,109,0,.04); border-radius:12px;
-      border:1px solid rgba(255,109,0,.12);
+      padding:14px; background:rgba(0,229,204,.04); border-radius:12px;
+      border:1px solid rgba(0,229,204,.12);
     }
 
     /* ── MOBILE DRAWER ── */
     .filter-fab {
       display:none; position:fixed; bottom:22px; left:50%; transform:translateX(-50%);
-      background:linear-gradient(135deg,var(--green),#009624); color:#fff; border:none;
+      background:linear-gradient(135deg,#00e5cc,#008878); color:#07100f; border:none;
       border-radius:24px; padding:11px 24px; font-size:.85rem; font-weight:700;
-      box-shadow:0 4px 20px rgba(0,200,83,.4); cursor:pointer; z-index:150;
+      box-shadow:0 4px 24px rgba(0,229,204,.45); cursor:pointer; z-index:150;
       gap:7px; align-items:center; white-space:nowrap;
     }
     .drawer-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.55); z-index:160; }
@@ -750,18 +796,18 @@
 
     /* ── LIGHT MODE ── */
     body.light {
-      --bg:#f0f2f8; --surface:#ffffff; --card:#f8f9ff; --border:#dde1f0; --text:#1a1d2e; --dim:#6b7280;
+      --bg:#e8f8f7; --surface:#ffffff; --card:#f2fffe; --border:#b2e0db; --text:#0d2422; --dim:#3a7a76;
     }
-    body.light header { background:linear-gradient(135deg,#ffffff,#f0f2f8); }
-    body.light .btn-s { background:#f0f2f8; color:#1a1d2e; }
-    body.light .card:hover { box-shadow:0 8px 24px rgba(0,0,0,.1); }
-    body.light mark { background:rgba(255,193,7,.45); }
+    body.light header { background:linear-gradient(135deg,#ffffff,#e8f8f7); }
+    body.light .btn-s { background:#e8f8f7; color:#0d2422; }
+    body.light .card:hover { box-shadow:0 8px 28px rgba(0,229,204,.15); }
+    body.light mark { background:rgba(0,229,204,.35); }
     body.light .stat { background:#ffffff; }
-    body.light select.sort, body.light .sbox input, body.light input.rgn-in { background:#f8f9ff; color:#1a1d2e; }
+    body.light select.sort, body.light .sbox input, body.light input.rgn-in { background:#f2fffe; color:#0d2422; }
 
     /* ── PROGRESS BAR ── */
     .upd-bar { height:3px; background:var(--border); }
-    .upd-bar-fill { height:100%; width:0%; background:linear-gradient(90deg,var(--green),var(--orange)); transition:width .25s ease; }
+    .upd-bar-fill { height:100%; width:0%; background:linear-gradient(90deg,#00e5cc,#00bfff,#00e5cc); transition:width .25s ease; box-shadow:0 0 8px rgba(0,229,204,.5); }
 
     @media (max-width:700px) {
       header, .controls, .main, .spanel { padding-left:14px; padding-right:14px; }
@@ -775,6 +821,50 @@
   </style>
 </head>
 <body>
+<!-- ── SVG GRADIENT DEFS (referenced by all inline icons) ── -->
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <!-- Clip path: shared by all 28×28 sport coin SVGs -->
+    <clipPath id="coin-clip"><circle cx="14" cy="14" r="13.4"/></clipPath>
+
+    <!-- Soccer: green-teal -->
+    <radialGradient id="soc-g" cx="36%" cy="28%" r="72%">
+      <stop offset="0%"   stop-color="#b0ffea"/>
+      <stop offset="45%"  stop-color="#00d8a8"/>
+      <stop offset="100%" stop-color="#005540"/>
+    </radialGradient>
+    <!-- Basketball: vivid sky-blue -->
+    <radialGradient id="bsk-g" cx="36%" cy="28%" r="72%">
+      <stop offset="0%"   stop-color="#90e8ff"/>
+      <stop offset="45%"  stop-color="#0095e0"/>
+      <stop offset="100%" stop-color="#002868"/>
+    </radialGradient>
+    <!-- Other sports: pure cyan-teal -->
+    <radialGradient id="oth-g" cx="36%" cy="28%" r="72%">
+      <stop offset="0%"   stop-color="#a0fff4"/>
+      <stop offset="45%"  stop-color="#00c8c0"/>
+      <stop offset="100%" stop-color="#004858"/>
+    </radialGradient>
+    <!-- Politics: periwinkle / indigo-blue -->
+    <radialGradient id="pol-g" cx="36%" cy="28%" r="72%">
+      <stop offset="0%"   stop-color="#b8c8ff"/>
+      <stop offset="45%"  stop-color="#3860d8"/>
+      <stop offset="100%" stop-color="#000f50"/>
+    </radialGradient>
+    <!-- Celebrity: cornflower-blue / powder blue -->
+    <radialGradient id="cel-g" cx="36%" cy="28%" r="72%">
+      <stop offset="0%"   stop-color="#d0eeff"/>
+      <stop offset="45%"  stop-color="#3898d8"/>
+      <stop offset="100%" stop-color="#003060"/>
+    </radialGradient>
+    <!-- UI detail icons: mid teal -->
+    <radialGradient id="ui-g" cx="36%" cy="28%" r="72%">
+      <stop offset="0%"   stop-color="#90f8f0"/>
+      <stop offset="45%"  stop-color="#00bfb8"/>
+      <stop offset="100%" stop-color="#005050"/>
+    </radialGradient>
+  </defs>
+</svg>
 
 <!-- ════════════════════════════════════════════════════════════════
      STATIC SEO CONTENT — visible "Browse Events" index at bottom
@@ -803,24 +893,20 @@
 
 <header>
   <div>
-    <h1>⚽ Meet &amp; Greet Finder 🏀🏛️⭐</h1>
-    <p>Sports · Politics · Celebrities · USA 🇺🇸 UK 🇬🇧 France 🇫🇷 Italy 🇮🇹 Spain 🇪🇸 &amp; more 🌍 · Named people only · Rolling 5-Month Window</p>
+    <h1>Meet &amp; Greet Finder</h1>
   </div>
   <div class="hbtns">
-    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle light/dark mode">☀️</button>
+    <div class="ts-chip" id="tsChip" title="Events are automatically refreshed every 6 hours">
+      <span class="ts-dot never" id="tsDot"></span>
+      <span id="tsLabel">Checking…</span>
+    </div>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle light/dark mode"></button>
     <button class="btn btn-s" onclick="openAdd()"><span>＋ Add Event</span></button>
-    <button class="btn btn-o" id="updBtn" onclick="fetchLive()">
-      <div class="spin"></div><span>🔄 Update from Web</span>
-    </button>
     <button class="btn btn-s" onclick="exportData()"><span>⬇ Export</span></button>
     <button class="btn btn-s" onclick="toggleSources()"><span>📚 Sources</span></button>
   </div>
 </header>
 <div class="sticky-header">
-<div class="bar" id="barWrap">
-  <div class="bar-left" id="barTxt">Loading…</div>
-  <div class="bar-ts" id="barTs"><span class="ts-dot never" id="tsDot"></span><span id="tsLabel">Last web update: checking…</span></div>
-</div>
 <div class="upd-bar" id="updBar" style="display:none"><div class="upd-bar-fill" id="updFill"></div></div>
 
 <div class="controls" role="search" aria-label="Search meet and greet events">
@@ -1549,46 +1635,6 @@
      SEO CONTENT SECTION — Browse Events Index
      Visible, tastefully styled reference content for crawlers and users.
 ════════════════════════════════════════════════════════════════ -->
-<section id="seo-content" aria-label="Browse all meet and greet events" style="font-size:0.8rem;opacity:0.85;padding:2rem 32px;max-width:900px;margin:0 auto;color:var(--dim);line-height:1.7">
-  <h2 style="font-size:1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;margin-top:0">Meet &amp; Greet Events 2026 — Top Sports, Tennis &amp; Celebrity Appearances</h2>
-  <p style="margin-bottom:1.2rem">meetandgreet.events is the world's most comprehensive directory of upcoming fan meet &amp; greet events — sports player autograph signings, NBA appearances, tennis fan days, soccer legends dinners, WWE fan expos and celebrity conventions. Updated daily across the USA, UK, Europe and worldwide.</p>
-
-  <h3 style="font-size:0.88rem;font-weight:700;color:var(--text);margin-bottom:0.5rem">Top 10 Meet &amp; Greet Events in 2026</h3>
-  <ol style="padding-left:1.2rem;margin-bottom:1.4rem">
-    <li style="margin-bottom:0.4rem"><strong>Fanatics Fest NYC (Jul 16–19, New York)</strong> — The biggest NBA fan meet &amp; greet event of 2026. Allen Iverson, Trae Young, Jalen Brunson, Klay Thompson, Karl-Anthony Towns, Josh Hart, Draymond Green, Paolo Banchero, Patrick Ewing and Grant Hill. Autograph sessions and photo ops at the Jacob K. Javits Convention Center. GA from $70/day.</li>
-    <li style="margin-bottom:0.4rem"><strong>US Open Fan Week (Aug 18–23, New York) — Free</strong> — Free ground pass via usopen.org gives access to practice courts and player areas. Media Day Aug 22 with autograph access in Arthur Ashe Stadium. Stars of the Open Aug 21. Coco Gauff and Carlos Alcaraz typically accessible.</li>
-    <li style="margin-bottom:0.4rem"><strong>Roger Federer Hall of Fame Induction (Aug 27–29, Newport RI)</strong> — Federer inducted into the International Tennis Hall of Fame. Celebrity Pro Classic doubles match on Aug 28 from $90. Red Carpet pre-show. Fame Fest fan experiences on Hall of Fame grounds.</li>
-    <li style="margin-bottom:0.4rem"><strong>Laver Cup Open Practice Day (Sep 24, London)</strong> — Watch Carlos Alcaraz, Alexander Zverev, Taylor Fritz and Alex de Minaur practice at The O2 Arena from 12–2pm. Tickets via AXS in August 2026. All proceeds to charity.</li>
-    <li style="margin-bottom:0.4rem"><strong>WWE World at WrestleMania 42 (Apr 16–20, Las Vegas)</strong> — Five-day official WWE fan experience. Stone Cold Steve Austin, CM Punk, Rhea Ripley, Tiffany Stratton, AJ Lee, Dominik Mysterio, Damian Priest, Becky Lynch. Photo ops and autograph sessions at Las Vegas Convention Center.</li>
-    <li style="margin-bottom:0.4rem"><strong>Box Fan Expo Las Vegas (May 2)</strong> — 9th Annual Boxing Fan Expo during Cinco de Mayo weekend. Hall of Famers Thomas Hearns, Shane Mosley, Marco Antonio Barrera, José Luis Castillo and Roy Jones Jr. 10am–5pm at Las Vegas Convention Center.</li>
-    <li style="margin-bottom:0.4rem"><strong>Woodbridge Brewing Co NJ — Ongoing Series</strong> — 33 Main St, Woodbridge NJ. New Jersey's most active athlete meet &amp; greet venue. Rangers, Yankees, Giants, Knicks, Mets and Jets legends appear every 1–2 weeks. Mika Zibanejad, Mariano Rivera, Paul O'Neill, Allen Iverson (Sep 27). ~$60–$180 per event.</li>
-    <li style="margin-bottom:0.4rem"><strong>Swiss Open Gstaad (Jul 11–19, Switzerland)</strong> — One of tennis's most fan-friendly events. Daily player interview and public autograph session with every player. Swiss Tennis Family Day Jul 14. ATP 250 on clay in the Swiss Alps.</li>
-    <li style="margin-bottom:0.4rem"><strong>Nitto ATP Finals Fan Village (Nov 15–22, Turin) — Free Entry</strong> — 8,000 sq m fan village FREE on Nov 11 all day, Nov 20 all day, and evenings from 9pm Nov 12–19. Pickleball, padel, beach tennis, eSports, children's area. Top 8 ATP players competing.</li>
-    <li style="margin-bottom:0.4rem"><strong>Credit One Charleston Open (Mar 28–Apr 5, Charleston SC)</strong> — Scheduled daily WTA player autograph and photo sessions at the Fan Hub. Family Weekend Mar 28–29: kids 16 &amp; under free. Credit One Bank Photograph Experience.</li>
-  </ol>
-
-  <h3 style="font-size:0.88rem;font-weight:700;color:var(--text);margin-bottom:0.5rem">Find Meet &amp; Greet Events by Sport</h3>
-
-  <h4 style="font-size:0.82rem;font-weight:700;margin-bottom:0.3rem;margin-top:0.8rem">Tennis Player Autograph Sessions 2026</h4>
-  <p style="margin-bottom:0.8rem">2026 is the richest year for tennis fan access in a decade. The Credit One Charleston Open (Mar 28–Apr 5) offers daily WTA autograph sessions. The Italian Open in Rome (Apr 28–May 17) features Jannik Sinner and Carlos Alcaraz at the Kids Village. Roland-Garros (May 19–Jun 8) has active players at the Tenniseum daily. Wimbledon (Jun 29–Jul 12) maintains its Aorangi Pavilion autograph booth. The Swiss Open Gstaad (Jul 11–19) offers a daily public autograph session with every player. The US Open Fan Week (Aug 18–23) provides free ground-pass access. Roger Federer's Hall of Fame induction in Newport RI (Aug 27–29) is a once-in-a-generation fan event. The Laver Cup at The O2 London (Sep 25–27, open practice Sep 24) brings Alcaraz, Zverev and the world's best. The Erste Bank Open Vienna (Oct 24–Nov 1) and Nitto ATP Finals Fan Village Turin (Nov 15–22) round out the season.</p>
-
-  <h4 style="font-size:0.82rem;font-weight:700;margin-bottom:0.3rem;margin-top:0.8rem">NBA &amp; Basketball Player Signings 2026</h4>
-  <p style="margin-bottom:0.8rem">Fanatics Fest NYC (Jul 16–19) is the headline NBA fan event of 2026 — Allen Iverson, Trae Young, Jalen Brunson, Klay Thompson, Karl-Anthony Towns, Paolo Banchero, Patrick Ewing and Grant Hill all confirmed. For regular in-person signings, CraveTheAuto.com lists public NBA autograph events daily across the USA including CardVault stores, Fiterman Sports (League City TX), Big Horn Autographs (Colorado) and Powers Sports Memorabilia. The National Sports Collectors Convention (NSCC) in Rosemont IL (Jul 29–Aug 2) hosts hundreds of multi-sport autograph sessions. Allen Iverson returns to Woodbridge Brewing Co NJ on Sep 27 ($179).</p>
-
-  <h4 style="font-size:0.82rem;font-weight:700;margin-bottom:0.3rem;margin-top:0.8rem">Soccer / Football Player Meet &amp; Greets 2026</h4>
-  <p style="margin-bottom:0.8rem">Operazione Nostalgia in Rome (Mar 28) brings together Francesco Totti, Zvonimir Boban, Javier Zanetti and 300 football legends for a fan village and 5-a-side tournament. UK legends dinners through Superstar Speakers offer meet &amp; greet and autograph access with Ryan Giggs, Liverpool Legends, Manchester United 1993 squad and Duncan Ferguson. In the USA, Premier League Mornings Live Tampa Bay (Apr 18–19, free) features Tim Howard, Rebecca Lowe and Robbie Earle. Spanish football fans can attend the RFEF national team fan draw and Spain Emotions VIP meet &amp; greet packages. The FC Lorient Centenary Legends Match (Apr 6) and Clermont Foot Legends Match (Jun 7) offer fan access in France.</p>
-
-  <h4 style="font-size:0.82rem;font-weight:700;margin-bottom:0.3rem;margin-top:0.8rem">Celebrity Fan Meet &amp; Greets 2026</h4>
-  <p style="margin-bottom:0.8rem">2026 is a landmark year for celebrity conventions. The LotR 25th Anniversary "Evening with the Hobbits" sees Elijah Wood, Sean Astin, Dominic Monaghan and Billy Boyd reunite at Fan Expo Philadelphia (May 29–31), Fan Expo Denver (May 28–31), Calgary Expo (Apr 23–26) and Fan Expo Canada Toronto (Aug 27–30). Star Trek Las Vegas (Aug 5–9) celebrates the 60th anniversary with William Shatner, Scott Bakula, Kate Mulgrew and 30+ cast members. MCM London (May 22–24) features Nathan Fillion and the Clone Wars cast. Supanova Sydney (Jun 19–21) brings Christopher Lloyd, Simon Pegg and Anthony Daniels.</p>
-
-  <h4 style="font-size:0.82rem;font-weight:700;margin-bottom:0.3rem;margin-top:0.8rem">WWE &amp; Boxing Fan Events 2026</h4>
-  <p style="margin-bottom:0.8rem">WWE World at WrestleMania 42 in Las Vegas (Apr 16–20) is the largest WWE fan experience ever — five days with Stone Cold Steve Austin, CM Punk, Rhea Ripley, Tiffany Stratton and more. The WWE Zone at Fanatics Fest NYC (Jul 16–19) adds Becky Lynch, Cody Rhodes, Randy Orton and Charlotte Flair. For boxing fans, Box Fan Expo Las Vegas (May 2) and UFC X International Fight Week (Jul 4–5) offer accessible signings with Hall of Famers and active fighters. Jon Jones VIP meet &amp; greet is available at DBX6 Garcia vs Perez in Miami (Apr 10).</p>
-
-  <h4 style="font-size:0.82rem;font-weight:700;margin-bottom:0.3rem;margin-top:0.8rem">Local Venue Appearances — NJ/NY Area</h4>
-  <p style="margin-bottom:0.8rem">Woodbridge Brewing Co (33 Main St, Woodbridge NJ, tel: 732-977-9481) is the most active local athlete meet &amp; greet venue in the New Jersey / New York area, hosting autograph appearances every 1–2 weeks. 2026 confirmed: David Tyree (Mar 14), Mika Zibanejad (Mar 20), Charles Oakley (Mar 23), Jacob Trouba (Mar 24), Mariano Rivera (Apr 13), Harrison Bader (Apr 14), Mark Gastineau (Apr 26), Jose Canseco (Apr 27), Paul O'Neill (May 16), Harry Carson (May 31), Allen Iverson (Sep 27). CardVault NJ in East Rutherford, Dave &amp; Adam's Card World in NYC and Steiner Sports in New Rochelle also host regular signings.</p>
-
-  <p style="margin-top:1.2rem;font-size:0.75rem">All events are updated automatically from web searches and verified sources. meetandgreet.events covers sports player meet &amp; greets, autograph signings, fan days, player appearances, celebrity conventions and photo op events in the USA, UK, Europe, Australia, Canada and worldwide. Use the search and filter tools above to find events near you.</p>
-</section>
 
 <!-- ADD/EDIT MODAL -->
 <div class="mo" id="mo">
@@ -1643,8 +1689,8 @@
 
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v22';  // bump version → forces fresh seed load
-const UPDATE_KEY = 'mng_last_auto'; // timestamp of last fetchLive() run
+const KEY        = 'mng_v23';  // bump version → forces fresh seed load
+const UPDATE_KEY = 'mng_last_auto'; // timestamp of last server-side update
 
 // ─── LANGUAGE MAP ─────────────────────────────────────────────────────────────
 const LANG_FLAGS = { fr:'🇫🇷', it:'🇮🇹', es:'🇪🇸', de:'🇩🇪', pt:'🇵🇹', nl:'🇳🇱', ja:'🇯🇵' };
@@ -2155,6 +2201,68 @@ const SEEDS = [
     link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-manchester-united-legends-26th-september-2026',
     notes:'Third date — Man Utd 1993 squad. Early arrival meet & greet, photos, autographs, 2-part player interview. Dinner included.',
     source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+
+  // ════════════ ⚽ SOCCER — NEW CONFIRMED M&G EVENTS ════════════
+  {
+    id:'soc_cc1', sport:'soccer',
+    player:'Cleveland Crunch – Meet & Greet',
+    date:'2026-03-22', time:'12:00',
+    venue:"Dick's House of Sports",
+    city:'Strongsville, OH 🇺🇸',
+    link:'https://www.cravetheauto.com/autograph-appearances/03/22/cleveland-crunch',
+    notes:'Cleveland Crunch legends autograph signing & meet & greet at Dick\'s House of Sports. Tickets via cravetheauto.com.',
+    source:"Crave the Auto — cravetheauto.com"
+  },
+  {
+    id:'soc_sl1', sport:'soccer',
+    player:'Southampton Legends vs Manchester United Legends',
+    date:'2026-03-28', time:'15:00',
+    venue:"St Mary's Stadium",
+    city:'Southampton, UK 🇬🇧',
+    link:'https://www.southamptonfc.com/en/events/event/southampton-legends-vs-manchester-united-legends-match',
+    notes:'Legends charity match with a competition-entry meet & greet for winners. From £5. Full name lineup TBC closer to the date.',
+    source:'Southampton FC — southamptonfc.com'
+  },
+  {
+    id:'soc_sa1', sport:'soccer',
+    player:'Soccer Aid 2026 – Jordi Alba, Leonardo Bonucci, Edwin van der Sar, Wayne Rooney, Robbie Williams + more',
+    date:'2026-05-31', time:'17:00',
+    venue:'London Stadium',
+    city:'London, UK 🇬🇧',
+    link:'https://www.socceraid.org.uk',
+    notes:'Annual Soccer Aid charity match. Confirmed names include Jordi Alba, Leonardo Bonucci, Edwin van der Sar, Wayne Rooney, Theo Walcott, Robbie Williams. Post-match fan access & autograph opportunities on pitch.',
+    source:'Soccer Aid — socceraid.org.uk'
+  },
+  {
+    id:'soc_mu1', sport:'soccer',
+    player:'Manchester United Legends – Evening with Meet & Greet',
+    date:'2026-06-04', time:'18:00',
+    venue:'Hotel Football, Old Trafford',
+    city:'Manchester, UK 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-manchester-united-legends-4th-june-2026',
+    notes:'Pre-dinner meet & greet, photos & autographs with Man Utd legends. 2-part player interview. 3-course dinner included.',
+    source:'Superstar Speakers UK — superstarspeakers.co.uk'
+  },
+  {
+    id:'soc_rb1', sport:'soccer',
+    player:'NY Red Bulls – Autograph Session',
+    date:'2026-08-27', time:'19:00',
+    venue:'Sports Illustrated Stadium',
+    city:'Harrison, NJ 🇺🇸',
+    link:'https://www.newyorkredbulls.com/tickets/rm-autograph-session',
+    notes:'NY Red Bulls players autograph session 7–8:30 PM before match. Members+ reservation required. Check team site for participating players.',
+    source:'NY Red Bulls — newyorkredbulls.com'
+  },
+  {
+    id:'soc_acm1', sport:'soccer', lang:'it',
+    player:'AC Milan – Player Meet & Greet (Rolling)',
+    date:'2026-06-01', time:'11:00',
+    venue:'AC Milan Official Store',
+    city:'Milan, Italy 🇮🇹',
+    link:'https://www.acmilan.com/en/fans/meet-greet',
+    notes:'AC Milan runs rolling in-store player meet & greet sessions at the official Milan store. Dates announced month-by-month — check acmilan.com/en/fans/meet-greet for next confirmed date.',
+    source:'AC Milan — acmilan.com'
   },
 
   // ════════════ 🏅 OTHER SPORTS — MULTI-SPORT CARD SHOWS & NFL ════════════
@@ -2765,8 +2873,8 @@ function init() {
   render();
   updateBar();
   loadCountries();
-  // Auto-update from web if 24+ hours since last run
-  checkAutoUpdate();
+  // Fetch server-side generated events (updated every 6h by GitHub Actions)
+  loadLiveEvents();
 }
 
 function save() { localStorage.setItem(KEY, JSON.stringify(events)); }
@@ -2777,13 +2885,31 @@ function windowDates() {
   return { now, end };
 }
 
-// ─── AUTO-UPDATE ──────────────────────────────────────────────────────────────
-function checkAutoUpdate() {
-  const last = localStorage.getItem(UPDATE_KEY);
-  const now  = Date.now();
-  const MS_24H = 24 * 60 * 60 * 1000;
-  if (!last || (now - parseInt(last, 10)) > MS_24H) {
-    fetchLive(true);
+// ─── LOAD LIVE EVENTS from GitHub Actions-generated JSON ─────────────────────
+async function loadLiveEvents() {
+  try {
+    const r = await fetch('/data/live-events.json');
+    if (!r.ok) return;
+    const data = await r.json();
+
+    // Merge: add any live events not already present (matched by link)
+    const existingLinks = new Set(events.map(e => e.link).filter(Boolean));
+    let added = 0;
+    for (const e of (data.events || [])) {
+      if (e.link && existingLinks.has(e.link)) continue;
+      events.push(e);
+      existingLinks.add(e.link);
+      added++;
+    }
+    if (added > 0) { save(); render(); }
+
+    // Store generatedAt as the last-updated timestamp
+    if (data.generatedAt) {
+      localStorage.setItem(UPDATE_KEY, String(new Date(data.generatedAt).getTime()));
+    }
+    updateBar();
+  } catch (err) {
+    console.info('live-events.json not yet available:', err.message);
   }
 }
 
@@ -2843,14 +2969,14 @@ function render() {
   const win = events.filter(e => { const d = new Date(e.date+'T12:00:00'); return !isNaN(d) && d >= now && d <= end; });
   const mo  = now.getMonth(), yr = now.getFullYear();
   const statDefs = [
-    { ic:'📅', n:win.length,                                                                                                     lb:'Total Events',  f:null,          cls:null  },
-    { ic:'⚽', n:win.filter(e=>e.sport==='soccer').length,                                                                       lb:'Soccer',        f:'soccer',      cls:'soc' },
-    { ic:'🏀', n:win.filter(e=>e.sport==='basketball').length,                                                                   lb:'Basketball',    f:'basketball',  cls:'bsk' },
-    { ic:'🏅', n:win.filter(e=>e.sport==='other').length,                                                                        lb:'Other Sports',  f:'other',       cls:'oth' },
-    { ic:'🏛️', n:win.filter(e=>e.sport==='politics').length,                                                                    lb:'Politics',      f:'politics',    cls:'pol' },
-    { ic:'⭐', n:win.filter(e=>e.sport==='celeb').length,                                                                        lb:'Celebrity',     f:'celeb',       cls:'cel' },
-    { ic:'🗓', n:win.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return d.getMonth()===mo&&d.getFullYear()===yr; }).length, lb:'This Month',    f:null,          cls:null  },
-    { ic:'⭐', n:savedIds.size, lb:'Saved',          f:null,          cls:null, sav:true },
+    { ic:ICONS.calendar,    n:win.length,                                                                                                     lb:'Total Events',  f:null,          cls:null  },
+    { ic:ICONS.soccer,      n:win.filter(e=>e.sport==='soccer').length,                                                                       lb:'Soccer',        f:'soccer',      cls:'soc' },
+    { ic:ICONS.basketball,  n:win.filter(e=>e.sport==='basketball').length,                                                                   lb:'Basketball',    f:'basketball',  cls:'bsk' },
+    { ic:ICONS.other,       n:win.filter(e=>e.sport==='other').length,                                                                        lb:'Other Sports',  f:'other',       cls:'oth' },
+    { ic:ICONS.politics,    n:win.filter(e=>e.sport==='politics').length,                                                                     lb:'Politics',      f:'politics',    cls:'pol' },
+    { ic:ICONS.celeb,       n:win.filter(e=>e.sport==='celeb').length,                                                                        lb:'Celebrity',     f:'celeb',       cls:'cel' },
+    { ic:ICONS.calendar,    n:win.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return d.getMonth()===mo&&d.getFullYear()===yr; }).length, lb:'This Month',    f:null,          cls:null  },
+    { ic:`<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="13.5" fill="url(#cel-g)"/><polygon points="14,4.5 16.8,11.5 24,11.5 18.2,15.8 20.5,23 14,18.5 7.5,23 9.8,15.8 4,11.5 11.2,11.5" fill="#ffd740" opacity="0.9"/><circle cx="14" cy="14" r="13.5" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/></svg>`, n:savedIds.size, lb:'Saved', f:null, cls:null, sav:true },
   ];
   document.getElementById('stats').innerHTML = statDefs.map(({ic,n,lb,f,cls,sav}) => {
     const active = f ? activeFilters.has(f) : sav ? showSavedOnly : false;
@@ -2858,7 +2984,7 @@ function render() {
     const onclick = f ? `toggleFilter('${f}')` : sav ? 'toggleSavedFilter()' : '';
     const filterable = !!(f || sav);
     return `<div class="stat${filterable?' filterable':''}${active?' '+activeCls:''}"${filterable?` onclick="${onclick}" title="${sav?'Show saved events only · click again to clear':'Click to filter · click again to deselect'}"`:''}>
-      <span style="font-size:1.3rem">${ic}</span><div><div class="stat-n" data-target="${n}">0</div><div class="stat-l">${lb}</div></div>
+      <span class="stat-coin ${cls}"><span class="ci">${ic}</span></span><div><div class="stat-n" data-target="${n}">0</div><div class="stat-l">${lb}</div></div>
     </div>`;
   }).join('');
   document.querySelectorAll('.stat-n[data-target]').forEach(el => animateCounter(el, +el.dataset.target));
@@ -2870,17 +2996,17 @@ function render() {
   const thisWeekEvts = list.filter(e => { const d=new Date(e.date+'T12:00:00'); return d>=now2&&d<weekEnd; });
   const futureEvts   = list.filter(e => { const d=new Date(e.date+'T12:00:00'); return d>=weekEnd; });
   const pastEvts     = list.filter(e => { const d=new Date(e.date+'T12:00:00'); return d<now2; });
-  if(thisWeekEvts.length) groups.push({label:'🔥 This Week', events:thisWeekEvts, spotlight:true});
+  if(thisWeekEvts.length) groups.push({label:`${ICONS.fire} This Week`, events:thisWeekEvts, spotlight:true});
   const byMonth={};
   futureEvts.forEach(e=>{
     const d=new Date(e.date+'T12:00:00');
     const k=d.toLocaleDateString('en-US',{month:'long',year:'numeric'});
     (byMonth[k]=byMonth[k]||[]).push(e);
   });
-  Object.entries(byMonth).forEach(([k,evts])=>groups.push({label:'📅 '+k, events:evts, spotlight:false}));
-  if(pastEvts.length) groups.push({label:'📁 Past Events', events:pastEvts, spotlight:false});
+  Object.entries(byMonth).forEach(([k,evts])=>groups.push({label:`${ICONS.calendar} ${k}`, events:evts, spotlight:false}));
+  if(pastEvts.length) groups.push({label:`${ICONS.folder} Past Events`, events:pastEvts, spotlight:false});
 
-  const emptyHTML = `<div class="empty"><div class="ei">🔍</div><p>No events found. Adjust filters or click Update from Web.</p></div>`;
+  const emptyHTML = `<div class="empty"><div class="ei">${ICONS.search}</div><p>No events found. Try adjusting your filters or search terms.</p></div>`;
   let idx=0;
   const gridCls = viewMode==='list' ? 'grid list-view' : 'grid';
   if(!groups.length) {
@@ -2914,12 +3040,137 @@ function countdown(date) {
   return `<span style="color:var(--dim)">In ${diff} days</span>`;
 }
 
+// ─── SVG ICON LIBRARY ─────────────────────────────────────────────────────────
+const _rim = `<circle cx="14" cy="14" r="13.4" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>`;
+const _rimSm = `<circle cx="10" cy="10" r="9.5" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="0.7"/>`;
+
+const ICONS = {
+
+  // ── SPORT COINS (28×28) ─────────────────────────────────────────────────────
+  // Soccer: green-teal coin, proper pentagon-patch pattern (clipped to circle)
+  soccer: `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="13.4" fill="url(#soc-g)"/>
+    <g clip-path="url(#coin-clip)" fill="#00150e" opacity="0.82">
+      <polygon points="14,8.5 19.2,12.3 17.2,18.5 10.8,18.5 8.8,12.3"/>
+      <polygon points="14,8 9.2,1.5 11.2,6.8 16.8,6.8 18.8,1.5"/>
+      <polygon points="19.2,11.8 26,9 24,13.5 21,15.8 19.8,13.8"/>
+      <polygon points="17.1,18.8 23.5,23.5 20.5,27 17.5,24.5 17.5,20.5"/>
+      <polygon points="10.9,18.8 4.5,23.5 7.5,27 10.5,24.5 10.5,20.5"/>
+      <polygon points="8.8,11.8 2,9 4,13.5 7,15.8 8.2,13.8"/>
+    </g>
+    ${_rim}
+  </svg>`,
+
+  // Basketball: vivid sky-blue coin, classic seam lines
+  basketball: `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="13.4" fill="url(#bsk-g)"/>
+    <g clip-path="url(#coin-clip)">
+      <line x1="14" y1="0.6" x2="14" y2="27.4" stroke="#001830" stroke-width="2" stroke-linecap="round"/>
+      <line x1="0.6" y1="14" x2="27.4" y2="14" stroke="#001830" stroke-width="2" stroke-linecap="round"/>
+      <path d="M4.5 4.5 C10 10 10 18 4.5 23.5" stroke="#001830" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M23.5 4.5 C18 10 18 18 23.5 23.5" stroke="#001830" stroke-width="2" stroke-linecap="round" fill="none"/>
+    </g>
+    ${_rim}
+  </svg>`,
+
+  // Other sports: cyan-teal coin, medal with ribbon
+  other: `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="13.4" fill="url(#oth-g)"/>
+    <rect x="11.5" y="2.5" width="2.3" height="8" rx="1.15" fill="#002020" opacity="0.75"/>
+    <rect x="14.2" y="2.5" width="2.3" height="8" rx="1.15" fill="#002020" opacity="0.5"/>
+    <circle cx="14" cy="18.5" r="7" fill="url(#oth-g)" stroke="#002020" stroke-width="1.8"/>
+    <circle cx="14" cy="18.5" r="4.5" fill="none" stroke="#002020" stroke-width="1" opacity="0.5"/>
+    <text x="14" y="22.5" text-anchor="middle" font-size="9" font-weight="900" font-family="Arial,sans-serif" fill="#002020">1</text>
+    ${_rim}
+  </svg>`,
+
+  // Politics: periwinkle-blue coin, government building
+  politics: `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="13.4" fill="url(#pol-g)"/>
+    <rect x="5" y="23.2" width="18" height="2.2" rx="0.6" fill="#000820" opacity="0.85"/>
+    <rect x="4.5" y="11.8" width="19" height="1.8" rx="0.6" fill="#000820" opacity="0.82"/>
+    <polygon points="14,3.5 6.5,8.5 21.5,8.5" fill="#000820" opacity="0.8"/>
+    <rect x="8.5"  y="9.5" width="1.4" height="1.2" rx="0.4" fill="#000820" opacity="0.6"/>
+    <rect x="13.3" y="9.5" width="1.4" height="1.2" rx="0.4" fill="#000820" opacity="0.6"/>
+    <rect x="18.1" y="9.5" width="1.4" height="1.2" rx="0.4" fill="#000820" opacity="0.6"/>
+    <rect x="6.5"  y="13.8" width="2.8" height="9.4" rx="1.4" fill="#000820" opacity="0.82"/>
+    <rect x="11"   y="13.8" width="2.8" height="9.4" rx="1.4" fill="#000820" opacity="0.82"/>
+    <rect x="15.2" y="13.8" width="2.8" height="9.4" rx="1.4" fill="#000820" opacity="0.82"/>
+    <rect x="19.5" y="13.8" width="2.2" height="9.4" rx="1.1" fill="#000820" opacity="0.82"/>
+    ${_rim}
+  </svg>`,
+
+  // Celebrity: powder-blue coin, 5-point star
+  celeb: `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="13.4" fill="url(#cel-g)"/>
+    <polygon points="14,4.5 16.6,11 23.5,11 18,15.2 20.2,22 14,17.8 7.8,22 10,15.2 4.5,11 11.4,11" fill="#001028" opacity="0.85"/>
+    ${_rim}
+  </svg>`,
+
+  // ── DETAIL ROW COINS (20×20) ────────────────────────────────────────────────
+  calendar: `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="10" cy="10" r="9.5" fill="url(#ui-g)"/>
+    ${_rimSm}
+    <rect x="4.2" y="6.2" width="11.6" height="9.6" rx="1.3" fill="none" stroke="#001818" stroke-width="1.3"/>
+    <line x1="4.2" y1="9" x2="15.8" y2="9" stroke="#001818" stroke-width="1.1"/>
+    <line x1="7" y1="4.5" x2="7" y2="7" stroke="#001818" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="13" y1="4.5" x2="13" y2="7" stroke="#001818" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="6" y="10.5" width="2.2" height="2" rx="0.5" fill="#001818" opacity="0.8"/>
+    <rect x="10.5" y="10.5" width="2.2" height="2" rx="0.5" fill="#001818" opacity="0.8"/>
+  </svg>`,
+
+  pin: `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="10" cy="10" r="9.5" fill="url(#ui-g)"/>
+    ${_rimSm}
+    <path d="M10 3C7 3 4.5 5.5 4.5 8.5C4.5 12.5 10 18 10 18C10 18 15.5 12.5 15.5 8.5C15.5 5.5 13 3 10 3Z" fill="#001818" opacity="0.85"/>
+    <circle cx="10" cy="8.5" r="2.5" fill="url(#ui-g)" opacity="0.95"/>
+  </svg>`,
+
+  info: `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="10" cy="10" r="9.5" fill="url(#ui-g)"/>
+    ${_rimSm}
+    <circle cx="10" cy="6" r="1.4" fill="#001818" opacity="0.88"/>
+    <rect x="8.6" y="9" width="2.8" height="6.8" rx="1.3" fill="#001818" opacity="0.88"/>
+  </svg>`,
+
+  link: `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="10" cy="10" r="9.5" fill="url(#ui-g)"/>
+    ${_rimSm}
+    <path d="M8.8 11.2L11.2 8.8" stroke="#001818" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M9 8.5H7C5.9 8.5 5 9.4 5 10.5C5 11.6 5.9 12.5 7 12.5H9" stroke="#001818" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M11 11.5H13C14.1 11.5 15 10.6 15 9.5C15 8.4 14.1 7.5 13 7.5H11" stroke="#001818" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>`,
+
+  // ── UI ACTION ICONS (flat, turquoise-colored, no coin) ─────────────────────
+  fire: `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.5C8 1.5 10.5 5 10 7.5C10 7.5 12.5 5.5 11.5 3C14 5 15 7.5 15 10C15 13 11.9 15.5 8 15.5C4.1 15.5 1 13 1 10C1 7 3 4.5 5 3C5 5 6 6.5 6 6.5C6 4 6.5 2.5 8 1.5Z" fill="#00e8b8" opacity="0.9"/></svg>`,
+
+  edit: `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 1.5L12.5 4.5L4.5 12.5H1.5V9.5L9.5 1.5Z" stroke="#00c8b0" stroke-width="1.4" stroke-linejoin="round"/><line x1="7.8" y1="3.2" x2="10.8" y2="6.2" stroke="#00c8b0" stroke-width="1.3"/></svg>`,
+
+  trash: `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.5" y="4.5" width="9" height="8" rx="1.2" stroke="#e05555" stroke-width="1.4"/><line x1="5.5" y1="7" x2="5.5" y2="10" stroke="#e05555" stroke-width="1.2" stroke-linecap="round"/><line x1="8.5" y1="7" x2="8.5" y2="10" stroke="#e05555" stroke-width="1.2" stroke-linecap="round"/><line x1="0.8" y1="4.5" x2="13.2" y2="4.5" stroke="#e05555" stroke-width="1.4" stroke-linecap="round"/><path d="M5 4.5V3.2C5 2.9 5.2 2.7 5.5 2.7H8.5C8.8 2.7 9 2.9 9 3.2V4.5" stroke="#e05555" stroke-width="1.3"/></svg>`,
+
+  saveOff: `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="7,1.2 8.9,5.2 13.2,5.8 10.1,8.8 10.9,13.1 7,10.8 3.1,13.1 3.9,8.8 0.8,5.8 5.1,5.2" stroke="#5a9490" stroke-width="1.2" fill="none" stroke-linejoin="round"/></svg>`,
+
+  saveOn: `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="7,1.2 8.9,5.2 13.2,5.8 10.1,8.8 10.9,13.1 7,10.8 3.1,13.1 3.9,8.8 0.8,5.8 5.1,5.2" fill="#ffd740" stroke="#ffd740" stroke-width="0.8" stroke-linejoin="round"/></svg>`,
+
+  share: `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1.5L7 9.5" stroke="#00c8b0" stroke-width="1.4" stroke-linecap="round"/><path d="M4 4.5L7 1.5L10 4.5" stroke="#00c8b0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.5 9V11.5C2.5 11.8 2.7 12 3 12H11C11.3 12 11.5 11.8 11.5 11.5V9" stroke="#00c8b0" stroke-width="1.4" stroke-linecap="round"/></svg>`,
+
+  addCal: `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="2.5" width="12" height="10.5" rx="1.4" stroke="#00c8b0" stroke-width="1.4"/><line x1="1" y1="6" x2="13" y2="6" stroke="#00c8b0" stroke-width="1.1"/><line x1="4.5" y1="0.8" x2="4.5" y2="3.8" stroke="#00c8b0" stroke-width="1.4" stroke-linecap="round"/><line x1="9.5" y1="0.8" x2="9.5" y2="3.8" stroke="#00c8b0" stroke-width="1.4" stroke-linecap="round"/><line x1="7" y1="8" x2="7" y2="11.5" stroke="#00c8b0" stroke-width="1.4" stroke-linecap="round"/><line x1="5.2" y1="9.8" x2="8.8" y2="9.8" stroke="#00c8b0" stroke-width="1.4" stroke-linecap="round"/></svg>`,
+
+  sun: `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="3" stroke="#00e0cc" stroke-width="1.5"/><line x1="8" y1="1" x2="8" y2="2.5" stroke="#00e0cc" stroke-width="1.4" stroke-linecap="round"/><line x1="8" y1="13.5" x2="8" y2="15" stroke="#00e0cc" stroke-width="1.4" stroke-linecap="round"/><line x1="1" y1="8" x2="2.5" y2="8" stroke="#00e0cc" stroke-width="1.4" stroke-linecap="round"/><line x1="13.5" y1="8" x2="15" y2="8" stroke="#00e0cc" stroke-width="1.4" stroke-linecap="round"/><line x1="3.1" y1="3.1" x2="4.1" y2="4.1" stroke="#00e0cc" stroke-width="1.4" stroke-linecap="round"/><line x1="11.9" y1="11.9" x2="12.9" y2="12.9" stroke="#00e0cc" stroke-width="1.4" stroke-linecap="round"/><line x1="12.9" y1="3.1" x2="11.9" y2="4.1" stroke="#00e0cc" stroke-width="1.4" stroke-linecap="round"/><line x1="4.1" y1="11.9" x2="3.1" y2="12.9" stroke="#00e0cc" stroke-width="1.4" stroke-linecap="round"/></svg>`,
+
+  moon: `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 9.5C12 13 8 15 4.5 13.5C2 12.4 1 9.5 2 7C2.5 5.8 3.5 4.8 4.5 4.2C3.5 7 4 10.5 7 12.5C10 14.5 13 12.5 13.5 9.5Z" fill="#00e0cc"/></svg>`,
+
+  folder: `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.5C1 3.7 1.7 3 2.5 3H5.5L7 4.5H11.5C12.3 4.5 13 5.2 13 6V11C13 11.8 12.3 12.5 11.5 12.5H2.5C1.7 12.5 1 11.8 1 11V4.5Z" stroke="#5a9490" stroke-width="1.4" fill="none"/></svg>`,
+
+  search: `<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="9.5" stroke="#00b8b0" stroke-width="2.2"/><line x1="23" y1="23" x2="35" y2="35" stroke="#00b8b0" stroke-width="2.2" stroke-linecap="round"/></svg>`,
+};
+
 const SPORT_META = {
-  soccer:     { icon:'⚽', cls:'soc', lbl:'Soccer' },
-  basketball: { icon:'🏀', cls:'bsk', lbl:'Basketball' },
-  other:      { icon:'🏅', cls:'oth', lbl:'Other Sport' },
-  politics:   { icon:'🏛️', cls:'pol', lbl:'Politics' },
-  celeb:      { icon:'⭐', cls:'cel', lbl:'Celebrity' }
+  soccer:     { icon: ICONS.soccer,     cls:'soc', lbl:'Soccer' },
+  basketball: { icon: ICONS.basketball, cls:'bsk', lbl:'Basketball' },
+  other:      { icon: ICONS.other,      cls:'oth', lbl:'Other Sport' },
+  politics:   { icon: ICONS.politics,   cls:'pol', lbl:'Politics' },
+  celeb:      { icon: ICONS.celeb,      cls:'cel', lbl:'Celebrity' }
 };
 
 // ─── PLAYER PHOTO LOOKUP ──────────────────────────────────────────────────────
@@ -3029,24 +3280,24 @@ function cardHTML(e, i) {
         <span class="badge ${cls}">${icon} ${lbl}</span>${transBadge}
       </div>
       <div class="cbns">
-        <button class="ibtn${savedIds.has(e.id)?' sav-on':''}" onclick="toggleSave('${e.id}')" title="${savedIds.has(e.id)?'Remove from saved':'Save event'}">${savedIds.has(e.id)?'⭐':'☆'}</button>
-        <button class="ibtn" onclick="openEdit('${e.id}')" title="Edit">✏️</button>
-        <button class="ibtn del" onclick="delEvt('${e.id}')" title="Delete">🗑</button>
+        <button class="ibtn${savedIds.has(e.id)?' sav-on':''}" onclick="toggleSave('${e.id}')" title="${savedIds.has(e.id)?'Remove from saved':'Save event'}">${savedIds.has(e.id)?ICONS.saveOn:ICONS.saveOff}</button>
+        <button class="ibtn" onclick="openEdit('${e.id}')" title="Edit">${ICONS.edit}</button>
+        <button class="ibtn del" onclick="delEvt('${e.id}')" title="Delete">${ICONS.trash}</button>
       </div>
     </div>
     <div class="dets">
-      <div class="dr"><span class="di">📅</span><div><span class="dt">${fmtDate(e.date,e.time)}</span><br><span class="dd" style="font-size:.74rem">${countdown(e.date)}</span></div></div>
-      <div class="dr"><span class="di">📍</span><div><span class="dt">${hl(e.venue, currentQ)}</span>${e.city?`<br><span class="dd">${hl(e.city, currentQ)}</span>`:''}</div></div>
-      ${e.notes?`<div class="dr"><span class="di">ℹ️</span><span class="dt dd" style="font-size:.8rem">${hl(e.notes, currentQ)}</span></div>`:''}
+      <div class="dr"><span class="di">${ICONS.calendar}</span><div><span class="dt">${fmtDate(e.date,e.time)}</span><br><span class="dd" style="font-size:.74rem">${countdown(e.date)}</span></div></div>
+      <div class="dr"><span class="di">${ICONS.pin}</span><div><span class="dt">${hl(e.venue, currentQ)}</span>${e.city?`<br><span class="dd">${hl(e.city, currentQ)}</span>`:''}</div></div>
+      ${e.notes?`<div class="dr"><span class="di">${ICONS.info}</span><span class="dt dd" style="font-size:.8rem">${hl(e.notes, currentQ)}</span></div>`:''}
     </div>
     <div class="cf">
       ${hasLink
         ? `<a href="${esc(e.link)}" target="_blank" rel="noopener" class="rl ${linkCls}">${linkTxt}</a>`
         : `<span class="rl none">${linkTxt}</span>`}
-      ${e.source?`<div class="src">🔗 ${esc(e.source)}</div>`:''}
+      ${e.source?`<div class="src" style="display:flex;align-items:center;gap:5px">${ICONS.link} ${esc(e.source)}</div>`:''}
       <div class="card-acts">
-        <button class="act-btn" onclick="exportICS('${e.id}')">📅 Add to Calendar</button>
-        <button class="act-btn" onclick="shareEvent('${e.id}')">📤 Share</button>
+        <button class="act-btn" onclick="exportICS('${e.id}')">${ICONS.addCal} Add to Calendar</button>
+        <button class="act-btn" onclick="shareEvent('${e.id}')">${ICONS.share} Share</button>
       </div>
     </div>
   </div>`;
@@ -3076,7 +3327,7 @@ function toggleTheme() {
 function applyTheme() {
   document.body.classList.toggle('light', theme==='light');
   const btn = document.getElementById('themeBtn');
-  if(btn) btn.textContent = theme==='dark' ? '☀️' : '🌙';
+  if(btn) btn.innerHTML = theme==='dark' ? ICONS.sun : ICONS.moon;
 }
 
 function setProgress(done, total) {
@@ -3151,22 +3402,7 @@ function delEvt(id) {
 }
 
 // ─── WEB UPDATE ───────────────────────────────────────────────────────────────
-const API_KEYS = [
-  '5e933de55172278f15273bac3e53127532dc2df7a07d55efb3bd64583261f756',
-  'AIzaSyDxWtysEYfKE6kGZ8-_joiL9rRJ79-XP5c',
-  'AIzaSyDCIWGG3kPbSRlsCf-iJtZKkzRN2qnPapo'
-];
-let apiKeyIndex = +(localStorage.getItem('mng_key_idx') || 0);
-function currentKey() { return API_KEYS[apiKeyIndex] || API_KEYS[0]; }
-function rotateKey() {
-  if (apiKeyIndex < API_KEYS.length - 1) {
-    apiKeyIndex++;
-    localStorage.setItem('mng_key_idx', apiKeyIndex);
-    console.warn(`API key quota reached — switched to key ${apiKeyIndex + 1}/${API_KEYS.length}`);
-    return true; // rotated successfully
-  }
-  return false; // all keys exhausted
-}
+// API keys moved to GitHub Secrets — SerpAPI calls now run server-side via GitHub Actions
 
 // Keywords for relevance filtering across all supported languages
 const RELEVANT_WORDS = ['meet','sign','greet','autograph','dinner','firma','dédicace','autografi','incontro','légende','leyenda','autogramm','signing','appari','book signing','book tour','book launch','firma libro','dédicace livre','buchsign','presentacion libro','vip package','vip meet','fan event','fan day','player appearance','athlete appearance'];
@@ -3361,302 +3597,6 @@ const QUERIES = [
   { q:'site:ticketmaster.com "autograph" OR "signing" sports VIP 2026',             lang:'en' }
 ];
 
-async function fetchOne({ q, lang }) {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 8000);
-  try {
-    const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${currentKey()}`;
-    const r = await fetch(url, { signal: controller.signal });
-    clearTimeout(timer);
-    // Rotate key on quota / auth errors (402 = payment required / quota, 401 = auth)
-    if (r.status === 401 || r.status === 402 || r.status === 429) {
-      const rotated = rotateKey();
-      if (rotated) return fetchOne({ q, lang }); // retry with new key
-      return [];
-    }
-    if (!r.ok) return [];
-    const data = await r.json();
-    // Check JSON body for SerpAPI quota message
-    if (data.error && /run out|quota|credit|limit/i.test(data.error)) {
-      const rotated = rotateKey();
-      if (rotated) return fetchOne({ q, lang });
-      return [];
-    }
-    const out = [];
-    for (const res of (data.organic_results || [])) {
-      const combined = (res.title + ' ' + (res.snippet || '')).toLowerCase();
-      if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
-      if (!combined.includes('2026')) continue;
-      if (!res.link) continue;
-      // Exclude mail-in signings and private-only sessions
-      const isMailIn  = combined.includes('mail-in') || combined.includes('mail in signing') || combined.includes('ship your') || combined.includes('mail order');
-      const isPrivate = combined.includes('private signing') || combined.includes('private session') || combined.includes('private autograph');
-      if (isMailIn || isPrivate) continue;
-
-      // Political book talks only pass if they include a meet & greet / VIP / signing component
-      const isPoliticalBook = (combined.includes('book') || combined.includes('livre') || combined.includes('libro') || combined.includes('buch')) &&
-        (combined.includes('politician') || combined.includes('senator') || combined.includes('president') ||
-         combined.includes('minister') || combined.includes('governor') || combined.includes('blair') ||
-         combined.includes('obama') || combined.includes('clinton') || combined.includes('trump') ||
-         combined.includes('macron') || combined.includes('starmer') || combined.includes('johnson'));
-      if (isPoliticalBook) {
-        const hasMeetVIP = ['meet','greet','vip','signing','sign','autograph','reception','photo'].some(w => combined.includes(w));
-        if (!hasMeetVIP) continue;
-      }
-      // Legends games/matches only pass if they include a meet & greet or VIP option
-      const isLegendsGame = combined.includes('legends game') || combined.includes('legends match') ||
-        combined.includes('match des légendes') || combined.includes('partido de leyendas') ||
-        combined.includes('partita delle leggende') || combined.includes('spiel der legenden') ||
-        combined.includes('legends cup') || combined.includes('classic match');
-      if (isLegendsGame) {
-        const hasMeetOption = ['meet','greet','autograph','vip','signing','firma','dédicace','photo op','photo session'].some(w => combined.includes(w));
-        if (!hasMeetOption) continue;
-      }
-      const isBball    = combined.includes('basketball') || combined.includes('nba') || combined.includes('baloncesto');
-      const isPolitics = !isBball && (
-        combined.includes('senator') || combined.includes('congressman') || combined.includes('president') ||
-        combined.includes('governor') || combined.includes('politician') || combined.includes('town hall') ||
-        combined.includes('campaign meet') || combined.includes('political meet') || combined.includes('ministre') ||
-        combined.includes('politico') || combined.includes('diputado') || combined.includes('alcalde')
-      );
-      const isCeleb    = !isBball && !isPolitics && (
-        combined.includes('actor') || combined.includes('actress') || combined.includes('musician') ||
-        combined.includes('singer') || combined.includes('comedian') || combined.includes('comic con') ||
-        combined.includes('fan convention') || combined.includes('fan expo') || combined.includes('celebrity meet') ||
-        combined.includes('celebrity signing') || combined.includes('cast member') || combined.includes('youtuber') ||
-        combined.includes('influencer meet') || combined.includes('entertainer')
-      );
-      const isOther    = !isBball && !isPolitics && !isCeleb && (
-        combined.includes('gymnast') || combined.includes('olympic') || combined.includes('swimmer') ||
-        combined.includes('athletics') || combined.includes('biles') || combined.includes('bolt') ||
-        combined.includes('ledecky') || combined.includes('nike store') || combined.includes('adidas store') ||
-        combined.includes('puma store') || combined.includes('nfl') || combined.includes('mlb') ||
-        combined.includes('baseball') || combined.includes('football player') || combined.includes('nhl') ||
-        combined.includes('hockey') || combined.includes('card show') || combined.includes('convention')
-      );
-      out.push({
-        link:   res.link,
-        player: res.title.substring(0, 80),
-        sport:  isBball ? 'basketball' : isPolitics ? 'politics' : isCeleb ? 'celeb' : isOther ? 'other' : 'soccer',
-        date:   guessDate(combined) || new Date().toISOString().split('T')[0],
-        notes:  (res.snippet || '').substring(0, 200) + (lang !== 'en' ? ` [${LANG_NAMES[lang] || lang}]` : ''),
-        source: res.displayed_link || 'Web search',
-        lang:   lang !== 'en' ? lang : undefined
-      });
-    }
-    return out;
-  } catch {
-    clearTimeout(timer);
-    return [];
-  }
-}
-
-// ─── TICKETMASTER DISCOVERY API ───────────────────────────────────────────────
-// Free public API — 5,000 calls/day, 5 req/sec. Register at developer.ticketmaster.com
-const TM_API_KEY = 'DpBDKCMGqJyElbpBnHuTTmT5MqmOEhgW'; // public demo key from TM docs
-const TM_QUERIES = [
-  { keyword: 'meet and greet',   classificationName: 'sports' },
-  { keyword: 'VIP meet greet',   classificationName: 'sports' },
-  { keyword: 'autograph signing', classificationName: 'sports' },
-  { keyword: 'fan experience VIP', classificationName: 'sports' },
-  { keyword: 'meet greet soccer' },
-  { keyword: 'meet greet basketball' },
-  { keyword: 'autograph soccer football' },
-  { keyword: 'autograph basketball NBA' }
-];
-
-async function fetchTicketmaster() {
-  const out = [];
-  const today = new Date().toISOString().split('T')[0];
-  const endDate = '2027-01-01T00:00:00Z';
-
-  for (const tq of TM_QUERIES) {
-    try {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 8000);
-      const params = new URLSearchParams({
-        keyword: tq.keyword,
-        size: '20',
-        startDateTime: today + 'T00:00:00Z',
-        endDateTime: endDate,
-        apikey: TM_API_KEY
-      });
-      if (tq.classificationName) params.set('classificationName', tq.classificationName);
-      const url = `https://app.ticketmaster.com/discovery/v2/events.json?${params}`;
-      const r = await fetch(url, { signal: controller.signal });
-      clearTimeout(timer);
-      if (!r.ok) continue;
-      const data = await r.json();
-      const items = data._embedded?.events || [];
-      for (const ev of items) {
-        const combined = (ev.name + ' ' + (ev.info || '') + ' ' + (ev.description || '') + ' ' + (ev.pleaseNote || '')).toLowerCase();
-        if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
-        const isMailIn  = combined.includes('mail-in') || combined.includes('mail in signing');
-        const isPrivate = combined.includes('private signing') || combined.includes('private session');
-        if (isMailIn || isPrivate) continue;
-        const link = ev.url || '';
-        if (!link) continue;
-        const dateStr = ev.dates?.start?.localDate || new Date().toISOString().split('T')[0];
-        const venue   = ev._embedded?.venues?.[0]?.name || '';
-        const city    = ev._embedded?.venues?.[0]?.city?.name || '';
-        const isBball = combined.includes('basketball') || combined.includes('nba');
-        out.push({
-          link,
-          player: ev.name.substring(0, 80),
-          sport:  isBball ? 'basketball' : 'soccer',
-          date:   dateStr,
-          time:   ev.dates?.start?.localTime || '',
-          venue,
-          city,
-          notes:  (ev.info || ev.description || '').substring(0, 200),
-          source: 'Ticketmaster API'
-        });
-      }
-    } catch { /* skip failed TM query */ }
-  }
-  return out;
-}
-
-// ─── SERP API — GOOGLE EVENTS ENGINE ──────────────────────────────────────────
-// engine=google_events returns structured event data (title, date, address, ticket_info)
-const GE_QUERIES = [
-  'meet and greet athlete sports autograph signing 2026',
-  'soccer player meet and greet autograph 2026',
-  'NBA basketball player meet and greet autograph 2026',
-  'athlete autograph signing fan event USA 2026',
-  'tennis player autograph session fan day 2026',
-  'WWE fan experience autograph meet greet 2026',
-  'sports VIP meet greet fan event 2026',
-  'athlete fan event appearance signing New York 2026',
-  'Fanatics Fest 2026 autograph meet greet athlete',
-  'soccer player signing event Eventbrite 2026'
-];
-
-async function fetchGoogleEvents() {
-  const out = [];
-  for (const q of GE_QUERIES) {
-    try {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 8000);
-      const url = `https://serpapi.com/search.json?engine=google_events&q=${encodeURIComponent(q)}&api_key=${currentKey()}`;
-      const r = await fetch(url, { signal: controller.signal });
-      clearTimeout(timer);
-      if (r.status === 401 || r.status === 402 || r.status === 429) {
-        const rotated = rotateKey();
-        if (rotated) { out.push(...await fetchGoogleEvents()); } // retry subset handled by continued loop
-        break;
-      }
-      if (!r.ok) continue;
-      const data = await r.json();
-      if (data.error && /run out|quota|credit|limit/i.test(data.error)) {
-        const rotated = rotateKey(); if (!rotated) break; continue;
-      }
-      for (const ev of (data.events_results || [])) {
-        const combined = ((ev.title || '') + ' ' + (ev.description || '')).toLowerCase();
-        if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
-        if (combined.includes('mail-in') || combined.includes('private signing')) continue;
-        const link = ev.link || (ev.ticket_info?.[0]?.link) || '';
-        if (!link) continue;
-        const dateStr = guessDate(combined) || new Date().toISOString().split('T')[0];
-        const address = Array.isArray(ev.address) ? ev.address.join(', ') : (ev.address || '');
-        const isBball = combined.includes('basketball') || combined.includes('nba');
-        const isCeleb = combined.includes('actor') || combined.includes('musician') || combined.includes('comic con') || combined.includes('fan expo');
-        out.push({
-          link,
-          player: (ev.title || '').substring(0, 80),
-          sport:  isBball ? 'basketball' : isCeleb ? 'celeb' : 'soccer',
-          date:   dateStr,
-          time:   ev.date?.when || '',
-          venue:  ev.venue?.name || '',
-          city:   address,
-          notes:  (ev.description || '').substring(0, 200),
-          source: 'Google Events (SerpAPI)'
-        });
-      }
-    } catch { /* skip failed GE query */ }
-  }
-  return out;
-}
-
-async function fetchLive(auto = false) {
-  const btn = document.getElementById('updBtn');
-  btn.classList.add('loading'); btn.disabled = true;
-  if (!auto) toast('ok', '🔄 Searching…', 'Checking all sources in parallel…');
-
-  // Run ALL queries in parallel — no blocking on a single slow/failed query
-  const total = QUERIES.length;
-  let done = 0;
-  setProgress(0, total);
-
-  // Launch SerpAPI web-search queries, Ticketmaster API, and Google Events engine in parallel
-  const [results, tmItems, geItems] = await Promise.all([
-    Promise.allSettled(
-      QUERIES.map(q => fetchOne(q).then(r => { setProgress(++done, total); return r; }, e => { setProgress(++done, total); throw e; }))
-    ),
-    fetchTicketmaster().catch(() => []),
-    fetchGoogleEvents().catch(() => [])
-  ]);
-  setTimeout(() => setProgress(0, 0), 1500);
-
-  let added = 0;
-  const existingLinks = new Set(events.map(e => e.link).filter(Boolean));
-
-  // Process SerpAPI web results
-  for (const r of results) {
-    if (r.status !== 'fulfilled') continue;
-    for (const item of r.value) {
-      if (existingLinks.has(item.link)) continue;
-      existingLinks.add(item.link);
-      const id = 'web_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5);
-      newEventIds[id] = Date.now(); localStorage.setItem('mng_new', JSON.stringify(newEventIds));
-      events.push({ id, time: '', venue: '', city: '', ...item });
-      added++;
-    }
-  }
-
-  // Process Ticketmaster API results
-  for (const item of tmItems) {
-    if (!item.link || existingLinks.has(item.link)) continue;
-    existingLinks.add(item.link);
-    const id = 'tm_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5);
-    newEventIds[id] = Date.now(); localStorage.setItem('mng_new', JSON.stringify(newEventIds));
-    events.push({ id, ...item });
-    added++;
-  }
-
-  // Process Google Events engine results
-  for (const item of geItems) {
-    if (!item.link || existingLinks.has(item.link)) continue;
-    existingLinks.add(item.link);
-    const id = 'ge_' + Date.now() + '_' + Math.random().toString(36).slice(2, 5);
-    newEventIds[id] = Date.now(); localStorage.setItem('mng_new', JSON.stringify(newEventIds));
-    events.push({ id, time: '', venue: '', city: '', ...item });
-    added++;
-  }
-
-  localStorage.setItem(UPDATE_KEY, Date.now().toString());
-  save(); render(); updateBar();
-
-  const ok = results.some(r => r.status === 'fulfilled' && r.value.length >= 0);
-  if (!ok) {
-    toast('err', 'API Error', 'Could not reach SerpAPI. Check your connection or API key.');
-  } else if (!auto || added > 0) {
-    toast('ok', auto ? 'Auto-updated' : 'Update complete', added > 0 ? `${added} new events found` : 'Already up to date.');
-  }
-
-  btn.classList.remove('loading'); btn.disabled = false;
-}
-
-function guessDate(t) {
-  const m={'january':'01','february':'02','march':'03','april':'04','may':'05','june':'06',
-           'july':'07','august':'08','september':'09','october':'10','november':'11','december':'12'};
-  for (const [n,v] of Object.entries(m)) {
-    const x=t.match(new RegExp(n+'\\s+(\\d{1,2})[,\\s]+2026'));
-    if(x) return `2026-${v}-${x[1].padStart(2,'0')}`;
-  }
-  return null;
-}
-
 // ─── EXPORT ───────────────────────────────────────────────────────────────────
 function exportData() {
   const {now,end} = windowDates();
@@ -3683,31 +3623,38 @@ function toast(type, title, body) {
   setTimeout(()=>el.classList.remove('show'),5000);
 }
 
-// ─── UPDATE BAR (with last-run timestamp) ─────────────────────────────────────
+// ─── TIMESTAMP CHIP ───────────────────────────────────────────────────────────
 function updateBar() {
-  const {now,end}=windowDates();
-  const n=events.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return !isNaN(d)&&d>=now&&d<=end; }).length;
-
-  document.getElementById('barTxt').textContent =
-    `${n} events · Sports ⚽🏀🏅 · Politics 🏛️ · Celebrity ⭐ · `+
-    `USA 🇺🇸 UK 🇬🇧 France 🇫🇷 Italy 🇮🇹 Spain 🇪🇸 + more 🌍 · Auto-updates daily → 📚 Sources`;
+  const dot = document.getElementById('tsDot');
+  const lbl = document.getElementById('tsLabel');
+  if (!dot || !lbl) return;
 
   const last = localStorage.getItem(UPDATE_KEY);
-  const dot  = document.getElementById('tsDot');
-  const lbl  = document.getElementById('tsLabel');
   if (!last) {
     dot.className = 'ts-dot never';
-    lbl.textContent = 'Last web update: not yet run';
-  } else {
-    const ago = Date.now() - parseInt(last, 10);
-    const MS_2H  = 2  * 60 * 60 * 1000;
-    const MS_24H = 24 * 60 * 60 * 1000;
-    const dt = new Date(parseInt(last, 10));
-    const formatted = dt.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})
-                    + ' ' + dt.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
-    dot.className = 'ts-dot' + (ago < MS_2H ? '' : ago < MS_24H ? ' stale' : ' never');
-    lbl.textContent = `Last web update: ${formatted}`;
+    lbl.textContent = 'Not yet synced';
+    return;
   }
+
+  const ts  = parseInt(last, 10);
+  const ago = Date.now() - ts;
+  const dt  = new Date(ts);
+
+  // Friendly relative label
+  let rel;
+  if      (ago < 60000)           rel = 'just now';
+  else if (ago < 3600000)         rel = `${Math.round(ago/60000)}m ago`;
+  else if (ago < 7200000)         rel = '1h ago';
+  else if (ago < MS_6H)           rel = `${Math.round(ago/3600000)}h ago`;
+  else {
+    const formatted = dt.toLocaleDateString('en-GB',{day:'numeric',month:'short'})
+                    + ' ' + dt.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
+    rel = formatted;
+  }
+
+  // Green = fresh (<6h), amber = getting stale (6–12h), grey = stale (>12h)
+  dot.className = 'ts-dot' + (ago < MS_6H ? '' : ago < MS_6H*2 ? ' stale' : ' never');
+  lbl.textContent = `Updated ${rel}`;
 }
 
 // ─── MODAL CLOSE ON BACKDROP ─────────────────────────────────────────────────
