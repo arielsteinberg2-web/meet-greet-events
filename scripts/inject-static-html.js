@@ -42,9 +42,17 @@ const html = events.length === 0 ? '' : `
 // Inject into index.html
 const liveData = JSON.parse(readFileSync(join(ROOT, 'data/live-events.json'), 'utf8'));
 const builtAt = liveData.generatedAt || new Date().toISOString();
+const builtAtDt = new Date(builtAt);
+const formattedTs = builtAtDt.toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'})
+  + ' ' + builtAtDt.toLocaleTimeString('en-GB', {hour:'2-digit', minute:'2-digit'});
+
 let page = readFileSync(join(ROOT, 'index.html'), 'utf8');
 page = page.replace('<!-- STATIC_EVENTS_PLACEHOLDER -->', html || '<!-- STATIC_EVENTS_PLACEHOLDER -->');
-page = page.replace("'LAST_UPDATED_PLACEHOLDER'", `'${builtAt}'`);
+// Bake BUILT_AT into JS constant (replace any existing ISO string or placeholder)
+page = page.replace(/const BUILT_AT\s*=\s*'[^']*'/, `const BUILT_AT = '${builtAt}'`);
+// Bake timestamp directly into the HTML span — no JS needed to display it
+page = page.replace(/<span id="tsLabel">[^<]*<\/span>/, `<span id="tsLabel">Updated ${formattedTs}</span>`);
+page = page.replace(/class="ts-dot[^"]*" id="tsDot"/, 'class="ts-dot stale" id="tsDot"');
 writeFileSync(join(ROOT, 'index.html'), page);
 console.log(`Injected ${events.length} events into index.html`);
 
