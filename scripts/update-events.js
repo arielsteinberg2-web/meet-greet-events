@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
  * update-events.js
- * Runs on GitHub Actions every 6 hours.
- * Queries Eventbrite API for meet & greet / fan experience events,
- * writes data/live-events.json → Cloudflare Pages auto-deploys.
+ * Runs on GitHub Actions once a week (Sunday 08:00 UTC).
+ * Calls SerpAPI, writes data/live-events.json → Cloudflare Pages auto-deploys.
+ * Uses ~10 queries/run × 4 runs/month = ~40 searches/month (under 100 free limit).
  */
 
 import { writeFileSync, mkdirSync } from 'fs';
@@ -13,89 +13,92 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE  = join(__dirname, '../data/live-events.json');
 
-// ── API TOKEN (from GitHub Secrets) ─────────────────────────────────────────
-const EB_TOKEN = process.env.EVENTBRITE_TOKEN;
+// ── API KEY (from GitHub Secrets) ────────────────────────────────────────────
+const API_KEY = process.env.SERPAPI_KEY_1;
 
-if (!EB_TOKEN) {
-  console.error('No EVENTBRITE_TOKEN env var set. Add it as a GitHub Secret.');
+if (!API_KEY) {
+  console.error('No SERPAPI_KEY_1 env var set. Add it as a GitHub Secret.');
   process.exit(1);
 }
 
-const BASE = 'https://www.eventbriteapi.com/v3';
-
-// ── SEARCH KEYWORDS ──────────────────────────────────────────────────────────
+// ── QUERIES (trimmed to 10 to stay under 100/month free limit) ───────────────
 const QUERIES = [
-  'meet and greet',
-  'autograph signing',
-  'VIP fan experience',
-  'fan meet greet',
-  'player signing',
-  'athlete appearance',
-  'celebrity meet greet',
-  'book signing',
-  'fan experience',
-  'photo op',
+  { q: 'soccer football player meet greet autograph signing 2026',     lang: 'en' },
+  { q: 'NBA basketball player autograph signing meet greet 2026',      lang: 'en' },
+  { q: 'celebrity actor musician meet greet fan signing event 2026',   lang: 'en' },
+  { q: 'comic con celebrity autograph photo op fan meet 2026',         lang: 'en' },
+  { q: 'WWE MMA boxing fighter meet greet autograph fan event 2026',   lang: 'en' },
+  { q: 'NFL MLB NBA autograph signing card show convention 2026',      lang: 'en' },
+  { q: 'fan expo celebrity guest autograph signing 2026',              lang: 'en' },
+  { q: 'athlete autograph signing VIP fan experience 2026',            lang: 'en' },
+  { q: 'firma autografos futbolista OR autografi calciatore 2026',     lang: 'en' },
+  { q: 'meet and greet sports player autograph signing 2026',          lang: 'en' },
 ];
 
-// ── SPORT CLASSIFIER ─────────────────────────────────────────────────────────
-function classifySport(text) {
-  const t = text.toLowerCase();
-  if (/basketball|nba|nbl/.test(t))                          return 'basketball';
-  if (/senator|congress|president|governor|politician/.test(t)) return 'politics';
-  if (/actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(t)) return 'celeb';
-  if (/gymnast|olympic|swimmer|nfl|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe/.test(t)) return 'other';
-  return 'soccer';
-}
+const RELEVANT_WORDS = [
+  'meet','sign','greet','autograph','dinner','firma','dédicace','autografi',
+  'incontro','légende','leyenda','autogramm','signing','book signing',
+  'book tour','vip package','vip meet','fan event','fan day',
+  'player appearance','athlete appearance',
+];
 
-// ── FETCH HELPERS ─────────────────────────────────────────────────────────────
-async function fetchJSON(url) {
-  try {
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), 12000);
-    const r = await fetch(url, {
-      signal: ctrl.signal,
-      headers: { Authorization: `Bearer ${EB_TOKEN}` },
-    });
-    clearTimeout(t);
-    if (!r.ok) {
-      console.warn(`  HTTP ${r.status} for ${url.substring(0, 80)}`);
-      return null;
-    }
-    return await r.json();
-  } catch (e) {
-    console.warn(`  Fetch error: ${e.message}`);
-    return null;
+const LANG_NAMES = { fr:'French', it:'Italian', es:'Spanish', de:'German' };
+
+// ── DATE GUESSER ─────────────────────────────────────────────────────────────
+function guessDate(t) {
+  const m = {
+    january:'01',february:'02',march:'03',april:'04',may:'05',june:'06',
+    july:'07',august:'08',september:'09',october:'10',november:'11',december:'12',
+  };
+  for (const [n, v] of Object.entries(m)) {
+    const x = t.match(new RegExp(n + '\\s+(\\d{1,2})[,\\s]+2026'));
+    if (x) return `2026-${v}-${x[1].padStart(2,'0')}`;
   }
+  return null;
 }
 
-// ── PARSE EVENTBRITE RESULTS ─────────────────────────────────────────────────
-function parseEvents(data) {
+// ── FETCH ─────────────────────────────────────────────────────────────────────
+async function fetchWithRetry(url, attempts = 3) {
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const ctrl = new AbortController();
+      const t = setTimeout(() => ctrl.abort(), 12000);
+      const r = await fetch(url, { signal: ctrl.signal });
+      clearTimeout(t);
+      if (r.status === 401 || r.status === 402 || r.status === 429) return null;
+      if (!r.ok) return null;
+      const data = await r.json();
+      if (data.error && /run out|quota|credit|limit/i.test(data.error)) return null;
+      return data;
+    } catch { /* retry */ }
+  }
+  return null;
+}
+
+function parseOrganic(data, lang) {
   const out = [];
-  for (const ev of (data?.events || [])) {
-    if (!ev.name?.text) continue;
-    if (ev.status === 'canceled' || ev.listed === false) continue;
+  for (const res of (data.organic_results || [])) {
+    const combined = (res.title + ' ' + (res.snippet || '')).toLowerCase();
+    if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
+    if (!combined.includes('2026')) continue;
+    if (!res.link) continue;
+    if (/mail-?in signing|ship your|private signing/.test(combined)) continue;
 
-    const start   = ev.start?.local || ev.start?.utc || '';
-    const isoDate = start ? start.split('T')[0] : new Date().toISOString().split('T')[0];
-
-    // Skip past events
-    if (new Date(isoDate) < new Date(new Date().toISOString().split('T')[0])) continue;
-
-    const venueName = ev.venue?.name || '';
-    const city      = ev.venue?.address?.city || '';
-    const country   = ev.venue?.address?.country || '';
-    const cityStr   = [city, country].filter(Boolean).join(', ');
+    const isBball = /basketball|nba/.test(combined);
+    const isPol   = !isBball && /senator|president|governor|politician/.test(combined);
+    const isCeleb = !isBball && !isPol && /actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(combined);
+    const isOther = !isBball && !isPol && !isCeleb && /gymnast|olympic|nfl|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show/.test(combined);
 
     out.push({
-      id:     `eb_${ev.id}`,
-      player: ev.name.text.substring(0, 80),
-      sport:  classifySport(ev.name.text + ' ' + (ev.description?.text || '')),
-      date:   isoDate,
-      venue:  venueName,
-      city:   cityStr,
-      link:   ev.url || '',
-      notes:  (ev.description?.text || '').replace(/\s+/g, ' ').substring(0, 200),
-      source: 'Eventbrite',
+      id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
+      player: res.title.substring(0, 80),
+      sport:  isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isOther ? 'other' : 'soccer',
+      date:   guessDate(combined) || new Date().toISOString().split('T')[0],
+      venue:  '',
+      city:   '',
+      link:   res.link,
+      notes:  (res.snippet || '').substring(0, 200) + (lang !== 'en' ? ` [${LANG_NAMES[lang] || lang}]` : ''),
+      source: res.displayed_link || 'Web search',
     });
   }
   return out;
@@ -106,35 +109,40 @@ async function main() {
   console.log(`Starting update — ${new Date().toISOString()}`);
 
   const results = [];
-  const today = new Date().toISOString().split('T')[0];
 
-  for (const q of QUERIES) {
-    console.log(`  Searching: "${q}"`);
-    const url = `${BASE}/events/search/?q=${encodeURIComponent(q)}&start_date.range_start=${today}T00:00:00&expand=venue&page_size=50`;
-    const data = await fetchJSON(url);
+  for (const { q, lang } of QUERIES) {
+    console.log(`  Searching: "${q.substring(0, 60)}"`);
+    const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${API_KEY}`;
+    const data = await fetchWithRetry(url);
     if (data) {
-      const found = parseEvents(data);
-      console.log(`    → ${found.length} events`);
+      const found = parseOrganic(data, lang);
+      console.log(`    → ${found.length} results`);
       results.push(...found);
+    } else {
+      console.log(`    → no data (quota or error)`);
     }
-    await new Promise(r => setTimeout(r, 500)); // 0.5s between requests
+    await new Promise(r => setTimeout(r, 1100));
   }
 
-  // De-duplicate by event ID
-  const seen  = new Set();
+  // De-duplicate by link
+  const seen   = new Set();
   const unique = results.filter(e => {
-    if (seen.has(e.id)) return false;
-    seen.add(e.id);
+    if (!e.link || seen.has(e.link)) return false;
+    seen.add(e.link);
     return true;
   });
 
-  console.log(`Found ${unique.length} live events (from ${results.length} raw results)`);
+  // Filter to future events only
+  const today = new Date(); today.setHours(0,0,0,0);
+  const future = unique.filter(e => new Date(e.date + 'T12:00:00') >= today);
+
+  console.log(`Found ${future.length} live events (from ${results.length} raw results)`);
 
   mkdirSync(join(__dirname, '../data'), { recursive: true });
   writeFileSync(OUT_FILE, JSON.stringify({
     generatedAt: new Date().toISOString(),
-    count: unique.length,
-    events: unique,
+    count: future.length,
+    events: future,
   }, null, 2));
 
   console.log(`Written to ${OUT_FILE}`);
