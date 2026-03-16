@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advertise — meetandgreet.events Media Kit</title>
+  <meta name="description" content="Reach a highly engaged audience of sports fans, collectors and event-goers. Advertise on meetandgreet.events — the world's leading directory of athlete and celebrity meet & greet events."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" href="/favicon.svg"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #020e32; --surface: #071a4a; --card: #0c2260;
+      --border: rgba(0,229,204,.15); --green: #00e5cc;
+      --text: #e8f4f3; --dim: #7ab8b2;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+           background: var(--bg); color: var(--text); line-height: 1.6; }
+
+    /* ── NAV ── */
+    nav { background: var(--surface); border-bottom: 1px solid var(--border);
+          padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; }
+    nav img { height: 52px; width: auto; border-radius: 6px; }
+    nav a { color: var(--green); text-decoration: none; font-size: .85rem; font-weight: 600; }
+
+    /* ── HERO ── */
+    .hero { text-align: center; padding: 72px 24px 56px; background:
+      radial-gradient(ellipse at 50% 0%, rgba(0,229,204,.12) 0%, transparent 70%); }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800;
+               background: linear-gradient(135deg, #00e5cc, #50d8d0);
+               -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 16px; }
+    .hero p { font-size: 1.1rem; color: var(--dim); max-width: 600px; margin: 0 auto 32px; }
+    .hero .cta { display: inline-block; background: var(--green); color: #020e32;
+                 font-weight: 700; padding: 14px 36px; border-radius: 10px;
+                 text-decoration: none; font-size: 1rem; transition: opacity .2s; }
+    .hero .cta:hover { opacity: .88; }
+
+    /* ── STATS ── */
+    .stats-row { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;
+                 padding: 48px 24px; max-width: 900px; margin: 0 auto; }
+    .stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+                padding: 28px 36px; text-align: center; flex: 1; min-width: 160px; }
+    .stat-box .num { font-size: 2.4rem; font-weight: 800; color: var(--green); }
+    .stat-box .lbl { font-size: .8rem; color: var(--dim); margin-top: 4px; }
+
+    /* ── SECTIONS ── */
+    section { max-width: 900px; margin: 0 auto; padding: 32px 24px; }
+    section h2 { font-size: 1.3rem; font-weight: 700; color: var(--green);
+                 margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+
+    /* ── AUDIENCE ── */
+    .aud-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+    .aud-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+                padding: 18px; }
+    .aud-card .icon { font-size: 1.6rem; margin-bottom: 8px; }
+    .aud-card h3 { font-size: .9rem; font-weight: 700; margin-bottom: 4px; }
+    .aud-card p  { font-size: .78rem; color: var(--dim); }
+
+    /* ── AD FORMATS ── */
+    .formats { display: flex; flex-direction: column; gap: 12px; }
+    .fmt { background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+           padding: 18px 22px; display: flex; align-items: flex-start; gap: 16px; }
+    .fmt-badge { background: rgba(0,229,204,.12); color: var(--green); border: 1px solid var(--border);
+                 border-radius: 6px; padding: 4px 10px; font-size: .72rem; font-weight: 700;
+                 white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+    .fmt h3 { font-size: .9rem; font-weight: 700; margin-bottom: 3px; }
+    .fmt p  { font-size: .78rem; color: var(--dim); }
+    .fmt .price { font-size: .8rem; font-weight: 700; color: var(--green); margin-top: 6px; }
+
+    /* ── CATEGORIES ── */
+    .cats { display: flex; flex-wrap: wrap; gap: 10px; }
+    .cat-pill { background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+                padding: 6px 16px; font-size: .82rem; font-weight: 600; }
+
+    /* ── CONTACT FORM ── */
+    .contact-box { background: var(--card); border: 1px solid var(--border);
+                   border-radius: 14px; padding: 32px; max-width: 560px; margin: 0 auto; }
+    .contact-box h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; }
+    .fg { margin-bottom: 14px; }
+    .fg label { display: block; font-size: .72rem; font-weight: 700; color: var(--dim);
+                text-transform: uppercase; letter-spacing: .05em; margin-bottom: 5px; }
+    .fg input, .fg textarea, .fg select {
+      width: 100%; padding: 9px 12px; background: var(--bg); border: 1px solid var(--border);
+      border-radius: 7px; color: var(--text); font-size: .88rem; outline: none; font-family: inherit;
+      transition: border-color .2s;
+    }
+    .fg input:focus, .fg textarea:focus, .fg select:focus { border-color: var(--green); }
+    .fg textarea { resize: vertical; min-height: 80px; }
+    .submit-btn { width: 100%; padding: 12px; background: var(--green); color: #020e32;
+                  font-weight: 700; font-size: .95rem; border: none; border-radius: 8px;
+                  cursor: pointer; transition: opacity .2s; }
+    .submit-btn:hover { opacity: .88; }
+    #form-status { font-size: .8rem; color: var(--green); min-height: 18px; margin-top: 10px; text-align: center; }
+
+    /* ── FOOTER ── */
+    footer { text-align: center; padding: 32px 16px; font-size: .75rem; color: var(--dim);
+             border-top: 1px solid var(--border); margin-top: 48px; }
+    footer a { color: var(--green); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .stats-row { gap: 12px; }
+      .stat-box { padding: 20px; }
+      .stat-box .num { font-size: 1.8rem; }
+      nav { padding: 12px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/"><img src="/logo-icon.png" alt="meetandgreet.events"/></a>
+  <a href="/">← Back to events</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Reach Sports Fans<br>Who Show Up</h1>
+  <p>meetandgreet.events is the world's leading directory of athlete & celebrity meet & greet events. Our visitors are actively planning to attend — they have intent and they spend.</p>
+  <a href="#contact" class="cta">Get in touch →</a>
+</div>
+
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat-box">
+    <div class="num">150+</div>
+    <div class="lbl">Verified events listed</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">6</div>
+    <div class="lbl">Sports & entertainment categories</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">Daily</div>
+    <div class="lbl">Automated event updates</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">Global</div>
+    <div class="lbl">Events across 20+ countries</div>
+  </div>
+</div>
+
+<!-- AUDIENCE -->
+<section>
+  <h2>👥 Our Audience</h2>
+  <div class="aud-grid">
+    <div class="aud-card">
+      <div class="icon">🏟️</div>
+      <h3>Active event-goers</h3>
+      <p>Visitors are researching real upcoming events — high purchase intent.</p>
+    </div>
+    <div class="aud-card">
+      <div class="icon">✍️</div>
+      <h3>Autograph collectors</h3>
+      <p>Dedicated collectors seeking signed memorabilia and in-person experiences.</p>
+    </div>
+    <div class="aud-card">
+      <div class="icon">⚽</div>
+      <h3>Sports superfans</h3>
+      <p>Soccer, NBA, F1, WWE, tennis — fans of the world's biggest athletes.</p>
+    </div>
+    <div class="aud-card">
+      <div class="icon">🎬</div>
+      <h3>Celebrity fans</h3>
+      <p>Comic-con visitors, book-tour attendees, VIP experience buyers.</p>
+    </div>
+    <div class="aud-card">
+      <div class="icon">💳</div>
+      <h3>High spenders</h3>
+      <p>VIP packages start at $150 — our users are comfortable paying for access.</p>
+    </div>
+    <div class="aud-card">
+      <div class="icon">🌍</div>
+      <h3>International</h3>
+      <p>Events in the US, UK, Europe, Latin America. Multilingual content.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EVENT CATEGORIES -->
+<section>
+  <h2>🗂️ Event Categories</h2>
+  <div class="cats">
+    <span class="cat-pill">⚽ Soccer / Football</span>
+    <span class="cat-pill">🏀 Basketball / NBA</span>
+    <span class="cat-pill">🏎️ Formula 1</span>
+    <span class="cat-pill">🥊 WWE / MMA / Boxing</span>
+    <span class="cat-pill">🎾 Tennis</span>
+    <span class="cat-pill">🎬 Celebrity</span>
+    <span class="cat-pill">📖 Book Talks</span>
+    <span class="cat-pill">🏅 Multi-sport conventions</span>
+  </div>
+</section>
+
+<!-- AD FORMATS -->
+<section>
+  <h2>📣 Advertising Formats</h2>
+  <div class="formats">
+    <div class="fmt">
+      <span class="fmt-badge">FEATURED</span>
+      <div>
+        <h3>Featured Event Listing</h3>
+        <p>Your event pinned at the top of the relevant category with a highlighted border and "Sponsored" label. Includes your logo, custom description, and direct ticket link.</p>
+        <div class="price">From $200 / month</div>
+      </div>
+    </div>
+    <div class="fmt">
+      <span class="fmt-badge">BANNER</span>
+      <div>
+        <h3>Category Sponsor Banner</h3>
+        <p>"Soccer events powered by [Your Brand]" — your logo and link displayed at the top of a sport category. Exclusive per category.</p>
+        <div class="price">From $300 / month per category</div>
+      </div>
+    </div>
+    <div class="fmt">
+      <span class="fmt-badge">NEWSLETTER</span>
+      <div>
+        <h3>Newsletter Sponsorship</h3>
+        <p>Single sponsor placement in our weekly "New Events" email digest sent to subscribers who opted in for player alerts.</p>
+        <div class="price">From $150 / send</div>
+      </div>
+    </div>
+    <div class="fmt">
+      <span class="fmt-badge">CUSTOM</span>
+      <div>
+        <h3>Custom Partnership</h3>
+        <p>Co-branded content, affiliate integration, ticket link sponsorship, or a bespoke package. Get in touch to discuss.</p>
+        <div class="price">Contact us for pricing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact">
+  <div class="contact-box">
+    <h2>📩 Get in touch</h2>
+    <div class="fg">
+      <label>Your name *</label>
+      <input id="ad-name" type="text" placeholder="Jane Smith" />
+    </div>
+    <div class="fg">
+      <label>Company / Brand *</label>
+      <input id="ad-company" type="text" placeholder="e.g. Fanatics, StubHub…" />
+    </div>
+    <div class="fg">
+      <label>Email *</label>
+      <input id="ad-email" type="email" placeholder="jane@company.com" />
+    </div>
+    <div class="fg">
+      <label>Interested in</label>
+      <select id="ad-format">
+        <option value="Featured Event Listing">Featured Event Listing</option>
+        <option value="Category Sponsor Banner">Category Sponsor Banner</option>
+        <option value="Newsletter Sponsorship">Newsletter Sponsorship</option>
+        <option value="Custom Partnership">Custom Partnership</option>
+        <option value="Not sure yet">Not sure yet — let's talk</option>
+      </select>
+    </div>
+    <div class="fg">
+      <label>Message</label>
+      <textarea id="ad-msg" placeholder="Tell us about your brand and goals…"></textarea>
+    </div>
+    <button class="submit-btn" onclick="submitAdEnquiry()">Send enquiry</button>
+    <div id="form-status"></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 meetandgreet.events · <a href="/">Back to events</a></p>
+</footer>
+
+<script>
+const W3F_KEY = '709e5197-368c-4e11-8de9-efd273a85b18';
+
+async function submitAdEnquiry() {
+  const name    = document.getElementById('ad-name').value.trim();
+  const company = document.getElementById('ad-company').value.trim();
+  const email   = document.getElementById('ad-email').value.trim();
+  const format  = document.getElementById('ad-format').value;
+  const msg     = document.getElementById('ad-msg').value.trim();
+  const status  = document.getElementById('form-status');
+
+  if (!name || !company || !email) { status.style.color='#f44336'; status.textContent='Please fill in name, company and email.'; return; }
+  if (!email.includes('@')) { status.style.color='#f44336'; status.textContent='Please enter a valid email.'; return; }
+
+  document.querySelector('.submit-btn').disabled = true;
+  status.style.color = '#00e5cc';
+  status.textContent = 'Sending…';
+
+  try {
+    await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: W3F_KEY,
+        subject: `[meetandgreet.events] Ad enquiry from ${company}`,
+        message: `Name: ${name}\nCompany: ${company}\nEmail: ${email}\nFormat: ${format}\n\n${msg}`
+      })
+    });
+    status.textContent = '✅ Received! We\'ll be in touch within 24 hours.';
+  } catch {
+    status.style.color = '#f44336';
+    status.textContent = 'Something went wrong. Please email hello@meetandgreet.events directly.';
+    document.querySelector('.submit-btn').disabled = false;
+  }
+}
+</script>
+</body>
+</html>

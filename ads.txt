@@ -1,0 +1,10 @@
+# ads.txt — Authorized Digital Sellers for meetandgreet.events
+# https://iabtechlab.com/ads-txt/
+#
+# Add your ad network lines here when you sign up. Examples:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0   ← Google AdSense
+# buysellads.com, XXXXXXX, DIRECT                               ← BuySellAds
+# carbon.ads, XXXXXXX, DIRECT                                   ← Carbon Ads
+#
+# Until then, this file signals to crawlers that you are ad-ready.
+contact=hello@meetandgreet.events
