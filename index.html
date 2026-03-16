@@ -560,6 +560,7 @@
     .stat.active-oth { border-color:#00e5ff; background:rgba(0,229,255,.1);   box-shadow:0 0 12px rgba(0,229,255,.2); }
     .stat.active-pol { border-color:#1565c0; background:rgba(21,101,192,.1);  box-shadow:0 0 12px rgba(21,101,192,.2); }
     .stat.active-cel { border-color:#e91e8c; background:rgba(233,30,140,.1);  box-shadow:0 0 12px rgba(233,30,140,.2); }
+    .stat.active-bok { border-color:#ffb300; background:rgba(255,179,0,.1);   box-shadow:0 0 12px rgba(255,179,0,.2); }
     .stat-n { font-size:1.4rem; font-weight:700; line-height:1; }
     .stat-l { font-size:.72rem; color:var(--dim); margin-top:2px; }
 
@@ -838,13 +839,49 @@
     .upd-bar-fill { height:100%; width:0%; background:linear-gradient(90deg,#00e5cc,#00bfff,#00e5cc); transition:width .25s ease; box-shadow:0 0 8px rgba(0,229,204,.5); }
 
     @media (max-width:700px) {
-      header, .controls, .main, .spanel { padding-left:14px; padding-right:14px; }
-      .hbtns .btn span { display:none; }
+      /* Layout */
+      header, .controls, .main, .spanel { padding-left:12px; padding-right:12px; }
+      .main { padding-bottom:90px; }
+
+      /* Header */
+      header { padding:12px; gap:8px; }
+      header h1 { font-size:1.1rem; }
+      .h1-tag { font-size:.52rem; padding:1px 4px; }
+      .ts-chip { font-size:.65rem; }
+      .hbtns { gap:6px; flex-wrap:nowrap; }
+      .btn-lbl { display:none; }                /* hide text labels, keep icons */
+      .hbtns .btn { padding:8px 10px; min-width:36px; justify-content:center; }
+      .theme-btn { width:36px; height:36px; }
+
+      /* Search / filter controls */
       .controls { display:none; }
       .filter-fab { display:flex; }
-      .stats { overflow-x:auto; flex-wrap:nowrap; padding-bottom:6px; }
-      .stat { flex-shrink:0; }
-      .main { padding-bottom:80px; }
+
+      /* Stats row */
+      .stats { overflow-x:auto; flex-wrap:nowrap; padding-bottom:6px; gap:8px; }
+      .stat { flex-shrink:0; padding:10px 12px; gap:8px; }
+      .stat-n { font-size:1.2rem; }
+      .stat-l { font-size:.65rem; }
+      .stat-coin { width:32px; height:32px; }
+
+      /* Cards grid — single column on mobile */
+      .grid { grid-template-columns:1fr; gap:10px; }
+      .grid.list-view { grid-template-columns:1fr; }
+      .card { padding:14px; }
+      .pname { font-size:.92rem; }
+
+      /* Section headers */
+      .tgroup-header { font-size:.75rem; padding:6px 10px; }
+
+      /* Sources panel */
+      .spanel { padding:16px 12px; }
+      .spanel h2 { font-size:.85rem; }
+    }
+
+    @media (max-width:400px) {
+      header h1 { font-size:.95rem; }
+      .stat { padding:8px 10px; }
+      .stat-n { font-size:1rem; }
     }
   /* ── AD SLOTS ── */
   .ad-slot {
@@ -1332,9 +1369,9 @@
   </div>
   <div class="hbtns">
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle light/dark mode"></button>
-    <button class="btn btn-s" onclick="openAdd()"><span>＋ Add Event</span></button>
-    <button class="btn btn-s" onclick="exportData()"><span>⬇ Export</span></button>
-    <button class="btn btn-s" onclick="toggleSources()"><span>📚 Sources</span></button>
+    <button class="btn btn-s" onclick="openAdd()"><span class="btn-ic">＋</span><span class="btn-lbl"> Add Event</span></button>
+    <button class="btn btn-s" onclick="exportData()"><span class="btn-ic">⬇</span><span class="btn-lbl"> Export</span></button>
+    <button class="btn btn-s" onclick="toggleSources()"><span class="btn-ic">📚</span><span class="btn-lbl"> Sources</span></button>
   </div>
 </header>
 <div class="sticky-header">
