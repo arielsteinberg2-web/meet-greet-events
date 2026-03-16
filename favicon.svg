@@ -1,17 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <circle cx="16" cy="16" r="16" fill="#021238"/>
-  <!-- left person -->
-  <circle cx="7" cy="6" r="2.8" fill="#50a8e8"/>
-  <line x1="7" y1="9" x2="7" y2="19" stroke="#50a8e8" stroke-width="2" stroke-linecap="round"/>
-  <line x1="7" y1="13" x2="16" y2="16" stroke="#50a8e8" stroke-width="2" stroke-linecap="round"/>
-  <line x1="7" y1="19" x2="4" y2="26" stroke="#50a8e8" stroke-width="2" stroke-linecap="round"/>
-  <line x1="7" y1="19" x2="10" y2="26" stroke="#50a8e8" stroke-width="2" stroke-linecap="round"/>
-  <!-- right person -->
-  <circle cx="25" cy="6" r="2.8" fill="#78c8f8"/>
-  <line x1="25" y1="9" x2="25" y2="19" stroke="#78c8f8" stroke-width="2" stroke-linecap="round"/>
-  <line x1="25" y1="13" x2="16" y2="16" stroke="#78c8f8" stroke-width="2" stroke-linecap="round"/>
-  <line x1="25" y1="19" x2="22" y2="26" stroke="#78c8f8" stroke-width="2" stroke-linecap="round"/>
-  <line x1="25" y1="19" x2="28" y2="26" stroke="#78c8f8" stroke-width="2" stroke-linecap="round"/>
-  <!-- handshake dot -->
-  <circle cx="16" cy="16" r="2.8" fill="#ffd740"/>
+  <rect width="32" height="32" rx="6" fill="#000000"/>
+  <!-- left person head -->
+  <circle cx="10" cy="5.5" r="2.2" fill="none" stroke="#00d4b8" stroke-width="1.4"/>
+  <!-- right person head -->
+  <circle cx="22" cy="5.5" r="2.2" fill="none" stroke="#00d4b8" stroke-width="1.4"/>
+  <!-- heart/infinity body shape -->
+  <path d="M10 8 C6 10 4 13 7 16 C10 19 16 21 16 21 C16 21 22 19 25 16 C28 13 26 10 22 8 C19 6.5 17 9 16 11 C15 9 13 6.5 10 8 Z"
+        fill="none" stroke="#00d4b8" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- handshake -->
+  <path d="M12 19 C13 21 15 22 16 22 C17 22 19 21 20 19" fill="none" stroke="#00d4b8" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="14" y1="21" x2="13" y2="23" stroke="#00d4b8" stroke-width="1.3" stroke-linecap="round"/>
+  <line x1="16" y1="22" x2="16" y2="24" stroke="#00d4b8" stroke-width="1.3" stroke-linecap="round"/>
+  <line x1="18" y1="21" x2="19" y2="23" stroke="#00d4b8" stroke-width="1.3" stroke-linecap="round"/>
 </svg>
