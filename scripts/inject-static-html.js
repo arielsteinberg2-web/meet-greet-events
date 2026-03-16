@@ -18,7 +18,7 @@ const events = JSON.parse(readFileSync(join(ROOT, 'data/live-events.json'), 'utf
 
 const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
-const sportLabel = { soccer:'Soccer', basketball:'Basketball', other:'Other Sports', politics:'Politics', celeb:'Celebrity' };
+const sportLabel = { soccer:'Soccer', basketball:'Basketball', other:'Other Sports', politics:'Politics', celeb:'Celebrity', book:'Book Talk' };
 
 const html = events.length === 0 ? '' : `
 <section id="static-events" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true">
