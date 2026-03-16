@@ -55,6 +55,12 @@ const MONITORED_PLAYERS = [
   'Luis Suarez',
   'Romario',
   'Juan Veron',
+  'Antoine Griezmann',
+  'Sergio Ramos',
+  'Steven Gerrard',
+  'Hernan Crespo',
+  'Ivan Rakitic',
+  'Luka Modric',
 ];
 
 // Pick 3 players to search today based on day-of-year rotation
