@@ -611,7 +611,7 @@
     .av.oth { background:#006064; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(0,229,255,.2),0 6px 18px rgba(0,229,255,.35),0 0 22px rgba(0,229,255,.22); }
     .av.pol { background:#0d47a1; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(30,136,229,.2),0 6px 18px rgba(30,136,229,.4),0 0 22px rgba(30,136,229,.28); }
     .av.cel { background:#880e4f; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(233,30,140,.2),0 6px 18px rgba(233,30,140,.4),0 0 22px rgba(233,30,140,.25); }
-    .av-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top center; opacity:0; border-radius:50%; z-index:2; transition:opacity .3s; }
+    .av-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top center; display:none; border-radius:50%; z-index:2; }
     /* SVG icon fills the coin face */
     .av-fb  { position:absolute; inset:0; z-index:1; display:flex; align-items:center; justify-content:center; transition:opacity .3s; }
     .av-fb svg { width:82%; height:82%; display:block; }
@@ -3630,17 +3630,14 @@ async function fetchWikiPhoto(name) {
   if (photoCache[name] !== undefined) return photoCache[name] === 'none' || photoCache[name] === 'loading' ? null : photoCache[name];
   photoCache[name] = 'loading';
   try {
-    // Use Wikipedia REST summary API — more reliable than action=query
-    const slug = encodeURIComponent(name.replace(/ /g, '_'));
+    const url = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(name)}&prop=pageimages&pithumbsize=120&format=json&origin=*`;
     const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), 6000);
-    const r = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${slug}`, {
-      signal: ctrl.signal, headers: { Accept: 'application/json' }
-    });
+    const t = setTimeout(() => ctrl.abort(), 5000);
+    const r = await fetch(url, { signal: ctrl.signal });
     clearTimeout(t);
-    if (!r.ok) { photoCache[name] = 'none'; return null; }
     const data = await r.json();
-    const thumb = data?.thumbnail?.source || data?.originalimage?.source || null;
+    const pages = Object.values(data?.query?.pages || {});
+    const thumb = pages[0]?.thumbnail?.source || null;
     photoCache[name] = thumb || 'none';
     return thumb;
   } catch { photoCache[name] = 'none'; return null; }
@@ -3650,22 +3647,26 @@ function applyPhoto(img, src) {
   if (img.dataset.loaded === '1') return;
   img.dataset.loaded = '1';
   img.onload = () => {
-    img.style.opacity = '1';
+    img.style.display = 'block';
     const fb = img.nextElementSibling;
-    if (fb) fb.style.opacity = '0';
+    if (fb) fb.style.display = 'none';
   };
   img.onerror = () => { photoCache[img.dataset.player] = 'none'; img.dataset.loaded = ''; };
   img.src = src;
 }
 
 function loadPhotos() {
-  document.querySelectorAll('.av-img[data-player]').forEach(img => {
+  const imgs = document.querySelectorAll('.av-img[data-player]');
+  console.log('[photos] loadPhotos called, found', imgs.length, 'images');
+  imgs.forEach(img => {
     const name = img.dataset.player;
     const cached = photoCache[name];
     if (cached && cached !== 'loading' && cached !== 'none') { applyPhoto(img, cached); return; }
     if (cached === 'none') return;
     if (cached === 'loading') return;
+    console.log('[photos] fetching for:', name);
     fetchWikiPhoto(name).then(url => {
+      console.log('[photos] result for', name, '→', url ? 'GOT URL' : 'null');
       if (!url) return;
       document.querySelectorAll('.av-img[data-player]').forEach(el => {
         if (el.dataset.player === name) applyPhoto(el, url);
