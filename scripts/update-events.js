@@ -24,18 +24,24 @@ if (!API_KEY_1) {
 
 // ── QUERIES — rotated daily, 3/day × 31 days = ~93/month (under 100 free limit)
 const ALL_QUERIES = [
-  { q: 'soccer football player meet greet autograph signing 2026',     lang: 'en' },
-  { q: 'NBA basketball player autograph signing meet greet 2026',      lang: 'en' },
-  { q: 'celebrity actor musician meet greet fan signing event 2026',   lang: 'en' },
-  { q: 'comic con celebrity autograph photo op fan meet 2026',         lang: 'en' },
-  { q: 'WWE MMA boxing fighter meet greet autograph fan event 2026',   lang: 'en' },
-  { q: 'NFL MLB NBA autograph signing card show convention 2026',      lang: 'en' },
-  { q: 'fan expo celebrity guest autograph signing 2026',              lang: 'en' },
-  { q: 'athlete autograph signing VIP fan experience 2026',            lang: 'en' },
-  { q: 'firma autografos futbolista OR autografi calciatore 2026',     lang: 'en' },
-  { q: 'meet and greet sports player autograph signing 2026',          lang: 'en' },
+  { q: 'soccer football player meet greet autograph signing 2026',             lang: 'en' },
+  { q: 'NBA basketball player autograph signing meet greet 2026',              lang: 'en' },
+  { q: 'celebrity actor musician meet greet fan signing event 2026',           lang: 'en' },
+  { q: 'comic con celebrity autograph photo op fan meet 2026',                 lang: 'en' },
+  { q: 'WWE MMA boxing fighter meet greet autograph fan event 2026',           lang: 'en' },
+  { q: 'NFL MLB NBA autograph signing card show convention 2026',              lang: 'en' },
+  { q: 'athlete book signing tour meet author 2026',                           lang: 'en' },
+  { q: 'sports star memoir autobiography book tour signing 2026',              lang: 'en' },
+  { q: 'futbolista firma libros presentacion libro 2026',                      lang: 'es' },
+  { q: 'sportif dédicace livre signature rencontre auteur 2026',               lang: 'fr' },
+  { q: 'calciatore firma copie presentazione libro autobiografia 2026',        lang: 'it' },
+  { q: 'Sportler Buchsignierung Buchmesse Lesung Autobiografie 2026',          lang: 'de' },
+  { q: 'sporter boekpresentatie handtekening signeersessie 2026',              lang: 'nl' },
+  { q: 'atleta lançamento livro sessão autógrafos autobiografia 2026',         lang: 'pt' },
+  { q: 'firma autografos futbolista OR autografi calciatore 2026',             lang: 'en' },
+  { q: 'meet and greet sports player autograph signing 2026',                  lang: 'en' },
 ];
-// Split queries between two keys — first 5 on key 1, last 5 on key 2
+// Split queries evenly between two keys — first 8 on key 1, last 8 on key 2
 const QUERIES = ALL_QUERIES;
 
 const RELEVANT_WORDS = [
@@ -43,6 +49,8 @@ const RELEVANT_WORDS = [
   'incontro','légende','leyenda','autogramm','signing','book signing',
   'book tour','vip package','vip meet','fan event','fan day',
   'player appearance','athlete appearance',
+  'firma libros','firma copie','buchsignierung','signeersessie',
+  'sessão autógrafos','lançamento livro','presentación libro','presentazione libro',
 ];
 
 const LANG_NAMES = { fr:'French', it:'Italian', es:'Spanish', de:'German' };
@@ -115,10 +123,11 @@ function parseOrganic(data, lang) {
     if (!res.link) continue;
     if (/mail-?in signing|ship your|private signing/.test(combined)) continue;
 
-    const isBball = /basketball|nba/.test(combined);
-    const isPol   = !isBball && /senator|president|governor|politician/.test(combined);
-    const isCeleb = !isBball && !isPol && /actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(combined);
-    const isOther = !isBball && !isPol && !isCeleb && /gymnast|olympic|nfl|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show/.test(combined);
+    const isBook  = /book signing|book tour|presents his book|firma libros|firma copie|d[eé]dicace.*livre|buchsignierung|signeersessie|sess[aã]o.*aut[oó]grafos|lançamento.*livro|autobiography|memoir|presentaci[oó]n.*libro|presentazione.*libro/.test(combined);
+    const isBball = !isBook && /basketball|nba/.test(combined);
+    const isPol   = !isBook && !isBball && /senator|president|governor|politician/.test(combined);
+    const isCeleb = !isBook && !isBball && !isPol && /actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(combined);
+    const isOther = !isBook && !isBball && !isPol && !isCeleb && /gymnast|olympic|nfl|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show/.test(combined);
 
     const playerName = extractPlayerName(res.title, res.snippet);
     if (!playerName) continue; // skip events with no identifiable player name
@@ -129,7 +138,7 @@ function parseOrganic(data, lang) {
     out.push({
       id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
       player: playerName,
-      sport:  isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isOther ? 'other' : 'soccer',
+      sport:  isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isOther ? 'other' : 'soccer',
       date:   eventDate,
       venue:  '',
       city:   '',
@@ -149,8 +158,8 @@ async function main() {
 
   for (const [i, { q, lang }] of QUERIES.entries()) {
     // First 5 queries use KEY_1, last 5 use KEY_2 (falls back to KEY_1 if KEY_2 missing)
-    const key = (i < 5 || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
-    console.log(`  Searching [key${i < 5 || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
+    const key = (i < 8 || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
+    console.log(`  Searching [key${i < 8 || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
     const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${key}`;
     const data = await fetchWithRetry(url);
     if (data) {
