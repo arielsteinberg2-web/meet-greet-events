@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
  * update-events.js
- * Runs on GitHub Actions once a week (Sunday 08:00 UTC).
+ * Runs on GitHub Actions daily at 08:00 UTC.
  * Calls SerpAPI, writes data/live-events.json → Cloudflare Pages auto-deploys.
- * Uses ~10 queries/run × 4 runs/month = ~40 searches/month (under 100 free limit).
+ * ~16 constant queries + 3 rotating player queries per day, split across 2 API keys.
  */
 
 import { writeFileSync, mkdirSync } from 'fs';
@@ -22,32 +22,54 @@ if (!API_KEY_1) {
   process.exit(1);
 }
 
-// ── QUERIES — rotated daily, 3/day × 31 days = ~93/month (under 100 free limit)
+// ── CONSTANT QUERIES — run every day ─────────────────────────────────────────
 const ALL_QUERIES = [
   { q: 'soccer football player meet greet autograph signing 2026',             lang: 'en' },
   { q: 'NBA basketball player autograph signing meet greet 2026',              lang: 'en' },
+  { q: 'NBA Store New York meet greet player appearance autograph 2026',       lang: 'en' },
   { q: 'celebrity actor musician meet greet fan signing event 2026',           lang: 'en' },
-  { q: 'comic con celebrity autograph photo op fan meet 2026',                 lang: 'en' },
   { q: 'WWE MMA boxing fighter meet greet autograph fan event 2026',           lang: 'en' },
-  { q: 'NFL MLB NBA autograph signing card show convention 2026',              lang: 'en' },
   { q: 'athlete book signing tour meet author 2026',                           lang: 'en' },
-  { q: 'sports star memoir autobiography book tour signing 2026',              lang: 'en' },
   { q: 'futbolista firma libros presentacion libro 2026',                      lang: 'es' },
   { q: 'sportif dédicace livre signature rencontre auteur 2026',               lang: 'fr' },
   { q: 'calciatore firma copie presentazione libro autobiografia 2026',        lang: 'it' },
   { q: 'Sportler Buchsignierung Buchmesse Lesung Autobiografie 2026',          lang: 'de' },
-  { q: 'sporter boekpresentatie handtekening signeersessie 2026',              lang: 'nl' },
-  { q: 'atleta lançamento livro sessão autógrafos autobiografia 2026',         lang: 'pt' },
   { q: 'Formula 1 F1 driver autograph signing fan zone meet greet 2026',       lang: 'en' },
   { q: 'F1 piloto firma autógrafos zona fans Grand Prix 2026',                 lang: 'es' },
   { q: 'F1 pilote dédicace zone fan Grand Prix autographe 2026',               lang: 'fr' },
   { q: 'Formula 1 pilota autografi firma zona fan Gran Premio 2026',           lang: 'it' },
-  { q: 'Formel 1 Fahrer Autogramm Fan Zone Grand Prix 2026',                   lang: 'de' },
   { q: 'firma autografos futbolista OR autografi calciatore 2026',             lang: 'en' },
   { q: 'meet and greet sports player autograph signing 2026',                  lang: 'en' },
 ];
-// Split queries evenly between two keys — first 8 on key 1, last 8 on key 2
-const QUERIES = ALL_QUERIES;
+
+// ── MONITORED PLAYERS — add names here to track them individually ─────────────
+// 3 players are checked per day, rotating through the full list every ~N/3 days.
+const MONITORED_PLAYERS = [
+  'Paolo Maldini',
+  'Alessandro Nesta',
+  'Thierry Henry',
+  'Kun Aguero',
+  'Angel Di Maria',
+  'Fabio Cannavaro',
+  'Gianluigi Buffon',
+  'Luis Suarez',
+  'Romario',
+  'Juan Veron',
+];
+
+// Pick 3 players to search today based on day-of-year rotation
+const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
+const PLAYERS_TODAY = [0, 1, 2].map(offset =>
+  MONITORED_PLAYERS[(dayOfYear * 3 + offset) % MONITORED_PLAYERS.length]
+);
+const PLAYER_QUERIES = PLAYERS_TODAY.flatMap(name => [
+  { q: `"${name}" meet greet autograph signing fan 2026`, lang: 'en' },
+]);
+
+// Final query list: all constant + today's player queries
+// Key split: first half on KEY_1, second half on KEY_2
+const QUERIES = [...ALL_QUERIES, ...PLAYER_QUERIES];
+const SPLIT   = Math.ceil(QUERIES.length / 2);
 
 const RELEVANT_WORDS = [
   'meet','sign','greet','autograph','dinner','firma','dédicace','autografi',
@@ -163,8 +185,8 @@ async function main() {
 
   for (const [i, { q, lang }] of QUERIES.entries()) {
     // First 5 queries use KEY_1, last 5 use KEY_2 (falls back to KEY_1 if KEY_2 missing)
-    const key = (i < 11 || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
-    console.log(`  Searching [key${i < 11 || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
+    const key = (i < SPLIT || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
+    console.log(`  Searching [key${i < SPLIT || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
     const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${key}`;
     const data = await fetchWithRetry(url);
     if (data) {
