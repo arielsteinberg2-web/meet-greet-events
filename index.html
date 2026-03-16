@@ -1370,7 +1370,7 @@
   <div class="hbtns">
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle light/dark mode"></button>
     <button class="btn btn-s" onclick="openAdd()"><span class="btn-ic">＋</span><span class="btn-lbl"> Add Event</span></button>
-    <button class="btn btn-s" onclick="exportData()"><span class="btn-ic">⬇</span><span class="btn-lbl"> Export</span></button>
+    <button class="btn btn-s" onclick="openFeedback()"><span class="btn-ic">💬</span><span class="btn-lbl"> Feedback</span></button>
     <button class="btn btn-s" onclick="toggleSources()"><span class="btn-ic">📚</span><span class="btn-lbl"> Sources</span></button>
   </div>
 </header>
@@ -2127,6 +2127,26 @@
     <div class="mf">
       <button class="btn btn-s" onclick="closeMo()">Cancel</button>
       <button class="btn btn-g" onclick="saveEvt()">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- FEEDBACK MODAL -->
+<div class="mo" id="fbmo">
+  <div class="md" style="max-width:420px">
+    <h2>💬 Share Feedback</h2>
+    <div class="fg">
+      <label>Your message</label>
+      <textarea id="fbmsg" rows="5" placeholder="Suggest an event, report a problem, or share any idea…"></textarea>
+    </div>
+    <div class="fg">
+      <label>Your name or email <span style="font-weight:400;text-transform:none">(optional)</span></label>
+      <input id="fbfrom" type="text" placeholder="Anonymous is fine" />
+    </div>
+    <div id="fbstatus" style="font-size:.8rem;color:var(--green);min-height:18px;margin-bottom:4px"></div>
+    <div class="mf">
+      <button class="btn btn-s" onclick="closeFeedback()">Cancel</button>
+      <button class="btn btn-g" id="fbsend" onclick="submitFeedback()">Send</button>
     </div>
   </div>
 </div>
@@ -3937,7 +3957,13 @@ function saveEvt() {
     notes:document.getElementById('fn').value.trim(),
     source:document.getElementById('fsr').value.trim()||'Manual entry' };
   if (id) { const i=events.findIndex(e=>e.id===id); if(i!==-1) events[i]={...events[i],...data}; }
-  else    { data.id='evt_'+Date.now(); events.push(data); }
+  else {
+    data.id='evt_'+Date.now(); events.push(data);
+    sendNotification(
+      `[meetandgreet.events] New event added: ${player}`,
+      `Player: ${player}\nSport: ${data.sport}\nDate: ${data.date}\nVenue: ${data.venue}\nCity: ${data.city}\nLink: ${data.link}\nNotes: ${data.notes}\nSource: ${data.source}`
+    );
+  }
   save(); closeMo(); render(); toast('ok','Saved!',player);
 }
 function delEvt(id) {
@@ -4142,13 +4168,41 @@ const QUERIES = [
   { q:'site:ticketmaster.com "autograph" OR "signing" sports VIP 2026',             lang:'en' }
 ];
 
-// ─── EXPORT ───────────────────────────────────────────────────────────────────
-function exportData() {
-  const {now,end} = windowDates();
-  const exp = events.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return !isNaN(d)&&d>=now&&d<=end; });
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(new Blob([JSON.stringify(exp,null,2)],{type:'application/json'}));
-  a.download=`meet-greet-${new Date().toISOString().split('T')[0]}.json`; a.click();
+// ─── NOTIFICATIONS (Web3Forms — no email exposed) ────────────────────────────
+const W3F_KEY = 'YOUR_WEB3FORMS_KEY'; // Replace with key from web3forms.com/create
+
+async function sendNotification(subject, body) {
+  try {
+    await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ access_key: W3F_KEY, subject, message: body }),
+    });
+  } catch { /* silent — notification failure never blocks the user */ }
+}
+
+// ─── FEEDBACK ─────────────────────────────────────────────────────────────────
+function openFeedback() {
+  document.getElementById('fbmsg').value = '';
+  document.getElementById('fbfrom').value = '';
+  document.getElementById('fbstatus').textContent = '';
+  document.getElementById('fbsend').disabled = false;
+  document.getElementById('fbmo').classList.add('open');
+}
+function closeFeedback() { document.getElementById('fbmo').classList.remove('open'); }
+async function submitFeedback() {
+  const msg  = document.getElementById('fbmsg').value.trim();
+  const from = document.getElementById('fbfrom').value.trim() || 'Anonymous';
+  if (!msg) { document.getElementById('fbstatus').style.color='#f44336'; document.getElementById('fbstatus').textContent='Please write a message first.'; return; }
+  document.getElementById('fbsend').disabled = true;
+  document.getElementById('fbstatus').style.color = 'var(--green)';
+  document.getElementById('fbstatus').textContent = 'Sending…';
+  await sendNotification(
+    `[meetandgreet.events] Feedback from ${from}`,
+    `From: ${from}\n\n${msg}`
+  );
+  document.getElementById('fbstatus').textContent = 'Thanks! Your feedback was sent.';
+  setTimeout(() => closeFeedback(), 1800);
 }
 
 // ─── SOURCES PANEL ───────────────────────────────────────────────────────────
@@ -4205,6 +4259,7 @@ function updateBar(tsOverride) {
 
 // ─── MODAL CLOSE ON BACKDROP ─────────────────────────────────────────────────
 document.getElementById('mo').addEventListener('click', e => { if(e.target===e.currentTarget) closeMo(); });
+document.getElementById('fbmo').addEventListener('click', e => { if(e.target===e.currentTarget) closeFeedback(); });
 
 init();
 </script>
