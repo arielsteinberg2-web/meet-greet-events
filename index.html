@@ -2259,7 +2259,7 @@
 
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v24';  // bump version → forces fresh seed load
+const KEY        = 'mng_v25';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last server-side update
 const BUILT_AT = '2026-03-15T22:42:06.524Z'; // replaced by inject-static-html.js at build time
 const MS_6H    = 6 * 3600 * 1000;
@@ -2835,6 +2835,237 @@ const SEEDS = [
     link:'https://www.acmilan.com/en/fans/meet-greet',
     notes:'AC Milan runs rolling in-store player meet & greet sessions at the official Milan store. Dates announced month-by-month — check acmilan.com/en/fans/meet-greet for next confirmed date.',
     source:'AC Milan — acmilan.com'
+  },
+
+  // ════════════ ⚽ SOCCER — LEGENDS EVENTS (SCOUTED MAR 2026) ════════════
+  {
+    id:'soc_bg1', sport:'soccer',
+    player:'Ronaldinho, Roberto Carlos, Cafu, Mascherano, Veron & Legends',
+    date:'2026-06-07', time:'',
+    venue:'Chase Stadium (Inter Miami CF)',
+    city:'Fort Lauderdale, FL 🇺🇸',
+    link:'https://www.intermiamicf.com/news/the-beautiful-game-celebrity-match-returns-to-chase-stadium-on-june-7',
+    notes:'The Beautiful Game by R10 & RC3 (3rd edition). Celebrity charity match: Team Ronaldinho vs Team Roberto Carlos. Tickets via Ticketmaster.',
+    source:'Inter Miami CF — intermiamicf.com'
+  },
+  {
+    id:'soc_bg2', sport:'soccer',
+    player:'Ronaldinho, Roberto Carlos, Nani, Cafu, Mascherano & Legends',
+    date:'2026-06-23', time:'19:30',
+    venue:'Exploria Stadium',
+    city:'Orlando, FL 🇺🇸',
+    link:'https://www.orlandocitysc.com/news/exploria-stadium-to-host-the-beautiful-game-on-june-23-featuring-icons-and-legen',
+    price:'From $35',
+    notes:'The Beautiful Game celebrity legends match, KO 7:30pm ET. Nani returns to Exploria Stadium. Team Ronaldinho vs Team Roberto Carlos. Tickets from $35 on Ticketmaster.',
+    source:'Orlando City SC — orlandocitysc.com'
+  },
+  {
+    id:'soc_lfc1', sport:'soccer',
+    player:'Steven Gerrard, Thiago Alcantara, Peter Crouch, Dirk Kuyt, Martin Skrtel & LFC/BVB Legends',
+    date:'2026-03-28', time:'15:00',
+    venue:'Anfield',
+    city:'Liverpool, England 🇬🇧',
+    link:'https://www.liverpoolfc.com/news/lfc-legends-v-borussia-dortmund-legends-full-ticket-details',
+    price:'£9.50–£29.50',
+    notes:'LFC Legends vs Borussia Dortmund Legends charity match at Anfield. Proceeds to LFC Foundation & BVB Foundation. Hospitality packages from £189.',
+    source:'Liverpool FC — liverpoolfc.com'
+  },
+  {
+    id:'soc_rob1', sport:'soccer',
+    player:'Bryan Robson',
+    date:'2026-03-29', time:'18:00',
+    venue:'Hotel Football, Old Trafford',
+    city:'Manchester, England 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-bryan-robson-hotel-football-29th-march-2026',
+    notes:'An Evening with Bryan Robson. Dinner, two-part live interview, Q&A. Platinum guests: professional photo + autograph on own item. Photos from 6:30pm, dinner 7:30pm.',
+    source:'Superstar Speakers — superstarspeakers.co.uk'
+  },
+  {
+    id:'soc_eng1', sport:'soccer',
+    player:'Stuart Pearce, Chris Waddle, Mark Wright, Des Walker – England Legends (Italia \'90)',
+    date:'2026-03-20', time:'18:00',
+    venue:'Crowne Plaza Hotel Chester',
+    city:'Chester, England 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-england-legends-20th-march-2026',
+    notes:'An Evening with England Legends (Italia \'90 theme). Dinner, two-part live interview, Q&A. Platinum: professional photo + autograph.',
+    source:'Superstar Speakers — superstarspeakers.co.uk'
+  },
+  {
+    id:'soc_giggs1', sport:'soccer',
+    player:'Ryan Giggs',
+    date:'2026-03-26', time:'18:00',
+    venue:'Crowne Plaza Chester by IHG',
+    city:'Chester, England 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-ryan-giggs-chester-crowne-plaza-26th-march-2026',
+    notes:'An Evening with Ryan Giggs. Dinner, live interview, Q&A. Platinum: signed Man Utd shirt + professional photo. Pre-show meet & greet included.',
+    source:'Superstar Speakers — superstarspeakers.co.uk'
+  },
+  {
+    id:'soc_giggs2', sport:'soccer',
+    player:'Ryan Giggs',
+    date:'2026-03-27', time:'18:00',
+    venue:'Hotel Football, Old Trafford',
+    city:'Manchester, England 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-ryan-giggs-live-from-hotel-football-27th-march-2026',
+    notes:'An Evening with Ryan Giggs at Hotel Football (Old Trafford). Dinner, Q&A, two-part live show. Platinum: professional photo + autograph.',
+    source:'Superstar Speakers — superstarspeakers.co.uk'
+  },
+  {
+    id:'soc_manu1', sport:'soccer',
+    player:'Bryan Robson, Clayton Blackmore, Denis Irwin, Gary Pallister – Man Utd Legends (Belfast)',
+    date:'2026-03-19', time:'18:00',
+    venue:'Crowne Plaza Belfast by IHG',
+    city:'Belfast 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-manchester-united-legends-belfast-19th-march-2026',
+    notes:'35th Anniversary — 1991 European Cup Winners Cup. Robson, Blackmore, Irwin & Pallister. Dinner, Q&A. Platinum: professional photo + autograph.',
+    source:'Superstar Speakers — superstarspeakers.co.uk'
+  },
+  {
+    id:'soc_lpool1', sport:'soccer',
+    player:'Mark Wright, Peter Beardsley, Steve McMahon, John Aldridge – Liverpool Legends',
+    date:'2026-04-24', time:'18:00',
+    venue:'Crowne Plaza Hotel Chester',
+    city:'Chester, England 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-liverpool-legends-chester-crowne-plaza-24th-april-2026',
+    notes:'An Evening with Liverpool Legends. Dinner, two-part interview. Platinum: autograph on own item + professional photo.',
+    source:'Superstar Speakers — superstarspeakers.co.uk'
+  },
+  {
+    id:'soc_rob2', sport:'soccer',
+    player:'Bryan Robson',
+    date:'2026-05-09', time:'18:00',
+    venue:'Crowne Plaza Hotel Chester',
+    city:'Chester, England 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-bryan-robson-chester-9th-may-2026',
+    notes:'An Evening with Bryan Robson (Chester). Dinner, two-part live interview, Q&A. Platinum: professional photo + autograph.',
+    source:'Superstar Speakers — superstarspeakers.co.uk'
+  },
+  {
+    id:'soc_lpool2', sport:'soccer',
+    player:'Sammy Lee, Phil Thompson, Mark Lawrenson, Bruce Grobbelaar, Ronnie Whelan – LFC 1984 European Cup',
+    date:'2026-05-16', time:'18:00',
+    venue:'Crowne Plaza Belfast by IHG',
+    city:'Belfast 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-liverpool-legends-1984-european-cup-winners-belfast-16th-may-2026',
+    notes:'An Evening with Liverpool Legends — 1984 European Cup Winners. Dinner, live Q&A. Platinum: autograph + photo.',
+    source:'Superstar Speakers — superstarspeakers.co.uk'
+  },
+  {
+    id:'soc_cant1', sport:'soccer',
+    player:'Eric Cantona',
+    date:'2026-09-25', time:'18:30',
+    venue:'Mercure Manchester Piccadilly Hotel',
+    city:'Manchester, England 🇬🇧',
+    link:'https://allevents.in/manchester/an-evening-with-eric-the-king-cantona/100001975225123516',
+    price:'£159–£499',
+    notes:'An Evening with Eric The King Cantona. Live Q&A dinner. Silver £159, Gold £249, Platinum VIP £499 includes professional photo with Cantona + autograph.',
+    source:'Legends 7 / Superstar Speakers'
+  },
+  {
+    id:'soc_manu93', sport:'soccer',
+    player:'Manchester United 1993 Premier League Legends',
+    date:'2026-09-26', time:'18:30',
+    venue:'Hotel Football, Old Trafford',
+    city:'Manchester, England 🇬🇧',
+    link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-manchester-united-legends-26th-september-2026',
+    notes:'An Evening with Man Utd Legends — 1993 PL winning squad reunion. Photo, autographs, Q&A, dinner at Hotel Football. Platinum: autograph + professional photo.',
+    source:'Superstar Speakers — superstarspeakers.co.uk'
+  },
+  {
+    id:'soc_icons1', sport:'soccer',
+    player:'Gareth Bale, John Terry, Andrew Cole, Gabriel Batistuta, Gianfranco Zola & 19 more legends',
+    date:'2026-01-31', time:'',
+    venue:'Robinswood Golf Course, Reignwood Park',
+    city:'Bangkok 🇹🇭',
+    link:'https://www.icons-series.com/reignwood-icons-of-football-2026',
+    price:'650 THB (~$18 USD)',
+    notes:'Reignwood Icons of Football fan festival. 24 legends play golf + fan meet & greet, autographs and photos. Team England vs Team World format.',
+    source:'Icons Series — icons-series.com'
+  },
+  {
+    id:'soc_terry1', sport:'soccer',
+    player:'John Terry',
+    date:'2026-03-01', time:'',
+    venue:'TMGM "The Famous CFC" Fan Event Venue',
+    city:'Bangkok 🇹🇭',
+    link:'https://financialcommission.org/2026/03/05/tmgm-and-chelsea-bring-the-famous-cfc-fan-experience-to-bangkok/',
+    notes:'The Famous CFC fan experience with John Terry. Q&A, interactive activities, VIP meet & greet. Chelsea legend meets Thai fans with autographs & photos.',
+    source:'TMGM / Chelsea FC'
+  },
+  {
+    id:'soc_magicup', sport:'soccer',
+    player:'Javier Zanetti, Rivaldo, Didier Drogba, Andriy Shevchenko (ambassador appearances)',
+    date:'2026-06-01', time:'',
+    venue:'ESPN Wide World of Sports Complex, Walt Disney World',
+    city:'Orlando, FL 🇺🇸',
+    link:'https://magicup.com/',
+    notes:'MagiCup 2026 youth tournament (Jun 1–5). Zanetti, Rivaldo, Drogba & Shevchenko appear in person as ambassadors. Meet legends at fan activities throughout the tournament.',
+    source:'MagiCup — magicup.com'
+  },
+  {
+    id:'soc_cagni1', sport:'soccer', lang:'it',
+    player:'Gigi Cagni – Book Signing "Rànget!" (Brescia)',
+    date:'2026-01-31', time:'15:30',
+    venue:'Feltrinelli Bookstore, Centro Commerciale Rondinelle',
+    city:'Roncadelle (Brescia), Italy 🇮🇹',
+    link:'https://www.radiobrunobrescia.it/2026/01/14/gigi-cagni-ex-calciatore-e-allenatore-del-brescia-firma-le-copie-del-suo-libro-el-centro-commerciale-rondinelle/',
+    price:'Free (book purchase)',
+    notes:'Gigi Cagni book signing — ex Brescia & Sampdoria legend. Book "Rànget! 50 anni imparando dal calcio." Queue from 15:30, signing from 16:30.',
+    source:'Radio Bruno Brescia — radiobrunobrescia.it'
+  },
+  {
+    id:'soc_cagni2', sport:'soccer', lang:'it',
+    player:'Gigi Cagni – Book Presentation at Coverciano Football Museum',
+    date:'2026-02-25', time:'17:00',
+    venue:'Bar Sport, Museo del Calcio (Coverciano)',
+    city:'Florence, Italy 🇮🇹',
+    link:'https://www.figc.it/it/museo-del-calcio/news/gigi-cagni-al-club-del-mercoledi-il-25-febbraio-la-presentazione-del-suo-libro-al-bar-sport-del-museo-del-calcio-iwsghmq8',
+    price:'Free',
+    notes:'"Club del mercoledì" — book presentation at Coverciano Football Museum. Q&A with journalists, book signing follows. Free admission.',
+    source:'FIGC Museo del Calcio — figc.it'
+  },
+  {
+    id:'soc_sala1', sport:'soccer', lang:'it',
+    player:'Patrizio Sala – Book Signing (Torino FC Scudetto legend)',
+    date:'2026-03-09', time:'',
+    venue:'Ubik Bookstore',
+    city:'Potenza, Italy 🇮🇹',
+    link:'https://ufficiostampabasilicata.it/2026/03/09/potenza-presentato-il-libro-patrizio-sala-lacqua-dello-scudetto/',
+    price:'Free',
+    notes:'"Patrizio Sala: l\'acqua dello scudetto" — 50th anniversary of Torino\'s 1976 Scudetto. Sala in dialogue, book signing follows.',
+    source:'Ufficio Stampa Basilicata — ufficiostampabasilicata.it'
+  },
+  {
+    id:'soc_spitse1', sport:'soccer', lang:'nl',
+    player:'Sherida Spitse – Book Signing "Sherida, open kaart"',
+    date:'2026-03-14', time:'14:00',
+    venue:'Ajax Fanshop (next to Johan Cruijff ArenA)',
+    city:'Amsterdam, Netherlands 🇳🇱',
+    link:'https://www.ajaxlife.nl/articles/2026/maart-2026/spitse-signeert-nieuw-boek-zaterdag-in-ajax-fanshop',
+    price:'€22.99 (book)',
+    notes:'Sherida Spitse book signing — most-capped Netherlands women\'s player ever. Signeersessie 14:00–16:00. Buy book (€22.99) at Ajax Fanshop and meet the icon.',
+    source:'Ajax Life — ajaxlife.nl'
+  },
+  {
+    id:'soc_riesa1', sport:'soccer', lang:'de',
+    player:'Riesa DDR-Oberliga Legends – Autogrammstunde',
+    date:'2026-02-16', time:'10:00',
+    venue:'Gaststätte Bürgergarten',
+    city:'Riesa, Germany 🇩🇪',
+    link:'https://www.wochenkurier.info/landkreis-meissen/artikel/fussball-legenden-bei-autogrammstunde',
+    price:'€3',
+    notes:'Fußball-Legenden Autogrammstunde — DDR-Oberliga veterans sign autographs from 10am. Memorabilia (pennants, programs, trading cards) on sale. Entry €3.',
+    source:'Wochenkurier — wochenkurier.info'
+  },
+  {
+    id:'soc_monaco1', sport:'soccer', lang:'fr',
+    player:'Eden Hazard, Andriy Shevchenko, Clarence Seedorf, Youri Djorkaeff, Christian Karembeu & Legends',
+    date:'2026-01-24', time:'15:30',
+    venue:'Stade Louis II',
+    city:'Monaco 🇲🇨',
+    link:'https://www.monaco-tribune.com/en/2026/01/eden-hazard-shevchenko-seedorf-the-fight-aids-cup-returns-to-louis-ii-stadium/',
+    notes:'Fight AIDS Cup 2026 (6th edition) — ~20 football legends charity match. Fan access to the stadium. Hazard, Shevchenko, Seedorf, Djorkaeff & Karembeu among participants.',
+    source:'Monaco Tribune — monaco-tribune.com'
   },
 
   // ════════════ 🏅 OTHER SPORTS — MULTI-SPORT CARD SHOWS & NFL ════════════
