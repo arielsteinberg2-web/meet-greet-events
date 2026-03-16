@@ -1370,6 +1370,7 @@
   <div class="hbtns">
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle light/dark mode"></button>
     <button class="btn btn-s" onclick="openAdd()"><span class="btn-ic">＋</span><span class="btn-lbl"> Add Event</span></button>
+    <button class="btn btn-s" onclick="openSubmit()"><span class="btn-ic">📨</span><span class="btn-lbl"> Submit Event</span></button>
     <button class="btn btn-s" onclick="openFeedback()"><span class="btn-ic">💬</span><span class="btn-lbl"> Feedback</span></button>
     <button class="btn btn-s" onclick="toggleSources()"><span class="btn-ic">📚</span><span class="btn-lbl"> Sources</span></button>
   </div>
@@ -2147,6 +2148,47 @@
     <div class="mf">
       <button class="btn btn-s" onclick="closeFeedback()">Cancel</button>
       <button class="btn btn-g" id="fbsend" onclick="submitFeedback()">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- SUBMIT EVENT MODAL (public) -->
+<div class="mo" id="submo">
+  <div class="md" style="max-width:500px">
+    <h2>📨 Submit an Event</h2>
+    <p style="font-size:.8rem;color:var(--dim);margin-bottom:14px">Know about a meet &amp; greet that's not listed? Submit it and we'll review and add it within 24 hours.</p>
+    <div class="fr">
+      <div class="fg"><label>Player / Person *</label><input id="sub-player" type="text" placeholder="e.g. Paolo Maldini" /></div>
+      <div class="fg"><label>Event Type *</label>
+        <select id="sub-sport"><option value="soccer">⚽ Soccer</option><option value="basketball">🏀 Basketball</option><option value="other">🏅 Other Sport</option><option value="celeb">🎬 Celebrity</option><option value="book">📖 Book Talk</option><option value="politics">🏛️ Politics</option></select>
+      </div>
+    </div>
+    <div class="fr">
+      <div class="fg"><label>Date *</label><input id="sub-date" type="date" /></div>
+      <div class="fg"><label>Venue *</label><input id="sub-venue" type="text" placeholder="Arena / venue name" /></div>
+    </div>
+    <div class="fg"><label>City, Country</label><input id="sub-city" type="text" placeholder="e.g. Milan, Italy" /></div>
+    <div class="fg"><label>Link / Source</label><input id="sub-link" type="url" placeholder="https://…" /></div>
+    <div class="fg"><label>Your name or email <span style="font-weight:400;text-transform:none">(optional — so we can credit you)</span></label><input id="sub-from" type="text" placeholder="Anonymous is fine" /></div>
+    <div id="substatus" style="font-size:.8rem;color:var(--green);min-height:18px;margin-bottom:4px"></div>
+    <div class="mf">
+      <button class="btn btn-s" onclick="closeSubmit()">Cancel</button>
+      <button class="btn btn-g" id="subsend" onclick="submitEvent()">Submit for Review</button>
+    </div>
+  </div>
+</div>
+
+<!-- NOTIFY ME MODAL -->
+<div class="mo" id="notmo">
+  <div class="md" style="max-width:380px">
+    <h2>🔔 Notify Me</h2>
+    <p style="font-size:.82rem;color:var(--dim);margin-bottom:14px">We'll email you when a new <strong id="not-player-label"></strong> event is added.</p>
+    <input type="hidden" id="not-player" />
+    <div class="fg"><label>Your email *</label><input id="not-email" type="email" placeholder="you@example.com" /></div>
+    <div id="notstatus" style="font-size:.8rem;color:var(--green);min-height:18px;margin-bottom:4px"></div>
+    <div class="mf">
+      <button class="btn btn-s" onclick="closeNotify()">Cancel</button>
+      <button class="btn btn-g" id="notsend" onclick="submitNotify()">Notify me</button>
     </div>
   </div>
 </div>
@@ -3863,6 +3905,7 @@ function cardHTML(e, i) {
       <div class="card-acts">
         <button class="act-btn" onclick="exportICS('${e.id}')">${ICONS.addCal} Add to Calendar</button>
         <button class="act-btn" onclick="shareEvent('${e.id}')">${ICONS.share} Share</button>
+        <button class="act-btn" onclick="openNotify('${esc(e.player)}')" title="Get notified when a new event for this player is added">🔔 Notify me</button>
       </div>
     </div>
   </div>`;
@@ -4205,6 +4248,61 @@ async function submitFeedback() {
   setTimeout(() => closeFeedback(), 1800);
 }
 
+// ─── SUBMIT EVENT (public) ────────────────────────────────────────────────────
+function openSubmit() {
+  ['sub-player','sub-venue','sub-city','sub-link','sub-from'].forEach(id => document.getElementById(id).value='');
+  document.getElementById('sub-sport').value = 'soccer';
+  document.getElementById('sub-date').value = '';
+  document.getElementById('substatus').textContent = '';
+  document.getElementById('subsend').disabled = false;
+  document.getElementById('submo').classList.add('open');
+}
+function closeSubmit() { document.getElementById('submo').classList.remove('open'); }
+async function submitEvent() {
+  const player = document.getElementById('sub-player').value.trim();
+  const date   = document.getElementById('sub-date').value;
+  const venue  = document.getElementById('sub-venue').value.trim();
+  if (!player || !date || !venue) { document.getElementById('substatus').style.color='#f44336'; document.getElementById('substatus').textContent='Player, date and venue are required.'; return; }
+  const sport  = document.getElementById('sub-sport').value;
+  const city   = document.getElementById('sub-city').value.trim();
+  const link   = document.getElementById('sub-link').value.trim();
+  const from   = document.getElementById('sub-from').value.trim() || 'Anonymous';
+  document.getElementById('subsend').disabled = true;
+  document.getElementById('substatus').style.color = 'var(--green)';
+  document.getElementById('substatus').textContent = 'Submitting…';
+  await sendNotification(
+    `[meetandgreet.events] New event submission: ${player}`,
+    `Submitted by: ${from}\n\nPlayer: ${player}\nType: ${sport}\nDate: ${date}\nVenue: ${venue}\nCity: ${city}\nLink: ${link}`
+  );
+  document.getElementById('substatus').textContent = '✅ Submitted! We\'ll review and add it within 24 hours.';
+  setTimeout(() => closeSubmit(), 2200);
+}
+
+// ─── NOTIFY ME ────────────────────────────────────────────────────────────────
+function openNotify(player) {
+  document.getElementById('not-player').value = player;
+  document.getElementById('not-player-label').textContent = player;
+  document.getElementById('not-email').value = '';
+  document.getElementById('notstatus').textContent = '';
+  document.getElementById('notsend').disabled = false;
+  document.getElementById('notmo').classList.add('open');
+}
+function closeNotify() { document.getElementById('notmo').classList.remove('open'); }
+async function submitNotify() {
+  const email  = document.getElementById('not-email').value.trim();
+  const player = document.getElementById('not-player').value;
+  if (!email || !email.includes('@')) { document.getElementById('notstatus').style.color='#f44336'; document.getElementById('notstatus').textContent='Please enter a valid email.'; return; }
+  document.getElementById('notsend').disabled = true;
+  document.getElementById('notstatus').style.color = 'var(--green)';
+  document.getElementById('notstatus').textContent = 'Saving…';
+  await sendNotification(
+    `[meetandgreet.events] Notify me: ${player}`,
+    `User wants to be notified for: ${player}\nEmail: ${email}`
+  );
+  document.getElementById('notstatus').textContent = '✅ Done! We\'ll email you when a new event is added.';
+  setTimeout(() => closeNotify(), 1800);
+}
+
 // ─── SOURCES PANEL ───────────────────────────────────────────────────────────
 function toggleSources() {
   const p = document.getElementById('spanel');
@@ -4260,6 +4358,8 @@ function updateBar(tsOverride) {
 // ─── MODAL CLOSE ON BACKDROP ─────────────────────────────────────────────────
 document.getElementById('mo').addEventListener('click', e => { if(e.target===e.currentTarget) closeMo(); });
 document.getElementById('fbmo').addEventListener('click', e => { if(e.target===e.currentTarget) closeFeedback(); });
+document.getElementById('submo').addEventListener('click', e => { if(e.target===e.currentTarget) closeSubmit(); });
+document.getElementById('notmo').addEventListener('click', e => { if(e.target===e.currentTarget) closeNotify(); });
 
 init();
 </script>
