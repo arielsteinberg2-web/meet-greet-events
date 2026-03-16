@@ -3807,7 +3807,7 @@ function render() {
   });
 
   // stats
-  const win = events.filter(e => { const d = new Date(e.date+'T12:00:00'); return !isNaN(d) && d >= now && d <= end; });
+  const win = events.filter(e => { const d = new Date(e.date+'T12:00:00'); return !isNaN(d) && d >= now; });
   const mo  = now.getMonth(), yr = now.getFullYear();
   const thisMonth = win.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return d.getMonth()===mo&&d.getFullYear()===yr; }).length;
   const statDefs = [
