@@ -38,6 +38,11 @@ const ALL_QUERIES = [
   { q: 'Sportler Buchsignierung Buchmesse Lesung Autobiografie 2026',          lang: 'de' },
   { q: 'sporter boekpresentatie handtekening signeersessie 2026',              lang: 'nl' },
   { q: 'atleta lançamento livro sessão autógrafos autobiografia 2026',         lang: 'pt' },
+  { q: 'Formula 1 F1 driver autograph signing fan zone meet greet 2026',       lang: 'en' },
+  { q: 'F1 piloto firma autógrafos zona fans Grand Prix 2026',                 lang: 'es' },
+  { q: 'F1 pilote dédicace zone fan Grand Prix autographe 2026',               lang: 'fr' },
+  { q: 'Formula 1 pilota autografi firma zona fan Gran Premio 2026',           lang: 'it' },
+  { q: 'Formel 1 Fahrer Autogramm Fan Zone Grand Prix 2026',                   lang: 'de' },
   { q: 'firma autografos futbolista OR autografi calciatore 2026',             lang: 'en' },
   { q: 'meet and greet sports player autograph signing 2026',                  lang: 'en' },
 ];
@@ -127,7 +132,7 @@ function parseOrganic(data, lang) {
     const isBball = !isBook && /basketball|nba/.test(combined);
     const isPol   = !isBook && !isBball && /senator|president|governor|politician/.test(combined);
     const isCeleb = !isBook && !isBball && !isPol && /actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(combined);
-    const isOther = !isBook && !isBball && !isPol && !isCeleb && /gymnast|olympic|nfl|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show/.test(combined);
+    const isOther = !isBook && !isBball && !isPol && !isCeleb && /gymnast|olympic|nfl|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined);
 
     const playerName = extractPlayerName(res.title, res.snippet);
     if (!playerName) continue; // skip events with no identifiable player name
@@ -158,8 +163,8 @@ async function main() {
 
   for (const [i, { q, lang }] of QUERIES.entries()) {
     // First 5 queries use KEY_1, last 5 use KEY_2 (falls back to KEY_1 if KEY_2 missing)
-    const key = (i < 8 || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
-    console.log(`  Searching [key${i < 8 || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
+    const key = (i < 11 || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
+    console.log(`  Searching [key${i < 11 || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
     const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${key}`;
     const data = await fetchWithRetry(url);
     if (data) {
