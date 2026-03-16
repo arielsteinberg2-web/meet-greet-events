@@ -3702,6 +3702,33 @@ function render() {
       </div>`).join('');
   }
   document.querySelectorAll('.vt-btn').forEach(b=>b.classList.toggle('active', b.id==='vt-'+viewMode));
+
+  // ── Dynamic title + meta description based on active filters / search ──
+  const BASE_TITLE = 'Top Meet & Greet Events 2026 — Sports, Tennis, NBA, Soccer, Celebrity | meetandgreet.events';
+  const BASE_DESC  = 'Find the best meet & greet events in 2026: NBA, soccer, tennis autograph signings, WWE fan expos & celebrity conventions worldwide. Updated daily — free to use.';
+  const SPORT_META_TITLES = {
+    soccer:     { t:'Soccer & Football Player Meet & Greet Events 2026 | meetandgreet.events',          d:'Find upcoming soccer and football legend meet & greet events, autograph signings and fan dinners worldwide in 2026.' },
+    basketball: { t:'NBA & Basketball Player Meet & Greet Events 2026 | meetandgreet.events',           d:'Find NBA and basketball player autograph signings, fan expos and meet & greet events worldwide in 2026.' },
+    other:      { t:'Sports Meet & Greet Events 2026 — WWE, Boxing, F1 & More | meetandgreet.events',   d:'WWE, boxing, Formula 1 and multi-sport fan expos with autograph signings and meet & greet events in 2026.' },
+    celeb:      { t:'Celebrity Meet & Greet Events 2026 — Fan Conventions & Signings | meetandgreet.events', d:'Celebrity fan conventions, comic-cons and autograph signing events worldwide in 2026.' },
+    book:       { t:'Sports Book Signing Events 2026 — Author Appearances | meetandgreet.events',       d:'Sports celebrity book signings and author appearance events worldwide in 2026.' },
+    politics:   { t:'Political Meet & Greet Events 2026 | meetandgreet.events',                         d:'Political figure meet & greet and public appearance events in 2026.' },
+  };
+  let pt = BASE_TITLE, pd = BASE_DESC;
+  if (q) {
+    const qc = q.charAt(0).toUpperCase() + q.slice(1);
+    pt = `${qc} — Meet & Greet Events 2026 | meetandgreet.events`;
+    pd = `Find upcoming meet & greet events and autograph signings featuring ${qc} in 2026.`;
+  } else if (activeFilters.size === 1) {
+    const sm = SPORT_META_TITLES[[...activeFilters][0]];
+    if (sm) { pt = sm.t; pd = sm.d; }
+  } else if (activeFilters.size > 1) {
+    pt = 'Meet & Greet Events 2026 — Multiple Sports | meetandgreet.events';
+  }
+  document.title = pt;
+  const _md = document.querySelector('meta[name="description"]');
+  if (_md) _md.setAttribute('content', pd);
+
   loadPhotos();
 }
 
