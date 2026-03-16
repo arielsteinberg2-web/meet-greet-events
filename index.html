@@ -2112,7 +2112,7 @@
 
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v23';  // bump version → forces fresh seed load
+const KEY        = 'mng_v24';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last server-side update
 const BUILT_AT = '2026-03-15T22:42:06.524Z'; // replaced by inject-static-html.js at build time
 const MS_6H    = 6 * 3600 * 1000;
@@ -3630,14 +3630,14 @@ async function fetchWikiPhoto(name) {
   if (photoCache[name] !== undefined) return photoCache[name] === 'none' || photoCache[name] === 'loading' ? null : photoCache[name];
   photoCache[name] = 'loading';
   try {
-    const url = `https://en.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(name)}&prop=pageimages&pithumbsize=120&format=json&origin=*`;
+    const slug = encodeURIComponent(name.replace(/ /g, '_'));
     const ctrl = new AbortController();
     const t = setTimeout(() => ctrl.abort(), 5000);
-    const r = await fetch(url, { signal: ctrl.signal });
+    const r = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${slug}`, { signal: ctrl.signal });
     clearTimeout(t);
+    if (!r.ok) { photoCache[name] = 'none'; return null; }
     const data = await r.json();
-    const pages = Object.values(data?.query?.pages || {});
-    const thumb = pages[0]?.thumbnail?.source || null;
+    const thumb = data?.thumbnail?.source || data?.originalimage?.source || null;
     photoCache[name] = thumb || 'none';
     return thumb;
   } catch { photoCache[name] = 'none'; return null; }
