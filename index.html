@@ -3977,6 +3977,14 @@ function hl(str, q) {
   return safe.replace(re,'<mark>$1</mark>');
 }
 
+function addUTM(url, player) {
+  if (!url || !url.startsWith('http')) return url;
+  if (/(instagram\.com|twitter\.com|x\.com|facebook\.com|tiktok\.com)/.test(url)) return url;
+  const sep = url.includes('?') ? '&' : '?';
+  const content = player ? '&utm_content=' + encodeURIComponent(player.substring(0, 60)) : '';
+  return url + sep + 'utm_source=meetandgreet.events&utm_medium=referral&utm_campaign=event_listing' + content;
+}
+
 function cardHTML(e, i) {
   const { icon, cls, lbl } = SPORT_META[e.sport] || SPORT_META.other;
   const past  = new Date(e.date+'T12:00:00') < new Date();
@@ -4020,7 +4028,7 @@ function cardHTML(e, i) {
     </div>
     <div class="cf">
       ${hasLink
-        ? `<a href="${esc(e.link)}" target="_blank" rel="noopener" class="rl ${linkCls}">${linkTxt}</a>`
+        ? `<a href="${esc(addUTM(e.link, e.player))}" target="_blank" rel="noopener" class="rl ${linkCls}">${linkTxt}</a>`
         : `<span class="rl none">${linkTxt}</span>`}
       ${e.source?`<div class="src" style="display:flex;align-items:center;gap:5px">${ICONS.link} ${esc(e.source)}</div>`:''}
       <div class="card-acts">
