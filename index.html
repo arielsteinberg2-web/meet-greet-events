@@ -3089,16 +3089,6 @@ const SEEDS = [
 
   // ── Other NJ local venue signings ──
   {
-    id:'cv1', sport:'basketball',
-    player:'Walt Frazier – CardVault NJ',
-    date:'2026-03-21', time:'',
-    venue:'CardVault',
-    city:'East Rutherford, NJ 🇺🇸',
-    link:'https://nynjsportsworld.com/category/autograph-appearance/',
-    notes:'NY Knicks HOF PG — 7× All-Star, 2× NBA champion (1970, 1973). Autograph signing. Exact time and price TBD — check nynjsportsworld.com for updates.',
-    source:'NY NJ Sports World — nynjsportsworld.com'
-  },
-  {
     id:'njmce1', sport:'other',
     player:'MLB Legends – NJ Memorabilia & Card Expo',
     date:'2026-03-28', time:'',
@@ -3316,11 +3306,19 @@ async function loadLiveEvents() {
 
     // Merge: add any live events not already present (matched by link)
     const existingLinks = new Set(events.map(e => e.link).filter(Boolean));
+    // Also dedupe by normalised player name + date (catches same event from different sources)
+    const nameDate = new Set(events.map(e => {
+      const n = e.player.toLowerCase().replace(/[^a-z0-9]/g,'').substring(0,20);
+      return n + '|' + e.date;
+    }));
     let added = 0;
     for (const e of (data.events || [])) {
       if (e.link && existingLinks.has(e.link)) continue;
+      const nd = e.player.toLowerCase().replace(/[^a-z0-9]/g,'').substring(0,20) + '|' + e.date;
+      if (nameDate.has(nd)) continue;
       events.push(e);
       existingLinks.add(e.link);
+      nameDate.add(nd);
       added++;
     }
     if (added > 0) { save(); render(); }
