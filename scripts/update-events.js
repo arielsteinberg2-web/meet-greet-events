@@ -150,6 +150,12 @@ function parseOrganic(data, lang) {
     if (!res.link) continue;
     if (/mail-?in signing|ship your|private signing/.test(combined)) continue;
 
+    // ── DOMAIN BLOCKLIST — known past/irrelevant events ───────────────────────
+    const BLOCKED_DOMAINS = [
+      'goldoveramericatour.com',  // 2024 tour — past
+    ];
+    if (BLOCKED_DOMAINS.some(d => res.link.includes(d))) continue;
+
     const isBook  = /book signing|book tour|presents his book|firma libros|firma copie|d[eé]dicace.*livre|buchsignierung|signeersessie|sess[aã]o.*aut[oó]grafos|lançamento.*livro|autobiography|memoir|presentaci[oó]n.*libro|presentazione.*libro/.test(combined);
     const isBball = !isBook && /basketball|nba/.test(combined);
     const isPol   = !isBook && !isBball && /senator|president|governor|politician/.test(combined);
