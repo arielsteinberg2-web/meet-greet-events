@@ -2262,7 +2262,7 @@
 
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v28';  // bump version → forces fresh seed load
+const KEY        = 'mng_v29';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last server-side update
 const BUILT_AT = '2026-03-15T22:42:06.524Z'; // replaced by inject-static-html.js at build time
 const MS_6H    = 6 * 3600 * 1000;
@@ -2908,13 +2908,13 @@ const SEEDS = [
   {
     id:'soc_cant1', sport:'soccer',
     player:'Eric Cantona',
-    date:'2026-09-25', time:'18:30',
+    date:'2026-09-26', time:'18:00',
     venue:'Mercure Manchester Piccadilly Hotel',
     city:'Manchester, England 🇬🇧',
-    link:'https://allevents.in/manchester/an-evening-with-eric-the-king-cantona/100001975225123516',
-    price:'£159–£499',
-    notes:'An Evening with Eric The King Cantona. Live Q&A dinner. Silver £159, Gold £249, Platinum VIP £499 includes professional photo with Cantona + autograph.',
-    source:'Legends 7 / Superstar Speakers'
+    link:'https://www.eventbrite.co.uk/e/an-evening-with-eric-the-king-cantona-tickets-1984925733301',
+    price:'£169–£499',
+    notes:'An Evening with Eric The King Cantona. 3-course dinner, live unscripted interview, memorabilia auction. Silver £169 · Gold £275 (photo with Eric) · Platinum £499 (earliest entry, signed Man Utd shirt + professional photo). Drinks service included.',
+    source:'Eventbrite / Legends 7 — eventbrite.co.uk'
   },
   {
     id:'soc_icons1', sport:'soccer',
@@ -3703,8 +3703,7 @@ function save() { localStorage.setItem(KEY, JSON.stringify(events)); }
 
 function windowDates() {
   const now = new Date(); now.setHours(0,0,0,0);
-  const end = new Date(now); end.setMonth(end.getMonth() + 5);
-  return { now, end };
+  return { now };
 }
 
 // ─── LOAD LIVE EVENTS from GitHub Actions-generated JSON ─────────────────────
@@ -3773,12 +3772,12 @@ function render() {
   const q   = currentQ;
   const srt = document.getElementById('srt').value;
   const rgn = document.getElementById('rgn').value.trim().toLowerCase();
-  const { now, end } = windowDates();
+  const { now } = windowDates();
   const cutoff = new Date(now); cutoff.setDate(cutoff.getDate() - 14);
 
   let list = events.filter(e => {
     const d = new Date(e.date + 'T12:00:00');
-    if (isNaN(d) || d > end || d < cutoff) return false;
+    if (isNaN(d) || d < cutoff) return false;
     if (activeFilters.size > 0 && !activeFilters.has(e.sport)) return false;
     if (showSavedOnly && !savedIds.has(e.id)) return false;
     if (!matchRegion(e.city, rgn)) return false;
