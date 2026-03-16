@@ -4,11 +4,18 @@
 
   <url>
     <loc>https://meetandgreet.events/</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en"        href="https://meetandgreet.events/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://meetandgreet.events/"/>
+  </url>
+
+  <url>
+    <loc>https://meetandgreet.events/media-kit.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
