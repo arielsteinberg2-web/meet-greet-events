@@ -47,6 +47,34 @@ const RELEVANT_WORDS = [
 
 const LANG_NAMES = { fr:'French', it:'Italian', es:'Spanish', de:'German' };
 
+// ── PLAYER NAME EXTRACTOR ────────────────────────────────────────────────────
+// Returns "First Last" style name from a title/snippet, or null if none found.
+const NAME_SKIP = new Set([
+  'Meet','Greet','Sign','Signing','Autograph','Event','Show','Expo','Fest','Fan',
+  'Hall','Fame','World','Series','Spring','Summer','Fall','Winter','Card','Auto',
+  'North','South','East','West','New','York','Los','Las','San','Join','The',
+  'Get','Buy','Our','All','For','With','From','This','That','More','Just',
+  'View','Post','Live','Register','Buy','Tickets','Photo','Only','Also',
+  'Comic','Con','Convention','Appearances','Upcoming','Legends','Legend',
+  'Sports','Athletes','Athlete','Players','Player','Stars','Guest','Guests',
+]);
+function extractPlayerName(title, snippet) {
+  for (const text of [title, snippet]) {
+    if (!text) continue;
+    // Look for "Firstname Lastname" (2-3 capitalized words, no digits)
+    const matches = text.match(/\b([A-Z][a-zÀ-ÿ'\-]+(?:\s+[A-Z][a-zÀ-ÿ'\-]+){1,2})\b/g) || [];
+    for (const m of matches) {
+      if (/\d/.test(m)) continue;
+      const words = m.split(' ');
+      if (words.some(w => NAME_SKIP.has(w))) continue;
+      // Must look like a human name (not all-caps, not too short)
+      if (words[0].length < 2 || words[1].length < 2) continue;
+      return m;
+    }
+  }
+  return null;
+}
+
 // ── DATE GUESSER ─────────────────────────────────────────────────────────────
 function guessDate(t) {
   const m = {
@@ -92,9 +120,12 @@ function parseOrganic(data, lang) {
     const isCeleb = !isBball && !isPol && /actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(combined);
     const isOther = !isBball && !isPol && !isCeleb && /gymnast|olympic|nfl|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show/.test(combined);
 
+    const playerName = extractPlayerName(res.title, res.snippet);
+    if (!playerName) continue; // skip events with no identifiable player name
+
     out.push({
       id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
-      player: res.title.substring(0, 80),
+      player: playerName,
       sport:  isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isOther ? 'other' : 'soccer',
       date:   guessDate(combined) || new Date().toISOString().split('T')[0],
       venue:  '',
