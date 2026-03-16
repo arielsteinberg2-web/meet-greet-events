@@ -3656,17 +3656,13 @@ function applyPhoto(img, src) {
 }
 
 function loadPhotos() {
-  const imgs = document.querySelectorAll('.av-img[data-player]');
-  console.log('[photos] loadPhotos called, found', imgs.length, 'images');
-  imgs.forEach(img => {
+  document.querySelectorAll('.av-img[data-player]').forEach(img => {
     const name = img.dataset.player;
     const cached = photoCache[name];
     if (cached && cached !== 'loading' && cached !== 'none') { applyPhoto(img, cached); return; }
     if (cached === 'none') return;
     if (cached === 'loading') return;
-    console.log('[photos] fetching for:', name);
     fetchWikiPhoto(name).then(url => {
-      console.log('[photos] result for', name, '→', url ? 'GOT URL' : 'null');
       if (!url) return;
       document.querySelectorAll('.av-img[data-player]').forEach(el => {
         if (el.dataset.player === name) applyPhoto(el, url);

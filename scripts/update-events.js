@@ -123,11 +123,14 @@ function parseOrganic(data, lang) {
     const playerName = extractPlayerName(res.title, res.snippet);
     if (!playerName) continue; // skip events with no identifiable player name
 
+    const eventDate = guessDate(combined);
+    if (!eventDate) continue; // skip events with no guessable date
+
     out.push({
       id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
       player: playerName,
       sport:  isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isOther ? 'other' : 'soccer',
-      date:   guessDate(combined) || new Date().toISOString().split('T')[0],
+      date:   eventDate,
       venue:  '',
       city:   '',
       link:   res.link,
