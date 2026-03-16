@@ -2258,7 +2258,7 @@
 
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v37';  // bump version → forces fresh seed load
+const KEY        = 'mng_v38';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last server-side update
 const BUILT_AT = '2026-03-15T22:42:06.524Z'; // replaced by inject-static-html.js at build time
 const MS_6H    = 6 * 3600 * 1000;
@@ -4095,7 +4095,7 @@ function cardHTML(e, i) {
   const avInner = mainPlayer
     ? `<img class="av-img" data-player="${esc(mainPlayer)}" alt="${esc(mainPlayer)}" /><span class="av-fb">${icon}</span>`
     : icon;
-  const isNew      = newEventIds[e.id] && (Date.now()-newEventIds[e.id]) < 172800000;
+  const isNew      = e.addedAt && (Date.now() - new Date(e.addedAt).getTime()) < 21 * 86400000;
   const isVerified = e.id && !e.id.startsWith('live_') && !e.id.startsWith('evt_');
   const delay      = typeof i === 'number' ? `style="animation-delay:${i*0.04}s"` : '';
 
