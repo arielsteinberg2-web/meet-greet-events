@@ -2262,7 +2262,7 @@
 
 <script>
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
-const KEY        = 'mng_v31';  // bump version → forces fresh seed load
+const KEY        = 'mng_v32';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last server-side update
 const BUILT_AT = '2026-03-15T22:42:06.524Z'; // replaced by inject-static-html.js at build time
 const MS_6H    = 6 * 3600 * 1000;
@@ -2438,18 +2438,19 @@ const SEEDS = [
     venue:'TBA',
     city:'UK 🇬🇧',
     link:'https://www.tickettailor.com/events/legends72/1956729',
-    notes:'Sporting dinner with Eric Cantona. 6:15 PM–11 PM. Meet & greet + autographs. Buy tickets at link. (Note: outside current 5-month window — check back closer to date.)',
+    notes:'Sporting dinner with Eric Cantona. 6:15 PM–11 PM. Meet & greet + autographs. Buy tickets at link.',
     source:'Legends 7 — legends7.co.uk'
   },
   {
     id:'sl4', sport:'soccer',
-    player:'Eric Cantona – An Evening with The King (2nd date)',
-    date:'2026-09-26', time:'18:15',
-    venue:'TBA',
-    city:'UK 🇬🇧',
-    link:'https://buytickets.at/legends72/2104454',
-    notes:'Second date — Eric Cantona sporting dinner. Meet & greet + autographs. Buy tickets at link.',
-    source:'Legends 7 — legends7.co.uk'
+    player:'Eric Cantona – An Evening with The King',
+    date:'2026-09-26', time:'18:00',
+    venue:'Mercure Manchester Piccadilly Hotel',
+    city:'Manchester, England 🇬🇧',
+    link:'https://www.eventbrite.co.uk/e/an-evening-with-eric-the-king-cantona-tickets-1984925733301',
+    price:'£169–£499',
+    notes:'An Evening with Eric The King Cantona. 3-course dinner, live unscripted interview, memorabilia auction. Silver £169 · Gold £275 (photo with Eric) · Platinum £499 (earliest entry, signed Man Utd shirt + professional photo).',
+    source:'Eventbrite / Legends 7 — eventbrite.co.uk'
   },
 
   // ════════════ ⚽ SOCCER — UK 🇬🇧 (Gala Hospitality) ════════════
@@ -2916,17 +2917,6 @@ const SEEDS = [
     link:'https://www.superstarspeakers.co.uk/event-details/an-evening-with-bryan-robson-chester-9th-may-2026',
     notes:'An Evening with Bryan Robson (Chester). Dinner, two-part live interview, Q&A. Platinum: professional photo + autograph.',
     source:'Superstar Speakers — superstarspeakers.co.uk'
-  },
-  {
-    id:'soc_cant1', sport:'soccer',
-    player:'Eric Cantona',
-    date:'2026-09-26', time:'18:00',
-    venue:'Mercure Manchester Piccadilly Hotel',
-    city:'Manchester, England 🇬🇧',
-    link:'https://www.eventbrite.co.uk/e/an-evening-with-eric-the-king-cantona-tickets-1984925733301',
-    price:'£169–£499',
-    notes:'An Evening with Eric The King Cantona. 3-course dinner, live unscripted interview, memorabilia auction. Silver £169 · Gold £275 (photo with Eric) · Platinum £499 (earliest entry, signed Man Utd shirt + professional photo). Drinks service included.',
-    source:'Eventbrite / Legends 7 — eventbrite.co.uk'
   },
   {
     id:'soc_icons1', sport:'soccer',
@@ -3587,7 +3577,7 @@ const SEEDS = [
     source:'US Open — usopen.org | ticketmaster.com'
   },
   {
-    id:'ten13', sport:'other',
+    id:'ten13', sport:'other', noMG:true,
     player:'Roger Federer – International Tennis Hall of Fame Induction',
     date:'2026-08-27', time:'',
     venue:'International Tennis Hall of Fame',
