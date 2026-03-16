@@ -657,8 +657,14 @@
     .act-btn svg { pointer-events:none; flex-shrink:0; }
     .ibtn:hover { background:var(--border); color:var(--text); }
     .ibtn.del:hover  { background:rgba(244,67,54,.2); color:#f44336; border-color:#f44336; }
+    .ibtn.rep:hover  { background:rgba(255,109,0,.15); color:#ff6d00; border-color:#ff6d00; }
     .ibtn.sav-on { color:#ffd740; border-color:rgba(255,215,64,.45); background:rgba(255,215,64,.08); }
     .ibtn.sav-on:hover { background:rgba(255,215,64,.18); }
+    .verified-badge { display:inline-flex; align-items:center; gap:3px; font-size:.65rem; font-weight:700;
+      color:#00e5cc; background:rgba(0,229,204,.1); border:1px solid rgba(0,229,204,.3);
+      border-radius:20px; padding:2px 7px; white-space:nowrap; }
+    .price-row { display:inline-flex; align-items:center; gap:4px; font-size:.78rem;
+      font-weight:700; color:var(--green); }
     .card-acts { display:flex; gap:7px; margin-top:8px; }
     .act-btn {
       flex:1; padding:7px 4px; border-radius:7px; border:1px solid var(--border);
@@ -2123,8 +2129,11 @@
     <div class="fg"><label>Venue *</label><input id="fv" type="text" placeholder="Arena / venue name" /></div>
     <div class="fg"><label>City, Country</label><input id="fc" type="text" placeholder="e.g. London, UK 🇬🇧" /></div>
     <div class="fg"><label>Registration / Ticket Link</label><input id="fl" type="url" placeholder="https://…" /></div>
-    <div class="fg"><label>Notes</label><textarea id="fn" placeholder="Price, session details, requirements…"></textarea></div>
-    <div class="fg"><label>Source</label><input id="fsr" type="text" placeholder="e.g. Fanatics Fest" /></div>
+    <div class="fr">
+      <div class="fg"><label>Price</label><input id="fprice" type="text" placeholder="e.g. Free, $50, £120 VIP" /></div>
+      <div class="fg"><label>Source</label><input id="fsr" type="text" placeholder="e.g. Fanatics Fest" /></div>
+    </div>
+    <div class="fg"><label>Notes</label><textarea id="fn" placeholder="Session details, requirements…"></textarea></div>
     <div class="mf">
       <button class="btn btn-s" onclick="closeMo()">Cancel</button>
       <button class="btn btn-g" onclick="saveEvt()">Save</button>
@@ -2167,7 +2176,10 @@
       <div class="fg"><label>Date *</label><input id="sub-date" type="date" /></div>
       <div class="fg"><label>Venue *</label><input id="sub-venue" type="text" placeholder="Arena / venue name" /></div>
     </div>
-    <div class="fg"><label>City, Country</label><input id="sub-city" type="text" placeholder="e.g. Milan, Italy" /></div>
+    <div class="fr">
+      <div class="fg"><label>City, Country</label><input id="sub-city" type="text" placeholder="e.g. Milan, Italy" /></div>
+      <div class="fg"><label>Price</label><input id="sub-price" type="text" placeholder="e.g. Free, $50, £120 VIP" /></div>
+    </div>
     <div class="fg"><label>Link / Source</label><input id="sub-link" type="url" placeholder="https://…" /></div>
     <div class="fg"><label>Your name or email <span style="font-weight:400;text-transform:none">(optional — so we can credit you)</span></label><input id="sub-from" type="text" placeholder="Anonymous is fine" /></div>
     <div id="substatus" style="font-size:.8rem;color:var(--green);min-height:18px;margin-bottom:4px"></div>
@@ -3772,6 +3784,10 @@ const ICONS = {
   folder: `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.5C1 3.7 1.7 3 2.5 3H5.5L7 4.5H11.5C12.3 4.5 13 5.2 13 6V11C13 11.8 12.3 12.5 11.5 12.5H2.5C1.7 12.5 1 11.8 1 11V4.5Z" stroke="#5a9490" stroke-width="1.4" fill="none"/></svg>`,
 
   search: `<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="9.5" stroke="#00b8b0" stroke-width="2.2"/><line x1="23" y1="23" x2="35" y2="35" stroke="#00b8b0" stroke-width="2.2" stroke-linecap="round"/></svg>`,
+
+  flag: `<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="2.5" y1="1" x2="2.5" y2="12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M2.5 1.8 H10.5 L8.5 5 L10.5 8.2 H2.5Z" fill="currentColor" opacity="0.85"/></svg>`,
+
+  price: `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="6" stroke="#00c8b0" stroke-width="1.3"/><path d="M7 3.5V10.5M5 5.5C5 4.7 5.9 4 7 4C8.1 4 9 4.7 9 5.5C9 6.3 8.1 7 7 7C5.9 7 5 7.7 5 8.5C5 9.3 5.9 10 7 10C8.1 10 9 9.3 9 8.5" stroke="#00c8b0" stroke-width="1.3" stroke-linecap="round"/></svg>`,
 };
 
 const SPORT_META = {
@@ -3877,8 +3893,9 @@ function cardHTML(e, i) {
   const avInner = mainPlayer
     ? `<img class="av-img" data-player="${esc(mainPlayer)}" alt="${esc(mainPlayer)}" /><span class="av-fb">${icon}</span>`
     : icon;
-  const isNew = newEventIds[e.id] && (Date.now()-newEventIds[e.id]) < 172800000;
-  const delay = typeof i === 'number' ? `style="animation-delay:${i*0.04}s"` : '';
+  const isNew      = newEventIds[e.id] && (Date.now()-newEventIds[e.id]) < 172800000;
+  const isVerified = e.id && !e.id.startsWith('live_') && !e.id.startsWith('evt_');
+  const delay      = typeof i === 'number' ? `style="animation-delay:${i*0.04}s"` : '';
 
   return `<div class="card ${cls}${past?' past':''}" id="c-${e.id}" ${delay}>
     ${past ? '<span class="past-tag">⚠️ Past Event — Reference</span>' : ''}
@@ -3888,13 +3905,16 @@ function cardHTML(e, i) {
       <div style="flex:1">
         <div class="pname">${hl(e.player, currentQ)}</div>
         <span class="badge ${cls}">${icon} ${lbl}</span>${transBadge}
+        ${isVerified ? '<span class="verified-badge">✓ Verified</span>' : ''}
       </div>
       <div class="cbns">
+        <button class="ibtn rep" onclick="reportEvent('${e.id}')" title="Report this event">${ICONS.flag}</button>
       </div>
     </div>
     <div class="dets">
       <div class="dr"><span class="di">${ICONS.calendar}</span><div><span class="dt">${fmtDate(e.date,e.time)}</span><br><span class="dd" style="font-size:.74rem">${countdown(e.date)}</span></div></div>
       <div class="dr"><span class="di">${ICONS.pin}</span><div><span class="dt">${hl(e.venue, currentQ)}</span>${e.city?`<br><span class="dd">${hl(e.city, currentQ)}</span>`:''}</div></div>
+      ${e.price?`<div class="dr"><span class="di">${ICONS.price}</span><span class="price-row">${esc(e.price)}</span></div>`:''}
       ${e.notes?`<div class="dr"><span class="di">${ICONS.info}</span><span class="dt dd" style="font-size:.8rem">${hl(e.notes, currentQ)}</span></div>`:''}
     </div>
     <div class="cf">
@@ -3966,7 +3986,7 @@ function toggleFilter(sport) {
 function openAdd() {
   document.getElementById('mtitle').textContent = 'Add Event';
   document.getElementById('eid').value = '';
-  ['fp','fv','fc','fl','fn','fsr','ft'].forEach(id => document.getElementById(id).value='');
+  ['fp','fv','fc','fl','fn','fsr','ft','fprice'].forEach(id => document.getElementById(id).value='');
   document.getElementById('fs').value = 'soccer';
   document.getElementById('fd').value = new Date().toISOString().split('T')[0];
   document.getElementById('mo').classList.add('open');
@@ -3982,8 +4002,9 @@ function openEdit(id) {
   document.getElementById('fv').value   = e.venue||'';
   document.getElementById('fc').value   = e.city||'';
   document.getElementById('fl').value   = e.link||'';
-  document.getElementById('fn').value   = e.notes||'';
-  document.getElementById('fsr').value  = e.source||'';
+  document.getElementById('fn').value    = e.notes||'';
+  document.getElementById('fsr').value   = e.source||'';
+  document.getElementById('fprice').value = e.price||'';
   document.getElementById('mo').classList.add('open');
 }
 function closeMo() { document.getElementById('mo').classList.remove('open'); }
@@ -3998,6 +4019,7 @@ function saveEvt() {
     city:document.getElementById('fc').value.trim(),
     link:document.getElementById('fl').value.trim(),
     notes:document.getElementById('fn').value.trim(),
+    price:document.getElementById('fprice').value.trim(),
     source:document.getElementById('fsr').value.trim()||'Manual entry' };
   if (id) { const i=events.findIndex(e=>e.id===id); if(i!==-1) events[i]={...events[i],...data}; }
   else {
@@ -4250,7 +4272,7 @@ async function submitFeedback() {
 
 // ─── SUBMIT EVENT (public) ────────────────────────────────────────────────────
 function openSubmit() {
-  ['sub-player','sub-venue','sub-city','sub-link','sub-from'].forEach(id => document.getElementById(id).value='');
+  ['sub-player','sub-venue','sub-city','sub-price','sub-link','sub-from'].forEach(id => document.getElementById(id).value='');
   document.getElementById('sub-sport').value = 'soccer';
   document.getElementById('sub-date').value = '';
   document.getElementById('substatus').textContent = '';
@@ -4265,6 +4287,7 @@ async function submitEvent() {
   if (!player || !date || !venue) { document.getElementById('substatus').style.color='#f44336'; document.getElementById('substatus').textContent='Player, date and venue are required.'; return; }
   const sport  = document.getElementById('sub-sport').value;
   const city   = document.getElementById('sub-city').value.trim();
+  const price  = document.getElementById('sub-price').value.trim();
   const link   = document.getElementById('sub-link').value.trim();
   const from   = document.getElementById('sub-from').value.trim() || 'Anonymous';
   document.getElementById('subsend').disabled = true;
@@ -4272,7 +4295,7 @@ async function submitEvent() {
   document.getElementById('substatus').textContent = 'Submitting…';
   await sendNotification(
     `[meetandgreet.events] New event submission: ${player}`,
-    `Submitted by: ${from}\n\nPlayer: ${player}\nType: ${sport}\nDate: ${date}\nVenue: ${venue}\nCity: ${city}\nLink: ${link}`
+    `Submitted by: ${from}\n\nPlayer: ${player}\nType: ${sport}\nDate: ${date}\nVenue: ${venue}\nCity: ${city}\nPrice: ${price||'—'}\nLink: ${link}`
   );
   document.getElementById('substatus').textContent = '✅ Submitted! We\'ll review and add it within 24 hours.';
   setTimeout(() => closeSubmit(), 2200);
@@ -4301,6 +4324,18 @@ async function submitNotify() {
   );
   document.getElementById('notstatus').textContent = '✅ Done! We\'ll email you when a new event is added.';
   setTimeout(() => closeNotify(), 1800);
+}
+
+// ─── REPORT EVENT ────────────────────────────────────────────────────────────
+async function reportEvent(id) {
+  const e = events.find(x => x.id === id); if (!e) return;
+  const reason = prompt(`Report "${e.player}"?\n\nOptionally tell us why (wrong info, fake, past event, etc.):`);
+  if (reason === null) return; // user cancelled
+  await sendNotification(
+    `[meetandgreet.events] Event reported: ${e.player}`,
+    `Event ID: ${id}\nPlayer: ${e.player}\nDate: ${e.date}\nVenue: ${e.venue}\nLink: ${e.link}\n\nReason: ${reason || '(no reason given)'}`
+  );
+  toast('ok', 'Reported', 'Thanks — we\'ll review this event shortly.');
 }
 
 // ─── SOURCES PANEL ───────────────────────────────────────────────────────────
