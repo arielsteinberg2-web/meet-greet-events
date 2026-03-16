@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520">
+  <defs>
+    <style>g{fill:none;stroke:#00e5cc;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.4;opacity:.07}</style>
+  </defs>
+
+  <!-- Soccer ball -->
+  <g transform="translate(48,44) rotate(15)">
+    <circle cx="0" cy="0" r="16"/>
+    <path d="M0-16 L4-8 L-4-8 Z M13 9 L6 5 L6-3 Z M-13 9 L-6 5 L-6-3 Z M8 14 L0 10 L-8 14 Z"/>
+  </g>
+
+  <!-- Trophy -->
+  <g transform="translate(160,35) rotate(-8)">
+    <path d="M-10-14 L10-14 L10-2 C10 8 0 12 0 12 C0 12 -10 8 -10-2 Z"/>
+    <path d="M-10-10 L-18-10 C-18 0 -12 4 -8 2"/>
+    <path d="M10-10 L18-10 C18 0 12 4 8 2"/>
+    <path d="M-6 12 L6 12 M-8 16 L8 16 M-4 12 L-4 16 M4 12 L4 16"/>
+  </g>
+
+  <!-- Calendar -->
+  <g transform="translate(290,50) rotate(6)">
+    <rect x="-14" y="-12" width="28" height="24" rx="2"/>
+    <line x1="-14" y1="-4" x2="14" y2="-4"/>
+    <line x1="-6" y1="-16" x2="-6" y2="-8"/>
+    <line x1="6" y1="-16" x2="6" y2="-8"/>
+    <rect x="-8" y="0" width="5" height="4" rx="1"/>
+    <rect x="3" y="0" width="5" height="4" rx="1"/>
+  </g>
+
+  <!-- Basketball -->
+  <g transform="translate(430,70) rotate(-12)">
+    <circle cx="0" cy="0" r="16"/>
+    <path d="M-16 0 Q-8-10 0 0 Q8 10 16 0"/>
+    <path d="M-16 0 Q-8 10 0 0 Q8-10 16 0"/>
+    <line x1="0" y1="-16" x2="0" y2="16"/>
+  </g>
+
+  <!-- Ticket -->
+  <g transform="translate(70,148) rotate(-10)">
+    <path d="M-18-8 L18-8 L18 0 C14 0 14 8 18 8 L-18 8 L-18 0 C-14 0 -14-8 -18-8 Z"/>
+    <line x1="-4" y1="-8" x2="-4" y2="8" stroke-dasharray="2,2"/>
+  </g>
+
+  <!-- Star -->
+  <g transform="translate(220,130) rotate(20)">
+    <polygon points="0,-16 4,-6 14,-6 6,0 10,12 0,6 -10,12 -6,0 -14,-6 -4,-6"/>
+  </g>
+
+  <!-- Camera -->
+  <g transform="translate(370,130) rotate(8)">
+    <rect x="-16" y="-10" width="32" height="22" rx="3"/>
+    <circle cx="0" cy="2" r="7"/>
+    <circle cx="0" cy="2" r="4"/>
+    <path d="M-6-10 L-4-16 L4-16 L6-10"/>
+    <circle cx="10" cy="-5" r="2"/>
+  </g>
+
+  <!-- Crown -->
+  <g transform="translate(480,160) rotate(-5)">
+    <path d="M-16 10 L-16-6 L-8 4 L0-10 L8 4 L16-6 L16 10 Z"/>
+    <line x1="-16" y1="10" x2="16" y2="10"/>
+  </g>
+
+  <!-- Microphone -->
+  <g transform="translate(30,248) rotate(12)">
+    <rect x="-6" y="-16" width="12" height="20" rx="6"/>
+    <path d="M-12 2 C-12 12 12 12 12 2"/>
+    <line x1="0" y1="12" x2="0" y2="18"/>
+    <line x1="-6" y1="18" x2="6" y2="18"/>
+  </g>
+
+  <!-- Medal -->
+  <g transform="translate(160,230) rotate(-15)">
+    <circle cx="0" cy="6" r="12"/>
+    <path d="M-6-16 L0-6 L6-16"/>
+    <path d="M-4-16 L4-16"/>
+    <line x1="0" y1="0" x2="0" y2="6"/>
+  </g>
+
+  <!-- Lightning bolt -->
+  <g transform="translate(310,200) rotate(5)">
+    <path d="M6-18 L-4-2 L4-2 L-6 18 L6 2 L-2 2 Z"/>
+  </g>
+
+  <!-- Heart -->
+  <g transform="translate(450,250) rotate(-8)">
+    <path d="M0 14 C0 14 -16-2 -16-8 C-16-14 -10-18 -4-14 L0-10 L4-14 C10-18 16-14 16-8 C16-2 0 14 0 14 Z"/>
+  </g>
+
+  <!-- Book -->
+  <g transform="translate(85,355) rotate(-8)">
+    <rect x="-14" y="-18" width="28" height="36" rx="2"/>
+    <line x1="-14" y1="-18" x2="-14" y2="18"/>
+    <path d="M-14-18 C-14-18 -6-22 0-18"/>
+    <path d="M-14 18 C-14 18 -6 22 0 18"/>
+    <line x1="-6" y1="-10" x2="10" y2="-10"/>
+    <line x1="-6" y1="-4" x2="10" y2="-4"/>
+    <line x1="-6" y1="2" x2="10" y2="2"/>
+  </g>
+
+  <!-- Football/rugby -->
+  <g transform="translate(230,320) rotate(35)">
+    <ellipse cx="0" cy="0" rx="18" ry="10"/>
+    <line x1="-18" y1="0" x2="18" y2="0"/>
+    <line x1="-6" y1="-8" x2="-6" y2="8"/>
+    <line x1="6" y1="-8" x2="6" y2="8"/>
+  </g>
+
+  <!-- Ticket 2 -->
+  <g transform="translate(390,350) rotate(-6)">
+    <path d="M-18-8 L18-8 L18 0 C14 0 14 8 18 8 L-18 8 L-18 0 C-14 0 -14-8 -18-8 Z"/>
+    <line x1="-4" y1="-8" x2="-4" y2="8" stroke-dasharray="2,2"/>
+  </g>
+
+  <!-- Handshake -->
+  <g transform="translate(490,390) rotate(10)">
+    <path d="M-16-4 L-6-4 L0 2 L6-4 L16-4"/>
+    <path d="M-16 4 L-6 4 L0-2 L6 4 L16 4"/>
+    <line x1="-16" y1="-4" x2="-16" y2="4"/>
+    <line x1="16" y1="-4" x2="16" y2="4"/>
+  </g>
+
+  <!-- Soccer ball 2 -->
+  <g transform="translate(50,460) rotate(-20)">
+    <circle cx="0" cy="0" r="14"/>
+    <path d="M0-14 L3-7 L-3-7 Z M11 8 L5 4 L5-3 Z M-11 8 L-5 4 L-5-3 Z"/>
+  </g>
+
+  <!-- Star 2 small -->
+  <g transform="translate(200,460) rotate(8)">
+    <polygon points="0,-12 3,-4 11,-4 5,1 7,10 0,5 -7,10 -5,1 -11,-4 -3,-4"/>
+  </g>
+
+  <!-- Trophy 2 small -->
+  <g transform="translate(330,450) rotate(-10)">
+    <path d="M-8-12 L8-12 L8 0 C8 6 0 10 0 10 C0 10 -8 6 -8 0 Z"/>
+    <path d="M-8-8 L-14-8 C-14 0 -10 3 -6 2"/>
+    <path d="M8-8 L14-8 C14 0 10 3 6 2"/>
+    <path d="M-4 10 L4 10 M-6 14 L6 14"/>
+  </g>
+
+  <!-- Crown 2 small -->
+  <g transform="translate(460,470) rotate(5)">
+    <path d="M-12 8 L-12-4 L-6 3 L0-8 L6 3 L12-4 L12 8 Z"/>
+    <line x1="-12" y1="8" x2="12" y2="8"/>
+  </g>
+
+  <!-- Camera 2 small -->
+  <g transform="translate(140,130) rotate(-15)">
+    <rect x="-12" y="-8" width="24" height="17" rx="2"/>
+    <circle cx="0" cy="2" r="5"/>
+    <path d="M-4-8 L-3-12 L3-12 L4-8"/>
+  </g>
+
+  <!-- Pen/autograph -->
+  <g transform="translate(480,50) rotate(-30)">
+    <path d="M-4-18 L4-18 L8 10 L0 18 L-8 10 Z"/>
+    <line x1="-4" y1="-18" x2="4" y2="-18"/>
+    <line x1="-6" y1="4" x2="6" y2="4"/>
+    <path d="M0 18 C-4 14 -10 16 -8 20 C-6 24 0 22 0 18 Z"/>
+  </g>
+
+  <!-- Medal 2 -->
+  <g transform="translate(420,450) rotate(15)">
+    <circle cx="0" cy="4" r="10"/>
+    <path d="M-5-12 L0-4 L5-12"/>
+  </g>
+</svg>

@@ -472,6 +472,25 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; }
 
+    /* ── BACKGROUND PATTERN (desktop only) ── */
+    @media (min-width: 701px) {
+      body::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        background-image: url('/pattern.svg');
+        background-size: 520px 520px;
+        background-repeat: repeat;
+      }
+      header, .sticky-header, main, .spanel, footer,
+      .mo, .toast, .filter-fab, .drawer-overlay, .filter-drawer {
+        position: relative;
+        z-index: 1;
+      }
+    }
+
     /* ── HEADER ── */
     header {
       background: var(--bg);
