@@ -40,6 +40,8 @@ const ALL_QUERIES = [
   { q: 'Formula 1 pilota autografi firma zona fan Gran Premio 2026',           lang: 'it' },
   { q: 'firma autografos futbolista OR autografi calciatore 2026',             lang: 'en' },
   { q: 'meet and greet sports player autograph signing 2026',                  lang: 'en' },
+  { q: 'site:instagram.com gentlemanscutbourbon meet greet athlete signing',   lang: 'en' },
+  { q: '"gentlemanscutbourbon" meet greet athlete autograph signing event',    lang: 'en' },
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
