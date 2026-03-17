@@ -97,6 +97,22 @@ const ALL_QUERIES = [
   { q: 'site:sixthandi.org famous celebrity politician speaker event 2026',   lang: 'en' },
   { q: 'university commencement speaker 2026 celebrity athlete famous',       lang: 'en' },
   { q: 'commencement speaker 2026 announced famous celebrity',                lang: 'en' },
+  { q: 'site:streicker.nyc sports celebrity speaker event 2026',              lang: 'en' },
+  // ── Book signings — Italy ──
+  { q: 'site:eventi.mondadoristore.it firma calciatore sportivo 2026',        lang: 'it' },
+  { q: 'site:salonelibro.it firmacopie sportivo calciatore 2026',             lang: 'it' },
+  { q: 'firmacopie calciatore campione presentazione libro 2026',              lang: 'it' },
+  // ── Book signings — Spain ──
+  { q: 'site:fnac.es firma de libros futbolista deportista 2026',             lang: 'es' },
+  { q: 'site:ferialibromadrid.com firma futbolista deportista 2026',          lang: 'es' },
+  { q: 'site:planetadelibros.com firma futbolista sant jordi 2026',           lang: 'es' },
+  { q: 'firma libros futbolista sant jordi barcelona 2026',                    lang: 'es' },
+  // ── Book signings — UK ──
+  { q: 'site:waterstones.com football soccer sports author signing 2026',     lang: 'en' },
+  { q: 'site:londonfestivaloffootballwriting.org event author 2026',          lang: 'en' },
+  { q: 'football soccer autobiography book signing uk 2026',                   lang: 'en' },
+  // ── Book signings aggregator — US ──
+  { q: 'site:booksigningcentral.com sports athlete signing 2026',             lang: 'en' },
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
