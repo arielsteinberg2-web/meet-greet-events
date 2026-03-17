@@ -1364,7 +1364,6 @@
     <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Toggle light/dark mode"></button>
     <button class="btn btn-s" onclick="openSubmit()"><span class="btn-ic">📨</span><span class="btn-lbl"> Submit Event</span></button>
     <button class="btn btn-s" onclick="openFeedback()"><span class="btn-ic">💬</span><span class="btn-lbl"> Feedback</span></button>
-    <button class="btn btn-s" onclick="toggleSources()"><span class="btn-ic">📚</span><span class="btn-lbl"> Sources</span></button>
   </div>
 </header>
 <div class="sticky-header">
@@ -4511,7 +4510,7 @@ function cardHTML(e, i) {
   const avInner = mainPlayer
     ? `<img class="av-img" data-player="${esc(mainPlayer)}"${e.img ? ` data-src="${esc(e.img)}"` : ''} alt="${esc(mainPlayer)}" /><span class="av-fb">${icon}</span>`
     : icon;
-  const isNew      = e.addedAt && (Date.now() - new Date(e.addedAt).getTime()) < 21 * 86400000;
+  const isNew      = e.addedAt && (Date.now() - new Date(e.addedAt).getTime()) < 3 * 86400000;
   const isVerified = e.id && !e.id.startsWith('live_') && !e.id.startsWith('evt_');
   const delay      = typeof i === 'number' ? `style="animation-delay:${i*0.04}s"` : '';
 
@@ -4962,6 +4961,15 @@ function toggleSources() {
   p.style.display = hidden ? 'block' : 'none';
   if (hidden) setTimeout(() => p.scrollIntoView({ behavior: 'smooth', block: 'start' }), 30);
 }
+(function() {
+  const seq = 'src';
+  let buf = '';
+  document.addEventListener('keydown', e => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    buf = (buf + e.key).slice(-seq.length);
+    if (buf === seq) toggleSources();
+  });
+})();
 
 // ─── TOAST ───────────────────────────────────────────────────────────────────
 function toast(type, title, body) {
