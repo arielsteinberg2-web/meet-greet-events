@@ -82,6 +82,16 @@ const ALL_QUERIES = [
   { q: 'handtekening sessie sporters publiek 2026',                           lang: 'nl' },
   // ── Europe — Portuguese ──
   { q: 'sessão autógrafos jogador futebol público 2026',                      lang: 'pt' },
+  // ── Latin America — Spanish ──
+  { q: 'firma autógrafos futbolista evento tienda 2026',                      lang: 'es' },
+  { q: 'meet and greet futbolista latinoamerica 2026',                        lang: 'es' },
+  { q: 'leyendas futbol partido firma autografos sudamerica 2026',            lang: 'es' },
+  { q: 'site:puntoticket.com futbolista leyendas firma 2026',                 lang: 'es' },
+  { q: 'site:superboletos.com meet greet futbolista 2026',                    lang: 'es' },
+  { q: 'site:fanki.com.mx futbolista leyendas partido meet 2026',             lang: 'es' },
+  // ── Latin America — Portuguese (Brazil) ──
+  { q: 'sessão autógrafos jogador futebol brasil evento 2026',                lang: 'pt' },
+  { q: 'encontro fãs jogador futebol meet and greet brasil 2026',             lang: 'pt' },
   // ── Talks venues ──
   { q: 'site:92ny.org famous celebrity athlete speaker event 2026',           lang: 'en' },
   { q: 'site:sixthandi.org famous celebrity politician speaker event 2026',   lang: 'en' },
