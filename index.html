@@ -2099,7 +2099,7 @@
     <div class="fr">
       <div class="fg"><label>Player / Event Name *</label><input id="fp" type="text" placeholder="e.g. LeBron James" /></div>
       <div class="fg"><label>Event Type *</label>
-        <select id="fs"><option value="soccer">⚽ Soccer</option><option value="basketball">🏀 Basketball</option><option value="baseball">⚾ Baseball</option><option value="football">🏈 Football</option><option value="other">🏅 Other Sport</option><option value="celeb">🎬 Celebrity</option><option value="book">📖 Book Talk</option><option value="politics">🏛️ Politics</option></select>
+        <select id="fs"><option value="soccer">⚽ Soccer</option><option value="basketball">🏀 Basketball</option><option value="baseball">⚾ Baseball</option><option value="football">🏈 Football</option><option value="other">🏅 Other Sport</option><option value="celeb">🎬 Celebrity</option><option value="talk">🎤 Talks</option></select>
       </div>
     </div>
     <div class="fr">
@@ -2149,7 +2149,7 @@
     <div class="fr">
       <div class="fg"><label>Player / Person *</label><input id="sub-player" type="text" placeholder="e.g. Paolo Maldini" /></div>
       <div class="fg"><label>Event Type *</label>
-        <select id="sub-sport"><option value="soccer">⚽ Soccer</option><option value="basketball">🏀 Basketball</option><option value="baseball">⚾ Baseball</option><option value="football">🏈 Football</option><option value="other">🏅 Other Sport</option><option value="celeb">🎬 Celebrity</option><option value="book">📖 Book Talk</option><option value="politics">🏛️ Politics</option></select>
+        <select id="sub-sport"><option value="soccer">⚽ Soccer</option><option value="basketball">🏀 Basketball</option><option value="baseball">⚾ Baseball</option><option value="football">🏈 Football</option><option value="other">🏅 Other Sport</option><option value="celeb">🎬 Celebrity</option><option value="talk">🎤 Talks</option></select>
       </div>
     </div>
     <div class="fr">
@@ -3975,7 +3975,11 @@ function render() {
   let list = events.filter(e => {
     const d = new Date(e.date + 'T12:00:00');
     if (isNaN(d) || d < cutoff) return false;
-    if (activeFilters.size > 0 && !activeFilters.has(e.sport)) return false;
+    if (activeFilters.size > 0) {
+      const sportAlias = { politics:'celeb', talk:'book' };
+      const effectiveSport = sportAlias[e.sport] || e.sport;
+      if (!activeFilters.has(effectiveSport) && !activeFilters.has(e.sport)) return false;
+    }
     if (showSavedOnly && !savedIds.has(e.id)) return false;
     if (!matchRegion(e.city, rgn)) return false;
     if (q) {
@@ -4002,9 +4006,8 @@ function render() {
     { ic:ICONS.baseball,    n:win.filter(e=>e.sport==='baseball').length,          lb:'Baseball',       sub:null,                    f:'baseball', cls:'bbl' },
     { ic:ICONS.football,    n:win.filter(e=>e.sport==='football').length,          lb:'Football',       sub:null,                    f:'football', cls:'nfl' },
     { ic:ICONS.other,       n:win.filter(e=>e.sport==='other').length,             lb:'Other Sports',   sub:null,                    f:'other',    cls:'oth' },
-    { ic:ICONS.politics,    n:win.filter(e=>e.sport==='politics').length,          lb:'Politics',       sub:null,                    f:'politics', cls:'pol' },
-    { ic:ICONS.celeb,       n:win.filter(e=>e.sport==='celeb').length,             lb:'Celebrity',      sub:null,                    f:'celeb',    cls:'cel' },
-    { ic:ICONS.book,        n:win.filter(e=>e.sport==='book').length,              lb:'Book Talks',     sub:null,                    f:'book',     cls:'bok' },
+    { ic:ICONS.celeb,       n:win.filter(e=>['celeb','politics'].includes(e.sport)).length, lb:'Celebrity', sub:null,               f:'celeb',    cls:'cel' },
+    { ic:ICONS.book,        n:win.filter(e=>['book','talk'].includes(e.sport)).length,      lb:'Talks',    sub:null,                f:'book',     cls:'bok' },
   ];
   document.getElementById('stats').innerHTML = statDefs.map(({ic,n,lb,sub,f,cls,sav}) => {
     const active = f ? activeFilters.has(f) : false;
@@ -4063,8 +4066,9 @@ function render() {
     football:   { t:'NFL & American Football Player Meet & Greet Events 2026 | meetandgreet.events',   d:'Find NFL legends and American football player autograph signings, fan expos and meet & greet events in 2026.' },
     other:      { t:'Sports Meet & Greet Events 2026 — WWE, Boxing, F1 & More | meetandgreet.events',   d:'WWE, boxing, Formula 1 and multi-sport fan expos with autograph signings and meet & greet events in 2026.' },
     celeb:      { t:'Celebrity Meet & Greet Events 2026 — Fan Conventions & Signings | meetandgreet.events', d:'Celebrity fan conventions, comic-cons and autograph signing events worldwide in 2026.' },
-    book:       { t:'Sports Book Signing Events 2026 — Author Appearances | meetandgreet.events',       d:'Sports celebrity book signings and author appearance events worldwide in 2026.' },
-    politics:   { t:'Political Meet & Greet Events 2026 | meetandgreet.events',                         d:'Political figure meet & greet and public appearance events in 2026.' },
+    book:       { t:'Sports Talks & Book Signings 2026 — Author Appearances | meetandgreet.events',     d:'Sports celebrity talks, book signings and author appearance events worldwide in 2026.' },
+    talk:       { t:'Sports Talks & Book Signings 2026 — Author Appearances | meetandgreet.events',     d:'Sports celebrity talks, book signings and author appearance events worldwide in 2026.' },
+    celeb:      { t:'Celebrity & Politics Meet & Greet Events 2026 | meetandgreet.events',              d:'Celebrity fan conventions, political figures, comic-cons and autograph signing events worldwide in 2026.' },
   };
   let pt = BASE_TITLE, pd = BASE_DESC;
   if (q) {
@@ -4279,9 +4283,10 @@ const SPORT_META = {
   baseball:   { icon: ICONS.baseball,   cls:'bbl', lbl:'Baseball' },
   football:   { icon: ICONS.football,   cls:'nfl', lbl:'Football' },
   other:      { icon: ICONS.other,      cls:'oth', lbl:'Other Sport' },
-  politics:   { icon: ICONS.politics,   cls:'pol', lbl:'Politics' },
+  politics:   { icon: ICONS.celeb,      cls:'cel', lbl:'Celebrity' },
   celeb:      { icon: ICONS.celeb,      cls:'cel', lbl:'Celebrity' },
-  book:       { icon: ICONS.book,       cls:'bok', lbl:'Book Talk [not M&G]' }
+  book:       { icon: ICONS.book,       cls:'bok', lbl:'Talks' },
+  talk:       { icon: ICONS.book,       cls:'bok', lbl:'Talks' }
 };
 
 // ─── PLAYER PHOTO LOOKUP ──────────────────────────────────────────────────────
