@@ -43,6 +43,12 @@ const ALL_QUERIES = [
   { q: 'site:cravetheauto.com autograph signing meet greet 2026',             lang: 'en' },
   { q: 'site:instagram.com gentlemanscutbourbon meet greet athlete signing',   lang: 'en' },
   { q: '"gentlemanscutbourbon" meet greet athlete autograph signing event',    lang: 'en' },
+  // ── Organizers discovered via CraveTheAuto event pages ──
+  { q: 'site:cardboardpromotions.com autograph signing meet greet',           lang: 'en' },
+  { q: 'site:shopdynastysports.com autograph signing athlete appearance',      lang: 'en' },
+  { q: 'site:tristarproductions.com autograph signing meet greet athlete',     lang: 'en' },
+  { q: 'site:sportsworld-usa.com autograph signing athlete appearance',        lang: 'en' },
+  { q: 'site:fathernsonssportsmemorabilia.com autograph signing appearance',   lang: 'en' },
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
