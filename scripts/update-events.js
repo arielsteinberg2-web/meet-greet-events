@@ -82,6 +82,11 @@ const ALL_QUERIES = [
   { q: 'handtekening sessie sporters publiek 2026',                           lang: 'nl' },
   // ── Europe — Portuguese ──
   { q: 'sessão autógrafos jogador futebol público 2026',                      lang: 'pt' },
+  // ── Talks venues ──
+  { q: 'site:92ny.org famous celebrity athlete speaker event 2026',           lang: 'en' },
+  { q: 'site:sixthandi.org famous celebrity politician speaker event 2026',   lang: 'en' },
+  { q: 'university commencement speaker 2026 celebrity athlete famous',       lang: 'en' },
+  { q: 'commencement speaker 2026 announced famous celebrity',                lang: 'en' },
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
