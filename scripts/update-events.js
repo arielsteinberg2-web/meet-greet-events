@@ -49,6 +49,15 @@ const ALL_QUERIES = [
   { q: 'site:tristarproductions.com autograph signing meet greet athlete',     lang: 'en' },
   { q: 'site:sportsworld-usa.com autograph signing athlete appearance',        lang: 'en' },
   { q: 'site:fathernsonssportsmemorabilia.com autograph signing appearance',   lang: 'en' },
+  // ── New organizers discovered via deep scout ──
+  { q: 'site:palmbeachautographs.com autograph signing public event',         lang: 'en' },
+  { q: 'site:bighornautographs.com autograph signing athlete appearance',      lang: 'en' },
+  { q: 'site:513autographs.com autograph signing athlete appearance',          lang: 'en' },
+  { q: 'site:tsebuffalo.com autograph signing athlete appearance',             lang: 'en' },
+  { q: 'site:signingshotline.com autograph appearance athlete 2026',           lang: 'en' },
+  { q: 'site:sportscollectors.net signing appearance athlete 2026',            lang: 'en' },
+  { q: 'site:legends7.co.uk evening dinner meet greet athlete 2026',          lang: 'en' },
+  { q: 'site:authentic-autographs.com.au meet greet athlete signing 2026',    lang: 'en' },
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
