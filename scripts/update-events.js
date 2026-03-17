@@ -58,6 +58,30 @@ const ALL_QUERIES = [
   { q: 'site:sportscollectors.net signing appearance athlete 2026',            lang: 'en' },
   { q: 'site:legends7.co.uk evening dinner meet greet athlete 2026',          lang: 'en' },
   { q: 'site:authentic-autographs.com.au meet greet athlete signing 2026',    lang: 'en' },
+  // ── UK event organizers ──
+  { q: 'site:superstarspeakers.co.uk evening meet greet autograph 2026',      lang: 'en' },
+  { q: 'site:greenmountevents.co.uk signing meet greet autograph 2026',       lang: 'en' },
+  { q: 'site:worldwidesigningsevents.co.uk meet greet signing 2026',          lang: 'en' },
+  { q: 'site:allstarsignings.com autograph signing meet greet 2026',          lang: 'en' },
+  // ── Europe — Italian ──
+  { q: 'site:operazionenostalgia.com raduno firma autografi 2026',            lang: 'it' },
+  { q: 'firma autografi calciatore evento pubblico italia 2026',               lang: 'it' },
+  { q: 'incontro tifosi calciatore firma autografi 2026',                      lang: 'it' },
+  // ── Europe — German ──
+  { q: 'site:starbesuch.de Autogrammstunde Sportler 2026',                    lang: 'de' },
+  { q: 'Autogrammstunde Fussball Sportler öffentlich 2026',                   lang: 'de' },
+  { q: 'Signierstunde Fussballspieler Fan 2026',                              lang: 'de' },
+  // ── Europe — French ──
+  { q: 'séance dédicace footballeur sportif france belgique 2026',            lang: 'fr' },
+  { q: 'rencontre fans joueur football dédicace 2026',                        lang: 'fr' },
+  // ── Europe — Spanish ──
+  { q: 'sesión firma autógrafos futbolista españa 2026',                      lang: 'es' },
+  { q: 'encuentro fans jugador firma autógrafos 2026',                        lang: 'es' },
+  // ── Europe — Dutch ──
+  { q: 'signeersessie voetballer fan evenement 2026',                         lang: 'nl' },
+  { q: 'handtekening sessie sporters publiek 2026',                           lang: 'nl' },
+  // ── Europe — Portuguese ──
+  { q: 'sessão autógrafos jogador futebol público 2026',                      lang: 'pt' },
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
