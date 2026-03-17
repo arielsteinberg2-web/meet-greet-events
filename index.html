@@ -2431,6 +2431,7 @@ const SEEDS = [
   },
   {
     id:'bi4', sport:'basketball',
+    img:'https://cdn.nba.com/headshots/nba/latest/1040x760/1630540.png',
     player:'Miles McBride (NY Knicks)',
     date:'2026-03-21', time:'15:00',
     venue:"Mustang Harry's – 352 7th Ave",
@@ -4002,6 +4003,7 @@ function applyPhoto(img, src) {
 
 function loadPhotos() {
   document.querySelectorAll('.av-img[data-player]').forEach(img => {
+    if (img.dataset.src) { applyPhoto(img, img.dataset.src); return; }
     const name = img.dataset.player;
     const cached = photoCache[name];
     if (cached && cached !== 'loading' && cached !== 'none') { applyPhoto(img, cached); return; }
@@ -4045,7 +4047,7 @@ function cardHTML(e, i) {
     : '';
   const mainPlayer = extractMainPlayer(e.player);
   const avInner = mainPlayer
-    ? `<img class="av-img" data-player="${esc(mainPlayer)}" alt="${esc(mainPlayer)}" /><span class="av-fb">${icon}</span>`
+    ? `<img class="av-img" data-player="${esc(mainPlayer)}"${e.img ? ` data-src="${esc(e.img)}"` : ''} alt="${esc(mainPlayer)}" /><span class="av-fb">${icon}</span>`
     : icon;
   const isNew      = e.addedAt && (Date.now() - new Date(e.addedAt).getTime()) < 21 * 86400000;
   const isVerified = e.id && !e.id.startsWith('live_') && !e.id.startsWith('evt_');
