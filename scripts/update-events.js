@@ -159,6 +159,7 @@ function parseOrganic(data, lang) {
     // ── DOMAIN BLOCKLIST — known past/irrelevant events ───────────────────────
     const BLOCKED_DOMAINS = [
       'goldoveramericatour.com',  // 2024 tour — past
+      'acmilan.com',              // rolling/generic page, not real confirmed events
     ];
     if (BLOCKED_DOMAINS.some(d => res.link.includes(d))) continue;
 
