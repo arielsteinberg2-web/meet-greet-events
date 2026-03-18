@@ -1,9 +1,31 @@
 {
-  "generatedAt": "2026-03-17T10:39:02.763Z",
-  "count": 3,
+  "generatedAt": "2026-03-18T10:40:39.936Z",
+  "count": 4,
   "events": [
     {
-      "id": "live_1773743806057_7tid8",
+      "id": "live_1773830263819_bt62k",
+      "player": "Apple Google",
+      "sport": "soccer",
+      "date": "2026-03-22",
+      "venue": "",
+      "city": "",
+      "link": "https://www.cravetheauto.com/autograph-appearances",
+      "notes": "Cleveland Crunch Meet & Greet. Sunday, March 22, 2026; 12:00 PM 2:00 PM 12:00 ... We list every public autograph signing in America! Apple Google. Crave Sports ...",
+      "source": "https://www.cravetheauto.com › autograph-appearances"
+    },
+    {
+      "id": "live_1773830275830_kgcsf",
+      "player": "Annual Boxing Fundraising",
+      "sport": "other",
+      "date": "2026-05-07",
+      "venue": "",
+      "city": "",
+      "link": "https://www.instagram.com/p/DUtTLvckZxG/",
+      "notes": "FIGHT FOR CHICAGO IS BACK! The 3rd Annual Boxing Fundraising Event returns on May 7, 2026. Join @fightforchicago for a powerful evening ...",
+      "source": "200+ likes · 1 month ago"
+    },
+    {
+      "id": "live_1773830277822_1g2x8",
       "player": "Allen Iverson Author",
       "sport": "book",
       "date": "2026-03-31",
@@ -14,7 +36,7 @@
       "source": "https://www.eventbrite.com › allen-iverson-author-talk-..."
     },
     {
-      "id": "live_1773743834883_e99rm",
+      "id": "live_1773830315658_0apdq",
       "player": "Friday April",
       "sport": "other",
       "date": "2026-04-17",
@@ -23,17 +45,6 @@
       "link": "https://gtsportsshows.com/",
       "notes": "NEW JERSEY SPRING 2026. AUTOGRAPH & SPORTS CARD SHOW April 17-19, 2026. Friday April 17, 2026 @5pm-9pm ($10)",
       "source": "https://gtsportsshows.com"
-    },
-    {
-      "id": "live_1773743836490_5lt2o",
-      "player": "Dick's House",
-      "sport": "soccer",
-      "date": "2026-03-22",
-      "venue": "",
-      "city": "",
-      "link": "https://www.cravetheauto.com/autograph-appearances",
-      "notes": "Cleveland Crunch Meet & Greet. Sunday, March 22, 2026; 12:00 PM 2:00 PM 12:00 14:00; Dick's House of Sports (map) · Google Calendar ICS. OHIO, STRONGSVILLE.",
-      "source": "https://www.cravetheauto.com › autograph-appearances"
     }
   ]
 }
