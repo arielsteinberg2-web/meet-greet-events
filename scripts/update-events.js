@@ -245,8 +245,8 @@ function parseOrganic(data, lang) {
     const isPol    = !isBook && !isBball && /senator|president|governor|politician/.test(combined);
     const isCeleb  = !isBook && !isBball && !isPol && /actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(combined);
     const isNFL    = /\bnfl\b|american football|super bowl|superbowl|touchdown|quarterback|wide receiver|running back|tight end|linebacker|defensive end|eagles|patriots|cowboys|chiefs|steelers|packers|bears|giants|ravens|broncos|seahawks|49ers|rams|chargers|raiders|dolphins|bills|bengals|browns|colts|jaguars|titans|texans|falcons|saints|panthers|buccaneers|vikings|lions|cardinals/.test(combined);
-    const isOther  = !isBook && !isBball && !isPol && !isCeleb && /gymnast|olympic|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined) || isNFL;
-    const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isOther && /\bsoccer\b|futbol|calcio|fútbol|\bfootballer\b|calciatore|\bfoot\b|ligue|premier league|bundesliga|serie a|la liga|champions league|\bcopa\b|\bmls\b|\bfifa\b/.test(combined);
+    const isOther  = !isBook && !isBball && !isPol && !isCeleb && !isNFL && /gymnast|olympic|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined);
+    const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isOther && /\bsoccer\b|futbol|calcio|fútbol|\bfootballer\b|calciatore|\bfoot\b|ligue|premier league|bundesliga|serie a|la liga|champions league|\bcopa\b|\bmls\b|\bfifa\b/.test(combined);
 
     const playerName = extractPlayerName(res.title, res.snippet);
     if (!playerName) continue; // skip events with no identifiable player name
@@ -257,7 +257,7 @@ function parseOrganic(data, lang) {
     out.push({
       id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
       player: playerName,
-      sport:  isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
+      sport:  isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isNFL ? 'football' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
       date:   eventDate,
       venue:  '',
       city:   '',
