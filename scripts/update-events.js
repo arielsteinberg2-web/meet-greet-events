@@ -65,8 +65,12 @@ const ALL_QUERIES = [
   { q: 'site:allstarsignings.com autograph signing meet greet 2026',          lang: 'en' },
   // ── Europe — Italian ──
   { q: 'site:operazionenostalgia.com raduno firma autografi 2026',            lang: 'it' },
+  { q: 'site:cardfest.it meet greet VIP autografi campione 2026',             lang: 'it' },
   { q: 'firma autografi calciatore evento pubblico italia 2026',               lang: 'it' },
   { q: 'incontro tifosi calciatore firma autografi 2026',                      lang: 'it' },
+  // ── Europe — Polish ──
+  { q: 'site:galacticosshow.pl VIP meet greet legends 2026',                  lang: 'en' },
+  { q: 'galacticos show Poland legends meet greet VIP 2026',                  lang: 'en' },
   // ── Europe — German ──
   { q: 'site:starbesuch.de Autogrammstunde Sportler 2026',                    lang: 'de' },
   { q: 'Autogrammstunde Fussball Sportler öffentlich 2026',                   lang: 'de' },
