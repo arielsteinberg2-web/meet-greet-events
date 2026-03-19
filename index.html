@@ -3981,6 +3981,7 @@ let activeFilters = new Set(); // empty = all sports shown
 let countryFlagMap = {};
 let savedIds = new Set(JSON.parse(localStorage.getItem('mng_saved') || '[]'));
 let showSavedOnly = false;
+let showNewOnly = false;
 let newEventIds = JSON.parse(localStorage.getItem('mng_new') || '{}');
 let viewMode = localStorage.getItem('mng_view') || 'grid';
 let currentQ = '';
@@ -3994,6 +3995,10 @@ function toggleSave(id) {
 }
 function toggleSavedFilter() {
   showSavedOnly = !showSavedOnly;
+  render();
+}
+function toggleNewFilter() {
+  showNewOnly = !showNewOnly;
   render();
 }
 function shareEvent(id) {
@@ -4153,6 +4158,7 @@ function render() {
       if (!activeFilters.has(effectiveSport) && !activeFilters.has(e.sport)) return false;
     }
     if (showSavedOnly && !savedIds.has(e.id)) return false;
+    if (showNewOnly && !(e.addedAt && (Date.now() - new Date(e.addedAt).getTime()) < 3 * 86400000)) return false;
     if (!matchRegion(e.city, rgn)) return false;
     if (q) {
       const h = [e.player,e.venue,e.city,e.notes,e.source].join(' ').toLowerCase();
@@ -4171,8 +4177,10 @@ function render() {
   const win = events.filter(e => { const d = new Date(e.date+'T12:00:00'); return !isNaN(d) && d >= now; });
   const mo  = now.getMonth(), yr = now.getFullYear();
   const thisMonth = win.filter(e=>{ const d=new Date(e.date+'T12:00:00'); return d.getMonth()===mo&&d.getFullYear()===yr; }).length;
+  const newCount = win.filter(e => e.addedAt && (Date.now() - new Date(e.addedAt).getTime()) < 3 * 86400000).length;
   const statDefs = [
     { ic:ICONS.calendar,    n:win.length,                                          lb:'Total Events',  sub:thisMonth+' this month', f:null,       cls:null  },
+    { ic:'✨',              n:newCount,                                            lb:'New',            sub:'last 3 days',           f:'__new__',  cls:'soc' },
     { ic:ICONS.soccer,      n:win.filter(e=>e.sport==='soccer').length,            lb:'Soccer',         sub:null,                    f:'soccer',   cls:'soc' },
     { ic:ICONS.basketball,  n:win.filter(e=>e.sport==='basketball').length,        lb:'Basketball',     sub:null,                    f:'basketball',cls:'bsk' },
     { ic:ICONS.baseball,    n:win.filter(e=>e.sport==='baseball').length,          lb:'Baseball',       sub:null,                    f:'baseball', cls:'bbl' },
@@ -4181,13 +4189,15 @@ function render() {
     { ic:ICONS.celeb,       n:win.filter(e=>['celeb','politics'].includes(e.sport)).length, lb:'Celebrity', sub:null,               f:'celeb',    cls:'cel' },
     { ic:ICONS.book,        n:win.filter(e=>['book','talk'].includes(e.sport)).length,      lb:'Talks',    sub:null,                f:'book',     cls:'bok' },
   ];
-  document.getElementById('stats').innerHTML = statDefs.map(({ic,n,lb,sub,f,cls,sav}) => {
-    const active = f ? activeFilters.has(f) : false;
+  document.getElementById('stats').innerHTML = statDefs.map(({ic,n,lb,sub,f,cls}) => {
+    const isNewFilter = f === '__new__';
+    const active = isNewFilter ? showNewOnly : (f ? activeFilters.has(f) : false);
     const activeCls = f ? `active-${cls}` : '';
-    const onclick = f ? `toggleFilter('${f}')` : '';
+    const onclick = isNewFilter ? 'toggleNewFilter()' : (f ? `toggleFilter('${f}')` : '');
     const filterable = !!f;
-    return `<div class="stat${filterable?' filterable':''}${active?' '+activeCls:''}"${filterable?` onclick="${onclick}" title="Click to filter · click again to deselect"`:''}>
-      <span class="stat-coin ${cls}"><span class="ci">${ic}</span></span><div><div class="stat-n" data-target="${n}">0</div><div class="stat-l">${lb}${sub?`<br><span style="font-size:.68rem;font-weight:700;color:#29b6f6;text-shadow:0 0 8px rgba(41,182,246,.6)">(${sub})</span>`:''}</div></div>
+    const newStyle = isNewFilter && active ? 'outline:1px solid var(--green);box-shadow:0 0 8px rgba(0,229,204,.3);' : '';
+    return `<div class="stat${filterable?' filterable':''}${active?' '+activeCls:''}"${filterable?` onclick="${onclick}" title="Click to filter · click again to deselect" style="${newStyle}"`:''}>
+      <span class="stat-coin ${cls}"><span class="ci">${ic}</span></span><div><div class="stat-n" data-target="${n}">0</div><div class="stat-l">${lb}${sub?`<br><span style="font-size:.68rem;font-weight:700;color:var(--green);text-shadow:0 0 8px rgba(0,229,204,.4)">(${sub})</span>`:''}</div></div>
     </div>`;
   }).join('');
   document.querySelectorAll('.stat-n[data-target]').forEach(el => animateCounter(el, +el.dataset.target));
