@@ -4268,7 +4268,7 @@ function fmtDate(date, time) {
 
 function countdown(date) {
   const now = new Date(); now.setHours(0,0,0,0);
-  const d = new Date(date+'T12:00:00');
+  const d = new Date(date+'T00:00:00');
   if (d < now) return '<span style="color:#f44336">Past</span>';
   const diff = Math.round((d-now)/86400000);
   if (diff===0) return '<span style="color:var(--orange);font-weight:700">Today!</span>';
