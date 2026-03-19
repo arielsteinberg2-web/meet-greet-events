@@ -1,50 +1,39 @@
 {
-  "generatedAt": "2026-03-18T10:40:39.936Z",
-  "count": 4,
+  "generatedAt": "2026-03-19T10:09:17.055Z",
+  "count": 3,
   "events": [
     {
-      "id": "live_1773830263819_bt62k",
+      "id": "live_1773914797388_6ly26",
+      "player": "Saturday May",
+      "sport": "celeb",
+      "date": "2026-05-02",
+      "venue": "",
+      "city": "",
+      "link": "https://www.instagram.com/boxfanexpo/",
+      "notes": "The Ultimate Boxing Fan Experience. Meet & Greet Boxing Stars, Photos, Autographs. Saturday May 2, 2026 10am-5pm, Cinco De Mayo weekend #boxfanexpo ...",
+      "source": "5.6K+ followers"
+    },
+    {
+      "id": "live_1773914838002_xfgce",
       "player": "Apple Google",
       "sport": "soccer",
       "date": "2026-03-22",
       "venue": "",
       "city": "",
       "link": "https://www.cravetheauto.com/autograph-appearances",
-      "notes": "Cleveland Crunch Meet & Greet. Sunday, March 22, 2026; 12:00 PM 2:00 PM 12:00 ... We list every public autograph signing in America! Apple Google. Crave Sports ...",
+      "notes": "Cleveland Crunch Meet & Greet. Sunday, March 22, 2026; 12:00 PM 2:00 PM 12:00 ... We list every public autograph signing in America! Apple Google · Search ...",
       "source": "https://www.cravetheauto.com › autograph-appearances"
     },
     {
-      "id": "live_1773830275830_kgcsf",
-      "player": "Annual Boxing Fundraising",
-      "sport": "other",
-      "date": "2026-05-07",
+      "id": "live_1773914853943_p8frz",
+      "player": "Merrill Reese Inscription",
+      "sport": "soccer",
+      "date": "2026-03-21",
       "venue": "",
       "city": "",
-      "link": "https://www.instagram.com/p/DUtTLvckZxG/",
-      "notes": "FIGHT FOR CHICAGO IS BACK! The 3rd Annual Boxing Fundraising Event returns on May 7, 2026. Join @fightforchicago for a powerful evening ...",
-      "source": "200+ likes · 1 month ago"
-    },
-    {
-      "id": "live_1773830277822_1g2x8",
-      "player": "Allen Iverson Author",
-      "sport": "book",
-      "date": "2026-03-31",
-      "venue": "",
-      "city": "",
-      "link": "https://www.eventbrite.com/e/allen-iverson-author-talk-and-book-signing-tickets-1493725275509",
-      "notes": "Eventbrite - Baldwin & Co. presents Allen Iverson Author Talk and Book Signing - Tuesday, March 31, 2026 at 1030 Elysian Fields Ave, New Orleans, LA.",
-      "source": "https://www.eventbrite.com › allen-iverson-author-talk-..."
-    },
-    {
-      "id": "live_1773830315658_0apdq",
-      "player": "Friday April",
-      "sport": "other",
-      "date": "2026-04-17",
-      "venue": "",
-      "city": "",
-      "link": "https://gtsportsshows.com/",
-      "notes": "NEW JERSEY SPRING 2026. AUTOGRAPH & SPORTS CARD SHOW April 17-19, 2026. Friday April 17, 2026 @5pm-9pm ($10)",
-      "source": "https://gtsportsshows.com"
+      "link": "https://www.shopdynastysports.com/products/merrill-reese-inscription-ticket?srsltid=AfmBOoqPsRrptKF2u5bIcp7gdSjxWvMG-fvIYrvdDfzYEJmWnYBJpPBP",
+      "notes": "Meet Merrill Reese, the voice of the Philadelphia Eagles Saturday, March 21, 2026 at our Willow Grove Park Mall location beginning at 12pm.",
+      "source": "https://www.shopdynastysports.com › products › merril..."
     }
   ]
 }
