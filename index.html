@@ -4180,7 +4180,7 @@ function render() {
   const newCount = win.filter(e => e.addedAt && (Date.now() - new Date(e.addedAt).getTime()) < 3 * 86400000).length;
   const statDefs = [
     { ic:ICONS.calendar,    n:win.length,                                          lb:'Total Events',  sub:thisMonth+' this month', f:null,       cls:null  },
-    { ic:'✨',              n:newCount,                                            lb:'New',            sub:'added in the last 3 days',           f:'__new__',  cls:'soc' },
+    { ic:'✨',              n:newCount,                                            lb:'New',            sub:'recently added',           f:'__new__',  cls:'soc' },
     { ic:ICONS.soccer,      n:win.filter(e=>e.sport==='soccer').length,            lb:'Soccer',         sub:null,                    f:'soccer',   cls:'soc' },
     { ic:ICONS.basketball,  n:win.filter(e=>e.sport==='basketball').length,        lb:'Basketball',     sub:null,                    f:'basketball',cls:'bsk' },
     { ic:ICONS.baseball,    n:win.filter(e=>e.sport==='baseball').length,          lb:'Baseball',       sub:null,                    f:'baseball', cls:'bbl' },
