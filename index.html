@@ -4087,24 +4087,30 @@ async function loadLiveEvents() {
     if (!r.ok) return;
     const data = await r.json();
 
-    // Merge: add any live events not already present (matched by link)
-    const existingLinks = new Set(events.map(e => e.link).filter(Boolean));
-    // Also dedupe by normalised player name + date (catches same event from different sources)
+    // Merge: update existing live events + add new ones
+    const linkIndex = new Map(events.map((e, i) => [e.link, i]).filter(([l]) => l));
     const nameDate = new Set(events.map(e => {
       const n = e.player.toLowerCase().replace(/[^a-z0-9]/g,'').substring(0,20);
       return n + '|' + e.date;
     }));
-    let added = 0;
+    let changed = 0;
     for (const e of (data.events || [])) {
-      if (e.link && existingLinks.has(e.link)) continue;
+      if (e.link && linkIndex.has(e.link)) {
+        // Update mutable fields on already-cached live events (e.g. sport corrections)
+        const idx = linkIndex.get(e.link);
+        if (events[idx].id.startsWith('live_') || events[idx].id.startsWith('evt_')) {
+          if (events[idx].sport !== e.sport) { events[idx].sport = e.sport; changed++; }
+        }
+        continue;
+      }
       const nd = e.player.toLowerCase().replace(/[^a-z0-9]/g,'').substring(0,20) + '|' + e.date;
       if (nameDate.has(nd)) continue;
       events.push(e);
-      existingLinks.add(e.link);
+      if (e.link) linkIndex.set(e.link, events.length - 1);
       nameDate.add(nd);
-      added++;
+      changed++;
     }
-    if (added > 0) { save(); render(); }
+    if (changed > 0) { save(); render(); }
 
     // Update timestamp chip directly from JSON response
     const gAt = data.generatedAt || data.updatedAt;
