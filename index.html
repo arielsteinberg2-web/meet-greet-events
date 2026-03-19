@@ -915,10 +915,10 @@
     .ts-chip .ts-dot { box-shadow:0 0 4px currentColor; }
 
     /* ── STATS ── */
-    .stats { display:flex; gap:14px; margin-bottom:22px; flex-wrap:wrap; }
+    .stats { display:flex; gap:10px; margin-bottom:22px; flex-wrap:nowrap; overflow-x:auto; padding-bottom:4px; }
     .stat {
       background:var(--surface); border:1px solid var(--border); border-radius:var(--r);
-      padding:12px 18px; display:flex; align-items:center; gap:10px; transition:all .18s;
+      padding:10px 14px; display:flex; align-items:center; gap:8px; transition:all .18s; flex-shrink:0;
     }
     .stat.filterable { cursor:pointer; user-select:none; }
     .stat.filterable:hover { border-color:#1a4a46; transform:translateY(-1px); }
@@ -930,7 +930,7 @@
     .stat.active-pol { border-color:#1565c0; background:rgba(21,101,192,.1);  box-shadow:0 0 12px rgba(21,101,192,.2); }
     .stat.active-cel { border-color:#e91e8c; background:rgba(233,30,140,.1);  box-shadow:0 0 12px rgba(233,30,140,.2); }
     .stat.active-bok { border-color:#ffb300; background:rgba(255,179,0,.1);   box-shadow:0 0 12px rgba(255,179,0,.2); }
-    .stat-n { font-size:1.4rem; font-weight:700; line-height:1; }
+    .stat-n { font-size:1.2rem; font-weight:700; line-height:1; }
     .stat-l { font-size:.72rem; color:var(--dim); margin-top:2px; }
 
     /* ── GRID ── */
