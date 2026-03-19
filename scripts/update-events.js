@@ -240,11 +240,12 @@ function parseOrganic(data, lang) {
     ];
     if (BLOCKED_DOMAINS.some(d => res.link.includes(d))) continue;
 
-    const isBook  = /book signing|book tour|presents his book|firma libros|firma copie|d[eé]dicace.*livre|buchsignierung|signeersessie|sess[aã]o.*aut[oó]grafos|lançamento.*livro|autobiography|memoir|presentaci[oó]n.*libro|presentazione.*libro/.test(combined);
-    const isBball = !isBook && /basketball|nba/.test(combined);
-    const isPol   = !isBook && !isBball && /senator|president|governor|politician/.test(combined);
-    const isCeleb = !isBook && !isBball && !isPol && /actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(combined);
-    const isOther = !isBook && !isBball && !isPol && !isCeleb && /gymnast|olympic|nfl|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined);
+    const isBook   = /book signing|book tour|presents his book|firma libros|firma copie|d[eé]dicace.*livre|buchsignierung|signeersessie|sess[aã]o.*aut[oó]grafos|lançamento.*livro|autobiography|memoir|presentaci[oó]n.*libro|presentazione.*libro/.test(combined);
+    const isBball  = !isBook && /basketball|nba/.test(combined);
+    const isPol    = !isBook && !isBball && /senator|president|governor|politician/.test(combined);
+    const isCeleb  = !isBook && !isBball && !isPol && /actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(combined);
+    const isOther  = !isBook && !isBball && !isPol && !isCeleb && /gymnast|olympic|nfl|american football|football player|quarterback|wide receiver|running back|linebacker|tight end|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined);
+    const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isOther && /soccer|football|futbol|calcio|fútbol|footballer|calciatore|foot\b|ligue|premier league|bundesliga|serie a|la liga|champions league|copa|mls|fifa/.test(combined);
 
     const playerName = extractPlayerName(res.title, res.snippet);
     if (!playerName) continue; // skip events with no identifiable player name
@@ -255,7 +256,7 @@ function parseOrganic(data, lang) {
     out.push({
       id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
       player: playerName,
-      sport:  isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isOther ? 'other' : 'soccer',
+      sport:  isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
       date:   eventDate,
       venue:  '',
       city:   '',
