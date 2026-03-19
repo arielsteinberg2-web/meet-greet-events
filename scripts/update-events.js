@@ -244,8 +244,9 @@ function parseOrganic(data, lang) {
     const isBball  = !isBook && /basketball|nba/.test(combined);
     const isPol    = !isBook && !isBball && /senator|president|governor|politician/.test(combined);
     const isCeleb  = !isBook && !isBball && !isPol && /actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(combined);
-    const isOther  = !isBook && !isBball && !isPol && !isCeleb && /gymnast|olympic|nfl|american football|football player|quarterback|wide receiver|running back|linebacker|tight end|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined);
-    const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isOther && /soccer|football|futbol|calcio|fútbol|footballer|calciatore|foot\b|ligue|premier league|bundesliga|serie a|la liga|champions league|copa|mls|fifa/.test(combined);
+    const isNFL    = /\bnfl\b|american football|super bowl|superbowl|touchdown|quarterback|wide receiver|running back|tight end|linebacker|defensive end|eagles|patriots|cowboys|chiefs|steelers|packers|bears|giants|ravens|broncos|seahawks|49ers|rams|chargers|raiders|dolphins|bills|bengals|browns|colts|jaguars|titans|texans|falcons|saints|panthers|buccaneers|vikings|lions|cardinals/.test(combined);
+    const isOther  = !isBook && !isBball && !isPol && !isCeleb && /gymnast|olympic|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined) || isNFL;
+    const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isOther && /\bsoccer\b|futbol|calcio|fútbol|\bfootballer\b|calciatore|\bfoot\b|ligue|premier league|bundesliga|serie a|la liga|champions league|\bcopa\b|\bmls\b|\bfifa\b/.test(combined);
 
     const playerName = extractPlayerName(res.title, res.snippet);
     if (!playerName) continue; // skip events with no identifiable player name
