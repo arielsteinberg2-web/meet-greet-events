@@ -1040,6 +1040,9 @@
     }
     .act-btn:hover { background:var(--border); color:var(--text); }
     .stat.active-sav { border-color:#ffd740; background:rgba(255,215,64,.1); }
+    .cal-menu { position:fixed; background:var(--surface); border:1px solid var(--border); border-radius:10px; box-shadow:0 6px 24px rgba(0,0,0,.18); padding:5px; min-width:210px; z-index:9999; }
+    .cal-opt { display:flex; align-items:center; gap:9px; width:100%; text-align:left; padding:9px 13px; border:none; background:none; cursor:pointer; font-size:.82rem; font-weight:600; color:var(--text); text-decoration:none; border-radius:7px; white-space:nowrap; }
+    .cal-opt:hover { background:var(--border); }
 
     .dets { display:flex; flex-direction:column; gap:7px; }
     .dr { display:flex; align-items:flex-start; gap:9px; font-size:.83rem; }
@@ -4010,7 +4013,39 @@ function shareEvent(id) {
     navigator.clipboard.writeText(txt).then(() => toast('ok', 'Copied!', 'Event details copied to clipboard'));
   }
 }
-function exportICS(id) {
+function openCalMenu(id, btn) {
+  const e = events.find(x => x.id === id); if (!e) return;
+  document.querySelectorAll('.cal-menu').forEach(el => el.remove());
+  const dt = e.date.replace(/-/g, '');
+  const hh = e.time ? e.time.split(':')[0] : '10', mm = e.time ? e.time.split(':')[1] : '00';
+  const endHH = String((parseInt(hh) + 2) % 24).padStart(2, '0');
+  const title = encodeURIComponent(e.player);
+  const loc   = encodeURIComponent([e.venue, e.city].filter(Boolean).join(', '));
+  const desc  = encodeURIComponent([e.notes, e.link].filter(Boolean).join(' — '));
+  const isAllDay = !e.time;
+  const gStart = isAllDay ? dt : `${dt}T${hh}${mm}00`;
+  const gEnd   = isAllDay ? dt : `${dt}T${endHH}${mm}00`;
+  const oStart = isAllDay ? e.date : `${e.date}T${hh}:${mm}:00`;
+  const oEnd   = isAllDay ? e.date : `${e.date}T${endHH}:${mm}:00`;
+  const gcal   = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${gStart}/${gEnd}&details=${desc}&location=${loc}`;
+  const outlk  = `https://outlook.live.com/calendar/0/deeplink/compose?subject=${title}&startdt=${encodeURIComponent(oStart)}&enddt=${encodeURIComponent(oEnd)}&body=${desc}&location=${loc}`;
+  const menu = document.createElement('div');
+  menu.className = 'cal-menu';
+  menu.innerHTML = `
+    <a href="${gcal}" target="_blank" rel="noopener" class="cal-opt">📅 Google Calendar</a>
+    <a href="${outlk}" target="_blank" rel="noopener" class="cal-opt">📆 Outlook</a>
+    <button class="cal-opt" onclick="downloadICS('${id}');document.querySelectorAll('.cal-menu').forEach(el=>el.remove())">📥 Apple / Other (.ics)</button>`;
+  const rect = btn.getBoundingClientRect();
+  menu.style.top  = (rect.bottom + 4) + 'px';
+  menu.style.left = rect.left + 'px';
+  document.body.appendChild(menu);
+  setTimeout(() => {
+    document.addEventListener('click', function close(ev) {
+      if (!menu.contains(ev.target) && ev.target !== btn) { menu.remove(); document.removeEventListener('click', close); }
+    });
+  }, 0);
+}
+function downloadICS(id) {
   const e = events.find(x => x.id === id); if (!e) return;
   const dt = e.date.replace(/-/g, '');
   const hh = e.time ? e.time.split(':')[0] : '12', mm = e.time ? e.time.split(':')[1] : '00';
@@ -4613,7 +4648,7 @@ function cardHTML(e, i) {
         : `<span class="rl none">${linkTxt}</span>`}
       ${e.source?`<div class="src" style="display:flex;align-items:center;gap:5px">${ICONS.link} ${esc(e.source)}</div>`:''}
       <div class="card-acts">
-        <button class="act-btn" onclick="exportICS('${e.id}')">${ICONS.addCal} Add to Calendar</button>
+        <button class="act-btn" onclick="openCalMenu('${e.id}',this)">${ICONS.addCal} Add to Calendar</button>
         <button class="act-btn" onclick="shareEvent('${e.id}')">${ICONS.share} Share</button>
         <button class="act-btn" onclick="openNotify('${esc(e.player)}')" title="Get notified when a new event for this player is added">🔔 Notify me</button>
       </div>
