@@ -94,7 +94,7 @@ const ALL_QUERIES = [
   { q: 'site:superboletos.com meet greet futbolista 2026',                    lang: 'es' },
   { q: 'site:fanki.com.mx futbolista leyendas partido meet 2026',             lang: 'es' },
   { q: 'site:boletomovil.com firma autografos futbolista meet greet 2026',    lang: 'es' },
-  { q: 'site:ll12.vip LALIGA legend meet greet watch party 2026',            lang: 'en' },
+  { q: 'site:ll12.vip/event LALIGA legend meet greet watch party',           lang: 'en' },
   // ── Latin America — Portuguese (Brazil) ──
   { q: 'sessão autógrafos jogador futebol brasil evento 2026',                lang: 'pt' },
   { q: 'encontro fãs jogador futebol meet and greet brasil 2026',             lang: 'pt' },
