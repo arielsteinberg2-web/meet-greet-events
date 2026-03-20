@@ -144,6 +144,85 @@ const MONITORED_PLAYERS = [
   'Luka Modric',
 ];
 
+// ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────
+// These pages are public (no login). New cities are also caught via the
+// site:ll12.vip/event SerpAPI query which picks up newly-indexed slugs.
+const LL12_CITIES = [
+  { slug:'houston',       city:'Houston, TX' },
+  { slug:'charlotte',     city:'Charlotte, NC' },
+  { slug:'washington-dc', city:'Washington, DC' },
+  { slug:'new-york',      city:'New York, NY' },
+  { slug:'los-angeles',   city:'Los Angeles, CA' },
+  { slug:'miami',         city:'Miami, FL' },
+  { slug:'chicago',       city:'Chicago, IL' },
+  { slug:'dallas',        city:'Dallas, TX' },
+  { slug:'atlanta',       city:'Atlanta, GA' },
+  { slug:'san-diego',     city:'San Diego, CA' },
+  { slug:'san-francisco', city:'San Francisco, CA' },
+  { slug:'las-vegas',     city:'Las Vegas, NV' },
+  { slug:'denver',        city:'Denver, CO' },
+];
+
+function parseShortDate(html) {
+  const months = { jan:'01',feb:'02',mar:'03',apr:'04',may:'05',jun:'06',
+                   jul:'07',aug:'08',sep:'09',oct:'10',nov:'11',dec:'12' };
+  const m = html.match(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\w*[\s.,]+(\d{1,2})\b/i);
+  if (!m) return null;
+  const mo = months[m[1].toLowerCase().slice(0,3)];
+  if (!mo) return null;
+  const year = new Date().getFullYear();
+  return `${year}-${mo}-${m[2].padStart(2,'0')}`;
+}
+
+async function fetchLL12Events() {
+  const events = [];
+  for (const { slug, city } of LL12_CITIES) {
+    try {
+      const ctrl = new AbortController();
+      const t = setTimeout(() => ctrl.abort(), 10000);
+      const r = await fetch(`https://www.ll12.vip/event/${slug}`, {
+        signal: ctrl.signal,
+        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' },
+      });
+      clearTimeout(t);
+      if (!r.ok) { console.log(`  LL12 ${slug}: HTTP ${r.status}`); continue; }
+      const html = await r.text();
+
+      if (/this event is over/i.test(html)) { console.log(`  LL12 ${slug}: past event`); continue; }
+
+      // Player name: "WITH JULIO BAPTISTA AND HUGO SÁNCHEZ" / "WITH PATRICK KLUIVERT"
+      const playerMatch = html.match(/\bWITH\s+([A-ZÁÉÍÓÚÑÜ][A-ZÁÉÍÓÚÑÜ\s\-]+?)(?=\s*(?:[|<\n"]|AND\s[A-Z])|\s*$)/im);
+      // Date: "Mar 22" / "April 4"
+      const dateStr = guessDate(html.toLowerCase()) || parseShortDate(html);
+      // Venue: after "Where:" line
+      const venueMatch = html.match(/Where[:\s]+([^\n|<]{4,60})/i);
+
+      if (!dateStr) { console.log(`  LL12 ${slug}: no date found`); continue; }
+
+      const player = playerMatch
+        ? playerMatch[1].trim().replace(/\s+/g, ' ')
+        : 'LALIGA Legend';
+
+      events.push({
+        id:     `ll12_${slug}`,
+        player: `${player} – El Partidazo Watch Party`,
+        sport:  'soccer',
+        date:   dateStr,
+        venue:  venueMatch ? venueMatch[1].trim().replace(/\s+/g,' ') : '',
+        city,
+        link:   `https://www.ll12.vip/event/${slug}`,
+        notes:  'El Partidazo LALIGA watch party. First 90 guests get a chance to meet a LALIGA legend + exclusive ElPartidazo scarf. Free RSVP via ll12.vip. Meet & greet not confirmed — limited to first 90 guests only.',
+        source: 'll12.vip',
+      });
+      console.log(`  LL12 ${slug}: "${player}" on ${dateStr}`);
+    } catch (e) {
+      console.log(`  LL12 ${slug}: error — ${e.message}`);
+    }
+    await new Promise(r => setTimeout(r, 500));
+  }
+  return events;
+}
+
 // Pick 3 players to search today based on day-of-year rotation
 const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
 const PLAYERS_TODAY = [0, 1, 2].map(offset =>
@@ -294,6 +373,12 @@ async function main() {
     }
     await new Promise(r => setTimeout(r, 1100));
   }
+
+  // Direct-fetch LL12 city events (bypasses SerpAPI)
+  console.log('Fetching LL12 city pages directly...');
+  const ll12Events = await fetchLL12Events();
+  console.log(`LL12 direct: ${ll12Events.length} upcoming events found`);
+  results.push(...ll12Events);
 
   // De-duplicate by link
   const seen   = new Set();
