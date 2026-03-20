@@ -122,6 +122,7 @@ const ALL_QUERIES = [
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
 // 3 players are checked per day, rotating through the full list every ~N/3 days.
 const MONITORED_PLAYERS = [
+  'Andre Agassi',
   'Paolo Maldini',
   'Alessandro Nesta',
   'Thierry Henry',
