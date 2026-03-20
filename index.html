@@ -4056,7 +4056,10 @@ function init() {
       const saved = JSON.parse(raw);
       // Always inject latest seeds; preserve user-added custom events
       const custom = saved.filter(e => !SEEDS.find(s => s.id === e.id));
-      events = [...SEEDS, ...custom];
+      const prevIds = new Set(saved.map(e => e.id));
+      const nowIso = new Date().toISOString();
+      // Auto-stamp seeds the user has never seen before as recently added
+      events = [...SEEDS.map(s => (!s.addedAt && !prevIds.has(s.id)) ? {...s, addedAt: nowIso} : s), ...custom];
     } catch { events = [...SEEDS]; }
   } else {
     events = [...SEEDS];
