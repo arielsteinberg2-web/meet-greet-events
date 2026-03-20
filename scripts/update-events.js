@@ -93,6 +93,7 @@ const ALL_QUERIES = [
   { q: 'site:puntoticket.com futbolista leyendas firma 2026',                 lang: 'es' },
   { q: 'site:superboletos.com meet greet futbolista 2026',                    lang: 'es' },
   { q: 'site:fanki.com.mx futbolista leyendas partido meet 2026',             lang: 'es' },
+  { q: 'site:boletomovil.com firma autografos futbolista meet greet 2026',    lang: 'es' },
   // ── Latin America — Portuguese (Brazil) ──
   { q: 'sessão autógrafos jogador futebol brasil evento 2026',                lang: 'pt' },
   { q: 'encontro fãs jogador futebol meet and greet brasil 2026',             lang: 'pt' },
@@ -123,6 +124,7 @@ const ALL_QUERIES = [
 // 3 players are checked per day, rotating through the full list every ~N/3 days.
 const MONITORED_PLAYERS = [
   'Andre Agassi',
+  'Marcelo Vieira',
   'Paolo Maldini',
   'Alessandro Nesta',
   'Thierry Henry',
