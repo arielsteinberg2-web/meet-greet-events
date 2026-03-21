@@ -316,6 +316,9 @@ function parseOrganic(data, lang) {
     if (!combined.includes('2026')) continue;
     if (!res.link) continue;
     if (/mail-?in signing|ship your|private signing/.test(combined)) continue;
+    // Skip pure talk/interview events with no fan M&G component
+    if (/in conversation with|in conversation:|a conversation with|talks? with|interview with|evening with.*broadway|broadway.*in conversation/.test(combined)
+        && !/meet.?greet|autograph|signing|fan event|vip meet/.test(combined)) continue;
 
     // ── DOMAIN BLOCKLIST — known past/irrelevant events ───────────────────────
     const BLOCKED_DOMAINS = [
@@ -337,6 +340,9 @@ function parseOrganic(data, lang) {
 
     const eventDate = guessDate(combined);
     if (!eventDate) continue; // skip events with no guessable date
+
+    // Skip generic CraveTheAuto listing pages — seeds already cover these with deep links
+    if (/cravetheauto\.com\/autograph-appearances\/?$/.test(res.link)) continue;
 
     out.push({
       id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
