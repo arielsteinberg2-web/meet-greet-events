@@ -125,6 +125,7 @@ const ALL_QUERIES = [
 // ── INSTAGRAM ACCOUNTS — venue/organizer accounts to monitor via SerpAPI ──────
 // 3 accounts checked per day, rotating through the full list every ~N/3 days.
 const INSTAGRAM_ACCOUNTS = [
+  // ── USA — multi-sport / card shows ──
   'cravetheauto',
   'cardvaultboston',
   'cardvaultsacramento',
@@ -137,7 +138,22 @@ const INSTAGRAM_ACCOUNTS = [
   'tsebuffalo',
   'nynjsportsworld',
   'woodbridgebrewingco',
-  'superstarspeakers',
+  'tristar1',
+  'halloffamesignings',
+  'millcreeksports1991',
+  'upperdecksports',
+  'fanaticsfest',
+  'nbastore',
+  // ── UK — soccer / sports signing organizers ──
+  'superstarspeakers_ltd',
+  'allstarsignings',
+  'iconsseries',
+  'worldwide_signings',
+  // ── Europe — soccer legends events ──
+  'galacticosshowpolska2026',
+  'starbesuch',
+  'serieaoperazionenostalgia',
+  'collectit.cardshow',
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
