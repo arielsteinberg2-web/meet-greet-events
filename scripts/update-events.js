@@ -777,6 +777,9 @@ const NAME_SKIP = new Set([
   'America','Europe','Africa','Asia','Pacific','Latin','Kingdom',
   'Tag','Team','Women','Reunion','Championship','Division','Showcase',
   'Squared','Circle','Expo','Experience','Opportunity','General','Public',
+  // Generic event-description words that are not person names
+  'Author','Visit','Hosted','Signing','Book','Tour','Presents','Featuring',
+  'Special','Annual','Official','Virtual','Free','Private','Exclusive',
 ]);
 function extractPlayerName(title, snippet) {
   for (const text of [title, snippet]) {
