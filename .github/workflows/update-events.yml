@@ -32,6 +32,7 @@ jobs:
           SERPAPI_KEY_1: ${{ secrets.SERPAPI_KEY_1 }}
           SERPAPI_KEY_2: ${{ secrets.SERPAPI_KEY_2 }}
           SERPER_KEY:    ${{ secrets.SERPER_KEY }}
+          SERPER_KEY_2:  ${{ secrets.SERPER_KEY_2 }}
           EXA_API_KEY:   ${{ secrets.EXA_API_KEY }}
 
       - name: Inject static HTML + update sitemap lastmod

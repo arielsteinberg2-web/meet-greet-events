@@ -14,10 +14,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE  = join(__dirname, '../data/live-events.json');
 
 // ── API KEYS (from GitHub Secrets) ───────────────────────────────────────────
-const API_KEY_1  = process.env.SERPAPI_KEY_1;
-const API_KEY_2  = process.env.SERPAPI_KEY_2;
-const SERPER_KEY = process.env.SERPER_KEY;   // optional — Google Search via serper.dev
-const EXA_KEY    = process.env.EXA_API_KEY;  // optional — semantic search supplement
+const API_KEY_1   = process.env.SERPAPI_KEY_1;
+const API_KEY_2   = process.env.SERPAPI_KEY_2;
+const SERPER_KEY  = process.env.SERPER_KEY;    // optional — Google Search via serper.dev
+const SERPER_KEY2 = process.env.SERPER_KEY_2;  // optional — second Serper key
+const EXA_KEY     = process.env.EXA_API_KEY;   // optional — semantic search supplement
 
 if (!API_KEY_1) {
   console.error('No SERPAPI_KEY_1 env var set. Add it as a GitHub Secret.');
@@ -444,7 +445,7 @@ async function fetchWithRetry(url, attempts = 3) {
   return null;
 }
 
-async function fetchSerper(q, attempts = 3) {
+async function fetchSerper(q, attempts = 3, key = SERPER_KEY) {
   for (let i = 0; i < attempts; i++) {
     try {
       const ctrl = new AbortController();
@@ -452,7 +453,7 @@ async function fetchSerper(q, attempts = 3) {
       const r = await fetch('https://google.serper.dev/search', {
         method: 'POST',
         signal: ctrl.signal,
-        headers: { 'X-API-KEY': SERPER_KEY, 'Content-Type': 'application/json' },
+        headers: { 'X-API-KEY': key, 'Content-Type': 'application/json' },
         body: JSON.stringify({ q, num: 10 }),
       });
       clearTimeout(t);
@@ -594,15 +595,20 @@ async function main() {
 
   const results = [];
 
-  // 3-way split: first third → SerpAPI KEY_1, second third → SerpAPI KEY_2, last third → Serper
-  const SPLIT1 = Math.ceil(QUERIES.length / 3);
-  const SPLIT2 = Math.ceil(QUERIES.length * 2 / 3);
+  // 4-way split: SerpAPI KEY_1 → SerpAPI KEY_2 → Serper KEY_1 → Serper KEY_2
+  const Q = QUERIES.length;
+  const SPLIT1 = Math.ceil(Q / 4);
+  const SPLIT2 = Math.ceil(Q / 2);
+  const SPLIT3 = Math.ceil(Q * 3 / 4);
 
   for (const [i, { q, lang }] of QUERIES.entries()) {
     let data;
-    if (SERPER_KEY && i >= SPLIT2) {
-      console.log(`  Searching [serper]: "${q.substring(0, 60)}"`);
-      data = await fetchSerper(q);
+    if (SERPER_KEY2 && i >= SPLIT3) {
+      console.log(`  Searching [serper2]: "${q.substring(0, 60)}"`);
+      data = await fetchSerper(q, 3, SERPER_KEY2);
+    } else if (SERPER_KEY && i >= SPLIT2) {
+      console.log(`  Searching [serper1]: "${q.substring(0, 60)}"`);
+      data = await fetchSerper(q, 3, SERPER_KEY);
     } else {
       const key = (i < SPLIT1 || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
       console.log(`  Searching [serpapi${i < SPLIT1 || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
