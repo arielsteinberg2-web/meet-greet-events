@@ -14,9 +14,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE  = join(__dirname, '../data/live-events.json');
 
 // ── API KEYS (from GitHub Secrets) ───────────────────────────────────────────
-const API_KEY_1 = process.env.SERPAPI_KEY_1;
-const API_KEY_2 = process.env.SERPAPI_KEY_2;
-const EXA_KEY   = process.env.EXA_API_KEY; // optional — semantic search supplement
+const API_KEY_1  = process.env.SERPAPI_KEY_1;
+const API_KEY_2  = process.env.SERPAPI_KEY_2;
+const SERPER_KEY = process.env.SERPER_KEY;   // optional — Google Search via serper.dev
+const EXA_KEY    = process.env.EXA_API_KEY;  // optional — semantic search supplement
 
 if (!API_KEY_1) {
   console.error('No SERPAPI_KEY_1 env var set. Add it as a GitHub Secret.');
@@ -443,6 +444,33 @@ async function fetchWithRetry(url, attempts = 3) {
   return null;
 }
 
+async function fetchSerper(q, attempts = 3) {
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const ctrl = new AbortController();
+      const t = setTimeout(() => ctrl.abort(), 12000);
+      const r = await fetch('https://google.serper.dev/search', {
+        method: 'POST',
+        signal: ctrl.signal,
+        headers: { 'X-API-KEY': SERPER_KEY, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ q, num: 10 }),
+      });
+      clearTimeout(t);
+      if (r.status === 401 || r.status === 429) return null;
+      if (!r.ok) return null;
+      const data = await r.json();
+      // Normalize Serper response to SerpAPI shape so parseOrganic works unchanged
+      return { organic_results: (data.organic || []).map(x => ({
+        title:          x.title,
+        snippet:        x.snippet,
+        link:           x.link,
+        displayed_link: x.displayedLink,
+      }))};
+    } catch { /* retry */ }
+  }
+  return null;
+}
+
 function parseOrganic(data, lang) {
   const out = [];
   for (const res of (data.organic_results || [])) {
@@ -566,12 +594,21 @@ async function main() {
 
   const results = [];
 
+  // 3-way split: first third → SerpAPI KEY_1, second third → SerpAPI KEY_2, last third → Serper
+  const SPLIT1 = Math.ceil(QUERIES.length / 3);
+  const SPLIT2 = Math.ceil(QUERIES.length * 2 / 3);
+
   for (const [i, { q, lang }] of QUERIES.entries()) {
-    // First 5 queries use KEY_1, last 5 use KEY_2 (falls back to KEY_1 if KEY_2 missing)
-    const key = (i < SPLIT || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
-    console.log(`  Searching [key${i < SPLIT || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
-    const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${key}`;
-    const data = await fetchWithRetry(url);
+    let data;
+    if (SERPER_KEY && i >= SPLIT2) {
+      console.log(`  Searching [serper]: "${q.substring(0, 60)}"`);
+      data = await fetchSerper(q);
+    } else {
+      const key = (i < SPLIT1 || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
+      console.log(`  Searching [serpapi${i < SPLIT1 || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
+      const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${key}`;
+      data = await fetchWithRetry(url);
+    }
     if (data) {
       const found = parseOrganic(data, lang);
       console.log(`    → ${found.length} results`);
