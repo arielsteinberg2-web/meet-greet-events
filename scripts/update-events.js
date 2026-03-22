@@ -154,6 +154,11 @@ const INSTAGRAM_ACCOUNTS = [
   'starbesuch',
   'serieaoperazionenostalgia',
   'collectit.cardshow',
+  // ── Spain — football signings ──
+  'leyendasespanaoficial',
+  'cardcracktcg',
+  'casportsmarketing',
+  'sportcoa_memorabilia',
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
