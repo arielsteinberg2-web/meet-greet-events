@@ -831,7 +831,7 @@ async function main() {
       keyLabel = key === API_KEY_2 ? 'serpapi2' : 'serpapi1';
       const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${key}`;
       data = await fetchWithRetry(url);
-      if (data === 'dead') { console.warn(`  ⚠️  SerpAPI ${keyLabel} dead`); deadKeys.add(keyLabel); data = null; }
+      if (data === 'dead') { console.warn(`  ⚠️  SerpAPI ${keyLabel} quota exhausted for this run (recharges monthly)`); deadKeys.add(keyLabel); data = null; }
     }
 
     console.log(`  [${keyLabel}] "${q.substring(0, 55)}"`);
