@@ -1,28 +1,17 @@
 {
-  "generatedAt": "2026-03-20T10:03:56.980Z",
-  "count": 3,
+  "generatedAt": "2026-03-22T09:06:04.054Z",
+  "count": 1,
   "events": [
     {
-      "id": "live_1774000912641_9biq9",
-      "player": "Friday April",
-      "sport": "other",
-      "date": "2026-04-17",
+      "id": "live_1774170209692_g6jdo",
+      "player": "Allen Iverson Author",
+      "sport": "book",
+      "date": "2026-03-31",
       "venue": "",
       "city": "",
-      "link": "https://gtsportsshows.com/",
-      "notes": "NEW JERSEY SPRING 2026. AUTOGRAPH & SPORTS CARD SHOW April 17-19, 2026. Friday April 17, 2026 @5pm-9pm ($10)",
-      "source": "https://gtsportsshows.com"
-    },
-    {
-      "id": "live_1774000934088_lvj0w",
-      "player": "Merrill Reese Inscription",
-      "sport": "football",
-      "date": "2026-03-21",
-      "venue": "",
-      "city": "",
-      "link": "https://www.shopdynastysports.com/products/merrill-reese-inscription-ticket?srsltid=AfmBOoqSvdK_PHPMywSqoU1eI-2XvBRDohE7uM15GJBQ0RMe9RWdudAT",
-      "notes": "Meet Merrill Reese, the voice of the Philadelphia Eagles Saturday, March 21, 2026 at our Willow Grove Park Mall location beginning at 12pm.",
-      "source": "https://www.shopdynastysports.com › products › merril..."
+      "link": "https://www.eventbrite.com/e/allen-iverson-author-talk-and-book-signing-tickets-1493725275509",
+      "notes": "Eventbrite - Baldwin & Co. presents Allen Iverson Author Talk and Book Signing - Tuesday, March 31, 2026 at 1030 Elysian Fields Ave, New Orleans, LA.",
+      "source": "https://www.eventbrite.com › allen-iverson-author-talk-..."
     }
   ]
 }
