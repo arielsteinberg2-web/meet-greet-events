@@ -14,11 +14,12 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE  = join(__dirname, '../data/live-events.json');
 
 // ── API KEYS (from GitHub Secrets) ───────────────────────────────────────────
-const API_KEY_1   = process.env.SERPAPI_KEY_1;
-const API_KEY_2   = process.env.SERPAPI_KEY_2;
-const SERPER_KEY  = process.env.SERPER_KEY;    // optional — Google Search via serper.dev
-const SERPER_KEY2 = process.env.SERPER_KEY_2;  // optional — second Serper key
-const EXA_KEY     = process.env.EXA_API_KEY;   // optional — semantic search supplement
+const API_KEY_1    = process.env.SERPAPI_KEY_1;
+const API_KEY_2    = process.env.SERPAPI_KEY_2;
+const SERPER_KEY   = process.env.SERPER_KEY;     // optional — Google Search via serper.dev
+const SERPER_KEY2  = process.env.SERPER_KEY_2;   // optional — second Serper key
+const SEARCHAPI_KEY = process.env.SEARCHAPI_KEY; // optional — Google Search via searchapi.io
+const EXA_KEY      = process.env.EXA_API_KEY;    // optional — semantic search supplement
 
 if (!API_KEY_1) {
   console.error('No SERPAPI_KEY_1 env var set. Add it as a GitHub Secret.');
@@ -595,15 +596,20 @@ async function main() {
 
   const results = [];
 
-  // 4-way split: SerpAPI KEY_1 → SerpAPI KEY_2 → Serper KEY_1 → Serper KEY_2
+  // 5-way split: SerpAPI KEY_1 → SerpAPI KEY_2 → Serper KEY_1 → Serper KEY_2 → SearchApi
   const Q = QUERIES.length;
-  const SPLIT1 = Math.ceil(Q / 4);
-  const SPLIT2 = Math.ceil(Q / 2);
-  const SPLIT3 = Math.ceil(Q * 3 / 4);
+  const SPLIT1 = Math.ceil(Q / 5);
+  const SPLIT2 = Math.ceil(Q * 2 / 5);
+  const SPLIT3 = Math.ceil(Q * 3 / 5);
+  const SPLIT4 = Math.ceil(Q * 4 / 5);
 
   for (const [i, { q, lang }] of QUERIES.entries()) {
     let data;
-    if (SERPER_KEY2 && i >= SPLIT3) {
+    if (SEARCHAPI_KEY && i >= SPLIT4) {
+      console.log(`  Searching [searchapi]: "${q.substring(0, 60)}"`);
+      const url = `https://www.searchapi.io/api/v1/search?engine=google&q=${encodeURIComponent(q)}&num=10&api_key=${SEARCHAPI_KEY}`;
+      data = await fetchWithRetry(url);
+    } else if (SERPER_KEY2 && i >= SPLIT3) {
       console.log(`  Searching [serper2]: "${q.substring(0, 60)}"`);
       data = await fetchSerper(q, 3, SERPER_KEY2);
     } else if (SERPER_KEY && i >= SPLIT2) {
