@@ -694,6 +694,13 @@ async function fetchEventbriteEvents() {
           const venue = location.name || '';
           const city  = location.address?.addressLocality || '';
 
+          // Skip if extracted name is the venue itself (e.g. business hosting an Easter Bunny event)
+          if (player === venue) { console.log(`  [wiki-check] Skipping "${player}" — player name matches venue`); continue; }
+
+          // Verify via Wikipedia that this is a real public figure
+          const isKnown = await isKnownPublicFigure(player);
+          if (!isKnown) { console.log(`  [wiki-check] Skipping "${player}" — not a known public figure`); continue; }
+
           const isBook      = /book signing|book tour|autobiography|memoir/.test(combined);
           const isBball     = /\bnba\b|basketball/.test(combined);
           const isWrestling = /\bwwe\b|wrestling|wrestlemania|aew|raw|smackdown/.test(combined);
@@ -782,6 +789,38 @@ function extractPlayerName(title, snippet) {
     }
   }
   return null;
+}
+
+// ── WIKIPEDIA PUBLIC-FIGURE VERIFICATION ─────────────────────────────────────
+// Returns true if Wikipedia has an article for this name AND the extract
+// mentions at least one of: athlete, player, actor, singer, author, wrestler,
+// boxer, politician, entrepreneur, celebrity, rapper, comedian, chef, coach,
+// executive, director, musician, artist, model, influencer, youtuber, streamer.
+const WIKI_CACHE = new Map();
+const NOTABLE_RE = /\b(athlete|player|actor|actress|singer|rapper|musician|author|writer|wrestler|boxer|politician|comedian|chef|model|director|producer|executive|entrepreneur|celebrity|influencer|youtuber|streamer|coach|nba|nfl|mlb|nhl|mma|ufc|wwe|hall of fame)\b/i;
+
+async function isKnownPublicFigure(name) {
+  if (!name) return false;
+  if (WIKI_CACHE.has(name)) return WIKI_CACHE.get(name);
+  try {
+    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(name)}`;
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 8000);
+    const r = await fetch(url, { signal: ctrl.signal, headers: { 'User-Agent': 'MeetGreetEvents/1.0' } });
+    clearTimeout(t);
+    if (!r.ok) { WIKI_CACHE.set(name, false); return false; }
+    const data = await r.json();
+    if (data.type === 'disambiguation' || data.type === 'no-extract') { WIKI_CACHE.set(name, false); return false; }
+    const extract = (data.extract || '').toLowerCase();
+    const result = NOTABLE_RE.test(extract);
+    WIKI_CACHE.set(name, result);
+    if (!result) console.log(`  [wiki-check] "${name}" — article exists but not a notable public figure: "${(data.extract||'').slice(0,120)}"`);
+    return result;
+  } catch {
+    // Network error: be permissive (don't drop events due to timeout)
+    WIKI_CACHE.set(name, true);
+    return true;
+  }
 }
 
 // ── DATE GUESSER ─────────────────────────────────────────────────────────────
@@ -909,6 +948,10 @@ function parseOrganic(data, lang) {
 
     const playerName = extractPlayerName(res.title, res.snippet);
     if (!playerName) continue; // skip events with no identifiable player name
+
+    // Verify via Wikipedia that this is a real public figure
+    const isKnownPlayer = await isKnownPublicFigure(playerName);
+    if (!isKnownPlayer) { console.log(`  [wiki-check] Skipping "${playerName}" — not a known public figure`); continue; }
 
     const eventDate = guessDate(combined);
     if (!eventDate) continue; // skip events with no guessable date
