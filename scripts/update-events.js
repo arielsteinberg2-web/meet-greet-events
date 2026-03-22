@@ -285,59 +285,138 @@ async function fetchLL12Events() {
   return events;
 }
 
+// ── SCRAPER API RENDERED FETCH ────────────────────────────────────────────────
+// ScraperAPI with render=true — for JS-rendered pages (Squarespace etc.)
+async function fetchRendered(url, timeoutMs = 45000) {
+  if (!SCRAPER_KEY) return null;
+  try {
+    const proxyUrl = `http://api.scraperapi.com?api_key=${SCRAPER_KEY}&url=${encodeURIComponent(url)}&render=true`;
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), timeoutMs);
+    const r = await fetch(proxyUrl, { signal: ctrl.signal });
+    clearTimeout(t);
+    if (!r.ok) { console.log(`  fetchRendered: HTTP ${r.status} for ${url}`); return null; }
+    return r.text();
+  } catch (e) {
+    console.log(`  fetchRendered error: ${e.message}`);
+    return null;
+  }
+}
+
 // ── CRAVETHEAUTO DIRECT CRAWL ─────────────────────────────────────────────────
-// Fetches the main listing page and extracts event links.
-// URL format encodes the date and slug: /autograph-appearances/MM/DD[-DD]/slug
-// This catches new events same-day, before Google indexes them.
-const CTA_EVENT_SLUGS = new Set([
-  'show','expo','convention','con','fest','open','classic','challenge',
-  'cup','championship','tournament','event','signing','appearances',
-  'cardvault','superstars','capital','city','card','sports','world',
-  'buffalo','dedham','chicago','boston','dallas','houston','miami',
-]);
+// Fetches listing page (render=true), then each event page (render=true) to get:
+//   - Real player name from page title (not slug)
+//   - Venue + city from event metadata
+//   - Sport detected from title keywords
+//   - Event Verification Link (Instagram/social proof) as the outbound link
+//   - Fallback: show website "click here" link, then CraveTheAuto page URL
+
+function ctaDetectSport(text) {
+  const t = text.toLowerCase();
+  if (/\bnfl\b|quarterback|wide receiver|running back|linebacker|tight end|defensive end|super bowl|steelers|patriots|cowboys|chiefs|eagles|packers|bears|giants|ravens|seahawks|49ers|rams|chargers|raiders|dolphins|bills|bengals|browns|colts|jaguars|titans|texans|falcons|saints|panthers|buccaneers|vikings|lions|cardinals|broncos/.test(t)) return 'football';
+  if (/\bnba\b|basketball|lakers|celtics|bulls|knicks|heat|warriors|nets|bucks|suns|nuggets|clippers|spurs|pistons|hawks|magic|wizards|hornets|pelicans|grizzlies|jazz|thunder|blazers|rockets|maverick/.test(t)) return 'basketball';
+  if (/\bmlb\b|baseball|yankees|red sox|dodgers|cubs|mets|braves|astros|cardinals|giants|phillies|blue jays|orioles|nationals|padres|reds|pirates|tigers|royals|twins|white sox|brewers|rangers|athletics|mariners|angels/.test(t)) return 'baseball';
+  if (/\bnhl\b|hockey|rangers|bruins|penguins|flyers|maple leafs|blackhawks|red wings|capitals|avalanche|lightning|golden knights|canadiens|oilers|canucks|flames|jets|wild|predators|blues|coyotes|sharks|ducks|kings|stars|hurricanes|sabres|senators|islanders/.test(t)) return 'other';
+  if (/\bwwe\b|wrestling|wwe|raw|smackdown|ufc|mma|boxing/.test(t)) return 'other';
+  if (/soccer|football|mls|laliga|premier league|bundesliga|serie a|ligue 1/.test(t)) return 'soccer';
+  return 'other';
+}
+
+function ctaPlayerFromTitle(rawTitle) {
+  // Title format: "Show Name | PLAYER NAME Context" or just "PLAYER NAME Context"
+  const decoded = rawTitle.replace(/&amp;/gi, '&').replace(/&#\d+;/gi, ' ').trim();
+  let part = decoded.includes('|') ? decoded.split('|').slice(1).join('|').trim() : decoded;
+  // Stop at context words that follow the player names
+  part = part.replace(/\s+(Former|Current|Retired|Legendary|Hall of|Coming|Appearing|Greats?|Stars?|NFL|NBA|MLB|NHL|MLS|WWE|UFC|MMA|PGA|Former\s|of the\s).*$/i, '').trim();
+  // Title-case
+  part = part.replace(/\b([A-Z]+)\b/g, w => w.charAt(0) + w.slice(1).toLowerCase());
+  // Restore & and common short caps
+  part = part.replace(/\s*&\s*/g, ' & ');
+  return part.length > 2 ? part : null;
+}
+
 async function fetchCraveTheAuto() {
   const events = [];
   try {
-    const html = await fetchDirect('https://www.cravetheauto.com/autograph-appearances');
-    if (!html) { console.log('  CraveTheAuto: failed'); return events; }
+    // Fetch listing page — need render=true since Squarespace is JS-rendered
+    const listingHtml = await fetchRendered('https://www.cravetheauto.com/autograph-appearances');
+    if (!listingHtml) { console.log('  CraveTheAuto: listing page failed'); return events; }
 
-    // Match /autograph-appearances/MM/DD[-DD]/slug
-    const linkPat = /href="(\/autograph-appearances\/(\d{2})\/(\d{2})(?:-\d{2})?\/([a-z0-9][a-z0-9-]+))"/gi;
+    // Extract event entries from summary-title-link anchors (short-slug format)
+    // e.g. href="/autograph-appearances/03/28/pittsburgh-steelers" class="summary-title-link"
+    const summaryPat = /href="(\/autograph-appearances\/(\d{2})\/(\d{2})[^"]*)"[^>]*class="summary-title-link"|class="summary-title-link"[^>]*href="(\/autograph-appearances\/(\d{2})\/(\d{2})[^"]*)"/gi;
     const seen = new Set();
+    const toFetch = [];
+    const now = new Date(); now.setHours(0, 0, 0, 0);
     let m;
-    while ((m = linkPat.exec(html)) !== null) {
-      const [, path, month, day, slug] = m;
-      const link = `https://www.cravetheauto.com${path}`;
-      if (seen.has(link)) continue;
-      seen.add(link);
+    while ((m = summaryPat.exec(listingHtml)) !== null) {
+      const path   = m[1] || m[4];
+      const month  = m[2] || m[5];
+      const day    = m[3] || m[6];
+      const ctaUrl = `https://www.cravetheauto.com${path}`;
+      if (seen.has(ctaUrl)) continue;
+      seen.add(ctaUrl);
 
-      // Skip event/show slugs — these are shows, not player names
-      const slugWords = slug.split('-').filter(w => !/^\d+$/.test(w));
-      if (slugWords.length < 2) continue; // single word = location/show, not a player
-      if (slugWords.some(w => CTA_EVENT_SLUGS.has(w))) continue;
-
-      // Build date — skip if already past (CraveTheAuto keeps past events on their page)
-      const now = new Date(); now.setHours(0, 0, 0, 0);
       const year = now.getFullYear();
       const date = `${year}-${month}-${day}`;
       if (new Date(date + 'T00:00:00') < now) continue;
 
-      // Convert slug to name: "roger-clemens-2" → "Roger Clemens" (digits already stripped)
-      const player = slugWords
-        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-        .join(' ');
+      toFetch.push({ ctaUrl, month, day, date });
+    }
+    console.log(`  CraveTheAuto: ${toFetch.length} upcoming events found on listing page`);
 
-      events.push({
-        id:     `cta_${month}${day}_${slug}`,
-        player,
-        sport:  'other',
-        date,
-        venue:  '',
-        city:   '',
-        link,
-        notes:  '',
-        source: 'cravetheauto.com',
-      });
+    // Fetch each event page for full details
+    for (const { ctaUrl, month, day, date } of toFetch) {
+      try {
+        const pageHtml = await fetchRendered(ctaUrl);
+        const slug = ctaUrl.split('/').pop();
+
+        if (!pageHtml) {
+          events.push({ id: `cta_${month}${day}_${slug}`, player: slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()), sport: 'other', date, venue: '', city: '', link: ctaUrl, notes: '', source: 'cravetheauto.com' });
+          continue;
+        }
+
+        // Title
+        const titleMatch = pageHtml.match(/<h1[^>]*eventitem-title[^>]*>([^<]+)<\/h1>/i);
+        const rawTitle = titleMatch ? titleMatch[1].trim() : '';
+        const player = rawTitle ? ctaPlayerFromTitle(rawTitle) : null;
+        if (!player) continue;
+
+        // Venue
+        const venueMatch = pageHtml.match(/eventitem-meta-address-line--title[^>]*>([^<]+)<\/span>/i);
+        const venue = venueMatch ? venueMatch[1].trim() : '';
+
+        // City — the address line containing "City, ST, ZIP" (has comma + 2-letter state)
+        const cityMatch = pageHtml.match(/class="eventitem-meta-address-line"[^>]*>([^<]+,[^<]+[A-Z]{2}[^<]*)<\/span>/i);
+        const city = cityMatch ? cityMatch[1].trim() : '';
+
+        // Event Verification Link — href on the "Event Verification Link" anchor
+        const verifyMatch = pageHtml.match(/<a[^>]+href="(https?:\/\/[^"]+)"[^>]*>\s*Event Verification Link\s*<\/a>/i);
+        const verifyLink = verifyMatch ? verifyMatch[1] : null;
+
+        // Fallback: "click here" show website link after "Verification link confirms"
+        const clickHereMatch = pageHtml.match(/Verification link confirms[^<]*<a[^>]+href="(https?:\/\/[^"]+)"[^>]*>/i);
+        const showLink = clickHereMatch ? clickHereMatch[1] : null;
+
+        const link = verifyLink || showLink || ctaUrl;
+        const sport = ctaDetectSport(rawTitle);
+
+        events.push({
+          id:     `cta_${month}${day}_${slug}`,
+          player,
+          sport,
+          date,
+          venue,
+          city,
+          link,
+          notes:  rawTitle,
+          source: 'cravetheauto.com',
+        });
+        console.log(`  CTA: "${player}" [${sport}] → ${verifyLink ? 'verify✓' : showLink ? 'show✓' : 'cta'}`);
+      } catch (e) {
+        console.log(`  CTA event error: ${e.message}`);
+      }
+      await new Promise(r => setTimeout(r, 600));
     }
     console.log(`  CraveTheAuto direct: ${events.length} events found`);
   } catch (e) {
