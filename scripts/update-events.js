@@ -527,6 +527,102 @@ async function fetchAuthenticAutographs() {
   return events;
 }
 
+// ── EVENTBRITE DIRECT SCRAPE ──────────────────────────────────────────────────
+// Fetches Eventbrite search pages via ScraperAPI and extracts JSON-LD Event data.
+// Eventbrite is SSR'd for SEO, so render=false is tried first (cheaper credits),
+// with render=true as fallback if the JSON-LD block isn't found.
+const EVENTBRITE_SEARCHES = [
+  'https://www.eventbrite.com/d/united-states/autograph-signing/',
+  'https://www.eventbrite.com/d/united-states/meet-and-greet/',
+  'https://www.eventbrite.com/d/united-states/sports-meet-greet/',
+  'https://www.eventbrite.com/d/united-states/book-signing/',
+];
+
+async function fetchEventbriteEvents() {
+  if (!SCRAPER_KEY) { console.log('  Eventbrite: no ScraperAPI key, skipping.'); return []; }
+  const events = [];
+  const seenLinks = new Set();
+  const now = new Date(); now.setHours(0, 0, 0, 0);
+
+  for (const searchUrl of EVENTBRITE_SEARCHES) {
+    try {
+      // Try render=false first (1 credit), fall back to render=true (10 credits) if no JSON-LD found
+      let html = null;
+      for (const render of ['false', 'true']) {
+        const proxyUrl = `http://api.scraperapi.com?api_key=${SCRAPER_KEY}&url=${encodeURIComponent(searchUrl)}&render=${render}`;
+        const ctrl = new AbortController();
+        const t = setTimeout(() => ctrl.abort(), 45000);
+        try {
+          const r = await fetch(proxyUrl, { signal: ctrl.signal });
+          clearTimeout(t);
+          if (!r.ok) { console.log(`  Eventbrite [render=${render}]: HTTP ${r.status}`); continue; }
+          const text = await r.text();
+          if (text.includes('application/ld+json')) { html = text; break; }
+          console.log(`  Eventbrite [render=${render}]: no JSON-LD, trying rendered…`);
+        } catch (e) { clearTimeout(t); }
+      }
+      if (!html) { console.log(`  Eventbrite ${searchUrl}: no usable response`); continue; }
+
+      // Extract all JSON-LD blocks
+      const ldPat = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi;
+      let m;
+      while ((m = ldPat.exec(html)) !== null) {
+        let ld;
+        try { ld = JSON.parse(m[1]); } catch { continue; }
+        const items = ld['@type'] === 'ItemList'
+          ? (ld.itemListElement || []).map(i => i.item || i)
+          : [ld];
+        for (const ev of items) {
+          if (ev['@type'] !== 'Event') continue;
+          const name      = ev.name || '';
+          const url       = ev.url  || '';
+          const startDate = ev.startDate || '';
+          if (!url || seenLinks.has(url)) continue;
+          seenLinks.add(url);
+
+          const date = startDate.slice(0, 10); // "2026-04-01T10:00:00" → "2026-04-01"
+          if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
+          if (new Date(date + 'T00:00:00') < now) continue;
+
+          const combined = name.toLowerCase();
+          if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
+          if (/mail-?in|private signing|ship your/.test(combined)) continue;
+
+          const player = extractPlayerName(name, ev.description || '');
+          if (!player) continue;
+
+          const location = ev.location || {};
+          const venue = location.name || '';
+          const city  = location.address?.addressLocality || '';
+
+          const isBook   = /book signing|book tour|autobiography|memoir/.test(combined);
+          const isBball  = /\bnba\b|basketball/.test(combined);
+          const isOther  = /\bmma\b|\bufc\b|boxing|wwe|wrestling|hockey|baseball|formula.?1/.test(combined);
+          const isSoccer = /soccer|football|futbol|calcio/.test(combined);
+
+          events.push({
+            id:     `eb_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
+            player,
+            sport:  isBook ? 'book' : isBball ? 'basketball' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
+            date,
+            venue,
+            city,
+            link:   url,
+            notes:  name,
+            source: 'eventbrite.com',
+          });
+        }
+      }
+      console.log(`  Eventbrite [${searchUrl.split('/').slice(-2,-1)[0]}]: ${events.length} total so far`);
+    } catch (e) {
+      console.log(`  Eventbrite error: ${e.message}`);
+    }
+    await new Promise(r => setTimeout(r, 2000));
+  }
+  console.log(`  Eventbrite total: ${events.length} events found`);
+  return events;
+}
+
 // Pick 3 players to search today based on day-of-year rotation
 const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
 const PLAYERS_TODAY = [0, 1, 2].map(offset =>
@@ -823,6 +919,12 @@ async function main() {
   const authauEvents = await fetchAuthenticAutographs();
   console.log(`Authentic Autographs AU: ${authauEvents.length} events found`);
   results.push(...authauEvents);
+
+  // Direct-scrape Eventbrite search pages via ScraperAPI
+  console.log('Fetching Eventbrite events via ScraperAPI...');
+  const ebEvents = await fetchEventbriteEvents();
+  console.log(`Eventbrite: ${ebEvents.length} events found`);
+  results.push(...ebEvents);
 
   // De-duplicate by link
   const seen   = new Set();
