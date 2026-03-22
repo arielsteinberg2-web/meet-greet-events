@@ -21,7 +21,6 @@ const SERPER_KEY    = process.env.SERPER_KEY;      // optional — Google Search
 const SERPER_KEY2   = process.env.SERPER_KEY_2;   // optional — second Serper key
 const SEARCHAPI_KEY = process.env.SEARCHAPI_KEY;  // optional — Google Search via searchapi.io
 const SCRAPER_KEY   = process.env.SCRAPERAPI_KEY; // optional — proxy for direct site fetches
-const EXA_KEY       = process.env.EXA_API_KEY;    // optional — semantic search supplement
 
 if (!API_KEY_1) {
   console.error('No SERPAPI_KEY_1 env var set. Add it as a GitHub Secret.');
@@ -728,71 +727,6 @@ function parseOrganic(data, lang) {
   return out;
 }
 
-// ── EXA SEMANTIC SEARCH ───────────────────────────────────────────────────────
-// Exa uses neural search — catches events described with unusual language
-// that keyword queries miss (e.g. "fan weekend", "casa atleti", "legends tour").
-const EXA_QUERIES = [
-  'soccer football player meet and greet fan event autograph signing 2026',
-  'football legend fan experience VIP meet fans tour USA 2026',
-  'LaLiga Premier League club fan event meet players USA 2026',
-  'NBA basketball player autograph fan signing appearance event 2026',
-  'celebrity athlete meet greet signing fan expo convention 2026',
-  'soccer player autograph signing event Europe 2026',
-  'WWE wrestling superstar meet greet fan event signing 2026',
-];
-
-async function fetchExaEvents() {
-  if (!EXA_KEY) { console.log('  Exa: no key set, skipping.'); return []; }
-  const events = [];
-  for (const query of EXA_QUERIES) {
-    try {
-      const ctrl = new AbortController();
-      const t = setTimeout(() => ctrl.abort(), 12000);
-      const r = await fetch('https://api.exa.ai/search', {
-        method: 'POST',
-        signal: ctrl.signal,
-        headers: { 'x-api-key': EXA_KEY, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query, numResults: 10, useAutoprompt: true, type: 'neural' }),
-      });
-      clearTimeout(t);
-      if (!r.ok) { console.log(`  Exa [${query.slice(0,40)}]: HTTP ${r.status}`); continue; }
-      const data = await r.json();
-      for (const res of (data.results || [])) {
-        const title   = res.title || '';
-        const snippet = res.highlights?.join(' ') || res.text?.slice(0, 300) || '';
-        const combined = (title + ' ' + snippet).toLowerCase();
-        if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
-        if (!combined.includes('2026')) continue;
-        if (!res.url) continue;
-        if (/mail-?in signing|ship your|private signing/.test(combined)) continue;
-        if (/in conversation with|a conversation with|talks? with|interview with/.test(combined)
-            && !/meet.?greet|autograph|signing|fan event|vip meet/.test(combined)) continue;
-        if (/cravetheauto\.com\/autograph-appearances\/?$/.test(res.url)) continue;
-        const playerName = extractPlayerName(title, snippet);
-        if (!playerName) continue;
-        const eventDate = guessDate(combined);
-        if (!eventDate) continue;
-        events.push({
-          id:     `exa_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
-          player: playerName,
-          sport:  'other',
-          date:   eventDate,
-          venue:  '',
-          city:   '',
-          link:   res.url,
-          notes:  snippet.substring(0, 200),
-          source: new URL(res.url).hostname,
-        });
-      }
-      console.log(`  Exa [${query.slice(0,40)}…]: done`);
-    } catch (e) {
-      console.log(`  Exa error: ${e.message}`);
-    }
-    await new Promise(r => setTimeout(r, 500));
-  }
-  console.log(`  Exa total: ${events.length} events found`);
-  return events;
-}
 
 // ── MAIN ─────────────────────────────────────────────────────────────────────
 async function main() {
@@ -883,11 +817,6 @@ async function main() {
   const authauEvents = await fetchAuthenticAutographs();
   console.log(`Authentic Autographs AU: ${authauEvents.length} events found`);
   results.push(...authauEvents);
-
-  // Exa semantic search — catches events with unusual language keyword queries miss
-  console.log('Running Exa semantic search...');
-  const exaEvents = await fetchExaEvents();
-  results.push(...exaEvents);
 
   // De-duplicate by link
   const seen   = new Set();
