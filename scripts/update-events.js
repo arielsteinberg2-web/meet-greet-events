@@ -835,14 +835,19 @@ async function isKnownPublicFigure(name) {
     if (!r.ok) { WIKI_CACHE.set(name, false); return false; }
     const data = await r.json();
     if (data.type === 'disambiguation' || data.type === 'no-extract') { WIKI_CACHE.set(name, false); return false; }
-    // Reject articles about countries, cities, places, organizations, or concepts
-    if (/\b(country|sovereign state|nation|city|town|municipality|village|county|state|province|region|island|continent|ocean|river|mountain|organization|company|corporation|band|group|duo|trio|franchise|team)\b/i.test(data.extract || '')) {
+    // Must be a person article — Wikipedia description for people is like "American basketball player"
+    // Songs, books, places, orgs have descriptions like "song by X", "film by Y", "hotel chain", etc.
+    const desc    = (data.description || '').toLowerCase();
+    const extract = (data.extract    || '').toLowerCase();
+    const isPersonDesc = NOTABLE_RE.test(desc); // "American rapper", "NFL player", etc.
+    // Reject non-person articles
+    if (/\b(country|sovereign state|nation|city|town|municipality|village|county|state|province|region|island|continent|ocean|river|mountain|organization|company|corporation|hotel|restaurant|school|university|song|album|film|movie|book|novel|television|tv series|podcast|band|group|duo|trio|franchise|team)\b/i.test(extract)) {
       WIKI_CACHE.set(name, false);
-      console.log(`  [wiki-check] "${name}" — Wikipedia article is a place/org/group, not a person`);
+      console.log(`  [wiki-check] "${name}" — Wikipedia article is a place/org/media, not a person`);
       return false;
     }
-    const extract = (data.extract || '').toLowerCase();
-    const result = NOTABLE_RE.test(extract);
+    // Require either a person-style description OR notable keywords in extract
+    const result = isPersonDesc || NOTABLE_RE.test(extract);
     WIKI_CACHE.set(name, result);
     if (!result) console.log(`  [wiki-check] "${name}" — article exists but not a notable public figure: "${(data.extract||'').slice(0,120)}"`);
     return result;
