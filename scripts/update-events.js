@@ -780,6 +780,8 @@ const NAME_SKIP = new Set([
   // Generic event-description words that are not person names
   'Author','Visit','Hosted','Signing','Book','Tour','Presents','Featuring',
   'Special','Annual','Official','Virtual','Free','Private','Exclusive',
+  // Known organizer/memorabilia brands (not athlete names)
+  'Inscriptagraphs','Tristar','Fanatics','Steiner','Mounted','Memories',
 ]);
 // Common English nouns/animals/adjectives that are never part of a person's name
 const NOT_A_NAME_WORD = new Set([
@@ -791,8 +793,12 @@ const NOT_A_NAME_WORD = new Set([
 ]);
 
 function extractPlayerName(title, snippet) {
-  for (const text of [title, snippet]) {
+  for (let text of [title, snippet]) {
     if (!text) continue;
+    // Strip organizer/presenter prefixes like "Inscriptagraphs Presents: ..." or "X Presents ..."
+    text = text.replace(/^[^:]+\bPresents?:?\s*/i, '');
+    // Also strip trailing context like "... at Venue Name" / "... in City"
+    text = text.replace(/\s+(at|in|@)\s+.+$/i, '');
     // Look for "Firstname Lastname" (2-3 capitalized words, no digits)
     const matches = text.match(/\b([A-Z][a-zÀ-ÿ'\-]+(?:\s+[A-Z][a-zÀ-ÿ'\-]+){1,2})\b/g) || [];
     for (const m of matches) {
