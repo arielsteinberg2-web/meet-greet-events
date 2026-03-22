@@ -3855,7 +3855,7 @@ async function loadLiveEvents() {
       }
       const nd = e.player.toLowerCase().replace(/[^a-z0-9]/g,'').substring(0,20) + '|' + e.date;
       if (nameDate.has(nd)) continue;
-      events.push(e);
+      events.push({...e, addedAt: e.addedAt || new Date().toISOString().slice(0,10)});
       if (e.link) linkIndex.set(e.link, events.length - 1);
       nameDate.add(nd);
       changed++;

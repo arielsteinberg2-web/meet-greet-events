@@ -6,7 +6,7 @@
  * ~16 constant queries + 3 rotating player queries per day, split across 2 API keys.
  */
 
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -1038,6 +1038,17 @@ async function main() {
   // Filter to future events only
   const today = new Date(); today.setHours(0,0,0,0);
   const future = unique.filter(e => new Date(e.date + 'T12:00:00') >= today);
+
+  // Preserve addedAt from previous run (so NEW badge persists across daily updates)
+  const todayStr = new Date().toISOString().slice(0, 10);
+  let prevAddedAt = {};
+  try {
+    const prev = JSON.parse(readFileSync(OUT_FILE, 'utf8'));
+    for (const e of (prev.events || [])) if (e.id && e.addedAt) prevAddedAt[e.id] = e.addedAt;
+  } catch {}
+  for (const e of future) {
+    e.addedAt = prevAddedAt[e.id] || todayStr;
+  }
 
   console.log(`Found ${future.length} live events (from ${results.length} raw results)`);
 
