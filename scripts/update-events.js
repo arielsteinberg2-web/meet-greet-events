@@ -781,6 +781,15 @@ const NAME_SKIP = new Set([
   'Author','Visit','Hosted','Signing','Book','Tour','Presents','Featuring',
   'Special','Annual','Official','Virtual','Free','Private','Exclusive',
 ]);
+// Common English nouns/animals/adjectives that are never part of a person's name
+const NOT_A_NAME_WORD = new Set([
+  'kangaroo','panda','bunny','bunny','easter','santa','claus','penguin','tiger',
+  'lion','bear','wolf','fox','cat','dog','bird','fish','shark','eagle','hawk',
+  'indoor','outdoor','virtual','annual','official','local','national','regional',
+  'open','closed','public','private','free','paid','live','online','hybrid',
+  'holiday','seasonal','corporate','charity','benefit','fundraiser',
+]);
+
 function extractPlayerName(title, snippet) {
   for (const text of [title, snippet]) {
     if (!text) continue;
@@ -788,11 +797,18 @@ function extractPlayerName(title, snippet) {
     const matches = text.match(/\b([A-Z][a-zÀ-ÿ'\-]+(?:\s+[A-Z][a-zÀ-ÿ'\-]+){1,2})\b/g) || [];
     for (const m of matches) {
       if (/\d/.test(m)) continue;
+      // Reject if ends with punctuation/hyphen (e.g. "Meet-and-")
+      if (/[-–—,;:!?]$/.test(m)) continue;
       const words = m.split(/\s+/);
       if (words.length < 2) continue;
       if (words.some(w => NAME_SKIP.has(w))) continue;
+      if (words.some(w => NOT_A_NAME_WORD.has(w.toLowerCase()))) continue;
       // Must look like a human name (not all-caps, not too short)
       if (words[0].length < 2 || words[1].length < 2) continue;
+      // Reject if all words are common English dictionary words (heuristic:
+      // real surnames are rarely also common 4-letter lowercase words)
+      const allCommon = words.every(w => /^(meet|and|the|for|with|from|book|tour|talk|show|live|free|open|join|sign|sale|fair|fest|expo|camp|club|park|hall|home|room|shop|store|mall|fund|gala|bash|ball|gaze|high|main|back|side|top|pro|new|old|big|hot|red|blue|gold|star|safe|wild|city|town|farm|rock|lake|hill|bay|run|ride|day|night|week|time|work|play|art|pop|hip|hop|rap|dj|mc)$/i.test(w));
+      if (allCommon) continue;
       return m;
     }
   }
