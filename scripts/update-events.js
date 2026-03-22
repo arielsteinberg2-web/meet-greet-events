@@ -372,9 +372,7 @@ const INSTAGRAM_QUERIES = ACCOUNTS_TODAY.map(account => ({
 }));
 
 // Final query list: all constant + today's player queries + today's Instagram accounts
-// Key split: first half on KEY_1, second half on KEY_2
 const QUERIES = [...ALL_QUERIES, ...PLAYER_QUERIES, ...INSTAGRAM_QUERIES];
-const SPLIT   = Math.ceil(QUERIES.length / 2);
 
 const RELEVANT_WORDS = [
   'meet','sign','greet','autograph','dinner','firma','dédicace','autografi',
@@ -429,6 +427,9 @@ function guessDate(t) {
 }
 
 // ── FETCH ─────────────────────────────────────────────────────────────────────
+// Tracks keys that have returned auth/quota errors — skipped for remaining queries
+const deadKeys = new Set();
+
 async function fetchWithRetry(url, attempts = 3) {
   for (let i = 0; i < attempts; i++) {
     try {
@@ -436,10 +437,11 @@ async function fetchWithRetry(url, attempts = 3) {
       const t = setTimeout(() => ctrl.abort(), 12000);
       const r = await fetch(url, { signal: ctrl.signal });
       clearTimeout(t);
-      if (r.status === 401 || r.status === 402 || r.status === 429) return null;
+      if (r.status === 401 || r.status === 402 || r.status === 403) return 'dead';
+      if (r.status === 429) return 'dead';
       if (!r.ok) return null;
       const data = await r.json();
-      if (data.error && /run out|quota|credit|limit/i.test(data.error)) return null;
+      if (data.error && /run out|quota|credit|limit|invalid/i.test(data.error)) return 'dead';
       return data;
     } catch { /* retry */ }
   }
@@ -458,9 +460,10 @@ async function fetchSerper(q, attempts = 3, key = SERPER_KEY) {
         body: JSON.stringify({ q, num: 10 }),
       });
       clearTimeout(t);
-      if (r.status === 401 || r.status === 429) return null;
+      if (r.status === 401 || r.status === 403 || r.status === 429) return 'dead';
       if (!r.ok) return null;
       const data = await r.json();
+      if (data.message && /credit|quota|limit|invalid/i.test(data.message)) return 'dead';
       // Normalize Serper response to SerpAPI shape so parseOrganic works unchanged
       return { organic_results: (data.organic || []).map(x => ({
         title:          x.title,
@@ -605,23 +608,34 @@ async function main() {
 
   for (const [i, { q, lang }] of QUERIES.entries()) {
     let data;
-    if (SEARCHAPI_KEY && i >= SPLIT4) {
-      console.log(`  Searching [searchapi]: "${q.substring(0, 60)}"`);
+    let keyLabel;
+
+    if (SEARCHAPI_KEY && !deadKeys.has('searchapi') && i >= SPLIT4) {
+      keyLabel = 'searchapi';
       const url = `https://www.searchapi.io/api/v1/search?engine=google&q=${encodeURIComponent(q)}&num=10&api_key=${SEARCHAPI_KEY}`;
       data = await fetchWithRetry(url);
-    } else if (SERPER_KEY2 && i >= SPLIT3) {
-      console.log(`  Searching [serper2]: "${q.substring(0, 60)}"`);
+      if (data === 'dead') { console.warn('  ⚠️  SearchApi key dead — falling back to SerpAPI KEY_1 for remaining queries'); deadKeys.add('searchapi'); data = null; }
+    } else if (SERPER_KEY2 && !deadKeys.has('serper2') && i >= SPLIT3) {
+      keyLabel = 'serper2';
       data = await fetchSerper(q, 3, SERPER_KEY2);
-    } else if (SERPER_KEY && i >= SPLIT2) {
-      console.log(`  Searching [serper1]: "${q.substring(0, 60)}"`);
+      if (data === 'dead') { console.warn('  ⚠️  Serper KEY_2 dead — falling back to SerpAPI KEY_1'); deadKeys.add('serper2'); data = null; }
+    } else if (SERPER_KEY && !deadKeys.has('serper1') && i >= SPLIT2) {
+      keyLabel = 'serper1';
       data = await fetchSerper(q, 3, SERPER_KEY);
-    } else {
-      const key = (i < SPLIT1 || !API_KEY_2) ? API_KEY_1 : API_KEY_2;
-      console.log(`  Searching [serpapi${i < SPLIT1 || !API_KEY_2 ? 1 : 2}]: "${q.substring(0, 60)}"`);
+      if (data === 'dead') { console.warn('  ⚠️  Serper KEY_1 dead — falling back to SerpAPI KEY_1'); deadKeys.add('serper1'); data = null; }
+    }
+
+    // Fall back to SerpAPI (KEY_2 if available, else KEY_1) when assigned key is dead or unset
+    if (data === null || data === undefined) {
+      const key = (!deadKeys.has('serpapi2') && API_KEY_2 && i >= SPLIT1) ? API_KEY_2 : API_KEY_1;
+      keyLabel = key === API_KEY_2 ? 'serpapi2' : 'serpapi1';
       const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${key}`;
       data = await fetchWithRetry(url);
+      if (data === 'dead') { console.warn(`  ⚠️  SerpAPI ${keyLabel} dead`); deadKeys.add(keyLabel); data = null; }
     }
-    if (data) {
+
+    console.log(`  [${keyLabel}] "${q.substring(0, 55)}"`);
+    if (data && data !== 'dead') {
       const found = parseOrganic(data, lang);
       console.log(`    → ${found.length} results`);
       results.push(...found);
