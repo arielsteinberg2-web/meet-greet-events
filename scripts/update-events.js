@@ -122,6 +122,24 @@ const ALL_QUERIES = [
   { q: 'site:booksigningcentral.com sports athlete signing 2026',             lang: 'en' },
 ];
 
+// ── INSTAGRAM ACCOUNTS — venue/organizer accounts to monitor via SerpAPI ──────
+// 3 accounts checked per day, rotating through the full list every ~N/3 days.
+const INSTAGRAM_ACCOUNTS = [
+  'cravetheauto',
+  'cardvaultboston',
+  'cardvaultsacramento',
+  'cardvaultla',
+  'dickssportinggoods',
+  'shopwss',
+  'fitermansports',
+  'bighornautographs',
+  'palmbeachautographs',
+  'tsebuffalo',
+  'nynjsportsworld',
+  'woodbridgebrewingco',
+  'superstarspeakers',
+];
+
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
 // 3 players are checked per day, rotating through the full list every ~N/3 days.
 const MONITORED_PLAYERS = [
@@ -224,6 +242,74 @@ async function fetchLL12Events() {
   return events;
 }
 
+// ── CRAVETHEAUTO DIRECT CRAWL ─────────────────────────────────────────────────
+// Fetches the main listing page and extracts event links.
+// URL format encodes the date and slug: /autograph-appearances/MM/DD[-DD]/slug
+// This catches new events same-day, before Google indexes them.
+const CTA_EVENT_SLUGS = new Set([
+  'show','expo','convention','con','fest','open','classic','challenge',
+  'cup','championship','tournament','event','signing','appearances',
+  'cardvault','superstars','capital','city','card','sports','world',
+  'buffalo','dedham','chicago','boston','dallas','houston','miami',
+]);
+async function fetchCraveTheAuto() {
+  const events = [];
+  try {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 15000);
+    const r = await fetch('https://www.cravetheauto.com/autograph-appearances', {
+      signal: ctrl.signal,
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' },
+    });
+    clearTimeout(t);
+    if (!r.ok) { console.log(`  CraveTheAuto: HTTP ${r.status}`); return events; }
+    const html = await r.text();
+
+    // Match /autograph-appearances/MM/DD[-DD]/slug
+    const linkPat = /href="(\/autograph-appearances\/(\d{2})\/(\d{2})(?:-\d{2})?\/([a-z0-9][a-z0-9-]+))"/gi;
+    const seen = new Set();
+    let m;
+    while ((m = linkPat.exec(html)) !== null) {
+      const [, path, month, day, slug] = m;
+      const link = `https://www.cravetheauto.com${path}`;
+      if (seen.has(link)) continue;
+      seen.add(link);
+
+      // Skip event/show slugs — these are shows, not player names
+      const slugWords = slug.split('-').filter(w => !/^\d+$/.test(w));
+      if (slugWords.length < 2) continue; // single word = location/show, not a player
+      if (slugWords.some(w => CTA_EVENT_SLUGS.has(w))) continue;
+
+      // Build date — skip if already past (CraveTheAuto keeps past events on their page)
+      const now = new Date(); now.setHours(0, 0, 0, 0);
+      const year = now.getFullYear();
+      const date = `${year}-${month}-${day}`;
+      if (new Date(date + 'T00:00:00') < now) continue;
+
+      // Convert slug to name: "roger-clemens-2" → "Roger Clemens" (digits already stripped)
+      const player = slugWords
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
+
+      events.push({
+        id:     `cta_${month}${day}_${slug}`,
+        player,
+        sport:  'other',
+        date,
+        venue:  '',
+        city:   '',
+        link,
+        notes:  '',
+        source: 'cravetheauto.com',
+      });
+    }
+    console.log(`  CraveTheAuto direct: ${events.length} events found`);
+  } catch (e) {
+    console.log(`  CraveTheAuto direct: error — ${e.message}`);
+  }
+  return events;
+}
+
 // Pick 3 players to search today based on day-of-year rotation
 const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
 const PLAYERS_TODAY = [0, 1, 2].map(offset =>
@@ -233,9 +319,18 @@ const PLAYER_QUERIES = PLAYERS_TODAY.flatMap(name => [
   { q: `"${name}" meet greet autograph signing fan 2026`, lang: 'en' },
 ]);
 
-// Final query list: all constant + today's player queries
+// Pick 3 Instagram accounts to monitor today (rotating)
+const ACCOUNTS_TODAY = [0, 1, 2].map(offset =>
+  INSTAGRAM_ACCOUNTS[(dayOfYear * 3 + offset) % INSTAGRAM_ACCOUNTS.length]
+);
+const INSTAGRAM_QUERIES = ACCOUNTS_TODAY.map(account => ({
+  q: `site:instagram.com/${account} autograph signing meet greet 2026`,
+  lang: 'en',
+}));
+
+// Final query list: all constant + today's player queries + today's Instagram accounts
 // Key split: first half on KEY_1, second half on KEY_2
-const QUERIES = [...ALL_QUERIES, ...PLAYER_QUERIES];
+const QUERIES = [...ALL_QUERIES, ...PLAYER_QUERIES, ...INSTAGRAM_QUERIES];
 const SPLIT   = Math.ceil(QUERIES.length / 2);
 
 const RELEVANT_WORDS = [
@@ -386,6 +481,12 @@ async function main() {
   const ll12Events = await fetchLL12Events();
   console.log(`LL12 direct: ${ll12Events.length} upcoming events found`);
   results.push(...ll12Events);
+
+  // Direct-crawl CraveTheAuto listing page (catches same-day additions before Google indexes)
+  console.log('Fetching CraveTheAuto events directly...');
+  const ctaEvents = await fetchCraveTheAuto();
+  console.log(`CraveTheAuto direct: ${ctaEvents.length} events found`);
+  results.push(...ctaEvents);
 
   // De-duplicate by link
   const seen   = new Set();
