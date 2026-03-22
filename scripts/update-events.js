@@ -319,7 +319,8 @@ function ctaDetectSport(text) {
   if (/\bnba\b|basketball|lakers|celtics|bulls|knicks|heat|warriors|nets|bucks|suns|nuggets|clippers|spurs|pistons|hawks|magic|wizards|hornets|pelicans|grizzlies|jazz|thunder|blazers|rockets|maverick/.test(t)) return 'basketball';
   if (/\bmlb\b|baseball|yankees|red sox|dodgers|cubs|mets|braves|astros|cardinals|giants|phillies|blue jays|orioles|nationals|padres|reds|pirates|tigers|royals|twins|white sox|brewers|rangers|athletics|mariners|angels/.test(t)) return 'baseball';
   if (/\bnhl\b|hockey|rangers|bruins|penguins|flyers|maple leafs|blackhawks|red wings|capitals|avalanche|lightning|golden knights|canadiens|oilers|canucks|flames|jets|wild|predators|blues|coyotes|sharks|ducks|kings|stars|hurricanes|sabres|senators|islanders/.test(t)) return 'other';
-  if (/\bwwe\b|wrestling|wwe|raw|smackdown|ufc|mma|boxing/.test(t)) return 'other';
+  if (/\bwwe\b|wrestling|raw|smackdown/.test(t)) return 'wrestling';
+  if (/\bufc\b|mma|boxing/.test(t)) return 'other';
   if (/soccer|football|mls|laliga|premier league|bundesliga|serie a|ligue 1/.test(t)) return 'soccer';
   return 'other';
 }
@@ -693,15 +694,16 @@ async function fetchEventbriteEvents() {
           const venue = location.name || '';
           const city  = location.address?.addressLocality || '';
 
-          const isBook   = /book signing|book tour|autobiography|memoir/.test(combined);
-          const isBball  = /\bnba\b|basketball/.test(combined);
-          const isOther  = /\bmma\b|\bufc\b|boxing|wwe|wrestling|hockey|baseball|formula.?1/.test(combined);
-          const isSoccer = /soccer|football|futbol|calcio/.test(combined);
+          const isBook      = /book signing|book tour|autobiography|memoir/.test(combined);
+          const isBball     = /\bnba\b|basketball/.test(combined);
+          const isWrestling = /\bwwe\b|wrestling|wrestlemania|aew|raw|smackdown/.test(combined);
+          const isOther     = /\bmma\b|\bufc\b|boxing|hockey|baseball|formula.?1/.test(combined);
+          const isSoccer    = /soccer|football|futbol|calcio/.test(combined);
 
           events.push({
             id:     `eb_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
             player,
-            sport:  isBook ? 'book' : isBball ? 'basketball' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
+            sport:  isBook ? 'book' : isBball ? 'basketball' : isWrestling ? 'wrestling' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
             date,
             venue,
             city,
@@ -901,8 +903,9 @@ function parseOrganic(data, lang) {
     const isPol    = !isBook && !isBball && /senator|president|governor|politician/.test(combined);
     const isCeleb  = !isBook && !isBball && !isPol && /actor|actress|musician|singer|comedian|comic.?con|fan.?expo|celebrity/.test(combined);
     const isNFL    = /\bnfl\b|american football|super bowl|superbowl|touchdown|quarterback|wide receiver|running back|tight end|linebacker|defensive end|eagles|patriots|cowboys|chiefs|steelers|packers|bears|giants|ravens|broncos|seahawks|49ers|rams|chargers|raiders|dolphins|bills|bengals|browns|colts|jaguars|titans|texans|falcons|saints|panthers|buccaneers|vikings|lions|cardinals/.test(combined);
-    const isOther  = !isBook && !isBball && !isPol && !isCeleb && !isNFL && /gymnast|olympic|mlb|baseball|nhl|hockey|mma|ufc|boxing|wwe|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined);
-    const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isOther && /\bsoccer\b|futbol|calcio|fútbol|\bfootballer\b|calciatore|\bfoot\b|ligue|premier league|bundesliga|serie a|la liga|champions league|\bcopa\b|\bmls\b|\bfifa\b/.test(combined);
+    const isWrestling = !isBook && !isBball && !isPol && !isCeleb && !isNFL && /\bwwe\b|wrestling|wrestlemania|raw|smackdown|aew|ring of honor|impact wrestling/.test(combined);
+    const isOther  = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isWrestling && /gymnast|olympic|mlb|baseball|nhl|hockey|mma|ufc|boxing|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined);
+    const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isWrestling && !isOther && /\bsoccer\b|futbol|calcio|fútbol|\bfootballer\b|calciatore|\bfoot\b|ligue|premier league|bundesliga|serie a|la liga|champions league|\bcopa\b|\bmls\b|\bfifa\b/.test(combined);
 
     const playerName = extractPlayerName(res.title, res.snippet);
     if (!playerName) continue; // skip events with no identifiable player name
@@ -916,7 +919,7 @@ function parseOrganic(data, lang) {
     out.push({
       id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
       player: playerName,
-      sport:  isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isNFL ? 'football' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
+      sport:  isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isNFL ? 'football' : isWrestling ? 'wrestling' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
       date:   eventDate,
       venue:  '',
       city:   '',
@@ -984,7 +987,7 @@ async function fetchEpicEvents() {
 
       // Sport classification from convention title
       const convTitle = (conv.title || conv.name || '').toLowerCase();
-      const sport = /wwe|wrestling|ufc|mma|boxing/.test(convTitle) ? 'other'
+      const sport = /wwe|wrestling/.test(convTitle) ? 'wrestling'
         : /nba|basketball/.test(convTitle) ? 'basketball'
         : 'other';
 

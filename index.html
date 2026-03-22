@@ -1064,6 +1064,7 @@
     .card.pol { border-left:3px solid #1565c0; background:rgba(21,101,192,0.09); }
     .card.cel { border-left:3px solid #e91e8c; background:rgba(233,30,140,0.07); }
     .card.bok { border-left:3px solid #ffb300; background:rgba(255,179,0,0.07); }
+    .card.wre { border-left:3px solid #ab47bc; background:rgba(171,71,188,0.07); }
     /* All non-avatar icons match card's sport color */
     .card.soc .di,.card.soc .ibtn,.card.soc .act-btn { filter:hue-rotate(20deg) brightness(1.1) saturate(1.2); }
     .card.bsk .di,.card.bsk .ibtn,.card.bsk .act-btn { filter:hue-rotate(-155deg) brightness(1.3) saturate(1.8); }
@@ -1073,6 +1074,7 @@
     .card.pol .di,.card.pol .ibtn,.card.pol .act-btn { filter:hue-rotate(35deg) brightness(0.9) saturate(1.1); }
     .card.cel .di,.card.cel .ibtn,.card.cel .act-btn { filter:hue-rotate(150deg) brightness(1.2) saturate(1.5); }
     .card.bok .di,.card.bok .ibtn,.card.bok .act-btn { filter:hue-rotate(-136deg) brightness(1.3) saturate(2); }
+    .card.wre .di,.card.wre .ibtn,.card.wre .act-btn { filter:hue-rotate(117deg) brightness(1.2) saturate(1.8); }
     .card.past { opacity:.55; }
 
     .ch { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
@@ -1101,6 +1103,7 @@
     .av.pol { background:#0d47a1; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(30,136,229,.2),0 6px 18px rgba(30,136,229,.4),0 0 22px rgba(30,136,229,.28); }
     .av.cel { background:#880e4f; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(233,30,140,.2),0 6px 18px rgba(233,30,140,.4),0 0 22px rgba(233,30,140,.25); }
     .av.bok { background:#7c5200; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(255,179,0,.2),0 6px 18px rgba(255,179,0,.4),0 0 22px rgba(255,179,0,.25); }
+    .av.wre { background:#4a148c; box-shadow:inset 0 6px 14px rgba(0,0,0,.70),inset 0 -2px 5px rgba(0,0,0,.35),inset 5px 0 10px rgba(0,0,0,.45),inset -5px 0 10px rgba(0,0,0,.45),0 0 0 3px rgba(171,71,188,.2),0 6px 18px rgba(171,71,188,.4),0 0 22px rgba(171,71,188,.25); }
     .av-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top center; display:none; border-radius:50%; z-index:2; }
     /* SVG icon fills the coin face */
     .av-fb  { position:absolute; inset:0; z-index:1; display:flex; align-items:center; justify-content:center; transition:opacity .3s; }
@@ -1135,6 +1138,7 @@
     .badge.nfl { background:rgba(124,179,66,.15); color:#7cb342; }
     .badge.pol { background:rgba(30,136,229,.15); color:#1e88e5; }
     .badge.cel { background:rgba(233,30,140,.15); color:#e91e8c; }
+    .badge.wre { background:rgba(171,71,188,.15); color:#ab47bc; }
     .cbns { display:flex; gap:5px; }
     .ibtn {
       width:26px; height:26px; border-radius:5px; border:1px solid var(--border);
@@ -1196,6 +1200,8 @@
     .rl.cel:hover  { background:rgba(128,236,230,.2); box-shadow:0 0 12px rgba(128,236,230,.2); }
     .rl.bok  { background:rgba(255,179,0,.12); color:#ffb300; border:1px solid rgba(255,179,0,.28); }
     .rl.bok:hover  { background:rgba(255,179,0,.22); box-shadow:0 0 12px rgba(255,179,0,.2); }
+    .rl.wre  { background:rgba(171,71,188,.12); color:#ce93d8; border:1px solid rgba(171,71,188,.28); }
+    .rl.wre:hover  { background:rgba(171,71,188,.22); box-shadow:0 0 12px rgba(171,71,188,.2); }
     .rl.none { background:var(--surface); color:var(--dim); border:1px solid var(--border); cursor:default; pointer-events:none; }
     .rl.social-lnk { background:rgba(0,229,204,.1); color:#00e5cc; border:1px solid rgba(0,229,204,.28); }
     .rl.social-lnk:hover { background:rgba(0,229,204,.2); }
@@ -1460,6 +1466,12 @@
       <stop offset="0%"   stop-color="#f1f8e9"/>
       <stop offset="45%"  stop-color="#7cb342"/>
       <stop offset="100%" stop-color="#33691e"/>
+    </radialGradient>
+    <!-- Wrestling: deep purple -->
+    <radialGradient id="wre-g" cx="36%" cy="28%" r="72%">
+      <stop offset="0%"   stop-color="#f3e5f5"/>
+      <stop offset="45%"  stop-color="#ab47bc"/>
+      <stop offset="100%" stop-color="#4a148c"/>
     </radialGradient>
     <!-- UI detail icons: mid teal -->
     <radialGradient id="ui-g" cx="36%" cy="28%" r="72%">
@@ -3191,7 +3203,7 @@ const SEEDS = [
 
   // ════════════ 🏟️ WWE / WRESTLING ════════════
   {
-    id:'wwe1', sport:'other',
+    id:'wwe1', sport:'wrestling',
     player:'Stone Cold Steve Austin + CM Punk + Rhea Ripley + Tiffany Stratton – WWE World at WrestleMania 42',
     date:'2026-04-16', time:'10:00',
     venue:'Las Vegas Convention Center South Hall',
@@ -3201,7 +3213,7 @@ const SEEDS = [
     source:'WWE World / Fanatics Events — wweworld.com'
   },
   {
-    id:'wwe2', sport:'other',
+    id:'wwe2', sport:'wrestling',
     player:'Becky Lynch + Cody Rhodes + Randy Orton + Rhea Ripley – WWE Zone, Fanatics Fest NYC',
     date:'2026-07-16', time:'10:00',
     venue:'Jacob K. Javits Convention Center',
@@ -3447,7 +3459,7 @@ const SEEDS = [
 
   // ── Additional signings — CraveTheAuto / PalmBeachAutographs / organizers ──
   {
-    id:'cta_wwe_boston1', sport:'other', addedAt:'2026-03-17',
+    id:'cta_wwe_boston1', sport:'wrestling', addedAt:'2026-03-17',
     player:'Liv Morgan, Drew McIntyre, Becky Lynch & Stephanie Vaquer – WWE Signing, Boston',
     date:'2026-03-22', time:'12:00',
     venue:'CardVault – 112 Causeway Street',
@@ -3537,7 +3549,7 @@ const SEEDS = [
     source:'Palm Beach Autographs — palmbeachautographs.com'
   },
   {
-    id:'cta_80swrestling1', sport:'other', addedAt:'2026-03-17',
+    id:'cta_80swrestling1', sport:'wrestling', addedAt:'2026-03-17',
     player:'Jake Roberts, Jim Duggan, Jerry Lawler, Koko B. Ware, Nikita Koloff & more – 80s Wrestling Con',
     date:'2026-05-16', time:'10:00',
     venue:'Parsippany PAL Building – 33 Baldwin Road',
@@ -3547,7 +3559,7 @@ const SEEDS = [
     source:'80s Wrestling Con — 80swrestlingcon.com'
   },
   {
-    id:'pba_steiner1', sport:'other', addedAt:'2026-03-17',
+    id:'pba_steiner1', sport:'wrestling', addedAt:'2026-03-17',
     player:'The Steiner Brothers (Rick & Scott Steiner)',
     date:'2026-06-27', time:'',
     venue:'Brandon Exchange (Palm Beach Autographs)',
@@ -3942,6 +3954,7 @@ function render() {
     { ic:ICONS.baseball,    n:win.filter(e=>e.sport==='baseball').length,          lb:'Baseball',       sub:null,                    f:'baseball', cls:'bbl' },
     { ic:ICONS.football,    n:win.filter(e=>e.sport==='football').length,          lb:'Football',       sub:null,                    f:'football', cls:'nfl' },
     { ic:ICONS.other,       n:win.filter(e=>e.sport==='other').length,             lb:'Other Sports',   sub:null,                    f:'other',    cls:'oth' },
+    { ic:ICONS.wrestling,   n:win.filter(e=>e.sport==='wrestling').length,         lb:'Wrestling',      sub:null,                    f:'wrestling',cls:'wre' },
     { ic:ICONS.celeb,       n:win.filter(e=>['celeb','politics'].includes(e.sport)).length, lb:'Celebrity', sub:null,               f:'celeb',    cls:'cel' },
     { ic:ICONS.book,        n:win.filter(e=>['book','talk'].includes(e.sport)).length,      lb:'Talks',    sub:null,                f:'book',     cls:'bok' },
   ];
@@ -4152,6 +4165,19 @@ const ICONS = {
     ${_rim}
   </svg>`,
 
+  // Wrestling: purple coin, championship belt
+  wrestling: `<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="13.4" fill="url(#wre-g)"/>
+    <g clip-path="url(#coin-clip)">
+      <rect x="0.6" y="12.2" width="7" height="3.6" rx="0.8" fill="#200040" opacity="0.6"/>
+      <rect x="20.4" y="12.2" width="7" height="3.6" rx="0.8" fill="#200040" opacity="0.6"/>
+      <rect x="7.5" y="9" width="13" height="10" rx="2" fill="#200040" opacity="0.82"/>
+      <rect x="9" y="10.5" width="10" height="7" rx="1" fill="none" stroke="#200040" stroke-width="0.9" opacity="0.55"/>
+      <polygon points="14,10.8 15.3,13.1 18,13.5 16,15.4 16.5,18 14,16.8 11.5,18 12,15.4 10,13.5 12.7,13.1" fill="#200040" opacity="0.75"/>
+    </g>
+    ${_rim}
+  </svg>`,
+
   // ── DETAIL ROW COINS (20×20) ────────────────────────────────────────────────
   calendar: `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="10" cy="10" r="9.5" fill="url(#ui-g)"/>
@@ -4223,7 +4249,8 @@ const SPORT_META = {
   politics:   { icon: ICONS.celeb,      cls:'cel', lbl:'Celebrity' },
   celeb:      { icon: ICONS.celeb,      cls:'cel', lbl:'Celebrity' },
   book:       { icon: ICONS.book,       cls:'bok', lbl:'Talks' },
-  talk:       { icon: ICONS.book,       cls:'bok', lbl:'Talks' }
+  talk:       { icon: ICONS.book,       cls:'bok', lbl:'Talks' },
+  wrestling:  { icon: ICONS.wrestling,  cls:'wre', lbl:'Wrestling' }
 };
 
 // ─── PLAYER PHOTO LOOKUP ──────────────────────────────────────────────────────
