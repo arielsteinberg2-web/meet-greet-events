@@ -47,7 +47,11 @@ const formattedTs = builtAtDt.toLocaleDateString('en-GB', {day:'numeric', month:
   + ' ' + builtAtDt.toLocaleTimeString('en-GB', {hour:'2-digit', minute:'2-digit'});
 
 let page = readFileSync(join(ROOT, 'index.html'), 'utf8');
-page = page.replace('<!-- STATIC_EVENTS_PLACEHOLDER -->', html || '<!-- STATIC_EVENTS_PLACEHOLDER -->');
+// Replace existing static-events section OR original placeholder on first run
+page = page.replace(
+  /<!-- STATIC_EVENTS_PLACEHOLDER -->|<section id="static-events"[\s\S]*?<\/section>/,
+  html || '<!-- STATIC_EVENTS_PLACEHOLDER -->'
+);
 // Bake BUILT_AT into JS constant (replace any existing ISO string or placeholder)
 page = page.replace(/const BUILT_AT\s*=\s*'[^']*'/, `const BUILT_AT = '${builtAt}'`);
 // Bake timestamp directly into the HTML span — no JS needed to display it
