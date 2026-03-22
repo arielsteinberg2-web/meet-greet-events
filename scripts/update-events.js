@@ -130,6 +130,12 @@ const ALL_QUERIES = [
   { q: 'football soccer autobiography book signing uk 2026',                   lang: 'en' },
   // ── Book signings aggregator — US ──
   { q: 'site:booksigningcentral.com sports athlete signing 2026',             lang: 'en' },
+  // ── Eventbrite — sports & celebrity meet & greet events ──
+  { q: 'site:eventbrite.com autograph signing athlete meet greet 2026',       lang: 'en' },
+  { q: 'site:eventbrite.com soccer football player meet greet fan 2026',      lang: 'en' },
+  { q: 'site:eventbrite.com NBA basketball player signing appearance 2026',   lang: 'en' },
+  { q: 'site:eventbrite.com WWE boxing MMA fighter meet greet signing 2026',  lang: 'en' },
+  { q: 'site:eventbrite.com celebrity athlete book signing tour 2026',        lang: 'en' },
 ];
 
 // ── INSTAGRAM ACCOUNTS — venue/organizer accounts to monitor via SerpAPI ──────
