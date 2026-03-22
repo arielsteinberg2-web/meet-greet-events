@@ -324,16 +324,26 @@ function ctaDetectSport(text) {
 }
 
 function ctaPlayerFromTitle(rawTitle) {
-  // Title format: "Show Name | PLAYER NAME Context" or just "PLAYER NAME Context"
+  // CTA title format: "Show Name | PLAYER NAME Team/Context - Sport Label"
+  //                or "PLAYER NAME Team/Context - Sport Label"
+  // Player names are ALL CAPS; team/context is mixed-case after the name.
   const decoded = rawTitle.replace(/&amp;/gi, '&').replace(/&#\d+;/gi, ' ').trim();
+  // Use the part after "|" if present
   let part = decoded.includes('|') ? decoded.split('|').slice(1).join('|').trim() : decoded;
-  // Stop at context words that follow the player names
-  part = part.replace(/\s+(Former|Current|Retired|Legendary|Hall of|Coming|Appearing|Greats?|Stars?|NFL|NBA|MLB|NHL|MLS|WWE|UFC|MMA|PGA|Former\s|of the\s).*$/i, '').trim();
-  // Title-case
-  part = part.replace(/\b([A-Z]+)\b/g, w => w.charAt(0) + w.slice(1).toLowerCase());
-  // Restore & and common short caps
-  part = part.replace(/\s*&\s*/g, ' & ');
-  return part.length > 2 ? part : null;
+  // Strip everything from " - " onward (sport label / context suffix)
+  part = part.split(' - ')[0].trim();
+  // Extract only the leading ALL-CAPS words (player name portion);
+  // stops at the first mixed-case word (team/context like "Boston Red Sox")
+  // Handles comma/& separated multi-player names: "BENITO SANTIAGO, JOHN CANDELARIA & DUFFY DYER"
+  const capsMatch = part.match(/^([A-Z]{2,}(?:['.-][A-Z]+)*(?:\s+[A-Z]{2,}(?:['.-][A-Z]+)*)*(?:\s*[,&]\s*[A-Z]{2,}(?:['.-][A-Z]+)*(?:\s+[A-Z]{2,}(?:['.-][A-Z]+)*)*)*)/);
+  if (!capsMatch) return null;
+  const raw = capsMatch[1].replace(/[,&\s]+$/, '').trim();
+  if (raw.length < 3) return null;
+  // Title-case each word, preserving capitalization after hyphens (e.g. BANTA-CAIN → Banta-Cain)
+  return raw
+    .replace(/\b[A-Z]{2,}(?:['.-][A-Z]+)*/g, w => w.replace(/[A-Z]+/g, s => s.charAt(0) + s.slice(1).toLowerCase()))
+    .replace(/\s*,\s*/g, ', ')
+    .replace(/\s*&\s*/g, ' & ');
 }
 
 async function fetchCraveTheAuto() {
@@ -373,7 +383,7 @@ async function fetchCraveTheAuto() {
         const slug = ctaUrl.split('/').pop();
 
         if (!pageHtml) {
-          events.push({ id: `cta_${month}${day}_${slug}`, player: slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()), sport: 'other', date, venue: '', city: '', link: ctaUrl, notes: '', source: 'cravetheauto.com' });
+          console.log(`  CTA: skipping ${slug} (page failed to load)`);
           continue;
         }
 
