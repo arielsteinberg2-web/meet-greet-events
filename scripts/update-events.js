@@ -14,12 +14,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_FILE  = join(__dirname, '../data/live-events.json');
 
 // ── API KEYS (from GitHub Secrets) ───────────────────────────────────────────
-const API_KEY_1    = process.env.SERPAPI_KEY_1;
-const API_KEY_2    = process.env.SERPAPI_KEY_2;
-const SERPER_KEY   = process.env.SERPER_KEY;     // optional — Google Search via serper.dev
-const SERPER_KEY2  = process.env.SERPER_KEY_2;   // optional — second Serper key
-const SEARCHAPI_KEY = process.env.SEARCHAPI_KEY; // optional — Google Search via searchapi.io
-const EXA_KEY      = process.env.EXA_API_KEY;    // optional — semantic search supplement
+const API_KEY_1     = process.env.SERPAPI_KEY_1;
+const API_KEY_2     = process.env.SERPAPI_KEY_2;
+const SERPER_KEY    = process.env.SERPER_KEY;      // optional — Google Search via serper.dev
+const SERPER_KEY2   = process.env.SERPER_KEY_2;   // optional — second Serper key
+const SEARCHAPI_KEY = process.env.SEARCHAPI_KEY;  // optional — Google Search via searchapi.io
+const SCRAPER_KEY   = process.env.SCRAPERAPI_KEY; // optional — proxy for direct site fetches
+const EXA_KEY       = process.env.EXA_API_KEY;    // optional — semantic search supplement
 
 if (!API_KEY_1) {
   console.error('No SERPAPI_KEY_1 env var set. Add it as a GitHub Secret.');
@@ -240,15 +241,8 @@ async function fetchLL12Events() {
   const events = [];
   for (const { slug, city } of LL12_CITIES) {
     try {
-      const ctrl = new AbortController();
-      const t = setTimeout(() => ctrl.abort(), 10000);
-      const r = await fetch(`https://www.ll12.vip/event/${slug}`, {
-        signal: ctrl.signal,
-        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' },
-      });
-      clearTimeout(t);
-      if (!r.ok) { console.log(`  LL12 ${slug}: HTTP ${r.status}`); continue; }
-      const html = await r.text();
+      const html = await fetchDirect(`https://www.ll12.vip/event/${slug}`, 10000);
+      if (!html) { console.log(`  LL12 ${slug}: failed`); continue; }
 
       if (/this event is over/i.test(html)) { console.log(`  LL12 ${slug}: past event`); continue; }
 
@@ -298,15 +292,8 @@ const CTA_EVENT_SLUGS = new Set([
 async function fetchCraveTheAuto() {
   const events = [];
   try {
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), 15000);
-    const r = await fetch('https://www.cravetheauto.com/autograph-appearances', {
-      signal: ctrl.signal,
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' },
-    });
-    clearTimeout(t);
-    if (!r.ok) { console.log(`  CraveTheAuto: HTTP ${r.status}`); return events; }
-    const html = await r.text();
+    const html = await fetchDirect('https://www.cravetheauto.com/autograph-appearances');
+    if (!html) { console.log('  CraveTheAuto: failed'); return events; }
 
     // Match /autograph-appearances/MM/DD[-DD]/slug
     const linkPat = /href="(\/autograph-appearances\/(\d{2})\/(\d{2})(?:-\d{2})?\/([a-z0-9][a-z0-9-]+))"/gi;
@@ -427,6 +414,38 @@ function guessDate(t) {
 }
 
 // ── FETCH ─────────────────────────────────────────────────────────────────────
+// ── DIRECT FETCH WITH SCRAPERAPI FALLBACK ─────────────────────────────────────
+// Tries a plain fetch first; if blocked (403/429/CAPTCHA), retries via ScraperAPI proxy.
+async function fetchDirect(url, timeoutMs = 15000) {
+  const headers = { 'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' };
+  // 1. Try direct
+  try {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), timeoutMs);
+    const r = await fetch(url, { signal: ctrl.signal, headers });
+    clearTimeout(t);
+    if (r.ok) return r.text();
+    if (![403, 429, 503].includes(r.status)) return null; // non-recoverable
+    console.log(`  fetchDirect: ${url} returned ${r.status}, trying ScraperAPI…`);
+  } catch { /* timeout or network error — try proxy */ }
+
+  // 2. Fallback to ScraperAPI
+  if (!SCRAPER_KEY) return null;
+  try {
+    const proxyUrl = `http://api.scraperapi.com?api_key=${SCRAPER_KEY}&url=${encodeURIComponent(url)}&render=false`;
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 30000);
+    const r = await fetch(proxyUrl, { signal: ctrl.signal });
+    clearTimeout(t);
+    if (!r.ok) { console.log(`  ScraperAPI: HTTP ${r.status}`); return null; }
+    console.log(`  ScraperAPI: success for ${url}`);
+    return r.text();
+  } catch (e) {
+    console.log(`  ScraperAPI error: ${e.message}`);
+    return null;
+  }
+}
+
 // Tracks keys that have returned auth/quota errors — skipped for remaining queries
 const deadKeys = new Set();
 
