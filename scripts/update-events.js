@@ -687,19 +687,20 @@ async function fetchEventbriteEvents() {
           if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
           if (/mail-?in|private signing|ship your/.test(combined)) continue;
 
-          const player = extractPlayerName(name, ev.description || '');
-          if (!player) continue;
-
           const location = ev.location || {};
           const venue = location.name || '';
           const city  = location.address?.addressLocality || '';
 
-          // Skip if extracted name is the venue itself (e.g. business hosting an Easter Bunny event)
-          if (player === venue) { console.log(`  [wiki-check] Skipping "${player}" — player name matches venue`); continue; }
-
-          // Verify via Wikipedia that this is a real public figure
-          const isKnown = await isKnownPublicFigure(player);
-          if (!isKnown) { console.log(`  [wiki-check] Skipping "${player}" — not a known public figure`); continue; }
+          // Try each candidate name in order until one passes Wikipedia verification
+          const candidates = extractCandidateNames(name, ev.description || '');
+          let player = null;
+          for (const candidate of candidates) {
+            if (candidate === venue) { console.log(`  [wiki-check] Skipping "${candidate}" — matches venue name`); continue; }
+            const isKnown = await isKnownPublicFigure(candidate);
+            if (isKnown) { player = candidate; break; }
+            console.log(`  [wiki-check] "${candidate}" failed — trying next candidate`);
+          }
+          if (!player) continue;
 
           const isBook      = /book signing|book tour|autobiography|memoir/.test(combined);
           const isBball     = /\bnba\b|basketball/.test(combined);
@@ -782,6 +783,11 @@ const NAME_SKIP = new Set([
   'Special','Annual','Official','Virtual','Free','Private','Exclusive',
   // Known organizer/memorabilia brands (not athlete names)
   'Inscriptagraphs','Tristar','Fanatics','Steiner','Mounted','Memories',
+  // Hotel/venue brands that appear in event descriptions
+  'Ramada','Marriott','Hilton','Hyatt','Sheraton','Hampton','Doubletree',
+  'Holiday','Courtyard','Westin','Ritz','Carlton','Wyndham','Crowne','Plaza',
+  // Bookstores / generic venue names
+  'Harvard','Barnes','Noble','Amazon','Walmart','Target',
 ]);
 // Common English nouns/animals/adjectives that are never part of a person's name
 const NOT_A_NAME_WORD = new Set([
@@ -792,33 +798,35 @@ const NOT_A_NAME_WORD = new Set([
   'holiday','seasonal','corporate','charity','benefit','fundraiser',
 ]);
 
-function extractPlayerName(title, snippet) {
+// Returns all candidate person names from a text, in order of appearance.
+// Used by extractPlayerName (returns first) and the Wikipedia fallback loop.
+function extractCandidateNames(title, snippet) {
+  const candidates = [];
   for (let text of [title, snippet]) {
     if (!text) continue;
-    // Strip organizer/presenter prefixes like "Inscriptagraphs Presents: ..." or "X Presents ..."
+    // Strip organizer/presenter prefixes like "Inscriptagraphs Presents: ..."
     text = text.replace(/^[^:]+\bPresents?:?\s*/i, '');
-    // Also strip trailing context like "... at Venue Name" / "... in City"
+    // Strip trailing venue context like "... at Harvard Book Store" / "... in Las Vegas"
     text = text.replace(/\s+(at|in|@)\s+.+$/i, '');
-    // Look for "Firstname Lastname" (2-3 capitalized words, no digits)
     const matches = text.match(/\b([A-Z][a-zÀ-ÿ'\-]+(?:\s+[A-Z][a-zÀ-ÿ'\-]+){1,2})\b/g) || [];
     for (const m of matches) {
       if (/\d/.test(m)) continue;
-      // Reject if ends with punctuation/hyphen (e.g. "Meet-and-")
       if (/[-–—,;:!?]$/.test(m)) continue;
       const words = m.split(/\s+/);
       if (words.length < 2) continue;
       if (words.some(w => NAME_SKIP.has(w))) continue;
       if (words.some(w => NOT_A_NAME_WORD.has(w.toLowerCase()))) continue;
-      // Must look like a human name (not all-caps, not too short)
       if (words[0].length < 2 || words[1].length < 2) continue;
-      // Reject if all words are common English dictionary words (heuristic:
-      // real surnames are rarely also common 4-letter lowercase words)
       const allCommon = words.every(w => /^(meet|and|the|for|with|from|book|tour|talk|show|live|free|open|join|sign|sale|fair|fest|expo|camp|club|park|hall|home|room|shop|store|mall|fund|gala|bash|ball|gaze|high|main|back|side|top|pro|new|old|big|hot|red|blue|gold|star|safe|wild|city|town|farm|rock|lake|hill|bay|run|ride|day|night|week|time|work|play|art|pop|hip|hop|rap|dj|mc)$/i.test(w));
       if (allCommon) continue;
-      return m;
+      if (!candidates.includes(m)) candidates.push(m);
     }
   }
-  return null;
+  return candidates;
+}
+
+function extractPlayerName(title, snippet) {
+  return extractCandidateNames(title, snippet)[0] || null;
 }
 
 // ── WIKIPEDIA PUBLIC-FIGURE VERIFICATION ─────────────────────────────────────
@@ -987,12 +995,15 @@ function parseOrganic(data, lang) {
     const isOther  = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isWrestling && /gymnast|olympic|mlb|baseball|nhl|hockey|mma|ufc|boxing|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined);
     const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isWrestling && !isOther && /\bsoccer\b|futbol|calcio|fútbol|\bfootballer\b|calciatore|\bfoot\b|ligue|premier league|bundesliga|serie a|la liga|champions league|\bcopa\b|\bmls\b|\bfifa\b/.test(combined);
 
-    const playerName = extractPlayerName(res.title, res.snippet);
-    if (!playerName) continue; // skip events with no identifiable player name
-
-    // Verify via Wikipedia that this is a real public figure
-    const isKnownPlayer = await isKnownPublicFigure(playerName);
-    if (!isKnownPlayer) { console.log(`  [wiki-check] Skipping "${playerName}" — not a known public figure`); continue; }
+    // Try each candidate name until one passes Wikipedia verification
+    const nameCandidates = extractCandidateNames(res.title, res.snippet);
+    let playerName = null;
+    for (const candidate of nameCandidates) {
+      const isKnownPlayer = await isKnownPublicFigure(candidate);
+      if (isKnownPlayer) { playerName = candidate; break; }
+      console.log(`  [wiki-check] "${candidate}" failed — trying next candidate`);
+    }
+    if (!playerName) continue;
 
     const eventDate = guessDate(combined);
     if (!eventDate) continue; // skip events with no guessable date
