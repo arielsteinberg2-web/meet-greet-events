@@ -340,6 +340,157 @@ async function fetchCraveTheAuto() {
   return events;
 }
 
+// ── FITERMAN SPORTS DIRECT CRAWL ─────────────────────────────────────────────
+// Server-rendered HTML listing — event URLs encode the player slug.
+async function fetchFitermanSports() {
+  const events = [];
+  try {
+    const html = await fetchDirect('https://fitermansports.com/all-events/');
+    if (!html) { console.log('  Fiterman: failed'); return events; }
+
+    // Event links: /event/[slug]/ (may or may not have trailing slash)
+    const linkPat = /href="(https?:\/\/(?:www\.)?fitermansports\.com\/event\/([a-z0-9][a-z0-9-]+)\/?)" /gi;
+    const seen = new Set();
+    let m;
+    while ((m = linkPat.exec(html)) !== null) {
+      const [, link, slug] = m;
+      const canonical = link.replace(/\/?$/, '/');
+      if (seen.has(canonical)) continue;
+      seen.add(canonical);
+
+      // Derive player name from slug, stripping noise words
+      const NOISE = new Set(['signing','event','appearance','autograph','autographs','session','meet','greet','in','store','vip']);
+      const slugWords = slug.split('-').filter(w => !/^\d+$/.test(w) && !NOISE.has(w));
+      if (slugWords.length < 2) continue;
+      const player = slugWords.map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+      // Date: look at 400 chars of context around the link in the listing HTML
+      const idx = html.indexOf(link);
+      const context = html.slice(Math.max(0, idx - 400), idx + 400).toLowerCase().replace(/<[^>]+>/g, ' ');
+      const date = guessDate(context);
+      if (!date) continue;
+
+      const now = new Date(); now.setHours(0, 0, 0, 0);
+      if (new Date(date + 'T00:00:00') < now) continue;
+
+      events.push({
+        id:     `fiterman_${slug.replace(/-/g, '_')}`,
+        player,
+        sport:  'other',
+        date,
+        venue:  'Fiterman Sports',
+        city:   '',
+        link:   canonical,
+        notes:  '',
+        source: 'fitermansports.com',
+      });
+    }
+    console.log(`  Fiterman Sports: ${events.length} events found`);
+  } catch (e) {
+    console.log(`  Fiterman Sports: error — ${e.message}`);
+  }
+  return events;
+}
+
+// ── SHOPIFY COLLECTION CRAWL ──────────────────────────────────────────────────
+// Generic helper for Shopify-based signing stores (Hall of Fame Signings, TSE Buffalo).
+// Uses the /products.json endpoint for structured data.
+async function fetchShopifyCollection(collectionUrl, sourceLabel, siteBase, cityDefault = '') {
+  const events = [];
+  try {
+    const jsonUrl = `${collectionUrl}/products.json?limit=250`;
+    const raw = await fetchDirect(jsonUrl);
+    if (!raw) { console.log(`  ${sourceLabel}: failed`); return events; }
+
+    let data;
+    try { data = JSON.parse(raw); } catch { console.log(`  ${sourceLabel}: bad JSON`); return events; }
+
+    const now = new Date(); now.setHours(0, 0, 0, 0);
+    for (const product of (data.products || [])) {
+      const title   = product.title || '';
+      const handle  = product.handle || '';
+      const bodyText = (product.body_html || '').replace(/<[^>]+>/g, ' ');
+      const combined = (title + ' ' + bodyText).toLowerCase();
+
+      const date = guessDate(combined);
+      if (!date) continue;
+      if (new Date(date + 'T00:00:00') < now) continue;
+
+      const player = extractPlayerName(title, bodyText) || title;
+      if (!player || player === title) {
+        // title itself may be the best we can do — use it if it looks like a person
+        if (!/[A-Z][a-z]+ [A-Z][a-z]+/.test(title)) continue;
+      }
+
+      events.push({
+        id:     `${sourceLabel.replace(/[^a-z0-9]/gi, '_')}_${handle}`,
+        player: extractPlayerName(title, bodyText) || title,
+        sport:  'other',
+        date,
+        venue:  '',
+        city:   cityDefault,
+        link:   `${siteBase}/products/${handle}`,
+        notes:  title,
+        source: sourceLabel,
+      });
+    }
+    console.log(`  ${sourceLabel}: ${events.length} events found`);
+  } catch (e) {
+    console.log(`  ${sourceLabel}: error — ${e.message}`);
+  }
+  return events;
+}
+
+// ── AUTHENTIC AUTOGRAPHS (AU) DIRECT CRAWL ───────────────────────────────────
+// WordPress-based Australian signing site.
+async function fetchAuthenticAutographs() {
+  const events = [];
+  try {
+    const html = await fetchDirect('https://authentic-autographs.com.au/events-greets/');
+    if (!html) { console.log('  AuthenticAU: failed'); return events; }
+
+    const NOISE = new Set(['signing','event','appearance','autograph','autographs','meet','greet','and','with','in','store','vip','the','a']);
+    // WordPress event links under /events/ or /events-greets/
+    const linkPat = /href="(https?:\/\/authentic-autographs\.com\.au\/(?:events?\/|events-greets\/)([a-z0-9][a-z0-9-]+)\/?)" /gi;
+    const seen = new Set();
+    let m;
+    while ((m = linkPat.exec(html)) !== null) {
+      const [, link, slug] = m;
+      const canonical = link.replace(/\/?$/, '/');
+      if (seen.has(canonical)) continue;
+      seen.add(canonical);
+
+      const slugWords = slug.split('-').filter(w => !/^\d+$/.test(w) && !NOISE.has(w));
+      if (slugWords.length < 2) continue;
+      const player = slugWords.map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+      const idx = html.indexOf(link);
+      const context = html.slice(Math.max(0, idx - 400), idx + 400).toLowerCase().replace(/<[^>]+>/g, ' ');
+      const date = guessDate(context);
+      if (!date) continue;
+
+      const now = new Date(); now.setHours(0, 0, 0, 0);
+      if (new Date(date + 'T00:00:00') < now) continue;
+
+      events.push({
+        id:     `authau_${slug.replace(/-/g, '_')}`,
+        player,
+        sport:  'other',
+        date,
+        venue:  '',
+        city:   'Australia',
+        link:   canonical,
+        notes:  '',
+        source: 'authentic-autographs.com.au',
+      });
+    }
+    console.log(`  AuthenticAU: ${events.length} events found`);
+  } catch (e) {
+    console.log(`  AuthenticAU: error — ${e.message}`);
+  }
+  return events;
+}
+
 // Pick 3 players to search today based on day-of-year rotation
 const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
 const PLAYERS_TODAY = [0, 1, 2].map(offset =>
@@ -675,6 +826,40 @@ async function main() {
   const ctaEvents = await fetchCraveTheAuto();
   console.log(`CraveTheAuto direct: ${ctaEvents.length} events found`);
   results.push(...ctaEvents);
+
+  // Direct-crawl Fiterman Sports
+  console.log('Fetching Fiterman Sports events directly...');
+  const fitermanEvents = await fetchFitermanSports();
+  console.log(`Fiterman Sports: ${fitermanEvents.length} events found`);
+  results.push(...fitermanEvents);
+
+  // Direct-crawl Hall of Fame Signings (Shopify)
+  console.log('Fetching Hall of Fame Signings events directly...');
+  const hofEvents = await fetchShopifyCollection(
+    'https://halloffamesignings.com/collections/upcoming-signings',
+    'halloffamesignings.com',
+    'https://halloffamesignings.com',
+    ''
+  );
+  console.log(`Hall of Fame Signings: ${hofEvents.length} events found`);
+  results.push(...hofEvents);
+
+  // Direct-crawl TSE Buffalo (Shopify)
+  console.log('Fetching TSE Buffalo events directly...');
+  const tseEvents = await fetchShopifyCollection(
+    'https://tsebuffalo.com/collections/upcoming-buffalo-signings',
+    'tsebuffalo.com',
+    'https://tsebuffalo.com',
+    'Buffalo, NY'
+  );
+  console.log(`TSE Buffalo: ${tseEvents.length} events found`);
+  results.push(...tseEvents);
+
+  // Direct-crawl Authentic Autographs (AU, WordPress)
+  console.log('Fetching Authentic Autographs (AU) events directly...');
+  const authauEvents = await fetchAuthenticAutographs();
+  console.log(`Authentic Autographs AU: ${authauEvents.length} events found`);
+  results.push(...authauEvents);
 
   // Exa semantic search — catches events with unusual language keyword queries miss
   console.log('Running Exa semantic search...');
