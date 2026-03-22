@@ -772,6 +772,11 @@ const NAME_SKIP = new Set([
   'View','Post','Live','Register','Buy','Tickets','Photo','Only','Also',
   'Comic','Con','Convention','Appearances','Upcoming','Legends','Legend',
   'Sports','Athletes','Athlete','Players','Player','Stars','Guest','Guests',
+  // Countries, regions, generic wrestling/event words
+  'United','States','Japan','China','Mexico','Canada','England','Britain',
+  'America','Europe','Africa','Asia','Pacific','Latin','Kingdom',
+  'Tag','Team','Women','Reunion','Championship','Division','Showcase',
+  'Squared','Circle','Expo','Experience','Opportunity','General','Public',
 ]);
 function extractPlayerName(title, snippet) {
   for (const text of [title, snippet]) {
@@ -811,6 +816,12 @@ async function isKnownPublicFigure(name) {
     if (!r.ok) { WIKI_CACHE.set(name, false); return false; }
     const data = await r.json();
     if (data.type === 'disambiguation' || data.type === 'no-extract') { WIKI_CACHE.set(name, false); return false; }
+    // Reject articles about countries, cities, places, organizations, or concepts
+    if (/\b(country|sovereign state|nation|city|town|municipality|village|county|state|province|region|island|continent|ocean|river|mountain|organization|company|corporation|band|group|duo|trio|franchise|team)\b/i.test(data.extract || '')) {
+      WIKI_CACHE.set(name, false);
+      console.log(`  [wiki-check] "${name}" — Wikipedia article is a place/org/group, not a person`);
+      return false;
+    }
     const extract = (data.extract || '').toLowerCase();
     const result = NOTABLE_RE.test(extract);
     WIKI_CACHE.set(name, result);
