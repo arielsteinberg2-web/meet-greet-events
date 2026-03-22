@@ -409,7 +409,12 @@ async function fetchCraveTheAuto() {
         const clickHereMatch = pageHtml.match(/Verification link confirms[^<]*<a[^>]+href="(https?:\/\/[^"]+)"[^>]*>/i);
         const showLink = clickHereMatch ? clickHereMatch[1] : null;
 
-        const link = verifyLink || showLink || ctaUrl;
+        // Only keep events that have a real external deep link (not cravetheauto.com itself)
+        const link = verifyLink || showLink;
+        if (!link) {
+          console.log(`  CTA: skipping "${player}" — no external deep link found`);
+          continue;
+        }
         const sport = ctaDetectSport(rawTitle);
 
         events.push({
@@ -423,7 +428,7 @@ async function fetchCraveTheAuto() {
           notes:  rawTitle,
           source: 'cravetheauto.com',
         });
-        console.log(`  CTA: "${player}" [${sport}] → ${verifyLink ? 'verify✓' : showLink ? 'show✓' : 'cta'}`);
+        console.log(`  CTA: "${player}" [${sport}] → ${verifyLink ? 'verify✓' : 'show✓'} ${link}`);
       } catch (e) {
         console.log(`  CTA event error: ${e.message}`);
       }

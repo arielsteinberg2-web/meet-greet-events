@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-22T19:52:06.292Z",
-  "count": 52,
+  "generatedAt": "2026-03-22T20:14:09.121Z",
+  "count": 44,
   "events": [
     {
-      "id": "live_1774208470952_d1fee",
+      "id": "live_1774209855751_vy5op",
       "player": "Keswick Theatre",
       "sport": "other",
       "date": "2026-04-25",
@@ -14,7 +14,7 @@
       "source": "https://www.eventbrite.com › ... › Autograph Events"
     },
     {
-      "id": "live_1774208484490_4wd5z",
+      "id": "live_1774209860303_05n5t",
       "player": "Author Talk",
       "sport": "book",
       "date": "2026-04-18",
@@ -25,7 +25,7 @@
       "source": "https://www.eventbrite.com › author-talk-book-signing-..."
     },
     {
-      "id": "live_1774208489643_5ttbq",
+      "id": "live_1774209862574_lmjzd",
       "player": "Royalton Negril",
       "sport": "other",
       "date": "2026-08-24",
@@ -34,94 +34,6 @@
       "link": "https://www.hotels.com/ho619895/royalton-negril-resort-spa-all-inclusive-negril-jamaica/",
       "notes": "This property is closed from November 7 2025 to August 24 2026 (dates subject to change). ... Romario. Romario, 2-night trip. Verified. 10/10 Exceptional. Feb 2, ...",
       "source": "https://www.hotels.com › ... › Hanover › Negril Hotels"
-    },
-    {
-      "id": "cta_0322_dedham",
-      "player": "Chris Chelios",
-      "sport": "other",
-      "date": "2026-03-22",
-      "venue": "Holiday Inn (508)369-2471",
-      "city": "Dedham, MA, 02026",
-      "link": "https://www.cravetheauto.com/autograph-appearances/03/22/dedham",
-      "notes": "The Dedham Show | CHRIS CHELIOS - Hockey Hall of Famer &amp; DAVE CHRISTIAN 1980 USA Olympic Gold Medalist",
-      "source": "cravetheauto.com"
-    },
-    {
-      "id": "cta_0322_wade-boggs",
-      "player": "Wade Boggs",
-      "sport": "baseball",
-      "date": "2026-03-22",
-      "venue": "Walmart",
-      "city": "Clearwater, FL, 33765",
-      "link": "https://www.cravetheauto.com/autograph-appearances/03/22/wade-boggs",
-      "notes": "WADE BOGGS Boston Red Sox / Tampa Bay Rays - MLB Great",
-      "source": "cravetheauto.com"
-    },
-    {
-      "id": "cta_0328_nj-memorabilia-card-expo",
-      "player": "Benito Santiago, John Candelaria, Otto Velez, Ramon Martinez, Alvaro Espinoza & Duffy Dyer",
-      "sport": "baseball",
-      "date": "2026-03-28",
-      "venue": "Secaucus Recreation Center | realsignings@gmail.com",
-      "city": "Secaucus, NJ, 07094",
-      "link": "https://www.cravetheauto.com/autograph-appearances/03/28/nj-memorabilia-card-expo",
-      "notes": "NJ Memorabilia &amp; Card Expo | BENITO SANTIAGO, JOHN CANDELARIA, OTTO VELEZ, RAMON MARTINEZ, ALVARO ESPINOZA &amp; DUFFY DYER - MLB Greats",
-      "source": "cravetheauto.com"
-    },
-    {
-      "id": "cta_0328_bengals",
-      "player": "Boomer Esiason, Anthony Munoz & Chad Johnson",
-      "sport": "football",
-      "date": "2026-03-28",
-      "venue": "CEI Sports (513)489-3400",
-      "city": "Cincinnati, OH, 45242",
-      "link": "https://www.cravetheauto.com/autograph-appearances/03/28/bengals",
-      "notes": "BOOMER ESIASON, ANTHONY MUNOZ &amp; CHAD JOHNSON Cincinnati Bengals Greats",
-      "source": "cravetheauto.com"
-    },
-    {
-      "id": "cta_0404_marlborough-show",
-      "player": "Tully Banta-Cain",
-      "sport": "football",
-      "date": "2026-04-04",
-      "venue": "Solomon Pond Mall (508)369-2471",
-      "city": "Marlborough, MA, 01752",
-      "link": "https://www.cravetheauto.com/autograph-appearances/04/04/marlborough-show",
-      "notes": "Marlborough Show | TULLY BANTA-CAIN New England Patriots 2x SB Champ, DENNIS \"OIL CAN\" BOYD Boston Red Sox Great + KEN LINSEMAN &amp; BOBBY CARPENTER Former Boston Bruins",
-      "source": "cravetheauto.com"
-    },
-    {
-      "id": "cta_0411_randy-moss",
-      "player": "Randy Moss",
-      "sport": "football",
-      "date": "2026-04-11",
-      "venue": "Fan HQ - Ridgedale (952)545-6460",
-      "city": "Wayzata, MN, 55391",
-      "link": "https://www.cravetheauto.com/autograph-appearances/04/11/randy-moss",
-      "notes": "RANDY MOSS Minnesota Vikings Great",
-      "source": "cravetheauto.com"
-    },
-    {
-      "id": "cta_0412_john-bucyk",
-      "player": "John Bucyk",
-      "sport": "other",
-      "date": "2026-04-12",
-      "venue": "VFW Hall #8349 (508)265-4440",
-      "city": "Methuen, MA, 01844",
-      "link": "https://www.cravetheauto.com/autograph-appearances/04/12/john-bucyk",
-      "notes": "Methuen Cardshow | JOHN BUCYK Boston Bruins Great",
-      "source": "cravetheauto.com"
-    },
-    {
-      "id": "cta_0420_ryan-weathers",
-      "player": "Ryan Weathers",
-      "sport": "baseball",
-      "date": "2026-04-20",
-      "venue": "Santiago Sports",
-      "city": "Matawan, NJ, 07747",
-      "link": "https://www.cravetheauto.com/autograph-appearances/04/20/ryan-weathers",
-      "notes": "RYAN WEATHERS New York Yankees",
-      "source": "cravetheauto.com"
     },
     {
       "id": "fiterman_shawn_kemp_public_autograph_event_fiterman_sports_league_city_tx",
@@ -223,7 +135,7 @@
       "source": "tsebuffalo.com"
     },
     {
-      "id": "eb_1774209103805_3s4cl",
+      "id": "eb_1774210426015_nw31g",
       "player": "Inscriptagraphs Presents",
       "sport": "other",
       "date": "2026-03-28",
@@ -234,7 +146,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209103806_y34ta",
+      "id": "eb_1774210426015_kpdmo",
       "player": "Ben Kindel",
       "sport": "other",
       "date": "2026-03-27",
@@ -245,7 +157,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209103806_ujdg8",
+      "id": "eb_1774210426016_fkbn3",
       "player": "Ramada Inn",
       "sport": "other",
       "date": "2026-05-02",
@@ -256,7 +168,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209103806_kfjyx",
+      "id": "eb_1774210426016_nfyaa",
       "player": "Tag Team Women",
       "sport": "other",
       "date": "2026-03-27",
@@ -267,7 +179,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209103806_j277s",
+      "id": "eb_1774210426016_c77iq",
       "player": "Darcy Michael Book",
       "sport": "book",
       "date": "2026-04-17",
@@ -278,18 +190,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209103806_8po7c",
-      "player": "Bart Kuykens",
-      "sport": "book",
-      "date": "2026-03-26",
-      "venue": "Burdi Clothing Hinsdale",
-      "city": "Hinsdale",
-      "link": "https://www.eventbrite.com/e/burdi-book-signing-with-bart-kuykens-tickets-1982916474554",
-      "notes": "BURDI Book signing with Bart Kuykens",
-      "source": "eventbrite.com"
-    },
-    {
-      "id": "eb_1774209103806_aahdj",
+      "id": "eb_1774210426016_1g22a",
       "player": "Author Visit",
       "sport": "book",
       "date": "2026-03-27",
@@ -300,7 +201,18 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209103806_hc9oq",
+      "id": "eb_1774210426017_m62a3",
+      "player": "Bart Kuykens",
+      "sport": "book",
+      "date": "2026-03-26",
+      "venue": "Burdi Clothing Hinsdale",
+      "city": "Hinsdale",
+      "link": "https://www.eventbrite.com/e/burdi-book-signing-with-bart-kuykens-tickets-1982916474554",
+      "notes": "BURDI Book signing with Bart Kuykens",
+      "source": "eventbrite.com"
+    },
+    {
+      "id": "eb_1774210426017_8y0y8",
       "player": "Lauren Cardoso",
       "sport": "book",
       "date": "2026-04-04",
@@ -311,7 +223,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209103806_dwt23",
+      "id": "eb_1774210426017_mnu6q",
       "player": "Barry Foster",
       "sport": "other",
       "date": "2026-03-28",
@@ -322,7 +234,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209103806_cjue4",
+      "id": "eb_1774210426017_kj36c",
       "player": "Harvard Book Store",
       "sport": "book",
       "date": "2026-04-18",
@@ -333,7 +245,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209111092_knul1",
+      "id": "eb_1774210433363_ocye6",
       "player": "Kangaroo Meet-and-",
       "sport": "other",
       "date": "2026-04-02",
@@ -344,7 +256,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209111092_gnotq",
+      "id": "eb_1774210433363_6cpzj",
       "player": "Chiquita Scoops",
       "sport": "other",
       "date": "2026-03-28",
@@ -355,7 +267,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209111092_pv0mk",
+      "id": "eb_1774210433363_xvjlb",
       "player": "Christy Resmondo",
       "sport": "other",
       "date": "2026-03-28",
@@ -366,7 +278,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209111092_6ahln",
+      "id": "eb_1774210433363_dr8pg",
       "player": "Buffalo Student",
       "sport": "other",
       "date": "2026-04-07",
@@ -377,7 +289,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209111092_nqnub",
+      "id": "eb_1774210433363_hzyyq",
       "player": "We Lit",
       "sport": "other",
       "date": "2026-04-23",
@@ -388,7 +300,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209111092_r2l4u",
+      "id": "eb_1774210433363_6wev5",
       "player": "We Lit",
       "sport": "other",
       "date": "2026-04-18",
@@ -399,7 +311,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209111092_59jox",
+      "id": "eb_1774210433363_5s56q",
       "player": "Its Lit",
       "sport": "other",
       "date": "2026-03-27",
@@ -410,7 +322,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209111092_mthpn",
+      "id": "eb_1774210433363_jz2me",
       "player": "Its Lit",
       "sport": "other",
       "date": "2026-03-22",
@@ -421,7 +333,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209111092_p3mrp",
+      "id": "eb_1774210433363_6fve8",
       "player": "Pepper Gang",
       "sport": "other",
       "date": "2026-04-24",
@@ -432,7 +344,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209117653_zu5k8",
+      "id": "eb_1774210440518_ipx2x",
       "player": "United States",
       "sport": "other",
       "date": "2026-03-28",
@@ -443,7 +355,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209117653_siy5m",
+      "id": "eb_1774210440518_ynhlr",
       "player": "Dorsey Levens",
       "sport": "other",
       "date": "2026-03-28",
@@ -454,7 +366,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209117653_nclru",
+      "id": "eb_1774210440518_cbpa0",
       "player": "We Lit",
       "sport": "other",
       "date": "2026-04-09",
@@ -465,7 +377,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209124257_4f6kz",
+      "id": "eb_1774210447076_blzby",
       "player": "Vonetta Reeves'  Book",
       "sport": "book",
       "date": "2026-05-14",
@@ -476,7 +388,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209124257_88puf",
+      "id": "eb_1774210447076_rtznz",
       "player": "Millionaire's Club Book",
       "sport": "book",
       "date": "2026-04-03",
@@ -487,7 +399,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209124257_qbgrv",
+      "id": "eb_1774210447076_vekrn",
       "player": "Author Talk",
       "sport": "book",
       "date": "2026-03-25",
@@ -498,7 +410,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209124257_8u1b8",
+      "id": "eb_1774210447076_ihtfr",
       "player": "Experience\nHosted",
       "sport": "book",
       "date": "2026-03-27",
@@ -509,7 +421,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209124257_5s19m",
+      "id": "eb_1774210447076_izz95",
       "player": "Single Soiree",
       "sport": "book",
       "date": "2026-03-22",
@@ -520,7 +432,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209124257_cwpnx",
+      "id": "eb_1774210447076_rj6hl",
       "player": "Poetry Open Mic",
       "sport": "book",
       "date": "2026-04-11",
@@ -531,7 +443,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209124257_qe4i6",
+      "id": "eb_1774210447076_ihfug",
       "player": "Personal Life",
       "sport": "book",
       "date": "2026-04-10",
@@ -542,7 +454,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209124257_xalq1",
+      "id": "eb_1774210447076_13032",
       "player": "Making Money Being",
       "sport": "book",
       "date": "2026-03-22",
@@ -553,7 +465,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209124257_eg6e7",
+      "id": "eb_1774210447076_qfemc",
       "player": "Fill Me Up",
       "sport": "book",
       "date": "2026-06-06",
@@ -564,7 +476,7 @@
       "source": "eventbrite.com"
     },
     {
-      "id": "eb_1774209124257_fyupo",
+      "id": "eb_1774210447076_jjy50",
       "player": "Apostle Isaac",
       "sport": "book",
       "date": "2026-03-28",
