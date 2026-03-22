@@ -64,6 +64,7 @@ const ALL_QUERIES = [
   { q: 'site:sportscollectors.net signing appearance athlete 2026',            lang: 'en' },
   { q: 'site:legends7.co.uk evening dinner meet greet athlete 2026',          lang: 'en' },
   { q: 'site:authentic-autographs.com.au meet greet athlete signing 2026',    lang: 'en' },
+  { q: 'site:store.epic.leapevent.tech autograph signing meet greet athlete', lang: 'en' },
   // ── UK event organizers ──
   { q: 'site:superstarspeakers.co.uk evening meet greet autograph 2026',      lang: 'en' },
   { q: 'site:greenmountevents.co.uk signing meet greet autograph 2026',       lang: 'en' },
@@ -928,6 +929,117 @@ function parseOrganic(data, lang) {
 }
 
 
+// ── EPIC / LEAP EVENT TECHNOLOGY DIRECT CRAWL ────────────────────────────────
+// https://store.epic.leapevent.tech/ — multi-tenant convention platform
+// /api/conventions → JSON with fields: name (slug), year, title, beginUtc, isPast,
+//   location.{city,province,venue}
+// Each convention page (JS-rendered) has talent cards:
+//   <a href="/{slug}/{year}/{talent-slug}">…<h2 class="…ProductTitle…">Name</h2>…</a>
+async function fetchEpicEvents() {
+  if (!SCRAPER_KEY) { console.log('  Epic/Leap: no ScraperAPI key, skipping.'); return []; }
+  const events = [];
+  const now = new Date(); now.setHours(0, 0, 0, 0);
+
+  // Keywords in convention title/name that indicate sports/athlete content
+  const SPORTS_RE = /wwe|wrestling|wrestlemania|nba|nfl|mlb|nhl|mma|ufc|boxing|sport|athlete|autograph|lids|card.?show|megacon|fan.?expo|comic.?con/i;
+
+  try {
+    // Step 1 — get all conventions from the public JSON API
+    const ctrl0 = new AbortController();
+    const t0 = setTimeout(() => ctrl0.abort(), 15000);
+    const r0 = await fetch('https://store.epic.leapevent.tech/api/conventions', { signal: ctrl0.signal });
+    clearTimeout(t0);
+    if (!r0.ok) { console.log(`  Epic/Leap: API HTTP ${r0.status}`); return []; }
+    const conventions = await r0.json();
+    if (!Array.isArray(conventions)) { console.log('  Epic/Leap: unexpected API shape'); return []; }
+    console.log(`  Epic/Leap: ${conventions.length} total conventions in API`);
+
+    // Step 2 — filter for sports-relevant non-past conventions (use API's isPast flag)
+    const relevant = conventions.filter(c => {
+      if (c.isPast) return false;
+      return SPORTS_RE.test(c.title || '') || SPORTS_RE.test(c.name || '');
+    });
+    console.log(`  Epic/Leap: ${relevant.length} sports-relevant upcoming/current conventions`);
+
+    // Step 3 — scrape each relevant convention page for talent cards
+    for (const conv of relevant) {
+      const slug = conv.name || '';
+      const year = conv.year || new Date().getFullYear();
+      if (!slug) continue;
+
+      const convUrl = `https://store.epic.leapevent.tech/${slug}/${year}`;
+      console.log(`  Epic/Leap: scraping ${convUrl}`);
+
+      const html = await fetchRendered(convUrl, 90000);
+      if (!html) { console.log(`  Epic/Leap: failed to render ${convUrl}`); continue; }
+
+      // Convention dates from API
+      const convDate    = conv.beginUtc ? conv.beginUtc.slice(0, 10) : null;
+      const convEndDate = conv.endUtc   ? conv.endUtc.slice(0, 10)   : convDate;
+
+      // Location from nested location object
+      const loc   = conv.location || {};
+      const venue = loc.venue || '';
+      const city  = [loc.city, loc.province].filter(Boolean).join(', ');
+
+      // Sport classification from convention title
+      const convTitle = (conv.title || conv.name || '').toLowerCase();
+      const sport = /wwe|wrestling|ufc|mma|boxing/.test(convTitle) ? 'other'
+        : /nba|basketball/.test(convTitle) ? 'basketball'
+        : 'other';
+
+      // Step 4 — extract (link, name) talent pairs from rendered HTML
+      // Pattern: anchor matching /{slug}/{year}/{talent-slug}, followed within
+      //   3000 chars by <h2 class="...ProductTitle...">Talent Name</h2>
+      const cardRe = new RegExp(
+        `href="(\\/${slug}\\/${year}\\/([^/"?#]+))"[\\s\\S]{0,3000}?<h2[^>]*ProductTitle[^>]*>([^<]+)<\\/h2>`,
+        'gi'
+      );
+      const seen = new Set();
+      let m;
+      let convEventCount = 0;
+      while ((m = cardRe.exec(html)) !== null) {
+        const [, href, talentSlug, rawName] = m;
+        if (seen.has(talentSlug)) continue;
+        seen.add(talentSlug);
+
+        const talentName = rawName.trim();
+        if (!talentName || talentName.length < 3) continue;
+
+        // Skip non-person product entries
+        if (/photo op|panel|combo|print|package|general admission|group shot|\bvip\b/i.test(talentName)) continue;
+
+        const link = `https://store.epic.leapevent.tech${href}`;
+
+        // Use start date for display; check end date to avoid excluding multi-day events
+        let date = convDate || guessDate(html.toLowerCase().slice(0, 5000));
+        if (!date) continue;
+        // Skip if the entire convention has ended (compare end date, not start date)
+        const endCheck = convEndDate || date;
+        if (new Date(endCheck + 'T00:00:00') < now) continue;
+
+        events.push({
+          id:     `epic_${slug}_${talentSlug}`,
+          player: talentName,
+          sport,
+          date,
+          venue,
+          city,
+          link,
+          notes:  `${conv.title || slug} — meet & greet / autograph signing`,
+          source: 'store.epic.leapevent.tech',
+        });
+        convEventCount++;
+      }
+      console.log(`  Epic/Leap ${slug}: ${seen.size} talent cards → ${convEventCount} events`);
+      await new Promise(r => setTimeout(r, 2000));
+    }
+  } catch (e) {
+    console.log(`  Epic/Leap: error — ${e.message}`);
+  }
+  return events;
+}
+
 // ── MAIN ─────────────────────────────────────────────────────────────────────
 async function main() {
   console.log(`Starting update — ${new Date().toISOString()}`);
@@ -1026,6 +1138,12 @@ async function main() {
   const ebEvents = await fetchEventbriteEvents();
   console.log(`Eventbrite: ${ebEvents.length} events found`);
   results.push(...ebEvents);
+
+  // Direct-crawl Epic / Leap Event Technology (store.epic.leapevent.tech)
+  console.log('Fetching Epic/Leap Event Technology events directly...');
+  const epicEvents = await fetchEpicEvents();
+  console.log(`Epic/Leap: ${epicEvents.length} events found`);
+  results.push(...epicEvents);
 
   // De-duplicate by link
   const seen   = new Set();
