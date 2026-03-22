@@ -99,6 +99,11 @@ const ALL_QUERIES = [
   // ── Latin America — Portuguese (Brazil) ──
   { q: 'sessão autógrafos jogador futebol brasil evento 2026',                lang: 'pt' },
   { q: 'encontro fãs jogador futebol meet and greet brasil 2026',             lang: 'pt' },
+  // ── Club fan tours — catch official club-run fan experiences (e.g. Casa Atleti) ──
+  { q: 'LaLiga club fan tour USA meet greet fan experience 2026',              lang: 'en' },
+  { q: 'soccer club fan weekend USA meet legends VIP experience 2026',         lang: 'en' },
+  { q: 'Atletico Madrid Barcelona Real Madrid fan event meet greet USA 2026',  lang: 'en' },
+  { q: 'Premier League club fan tour USA meet greet event 2026',               lang: 'en' },
   // ── Talks venues ──
   { q: 'site:92ny.org famous celebrity athlete speaker event 2026',           lang: 'en' },
   { q: 'site:sixthandi.org famous celebrity politician speaker event 2026',   lang: 'en' },
@@ -159,6 +164,19 @@ const INSTAGRAM_ACCOUNTS = [
   'cardcracktcg',
   'casportsmarketing',
   'sportcoa_memorabilia',
+  // ── Club fan tours (official club accounts that run USA/international fan events) ──
+  'atleticodemadrid',
+  'fcbarcelona',
+  'realmadrid',
+  'acmilan',
+  'juventus',
+  'inter',
+  'manchestercity',
+  'manchesterunited',
+  'arsenal',
+  'chelseafc',
+  'liverpoolfc',
+  'psg',
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
