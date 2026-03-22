@@ -1,43 +1,7 @@
 {
   "generatedAt": "2026-03-22T20:14:09.121Z",
-  "count": 44,
+  "count": 22,
   "events": [
-    {
-      "id": "live_1774209855751_vy5op",
-      "player": "Keswick Theatre",
-      "sport": "other",
-      "date": "2026-04-25",
-      "venue": "",
-      "city": "",
-      "link": "https://www.eventbrite.com/d/pa--philadelphia/autograph/",
-      "notes": "Autograph Events and Things to do in Philadelphia, PA ; APRIL 25, 2026 MEET & GREET PHILADELPHIA 10-1PM. Sat, Apr 25 • 10:00 AM. Weldon · Keswick Theatre.",
-      "source": "https://www.eventbrite.com › ... › Autograph Events",
-      "addedAt": "2026-03-22"
-    },
-    {
-      "id": "live_1774209860303_05n5t",
-      "player": "Author Talk",
-      "sport": "book",
-      "date": "2026-04-18",
-      "venue": "",
-      "city": "",
-      "link": "https://www.eventbrite.com/e/author-talk-book-signing-with-linda-hansen-at-novel-in-the-neighborhood-tickets-1982716750173",
-      "notes": "Eventbrite - Novel in the Neighborhood presents Author Talk + Book Signing with Linda Hansen at Novel in the Neighborhood - Saturday, April 18, 2026 at 8507 ...",
-      "source": "https://www.eventbrite.com › author-talk-book-signing-...",
-      "addedAt": "2026-03-22"
-    },
-    {
-      "id": "live_1774209862574_lmjzd",
-      "player": "Royalton Negril",
-      "sport": "other",
-      "date": "2026-08-24",
-      "venue": "",
-      "city": "",
-      "link": "https://www.hotels.com/ho619895/royalton-negril-resort-spa-all-inclusive-negril-jamaica/",
-      "notes": "This property is closed from November 7 2025 to August 24 2026 (dates subject to change). ... Romario. Romario, 2-night trip. Verified. 10/10 Exceptional. Feb 2, ...",
-      "source": "https://www.hotels.com › ... › Hanover › Negril Hotels",
-      "addedAt": "2026-03-22"
-    },
     {
       "id": "fiterman_shawn_kemp_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Shawn Kemp",
@@ -136,8 +100,8 @@
     },
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-christian-benford",
-      "player": "Yours Signed",
-      "sport": "other",
+      "player": "Christian Benford",
+      "sport": "football",
       "date": "2026-04-25",
       "venue": "The Admirals Cup",
       "city": "Buffalo, NY",
@@ -301,6 +265,6 @@
       "notes": "Meet and greet with Dorsey Levens",
       "source": "eventbrite.com",
       "addedAt": "2026-03-22"
-    },
+    }
   ]
 }
