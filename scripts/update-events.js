@@ -338,8 +338,8 @@ function ctaPlayerFromTitle(rawTitle) {
 async function fetchCraveTheAuto() {
   const events = [];
   try {
-    // Fetch listing page — need render=true since Squarespace is JS-rendered
-    const listingHtml = await fetchRendered('https://www.cravetheauto.com/autograph-appearances');
+    // Fetch listing page — need render=true since Squarespace is JS-rendered (can be slow)
+    const listingHtml = await fetchRendered('https://www.cravetheauto.com/autograph-appearances', 90000);
     if (!listingHtml) { console.log('  CraveTheAuto: listing page failed'); return events; }
 
     // Extract event entries from summary-title-link anchors (short-slug format)
@@ -648,9 +648,11 @@ async function fetchEventbriteEvents() {
       while ((m = ldPat.exec(html)) !== null) {
         let ld;
         try { ld = JSON.parse(m[1]); } catch { continue; }
-        const items = ld['@type'] === 'ItemList'
-          ? (ld.itemListElement || []).map(i => i.item || i)
+        if (!ld || typeof ld !== 'object') continue;
+        const rawItems = Array.isArray(ld) ? ld
+          : ld['@type'] === 'ItemList' ? (ld.itemListElement || []).map(i => i?.item || i)
           : [ld];
+        const items = rawItems.filter(Boolean);
         for (const ev of items) {
           if (ev['@type'] !== 'Event') continue;
           const name      = ev.name || '';
