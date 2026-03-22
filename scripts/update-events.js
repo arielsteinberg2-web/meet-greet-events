@@ -340,47 +340,70 @@ async function fetchCraveTheAuto() {
   return events;
 }
 
+// ── DATE GUESSER (no year required) ──────────────────────────────────────────
+// Like guessDate() but also matches "April 25th" without a year (assumes current year).
+function guessDateApprox(t) {
+  const d = guessDate(t);
+  if (d) return d;
+  const m2 = {
+    january:'01',february:'02',march:'03',april:'04',may:'05',june:'06',
+    july:'07',august:'08',september:'09',october:'10',november:'11',december:'12',
+  };
+  for (const [n, v] of Object.entries(m2)) {
+    const x = t.match(new RegExp(n + '\\s+(\\d{1,2})(?:st|nd|rd|th)?\\b'));
+    if (x) return `${new Date().getFullYear()}-${v}-${x[1].padStart(2,'0')}`;
+  }
+  return null;
+}
+
 // ── FITERMAN SPORTS DIRECT CRAWL ─────────────────────────────────────────────
-// Server-rendered HTML listing — event URLs encode the player slug.
+// Server-rendered HTML listing using My Events Plugin (MEP) WordPress plugin.
+// Date is in .mep-day / .mep-month divs; title is in .mep_list_title h5.
 async function fetchFitermanSports() {
   const events = [];
   try {
     const html = await fetchDirect('https://fitermansports.com/all-events/');
     if (!html) { console.log('  Fiterman: failed'); return events; }
 
-    // Event links: /event/[slug]/ (may or may not have trailing slash)
-    const linkPat = /href="(https?:\/\/(?:www\.)?fitermansports\.com\/event\/([a-z0-9][a-z0-9-]+)\/?)" /gi;
+    // Match each event card: mep-day + mep-month → link → title
+    const cardPat = /class="mep-day">(\d+)<\/div>\s*<div[^>]*class="mep-month">(\w+)<\/div>[\s\S]{0,700}?href="(https?:\/\/fitermansports\.com\/event\/[^"]+)"[\s\S]{0,400}?mep_list_title[^>]*>([^<]+)/gi;
     const seen = new Set();
+    const months = { jan:'01',feb:'02',mar:'03',apr:'04',may:'05',jun:'06',
+                     jul:'07',aug:'08',sep:'09',oct:'10',nov:'11',dec:'12' };
+    const now = new Date(); now.setHours(0, 0, 0, 0);
     let m;
-    while ((m = linkPat.exec(html)) !== null) {
-      const [, link, slug] = m;
-      const canonical = link.replace(/\/?$/, '/');
-      if (seen.has(canonical)) continue;
-      seen.add(canonical);
+    while ((m = cardPat.exec(html)) !== null) {
+      const [, day, monthAbbr, link, rawTitle] = m;
+      if (seen.has(link)) continue;
+      seen.add(link);
 
-      // Derive player name from slug, stripping noise words
-      const NOISE = new Set(['signing','event','appearance','autograph','autographs','session','meet','greet','in','store','vip']);
-      const slugWords = slug.split('-').filter(w => !/^\d+$/.test(w) && !NOISE.has(w));
-      if (slugWords.length < 2) continue;
-      const player = slugWords.map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      // Skip mail-in-only or all-year-around placeholder events
+      if (/mail.?in.?only|all.?year.?around/i.test(link)) continue;
 
-      // Date: look at 400 chars of context around the link in the listing HTML
-      const idx = html.indexOf(link);
-      const context = html.slice(Math.max(0, idx - 400), idx + 400).toLowerCase().replace(/<[^>]+>/g, ' ');
-      const date = guessDate(context);
-      if (!date) continue;
-
-      const now = new Date(); now.setHours(0, 0, 0, 0);
+      const mo = months[monthAbbr.toLowerCase().slice(0,3)];
+      if (!mo) continue;
+      const year = now.getFullYear();
+      const date = `${year}-${mo}-${day.padStart(2,'0')}`;
       if (new Date(date + 'T00:00:00') < now) continue;
 
+      // Title: "Shawn Kemp (PUBLIC AUTOGRAPH EVENT) Fiterman Sports – League City, TX"
+      // Extract player name = text before first "(" or "–"
+      const playerRaw = rawTitle.replace(/&[a-z]+;/gi, ' ').split(/[\(–]/)[0].trim();
+      if (!playerRaw || playerRaw.split(' ').length < 2) continue;
+
+      // Derive city from the end of title (after last comma or "–")
+      const cityMatch = rawTitle.match(/[–-]\s*([^,(–]+(?:,\s*[A-Z]{2})?)[\s.]*$/);
+      const city = cityMatch ? cityMatch[1].trim().replace(/&[a-z]+;/gi,'') : '';
+
+      const slug = link.replace(/.*\/event\//, '').replace(/\/$/, '');
       events.push({
         id:     `fiterman_${slug.replace(/-/g, '_')}`,
-        player,
+        player: playerRaw,
         sport:  'other',
         date,
         venue:  'Fiterman Sports',
-        city:   '',
-        link:   canonical,
+        city,
+        link,
         notes:  '',
         source: 'fitermansports.com',
       });
@@ -392,51 +415,58 @@ async function fetchFitermanSports() {
   return events;
 }
 
-// ── SHOPIFY COLLECTION CRAWL ──────────────────────────────────────────────────
-// Generic helper for Shopify-based signing stores (Hall of Fame Signings, TSE Buffalo).
-// Uses the /products.json endpoint for structured data.
-async function fetchShopifyCollection(collectionUrl, sourceLabel, siteBase, cityDefault = '') {
+// ── TSE BUFFALO DIRECT CRAWL ──────────────────────────────────────────────────
+// TSE Buffalo Shopify store — only "AUTOGRAPH TICKET:" products are live signings.
+// Dates are in body_html without year ("April 25th"), so uses guessDateApprox().
+// Multiple products per player → deduplicated by player name.
+async function fetchTSEBuffalo() {
   const events = [];
   try {
-    const jsonUrl = `${collectionUrl}/products.json?limit=250`;
-    const raw = await fetchDirect(jsonUrl);
-    if (!raw) { console.log(`  ${sourceLabel}: failed`); return events; }
+    const raw = await fetchDirect('https://tsebuffalo.com/collections/upcoming-buffalo-signings/products.json?limit=250');
+    if (!raw) { console.log('  TSE Buffalo: failed'); return events; }
 
     let data;
-    try { data = JSON.parse(raw); } catch { console.log(`  ${sourceLabel}: bad JSON`); return events; }
+    try { data = JSON.parse(raw); } catch { console.log('  TSE Buffalo: bad JSON'); return events; }
 
     const now = new Date(); now.setHours(0, 0, 0, 0);
+    const seenPlayers = new Set();
     for (const product of (data.products || [])) {
-      const title   = product.title || '';
-      const handle  = product.handle || '';
+      const title = product.title || '';
+      // Only in-person signing tickets (skip mail-in, presale memorabilia)
+      if (!/^AUTOGRAPH TICKET:/i.test(title)) continue;
+
+      const handle   = product.handle || '';
       const bodyText = (product.body_html || '').replace(/<[^>]+>/g, ' ');
       const combined = (title + ' ' + bodyText).toLowerCase();
 
-      const date = guessDate(combined);
+      const date = guessDateApprox(combined);
       if (!date) continue;
       if (new Date(date + 'T00:00:00') < now) continue;
 
-      const player = extractPlayerName(title, bodyText) || title;
-      if (!player || player === title) {
-        // title itself may be the best we can do — use it if it looks like a person
-        if (!/[A-Z][a-z]+ [A-Z][a-z]+/.test(title)) continue;
-      }
+      const player = extractPlayerName(title, bodyText);
+      if (!player) continue;
+      if (seenPlayers.has(player)) continue;
+      seenPlayers.add(player);
+
+      // Venue: look for venue name in body text after "THIS SIGNING WILL BE HELD AT:"
+      const venueMatch = bodyText.match(/held at[:\s]+([^\n<]{4,60})/i);
+      const venue = venueMatch ? venueMatch[1].trim().replace(/\s+/g, ' ') : '';
 
       events.push({
-        id:     `${sourceLabel.replace(/[^a-z0-9]/gi, '_')}_${handle}`,
-        player: extractPlayerName(title, bodyText) || title,
+        id:     `tse_${handle}`,
+        player,
         sport:  'other',
         date,
-        venue:  '',
-        city:   cityDefault,
-        link:   `${siteBase}/products/${handle}`,
+        venue,
+        city:   'Buffalo, NY',
+        link:   `https://tsebuffalo.com/products/${handle}`,
         notes:  title,
-        source: sourceLabel,
+        source: 'tsebuffalo.com',
       });
     }
-    console.log(`  ${sourceLabel}: ${events.length} events found`);
+    console.log(`  TSE Buffalo: ${events.length} events found`);
   } catch (e) {
-    console.log(`  ${sourceLabel}: error — ${e.message}`);
+    console.log(`  TSE Buffalo: error — ${e.message}`);
   }
   return events;
 }
@@ -451,7 +481,7 @@ async function fetchAuthenticAutographs() {
 
     const NOISE = new Set(['signing','event','appearance','autograph','autographs','meet','greet','and','with','in','store','vip','the','a']);
     // WordPress event links under /events/ or /events-greets/
-    const linkPat = /href="(https?:\/\/authentic-autographs\.com\.au\/(?:events?\/|events-greets\/)([a-z0-9][a-z0-9-]+)\/?)" /gi;
+    const linkPat = /href="(https?:\/\/authentic-autographs\.com\.au\/(?:events?\/|events-greets\/)([a-z0-9][a-z0-9-]+)\/?)"[^>]*/gi;
     const seen = new Set();
     let m;
     while ((m = linkPat.exec(html)) !== null) {
@@ -833,25 +863,9 @@ async function main() {
   console.log(`Fiterman Sports: ${fitermanEvents.length} events found`);
   results.push(...fitermanEvents);
 
-  // Direct-crawl Hall of Fame Signings (Shopify)
-  console.log('Fetching Hall of Fame Signings events directly...');
-  const hofEvents = await fetchShopifyCollection(
-    'https://halloffamesignings.com/collections/upcoming-signings',
-    'halloffamesignings.com',
-    'https://halloffamesignings.com',
-    ''
-  );
-  console.log(`Hall of Fame Signings: ${hofEvents.length} events found`);
-  results.push(...hofEvents);
-
-  // Direct-crawl TSE Buffalo (Shopify)
+  // Direct-crawl TSE Buffalo (Shopify — AUTOGRAPH TICKET products only)
   console.log('Fetching TSE Buffalo events directly...');
-  const tseEvents = await fetchShopifyCollection(
-    'https://tsebuffalo.com/collections/upcoming-buffalo-signings',
-    'tsebuffalo.com',
-    'https://tsebuffalo.com',
-    'Buffalo, NY'
-  );
+  const tseEvents = await fetchTSEBuffalo();
   console.log(`TSE Buffalo: ${tseEvents.length} events found`);
   results.push(...tseEvents);
 
