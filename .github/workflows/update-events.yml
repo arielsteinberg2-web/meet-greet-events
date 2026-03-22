@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Auto-remove past seeds
+        run: node scripts/clean-seeds.js
+
       - name: Validate seed dates (fail if any seeds are in the past)
         run: node scripts/validate-seeds.js
 
