@@ -368,7 +368,7 @@ async function fetchCraveTheAuto() {
     // Fetch each event page for full details
     for (const { ctaUrl, month, day, date } of toFetch) {
       try {
-        const pageHtml = await fetchRendered(ctaUrl);
+        const pageHtml = await fetchRendered(ctaUrl, 90000);
         const slug = ctaUrl.split('/').pop();
 
         if (!pageHtml) {
@@ -650,9 +650,9 @@ async function fetchEventbriteEvents() {
         try { ld = JSON.parse(m[1]); } catch { continue; }
         if (!ld || typeof ld !== 'object') continue;
         const rawItems = Array.isArray(ld) ? ld
-          : ld['@type'] === 'ItemList' ? (ld.itemListElement || []).map(i => i?.item || i)
+          : ld['@type'] === 'ItemList' ? (Array.isArray(ld.itemListElement) ? ld.itemListElement : []).map(i => i?.item || i)
           : [ld];
-        const items = rawItems.filter(Boolean);
+        const items = Array.isArray(rawItems) ? rawItems.filter(Boolean) : [];
         for (const ev of items) {
           if (ev['@type'] !== 'Event') continue;
           const name      = ev.name || '';
@@ -754,7 +754,8 @@ function extractPlayerName(title, snippet) {
     const matches = text.match(/\b([A-Z][a-zÀ-ÿ'\-]+(?:\s+[A-Z][a-zÀ-ÿ'\-]+){1,2})\b/g) || [];
     for (const m of matches) {
       if (/\d/.test(m)) continue;
-      const words = m.split(' ');
+      const words = m.split(/\s+/);
+      if (words.length < 2) continue;
       if (words.some(w => NAME_SKIP.has(w))) continue;
       // Must look like a human name (not all-caps, not too short)
       if (words[0].length < 2 || words[1].length < 2) continue;
