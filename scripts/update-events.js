@@ -112,7 +112,9 @@ const ALL_QUERIES = [
   { q: 'Atletico Madrid Barcelona Real Madrid fan event meet greet USA 2026',  lang: 'en' },
   { q: 'Premier League club fan tour USA meet greet event 2026',               lang: 'en' },
   // ── Talks venues ──
-  { q: 'site:92ny.org famous celebrity athlete speaker event 2026',           lang: 'en' },
+  { q: 'site:92ny.org "in conversation" OR "an evening with" 2026',           lang: 'en' },
+  { q: 'site:92ny.org celebrity actor musician athlete author 2026',           lang: 'en' },
+  { q: '92ny.org event celebrity famous actor musician athlete 2026',          lang: 'en' },
   { q: 'site:sixthandi.org famous celebrity politician speaker event 2026',   lang: 'en' },
   { q: 'university commencement speaker 2026 celebrity athlete famous',       lang: 'en' },
   { q: 'commencement speaker 2026 announced famous celebrity',                lang: 'en' },
@@ -975,8 +977,12 @@ function parseOrganic(data, lang) {
     if (!combined.includes('2026')) continue;
     if (!res.link) continue;
     if (/mail-?in signing|ship your|private signing/.test(combined)) continue;
-    // Skip pure talk/interview events with no fan M&G component
-    if (/in conversation with|in conversation:|a conversation with|talks? with|interview with|evening with.*broadway|broadway.*in conversation/.test(combined)
+
+    // Talk venues — include as noMG:true talk events even without M&G keywords
+    const isTalkVenue = /92ny\.org|sixthandi\.org|streicker\.nyc/.test(res.link);
+
+    // Skip pure talk/interview events with no fan M&G component (unless from a talk venue)
+    if (!isTalkVenue && /in conversation with|in conversation:|a conversation with|talks? with|interview with|evening with.*broadway|broadway.*in conversation/.test(combined)
         && !/meet.?greet|autograph|signing|fan event|vip meet/.test(combined)) continue;
 
     // ── DOMAIN BLOCKLIST — known past/irrelevant events ───────────────────────
@@ -1011,13 +1017,14 @@ function parseOrganic(data, lang) {
     // Skip generic CraveTheAuto listing pages — seeds already cover these with deep links
     if (/cravetheauto\.com\/autograph-appearances\/?$/.test(res.link)) continue;
 
+    const talkVenueNames = { '92ny.org': '92NY (92nd Street Y)', 'sixthandi.org': 'Sixth & I', 'streicker.nyc': 'Streicker Center' };
+    const talkVenueKey = Object.keys(talkVenueNames).find(k => res.link.includes(k));
     out.push({
       id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
       player: playerName,
-      sport:  isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isNFL ? 'football' : isWrestling ? 'wrestling' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
+      sport:  isTalkVenue ? 'talk' : isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isNFL ? 'football' : isWrestling ? 'wrestling' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
+      ...(isTalkVenue && { noMG: true, venue: talkVenueNames[talkVenueKey] || '', city: 'New York, NY 🇺🇸' }),
       date:   eventDate,
-      venue:  '',
-      city:   '',
       link:   res.link,
       notes:  (res.snippet || '').substring(0, 200) + (lang !== 'en' ? ` [${LANG_NAMES[lang] || lang}]` : ''),
       source: res.displayed_link || 'Web search',
