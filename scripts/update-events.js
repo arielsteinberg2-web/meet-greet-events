@@ -19,6 +19,8 @@ const API_KEY_2     = process.env.SERPAPI_KEY_2;
 const API_KEY_3     = process.env.SERPAPI_KEY_3;
 const API_KEY_4     = process.env.SERPAPI_KEY_4;
 const API_KEY_5     = process.env.SERPAPI_KEY_5;
+const API_KEY_6     = process.env.SERPAPI_KEY_6;
+const API_KEY_7     = process.env.SERPAPI_KEY_7;
 const SERPER_KEY    = process.env.SERPER_KEY;      // optional — Google Search via serper.dev
 const SERPER_KEY2   = process.env.SERPER_KEY_2;   // optional — second Serper key
 const SEARCHAPI_KEY = process.env.SEARCHAPI_KEY;  // optional — Google Search via searchapi.io
@@ -1156,39 +1158,45 @@ async function main() {
 
   const results = [];
 
-  // 8-way split: SerpAPI KEY_1 → KEY_2 → KEY_3 → KEY_4 → KEY_5 → Serper KEY_1 → Serper KEY_2 → SearchApi
+  // 10-way split: SerpAPI KEY_1–7 → Serper KEY_1–2 → SearchApi
   const Q = QUERIES.length;
-  const SPLIT1 = Math.ceil(Q / 8);
-  const SPLIT2 = Math.ceil(Q * 2 / 8);
-  const SPLIT3 = Math.ceil(Q * 3 / 8);
-  const SPLIT4 = Math.ceil(Q * 4 / 8);
-  const SPLIT5 = Math.ceil(Q * 5 / 8);
-  const SPLIT6 = Math.ceil(Q * 6 / 8);
-  const SPLIT7 = Math.ceil(Q * 7 / 8);
+  const SPLIT1 = Math.ceil(Q / 10);
+  const SPLIT2 = Math.ceil(Q * 2 / 10);
+  const SPLIT3 = Math.ceil(Q * 3 / 10);
+  const SPLIT4 = Math.ceil(Q * 4 / 10);
+  const SPLIT5 = Math.ceil(Q * 5 / 10);
+  const SPLIT6 = Math.ceil(Q * 6 / 10);
+  const SPLIT7 = Math.ceil(Q * 7 / 10);
+  const SPLIT8 = Math.ceil(Q * 8 / 10);
+  const SPLIT9 = Math.ceil(Q * 9 / 10);
 
   for (const [i, { q, lang }] of QUERIES.entries()) {
     let data;
     let keyLabel;
 
-    if (SEARCHAPI_KEY && !deadKeys.has('searchapi') && i >= SPLIT7) {
+    if (SEARCHAPI_KEY && !deadKeys.has('searchapi') && i >= SPLIT9) {
       keyLabel = 'searchapi';
       const url = `https://www.searchapi.io/api/v1/search?engine=google&q=${encodeURIComponent(q)}&num=10&api_key=${SEARCHAPI_KEY}`;
       data = await fetchWithRetry(url);
       if (data === 'dead') { console.warn('  ⚠️  SearchApi key dead — falling back to SerpAPI KEY_1 for remaining queries'); deadKeys.add('searchapi'); data = null; }
-    } else if (SERPER_KEY2 && !deadKeys.has('serper2') && i >= SPLIT6) {
+    } else if (SERPER_KEY2 && !deadKeys.has('serper2') && i >= SPLIT8) {
       keyLabel = 'serper2';
       data = await fetchSerper(q, 3, SERPER_KEY2);
       if (data === 'dead') { console.warn('  ⚠️  Serper KEY_2 quota exhausted for this run'); deadKeys.add('serper2'); data = null; }
-    } else if (SERPER_KEY && !deadKeys.has('serper1') && i >= SPLIT5) {
+    } else if (SERPER_KEY && !deadKeys.has('serper1') && i >= SPLIT7) {
       keyLabel = 'serper1';
       data = await fetchSerper(q, 3, SERPER_KEY);
       if (data === 'dead') { console.warn('  ⚠️  Serper KEY_1 quota exhausted for this run'); deadKeys.add('serper1'); data = null; }
     }
 
-    // Fall back to SerpAPI (KEY_5 → KEY_4 → KEY_3 → KEY_2 → KEY_1) when assigned key is dead or unset
+    // Fall back to SerpAPI (KEY_7 → KEY_6 → KEY_5 → KEY_4 → KEY_3 → KEY_2 → KEY_1) when assigned key is dead or unset
     if (data === null || data === undefined) {
       let key, label;
-      if (API_KEY_5 && !deadKeys.has('serpapi5') && i >= SPLIT4) {
+      if (API_KEY_7 && !deadKeys.has('serpapi7') && i >= SPLIT6) {
+        key = API_KEY_7; label = 'serpapi7';
+      } else if (API_KEY_6 && !deadKeys.has('serpapi6') && i >= SPLIT5) {
+        key = API_KEY_6; label = 'serpapi6';
+      } else if (API_KEY_5 && !deadKeys.has('serpapi5') && i >= SPLIT4) {
         key = API_KEY_5; label = 'serpapi5';
       } else if (API_KEY_4 && !deadKeys.has('serpapi4') && i >= SPLIT3) {
         key = API_KEY_4; label = 'serpapi4';

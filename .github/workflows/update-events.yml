@@ -34,6 +34,8 @@ jobs:
           SERPAPI_KEY_3: ${{ secrets.SERPAPI_KEY_3 }}
           SERPAPI_KEY_4: ${{ secrets.SERPAPI_KEY_4 }}
           SERPAPI_KEY_5: ${{ secrets.SERPAPI_KEY_5 }}
+          SERPAPI_KEY_6: ${{ secrets.SERPAPI_KEY_6 }}
+          SERPAPI_KEY_7: ${{ secrets.SERPAPI_KEY_7 }}
           SERPER_KEY:    ${{ secrets.SERPER_KEY }}
           SERPER_KEY_2:  ${{ secrets.SERPER_KEY_2 }}
           SEARCHAPI_KEY:  ${{ secrets.SEARCHAPI_KEY }}
