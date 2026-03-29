@@ -969,7 +969,7 @@ async function fetchSerper(q, attempts = 3, key = SERPER_KEY) {
   return null;
 }
 
-function parseOrganic(data, lang) {
+async function parseOrganic(data, lang) {
   const out = [];
   for (const res of (data.organic_results || [])) {
     const combined = (res.title + ' ' + (res.snippet || '')).toLowerCase();
@@ -1199,7 +1199,7 @@ async function main() {
 
     console.log(`  [${keyLabel}] "${q.substring(0, 55)}"`);
     if (data && data !== 'dead') {
-      const found = parseOrganic(data, lang);
+      const found = await parseOrganic(data, lang);
       console.log(`    → ${found.length} results`);
       results.push(...found);
     } else {
