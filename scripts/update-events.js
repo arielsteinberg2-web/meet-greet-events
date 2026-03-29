@@ -141,6 +141,53 @@ const ALL_QUERIES = [
   { q: 'site:eventbrite.com NBA basketball player signing appearance 2026',   lang: 'en' },
   { q: 'site:eventbrite.com WWE boxing MMA fighter meet greet signing 2026',  lang: 'en' },
   { q: 'site:eventbrite.com celebrity athlete book signing tour 2026',        lang: 'en' },
+  // ── Europe — German (extended) ──
+  { q: 'site:bvb.de Autogrammstunde Legendenspiel Fans 2026',                lang: 'de' },
+  { q: 'site:szene1.at Autogrammstunde Fussball Sportler 2026',              lang: 'de' },
+  { q: 'Autogrammstunde Fussball Bundesliga Fans öffentlich Verein 2026',    lang: 'de' },
+  // ── Europe — French (extended) ──
+  { q: 'site:fnac.fr dédicace footballeur sportif livre signature 2026',     lang: 'fr' },
+  { q: 'site:cultura.com dédicace footballeur sportif livre 2026',           lang: 'fr' },
+  { q: 'site:sortiraparis.com séance dédicace footballeur sportif 2026',     lang: 'fr' },
+  { q: 'dédicace footballeur livre librairie france belgique 2026',          lang: 'fr' },
+  // ── Europe — Spanish (extended) ──
+  { q: 'site:realmadrid.com sesión de firmas futbolistas fans 2026',         lang: 'es' },
+  { q: 'sesión de firmas futbolista tienda oficial club españa 2026',        lang: 'es' },
+  { q: 'firma autógrafos futbolista centro comercial fan experience 2026',   lang: 'es' },
+  // ── Europe — Italian (extended) ──
+  { q: 'site:festivaldelcalcioitaliano.com firma autografi calciatore 2026', lang: 'it' },
+  { q: 'fan day calciatore incontro tifosi serie A firmacope 2026',          lang: 'it' },
+  // ── Europe — Dutch/Belgian (extended) ──
+  { q: 'site:signedkits.com signeersessie voetballer 2026',                  lang: 'nl' },
+  { q: 'signeersessie voetballer publiek nederland belgie 2026',             lang: 'nl' },
+  // ── Europe — Austrian event calendar ──
+  { q: 'site:szene1.at Autogrammstunde Sportler Fussball event 2026',       lang: 'de' },
+  // ── Europe — Polish (extended) ──
+  { q: 'spotkanie z piłkarzem autografy piłkarze event kibice polska 2026',  lang: 'pl' },
+  { q: 'podpisywanie kart piłkarz spotkanie fanów klub polska 2026',         lang: 'pl' },
+  // ── Europe — Turkish ──
+  { q: 'imza günü futbolcu taraftar etkinlik türkiye 2026',                  lang: 'tr' },
+  { q: 'fenerbahce galatasaray besiktas imza günü taraftar buluşma 2026',   lang: 'tr' },
+  // ── Latin America — Chile (PuntoTicket) ──
+  { q: 'site:puntoticket.com meet greet leyendas futbol firma autografos 2026', lang: 'es' },
+  { q: 'gala leyendas futbol chile meet greet firma autografos 2026',        lang: 'es' },
+  // ── Latin America — Brazil (Sympla) ──
+  { q: 'site:sympla.com.br autógrafos futebol jogador encontro fãs 2026',   lang: 'pt' },
+  { q: 'site:sympla.com.br meet greet jogador futebol sessão autógrafos',    lang: 'pt' },
+  // ── Latin America — Argentina/Uruguay (Passline) ──
+  { q: 'site:passline.com futbolista leyenda meet greet firma autografos',   lang: 'es' },
+  { q: 'leyendas futbol gala meet greet firma autografos argentina 2026',    lang: 'es' },
+  // ── Latin America — Mexico (extended) ──
+  { q: 'meet greet experience mexico futbolista leyendas firma autografos 2026', lang: 'es' },
+  { q: 'juego de leyendas mexico meet greet VIP firma autografos 2026',      lang: 'es' },
+  // ── Book signings — France ──
+  { q: 'firmacopie calciatore campione presentazione libro fnac francia 2026', lang: 'fr' },
+  { q: 'footballeur dédicace livre autobiographie présentation librairie 2026', lang: 'fr' },
+  // ── Book signings — Germany ──
+  { q: 'Fussballer Buchsignierung Buchladen Lesung Biografie öffentlich 2026', lang: 'de' },
+  // ── Club fan tours — European clubs ──
+  { q: 'Borussia Dortmund BVB Autogrammstunde Legendenspiel öffentlich 2026', lang: 'de' },
+  { q: 'LaLiga sesión de firmas jugador tienda oficial fan experience 2026',  lang: 'es' },
 ];
 
 // ── INSTAGRAM ACCOUNTS — venue/organizer accounts to monitor via SerpAPI ──────
@@ -194,6 +241,28 @@ const INSTAGRAM_ACCOUNTS = [
   'chelseafc',
   'liverpoolfc',
   'psg',
+  // ── Europe — German clubs (fan days & signing events) ──
+  'bvb09',
+  'fcbayern',
+  'eintrachtfrankfurt',
+  // ── Europe — Italian events ──
+  'festivaldelcalcioitaliano',
+  'fibersportsmemorabilia',
+  // ── Europe — Dutch signings ──
+  'signedkits',
+  // ── Europe — Austrian event calendar ──
+  'szene1at',
+  // ── Latin America — Mexico ──
+  'meetandgreet_experience_mexico',
+  'firm_autografos',
+  // ── Latin America — Chile / South America legends events ──
+  'dueloleyendas',
+  // ── Latin America — Brazil legends ──
+  'legendasbr',
+  // ── Latin America — Argentina/Uruguay ──
+  'passlinearg',
+  // ── UK — additional football signing organizers ──
+  'exclusivememorabilia',
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
