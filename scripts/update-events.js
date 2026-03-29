@@ -1197,6 +1197,18 @@ async function main() {
       if (data === 'dead') { console.warn(`  ⚠️  SerpAPI ${label} quota exhausted for this run (recharges monthly)`); deadKeys.add(label); data = null; }
     }
 
+    // Emergency fallback: if all assigned SerpAPI keys dead, use Serper before giving up
+    if (!data && SERPER_KEY && !deadKeys.has('serper1')) {
+      keyLabel = 'serper1-fallback';
+      data = await fetchSerper(q, 3, SERPER_KEY);
+      if (data === 'dead') { console.warn('  ⚠️  Serper KEY_1 quota exhausted'); deadKeys.add('serper1'); data = null; }
+    }
+    if (!data && SERPER_KEY2 && !deadKeys.has('serper2')) {
+      keyLabel = 'serper2-fallback';
+      data = await fetchSerper(q, 3, SERPER_KEY2);
+      if (data === 'dead') { console.warn('  ⚠️  Serper KEY_2 quota exhausted'); deadKeys.add('serper2'); data = null; }
+    }
+
     console.log(`  [${keyLabel}] "${q.substring(0, 55)}"`);
     if (data && data !== 'dead') {
       const found = await parseOrganic(data, lang);
