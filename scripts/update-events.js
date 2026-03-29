@@ -891,7 +891,11 @@ function guessDate(t) {
 // ── DIRECT FETCH WITH SCRAPERAPI FALLBACK ─────────────────────────────────────
 // Tries a plain fetch first; if blocked (403/429/CAPTCHA), retries via ScraperAPI proxy.
 async function fetchDirect(url, timeoutMs = 15000) {
-  const headers = { 'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' };
+  const headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.5',
+  };
   // 1. Try direct
   try {
     const ctrl = new AbortController();
