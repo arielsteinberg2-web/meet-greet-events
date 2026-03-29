@@ -2,7 +2,7 @@ name: Auto-update meet and greet events
 
 on:
   schedule:
-    - cron: '0 8 25-31 3 *'  # resume Mar 25 — skipping Mar 23-24 to save SerpAPI quota
+    - cron: '0 10 */4 * *'   # every ~4 days (96h) to conserve SerpAPI quota
   workflow_dispatch:          # also allows manual trigger from GitHub Actions tab
 
 jobs:
