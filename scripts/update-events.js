@@ -80,6 +80,7 @@ const ALL_QUERIES = [
   { q: 'galacticos show Poland legends meet greet VIP 2026',                  lang: 'en' },
   // ── Europe — German ──
   { q: 'site:starbesuch.de Autogrammstunde Sportler 2026',                    lang: 'de' },
+  { q: 'site:fcbayern.com meet greet autograph signing fan event 2026',        lang: 'de' },
   { q: 'Autogrammstunde Fussball Sportler öffentlich 2026',                   lang: 'de' },
   { q: 'Signierstunde Fussballspieler Fan 2026',                              lang: 'de' },
   // ── Europe — French ──
@@ -170,6 +171,7 @@ const INSTAGRAM_ACCOUNTS = [
   'iconsseries',
   'worldwide_signings',
   // ── Europe — soccer legends events ──
+  'fcbayernworld',
   'galacticosshowpolska2026',
   'starbesuch',
   'serieaoperazionenostalgia',
