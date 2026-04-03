@@ -1387,24 +1387,45 @@ async function main() {
   const today = new Date(); today.setHours(0,0,0,0);
   const future = unique.filter(e => new Date(e.date + 'T12:00:00') >= today);
 
-  // Preserve addedAt from previous run (so NEW badge persists across daily updates)
+  // Merge with previous run: carry forward any events not found today that haven't expired.
+  // This prevents quota-limited runs from shrinking the event database.
   const todayStr = new Date().toISOString().slice(0, 10);
-  let prevAddedAt = {};
+  let prevEvents = [];
   try {
     const prev = JSON.parse(readFileSync(OUT_FILE, 'utf8'));
-    for (const e of (prev.events || [])) if (e.id && e.addedAt) prevAddedAt[e.id] = e.addedAt;
+    prevEvents = (prev.events || []).filter(e => new Date(e.date + 'T12:00:00') >= today);
   } catch {}
+
+  // Index new events by link for fast lookup
+  const newByLink = new Map(future.map(e => [e.link, e]));
+
+  // Preserve addedAt: new events get today, previously-seen events keep their original date
   for (const e of future) {
-    e.addedAt = prevAddedAt[e.id] || todayStr;
+    const old = prevEvents.find(p => p.link === e.link);
+    e.addedAt = (old && old.addedAt) ? old.addedAt : todayStr;
   }
 
-  console.log(`Found ${future.length} live events (from ${results.length} raw results)`);
+  // Carry forward previous events not rediscovered today (keep their addedAt)
+  const carried = prevEvents.filter(e => !newByLink.has(e.link));
+
+  // Merge: new events first (fresher data), then carried-forward ones
+  const merged = [...future, ...carried];
+
+  // Final dedup by link (safety net)
+  const seenLinks = new Set();
+  const finalEvents = merged.filter(e => {
+    if (!e.link || seenLinks.has(e.link)) return false;
+    seenLinks.add(e.link);
+    return true;
+  });
+
+  console.log(`Found ${future.length} live events this run; ${carried.length} carried from previous; ${finalEvents.length} total`);
 
   mkdirSync(join(__dirname, '../data'), { recursive: true });
   writeFileSync(OUT_FILE, JSON.stringify({
     generatedAt: new Date().toISOString(),
-    count: future.length,
-    events: future,
+    count: finalEvents.length,
+    events: finalEvents,
   }, null, 2));
 
   console.log(`Written to ${OUT_FILE}`);
