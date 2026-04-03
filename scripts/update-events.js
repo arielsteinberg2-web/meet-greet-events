@@ -830,11 +830,14 @@ const INSTAGRAM_QUERIES = ACCOUNTS_TODAY.map(account => ({
 // First 16 (broad sport/celeb queries) run every time.
 // The remaining ~147 are split into 4 groups; one group runs per 4-day cycle.
 // Result: ~53 constant queries per run instead of 163, cycling full coverage every 16 days.
+// 2 groups × 4-day schedule = every query revisited every 8 days (within 10-day max).
+// ~90 queries/run. Early-month runs use full SerpAPI quota; later runs fall back to Serper.
+// Carry-forward preserves events found in quota-rich runs throughout the month.
 const CORE_QUERIES = ALL_QUERIES.slice(0, 16);
 const POOL_QUERIES = ALL_QUERIES.slice(16);
-const poolGroup = Math.floor(dayOfYear / 4) % 4;
-const POOL_TODAY  = POOL_QUERIES.filter((_, i) => i % 4 === poolGroup);
-console.log(`Query rotation: ${CORE_QUERIES.length} core + ${POOL_TODAY.length} pool (group ${poolGroup + 1}/4) + ${PLAYER_QUERIES.length} players + ${INSTAGRAM_QUERIES.length} instagram`);
+const poolGroup = Math.floor(dayOfYear / 4) % 2;
+const POOL_TODAY  = POOL_QUERIES.filter((_, i) => i % 2 === poolGroup);
+console.log(`Query rotation: ${CORE_QUERIES.length} core + ${POOL_TODAY.length} pool (group ${poolGroup + 1}/2) + ${PLAYER_QUERIES.length} players + ${INSTAGRAM_QUERIES.length} instagram`);
 
 // Final query list: core + today's pool slice + today's player queries + today's Instagram accounts
 const QUERIES = [...CORE_QUERIES, ...POOL_TODAY, ...PLAYER_QUERIES, ...INSTAGRAM_QUERIES];
