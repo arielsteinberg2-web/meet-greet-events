@@ -104,6 +104,7 @@ const ALL_QUERIES = [
   { q: 'site:boletomovil.com firma autografos futbolista meet greet 2026',    lang: 'es' },
   { q: 'site:shopwss.com meet greet legend athlete event 2026',               lang: 'en' },
   { q: 'site:ll12.vip/event LALIGA legend meet greet watch party',           lang: 'en' },
+  { q: 'site:meninblazers.com events live soccer legend guest 2026',          lang: 'en' },
   // ── Latin America — Portuguese (Brazil) ──
   { q: 'sessão autógrafos jogador futebol brasil evento 2026',                lang: 'pt' },
   { q: 'encontro fãs jogador futebol meet and greet brasil 2026',             lang: 'pt' },
@@ -216,6 +217,9 @@ const INSTAGRAM_ACCOUNTS = [
   'upperdecksports',
   'fanaticsfest',
   'nbastore',
+  // ── Soccer media / live show events ──
+  'meninblazers',   // Men in Blazers live shows featuring soccer legends
+  'plinusa',        // Premier League USA fan events
   // ── UK — soccer / sports signing organizers ──
   'superstarspeakers_ltd',
   'allstarsignings',
