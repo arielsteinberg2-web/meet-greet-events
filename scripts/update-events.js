@@ -50,7 +50,7 @@ const ALL_QUERIES = [
   { q: 'site:instagram.com gentlemanscutbourbon meet greet athlete signing',   lang: 'en' },
   { q: '"gentlemanscutbourbon" meet greet athlete autograph signing event',    lang: 'en' },
   // ── Organizers discovered via CraveTheAuto event pages ──
-  { q: 'site:cardboardpromotions.com autograph signing meet greet',           lang: 'en' },
+  // cardboardpromotions.com removed — site is dead (ECONNREFUSED)
   { q: 'site:shopdynastysports.com autograph signing athlete appearance',      lang: 'en' },
   { q: 'site:tristarproductions.com autograph signing meet greet athlete',     lang: 'en' },
   { q: 'site:sportsworld-usa.com autograph signing athlete appearance',        lang: 'en' },
@@ -309,6 +309,7 @@ const LL12_CITIES = [
   { slug:'san-francisco', city:'San Francisco, CA' },
   { slug:'las-vegas',     city:'Las Vegas, NV' },
   { slug:'denver',        city:'Denver, CO' },
+  // los-angeles removed — returns 404
 ];
 
 function parseShortDate(html) {
@@ -697,6 +698,53 @@ async function fetchInscriptagraphs() {
     console.log(`  Inscriptagraphs: ${events.length} events found`);
   } catch (e) {
     console.log(`  Inscriptagraphs: error — ${e.message}`);
+  }
+  return events;
+}
+
+// ── SPORTSWORLD USA DIRECT CRAWL ─────────────────────────────────────────────
+// Shopify store in Saugus, MA — /pages/events has upcoming in-person signings.
+// Structure: <a href="/products/[slug]"><h3>Apr 3, 2026 - 5 TO 7PM</h3>TITLE</a>
+async function fetchSportsworldUSA() {
+  const events = [];
+  try {
+    const html = await fetchDirect('https://www.sportsworld-usa.com/pages/events');
+    if (!html) { console.log('  SportsworldUSA: failed'); return events; }
+
+    const now = new Date(); now.setHours(0, 0, 0, 0);
+    // Match anchor → h3 date → text title pattern
+    const blockRe = /<a[^>]+href="(\/products\/([^"]+))"[^>]*>[\s\S]{0,200}?<h3[^>]*>([^<]+)<\/h3>([\s\S]{0,300}?)<\/a>/gi;
+    const seen = new Set();
+    let m;
+    while ((m = blockRe.exec(html)) !== null) {
+      const [, href, slug, dateRaw, rest] = m;
+      const link = `https://www.sportsworld-usa.com${href}`;
+      if (seen.has(link)) continue;
+      seen.add(link);
+
+      const date = guessDateApprox(dateRaw.toLowerCase()) || guessDate(dateRaw.toLowerCase());
+      if (!date) continue;
+      if (new Date(date + 'T00:00:00') < now) continue;
+
+      const titleRaw = rest.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+      const player = extractPlayerName(titleRaw, dateRaw) || titleRaw.split(/[–-]/)[0].trim();
+      if (!player || player.length < 3) continue;
+
+      events.push({
+        id:     `swusa_${slug}`,
+        player,
+        sport:  'other',
+        date,
+        venue:  '184 Broadway',
+        city:   'Saugus, MA',
+        link,
+        notes:  titleRaw,
+        source: 'sportsworld-usa.com',
+      });
+    }
+    console.log(`  SportsworldUSA: ${events.length} events found`);
+  } catch (e) {
+    console.log(`  SportsworldUSA: error — ${e.message}`);
   }
   return events;
 }
@@ -1427,6 +1475,12 @@ async function main() {
   const inscripEvents = await fetchInscriptagraphs();
   console.log(`Inscriptagraphs: ${inscripEvents.length} events found`);
   results.push(...inscripEvents);
+
+  // Direct-crawl Sportsworld USA (Shopify, Saugus MA)
+  console.log('Fetching Sportsworld USA events directly...');
+  const swusaEvents = await fetchSportsworldUSA();
+  console.log(`Sportsworld USA: ${swusaEvents.length} events found`);
+  results.push(...swusaEvents);
 
   // Direct-crawl Authentic Autographs (AU, WordPress)
   console.log('Fetching Authentic Autographs (AU) events directly...');
