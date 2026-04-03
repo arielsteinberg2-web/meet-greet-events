@@ -1305,22 +1305,22 @@ async function main() {
       if (data === 'dead') { console.warn('  ⚠️  Serper KEY_1 quota exhausted for this run'); deadKeys.add('serper1'); data = null; }
     }
 
-    // Fall back to SerpAPI (KEY_4 → KEY_3 → KEY_2 → KEY_1) when assigned key is dead or unset
+    // Fall back to any available SerpAPI key — no index range restriction here,
+    // so KEY_3/KEY_4 are used even for early queries when KEY_1/KEY_2 are exhausted.
     if (data === null || data === undefined) {
-      let key, label;
-      if (API_KEY_4 && !deadKeys.has('serpapi4') && i >= SPLIT3) {
-        key = API_KEY_4; label = 'serpapi4';
-      } else if (API_KEY_3 && !deadKeys.has('serpapi3') && i >= SPLIT2) {
-        key = API_KEY_3; label = 'serpapi3';
-      } else if (API_KEY_2 && !deadKeys.has('serpapi2') && i >= SPLIT1) {
-        key = API_KEY_2; label = 'serpapi2';
-      } else {
-        key = API_KEY_1; label = 'serpapi1';
+      const serpCandidates = [
+        { key: API_KEY_4, label: 'serpapi4' },
+        { key: API_KEY_3, label: 'serpapi3' },
+        { key: API_KEY_2, label: 'serpapi2' },
+        { key: API_KEY_1, label: 'serpapi1' },
+      ].filter(k => k.key && !deadKeys.has(k.label));
+      for (const { key, label } of serpCandidates) {
+        keyLabel = label;
+        const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${key}`;
+        data = await fetchWithRetry(url);
+        if (data === 'dead') { console.warn(`  ⚠️  SerpAPI ${label} quota exhausted for this run (recharges monthly)`); deadKeys.add(label); data = null; continue; }
+        break;
       }
-      keyLabel = label;
-      const url = `https://serpapi.com/search.json?q=${encodeURIComponent(q)}&num=10&api_key=${key}`;
-      data = await fetchWithRetry(url);
-      if (data === 'dead') { console.warn(`  ⚠️  SerpAPI ${label} quota exhausted for this run (recharges monthly)`); deadKeys.add(label); data = null; }
     }
 
     // Emergency fallback: if all assigned SerpAPI keys dead, use Serper before giving up
