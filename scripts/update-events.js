@@ -129,10 +129,13 @@ const ALL_QUERIES = [
   { q: 'site:fnac.fr dédicace footballeur sportif livre signature 2026',     lang: 'fr' },
   { q: 'site:cultura.com dédicace footballeur sportif livre 2026',           lang: 'fr' },
   { q: 'site:sortiraparis.com séance dédicace footballeur sportif 2026',     lang: 'fr' },
-  // ── Europe — Spanish (verified: Real Madrid monthly signings, Getafe store signings) ──
+  // ── Europe — Spanish (verified: Real Madrid monthly, Getafe & Sevilla regular store signings) ──
   { q: 'site:realmadrid.com "sesión de firmas" futbolistas 2026',            lang: 'es' },
   { q: 'site:getafecf.com firma autografos 2026',                            lang: 'es' },
-  // ── Europe — Italian (verified: TicketOne lists Operazione Nostalgia with dates) ──
+  { q: 'site:sevillafc.es "sesión de firmas" OR "firma autógrafos" 2026',   lang: 'es' },
+  // ── Europe — Italian (verified: AC Milan & Juventus run regular player M&G at stores; TicketOne for legends) ──
+  { q: 'site:acmilan.com "meet greet" player store 2026',                    lang: 'en' },
+  { q: 'site:juventus.com "meet greet" store 2026',                          lang: 'it' },
   { q: 'site:ticketone.it "Operazione Nostalgia" 2026',                      lang: 'it' },
   { q: 'site:cardfest.it meet greet calciatore 2026',                        lang: 'it' },
   { q: 'site:festivaldelcalcioitaliano.com firma autografi calciatore 2026', lang: 'it' },
@@ -144,8 +147,9 @@ const ALL_QUERIES = [
   { q: 'site:slbenfica.pt "sessão de autógrafos" 2026',                     lang: 'pt' },
   // ── Latin America — Chile (PuntoTicket) ──
   { q: 'site:puntoticket.com meet greet leyendas futbol firma autografos 2026', lang: 'es' },
-  // ── Latin America — Mexico (verified: boletok.com.mx lists legends matches + VIP M&G) ──
+  // ── Latin America — Mexico (verified: boletok.com.mx + ticketmaster.com.mx both list leyendas events) ──
   { q: 'site:boletok.com.mx leyendas futbol meet greet 2026',               lang: 'es' },
+  { q: 'site:ticketmaster.com.mx "juego de leyendas" 2026',                 lang: 'es' },
   // ── Latin America — Brazil (Sympla) ──
   { q: 'site:sympla.com.br autógrafos futebol jogador encontro fãs 2026',   lang: 'pt' },
   { q: 'site:sympla.com.br meet greet jogador futebol sessão autógrafos',    lang: 'pt' },
