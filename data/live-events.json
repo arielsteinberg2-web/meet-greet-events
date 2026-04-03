@@ -1,7 +1,103 @@
 {
-  "generatedAt": "2026-04-03T15:24:18.999Z",
-  "count": 2,
+  "generatedAt": "2026-04-03T15:43:10.508Z",
+  "count": 12,
   "events": [
+    {
+      "id": "fiterman_shawn_kemp_public_autograph_event_fiterman_sports_league_city_tx",
+      "player": "Shawn Kemp",
+      "sport": "other",
+      "date": "2026-04-11",
+      "venue": "Fiterman Sports",
+      "city": "",
+      "link": "https://fitermansports.com/event/shawn-kemp-public-autograph-event-fiterman-sports-league-city-tx/",
+      "notes": "",
+      "source": "fitermansports.com",
+      "addedAt": "2026-04-03"
+    },
+    {
+      "id": "fiterman_gary_payton_public_autograph_event_fiterman_sports_league_city_tx",
+      "player": "Gary Payton",
+      "sport": "other",
+      "date": "2026-04-11",
+      "venue": "Fiterman Sports",
+      "city": "",
+      "link": "https://fitermansports.com/event/gary-payton-public-autograph-event-fiterman-sports-league-city-tx/",
+      "notes": "",
+      "source": "fitermansports.com",
+      "addedAt": "2026-04-03"
+    },
+    {
+      "id": "fiterman_ric_flair_public_autograph_event_wrestlecon_las_vegas_nv",
+      "player": "Ric Flair",
+      "sport": "other",
+      "date": "2026-04-17",
+      "venue": "Fiterman Sports",
+      "city": "",
+      "link": "https://fitermansports.com/event/ric-flair-public-autograph-event-wrestlecon-las-vegas-nv/",
+      "notes": "",
+      "source": "fitermansports.com",
+      "addedAt": "2026-04-03"
+    },
+    {
+      "id": "fiterman_jeremy_pena_public_autograph_event_fiterman_sports_league_city_tx",
+      "player": "Jeremy Peña",
+      "sport": "other",
+      "date": "2026-04-25",
+      "venue": "Fiterman Sports",
+      "city": "",
+      "link": "https://fitermansports.com/event/jeremy-pena-public-autograph-event-fiterman-sports-league-city-tx/",
+      "notes": "",
+      "source": "fitermansports.com",
+      "addedAt": "2026-04-03"
+    },
+    {
+      "id": "fiterman_jose_altuve_public_autograph_event_fiterman_sports_league_city_tx",
+      "player": "Jose Altuve",
+      "sport": "other",
+      "date": "2026-04-25",
+      "venue": "Fiterman Sports",
+      "city": "",
+      "link": "https://fitermansports.com/event/jose-altuve-public-autograph-event-fiterman-sports-league-city-tx/",
+      "notes": "",
+      "source": "fitermansports.com",
+      "addedAt": "2026-04-03"
+    },
+    {
+      "id": "fiterman_earl_campbell_public_autograph_event_fiterman_sports_league_city_tx",
+      "player": "Earl Campbell",
+      "sport": "other",
+      "date": "2026-05-23",
+      "venue": "Fiterman Sports",
+      "city": "",
+      "link": "https://fitermansports.com/event/earl-campbell-public-autograph-event-fiterman-sports-league-city-tx/",
+      "notes": "",
+      "source": "fitermansports.com",
+      "addedAt": "2026-04-03"
+    },
+    {
+      "id": "fiterman_vince_young_public_autograph_event_fiterman_sports_league_city_tx",
+      "player": "Vince Young",
+      "sport": "other",
+      "date": "2026-05-23",
+      "venue": "Fiterman Sports",
+      "city": "",
+      "link": "https://fitermansports.com/event/vince-young-public-autograph-event-fiterman-sports-league-city-tx/",
+      "notes": "",
+      "source": "fitermansports.com",
+      "addedAt": "2026-04-03"
+    },
+    {
+      "id": "fiterman_ricky_williams_public_autograph_event_fiterman_sports_league_city_tx",
+      "player": "Ricky Williams",
+      "sport": "other",
+      "date": "2026-05-23",
+      "venue": "Fiterman Sports",
+      "city": "",
+      "link": "https://fitermansports.com/event/ricky-williams-public-autograph-event-fiterman-sports-league-city-tx/",
+      "notes": "",
+      "source": "fitermansports.com",
+      "addedAt": "2026-04-03"
+    },
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-christian-benford",
       "player": "Yours Signed",
@@ -13,6 +109,30 @@
       "notes": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by Christian Benford",
       "source": "tsebuffalo.com",
       "addedAt": "2026-03-22"
+    },
+    {
+      "id": "eb_1775230258632_emefk",
+      "player": "Attention Seeker",
+      "sport": "book",
+      "date": "2026-04-17",
+      "venue": "Harvard Book Store",
+      "city": "Cambridge",
+      "link": "https://www.eventbrite.com/e/darcy-michael-book-signing-at-harvard-book-store-tickets-1980654059610",
+      "notes": "Darcy Michael Book Signing at Harvard Book Store",
+      "source": "eventbrite.com",
+      "addedAt": "2026-04-03"
+    },
+    {
+      "id": "eb_1775230260874_huoom",
+      "player": "Wayne Chrebet",
+      "sport": "other",
+      "date": "2026-04-12",
+      "venue": "Pandora's Box Toys & Collectibles",
+      "city": "Lafayette",
+      "link": "https://www.eventbrite.com/e/meet-greet-w-jets-icon-wayne-chrebet-pandoras-box-toys-collectibles-tickets-1983460078488",
+      "notes": "Meet & Greet w/ Jets icon Wayne Chrebet @ Pandora's Box Toys & Collectibles",
+      "source": "eventbrite.com",
+      "addedAt": "2026-04-03"
     },
     {
       "id": "live_1775229053146_vujk3",
