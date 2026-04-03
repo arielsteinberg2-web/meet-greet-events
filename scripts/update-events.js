@@ -869,14 +869,27 @@ async function fetchEventbriteEvents() {
           const venue = location.name || '';
           const city  = location.address?.addressLocality || '';
 
-          // Try each candidate name in order until one passes Wikipedia verification
-          const candidates = extractCandidateNames(name, ev.description || '');
+          // First try to extract performer from structured title patterns:
+          // "Darcy Michael Book Signing at ..." → "Darcy Michael"
+          // "Meet & Greet w/ Wayne Chrebet @ ..." → "Wayne Chrebet"
+          const titlePatterns = [
+            /^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\s+(?:book signing|autograph signing|signing event|meet\s*[&+]\s*greet)/i,
+            /(?:meet\s*[&+]\s*greet|signing)\s+w(?:ith|\/)\s+(?:[^A-Z]*?)([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)/i,
+          ];
           let player = null;
-          for (const candidate of candidates) {
-            if (candidate === venue) { console.log(`  [wiki-check] Skipping "${candidate}" — matches venue name`); continue; }
-            const isKnown = await isKnownPublicFigure(candidate);
-            if (isKnown) { player = candidate; break; }
-            console.log(`  [wiki-check] "${candidate}" failed — trying next candidate`);
+          for (const pat of titlePatterns) {
+            const tm = name.match(pat);
+            if (tm && tm[1] && !NAME_SKIP.has(tm[1].split(' ')[0])) { player = tm[1].trim(); break; }
+          }
+          // Fall back to Wikipedia-verified candidate
+          if (!player) {
+            const candidates = extractCandidateNames(name, ev.description || '');
+            for (const candidate of candidates) {
+              if (candidate === venue) { console.log(`  [wiki-check] Skipping "${candidate}" — matches venue name`); continue; }
+              const isKnown = await isKnownPublicFigure(candidate);
+              if (isKnown) { player = candidate; break; }
+              console.log(`  [wiki-check] "${candidate}" failed — trying next candidate`);
+            }
           }
           if (!player) continue;
 
