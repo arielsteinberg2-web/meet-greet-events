@@ -73,31 +73,13 @@ const ALL_QUERIES = [
   // ── Europe — Italian ──
   { q: 'site:operazionenostalgia.com raduno firma autografi 2026',            lang: 'it' },
   { q: 'site:cardfest.it meet greet VIP autografi campione 2026',             lang: 'it' },
-  { q: 'firma autografi calciatore evento pubblico italia 2026',               lang: 'it' },
-  { q: 'incontro tifosi calciatore firma autografi 2026',                      lang: 'it' },
   // ── Europe — Polish ──
   { q: 'site:galacticosshow.pl VIP meet greet legends 2026',                  lang: 'en' },
   { q: 'galacticos show Poland legends meet greet VIP 2026',                  lang: 'en' },
   // ── Europe — German ──
   { q: 'site:starbesuch.de Autogrammstunde Sportler 2026',                    lang: 'de' },
   { q: 'site:fcbayern.com meet greet autograph signing fan event 2026',        lang: 'de' },
-  { q: 'Autogrammstunde Fussball Sportler öffentlich 2026',                   lang: 'de' },
-  { q: 'Signierstunde Fussballspieler Fan 2026',                              lang: 'de' },
-  // ── Europe — French ──
-  { q: 'séance dédicace footballeur sportif france belgique 2026',            lang: 'fr' },
-  { q: 'rencontre fans joueur football dédicace 2026',                        lang: 'fr' },
-  // ── Europe — Spanish ──
-  { q: 'sesión firma autógrafos futbolista españa 2026',                      lang: 'es' },
-  { q: 'encuentro fans jugador firma autógrafos 2026',                        lang: 'es' },
-  // ── Europe — Dutch ──
-  { q: 'signeersessie voetballer fan evenement 2026',                         lang: 'nl' },
-  { q: 'handtekening sessie sporters publiek 2026',                           lang: 'nl' },
-  // ── Europe — Portuguese ──
-  { q: 'sessão autógrafos jogador futebol público 2026',                      lang: 'pt' },
   // ── Latin America — Spanish ──
-  { q: 'firma autógrafos futbolista evento tienda 2026',                      lang: 'es' },
-  { q: 'meet and greet futbolista latinoamerica 2026',                        lang: 'es' },
-  { q: 'leyendas futbol partido firma autografos sudamerica 2026',            lang: 'es' },
   { q: 'site:puntoticket.com futbolista leyendas firma 2026',                 lang: 'es' },
   { q: 'site:superboletos.com meet greet futbolista 2026',                    lang: 'es' },
   { q: 'site:fanki.com.mx futbolista leyendas partido meet 2026',             lang: 'es' },
@@ -105,9 +87,6 @@ const ALL_QUERIES = [
   { q: 'site:shopwss.com meet greet legend athlete event 2026',               lang: 'en' },
   { q: 'site:ll12.vip/event LALIGA legend meet greet watch party',           lang: 'en' },
   { q: 'site:meninblazers.com events live soccer legend guest 2026',          lang: 'en' },
-  // ── Latin America — Portuguese (Brazil) ──
-  { q: 'sessão autógrafos jogador futebol brasil evento 2026',                lang: 'pt' },
-  { q: 'encontro fãs jogador futebol meet and greet brasil 2026',             lang: 'pt' },
   // ── Club fan tours — catch official club-run fan experiences (e.g. Casa Atleti) ──
   { q: 'LaLiga club fan tour USA meet greet fan experience 2026',              lang: 'en' },
   { q: 'soccer club fan weekend USA meet legends VIP experience 2026',         lang: 'en' },
@@ -124,16 +103,13 @@ const ALL_QUERIES = [
   // ── Book signings — Italy ──
   { q: 'site:eventi.mondadoristore.it firma calciatore sportivo 2026',        lang: 'it' },
   { q: 'site:salonelibro.it firmacopie sportivo calciatore 2026',             lang: 'it' },
-  { q: 'firmacopie calciatore campione presentazione libro 2026',              lang: 'it' },
   // ── Book signings — Spain ──
   { q: 'site:fnac.es firma de libros futbolista deportista 2026',             lang: 'es' },
   { q: 'site:ferialibromadrid.com firma futbolista deportista 2026',          lang: 'es' },
   { q: 'site:planetadelibros.com firma futbolista sant jordi 2026',           lang: 'es' },
-  { q: 'firma libros futbolista sant jordi barcelona 2026',                    lang: 'es' },
   // ── Book signings — UK ──
   { q: 'site:waterstones.com football soccer sports author signing 2026',     lang: 'en' },
   { q: 'site:londonfestivaloffootballwriting.org event author 2026',          lang: 'en' },
-  { q: 'football soccer autobiography book signing uk 2026',                   lang: 'en' },
   // ── Book signings aggregator — US ──
   { q: 'site:booksigningcentral.com sports athlete signing 2026',             lang: 'en' },
   // ── Eventbrite — sports & celebrity meet & greet events ──
@@ -145,50 +121,25 @@ const ALL_QUERIES = [
   // ── Europe — German (extended) ──
   { q: 'site:bvb.de Autogrammstunde Legendenspiel Fans 2026',                lang: 'de' },
   { q: 'site:szene1.at Autogrammstunde Fussball Sportler 2026',              lang: 'de' },
-  { q: 'Autogrammstunde Fussball Bundesliga Fans öffentlich Verein 2026',    lang: 'de' },
   // ── Europe — French (extended) ──
   { q: 'site:fnac.fr dédicace footballeur sportif livre signature 2026',     lang: 'fr' },
   { q: 'site:cultura.com dédicace footballeur sportif livre 2026',           lang: 'fr' },
   { q: 'site:sortiraparis.com séance dédicace footballeur sportif 2026',     lang: 'fr' },
-  { q: 'dédicace footballeur livre librairie france belgique 2026',          lang: 'fr' },
   // ── Europe — Spanish (extended) ──
   { q: 'site:realmadrid.com sesión de firmas futbolistas fans 2026',         lang: 'es' },
-  { q: 'sesión de firmas futbolista tienda oficial club españa 2026',        lang: 'es' },
-  { q: 'firma autógrafos futbolista centro comercial fan experience 2026',   lang: 'es' },
   // ── Europe — Italian (extended) ──
   { q: 'site:festivaldelcalcioitaliano.com firma autografi calciatore 2026', lang: 'it' },
-  { q: 'fan day calciatore incontro tifosi serie A firmacope 2026',          lang: 'it' },
   // ── Europe — Dutch/Belgian (extended) ──
   { q: 'site:signedkits.com signeersessie voetballer 2026',                  lang: 'nl' },
-  { q: 'signeersessie voetballer publiek nederland belgie 2026',             lang: 'nl' },
   // ── Europe — Austrian event calendar ──
   { q: 'site:szene1.at Autogrammstunde Sportler Fussball event 2026',       lang: 'de' },
-  // ── Europe — Polish (extended) ──
-  { q: 'spotkanie z piłkarzem autografy piłkarze event kibice polska 2026',  lang: 'pl' },
-  { q: 'podpisywanie kart piłkarz spotkanie fanów klub polska 2026',         lang: 'pl' },
-  // ── Europe — Turkish ──
-  { q: 'imza günü futbolcu taraftar etkinlik türkiye 2026',                  lang: 'tr' },
-  { q: 'fenerbahce galatasaray besiktas imza günü taraftar buluşma 2026',   lang: 'tr' },
   // ── Latin America — Chile (PuntoTicket) ──
   { q: 'site:puntoticket.com meet greet leyendas futbol firma autografos 2026', lang: 'es' },
-  { q: 'gala leyendas futbol chile meet greet firma autografos 2026',        lang: 'es' },
   // ── Latin America — Brazil (Sympla) ──
   { q: 'site:sympla.com.br autógrafos futebol jogador encontro fãs 2026',   lang: 'pt' },
   { q: 'site:sympla.com.br meet greet jogador futebol sessão autógrafos',    lang: 'pt' },
   // ── Latin America — Argentina/Uruguay (Passline) ──
   { q: 'site:passline.com futbolista leyenda meet greet firma autografos',   lang: 'es' },
-  { q: 'leyendas futbol gala meet greet firma autografos argentina 2026',    lang: 'es' },
-  // ── Latin America — Mexico (extended) ──
-  { q: 'meet greet experience mexico futbolista leyendas firma autografos 2026', lang: 'es' },
-  { q: 'juego de leyendas mexico meet greet VIP firma autografos 2026',      lang: 'es' },
-  // ── Book signings — France ──
-  { q: 'firmacopie calciatore campione presentazione libro fnac francia 2026', lang: 'fr' },
-  { q: 'footballeur dédicace livre autobiographie présentation librairie 2026', lang: 'fr' },
-  // ── Book signings — Germany ──
-  { q: 'Fussballer Buchsignierung Buchladen Lesung Biografie öffentlich 2026', lang: 'de' },
-  // ── Club fan tours — European clubs ──
-  { q: 'Borussia Dortmund BVB Autogrammstunde Legendenspiel öffentlich 2026', lang: 'de' },
-  { q: 'LaLiga sesión de firmas jugador tienda oficial fan experience 2026',  lang: 'es' },
   // ── Fanatics Fest NYC 2026 (July 16-19, Javits Center) ──
   { q: 'fanatics fest nyc 2026 athlete signing meet greet autograph javits',  lang: 'en' },
   { q: 'site:store.epic.leapevent.tech/fanatics-fest-nyc autograph signing meet greet athlete 2026', lang: 'en' },
