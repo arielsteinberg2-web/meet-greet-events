@@ -1305,12 +1305,14 @@ async function main() {
       if (data === 'dead') { console.warn('  ⚠️  Serper KEY_1 quota exhausted for this run'); deadKeys.add('serper1'); data = null; }
     }
 
-    // Fall back to any available SerpAPI key — no index range restriction here,
-    // so KEY_3/KEY_4 are used even for early queries when KEY_1/KEY_2 are exhausted.
+    // Fall back to any available SerpAPI key — round-robin KEY_3/KEY_4 so they
+    // drain evenly rather than KEY_4 exhausting before KEY_3 is used at all.
     if (data === null || data === undefined) {
+      const serpPrimary = i % 2 === 0
+        ? [{ key: API_KEY_4, label: 'serpapi4' }, { key: API_KEY_3, label: 'serpapi3' }]
+        : [{ key: API_KEY_3, label: 'serpapi3' }, { key: API_KEY_4, label: 'serpapi4' }];
       const serpCandidates = [
-        { key: API_KEY_4, label: 'serpapi4' },
-        { key: API_KEY_3, label: 'serpapi3' },
+        ...serpPrimary,
         { key: API_KEY_2, label: 'serpapi2' },
         { key: API_KEY_1, label: 'serpapi1' },
       ].filter(k => k.key && !deadKeys.has(k.label));
