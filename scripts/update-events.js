@@ -118,23 +118,34 @@ const ALL_QUERIES = [
   { q: 'site:eventbrite.com NBA basketball player signing appearance 2026',   lang: 'en' },
   { q: 'site:eventbrite.com WWE boxing MMA fighter meet greet signing 2026',  lang: 'en' },
   { q: 'site:eventbrite.com celebrity athlete book signing tour 2026',        lang: 'en' },
-  // ── Europe — German (extended) ──
+  // ── Europe — German (verified: static HTML, dates in URL/JSON-LD) ──
   { q: 'site:bvb.de Autogrammstunde Legendenspiel Fans 2026',                lang: 'de' },
+  { q: 'site:fcaugsburg.de Autogrammstunde Spieler 2026',                    lang: 'de' },
   { q: 'site:szene1.at Autogrammstunde Fussball Sportler 2026',              lang: 'de' },
-  // ── Europe — French (extended) ──
+  // ── Europe — French (verified: fclorient & clermontfoot static HTML, dates in URL) ──
+  { q: 'site:fclorient.bzh "match des legendes" 2026',                       lang: 'fr' },
+  { q: 'site:clermontfoot.com "match des legendes" 2026',                    lang: 'fr' },
+  { q: 'site:mhscfoot.com "séance de dédicaces" 2026',                      lang: 'fr' },
   { q: 'site:fnac.fr dédicace footballeur sportif livre signature 2026',     lang: 'fr' },
   { q: 'site:cultura.com dédicace footballeur sportif livre 2026',           lang: 'fr' },
   { q: 'site:sortiraparis.com séance dédicace footballeur sportif 2026',     lang: 'fr' },
-  // ── Europe — Spanish (extended) ──
-  { q: 'site:realmadrid.com sesión de firmas futbolistas fans 2026',         lang: 'es' },
-  // ── Europe — Italian (extended) ──
+  // ── Europe — Spanish (verified: Real Madrid monthly signings, Getafe store signings) ──
+  { q: 'site:realmadrid.com "sesión de firmas" futbolistas 2026',            lang: 'es' },
+  { q: 'site:getafecf.com firma autografos 2026',                            lang: 'es' },
+  // ── Europe — Italian (verified: TicketOne lists Operazione Nostalgia with dates) ──
+  { q: 'site:ticketone.it "Operazione Nostalgia" 2026',                      lang: 'it' },
+  { q: 'site:cardfest.it meet greet calciatore 2026',                        lang: 'it' },
   { q: 'site:festivaldelcalcioitaliano.com firma autografi calciatore 2026', lang: 'it' },
-  // ── Europe — Dutch/Belgian (extended) ──
+  // ── Europe — Dutch/Belgian ──
   { q: 'site:signedkits.com signeersessie voetballer 2026',                  lang: 'nl' },
   // ── Europe — Austrian event calendar ──
   { q: 'site:szene1.at Autogrammstunde Sportler Fussball event 2026',       lang: 'de' },
+  // ── Portugal (verified: Benfica announces sessão de autógrafos in news) ──
+  { q: 'site:slbenfica.pt "sessão de autógrafos" 2026',                     lang: 'pt' },
   // ── Latin America — Chile (PuntoTicket) ──
   { q: 'site:puntoticket.com meet greet leyendas futbol firma autografos 2026', lang: 'es' },
+  // ── Latin America — Mexico (verified: boletok.com.mx lists legends matches + VIP M&G) ──
+  { q: 'site:boletok.com.mx leyendas futbol meet greet 2026',               lang: 'es' },
   // ── Latin America — Brazil (Sympla) ──
   { q: 'site:sympla.com.br autógrafos futebol jogador encontro fãs 2026',   lang: 'pt' },
   { q: 'site:sympla.com.br meet greet jogador futebol sessão autógrafos',    lang: 'pt' },
