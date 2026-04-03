@@ -188,6 +188,10 @@ const ALL_QUERIES = [
   // ── Club fan tours — European clubs ──
   { q: 'Borussia Dortmund BVB Autogrammstunde Legendenspiel öffentlich 2026', lang: 'de' },
   { q: 'LaLiga sesión de firmas jugador tienda oficial fan experience 2026',  lang: 'es' },
+  // ── Fanatics Fest NYC 2026 (July 16-19, Javits Center) ──
+  { q: 'fanatics fest nyc 2026 athlete signing meet greet autograph javits',  lang: 'en' },
+  { q: 'site:store.epic.leapevent.tech/fanatics-fest-nyc autograph signing meet greet athlete 2026', lang: 'en' },
+  { q: '"fanatics fest" 2026 athlete signing meet greet VIP experience',      lang: 'en' },
 ];
 
 // ── INSTAGRAM ACCOUNTS — venue/organizer accounts to monitor via SerpAPI ──────
@@ -1151,7 +1155,7 @@ async function fetchEpicEvents() {
   const now = new Date(); now.setHours(0, 0, 0, 0);
 
   // Keywords in convention title/name that indicate sports/athlete content
-  const SPORTS_RE = /wwe|wrestling|wrestlemania|nba|nfl|mlb|nhl|mma|ufc|boxing|sport|athlete|autograph|lids|card.?show|megacon|fan.?expo|comic.?con/i;
+  const SPORTS_RE = /wwe|wrestling|wrestlemania|nba|nfl|mlb|nhl|mma|ufc|boxing|sport|athlete|autograph|lids|card.?show|megacon|fan.?expo|comic.?con|fanatics/i;
 
   try {
     // Step 1 — get all conventions from the public JSON API
@@ -1182,6 +1186,10 @@ async function fetchEpicEvents() {
 
       const html = await fetchRendered(convUrl, 90000);
       if (!html) { console.log(`  Epic/Leap: failed to render ${convUrl}`); continue; }
+      // Detect Queue-it virtual waiting room — page is temporarily inaccessible
+      if (/queue-it\.net|queueit|virtual waiting room|you are in the queue/i.test(html)) {
+        console.log(`  Epic/Leap ${slug}: blocked by Queue-it waiting room, skipping`); continue;
+      }
 
       // Convention dates from API
       const convDate    = conv.beginUtc ? conv.beginUtc.slice(0, 10) : null;
