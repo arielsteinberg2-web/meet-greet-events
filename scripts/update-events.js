@@ -651,6 +651,56 @@ async function fetchTSEBuffalo() {
   return events;
 }
 
+// ── INSCRIPTAGRAPHS DIRECT CRAWL ─────────────────────────────────────────────
+// Shopify store in Las Vegas — products.json, filter by "signing" in title.
+async function fetchInscriptagraphs() {
+  const events = [];
+  try {
+    const raw = await fetchDirect('https://inscriptagraphs.com/products.json?limit=250&sort_by=created-descending');
+    if (!raw) { console.log('  Inscriptagraphs: failed'); return events; }
+    let data;
+    try { data = JSON.parse(raw); } catch { console.log('  Inscriptagraphs: bad JSON'); return events; }
+
+    const now = new Date(); now.setHours(0, 0, 0, 0);
+    const seenPlayers = new Set();
+    for (const product of (data.products || [])) {
+      const title = product.title || '';
+      if (!/signing/i.test(title)) continue;
+
+      const handle   = product.handle || '';
+      const bodyText = (product.body_html || '').replace(/<[^>]+>/g, ' ');
+      const combined = title + ' ' + bodyText;
+
+      const date = guessDateApprox(combined.toLowerCase());
+      if (!date) continue;
+      if (new Date(date + 'T00:00:00') < now) continue;
+
+      // Name is typically "Firstname Lastname - ..." before the first dash
+      const dashPart = title.split(/\s+[-–]\s+/)[0].trim();
+      const player = extractPlayerName(dashPart, bodyText) || extractPlayerName(title, bodyText);
+      if (!player) continue;
+      if (seenPlayers.has(player)) continue;
+      seenPlayers.add(player);
+
+      events.push({
+        id:     `inscriptagraphs_${handle}`,
+        player,
+        sport:  'other',
+        date,
+        venue:  'Inscriptagraphs Memorabilia',
+        city:   'Las Vegas, NV',
+        link:   `https://inscriptagraphs.com/products/${handle}`,
+        notes:  title,
+        source: 'inscriptagraphs.com',
+      });
+    }
+    console.log(`  Inscriptagraphs: ${events.length} events found`);
+  } catch (e) {
+    console.log(`  Inscriptagraphs: error — ${e.message}`);
+  }
+  return events;
+}
+
 // ── AUTHENTIC AUTOGRAPHS (AU) DIRECT CRAWL ───────────────────────────────────
 // WordPress-based Australian signing site.
 async function fetchAuthenticAutographs() {
@@ -1371,6 +1421,12 @@ async function main() {
   const tseEvents = await fetchTSEBuffalo();
   console.log(`TSE Buffalo: ${tseEvents.length} events found`);
   results.push(...tseEvents);
+
+  // Direct-crawl Inscriptagraphs (Shopify, Las Vegas)
+  console.log('Fetching Inscriptagraphs events directly...');
+  const inscripEvents = await fetchInscriptagraphs();
+  console.log(`Inscriptagraphs: ${inscripEvents.length} events found`);
+  results.push(...inscripEvents);
 
   // Direct-crawl Authentic Autographs (AU, WordPress)
   console.log('Fetching Authentic Autographs (AU) events directly...');
