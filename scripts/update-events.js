@@ -23,8 +23,8 @@ const SERPER_KEY2   = process.env.SERPER_KEY_2;   // optional — second Serper 
 const SEARCHAPI_KEY = process.env.SEARCHAPI_KEY;  // optional — Google Search via searchapi.io
 const SCRAPER_KEY   = process.env.SCRAPERAPI_KEY || process.env.SCRAPERAPI_KEY_2; // optional — proxy for direct site fetches
 
-if (!API_KEY_1) {
-  console.error('No SERPAPI_KEY_1 env var set. Add it as a GitHub Secret.');
+if (!API_KEY_1 && !API_KEY_2 && !API_KEY_3 && !API_KEY_4) {
+  console.error('No SERPAPI keys set. Add at least one as a GitHub Secret.');
   process.exit(1);
 }
 
@@ -945,6 +945,9 @@ const NAME_SKIP = new Set([
   'North','South','East','West','New','York','Los','Las','San','Join','The',
   'Get','Buy','Our','All','For','With','From','This','That','More','Just',
   'View','Post','Live','Register','Buy','Tickets','Photo','Only','Also',
+  // Common first words of book/song titles that are NOT person names
+  'Fill','Play','Love','Struggle','Books','Author','Reading','Roseland',
+  'Winning','Building','Finding','Becoming','Growing','Healing','Rising',
   'Comic','Con','Convention','Appearances','Upcoming','Legends','Legend',
   'Sports','Athletes','Athlete','Players','Player','Stars','Guest','Guests',
   // Countries, regions, generic wrestling/event words
@@ -1323,8 +1326,8 @@ async function fetchEpicEvents() {
         const talentName = rawName.trim();
         if (!talentName || talentName.length < 3) continue;
 
-        // Skip non-person product entries
-        if (/photo op|panel|combo|print|package|general admission|group shot|\bvip\b/i.test(talentName)) continue;
+        // Skip non-person product entries and generic TeamUp/merch items
+        if (/photo op|panel|combo|print|package|general admission|group shot|\bvip\b|authentication sticker|frame your photo|autograph \d+-pack|TeamUp\s*-\s*(Halloween|Hazbin)/i.test(talentName)) continue;
 
         const link = `https://store.epic.leapevent.tech${href}`;
 
