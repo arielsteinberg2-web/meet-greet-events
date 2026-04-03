@@ -21,7 +21,7 @@ const API_KEY_4     = process.env.SERPAPI_KEY_4;
 const SERPER_KEY    = process.env.SERPER_KEY;      // optional — Google Search via serper.dev
 const SERPER_KEY2   = process.env.SERPER_KEY_2;   // optional — second Serper key
 const SEARCHAPI_KEY = process.env.SEARCHAPI_KEY;  // optional — Google Search via searchapi.io
-const SCRAPER_KEY   = process.env.SCRAPERAPI_KEY; // optional — proxy for direct site fetches
+const SCRAPER_KEY   = process.env.SCRAPERAPI_KEY || process.env.SCRAPERAPI_KEY_2; // optional — proxy for direct site fetches
 
 if (!API_KEY_1) {
   console.error('No SERPAPI_KEY_1 env var set. Add it as a GitHub Secret.');
