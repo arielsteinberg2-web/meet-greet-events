@@ -908,7 +908,7 @@ function extractPlayerName(title, snippet) {
 // boxer, politician, entrepreneur, celebrity, rapper, comedian, chef, coach,
 // executive, director, musician, artist, model, influencer, youtuber, streamer.
 const WIKI_CACHE = new Map();
-const NOTABLE_RE = /\b(athlete|player|actor|actress|singer|rapper|musician|author|writer|wrestler|boxer|politician|comedian|chef|model|director|producer|executive|entrepreneur|celebrity|influencer|youtuber|streamer|coach|nba|nfl|mlb|nhl|mma|ufc|wwe|hall of fame)\b/i;
+const NOTABLE_RE = /\b(athlete|player|footballer|golfer|actor|actress|singer|rapper|musician|author|writer|wrestler|boxer|politician|comedian|chef|model|director|producer|executive|entrepreneur|celebrity|influencer|youtuber|streamer|coach|nba|nfl|mlb|nhl|mma|ufc|wwe|hall of fame)\b/i;
 
 async function isKnownPublicFigure(name) {
   if (!name) return false;
@@ -948,11 +948,35 @@ async function isKnownPublicFigure(name) {
 // ── DATE GUESSER ─────────────────────────────────────────────────────────────
 function guessDate(t) {
   const m = {
+    // English
     january:'01',february:'02',march:'03',april:'04',may:'05',june:'06',
     july:'07',august:'08',september:'09',october:'10',november:'11',december:'12',
+    // German
+    januar:'01',februar:'02',märz:'03',maerz:'03',mai:'05',juni:'06',
+    juli:'07',august:'08',september:'09',oktober:'10',november:'11',dezember:'12',
+    // French
+    janvier:'01',février:'02',fevrier:'02',mars:'03',avril:'04',
+    juin:'06',juillet:'07',août:'08',aout:'08',septembre:'09',
+    octobre:'10',décembre:'12',decembre:'12',
+    // Spanish/Portuguese
+    enero:'01',febrero:'02',marzo:'03',mayo:'05',junio:'06',
+    julio:'07',agosto:'08',septiembre:'09',setiembre:'09',octubre:'10',
+    noviembre:'11',diciembre:'12',
+    // Italian
+    gennaio:'01',febbraio:'02',aprile:'04',maggio:'05',giugno:'06',
+    luglio:'07',settembre:'09',ottobre:'10',dicembre:'12',
+    // Dutch
+    januari:'01',februari:'02',maart:'03',april:'04',mei:'05',
+    augustus:'08',oktober:'10',
   };
   for (const [n, v] of Object.entries(m)) {
-    const x = t.match(new RegExp(n + '\\s+(\\d{1,2})[,\\s]+2026'));
+    // "15 März 2026", "15. März 2026", "März 15, 2026", "15 de marzo de 2026"
+    let x = t.match(new RegExp('(\\d{1,2})\\.?\\s+' + n + '\\s+2026', 'i'));
+    if (x) return `2026-${v}-${x[1].padStart(2,'0')}`;
+    x = t.match(new RegExp(n + '\\.?\\s+(\\d{1,2})[,\\s]+2026', 'i'));
+    if (x) return `2026-${v}-${x[1].padStart(2,'0')}`;
+    // "15 de marzo de 2026"
+    x = t.match(new RegExp('(\\d{1,2})\\s+de\\s+' + n + '\\s+de\\s+2026', 'i'));
     if (x) return `2026-${v}-${x[1].padStart(2,'0')}`;
   }
   return null;
