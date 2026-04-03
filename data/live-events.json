@@ -1,7 +1,19 @@
 {
   "generatedAt": "2026-04-03T15:43:10.508Z",
-  "count": 12,
+  "count": 13,
   "events": [
+    {
+      "id": "boletomovil_kaka_cdmx_2026_04_18",
+      "player": "Kaká",
+      "sport": "soccer",
+      "date": "2026-04-18",
+      "venue": "",
+      "city": "Mexico City, Mexico 🇲🇽",
+      "link": "https://boletomovil.com/evento/firma-de-autografos-kaka-cdmx-2026-04-18",
+      "notes": "Firma de Autógrafos Kaká CDMX",
+      "source": "boletomovil.com",
+      "addedAt": "2026-04-03"
+    },
     {
       "id": "fiterman_shawn_kemp_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Shawn Kemp",
@@ -100,7 +112,7 @@
     },
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-christian-benford",
-      "player": "Yours Signed",
+      "player": "Christian Benford",
       "sport": "other",
       "date": "2026-04-25",
       "venue": "The Admirals Cup",

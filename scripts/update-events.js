@@ -624,7 +624,10 @@ async function fetchTSEBuffalo() {
       if (!date) continue;
       if (new Date(date + 'T00:00:00') < now) continue;
 
-      const player = extractPlayerName(title, bodyText);
+      // TSE titles end with "by [First Last]" — extract that directly before
+      // falling back to generic extractPlayerName which can grab false positives.
+      const byMatch = title.match(/\bby\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\s*$/i);
+      const player = (byMatch ? byMatch[1].trim() : null) || extractPlayerName(title, bodyText);
       if (!player) continue;
       if (seenPlayers.has(player)) continue;
       seenPlayers.add(player);
@@ -1231,7 +1234,9 @@ async function parseOrganic(data, lang) {
     }
     if (!playerName) continue;
 
-    const eventDate = guessDate(combined);
+    // Try date from title+snippet first; fall back to ISO date embedded in the URL
+    const urlIsoMatch = (res.link || '').match(/\b(20\d\d)-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])\b/);
+    const eventDate = guessDate(combined) || (urlIsoMatch ? urlIsoMatch[0] : null);
     if (!eventDate) continue; // skip events with no guessable date
 
     // Skip generic CraveTheAuto listing pages — seeds already cover these with deep links
