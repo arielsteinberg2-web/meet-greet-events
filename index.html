@@ -3585,8 +3585,9 @@ function init() {
       const custom = saved.filter(e => !SEEDS.find(s => s.id === e.id));
       const prevIds = new Set(saved.map(e => e.id));
       const nowIso = new Date().toISOString();
-      // Auto-stamp seeds the user has never seen before as recently added
-      events = [...SEEDS.map(s => (!s.addedAt && !prevIds.has(s.id)) ? {...s, addedAt: nowIso} : s), ...custom];
+      // Auto-stamp any seed missing addedAt with today — ensures NEW badge
+      // always appears even if addedAt was forgotten on first push.
+      events = [...SEEDS.map(s => !s.addedAt ? {...s, addedAt: nowIso} : s), ...custom];
     } catch { events = [...SEEDS]; }
   } else {
     events = [...SEEDS];
