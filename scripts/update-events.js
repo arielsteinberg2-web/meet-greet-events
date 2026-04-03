@@ -1100,13 +1100,19 @@ async function parseOrganic(data, lang) {
     const isOther  = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isWrestling && /gymnast|olympic|mlb|baseball|nhl|hockey|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined);
     const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isWrestling && !isOther && /\bsoccer\b|futbol|calcio|fútbol|\bfootballer\b|calciatore|\bfoot\b|ligue|premier league|bundesliga|serie a|la liga|champions league|\bcopa\b|\bmls\b|\bfifa\b/.test(combined);
 
-    // Try each candidate name until one passes Wikipedia verification
+    // Wikipedia verification: only for celebs and non-athlete book authors.
+    // Athletes (any sport) are trusted — their events are sport-specific queries.
+    const isAthlete = isBball || isNFL || isWrestling || isOther || isSoccer;
     const nameCandidates = extractCandidateNames(res.title, res.snippet);
     let playerName = null;
-    for (const candidate of nameCandidates) {
-      const isKnownPlayer = await isKnownPublicFigure(candidate);
-      if (isKnownPlayer) { playerName = candidate; break; }
-      console.log(`  [wiki-check] "${candidate}" failed — trying next candidate`);
+    if (isAthlete) {
+      playerName = nameCandidates[0] || null;
+    } else {
+      for (const candidate of nameCandidates) {
+        const isKnownPlayer = await isKnownPublicFigure(candidate);
+        if (isKnownPlayer) { playerName = candidate; break; }
+        console.log(`  [wiki-check] "${candidate}" failed — trying next candidate`);
+      }
     }
     if (!playerName) continue;
 
