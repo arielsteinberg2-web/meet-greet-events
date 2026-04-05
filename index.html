@@ -4013,7 +4013,7 @@ function extractMainPlayer(str) {
     const name = firstPerson(seg);
     if (!name || isGeneric(name)) continue;
     const words = name.split(' ').filter(Boolean);
-    if (words.length >= 2 && words.length <= 4 && /^[A-ZÀ-ÿ]/.test(words[0])) return name;
+    if (words.length >= 1 && words.length <= 4 && words[0].length >= 3 && /^[A-ZÀ-ÿ]/.test(words[0])) return name;
   }
   return null;
 }
