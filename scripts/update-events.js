@@ -174,6 +174,7 @@ const INSTAGRAM_ACCOUNTS = [
   'cardvaultsacramento',
   'cardvaultla',
   'dickssportinggoods',
+  'dickshouseofsport',   // uses "athlete appearances" not "autograph signing"
   'shopwss',
   'fitermansports',
   'bighornautographs',
@@ -914,7 +915,7 @@ const ACCOUNTS_TODAY = [0, 1, 2].map(offset =>
   INSTAGRAM_ACCOUNTS[(dayOfYear * 3 + offset) % INSTAGRAM_ACCOUNTS.length]
 );
 const INSTAGRAM_QUERIES = ACCOUNTS_TODAY.map(account => ({
-  q: `site:instagram.com/${account} autograph signing meet greet 2026`,
+  q: `site:instagram.com/${account} autograph signing meet greet athlete appearance fan event 2026`,
   lang: 'en',
 }));
 
