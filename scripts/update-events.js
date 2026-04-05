@@ -548,7 +548,7 @@ const KNOWN_ATHLETE_SPORTS = {
   'the rock': 'wrestling', 'dwayne johnson': 'wrestling', 'john cena': 'wrestling',
 };
 
-function detectSport(player, context) {
+async function detectSport(player, context) {
   // 1. Check context (event title / description / slug) for sport keywords
   const ctx = (context || '').toLowerCase();
   if (/\bnfl\b|quarterback|wide receiver|running back|linebacker|tight end|super bowl|wrestlecon/i.test(ctx)) return 'football';
@@ -557,9 +557,13 @@ function detectSport(player, context) {
   if (/\bnhl\b|hockey/.test(ctx)) return 'other';
   if (/\bwwe\b|wrestling|wrestle.?con|wrestlemania/i.test(ctx)) return 'wrestling';
   if (/soccer|futbol|mls|laliga|footballer/.test(ctx)) return 'soccer';
-  // 2. Known player lookup
+  // 2. Known player lookup (fast path, no network call)
   const found = KNOWN_ATHLETE_SPORTS[(player || '').toLowerCase()];
   if (found) return found;
+  // 3. Wikipedia lookup — description is authoritative ("American baseball player", etc.)
+  //    wikiLookup is cached, so repeated calls for the same player are free.
+  const { sport } = await wikiLookup(player || '');
+  if (sport) return sport;
   return 'other';
 }
 
@@ -606,7 +610,7 @@ async function fetchFitermanSports() {
       events.push({
         id:     `fiterman_${slug.replace(/-/g, '_')}`,
         player: playerRaw,
-        sport:  detectSport(playerRaw, rawTitle),
+        sport:  await detectSport(playerRaw, rawTitle),
         date,
         venue:  'Fiterman Sports',
         city,
@@ -665,7 +669,7 @@ async function fetchTSEBuffalo() {
       events.push({
         id:     `tse_${handle}`,
         player,
-        sport:  detectSport(player, title),
+        sport:  await detectSport(player, title),
         date,
         venue,
         city:   'Buffalo, NY',
@@ -715,7 +719,7 @@ async function fetchInscriptagraphs() {
       events.push({
         id:     `inscriptagraphs_${handle}`,
         player,
-        sport:  detectSport(player, combined),
+        sport:  await detectSport(player, combined),
         date,
         venue:  'Inscriptagraphs Memorabilia',
         city:   'Las Vegas, NV',
@@ -762,7 +766,7 @@ async function fetchSportsworldUSA() {
       events.push({
         id:     `swusa_${slug}`,
         player,
-        sport:  detectSport(player, titleRaw),
+        sport:  await detectSport(player, titleRaw),
         date,
         venue:  '184 Broadway',
         city:   'Saugus, MA',
@@ -812,7 +816,7 @@ async function fetchAuthenticAutographs() {
       events.push({
         id:     `authau_${slug.replace(/-/g, '_')}`,
         player,
-        sport:  detectSport(player, context),
+        sport:  await detectSport(player, context),
         date,
         venue:  '',
         city:   'Australia',
@@ -932,7 +936,7 @@ async function fetchEventbriteEvents() {
           events.push({
             id:     `eb_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
             player,
-            sport:  isBook ? 'book' : isBball ? 'basketball' : isWrestling ? 'wrestling' : isFootball ? 'football' : isBaseball ? 'baseball' : isOther ? 'other' : isSoccer ? 'soccer' : detectSport(player, combined),
+            sport:  isBook ? 'book' : isBball ? 'basketball' : isWrestling ? 'wrestling' : isFootball ? 'football' : isBaseball ? 'baseball' : isOther ? 'other' : isSoccer ? 'soccer' : await detectSport(player, combined),
             date,
             venue,
             city,
@@ -1071,11 +1075,29 @@ function extractPlayerName(title, snippet) {
 // mentions at least one of: athlete, player, actor, singer, author, wrestler,
 // boxer, politician, entrepreneur, celebrity, rapper, comedian, chef, coach,
 // executive, director, musician, artist, model, influencer, youtuber, streamer.
+// WIKI_CACHE stores { known: bool, sport: string|null } so both isKnownPublicFigure
+// and detectSport share a single Wikipedia fetch per name.
 const WIKI_CACHE = new Map();
 const NOTABLE_RE = /\b(athlete|player|footballer|golfer|actor|actress|singer|rapper|musician|author|writer|wrestler|boxer|politician|comedian|chef|model|director|producer|executive|entrepreneur|celebrity|influencer|youtuber|streamer|coach|nba|nfl|mlb|nhl|mma|ufc|wwe|hall of fame)\b/i;
 
-async function isKnownPublicFigure(name) {
-  if (!name) return false;
+// Derive sport from Wikipedia description + first-paragraph extract.
+// Wikipedia descriptions are concise: "American baseball player", "professional wrestler", etc.
+function sportFromWikiText(desc, extract) {
+  const t = (desc + ' ' + extract).toLowerCase();
+  if (/\bbaseball\b|\bmlb\b/.test(t))                                    return 'baseball';
+  if (/\bbasketball\b|\bnba\b/.test(t))                                  return 'basketball';
+  if (/american football|\bnfl\b|\bfootball player\b|\bfootball coach\b/.test(t)) return 'football';
+  if (/\bfootballer\b|association football|\bsoccer\b/.test(t))          return 'soccer';
+  if (/\bwrestler\b|\bprofessional wrestling\b|\bwwe\b|\bwcw\b|\bawf\b|\braw\b|\bsmackdown\b/.test(t)) return 'wrestling';
+  if (/\bboxer\b|\bboxing\b|\bmma\b|\bufc\b/.test(t))                    return 'wrestling';
+  if (/\bhockey\b|\bnhl\b/.test(t))                                      return 'other';
+  if (/\bgolfer\b|\bgolf\b|\btennis\b|\bswimmer\b|\bgymnast\b|\btrack and field\b/.test(t)) return 'other';
+  if (/\bactor\b|\bactress\b|\bcomedian\b|\bmusician\b|\bsinger\b|\bdirector\b|\bfilmmaker\b/.test(t)) return 'celeb';
+  return null; // unknown — fall back to other logic
+}
+
+async function wikiLookup(name) {
+  if (!name) return { known: false, sport: null };
   if (WIKI_CACHE.has(name)) return WIKI_CACHE.get(name);
   try {
     const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(name)}`;
@@ -1083,30 +1105,35 @@ async function isKnownPublicFigure(name) {
     const t = setTimeout(() => ctrl.abort(), 8000);
     const r = await fetch(url, { signal: ctrl.signal, headers: { 'User-Agent': 'MeetGreetEvents/1.0' } });
     clearTimeout(t);
-    if (!r.ok) { WIKI_CACHE.set(name, false); return false; }
+    if (!r.ok) { const v = { known: false, sport: null }; WIKI_CACHE.set(name, v); return v; }
     const data = await r.json();
-    if (data.type === 'disambiguation' || data.type === 'no-extract') { WIKI_CACHE.set(name, false); return false; }
-    // Must be a person article — Wikipedia description for people is like "American basketball player"
-    // Songs, books, places, orgs have descriptions like "song by X", "film by Y", "hotel chain", etc.
-    const desc    = (data.description || '').toLowerCase();
-    const extract = (data.extract    || '').toLowerCase();
-    const isPersonDesc = NOTABLE_RE.test(desc); // "American rapper", "NFL player", etc.
-    // Reject non-person articles
-    if (/\b(country|sovereign state|nation|city|town|municipality|village|county|state|province|region|island|continent|ocean|river|mountain|organization|company|corporation|hotel|restaurant|school|university|song|album|film|movie|book|novel|television|tv series|podcast|band|group|duo|trio|franchise|team)\b/i.test(extract)) {
-      WIKI_CACHE.set(name, false);
-      console.log(`  [wiki-check] "${name}" — Wikipedia article is a place/org/media, not a person`);
-      return false;
+    if (data.type === 'disambiguation' || data.type === 'no-extract') {
+      const v = { known: false, sport: null }; WIKI_CACHE.set(name, v); return v;
     }
-    // Require either a person-style description OR notable keywords in extract
-    const result = isPersonDesc || NOTABLE_RE.test(extract);
-    WIKI_CACHE.set(name, result);
-    if (!result) console.log(`  [wiki-check] "${name}" — article exists but not a notable public figure: "${(data.extract||'').slice(0,120)}"`);
-    return result;
+    const desc    = (data.description || '').toLowerCase();
+    const extract = (data.extract    || '').slice(0, 400).toLowerCase();
+    const isPersonDesc = NOTABLE_RE.test(desc);
+    // Reject non-person articles (places, orgs, media)
+    if (/\b(country|sovereign state|nation|city|town|municipality|village|county|state|province|region|island|ocean|river|mountain|organization|company|corporation|hotel|restaurant|school|university|song|album|film|movie|book|novel|television|tv series|podcast|band|group|duo|trio|franchise|team)\b/i.test(extract)) {
+      console.log(`  [wiki-check] "${name}" — article is a place/org/media, not a person`);
+      const v = { known: false, sport: null }; WIKI_CACHE.set(name, v); return v;
+    }
+    const known = isPersonDesc || NOTABLE_RE.test(extract);
+    const sport = sportFromWikiText(desc, extract);
+    if (!known) console.log(`  [wiki-check] "${name}" — not a notable public figure: "${(data.extract||'').slice(0,120)}"`);
+    const v = { known, sport };
+    WIKI_CACHE.set(name, v);
+    return v;
   } catch {
-    // Network error: be permissive (don't drop events due to timeout)
-    WIKI_CACHE.set(name, true);
-    return true;
+    // Network error: be permissive
+    const v = { known: true, sport: null };
+    WIKI_CACHE.set(name, v);
+    return v;
   }
+}
+
+async function isKnownPublicFigure(name) {
+  return (await wikiLookup(name)).known;
 }
 
 // ── DATE GUESSER ─────────────────────────────────────────────────────────────
@@ -1402,7 +1429,7 @@ async function fetchEpicEvents() {
 
         // For non-celeb conventions, try to detect sport per talent name
         const talentSport = convSportDefault === 'celeb' ? 'celeb'
-          : detectSport(talentName, convTitle);
+          : await detectSport(talentName, convTitle);
 
         events.push({
           id:     `epic_${slug}_${talentSlug}`,
