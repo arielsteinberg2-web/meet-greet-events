@@ -1126,6 +1126,7 @@
     .stat-coin .ci svg { width:100%; height:100%; display:block; }
 
     .pname { font-size:1rem; font-weight:700; line-height:1.2; }
+    .ev-title { font-size:.75rem; font-weight:600; color:var(--dim); margin-top:2px; line-height:1.2; }
     .badge {
       display:inline-flex; align-items:center; gap:3px; padding:2px 8px;
       border-radius:20px; font-size:.68rem; font-weight:700; margin-top:4px;
@@ -2776,6 +2777,7 @@ const SEEDS = [
   {
     id:'se15', sport:'soccer', noMG:true,
     player:'Ronaldinho',
+    title:'Wearside Legends Game',
     date:'2026-05-25', time:'17:00',
     venue:'Stadium of Light',
     city:'Sunderland, UK 🇬🇧',
@@ -3596,8 +3598,9 @@ async function loadLiveEvents() {
         // Update mutable fields on already-cached events (sport, img corrections)
         const idx = linkIndex.get(e.link);
         let c = 0;
-        if (e.sport && events[idx].sport !== e.sport) { events[idx].sport = e.sport; c++; }
-        if (e.img   && events[idx].img   !== e.img)   { events[idx].img   = e.img;   c++; }
+        if (e.sport  && events[idx].sport  !== e.sport)  { events[idx].sport  = e.sport;  c++; }
+        if (e.img    && events[idx].img    !== e.img)    { events[idx].img    = e.img;    c++; }
+        if (e.title  && events[idx].title  !== e.title)  { events[idx].title  = e.title;  c++; }
         if (c) changed += c;
         continue;
       }
@@ -4103,6 +4106,7 @@ function cardHTML(e, i) {
       <div class="av ${cls}">${avInner}</div>
       <div style="flex:1">
         <div class="pname">${hl(e.player, currentQ)}</div>
+        ${e.title ? `<div class="ev-title">${hl(e.title, currentQ)}</div>` : ''}
         <span class="badge ${cls}">${icon} ${lbl}</span>${transBadge}
         ${isVerified ? '<span class="verified-badge">✓ Verified</span>' : ''}
         ${e.noMG ? '<span class="no-mg-badge">[No M&amp;G confirmed]</span>' : ''}

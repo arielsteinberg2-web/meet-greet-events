@@ -491,6 +491,7 @@ async function fetchCraveTheAuto() {
         events.push({
           id:     `cta_${month}${day}_${slug}`,
           player,
+          title:  deriveEventTitle(rawTitle, player) || undefined,
           sport,
           date,
           venue,
@@ -610,6 +611,7 @@ async function fetchFitermanSports() {
       events.push({
         id:     `fiterman_${slug.replace(/-/g, '_')}`,
         player: playerRaw,
+        title:  deriveEventTitle(rawTitle, playerRaw) || undefined,
         sport:  await detectSport(playerRaw, rawTitle),
         date,
         venue:  'Fiterman Sports',
@@ -669,6 +671,7 @@ async function fetchTSEBuffalo() {
       events.push({
         id:     `tse_${handle}`,
         player,
+        title:  deriveEventTitle(title, player) || undefined,
         sport:  await detectSport(player, title),
         date,
         venue,
@@ -719,6 +722,7 @@ async function fetchInscriptagraphs() {
       events.push({
         id:     `inscriptagraphs_${handle}`,
         player,
+        title:  deriveEventTitle(title, player) || undefined,
         sport:  await detectSport(player, combined),
         date,
         venue:  'Inscriptagraphs Memorabilia',
@@ -766,6 +770,7 @@ async function fetchSportsworldUSA() {
       events.push({
         id:     `swusa_${slug}`,
         player,
+        title:  deriveEventTitle(titleRaw, player) || undefined,
         sport:  await detectSport(player, titleRaw),
         date,
         venue:  '184 Broadway',
@@ -936,6 +941,7 @@ async function fetchEventbriteEvents() {
           events.push({
             id:     `eb_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
             player,
+            title:  deriveEventTitle(name, player) || undefined,
             sport:  isBook ? 'book' : isBball ? 'basketball' : isWrestling ? 'wrestling' : isFootball ? 'football' : isBaseball ? 'baseball' : isOther ? 'other' : isSoccer ? 'soccer' : await detectSport(player, combined),
             date,
             venue,
@@ -1068,6 +1074,30 @@ function extractCandidateNames(title, snippet) {
 
 function extractPlayerName(title, snippet) {
   return extractCandidateNames(title, snippet)[0] || null;
+}
+
+// Derive a short event title from a raw event name + player name.
+// Strips the player name and noise words; returns a meaningful subtitle or ''.
+function deriveEventTitle(rawTitle, player) {
+  if (!rawTitle || !player) return '';
+  // If there's a dash/em-dash separator, the part before it is often the event name
+  const dashParts = rawTitle.split(/\s+[—–]\s+/);
+  if (dashParts.length > 1) {
+    const pre = dashParts[0].trim();
+    const preNorm = pre.toLowerCase().replace(/[^a-z]/g, '');
+    const playerNorm = player.toLowerCase().replace(/[^a-z]/g, '');
+    if (preNorm !== playerNorm && pre.length >= 4 && pre.length <= 60) return pre;
+  }
+  // Strip player name and noise words from raw title
+  const NOISE = /\b(signing|autograph|autographs|meet|greet|meet\s*&\s*greet|appearance|event|vip|public|in.store|store)\b/gi;
+  const cleaned = rawTitle
+    .replace(new RegExp(player.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '')
+    .replace(NOISE, '')
+    .replace(/[-–—,·|()[\]]/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  if (cleaned.length >= 4 && cleaned.length <= 60) return cleaned;
+  return '';
 }
 
 // ── WIKIPEDIA PUBLIC-FIGURE VERIFICATION ─────────────────────────────────────
@@ -1320,6 +1350,7 @@ async function parseOrganic(data, lang) {
     out.push({
       id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
       player: playerName,
+      title:  deriveEventTitle(res.title || '', playerName) || undefined,
       sport:  isTalkVenue ? 'talk' : isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isNFL ? 'football' : isWrestling ? 'wrestling' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
       ...(isTalkVenue && { noMG: true, venue: talkVenueNames[talkVenueKey] || '', city: 'New York, NY 🇺🇸' }),
       date:   eventDate,
@@ -1434,6 +1465,7 @@ async function fetchEpicEvents() {
         events.push({
           id:     `epic_${slug}_${talentSlug}`,
           player: talentName,
+          title:  conv.title || undefined,
           sport:  talentSport,
           date,
           venue,
