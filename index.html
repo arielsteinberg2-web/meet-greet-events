@@ -4098,11 +4098,25 @@ function cardHTML(e, i) {
   const isNew      = e.addedAt && (Date.now() - new Date(e.addedAt).getTime()) < 3 * 86400000;
   const isVerified = e.id && !e.id.startsWith('live_') && !e.id.startsWith('evt_');
   const delay      = typeof i === 'number' ? `style="animation-delay:${i*0.04}s"` : '';
-  // Derive subtitle: explicit title field, or extract from notes (part before " — " if distinct from player)
-  const _notesTitle = (e.notes || '').split(/\s+[—–]\s+/)[0].trim();
+  // Derive subtitle: explicit title > dash-prefix from notes > player-stripped notes
+  const _notes = (e.notes || '');
+  const _playerRE = new RegExp((e.player || '').replace(/[.*+?^${}()|[\]\\]/g,'\\$&'), 'gi');
   const _playerNorm = (e.player || '').toLowerCase().replace(/[^a-z]/g,'');
-  const _notesTitleNorm = _notesTitle.toLowerCase().replace(/[^a-z]/g,'');
-  const evSubtitle = e.title || (_notesTitle.length >= 4 && _notesTitle.length <= 60 && _notesTitleNorm !== _playerNorm ? _notesTitle : '');
+  let evSubtitle = e.title || '';
+  if (!evSubtitle) {
+    const _dashPre = _notes.split(/\s+[—–]\s+/)[0].trim();
+    if (_dashPre !== _notes && _dashPre.length >= 4 && _dashPre.length <= 60 &&
+        _dashPre.toLowerCase().replace(/[^a-z]/g,'') !== _playerNorm) {
+      evSubtitle = _dashPre;
+    }
+  }
+  if (!evSubtitle && _notes.length >= 4 && _notes.length <= 100) {
+    const _stripped = _notes.replace(_playerRE, '').replace(/^\s*[-–—,·|]\s*|\s*[-–—,·|]\s*$/g,'').trim();
+    if (_stripped.length >= 4 && _stripped.length <= 70 &&
+        _stripped.toLowerCase().replace(/[^a-z]/g,'') !== _playerNorm) {
+      evSubtitle = _stripped;
+    }
+  }
 
   return `<div class="card ${cls}${past?' past':''}" id="c-${e.id}" ${delay}>
     ${past ? '<span class="past-tag">⚠️ Past Event — Reference</span>' : ''}

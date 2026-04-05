@@ -1088,15 +1088,13 @@ function deriveEventTitle(rawTitle, player) {
     const playerNorm = player.toLowerCase().replace(/[^a-z]/g, '');
     if (preNorm !== playerNorm && pre.length >= 4 && pre.length <= 60) return pre;
   }
-  // Strip player name and noise words from raw title
-  const NOISE = /\b(signing|autograph|autographs|meet|greet|meet\s*&\s*greet|appearance|event|vip|public|in.store|store)\b/gi;
+  // Strip only the player name; keep event type words like "Autograph Signing", "Appearance"
   const cleaned = rawTitle
     .replace(new RegExp(player.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), '')
-    .replace(NOISE, '')
     .replace(/[-–—,·|()[\]]/g, ' ')
     .replace(/\s{2,}/g, ' ')
     .trim();
-  if (cleaned.length >= 4 && cleaned.length <= 60) return cleaned;
+  if (cleaned.length >= 4 && cleaned.length <= 70) return cleaned;
   return '';
 }
 
