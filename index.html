@@ -4098,6 +4098,11 @@ function cardHTML(e, i) {
   const isNew      = e.addedAt && (Date.now() - new Date(e.addedAt).getTime()) < 3 * 86400000;
   const isVerified = e.id && !e.id.startsWith('live_') && !e.id.startsWith('evt_');
   const delay      = typeof i === 'number' ? `style="animation-delay:${i*0.04}s"` : '';
+  // Derive subtitle: explicit title field, or extract from notes (part before " — " if distinct from player)
+  const _notesTitle = (e.notes || '').split(/\s+[—–]\s+/)[0].trim();
+  const _playerNorm = (e.player || '').toLowerCase().replace(/[^a-z]/g,'');
+  const _notesTitleNorm = _notesTitle.toLowerCase().replace(/[^a-z]/g,'');
+  const evSubtitle = e.title || (_notesTitle.length >= 4 && _notesTitle.length <= 60 && _notesTitleNorm !== _playerNorm ? _notesTitle : '');
 
   return `<div class="card ${cls}${past?' past':''}" id="c-${e.id}" ${delay}>
     ${past ? '<span class="past-tag">⚠️ Past Event — Reference</span>' : ''}
@@ -4106,7 +4111,7 @@ function cardHTML(e, i) {
       <div class="av ${cls}">${avInner}</div>
       <div style="flex:1">
         <div class="pname">${hl(e.player, currentQ)}</div>
-        ${e.title ? `<div class="ev-title">${hl(e.title, currentQ)}</div>` : ''}
+        ${evSubtitle ? `<div class="ev-title">${hl(evSubtitle, currentQ)}</div>` : ''}
         <span class="badge ${cls}">${icon} ${lbl}</span>${transBadge}
         ${isVerified ? '<span class="verified-badge">✓ Verified</span>' : ''}
         ${e.noMG ? '<span class="no-mg-badge">[No M&amp;G confirmed]</span>' : ''}
