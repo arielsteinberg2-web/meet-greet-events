@@ -19,7 +19,7 @@
     {
       "id": "fiterman_shawn_kemp_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Shawn Kemp",
-      "sport": "other",
+      "sport": "basketball",
       "date": "2026-04-11",
       "venue": "Fiterman Sports",
       "city": "",
@@ -31,7 +31,7 @@
     {
       "id": "fiterman_gary_payton_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Gary Payton",
-      "sport": "other",
+      "sport": "basketball",
       "date": "2026-04-11",
       "venue": "Fiterman Sports",
       "city": "",
@@ -43,7 +43,7 @@
     {
       "id": "fiterman_ric_flair_public_autograph_event_wrestlecon_las_vegas_nv",
       "player": "Ric Flair",
-      "sport": "other",
+      "sport": "wrestling",
       "date": "2026-04-17",
       "venue": "Fiterman Sports",
       "city": "",
@@ -55,7 +55,7 @@
     {
       "id": "fiterman_jeremy_pena_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Jeremy Peña",
-      "sport": "other",
+      "sport": "baseball",
       "date": "2026-04-25",
       "venue": "Fiterman Sports",
       "city": "",
@@ -67,7 +67,7 @@
     {
       "id": "fiterman_jose_altuve_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Jose Altuve",
-      "sport": "other",
+      "sport": "baseball",
       "date": "2026-04-25",
       "venue": "Fiterman Sports",
       "city": "",
@@ -79,7 +79,7 @@
     {
       "id": "fiterman_earl_campbell_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Earl Campbell",
-      "sport": "other",
+      "sport": "football",
       "date": "2026-05-23",
       "venue": "Fiterman Sports",
       "city": "",
@@ -91,7 +91,7 @@
     {
       "id": "fiterman_vince_young_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Vince Young",
-      "sport": "other",
+      "sport": "football",
       "date": "2026-05-23",
       "venue": "Fiterman Sports",
       "city": "",
@@ -103,7 +103,7 @@
     {
       "id": "fiterman_ricky_williams_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Ricky Williams",
-      "sport": "other",
+      "sport": "football",
       "date": "2026-05-23",
       "venue": "Fiterman Sports",
       "city": "",
@@ -115,7 +115,7 @@
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-christian-benford",
       "player": "Christian Benford",
-      "sport": "other",
+      "sport": "football",
       "date": "2026-04-25",
       "venue": "The Admirals Cup",
       "city": "Buffalo, NY",
@@ -163,7 +163,7 @@
     {
       "id": "eb_1775248307132_859ar",
       "player": "Jets icon Wayne Chrebet",
-      "sport": "other",
+      "sport": "football",
       "date": "2026-04-12",
       "venue": "Pandora's Box Toys & Collectibles",
       "city": "Lafayette",
@@ -175,7 +175,7 @@
     {
       "id": "epic_fan-expo-chicago_billy-boyd",
       "player": "Billy Boyd",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -187,7 +187,7 @@
     {
       "id": "epic_fan-expo-chicago_christian-borle",
       "player": "Colin O'Donoghue",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -199,7 +199,7 @@
     {
       "id": "epic_fan-expo-chicago_colin-odonoghue",
       "player": "Corey Feldman",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -211,7 +211,7 @@
     {
       "id": "epic_fan-expo-chicago_corey-feldman",
       "player": "David Wenham",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -223,7 +223,7 @@
     {
       "id": "epic_fan-expo-chicago_david-wenham",
       "player": "Dean Cundey",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -235,7 +235,7 @@
     {
       "id": "epic_fan-expo-chicago_dean-cundey",
       "player": "Dominic Monaghan",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -247,7 +247,7 @@
     {
       "id": "epic_fan-expo-chicago_dominic-monaghan",
       "player": "Elijah Wood",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -259,7 +259,7 @@
     {
       "id": "epic_fan-expo-chicago_elijah-wood",
       "player": "Erica Durance",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -271,7 +271,7 @@
     {
       "id": "epic_fan-expo-chicago_erica-durance",
       "player": "Jared Padalecki",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -283,7 +283,7 @@
     {
       "id": "epic_fan-expo-chicago_jared-padalecki",
       "player": "Joe Pantoliano",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -295,7 +295,7 @@
     {
       "id": "epic_fan-expo-chicago_joe-pantoliano",
       "player": "John Carpenter",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -307,7 +307,7 @@
     {
       "id": "epic_fan-expo-chicago_john-carpenter",
       "player": "John Noble",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -319,7 +319,7 @@
     {
       "id": "epic_fan-expo-chicago_john-noble",
       "player": "John Rhys-Davies",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -331,7 +331,7 @@
     {
       "id": "epic_fan-expo-chicago_john-rhys-davies",
       "player": "Karl Urban",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -343,7 +343,7 @@
     {
       "id": "epic_fan-expo-chicago_karl-urban",
       "player": "Kerri Green",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -355,7 +355,7 @@
     {
       "id": "epic_fan-expo-chicago_kerri-green",
       "player": "Kristin Kreuk",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -367,7 +367,7 @@
     {
       "id": "epic_fan-expo-chicago_kristin-kreuk",
       "player": "Martha Plimpton",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -379,7 +379,7 @@
     {
       "id": "epic_fan-expo-chicago_martha-plimpton",
       "player": "Michael Rosenbaum",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -391,7 +391,7 @@
     {
       "id": "epic_fan-expo-chicago_michael-rosenbaum",
       "player": "Miranda Otto",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -403,7 +403,7 @@
     {
       "id": "epic_fan-expo-chicago_miranda-otto",
       "player": "Nick Castle",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -415,7 +415,7 @@
     {
       "id": "epic_fan-expo-chicago_nick-castle",
       "player": "PJ Soles",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -427,7 +427,7 @@
     {
       "id": "epic_fan-expo-chicago_pj-soles",
       "player": "Robert Davi",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -439,7 +439,7 @@
     {
       "id": "epic_fan-expo-chicago_robert-davi",
       "player": "Ron Perlman",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -451,7 +451,7 @@
     {
       "id": "epic_fan-expo-chicago_ron-perlman",
       "player": "Sean Astin",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -463,7 +463,7 @@
     {
       "id": "epic_fan-expo-chicago_sean-astin",
       "player": "Tom Welling",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -475,7 +475,7 @@
     {
       "id": "epic_fan-expo-chicago_tom-welling",
       "player": "Tommy Lee Wallace",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -487,7 +487,7 @@
     {
       "id": "epic_fan-expo-chicago_tommy-lee-wallace",
       "player": "Frank Grillo",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -499,7 +499,7 @@
     {
       "id": "epic_fan-expo-chicago_frank-grillo",
       "player": "Joel Perez",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -511,7 +511,7 @@
     {
       "id": "epic_fan-expo-chicago_joel-perez",
       "player": "Krystina Alabado",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -523,7 +523,7 @@
     {
       "id": "epic_fan-expo-chicago_krystina-alabado",
       "player": "Lilli Cooper",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -535,7 +535,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-hazbin-hotel",
       "player": "TeamUp - Smallville Duo: Superman and Lex",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -547,7 +547,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-smallville-duo-superman-and-lex",
       "player": "TeamUp - Smallville Quad",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -559,7 +559,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-smallville-quad",
       "player": "TeamUp - Smallville Trio: Superman, Lex and Lana",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -571,7 +571,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-smallville-trio-superman-lex-and-lana",
       "player": "TeamUp - Smallville: Clark and Lana",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -583,7 +583,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-smallville-clark-and-lana",
       "player": "TeamUp - Smallville: Clark and Lois",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -595,7 +595,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-smallville-clark-and-lois",
       "player": "TeamUp - Smallville: Lex and Lana",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -607,7 +607,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-smallville-lex-and-lana",
       "player": "TeamUp - The Goonies Cast",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -619,7 +619,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-the-goonies-cast",
       "player": "TeamUp - The Lord of The Rings Duo: Eowyn and Merry",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -631,7 +631,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-duo-eowyn-and-merry",
       "player": "TeamUp - The Lord of the Rings Duo: Frodo and Samwise",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -643,7 +643,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-duo-frodo-and-samwise",
       "player": "TeamUp - The Lord of the Rings Duo: Pippin and Merry",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -655,7 +655,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-duo-pippin-and-merry",
       "player": "TeamUp - The Lord of The Rings Reunion TeamUp",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -667,7 +667,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-reunion-upgrade",
       "player": "TeamUp - The Lord of the Rings SUNDAY Duo: Samwise and Pippin",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -679,7 +679,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-sunday-duo-samwise-and-pippin",
       "player": "TeamUp - The Lord of The Rings: Fellowship Reunion",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -691,7 +691,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-fellowship-reunion",
       "player": "TeamUp - The Lord of the Rings: The Hobbits",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -703,7 +703,7 @@
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-the-hobbits",
       "player": "An Evening with the Hobbits",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -715,7 +715,7 @@
     {
       "id": "epic_fan-expo-chicago_an-evening-with-the-hobbits",
       "player": "Frank Miller",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -727,7 +727,7 @@
     {
       "id": "epic_fan-expo-chicago_frank-miller",
       "player": "Smallville Nights",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-14",
       "venue": "Donald E. Stephens Convention Center",
       "city": "Chicago, IL",
@@ -739,7 +739,7 @@
     {
       "id": "epic_fan-expo-canada_billy-boyd",
       "player": "Billy Boyd",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-27",
       "venue": "Metro Toronto Convention Centre",
       "city": "Toronto, ON",
@@ -751,7 +751,7 @@
     {
       "id": "epic_fan-expo-canada_dominic-monaghan",
       "player": "Elijah Wood",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-27",
       "venue": "Metro Toronto Convention Centre",
       "city": "Toronto, ON",
@@ -763,7 +763,7 @@
     {
       "id": "epic_fan-expo-canada_elijah-wood",
       "player": "Sean Astin",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-27",
       "venue": "Metro Toronto Convention Centre",
       "city": "Toronto, ON",
@@ -775,7 +775,7 @@
     {
       "id": "epic_fan-expo-canada_sean-astin",
       "player": "TeamUp - The Lord of the Rings SUNDAY Duo: Samwise and Pippin",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-27",
       "venue": "Metro Toronto Convention Centre",
       "city": "Toronto, ON",
@@ -787,7 +787,7 @@
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-sunday-duo-samwise-and-pippin",
       "player": "TeamUp - The Lord of the Rings: Frodo &amp; Samwise",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-27",
       "venue": "Metro Toronto Convention Centre",
       "city": "Toronto, ON",
@@ -799,7 +799,7 @@
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-frodo-samwise",
       "player": "TeamUp - The Lord of the Rings: Pippin &amp; Merry",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-27",
       "venue": "Metro Toronto Convention Centre",
       "city": "Toronto, ON",
@@ -811,7 +811,7 @@
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-pippin-merry",
       "player": "TeamUp - The Lord of the Rings: The Hobbits",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-27",
       "venue": "Metro Toronto Convention Centre",
       "city": "Toronto, ON",
@@ -823,7 +823,7 @@
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-the-hobbits",
       "player": "An Evening with the Hobbits",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-08-27",
       "venue": "Metro Toronto Convention Centre",
       "city": "Toronto, ON",
@@ -835,7 +835,7 @@
     {
       "id": "epic_fan-expo-dallas_billy-boyd",
       "player": "Billy Boyd",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-09-11",
       "venue": "Kay Bailey Hutchison Convention Center",
       "city": "Dallas, TX",
@@ -847,7 +847,7 @@
     {
       "id": "epic_fan-expo-dallas_dominic-monaghan",
       "player": "Elijah Wood",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-09-11",
       "venue": "Kay Bailey Hutchison Convention Center",
       "city": "Dallas, TX",
@@ -859,7 +859,7 @@
     {
       "id": "epic_fan-expo-dallas_elijah-wood",
       "player": "Sean Astin",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-09-11",
       "venue": "Kay Bailey Hutchison Convention Center",
       "city": "Dallas, TX",
@@ -871,7 +871,7 @@
     {
       "id": "epic_fan-expo-dallas_sean-astin",
       "player": "TeamUp - The Lord of the Rings Duo: Frodo and Samwise",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-09-11",
       "venue": "Kay Bailey Hutchison Convention Center",
       "city": "Dallas, TX",
@@ -883,7 +883,7 @@
     {
       "id": "epic_fan-expo-dallas_teamup-the-lord-of-the-rings-duo-frodo-and-samwise",
       "player": "TeamUp - The Lord of the Rings Duo: Pippin and Merry",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-09-11",
       "venue": "Kay Bailey Hutchison Convention Center",
       "city": "Dallas, TX",
@@ -895,7 +895,7 @@
     {
       "id": "epic_fan-expo-dallas_teamup-the-lord-of-the-rings-duo-pippin-and-merry",
       "player": "TeamUp - The Lord of the Rings SUNDAY Trio: Frodo, Samwise, and Pippin",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-09-11",
       "venue": "Kay Bailey Hutchison Convention Center",
       "city": "Dallas, TX",
@@ -907,7 +907,7 @@
     {
       "id": "epic_fan-expo-dallas_teamup-the-lord-of-the-rings-sunday-trio-frodo-samwise-and-pippin",
       "player": "TeamUp - The Lord of the Rings: The Hobbits",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-09-11",
       "venue": "Kay Bailey Hutchison Convention Center",
       "city": "Dallas, TX",
@@ -919,7 +919,7 @@
     {
       "id": "epic_fan-expo-dallas_teamup-the-lord-of-the-rings-the-hobbits",
       "player": "An Evening with the Hobbits",
-      "sport": "other",
+      "sport": "celeb",
       "date": "2026-09-11",
       "venue": "Kay Bailey Hutchison Convention Center",
       "city": "Dallas, TX",
@@ -944,7 +944,7 @@
     {
       "id": "live_1775229053146_vujk3",
       "player": "Wayne Chrebet",
-      "sport": "other",
+      "sport": "football",
       "date": "2026-04-25",
       "link": "https://www.eventbrite.com/d/ny--roslyn-heights/knicks-autograph/",
       "notes": "APRIL 25, 2026 DAYTIME PRIVATE DINNER 6-9 PM primary image · APRIL 25, 2026 ... Meet & Greet w/ Jets icon Wayne Chrebet @ Pandora's Box Toys & Collectibles.",

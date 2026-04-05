@@ -528,6 +528,41 @@ function guessDateApprox(t) {
   return null;
 }
 
+// ── SPORT DETECTION HELPER ───────────────────────────────────────────────────
+// Player names alone often don't contain sport keywords, so we use a two-step
+// approach: try the event context text first, then fall back to a player lookup.
+const KNOWN_ATHLETE_SPORTS = {
+  // Basketball (NBA)
+  'shawn kemp': 'basketball', 'gary payton': 'basketball', 'damian lillard': 'basketball',
+  'carmelo anthony': 'basketball', 'allen iverson': 'basketball', 'paul pierce': 'basketball',
+  'ray allen': 'basketball', 'vince carter': 'basketball', 'tracy mcgrady': 'basketball',
+  // Baseball (MLB)
+  'jeremy peña': 'baseball', 'jeremy pena': 'baseball', 'jose altuve': 'baseball',
+  'yordan alvarez': 'baseball', 'alex bregman': 'baseball', 'kyle tucker': 'baseball',
+  // Football (NFL)
+  'earl campbell': 'football', 'vince young': 'football', 'ricky williams': 'football',
+  'christian benford': 'football', 'wayne chrebet': 'football', 'boomer esiason': 'football',
+  'jim kelly': 'football', 'thurman thomas': 'football', 'andre reed': 'football',
+  // Wrestling (WWE/AEW)
+  'ric flair': 'wrestling', 'hulk hogan': 'wrestling', 'stone cold': 'wrestling',
+  'the rock': 'wrestling', 'dwayne johnson': 'wrestling', 'john cena': 'wrestling',
+};
+
+function detectSport(player, context) {
+  // 1. Check context (event title / description / slug) for sport keywords
+  const ctx = (context || '').toLowerCase();
+  if (/\bnfl\b|quarterback|wide receiver|running back|linebacker|tight end|super bowl|wrestlecon/i.test(ctx)) return 'football';
+  if (/\bnba\b|basketball/.test(ctx)) return 'basketball';
+  if (/\bmlb\b|baseball/.test(ctx)) return 'baseball';
+  if (/\bnhl\b|hockey/.test(ctx)) return 'other';
+  if (/\bwwe\b|wrestling|wrestle.?con|wrestlemania/i.test(ctx)) return 'wrestling';
+  if (/soccer|futbol|mls|laliga|footballer/.test(ctx)) return 'soccer';
+  // 2. Known player lookup
+  const found = KNOWN_ATHLETE_SPORTS[(player || '').toLowerCase()];
+  if (found) return found;
+  return 'other';
+}
+
 // ── FITERMAN SPORTS DIRECT CRAWL ─────────────────────────────────────────────
 // Server-rendered HTML listing using My Events Plugin (MEP) WordPress plugin.
 // Date is in .mep-day / .mep-month divs; title is in .mep_list_title h5.
@@ -571,7 +606,7 @@ async function fetchFitermanSports() {
       events.push({
         id:     `fiterman_${slug.replace(/-/g, '_')}`,
         player: playerRaw,
-        sport:  'other',
+        sport:  detectSport(playerRaw, rawTitle),
         date,
         venue:  'Fiterman Sports',
         city,
@@ -630,7 +665,7 @@ async function fetchTSEBuffalo() {
       events.push({
         id:     `tse_${handle}`,
         player,
-        sport:  'other',
+        sport:  detectSport(player, title),
         date,
         venue,
         city:   'Buffalo, NY',
@@ -680,7 +715,7 @@ async function fetchInscriptagraphs() {
       events.push({
         id:     `inscriptagraphs_${handle}`,
         player,
-        sport:  'other',
+        sport:  detectSport(player, combined),
         date,
         venue:  'Inscriptagraphs Memorabilia',
         city:   'Las Vegas, NV',
@@ -727,7 +762,7 @@ async function fetchSportsworldUSA() {
       events.push({
         id:     `swusa_${slug}`,
         player,
-        sport:  'other',
+        sport:  detectSport(player, titleRaw),
         date,
         venue:  '184 Broadway',
         city:   'Saugus, MA',
@@ -777,7 +812,7 @@ async function fetchAuthenticAutographs() {
       events.push({
         id:     `authau_${slug.replace(/-/g, '_')}`,
         player,
-        sport:  'other',
+        sport:  detectSport(player, context),
         date,
         venue:  '',
         city:   'Australia',
@@ -889,13 +924,15 @@ async function fetchEventbriteEvents() {
           const isBook      = /book signing|book tour|autobiography|memoir/.test(combined);
           const isBball     = /\bnba\b|basketball/.test(combined);
           const isWrestling = /\bwwe\b|wrestling|wrestlemania|aew|raw|smackdown|\bmma\b|\bufc\b|boxing/.test(combined);
-          const isOther     = /hockey|baseball|formula.?1/.test(combined);
+          const isFootball  = /\bnfl\b|american football|quarterback|wide receiver|running back|tight end|linebacker/.test(combined);
+          const isBaseball  = /\bmlb\b|baseball/.test(combined);
+          const isOther     = /hockey|formula.?1/.test(combined);
           const isSoccer    = /soccer|football|futbol|calcio/.test(combined);
 
           events.push({
             id:     `eb_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
             player,
-            sport:  isBook ? 'book' : isBball ? 'basketball' : isWrestling ? 'wrestling' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
+            sport:  isBook ? 'book' : isBball ? 'basketball' : isWrestling ? 'wrestling' : isFootball ? 'football' : isBaseball ? 'baseball' : isOther ? 'other' : isSoccer ? 'soccer' : detectSport(player, combined),
             date,
             venue,
             city,
@@ -1326,8 +1363,10 @@ async function fetchEpicEvents() {
       const city  = [loc.city, loc.province].filter(Boolean).join(', ');
 
       // Sport classification from convention title
+      // FAN EXPO / Comic-Con events feature actors & pop-culture celebrities, not athletes
       const convTitle = (conv.title || conv.name || '').toLowerCase();
-      const sport = /wwe|wrestling|ufc|mma|boxing/.test(convTitle) ? 'wrestling'
+      const convSportDefault = /fan.?expo|comic.?con|pop.?culture/i.test(convTitle) ? 'celeb'
+        : /wwe|wrestling|ufc|mma|boxing/.test(convTitle) ? 'wrestling'
         : /nba|basketball/.test(convTitle) ? 'basketball'
         : 'other';
 
@@ -1361,10 +1400,14 @@ async function fetchEpicEvents() {
         const endCheck = convEndDate || date;
         if (new Date(endCheck + 'T00:00:00') < now) continue;
 
+        // For non-celeb conventions, try to detect sport per talent name
+        const talentSport = convSportDefault === 'celeb' ? 'celeb'
+          : detectSport(talentName, convTitle);
+
         events.push({
           id:     `epic_${slug}_${talentSlug}`,
           player: talentName,
-          sport,
+          sport:  talentSport,
           date,
           venue,
           city,
