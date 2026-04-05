@@ -118,10 +118,14 @@ const ALL_QUERIES = [
   { q: 'site:eventbrite.com NBA basketball player signing appearance 2026',   lang: 'en' },
   { q: 'site:eventbrite.com WWE boxing MMA fighter meet greet signing 2026',  lang: 'en' },
   { q: 'site:eventbrite.com celebrity athlete book signing tour 2026',        lang: 'en' },
-  // Brand-partnership fan events (e.g. Nike, Dick's, Madison Reed) don't appear in
+  // Brand-partnership fan events (e.g. Nike, Dick's, Madison Reed, Oakley) don't appear in
   // sports/signing categories — search by top athlete names directly on Eventbrite
   { q: 'site:eventbrite.com "Paige Bueckers" OR "Caitlin Clark" OR "Angel Reese" fan appearance 2026', lang: 'en' },
   { q: 'site:eventbrite.com WNBA player fan event appearance meet 2026',      lang: 'en' },
+  // Oakley / brand-store athlete appearances are posted on the athlete's personal Instagram,
+  // not on signing organizers — catch via site: queries on brand pages
+  { q: 'site:instagram.com/oakley_us athlete store appearance meet 2026',     lang: 'en' },
+  { q: 'site:instagram.com/damianlillard meet store appearance 2026',         lang: 'en' },
   // ── Europe — German (verified: static HTML, dates in URL/JSON-LD) ──
   { q: 'site:bvb.de Autogrammstunde Legendenspiel Fans 2026',                lang: 'de' },
   { q: 'site:fcaugsburg.de Autogrammstunde Spieler 2026',                    lang: 'de' },
@@ -172,6 +176,9 @@ const ALL_QUERIES = [
 // ── INSTAGRAM ACCOUNTS — venue/organizer accounts to monitor via SerpAPI ──────
 // 3 accounts checked per day, rotating through the full list every ~N/3 days.
 const INSTAGRAM_ACCOUNTS = [
+  // ── Athlete personal accounts + brand partners that post store appearances ──
+  'damianlillard',   // posts his own brand-partnership store appearances (Oakley, etc.)
+  'oakley_us',       // announces athlete in-store events at Oakley retail locations
   // ── USA — multi-sport / card shows ──
   'cravetheauto',
   'cardvaultboston',

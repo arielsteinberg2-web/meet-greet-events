@@ -1,7 +1,21 @@
 {
   "generatedAt": "2026-04-03T20:43:30.793Z",
-  "count": 78,
+  "count": 79,
   "events": [
+    {
+      "id": "bball_damian_lillard_oakley_washington_square_mall_portland_apr11",
+      "player": "Damian Lillard",
+      "sport": "basketball",
+      "date": "2026-04-11",
+      "time": "4:00 PM – 5:00 PM PT",
+      "venue": "Oakley Store @ Washington Square Mall",
+      "city": "Portland, OR 🇺🇸",
+      "link": "https://www.instagram.com/damianlillard/",
+      "notes": "Purchase from the Damian Lillard Signature Series (Enigma Ink glasses) to receive a gift with purchase and priority access to meet Damian Lillard. Announced via @damianlillard Instagram.",
+      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/203081.png",
+      "source": "instagram.com/damianlillard",
+      "addedAt": "2026-04-05"
+    },
     {
       "id": "fiterman_shawn_kemp_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Shawn Kemp",
