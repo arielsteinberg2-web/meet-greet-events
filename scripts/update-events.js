@@ -118,6 +118,10 @@ const ALL_QUERIES = [
   { q: 'site:eventbrite.com NBA basketball player signing appearance 2026',   lang: 'en' },
   { q: 'site:eventbrite.com WWE boxing MMA fighter meet greet signing 2026',  lang: 'en' },
   { q: 'site:eventbrite.com celebrity athlete book signing tour 2026',        lang: 'en' },
+  // Brand-partnership fan events (e.g. Nike, Dick's, Madison Reed) don't appear in
+  // sports/signing categories — search by top athlete names directly on Eventbrite
+  { q: 'site:eventbrite.com "Paige Bueckers" OR "Caitlin Clark" OR "Angel Reese" fan appearance 2026', lang: 'en' },
+  { q: 'site:eventbrite.com WNBA player fan event appearance meet 2026',      lang: 'en' },
   // ── Europe — German (verified: static HTML, dates in URL/JSON-LD) ──
   { q: 'site:bvb.de Autogrammstunde Legendenspiel Fans 2026',                lang: 'de' },
   { q: 'site:fcaugsburg.de Autogrammstunde Spieler 2026',                    lang: 'de' },
@@ -183,6 +187,8 @@ const INSTAGRAM_ACCOUNTS = [
   'upperdecksports',
   'fanaticsfest',
   'nbastore',
+  'wnba',
+  'dallaswings',   // Paige Bueckers' team — announces brand-partnership fan events
   // ── Soccer media / live show events ──
   'meninblazers',   // Men in Blazers live shows featuring soccer legends
   'plinusa',        // Premier League USA fan events
@@ -844,7 +850,9 @@ async function fetchEventbriteEvents() {
           // "Meet & Greet w/ Wayne Chrebet @ ..." → "Wayne Chrebet"
           const titlePatterns = [
             /^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\s+(?:book signing|autograph signing|signing event|meet\s*[&+]\s*greet)/i,
-            /(?:meet\s*[&+]\s*greet|signing)\s+w(?:ith|\/)\s+(?:[^A-Z]*?)([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)/i,
+            /(?:meet\s*[&+]\s*greet|signing|event|appearance)\s+w(?:ith|\/)\s+(?:[^A-Z]*?)([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)/i,
+            // "Brand Event with Paige Bueckers" / "Mane Madness Event with Paige Bueckers"
+            /\bevent\s+with\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)/i,
           ];
           let player = null;
           for (const pat of titlePatterns) {
