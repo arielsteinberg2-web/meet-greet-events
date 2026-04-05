@@ -4124,7 +4124,7 @@ function cardHTML(e, i) {
       <div class="dr"><span class="di">${ICONS.calendar}</span><div><span class="dt">${fmtDate(e.date,e.time)}</span><br><span class="dd" style="font-size:.74rem">${countdown(e.date)}</span></div></div>
       <div class="dr"><span class="di">${ICONS.pin}</span><div><span class="dt">${hl(e.venue, currentQ)}</span>${e.city?`<br><span class="dd">${hl(e.city, currentQ)}</span>`:''}</div></div>
       ${e.price?`<div class="dr"><span class="di">${ICONS.price}</span><span class="price-row">${esc(e.price)}</span></div>`:''}
-      ${e.notes?`<div class="dr"><span class="di">${ICONS.info}</span><span class="dt dd" style="font-size:.8rem">${hl(e.notes, currentQ)}</span></div>`:''}
+      ${e.notes && !(evSubtitle && e.notes.toLowerCase().startsWith(evSubtitle.toLowerCase()))?`<div class="dr"><span class="di">${ICONS.info}</span><span class="dt dd" style="font-size:.8rem">${hl(e.notes, currentQ)}</span></div>`:''}
     </div>
     <div class="cf">
       ${hasLink
