@@ -133,6 +133,10 @@ const ALL_QUERIES = [
   { q: 'site:fnac.fr dédicace footballeur sportif livre signature 2026',     lang: 'fr' },
   { q: 'site:cultura.com dédicace footballeur sportif livre 2026',           lang: 'fr' },
   { q: 'site:sortiraparis.com séance dédicace footballeur sportif 2026',     lang: 'fr' },
+  // ── LaLiga — El Partidazo legend watch-party events live on eventbrite.es (not .com) ──
+  // These are announced via @laliga and @laligausa Instagram; tickets sold on eventbrite.es
+  { q: 'site:eventbrite.es "ElPartidazo" OR "El Partidazo" legend 2026',    lang: 'es' },
+  { q: 'site:eventbrite.com "ElPartidazo" laliga legend watch party 2026',  lang: 'en' },
   // ── Europe — Spanish (verified: Real Madrid monthly, Getafe & Sevilla regular store signings) ──
   { q: 'site:realmadrid.com "sesión de firmas" futbolistas 2026',            lang: 'es' },
   { q: 'site:getafecf.com firma autografos 2026',                            lang: 'es' },
@@ -193,6 +197,9 @@ const INSTAGRAM_ACCOUNTS = [
   // ── Soccer media / live show events ──
   'meninblazers',   // Men in Blazers live shows featuring soccer legends
   'plinusa',        // Premier League USA fan events
+  // ── LaLiga — El Partidazo legend watch-party events (eventbrite.es, not .com) ──
+  'laliga',
+  'laligausa',      // US-specific LaLiga account announcing El Partidazo legend events
   // ── UK — soccer / sports signing organizers ──
   'superstarspeakers_ltd',
   'allstarsignings',
@@ -1211,7 +1218,7 @@ async function parseOrganic(data, lang) {
     const isNFL    = /\bnfl\b|american football|super bowl|superbowl|touchdown|quarterback|wide receiver|running back|tight end|linebacker|defensive end|eagles|patriots|cowboys|chiefs|steelers|packers|bears|giants|ravens|broncos|seahawks|49ers|rams|chargers|raiders|dolphins|bills|bengals|browns|colts|jaguars|titans|texans|falcons|saints|panthers|buccaneers|vikings|lions|cardinals/.test(combined);
     const isWrestling = !isBook && !isBball && !isPol && !isCeleb && !isNFL && /\bwwe\b|wrestling|wrestlemania|raw|smackdown|aew|ring of honor|impact wrestling|\bmma\b|\bufc\b|boxing/.test(combined);
     const isOther  = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isWrestling && /gymnast|olympic|mlb|baseball|nhl|hockey|card show|formula.?1|formula one|\bf1\b|grand prix|f1 driver|f1 pilote|f1 pilota|formel 1/.test(combined);
-    const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isWrestling && !isOther && /\bsoccer\b|futbol|calcio|fútbol|\bfootballer\b|calciatore|\bfoot\b|ligue|premier league|bundesliga|serie a|la liga|champions league|\bcopa\b|\bmls\b|\bfifa\b/.test(combined);
+    const isSoccer = !isBook && !isBball && !isPol && !isCeleb && !isNFL && !isWrestling && !isOther && /\bsoccer\b|futbol|calcio|fútbol|\bfootballer\b|calciatore|\bfoot\b|ligue|premier league|bundesliga|serie a|la liga|\blaliga\b|champions league|\bcopa\b|\bmls\b|\bfifa\b|elpartidazo|el partidazo/.test(combined);
 
     // Wikipedia verification: only for celebs and non-athlete book authors.
     // Athletes (any sport) are trusted — their events are sport-specific queries.
