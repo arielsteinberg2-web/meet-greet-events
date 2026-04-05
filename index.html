@@ -3593,11 +3593,12 @@ async function loadLiveEvents() {
     let changed = 0;
     for (const e of (data.events || [])) {
       if (e.link && linkIndex.has(e.link)) {
-        // Update mutable fields on already-cached live events (e.g. sport corrections)
+        // Update mutable fields on already-cached events (sport, img corrections)
         const idx = linkIndex.get(e.link);
-        if (events[idx].id.startsWith('live_') || events[idx].id.startsWith('evt_')) {
-          if (events[idx].sport !== e.sport) { events[idx].sport = e.sport; changed++; }
-        }
+        let c = 0;
+        if (e.sport && events[idx].sport !== e.sport) { events[idx].sport = e.sport; c++; }
+        if (e.img   && events[idx].img   !== e.img)   { events[idx].img   = e.img;   c++; }
+        if (c) changed += c;
         continue;
       }
       const nd = e.player.toLowerCase().replace(/[^a-z0-9]/g,'').substring(0,20) + '|' + e.date;
