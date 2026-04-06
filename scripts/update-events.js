@@ -179,6 +179,17 @@ const INSTAGRAM_ACCOUNTS = [
   // ── Athlete personal accounts + brand partners that post store appearances ──
   'damianlillard',   // posts his own brand-partnership store appearances (Oakley, etc.)
   'oakley_us',       // announces athlete in-store events at Oakley retail locations
+  // ── Sports drink / CPG brands that run athlete in-store fan events ──
+  'drinkrecover',    // Recover 180 — posts athlete store appearances (e.g. Buddy Hield at Kroger)
+  'bodyarmor',       // Body Armor sports drink — frequent athlete fan-event partner
+  'gatorade',        // Gatorade athlete appearances and activations
+  'powerade',        // Powerade athlete events
+  'celsiusofficial', // Celsius energy drink — NBA/NFL athlete events
+  'primehydrate',    // Prime Hydration — Logan Paul/KSI brand, athlete appearances
+  // ── Retail chains that host athlete in-store events ──
+  'kroger',          // Kroger grocery — hosts brand-partnership athlete appearances
+  'targetstyle',     // Target — athlete brand-partnership events
+  'walmart',         // Walmart — athlete in-store activations
   // ── USA — multi-sport / card shows ──
   'cravetheauto',
   'cardvaultboston',
@@ -281,6 +292,12 @@ const MONITORED_PLAYERS = [
   'Hernan Crespo',
   'Ivan Rakitic',
   'Luka Modric',
+  'Buddy Hield',
+  'Zach LaVine',
+  'Bradley Beal',
+  'Julius Randle',
+  'Pascal Siakam',
+  'Dejounte Murray',
 ];
 
 // ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────

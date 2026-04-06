@@ -3,6 +3,21 @@
   "count": 385,
   "events": [
     {
+      "id": "bball_buddy_hield_kroger_atlanta_apr9",
+      "player": "Buddy Hield",
+      "title": "Snap a Photo — Recover 180 x Kroger",
+      "sport": "basketball",
+      "date": "2026-04-09",
+      "time": "5:30 PM – 6:30 PM PT",
+      "venue": "Kroger, 800 Glenwood Ave SE",
+      "city": "Atlanta, GA 🇺🇸",
+      "link": "https://www.instagram.com/drinkrecover/",
+      "notes": "Photos only — first come, first served. Signatures not permitted. First 100 fans receive a Buddy Hield poster.",
+      "source": "instagram.com/drinkrecover",
+      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627741.png",
+      "addedAt": "2026-04-05"
+    },
+    {
       "id": "fiterman_shawn_kemp_public_autograph_event_fiterman_sports_league_city_tx",
       "player": "Shawn Kemp",
       "sport": "basketball",
