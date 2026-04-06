@@ -1399,13 +1399,6 @@
       .stat { padding:8px 10px; }
       .stat-n { font-size:1rem; }
     }
-  /* ── AD SLOTS ── */
-  .ad-slot {
-    grid-column: 1 / -1;
-    display: flex; justify-content: center; align-items: center;
-    min-height: 90px; padding: 8px 0;
-  }
-  .ad-slot ins { display: block; }
   </style>
 
   <!-- ═══════════════════════════════════════════════════
@@ -3755,8 +3748,7 @@ function render() {
         <div class="${gridCls}">${g.events.map((e,i)=>{
           const card = cardHTML(e,idx++);
           // Insert ad slot after every 12th card (not after the last one)
-          const ad = (i>0 && i%12===0) ? `<div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins></div>` : '';
-          return ad + card;
+          return card;
         }).join('')}</div>
       </div>`).join('');
   }
