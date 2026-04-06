@@ -1323,6 +1323,9 @@ async function parseOrganic(data, lang) {
     if (!isTalkVenue && /in conversation with|in conversation:|a conversation with|talks? with|interview with|evening with.*broadway|broadway.*in conversation/.test(combined)
         && !/meet.?greet|autograph|signing|fan event|vip meet/.test(combined)) continue;
 
+    // ── SKIP lottery/contest/prize events — not open ticketed M&G ────────────
+    if (/\b(win|winner|contest|lottery|raffle|sweepstake|giveaway|prize|draw)\b.{0,60}\b(meet|greet|trip|ticket|experience)\b|\b(meet|greet|trip|ticket|experience)\b.{0,60}\b(win|winner|contest|lottery|raffle|sweepstake|giveaway|prize|draw)\b/i.test(combined)) continue;
+
     // ── DOMAIN BLOCKLIST — known past/irrelevant events ───────────────────────
     const BLOCKED_DOMAINS = [
       'goldoveramericatour.com',  // 2024 tour — past
