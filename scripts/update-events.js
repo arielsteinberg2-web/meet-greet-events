@@ -298,6 +298,9 @@ const MONITORED_PLAYERS = [
   'Hernan Crespo',
   'Ivan Rakitic',
   'Luka Modric',
+  'Usain Bolt',
+  'Michael Phelps',
+  'Katie Ledecky',
 ];
 
 // ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────
