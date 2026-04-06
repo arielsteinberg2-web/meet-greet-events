@@ -215,6 +215,9 @@ const INSTAGRAM_ACCOUNTS = [
   'nbastore',
   'wnba',
   'dallaswings',   // Paige Bueckers' team — announces brand-partnership fan events
+  // ── Soccer charity / celebrity legends matches ──
+  'socceraid',      // Soccer Aid for UNICEF — annual legends+celeb match (London Stadium); VIP/fan zone packages
+  'fifaworldcup',   // FIFA World Cup 2026 — fan festivals in host cities (US/Canada/Mexico) with legend appearances
   // ── Soccer media / live show events ──
   'meninblazers',   // Men in Blazers live shows featuring soccer legends
   'plinusa',        // Premier League USA fan events
