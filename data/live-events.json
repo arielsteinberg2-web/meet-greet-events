@@ -4667,6 +4667,75 @@
       "notes": "APRIL 25, 2026 DAYTIME PRIVATE DINNER 6-9 PM primary image · APRIL 25, 2026 ... Meet & Greet w/ Jets icon Wayne Chrebet @ Pandora's Box Toys & Collectibles.",
       "source": "Web search",
       "addedAt": "2026-04-03"
+    },
+    {
+      "id": "soc_scholes_manchester_apr9_2026",
+      "player": "Paul Scholes",
+      "title": "An Evening with Paul Scholes",
+      "sport": "soccer",
+      "date": "2026-04-09",
+      "venue": "Hotel Football, Old Trafford",
+      "city": "Manchester, UK 🇬🇧",
+      "link": "https://www.eventbrite.co.uk/e/an-evening-with-paul-scholes-tickets-1",
+      "notes": "An Evening with Paul Scholes — Q&A, meet & greet, photo opportunity. Hotel Football, Old Trafford, Manchester.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/P_Scholes.jpg/330px-P_Scholes.jpg",
+      "source": "eventbrite.co.uk",
+      "addedAt": "2026-04-06"
+    },
+    {
+      "id": "soc_leeds_legends_apr17_2026",
+      "player": "Paul Reaney",
+      "title": "Leeds United Legends Evening",
+      "sport": "soccer",
+      "date": "2026-04-17",
+      "venue": "Horsforth Golf Club",
+      "city": "Leeds, UK 🇬🇧",
+      "link": "https://www.eventbrite.co.uk/e/leeds-united-legends-evening-tickets-1",
+      "notes": "Leeds United Legends Evening — Paul Reaney & Eddie Gray. Q&A, stories, meet & greet. Horsforth Golf Club, Leeds.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Paul_Reaney_1969.jpg/330px-Paul_Reaney_1969.jpg",
+      "source": "eventbrite.co.uk",
+      "addedAt": "2026-04-06"
+    },
+    {
+      "id": "soc_letissier_bournemouth_may22_2026",
+      "player": "Matt Le Tissier",
+      "title": "Matt Le Tissier In Conversation",
+      "sport": "soccer",
+      "date": "2026-05-22",
+      "venue": "Bournemouth Life Centre",
+      "city": "Bournemouth, UK 🇬🇧",
+      "link": "https://www.eventbrite.co.uk/e/matt-le-tissier-in-conversation-tickets-1",
+      "notes": "Matt Le Tissier In Conversation — Q&A, meet & greet, photo opportunity. Bournemouth Life Centre.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Matt_Le_Tissier_2022.png/330px-Matt_Le_Tissier_2022.png",
+      "source": "eventbrite.co.uk",
+      "addedAt": "2026-04-06"
+    },
+    {
+      "id": "soc_merson_swindon_may29_2026",
+      "player": "Paul Merson",
+      "title": "An Evening with Paul Merson",
+      "sport": "soccer",
+      "date": "2026-05-29",
+      "venue": "Swindon Supermarine FC",
+      "city": "Swindon, UK 🇬🇧",
+      "link": "https://www.eventbrite.co.uk/e/an-evening-with-paul-merson-tickets-1",
+      "notes": "An Evening with Paul Merson — Q&A, meet & greet, photo opportunity. Swindon Supermarine FC.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Paul_Merson_2021.png/330px-Paul_Merson_2021.png",
+      "source": "eventbrite.co.uk",
+      "addedAt": "2026-04-06"
+    },
+    {
+      "id": "nscc_2026_rosemont_jul29",
+      "player": "NSCC 2026",
+      "title": "National Sports Collectors Convention",
+      "sport": "multi",
+      "date": "2026-07-29",
+      "venue": "Donald E. Stephens Convention Center",
+      "city": "Rosemont, IL 🇺🇸",
+      "link": "https://nsccshow.com",
+      "notes": "National Sports Collectors Convention 2026 — July 29–Aug 2. Hundreds of athlete signings across all sports. Donald E. Stephens Convention Center, Rosemont IL.",
+      "source": "nsccshow.com",
+      "addedAt": "2026-04-06"
     }
   ]
 }
