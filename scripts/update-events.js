@@ -204,6 +204,7 @@ const INSTAGRAM_ACCOUNTS = [
   'tsebuffalo',
   'ptframing12',        // Prime Time Sports & Framing — signing organizer at Great Northern Mall OH
   'greatnorthernmalloh', // mall account that co-posts athlete signing events with ptframing12
+  'boomtownsportscards', // Boomtown Sports Cards & Collectibles, San Antonio TX — in-shop signings
   'nynjsportsworld',
   'woodbridgebrewingco',
   'tristar1',
