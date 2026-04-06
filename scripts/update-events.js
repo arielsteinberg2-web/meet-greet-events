@@ -292,12 +292,6 @@ const MONITORED_PLAYERS = [
   'Hernan Crespo',
   'Ivan Rakitic',
   'Luka Modric',
-  'Buddy Hield',
-  'Zach LaVine',
-  'Bradley Beal',
-  'Julius Randle',
-  'Pascal Siakam',
-  'Dejounte Murray',
 ];
 
 // ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────
