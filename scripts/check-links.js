@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 /**
  * check-links.js
- * Scans every link in data/live-events.json with a HEAD request.
- * Sets linkBroken:true on dead links, clears it when they recover.
+ * Scans every link AND photo URL in data/live-events.json with HEAD requests.
+ * Sets linkBroken:true on dead event links, clears it when they recover.
+ * Clears img field when photo URL returns 404 (so Wikipedia auto-fetch retries).
  * Run weekly via GitHub Actions (.github/workflows/check-links.yml).
  */
 
@@ -64,33 +65,44 @@ async function main() {
   const events = data.events;
 
   let checked = 0, broken = 0, recovered = 0, skipped = 0;
+  let photoBroken = 0, photoCleared = 0;
 
   for (const ev of events) {
-    if (!ev.link || !ev.link.startsWith('http') || SKIP_RE.test(ev.link)) {
+    // ── Check event link ──────────────────────────────────────────────────
+    if (ev.link && ev.link.startsWith('http') && !SKIP_RE.test(ev.link)) {
+      const { ok, status } = await checkLink(ev.link);
+      checked++;
+      if (!ok) {
+        console.log(`BROKEN LINK [${status || 'timeout'}] ${ev.player} — ${ev.link}`);
+        ev.linkBroken = true;
+        broken++;
+      } else if (ev.linkBroken) {
+        console.log(`RECOVERED LINK [${status}] ${ev.player} — ${ev.link}`);
+        delete ev.linkBroken;
+        recovered++;
+      }
+      await sleep(300);
+    } else {
       skipped++;
-      continue;
     }
 
-    const { ok, status } = await checkLink(ev.link);
-    checked++;
-
-    if (!ok) {
-      console.log(`BROKEN [${status || 'timeout'}] ${ev.player} — ${ev.link}`);
-      ev.linkBroken = true;
-      broken++;
-    } else if (ev.linkBroken) {
-      console.log(`RECOVERED [${status}] ${ev.player} — ${ev.link}`);
-      delete ev.linkBroken;
-      recovered++;
+    // ── Check photo URL ───────────────────────────────────────────────────
+    if (ev.img && ev.img.startsWith('http')) {
+      const { ok, status } = await checkLink(ev.img);
+      if (!ok) {
+        console.log(`BROKEN PHOTO [${status || 'timeout'}] ${ev.player} — ${ev.img}`);
+        delete ev.img; // clear so Wikipedia auto-fetch can retry on next run
+        photoBroken++;
+      }
+      await sleep(200);
     }
-
-    await sleep(400); // be polite to servers
   }
 
   data.linkCheckedAt = new Date().toISOString();
   writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
 
-  console.log(`\nLink check done: ${checked} checked, ${broken} broken, ${recovered} recovered, ${skipped} skipped`);
+  console.log(`\nLink check done: ${checked} links checked, ${broken} broken, ${recovered} recovered, ${skipped} skipped`);
+  console.log(`Photo check done: ${photoBroken} broken photos cleared`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
