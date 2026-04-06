@@ -1206,6 +1206,8 @@
     .rl.none { background:var(--surface); color:var(--dim); border:1px solid var(--border); cursor:default; pointer-events:none; }
     .rl.social-lnk { background:rgba(0,229,204,.1); color:#00e5cc; border:1px solid rgba(0,229,204,.28); }
     .rl.social-lnk:hover { background:rgba(0,229,204,.2); }
+    .rl.broken-lnk { background:rgba(255,152,0,.08); color:#ff9800; border:1px solid rgba(255,152,0,.3); cursor:not-allowed; pointer-events:none; }
+
     .src { font-size:.68rem; color:var(--dim); margin-top:7px; display:flex; align-items:center; gap:5px; }
     .src svg { width:14px; height:14px; flex-shrink:0; }
     .past-tag {
@@ -4098,8 +4100,8 @@ function cardHTML(e, i) {
   const past  = new Date(e.date+'T12:00:00') < new Date();
   const hasLink = e.link && e.link.startsWith('http');
   const isSocial = hasLink && /(instagram\.com|twitter\.com|x\.com\/\w+\/status|facebook\.com|tiktok\.com)/.test(e.link);
-  const linkCls = !hasLink ? 'none' : isSocial ? 'social-lnk' : cls;
-  const linkTxt = !hasLink ? 'Registration link TBA' : isSocial ? '📱 View Post →' : `🎟 Register / Get Tickets →`;
+  const linkCls = !hasLink ? 'none' : e.linkBroken ? 'broken-lnk' : isSocial ? 'social-lnk' : cls;
+  const linkTxt = !hasLink ? 'Registration link TBA' : e.linkBroken ? '⚠️ Link may be unavailable' : isSocial ? '📱 View Post →' : `🎟 Register / Get Tickets →`;
   const langFlag = e.lang && LANG_FLAGS[e.lang] ? LANG_FLAGS[e.lang] : '';
   const langName = e.lang && LANG_NAMES[e.lang] ? LANG_NAMES[e.lang] : '';
   const transBadge = langFlag
