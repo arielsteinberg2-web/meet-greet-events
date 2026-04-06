@@ -3457,7 +3457,7 @@ let showNewOnly = false;
 let newEventIds = JSON.parse(localStorage.getItem('mng_new') || '{}');
 let viewMode = localStorage.getItem('mng_view') || 'grid';
 let currentQ = '';
-let theme = localStorage.getItem('mng_theme') || (window.matchMedia('(prefers-color-scheme:light)').matches ? 'light' : 'dark');
+let theme = localStorage.getItem('mng_theme') || 'dark';
 
 function toggleSave(id) {
   if (savedIds.has(id)) savedIds.delete(id);
