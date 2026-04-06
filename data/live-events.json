@@ -5120,6 +5120,19 @@
       "source": "fanaticsfest.com",
       "addedAt": "2026-04-06",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2025-0120_Cole_Gahagan_%28cropped%29.jpg/330px-2025-0120_Cole_Gahagan_%28cropped%29.jpg"
+    },
+    {
+      "id": "bolt-budapest-2026",
+      "player": "Usain Bolt",
+      "sport": "other",
+      "date": "2026-09-11",
+      "venue": "National Athletics Centre",
+      "city": "Budapest, Hungary",
+      "link": "https://worldathletics.org/competitions/world-athletics-ultimate-championship/2026/news/press-releases/ultimate-fan-challenge",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Usain_Bolt_-_240422_190142_%28cropped%29.jpg/330px-25th_Laureus_World_Sports_Awards_-_Red_Carpet_-_Usain_Bolt_-_240422_190142_%28cropped%29.jpg",
+      "notes": "Bolt is the Ultimate Legend ambassador for the inaugural World Athletics Ultimate Championship. 3 contest winners earn a VIP trip to Budapest (travel, accommodation, tickets) + private meet & greet with Bolt. Enter the Ultimate Fan Challenge at BeTheUltimateFan.com — Phase 1 quizzes until Jun 4; Phase 2 creative submission Jun 20–Jul 23.",
+      "addedAt": "2026-04-06T00:00:00.000Z",
+      "source": "World Athletics — worldathletics.org"
     }
   ]
 }
