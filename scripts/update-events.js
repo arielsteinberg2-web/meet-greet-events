@@ -197,6 +197,8 @@ const INSTAGRAM_ACCOUNTS = [
   'cardvaultsacramento',
   'cardvaultla',
   'best_card_shop',
+  'footballfactory_nyc',
+  'newyorkfoxes',
   'dickssportinggoods',
   'dickshouseofsport',   // uses "athlete appearances" not "autograph signing"
   'shopwss',
