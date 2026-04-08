@@ -192,9 +192,11 @@ const INSTAGRAM_ACCOUNTS = [
   'walmart',         // Walmart — athlete in-store activations
   // ── USA — multi-sport / card shows ──
   'cravetheauto',
+  'cardvaultbytombrady',
   'cardvaultboston',
   'cardvaultsacramento',
   'cardvaultla',
+  'best_card_shop',
   'dickssportinggoods',
   'dickshouseofsport',   // uses "athlete appearances" not "autograph signing"
   'shopwss',

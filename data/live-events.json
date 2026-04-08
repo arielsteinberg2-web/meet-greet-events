@@ -5120,6 +5120,48 @@
       "source": "fanaticsfest.com",
       "addedAt": "2026-04-06",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2025-0120_Cole_Gahagan_%28cropped%29.jpg/330px-2025-0120_Cole_Gahagan_%28cropped%29.jpg"
+    },
+    {
+      "id": "live_1775684431035_lmpaa",
+      "player": "Devin Harris",
+      "sport": "basketball",
+      "date": "2026-04-12",
+      "time": "17:30",
+      "venue": "Card Vault by Tom Brady — 3030 Nowitzki Way",
+      "city": "Dallas, TX 🇺🇸",
+      "link": "https://www.instagram.com/cardvaultbytombrady/",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Devin_Harris_in_2022.jpg/330px-Devin_Harris_in_2022.jpg",
+      "notes": "Free photos and autographed 8x10s. Appearing alongside Rolando Blackman. 5:30–6:30 PM.",
+      "addedAt": "2026-04-08T00:00:00.000Z",
+      "source": "cardvaultbytombrady — Instagram"
+    },
+    {
+      "id": "live_1775684431035_mqlpd",
+      "player": "Rolando Blackman",
+      "sport": "basketball",
+      "date": "2026-04-12",
+      "time": "17:30",
+      "venue": "Card Vault by Tom Brady — 3030 Nowitzki Way",
+      "city": "Dallas, TX 🇺🇸",
+      "link": "https://www.instagram.com/cardvaultbytombrady/",
+      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/76112.png",
+      "notes": "4-time NBA All-Star, Dallas Mavericks great. Free photos and autographed 8x10s. Appearing alongside Devin Harris. 5:30–6:30 PM.",
+      "addedAt": "2026-04-08T00:00:00.000Z",
+      "source": "cardvaultbytombrady — Instagram"
+    },
+    {
+      "id": "live_1775684431035_iknfw",
+      "player": "Obi Toppin",
+      "sport": "basketball",
+      "date": "2026-04-11",
+      "time": "16:00",
+      "venue": "Best Card Shop",
+      "city": "Indiana (location TBC)",
+      "link": "https://www.instagram.com/best_card_shop/",
+      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630167.png",
+      "notes": "Autograph signing. $40 per item. 4–5 PM. No exceptions, no drop-offs — must be present.",
+      "addedAt": "2026-04-08T00:00:00.000Z",
+      "source": "best_card_shop — Instagram"
     }
   ]
 }
