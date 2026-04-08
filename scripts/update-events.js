@@ -1690,6 +1690,32 @@ async function main() {
 
   console.log(`Found ${future.length} live events this run; ${carried.length} carried from previous; ${finalEvents.length} total`);
 
+  // ── noMG CHECKER — rotate through unconfirmed M&G events, search for updates ─
+  const noMGEvents = finalEvents.filter(e => e.noMG && new Date(e.date + 'T12:00:00') >= today);
+  if (noMGEvents.length > 0) {
+    // Check 2 per run, rotating by day
+    const checkSlice = [0, 1].map(offset => noMGEvents[(dayOfYear * 2 + offset) % noMGEvents.length]).filter(Boolean);
+    console.log(`noMG check: ${checkSlice.map(e => e.player).join(', ')}`);
+    for (const ev of checkSlice) {
+      const q = `"${ev.player}" meet greet autograph fan VIP signing 2026`;
+      const data = SERPER_KEY ? await fetchSerper(q) : null;
+      if (!data || !data.organic_results) { await sleep(1000); continue; }
+      const mgHit = data.organic_results.find(r => {
+        const text = `${r.title} ${r.snippet}`.toLowerCase();
+        return /meet.?greet|autograph|signing|vip.*meet|fan.*experience/.test(text)
+          && !/lottery|raffle|contest|prize|giveaway|win a/.test(text);
+      });
+      if (mgHit) {
+        console.log(`  ✅ noMG RESOLVED for ${ev.player}: ${mgHit.link}`);
+        ev.noMG = false;
+        ev.notes = (ev.notes || '') + ` ⚡ M&G now confirmed — see ${mgHit.link}`;
+      } else {
+        console.log(`  — Still no M&G for ${ev.player}`);
+      }
+      await sleep(1000);
+    }
+  }
+
   mkdirSync(join(__dirname, '../data'), { recursive: true });
   writeFileSync(OUT_FILE, JSON.stringify({
     generatedAt: new Date().toISOString(),
