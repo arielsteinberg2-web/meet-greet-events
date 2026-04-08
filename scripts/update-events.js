@@ -200,6 +200,8 @@ const INSTAGRAM_ACCOUNTS = [
   'footballfactory_nyc',
   'newyorkfoxes',
   'mtr7_sports',
+  'pereirajogodasestrelas',
+  'jogodoronaldinho',
   'dickssportinggoods',
   'dickshouseofsport',   // uses "athlete appearances" not "autograph signing"
   'shopwss',
