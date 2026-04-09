@@ -202,6 +202,8 @@ const INSTAGRAM_ACCOUNTS = [
   'mtr7_sports',
   'pereirajogodasestrelas',
   'jogodoronaldinho',
+  'jcollection1897',
+  'blacknwhitemalta',
   'dickssportinggoods',
   'dickshouseofsport',   // uses "athlete appearances" not "autograph signing"
   'shopwss',
