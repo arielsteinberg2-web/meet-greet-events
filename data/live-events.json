@@ -5232,6 +5232,62 @@
       "addedAt": "2026-04-09T00:00:00.000Z",
       "source": "sebafrey — Instagram",
       "noMG": true
+    },
+    {
+      "player": "Jet Li",
+      "sport": "book",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Jet_Li_2009_%28cropped%29.jpg/330px-Jet_Li_2009_%28cropped%29.jpg",
+      "addedAt": "2026-04-09T00:00:00.000Z",
+      "source": "Jet Li — Beyond Life and Death Book Tour",
+      "id": "jetli_book_austin",
+      "date": "2026-05-01",
+      "time": "18:00",
+      "venue": "BookPeople",
+      "city": "Austin, TX 🇺🇸",
+      "link": "https://www.instagram.com/bookpeople/",
+      "notes": "Beyond Life and Death book tour signing. 6 PM CT."
+    },
+    {
+      "player": "Jet Li",
+      "sport": "book",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Jet_Li_2009_%28cropped%29.jpg/330px-Jet_Li_2009_%28cropped%29.jpg",
+      "addedAt": "2026-04-09T00:00:00.000Z",
+      "source": "Jet Li — Beyond Life and Death Book Tour",
+      "id": "jetli_book_nyc",
+      "date": "2026-05-05",
+      "time": "12:00",
+      "venue": "Barnes & Noble 5th Ave",
+      "city": "New York, NY 🇺🇸",
+      "link": "https://www.instagram.com/bnfifthavenue/",
+      "notes": "Beyond Life and Death book tour signing. 12 PM ET."
+    },
+    {
+      "player": "Jet Li",
+      "sport": "book",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Jet_Li_2009_%28cropped%29.jpg/330px-Jet_Li_2009_%28cropped%29.jpg",
+      "addedAt": "2026-04-09T00:00:00.000Z",
+      "source": "Jet Li — Beyond Life and Death Book Tour",
+      "id": "jetli_book_nj",
+      "date": "2026-05-05",
+      "time": "18:00",
+      "venue": "Bookends",
+      "city": "Ridgewood, NJ 🇺🇸",
+      "link": "https://www.instagram.com/bookendsnj/",
+      "notes": "Beyond Life and Death book tour signing. 6 PM ET."
+    },
+    {
+      "player": "Jet Li",
+      "sport": "book",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Jet_Li_2009_%28cropped%29.jpg/330px-Jet_Li_2009_%28cropped%29.jpg",
+      "addedAt": "2026-04-09T00:00:00.000Z",
+      "source": "Jet Li — Beyond Life and Death Book Tour",
+      "id": "jetli_book_la",
+      "date": "2026-05-07",
+      "time": "18:00",
+      "venue": "Barnes & Noble at The Grove",
+      "city": "Los Angeles, CA 🇺🇸",
+      "link": "https://www.instagram.com/bneventsgrove/",
+      "notes": "Beyond Life and Death book tour signing. 6 PM PT."
     }
   ]
 }
