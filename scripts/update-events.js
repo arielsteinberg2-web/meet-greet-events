@@ -205,6 +205,7 @@ const INSTAGRAM_ACCOUNTS = [
   'jcollection1897',
   'blacknwhitemalta',
   'clashoflegends.id',
+  'ligamonumental',    // Venezuela baseball legends M&G events
   'sebafrey',
   'dickssportinggoods',
   'dickshouseofsport',   // uses "athlete appearances" not "autograph signing"

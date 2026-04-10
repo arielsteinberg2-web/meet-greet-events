@@ -1,7 +1,20 @@
 {
   "generatedAt": "2026-04-10T16:42:14.037Z",
-  "count": 578,
+  "count": 579,
   "events": [
+    {
+      "id": "manual_ligamon_1",
+      "player": "Robinson Canó + David Ortiz – Fan Zone Meet & Greet",
+      "sport": "baseball",
+      "date": "2026-04-11",
+      "venue": "Estadio Monumental",
+      "city": "Caracas, Venezuela 🇻🇪",
+      "link": "https://www.instagram.com/ligamonumental/",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Robinson_Can%C3%B3.jpg/320px-Robinson_Can%C3%B3.jpg",
+      "notes": "Fan Zone M&G – VIP salon access, photos + autographs with legends. 100 tickets only via @maketicket.ve and @redticket_ve. Kit includes ball, sharpie, entry, parking pass, bracelet.",
+      "source": "ligamonumental (Instagram)",
+      "addedAt": "2026-04-10"
+    },
     {
       "id": "live_1775838255149_t2k6i",
       "player": "Champ Lamar Odom",
