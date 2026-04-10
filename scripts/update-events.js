@@ -204,6 +204,8 @@ const INSTAGRAM_ACCOUNTS = [
   'jogodoronaldinho',
   'jcollection1897',
   'blacknwhitemalta',
+  'clashoflegends.id',
+  'sebafrey',
   'dickssportinggoods',
   'dickshouseofsport',   // uses "athlete appearances" not "autograph signing"
   'shopwss',
