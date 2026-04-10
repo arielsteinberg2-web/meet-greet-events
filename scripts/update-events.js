@@ -1703,7 +1703,7 @@ async function main() {
     for (const ev of checkSlice) {
       const q = `"${ev.player}" meet greet autograph fan VIP signing 2026`;
       const data = SERPER_KEY ? await fetchSerper(q) : null;
-      if (!data || !data.organic_results) { await sleep(1000); continue; }
+      if (!data || !data.organic_results) { await new Promise(r => setTimeout(r, 1000)); continue; }
       const mgHit = data.organic_results.find(r => {
         const text = `${r.title} ${r.snippet}`.toLowerCase();
         return /meet.?greet|autograph|signing|vip.*meet|fan.*experience/.test(text)
@@ -1716,7 +1716,7 @@ async function main() {
       } else {
         console.log(`  — Still no M&G for ${ev.player}`);
       }
-      await sleep(1000);
+      await new Promise(r => setTimeout(r, 1000));
     }
   }
 
