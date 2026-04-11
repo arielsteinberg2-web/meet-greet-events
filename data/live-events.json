@@ -1,7 +1,21 @@
 {
   "generatedAt": "2026-04-10T16:42:14.037Z",
-  "count": 582,
+  "count": 583,
   "events": [
+    {
+      "id": "manual_jhudson_hollywood_jun20",
+      "player": "Jennifer Hudson",
+      "sport": "music",
+      "date": "2026-06-20",
+      "time": "20:00",
+      "venue": "Hard Rock Live",
+      "city": "Hollywood, FL 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-hollywood-florida-06-20-2026/event/0D00638CE796D2A1",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jennifer_Hudson_2018.jpg/320px-Jennifer_Hudson_2018.jpg",
+      "notes": "VIP M&G upgrade ($300, separate concert ticket required). Includes: photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. Part of 'Two Legendary Voices' tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10"
+    },
     {
       "id": "manual_elpartidazo_nyc_may10",
       "player": "Rivaldo + Fernando Morientes – ElPartidazo Watch Party",
