@@ -1331,11 +1331,14 @@ async function fetchSerper(q, attempts = 3, key = SERPER_KEY) {
 async function fetchTicketmasterMG() {
   if (!TM_API_KEY) return [];
   const out = [];
-  // Tested keywords — "meet and greet" and "vip upgrade" are the two that return results
-  const keywords = ['meet and greet', 'vip upgrade'];
+  // Tested keywords — "meet and greet" and "vip upgrade" are the two that return results.
+  // Countries tested — only US, CA, GB, NL, ES, MX, CZ return results; others consistently 0.
+  const keywords = ['meet and greet', 'vip upgrade', 'meet & greet'];
+  const countries = ['US', 'CA', 'GB', 'NL', 'ES', 'MX', 'CZ', 'IE', 'AU', 'DE', 'FR', 'IT', 'PL'];
+  for (const cc of countries) {
   for (const kw of keywords) {
     try {
-      const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${TM_API_KEY}&keyword=${encodeURIComponent(kw)}&countryCode=US&size=50&sort=date,asc`;
+      const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${TM_API_KEY}&keyword=${encodeURIComponent(kw)}&countryCode=${cc}&size=50&sort=date,asc`;
       const ctrl = new AbortController();
       const t = setTimeout(() => ctrl.abort(), 12000);
       const r = await fetch(url, { signal: ctrl.signal });
@@ -1365,7 +1368,7 @@ async function fetchTicketmasterMG() {
           date:    dateStr,
           time:    ev.dates?.start?.localTime?.slice(0, 5) || '',
           venue:   venue?.name || '',
-          city:    city ? `${city} 🇺🇸` : '',
+          city:    city ? `${city} ${({US:'🇺🇸',CA:'🇨🇦',GB:'🇬🇧',IE:'🇮🇪',AU:'🇦🇺',NL:'🇳🇱',DE:'🇩🇪',FR:'🇫🇷',ES:'🇪🇸',MX:'🇲🇽',CZ:'🇨🇿',IT:'🇮🇹',PL:'🇵🇱'})[cc] || ''}` : '',
           link,
           notes:   `Ticketmaster VIP M&G upgrade. Concert ticket sold separately.`,
           source:  'ticketmaster.com (Discovery API)',
@@ -1373,8 +1376,9 @@ async function fetchTicketmasterMG() {
         });
       }
     } catch (e) { console.warn('TM fetch error:', e.message); }
-    await new Promise(r => setTimeout(r, 500));
+    await new Promise(r => setTimeout(r, 300));
   }
+  } // end countries loop
   // Deduplicate by link
   const seen = new Set();
   return out.filter(e => { if (seen.has(e.link)) return false; seen.add(e.link); return true; });
