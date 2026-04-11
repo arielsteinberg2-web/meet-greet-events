@@ -1,7 +1,21 @@
 {
   "generatedAt": "2026-04-10T16:42:14.037Z",
-  "count": 581,
+  "count": 582,
   "events": [
+    {
+      "id": "manual_elpartidazo_nyc_may10",
+      "player": "Rivaldo + Fernando Morientes – ElPartidazo Watch Party",
+      "sport": "soccer",
+      "date": "2026-05-10",
+      "time": "12:00",
+      "venue": "Pig Beach BBQ Queens",
+      "city": "Astoria (Queens), NY 🇺🇸",
+      "link": "https://www.eventbrite.es/e/elpartidazo-watch-party-fc-barcelona-vs-real-madrid-new-york-city-tickets-1986933699181",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Rivaldo_Euro_2004.jpg/320px-Rivaldo_Euro_2004.jpg",
+      "notes": "ElPartidazo LALIGA watch party — Barça vs Real Madrid (May 10). First 90 guests meet Rivaldo (FCB) + Morientes (RM) + exclusive scarf. Free RSVP. Organized by LALIGA North América.",
+      "source": "eventbrite.es / LALIGA North América",
+      "addedAt": "2026-04-10"
+    },
     {
       "id": "manual_emmitt_fri",
       "player": "Emmitt Smith",
