@@ -5,7 +5,7 @@
     {
       "id": "manual_cardib_raleigh_apr11",
       "player": "Cardi B",
-      "sport": "music",
+      "sport": "celeb",
       "date": "2026-04-11",
       "time": "19:30",
       "venue": "Lenovo Center",
@@ -19,7 +19,7 @@
     {
       "id": "manual_cardib_charlotte_apr12",
       "player": "Cardi B",
-      "sport": "music",
+      "sport": "celeb",
       "date": "2026-04-12",
       "time": "20:00",
       "venue": "Spectrum Center",
@@ -33,7 +33,7 @@
     {
       "id": "manual_cardib_atlanta_apr17",
       "player": "Cardi B",
-      "sport": "music",
+      "sport": "celeb",
       "date": "2026-04-17",
       "time": "19:30",
       "venue": "State Farm Arena",
@@ -47,7 +47,7 @@
     {
       "id": "manual_cardib_atlanta_apr18",
       "player": "Cardi B",
-      "sport": "music",
+      "sport": "celeb",
       "date": "2026-04-18",
       "time": "19:30",
       "venue": "State Farm Arena",
@@ -61,7 +61,7 @@
     {
       "id": "manual_jhudson_msg_jun12",
       "player": "Jennifer Hudson",
-      "sport": "music",
+      "sport": "celeb",
       "date": "2026-06-12",
       "time": "20:00",
       "venue": "Madison Square Garden",
@@ -75,7 +75,7 @@
     {
       "id": "manual_akon_jonesbeach_jul22",
       "player": "Akon",
-      "sport": "music",
+      "sport": "celeb",
       "date": "2026-07-22",
       "time": "20:00",
       "venue": "Northwell Health at Jones Beach Theater",
@@ -89,7 +89,7 @@
     {
       "id": "manual_envogue_jonesbeach_sep15",
       "player": "En Vogue",
-      "sport": "music",
+      "sport": "celeb",
       "date": "2026-09-15",
       "time": "19:30",
       "venue": "Northwell at Jones Beach Theater",
@@ -103,7 +103,7 @@
     {
       "id": "manual_jhudson_hollywood_jun20",
       "player": "Jennifer Hudson",
-      "sport": "music",
+      "sport": "celeb",
       "date": "2026-06-20",
       "time": "20:00",
       "venue": "Hard Rock Live",
