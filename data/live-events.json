@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-04-10T16:42:14.037Z",
-  "count": 625,
+  "count": 626,
   "events": [
     {
       "id": "manual_sabrina_manchester_may7",
@@ -655,6 +655,19 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-04-03"
+    },
+    {
+      "id": "manual_mbutler_boston_apr18",
+      "player": "Malcolm Butler",
+      "sport": "football",
+      "date": "2026-04-18",
+      "venue": "Shriners Auditorium (Lucky's)",
+      "city": "Boston, MA 🇺🇸",
+      "link": "https://www.instagram.com/brian.oc7/",
+      "img": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16752.png",
+      "notes": "The Boston Show — autograph signing via Celebz Direct & Lundy Marketing Group.",
+      "source": "instagram.com/brian.oc7",
+      "addedAt": "2026-04-11"
     },
     {
       "id": "manual_garypayton_seattle_apr21",
