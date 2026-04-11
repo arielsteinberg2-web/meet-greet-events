@@ -1,7 +1,35 @@
 {
   "generatedAt": "2026-04-10T16:42:14.037Z",
-  "count": 579,
+  "count": 581,
   "events": [
+    {
+      "id": "manual_emmitt_fri",
+      "player": "Emmitt Smith",
+      "sport": "football",
+      "date": "2026-04-10",
+      "time": "15:30",
+      "venue": "Field of Dreams – The Forum Shops at Caesars",
+      "city": "Las Vegas, NV 🇺🇸",
+      "link": "https://www.instagram.com/fodcaesars/",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Emmitt_Smith_2014.jpg/320px-Emmitt_Smith_2014.jpg",
+      "notes": "Meet & autograph signing 3:30–5:30 PM. Dallas Cowboys legend, 3× SB champ, NFL MVP 1993, Pro HOF 2010.",
+      "source": "fodcaesars (Instagram)",
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "manual_emmitt_sat",
+      "player": "Emmitt Smith",
+      "sport": "football",
+      "date": "2026-04-11",
+      "time": "13:30",
+      "venue": "The Forum Shops at Caesars Palace",
+      "city": "Las Vegas, NV 🇺🇸",
+      "link": "https://www.instagram.com/fodcaesars/",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Emmitt_Smith_2014.jpg/320px-Emmitt_Smith_2014.jpg",
+      "notes": "Meet & autograph signing 1:30–3:00 PM. 3500 S Las Vegas Blvd. Dallas Cowboys legend, 3× SB champ, NFL MVP 1993, Pro HOF 2010.",
+      "source": "fodcaesars (Instagram)",
+      "addedAt": "2026-04-10"
+    },
     {
       "id": "manual_ligamon_1",
       "player": "Robinson Canó + David Ortiz – Fan Zone Meet & Greet",
