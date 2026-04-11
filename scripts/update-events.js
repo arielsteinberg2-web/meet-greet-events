@@ -138,16 +138,6 @@ const ALL_QUERIES = [
   { q: 'site:fnac.fr dédicace footballeur sportif livre signature 2026',     lang: 'fr' },
   { q: 'site:cultura.com dédicace footballeur sportif livre 2026',           lang: 'fr' },
   { q: 'site:sortiraparis.com séance dédicace footballeur sportif 2026',     lang: 'fr' },
-  // ── VIP Nation — artist M&G upgrade packages (US + Europe) ─────────────────
-  // vipnation.com lists all confirmed artist meet & greet tour packages in North America
-  // vipnation.eu / vipnation.halo.limited covers European tour M&G packages
-  { q: 'site:vipnation.com "meet and greet" artist 2026',                   lang: 'en' },
-  { q: 'site:vipnation.com "meet & greet" VIP upgrade tour 2026',           lang: 'en' },
-  { q: 'site:vipnation.eu "meet and greet" OR "meet & greet" 2026',         lang: 'en' },
-  // ── Live Nation — confirmed M&G upgrade listings (not just VIP lounge) ───
-  // Search for "not a concert ticket" — TM/LN naming convention for pure M&G add-ons
-  { q: 'site:livenation.com "meet and greet" "not a concert ticket" 2026',  lang: 'en' },
-  { q: 'site:livenation.com "pre-show m&g" OR "meet & greet upgrade" 2026', lang: 'en' },
   // ── LaLiga — El Partidazo legend watch-party events live on eventbrite.es (not .com) ──
   // These are announced via @laliga and @laligausa Instagram; tickets sold on eventbrite.es
   { q: 'site:eventbrite.es "ElPartidazo" OR "El Partidazo" legend 2026',    lang: 'es' },
@@ -1042,10 +1032,19 @@ const CORE_QUERIES = ALL_QUERIES.slice(0, 16);
 const POOL_QUERIES = ALL_QUERIES.slice(16);
 const poolGroup = Math.floor(dayOfYear / 4) % 2;
 const POOL_TODAY  = POOL_QUERIES.filter((_, i) => i % 2 === poolGroup);
-console.log(`Query rotation: ${CORE_QUERIES.length} core + ${POOL_TODAY.length} pool (group ${poolGroup + 1}/2) + ${PLAYER_QUERIES.length} players + ${INSTAGRAM_QUERIES.length} instagram`);
+// ── VIP Nation + Live Nation — artist M&G upgrade packages (always run) ──────
+const VIPNATION_QUERIES = [
+  { q: 'site:vipnation.com "meet and greet" artist 2026',                   lang: 'en' },
+  { q: 'site:vipnation.com "meet & greet" VIP upgrade tour 2026',           lang: 'en' },
+  { q: 'site:vipnation.eu "meet and greet" OR "meet & greet" 2026',         lang: 'en' },
+  { q: 'site:livenation.com "meet and greet" "not a concert ticket" 2026',  lang: 'en' },
+  { q: 'site:livenation.com "pre-show m&g" OR "meet & greet upgrade" 2026', lang: 'en' },
+];
 
-// Final query list: core + today's pool slice + today's player queries + today's Instagram accounts
-const QUERIES = [...CORE_QUERIES, ...POOL_TODAY, ...PLAYER_QUERIES, ...INSTAGRAM_QUERIES];
+console.log(`Query rotation: ${CORE_QUERIES.length} core + ${POOL_TODAY.length} pool (group ${poolGroup + 1}/2) + ${PLAYER_QUERIES.length} players + ${INSTAGRAM_QUERIES.length} instagram + ${VIPNATION_QUERIES.length} vipnation`);
+
+// Final query list: core + today's pool slice + today's player queries + today's Instagram accounts + always-run VIP Nation/Live Nation
+const QUERIES = [...CORE_QUERIES, ...POOL_TODAY, ...PLAYER_QUERIES, ...INSTAGRAM_QUERIES, ...VIPNATION_QUERIES];
 
 const RELEVANT_WORDS = [
   'meet','sign','greet','autograph','dinner','firma','dédicace','autografi',
