@@ -1,7 +1,49 @@
 {
   "generatedAt": "2026-04-10T16:42:14.037Z",
-  "count": 583,
+  "count": 586,
   "events": [
+    {
+      "id": "manual_jhudson_msg_jun12",
+      "player": "Jennifer Hudson",
+      "sport": "music",
+      "date": "2026-06-12",
+      "time": "20:00",
+      "venue": "Madison Square Garden",
+      "city": "New York, NY 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-new-york-new-york-06-12-2026/event/3B00638E2D8583C5",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jennifer_Hudson_2018.jpg/320px-Jennifer_Hudson_2018.jpg",
+      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. Non-transferable. Part of 'Two Legendary Voices' tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "manual_akon_jonesbeach_jul22",
+      "player": "Akon",
+      "sport": "music",
+      "date": "2026-07-22",
+      "time": "20:00",
+      "venue": "Northwell Health at Jones Beach Theater",
+      "city": "Wantagh, NY 🇺🇸",
+      "link": "https://www.ticketmaster.com/akon-meet-greet-vip-upgrade-ticket-wantagh-new-york-07-22-2026/event/1D00647AF3889BDE",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Akon_2019.jpg/320px-Akon_2019.jpg",
+      "notes": "VIP M&G upgrade (concert ticket sold separately). Includes: meet & greet + photo, autographed memorabilia, exclusive VIP gift, early venue entry. Ne-Yo & Akon 'Nights Like This' Tour 2026.",
+      "source": "ticketmaster.com / vipnation.com",
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "manual_envogue_jonesbeach_sep15",
+      "player": "En Vogue",
+      "sport": "music",
+      "date": "2026-09-15",
+      "time": "19:30",
+      "venue": "Northwell at Jones Beach Theater",
+      "city": "Wantagh, NY 🇺🇸",
+      "link": "https://www.ticketmaster.com/en-vogue-meet-greet-vip-upgrade-wantagh-new-york-09-15-2026/event/1D0064762076B279",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/En_Vogue_2019.jpg/320px-En_Vogue_2019.jpg",
+      "notes": "VIP M&G upgrade ($250, concert ticket sold separately). Meet & greet with En Vogue group. Part of 'TLC & Salt-N-Pepa with En Vogue – IT'S ICONIC' tour.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10"
+    },
     {
       "id": "manual_jhudson_hollywood_jun20",
       "player": "Jennifer Hudson",
