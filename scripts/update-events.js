@@ -222,6 +222,8 @@ const INSTAGRAM_ACCOUNTS = [
   'woodbridgebrewingco',
   'tristar1',
   'fodcaesars',        // Field of Dreams at Caesars Palace — celeb/athlete signings Las Vegas
+  'simplyseattle',     // Simply Seattle retail — NBA legend signing events (Gary Payton etc.)
+  'gary.payton.20',    // Gary Payton official — posts his own signing/M&G appearances
   'halloffamesignings',
   'millcreeksports1991',
   'upperdecksports',

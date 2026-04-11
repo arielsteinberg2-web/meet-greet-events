@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-04-10T16:42:14.037Z",
-  "count": 624,
+  "count": 625,
   "events": [
     {
       "id": "manual_sabrina_manchester_may7",
@@ -655,6 +655,20 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-04-03"
+    },
+    {
+      "id": "manual_garypayton_seattle_apr21",
+      "player": "Gary Payton",
+      "sport": "basketball",
+      "date": "2026-04-21",
+      "time": "18:00",
+      "venue": "Simply Seattle (U Village)",
+      "city": "Seattle, WA 🇺🇸",
+      "link": "https://www.instagram.com/simplyseattle/",
+      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/254.png",
+      "notes": "VIP Experience + General Admission packages. Tickets available now. Hall of Famer 'The Glove'.",
+      "source": "instagram.com/simplyseattle",
+      "addedAt": "2026-04-11"
     },
     {
       "id": "fiterman_ric_flair_public_autograph_event_wrestlecon_las_vegas_nv",
