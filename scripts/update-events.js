@@ -22,6 +22,7 @@ const SERPER_KEY    = process.env.SERPER_KEY;      // optional — Google Search
 const SERPER_KEY2   = process.env.SERPER_KEY_2;   // optional — second Serper key
 const SEARCHAPI_KEY = process.env.SEARCHAPI_KEY;  // optional — Google Search via searchapi.io
 const SCRAPER_KEY   = process.env.SCRAPERAPI_KEY || process.env.SCRAPERAPI_KEY_2; // optional — proxy for direct site fetches
+const TM_API_KEY    = process.env.TM_API_KEY;    // Ticketmaster Discovery API — searches for VIP M&G upgrade events
 
 if (!API_KEY_1 && !API_KEY_2 && !API_KEY_3 && !API_KEY_4) {
   console.error('No SERPAPI keys set. Add at least one as a GitHub Secret.');
@@ -1324,6 +1325,58 @@ async function fetchSerper(q, attempts = 3, key = SERPER_KEY) {
   return null;
 }
 
+// ── Ticketmaster Discovery API — search for VIP meet & greet upgrade events ──
+// Searches for events whose name contains "meet" and "greet" (or "vip upgrade").
+// Returns normalized event objects ready for deduplication + injection.
+async function fetchTicketmasterMG() {
+  if (!TM_API_KEY) return [];
+  const out = [];
+  const keywords = ['meet and greet vip upgrade', 'vip meet greet upgrade'];
+  for (const kw of keywords) {
+    try {
+      const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${TM_API_KEY}&keyword=${encodeURIComponent(kw)}&countryCode=US&size=50&sort=date,asc`;
+      const ctrl = new AbortController();
+      const t = setTimeout(() => ctrl.abort(), 12000);
+      const r = await fetch(url, { signal: ctrl.signal });
+      clearTimeout(t);
+      if (!r.ok) { console.warn(`TM API error ${r.status}`); continue; }
+      const data = await r.json();
+      const events = data?._embedded?.events || [];
+      for (const ev of events) {
+        const name = ev.name || '';
+        if (!/meet.?greet|vip.*upgrade/i.test(name)) continue;
+        // Skip lottery/prize
+        if (/lottery|raffle|contest|giveaway|sweepstake/i.test(name)) continue;
+        const dateStr = ev.dates?.start?.localDate;
+        if (!dateStr || new Date(dateStr + 'T12:00:00') < today) continue;
+        const venue  = ev._embedded?.venues?.[0];
+        const city   = venue ? `${venue.city?.name || ''}, ${venue.state?.stateCode || venue.country?.countryCode || ''}` : '';
+        const link   = ev.url || '';
+        if (!link) continue;
+        // Extract artist name from event name (strip " VIP Meet and Greet Upgrade" suffix)
+        const player = name.replace(/\s*[-–—]?\s*(vip\s*)?(meet\s*(&|and)\s*greet|meet\s*greet)\s*(upgrade|experience|ticket)?/gi, '').trim() || name;
+        out.push({
+          id:      `tm_${ev.id}`,
+          player,
+          sport:   'celeb',
+          date:    dateStr,
+          time:    ev.dates?.start?.localTime?.slice(0, 5) || '',
+          venue:   venue?.name || '',
+          city:    city ? `${city} 🇺🇸` : '',
+          link,
+          notes:   `Ticketmaster VIP M&G upgrade. Concert ticket sold separately.`,
+          source:  'ticketmaster.com (Discovery API)',
+          addedAt: new Date().toISOString().slice(0, 10),
+        });
+      }
+    } catch (e) { console.warn('TM fetch error:', e.message); }
+    await new Promise(r => setTimeout(r, 500));
+  }
+  // Deduplicate by link
+  const seen = new Set();
+  return out.filter(e => { if (seen.has(e.link)) return false; seen.add(e.link); return true; });
+}
+
 async function parseOrganic(data, lang) {
   const out = [];
   for (const res of (data.organic_results || [])) {
@@ -1697,6 +1750,18 @@ async function main() {
     seenLinks.add(e.link);
     return true;
   });
+
+  // ── Ticketmaster Discovery API — VIP M&G upgrades ────────────────────────────
+  const tmEvents = await fetchTicketmasterMG();
+  if (tmEvents.length > 0) {
+    console.log(`Ticketmaster API: found ${tmEvents.length} VIP M&G upgrade event(s)`);
+    for (const ev of tmEvents) {
+      if (!finalEvents.find(e => e.link === ev.link)) {
+        finalEvents.push(ev);
+        console.log(`  + TM: ${ev.player} — ${ev.date} — ${ev.city}`);
+      }
+    }
+  }
 
   console.log(`Found ${future.length} live events this run; ${carried.length} carried from previous; ${finalEvents.length} total`);
 

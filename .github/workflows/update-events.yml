@@ -37,6 +37,7 @@ jobs:
           SERPER_KEY_2:  ${{ secrets.SERPER_KEY_2 }}
           SEARCHAPI_KEY:  ${{ secrets.SEARCHAPI_KEY }}
           SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
+          TM_API_KEY:     ${{ secrets.TM_API_KEY }}
 
       - name: Inject static HTML + update sitemap lastmod
         run: node scripts/inject-static-html.js
