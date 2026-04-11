@@ -1331,7 +1331,8 @@ async function fetchSerper(q, attempts = 3, key = SERPER_KEY) {
 async function fetchTicketmasterMG() {
   if (!TM_API_KEY) return [];
   const out = [];
-  const keywords = ['meet and greet vip upgrade', 'vip meet greet upgrade'];
+  // Tested keywords — "meet and greet" and "vip upgrade" are the two that return results
+  const keywords = ['meet and greet', 'vip upgrade'];
   for (const kw of keywords) {
     try {
       const url = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=${TM_API_KEY}&keyword=${encodeURIComponent(kw)}&countryCode=US&size=50&sort=date,asc`;
@@ -1344,7 +1345,9 @@ async function fetchTicketmasterMG() {
       const events = data?._embedded?.events || [];
       for (const ev of events) {
         const name = ev.name || '';
-        if (!/meet.?greet|vip.*upgrade/i.test(name)) continue;
+        if (!/meet.?(&\s*)?greet|vip.*upgrade/i.test(name)) continue;
+        // Skip non-M&G upgrades: Amped Up = Summerfest premium seating only (no artist contact)
+        if (/amped.?up|photo.?merch.?upsell|bluey|bethel music|q&a upgrade/i.test(name)) continue;
         // Skip lottery/prize
         if (/lottery|raffle|contest|giveaway|sweepstake/i.test(name)) continue;
         const dateStr = ev.dates?.start?.localDate;

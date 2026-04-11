@@ -1,7 +1,33 @@
 {
   "generatedAt": "2026-04-10T16:42:14.037Z",
-  "count": 598,
+  "count": 600,
   "events": [
+    {
+      "id": "manual_floetry_chicago_apr15",
+      "player": "Floetry (+ Raheem DeVaughn & Teedra Moses)",
+      "sport": "celeb",
+      "date": "2026-04-15",
+      "venue": "The Chicago Theatre",
+      "city": "Chicago, IL 🇺🇸",
+      "link": "https://www.ticketmaster.com/floetry-meet-greet-experience-chicago-illinois-04-15-2026/event/04006391F19CDFC5",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Floetry_-_Marsha_Ambrosius_%26_Natalie_Stewart.jpg/320px-Floetry_-_Marsha_Ambrosius_%26_Natalie_Stewart.jpg",
+      "notes": "Say Yes Tour reunion M&G add-on. Meet & greet with Floetry (Marsha Ambrosius + Natalie Stewart). Special guests: Raheem DeVaughn, Teedra Moses.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "manual_billmurray_dc_jun20",
+      "player": "Bill Murray & The Blood Brothers",
+      "sport": "celeb",
+      "date": "2026-06-20",
+      "venue": "TBD",
+      "city": "Washington, DC 🇺🇸",
+      "link": "https://www.ticketmaster.com/bill-murray-blood-brothers-pre-show-mg-washington-district-of-columbia-06-20-2026/event/15006469EB1F3E2A",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Bill_Murray_at_2019_WGC-Mexico_Championship_%28cropped%29.jpg/320px-Bill_Murray_at_2019_WGC-Mexico_Championship_%28cropped%29.jpg",
+      "notes": "Pre-show M&G upgrade (concert ticket sold separately). Includes: meet & greet photo with Bill Murray + band, professional photo download within 3 hours, VIP lanyard, concert poster. No personal cameras.",
+      "source": "ticketmaster.com / livenation.com",
+      "addedAt": "2026-04-10"
+    },
     {
       "id": "manual_jhudson_slc_jul3",
       "date": "2026-07-03",
