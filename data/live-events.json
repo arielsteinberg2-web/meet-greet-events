@@ -1,731 +1,28 @@
 {
-  "generatedAt": "2026-04-10T16:42:14.037Z",
-  "count": 627,
+  "generatedAt": "2026-04-15T15:13:30.422Z",
+  "count": 614,
   "events": [
     {
-      "id": "manual_sarah_hoover_92ny_apr22",
-      "player": "Sarah Hoover",
-      "date": "2026-04-22",
-      "venue": "92nd Street Y (92NY)",
-      "city": "New York, NY",
-      "link": "https://www.92ny.org/event/sarah-hoover",
-      "img": "https://images.squarespace-cdn.com/content/v1/60aad742a488335a66311dce/1621814510532-91F82ZV16CFAX0D7BDE2/photo+credit+Carl+Timpone_BFA_BW.jpg",
-      "notes": "Book talk & signing — The Motherload Paperback Tour. Sarah Hoover in conversation with Chelsea Clinton. 7:00 PM. Ticket includes a copy of the paperback.",
-      "sport": "celeb",
-      "source": "92ny.org",
-      "addedAt": "2026-04-15"
-    },
-    {
-      "id": "manual_sabrina_manchester_may7",
-      "player": "Sabrina Claudio",
-      "date": "2026-05-07",
-      "venue": "O2 Ritz",
-      "city": "Manchester, UK 🇬🇧",
-      "link": "https://vipnation.eu/sabrinaclaudio",
-      "img": "https://s1.ticketm.net/dam/a/37c/8f9bd150-7a57-487a-9e05-320f85ab037c_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — Fall In Love With Her Tour. Includes: meet & greet + photo with Sabrina Claudio, signed tour poster, VIP laminate, early entry. GA standing ticket included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_sabrina_london_may6",
-      "player": "Sabrina Claudio",
-      "date": "2026-05-06",
-      "venue": "Roundhouse",
-      "city": "London, UK 🇬🇧",
-      "link": "https://vipnation.eu/sabrinaclaudio",
-      "img": "https://s1.ticketm.net/dam/a/37c/8f9bd150-7a57-487a-9e05-320f85ab037c_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — Fall In Love With Her Tour. Includes: meet & greet + photo with Sabrina Claudio, signed tour poster, VIP laminate, early entry. GA standing ticket included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_sabrina_paris_may4",
-      "player": "Sabrina Claudio",
-      "date": "2026-05-04",
-      "venue": "Élysée Montmartre",
-      "city": "Paris, France 🇫🇷",
-      "link": "https://vipnation.eu/sabrinaclaudio",
-      "img": "https://s1.ticketm.net/dam/a/37c/8f9bd150-7a57-487a-9e05-320f85ab037c_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — Fall In Love With Her Tour. Includes: meet & greet + photo with Sabrina Claudio, signed tour poster, VIP laminate, early entry. GA standing ticket included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_sabrina_cologne_may3",
-      "player": "Sabrina Claudio",
-      "date": "2026-05-03",
-      "venue": "Die Kantine",
-      "city": "Cologne, Germany 🇩🇪",
-      "link": "https://vipnation.eu/sabrinaclaudio",
-      "img": "https://s1.ticketm.net/dam/a/37c/8f9bd150-7a57-487a-9e05-320f85ab037c_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — Fall In Love With Her Tour. Includes: meet & greet + photo with Sabrina Claudio, signed tour poster, VIP laminate, early entry. GA standing ticket included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_sabrina_utrecht_apr30",
-      "player": "Sabrina Claudio",
-      "date": "2026-04-30",
-      "venue": "TivoliVredenburg",
-      "city": "Utrecht, Netherlands 🇳🇱",
-      "link": "https://vipnation.eu/sabrinaclaudio",
-      "img": "https://s1.ticketm.net/dam/a/37c/8f9bd150-7a57-487a-9e05-320f85ab037c_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — Fall In Love With Her Tour. Includes: meet & greet + photo with Sabrina Claudio, signed tour poster, VIP laminate, early entry. GA standing ticket included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_sabrina_berlin_apr28",
-      "player": "Sabrina Claudio",
-      "date": "2026-04-28",
-      "venue": "Metropol",
-      "city": "Berlin, Germany 🇩🇪",
-      "link": "https://vipnation.eu/sabrinaclaudio",
-      "img": "https://s1.ticketm.net/dam/a/37c/8f9bd150-7a57-487a-9e05-320f85ab037c_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — Fall In Love With Her Tour. Includes: meet & greet + photo with Sabrina Claudio, signed tour poster, VIP laminate, early entry. GA standing ticket included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_rush_seattle_oct10",
-      "player": "Rush",
-      "date": "2026-10-10",
-      "venue": "Climate Pledge Arena",
-      "city": "Seattle, WA 🇺🇸",
-      "link": "https://www.wearesuper.co/rushvip",
-      "img": "https://s1.ticketm.net/dam/a/6bd/c02199ad-8d22-4668-8973-f400d85826bd_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G — Fifty Something Tour. Includes: meet & greet + pro photo with Geddy Lee & Alex Lifeson, one autograph per guest, backstage rig rundown tour, Xanadu VIP lounge with complimentary appetizers + drinks. Concert ticket not included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_rush_detroit_aug28",
-      "player": "Rush",
-      "date": "2026-08-28",
-      "venue": "Little Caesars Arena",
-      "city": "Detroit, MI 🇺🇸",
-      "link": "https://www.wearesuper.co/rushvip",
-      "img": "https://s1.ticketm.net/dam/a/6bd/c02199ad-8d22-4668-8973-f400d85826bd_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G — Fifty Something Tour. Includes: meet & greet + pro photo with Geddy Lee & Alex Lifeson, one autograph per guest, backstage rig rundown tour, Xanadu VIP lounge with complimentary appetizers + drinks. Concert ticket not included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_rush_philly_aug21",
-      "player": "Rush",
-      "date": "2026-08-21",
-      "venue": "Wells Fargo Center",
-      "city": "Philadelphia, PA 🇺🇸",
-      "link": "https://www.wearesuper.co/rushvip",
-      "img": "https://s1.ticketm.net/dam/a/6bd/c02199ad-8d22-4668-8973-f400d85826bd_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G — Fifty Something Tour. Includes: meet & greet + pro photo with Geddy Lee & Alex Lifeson, one autograph per guest, backstage rig rundown tour, Xanadu VIP lounge with complimentary appetizers + drinks. Concert ticket not included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_rush_nyc_jul30",
-      "player": "Rush",
-      "date": "2026-07-30",
-      "venue": "Madison Square Garden",
-      "city": "New York, NY 🇺🇸",
-      "link": "https://www.wearesuper.co/rushvip",
-      "img": "https://s1.ticketm.net/dam/a/6bd/c02199ad-8d22-4668-8973-f400d85826bd_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G — Fifty Something Tour. Includes: meet & greet + pro photo with Geddy Lee & Alex Lifeson, one autograph per guest, backstage rig rundown tour, Xanadu VIP lounge with complimentary appetizers + drinks. Concert ticket not included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_rush_chicago_jul16",
-      "player": "Rush",
-      "date": "2026-07-16",
-      "venue": "United Center",
-      "city": "Chicago, IL 🇺🇸",
-      "link": "https://www.ticketmaster.com/rush-fifty-something-chicago-illinois-07-16-2026/event/04006343C8524963",
-      "img": "https://s1.ticketm.net/dam/a/6bd/c02199ad-8d22-4668-8973-f400d85826bd_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G — Fifty Something Tour. Includes: meet & greet + pro photo with Geddy Lee & Alex Lifeson, one autograph per guest, backstage rig rundown tour, Xanadu VIP lounge with complimentary appetizers + drinks. Concert ticket not included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_rush_la_jun7",
-      "player": "Rush",
-      "date": "2026-06-07",
-      "venue": "Kia Forum",
-      "city": "Los Angeles, CA 🇺🇸",
-      "link": "https://www.wearesuper.co/rushvip",
-      "img": "https://s1.ticketm.net/dam/a/6bd/c02199ad-8d22-4668-8973-f400d85826bd_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G — Fifty Something Tour. Includes: meet & greet + pro photo with Geddy Lee & Alex Lifeson, one autograph per guest, backstage rig rundown tour, Xanadu VIP lounge with complimentary appetizers + drinks. Concert ticket not included.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_kidcudi_la_jun26",
-      "player": "Kid Cudi",
-      "date": "2026-06-26",
-      "venue": "Kia Forum",
-      "city": "Los Angeles, CA 🇺🇸",
-      "link": "https://www.vipnation.com/tour/the-rebel-ragers-tour",
-      "img": "https://s1.ticketm.net/dam/a/b38/6bdf69cb-1b2e-4f1a-949f-78ff42766b38_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — The Rebel Ragers Tour. Includes: meet & greet + individual photo with Kid Cudi, pre-show VIP lounge, exclusive merch pack, VIP laminate, early entry. Concert ticket not included. Via vipnation.com.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_kidcudi_denver_jun12",
-      "player": "Kid Cudi",
-      "date": "2026-06-12",
-      "venue": "Fiddler's Green Amphitheatre",
-      "city": "Denver, CO 🇺🇸",
-      "link": "https://www.ticketmaster.com/kid-cudi-presents-the-rebel-ragers-denver-colorado-06-12-2026/event/1E00642EE12FB895",
-      "img": "https://s1.ticketm.net/dam/a/b38/6bdf69cb-1b2e-4f1a-949f-78ff42766b38_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — The Rebel Ragers Tour. Includes: meet & greet + individual photo with Kid Cudi, pre-show VIP lounge, exclusive merch pack, VIP laminate, early entry. Concert ticket not included. Via vipnation.com.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_kidcudi_camden_jun2",
-      "player": "Kid Cudi",
-      "date": "2026-06-02",
-      "venue": "Freedom Mortgage Pavilion",
-      "city": "Camden, NJ 🇺🇸",
-      "link": "https://www.vipnation.com/tour/the-rebel-ragers-tour",
-      "img": "https://s1.ticketm.net/dam/a/b38/6bdf69cb-1b2e-4f1a-949f-78ff42766b38_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — The Rebel Ragers Tour. Includes: meet & greet + individual photo with Kid Cudi, pre-show VIP lounge, exclusive merch pack, VIP laminate, early entry. Concert ticket not included. Via vipnation.com.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_kidcudi_nyc_may30",
-      "player": "Kid Cudi",
-      "date": "2026-05-30",
-      "venue": "Northwell Health at Jones Beach Theater",
-      "city": "Wantagh (NYC), NY 🇺🇸",
-      "link": "https://www.vipnation.com/tour/the-rebel-ragers-tour",
-      "img": "https://s1.ticketm.net/dam/a/b38/6bdf69cb-1b2e-4f1a-949f-78ff42766b38_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — The Rebel Ragers Tour. Includes: meet & greet + individual photo with Kid Cudi, pre-show VIP lounge, exclusive merch pack, VIP laminate, early entry. Concert ticket not included. Via vipnation.com.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_kidcudi_chicago_may20",
-      "player": "Kid Cudi",
-      "date": "2026-05-20",
-      "venue": "Hollywood Casino Amphitheatre",
-      "city": "Tinley Park (Chicago), IL 🇺🇸",
-      "link": "https://www.vipnation.com/tour/the-rebel-ragers-tour",
-      "img": "https://s1.ticketm.net/dam/a/b38/6bdf69cb-1b2e-4f1a-949f-78ff42766b38_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — The Rebel Ragers Tour. Includes: meet & greet + individual photo with Kid Cudi, pre-show VIP lounge, exclusive merch pack, VIP laminate, early entry. Concert ticket not included. Via vipnation.com.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_kidcudi_tampa_may8",
-      "player": "Kid Cudi",
-      "date": "2026-05-08",
-      "venue": "Amalie Arena",
-      "city": "Tampa, FL 🇺🇸",
-      "link": "https://www.vipnation.com/tour/the-rebel-ragers-tour",
-      "img": "https://s1.ticketm.net/dam/a/b38/6bdf69cb-1b2e-4f1a-949f-78ff42766b38_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — The Rebel Ragers Tour. Includes: meet & greet + individual photo with Kid Cudi, pre-show VIP lounge, exclusive merch pack, VIP laminate, early entry. Concert ticket not included. Via vipnation.com.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_kidcudi_atlanta_may6",
-      "player": "Kid Cudi",
-      "date": "2026-05-06",
-      "venue": "State Farm Arena",
-      "city": "Atlanta, GA 🇺🇸",
-      "link": "https://www.vipnation.com/tour/the-rebel-ragers-tour",
-      "img": "https://s1.ticketm.net/dam/a/b38/6bdf69cb-1b2e-4f1a-949f-78ff42766b38_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade — The Rebel Ragers Tour. Includes: meet & greet + individual photo with Kid Cudi, pre-show VIP lounge, exclusive merch pack, VIP laminate, early entry. Concert ticket not included. Via vipnation.com.",
-      "sport": "celeb",
-      "source": "vipnation.com",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_inna_marbella_aug22",
-      "player": "Inna",
-      "sport": "celeb",
-      "date": "2026-08-22",
-      "venue": "TBD",
-      "city": "Marbella, Spain 🇪🇸",
-      "link": "https://www.ticketmaster.es/inna-meetgreet-upgrade-marbella-22-08-2026/event/1B00637E994F9A12",
-      "img": "https://s1.ticketm.net/dam/a/27a/ae5abbfd-91b3-4eb8-b3fd-743a87c3e27a_687141_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "Meet & Greet upgrade (concert ticket sold separately). Romanian pop star popular across Europe.",
-      "source": "ticketmaster.es",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_pitbull_liljon_prague_jul26",
-      "player": "Pitbull ft. Lil Jon",
-      "sport": "celeb",
-      "date": "2026-07-26",
-      "venue": "TBD",
-      "city": "Prague, Czech Republic 🇨🇿",
-      "link": "https://www.ticketmaster.cz/pitbull-lil-jon-meetgreet-upgrade-praha-26-07-2026/event/3B0063649967B2B2",
-      "img": "https://s1.ticketm.net/dam/a/918/bd324c03-b456-4cb9-87b2-fe8664cb1918_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "Pitbull – I'm Back! tour. Lil Jon M&G upgrade (concert ticket sold separately).",
-      "source": "ticketmaster.cz",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_liljon_arnhem_jul15",
-      "player": "Lil Jon",
-      "sport": "celeb",
-      "date": "2026-07-15",
-      "venue": "TBD",
-      "city": "Arnhem, Netherlands 🇳🇱",
-      "link": "https://www.ticketmaster.nl/lil-jon-vip-upgrades-arnhem-15-07-2026/event/1B00636499671E55",
-      "img": "https://s1.ticketm.net/dam/a/e80/626f2d86-3e5b-4db0-a124-06d084948e80_ARTIST_PAGE_3_2.jpg",
-      "notes": "Meet & Greet VIP upgrade (concert ticket sold separately).",
-      "source": "ticketmaster.nl",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_liljon_glasgow_jul1",
-      "player": "Lil Jon",
-      "sport": "celeb",
-      "date": "2026-07-01",
-      "venue": "TBD",
-      "city": "Glasgow, UK 🇬🇧",
-      "link": "https://www.ticketmaster.co.uk/lil-jon-vip-upgrades-glasgow-01-07-2026/event/3F00636499659C90",
-      "img": "https://s1.ticketm.net/dam/a/e80/626f2d86-3e5b-4db0-a124-06d084948e80_ARTIST_PAGE_3_2.jpg",
-      "notes": "Meet & Greet VIP upgrade (concert ticket sold separately).",
-      "source": "ticketmaster.co.uk",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_macygray_coventry_jun2",
-      "player": "Macy Gray",
-      "sport": "celeb",
-      "date": "2026-06-02",
-      "venue": "TBD",
-      "city": "Coventry, UK 🇬🇧",
-      "link": "https://www.ticketmaster.co.uk/macy-gray-vip-mg-upgrade-coventry-02-06-2026/event/1F00636E94967C5A",
-      "img": "https://s1.ticketm.net/dam/a/90d/6d1db0ea-5f58-47ec-9016-ae90300e990d_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade (concert ticket sold separately).",
-      "source": "ticketmaster.co.uk",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_floetry_chicago_apr15",
-      "player": "Floetry (+ Raheem DeVaughn & Teedra Moses)",
-      "sport": "celeb",
-      "date": "2026-04-15",
-      "venue": "The Chicago Theatre",
-      "city": "Chicago, IL 🇺🇸",
-      "link": "https://www.ticketmaster.com/floetry-meet-greet-experience-chicago-illinois-04-15-2026/event/04006391F19CDFC5",
-      "img": "https://s1.ticketm.net/dam/a/129/d206d44a-fec0-4227-844e-2badea4f5129_59741_ARTIST_PAGE_3_2.jpg",
-      "notes": "Say Yes Tour reunion M&G add-on. Meet & greet with Floetry (Marsha Ambrosius + Natalie Stewart). Special guests: Raheem DeVaughn, Teedra Moses.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_billmurray_dc_jun20",
-      "player": "Bill Murray & The Blood Brothers",
-      "sport": "celeb",
-      "date": "2026-06-20",
-      "venue": "TBD",
-      "city": "Washington, DC 🇺🇸",
-      "link": "https://www.ticketmaster.com/bill-murray-blood-brothers-pre-show-mg-washington-district-of-columbia-06-20-2026/event/15006469EB1F3E2A",
-      "img": "https://s1.ticketm.net/dam/a/b54/82b56fe3-7a5c-45a8-9e80-31c7bce60b54_ARTIST_PAGE_3_2.jpg",
-      "notes": "Pre-show M&G upgrade (concert ticket sold separately). Includes: meet & greet photo with Bill Murray + band, professional photo download within 3 hours, VIP lanyard, concert poster. No personal cameras.",
-      "source": "ticketmaster.com / livenation.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_jhudson_slc_jul3",
-      "date": "2026-07-03",
-      "time": "20:00",
-      "venue": "Maverik Center",
-      "city": "West Valley City, UT 🇺🇸",
-      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-west-valley-city-utah-07-03-2026/event/1E00638CCB84AB9B",
-      "player": "Jennifer Hudson",
-      "sport": "celeb",
-      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_jhudson_stpaul_jun28",
-      "date": "2026-06-28",
-      "time": "20:00",
-      "venue": "Xcel Energy Center",
-      "city": "Saint Paul, MN 🇺🇸",
-      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-saint-paul-minnesota-06-28-2026/event/0600638CD98F2875",
-      "player": "Jennifer Hudson",
-      "sport": "celeb",
-      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_jhudson_chicago_jun27",
-      "date": "2026-06-27",
-      "time": "20:00",
-      "venue": "Allstate Arena",
-      "city": "Rosemont (Chicago), IL 🇺🇸",
-      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-rosemont-illinois-06-27-2026/event/0400638CD98CAE33",
-      "player": "Jennifer Hudson",
-      "sport": "celeb",
-      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_jhudson_detroit_jun25",
-      "date": "2026-06-25",
-      "time": "20:00",
-      "venue": "Little Caesars Arena",
-      "city": "Detroit, MI 🇺🇸",
-      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-detroit-michigan-06-25-2026/event/0800638CE799A27D",
-      "player": "Jennifer Hudson",
-      "sport": "celeb",
-      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_jhudson_tampa_jun19",
-      "date": "2026-06-19",
-      "time": "20:00",
-      "venue": "Amalie Arena",
-      "city": "Tampa, FL 🇺🇸",
-      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-tampa-florida-06-19-2026/event/0D00638CE794D29D",
-      "player": "Jennifer Hudson",
-      "sport": "celeb",
-      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_jhudson_nashville_jun16",
-      "date": "2026-06-16",
-      "time": "20:00",
-      "venue": "Bridgestone Arena",
-      "city": "Nashville, TN 🇺🇸",
-      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-nashville-tennessee-06-16-2026/event/1B00638CD97FEBFD",
-      "player": "Jennifer Hudson",
-      "sport": "celeb",
-      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_jhudson_philly_jun7",
-      "date": "2026-06-07",
-      "time": "20:00",
-      "venue": "Wells Fargo Center",
-      "city": "Philadelphia, PA 🇺🇸",
-      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-philadelphia-pennsylvania-06-07-2026/event/3000638CE78DB9BD",
-      "player": "Jennifer Hudson",
-      "sport": "celeb",
-      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_jhudson_boston_jun6",
-      "date": "2026-06-06",
-      "time": "20:00",
-      "venue": "TD Garden",
-      "city": "Boston, MA 🇺🇸",
-      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-boston-massachusetts-06-06-2026/event/0100638CE78B218C",
-      "player": "Jennifer Hudson",
-      "sport": "celeb",
-      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_cardib_raleigh_apr11",
-      "player": "Cardi B",
-      "sport": "celeb",
-      "date": "2026-04-11",
-      "time": "19:30",
-      "venue": "Lenovo Center",
-      "city": "Raleigh, NC 🇺🇸",
-      "link": "https://www.ticketmaster.com/cardi-b-vip-upgrades-event-ticket-raleigh-north-carolina-04-11-2026/event/2D006391F183EB00",
-      "img": "https://s1.ticketm.net/dam/a/bf7/4e7ec6d4-4396-427b-88f3-5f1b2a4c7bf7_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "'Imaginary Playerz' M&G upgrade ($900, concert ticket sold separately). Includes: intimate meet & greet, Drama Club pre-show party, photo ops, VIP merch bag, laminate, early entry. Little Miss Drama Tour.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_cardib_charlotte_apr12",
-      "player": "Cardi B",
-      "sport": "celeb",
-      "date": "2026-04-12",
-      "time": "20:00",
-      "venue": "Spectrum Center",
-      "city": "Charlotte, NC 🇺🇸",
-      "link": "https://www.ticketmaster.com/cardi-b-vip-upgrades-event-ticket-charlotte-north-carolina-04-12-2026/event/2D006391F185EB02",
-      "img": "https://s1.ticketm.net/dam/a/bf7/4e7ec6d4-4396-427b-88f3-5f1b2a4c7bf7_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "'Imaginary Playerz' M&G upgrade ($900, concert ticket sold separately). Includes: intimate meet & greet, Drama Club pre-show party, photo ops, VIP merch bag, laminate, early entry. Little Miss Drama Tour.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_cardib_atlanta_apr17",
-      "player": "Cardi B",
-      "sport": "celeb",
-      "date": "2026-04-17",
-      "time": "19:30",
-      "venue": "State Farm Arena",
-      "city": "Atlanta, GA 🇺🇸",
-      "link": "https://www.ticketmaster.com/cardi-b-little-miss-drama-tour-atlanta-georgia-04-17-2026/event/0E00632FDD8241A3",
-      "img": "https://s1.ticketm.net/dam/a/bf7/4e7ec6d4-4396-427b-88f3-5f1b2a4c7bf7_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "'Imaginary Playerz' M&G upgrade ($900, concert ticket sold separately). Includes: intimate meet & greet, Drama Club pre-show party, photo ops, VIP merch bag, laminate, early entry. Little Miss Drama Tour.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_cardib_atlanta_apr18",
-      "player": "Cardi B",
-      "sport": "celeb",
-      "date": "2026-04-18",
-      "time": "19:30",
-      "venue": "State Farm Arena",
-      "city": "Atlanta, GA 🇺🇸",
-      "link": "https://www.ticketmaster.com/cardi-b-vip-upgrades-event-ticket-atlanta-georgia-04-18-2026/event/0E006391F18AA77B",
-      "img": "https://s1.ticketm.net/dam/a/bf7/4e7ec6d4-4396-427b-88f3-5f1b2a4c7bf7_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "'Imaginary Playerz' M&G upgrade ($900, concert ticket sold separately). Includes: intimate meet & greet, Drama Club pre-show party, photo ops, VIP merch bag, laminate, early entry. Little Miss Drama Tour — final night.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_jhudson_msg_jun12",
-      "player": "Jennifer Hudson",
-      "sport": "celeb",
-      "date": "2026-06-12",
-      "time": "20:00",
-      "venue": "Madison Square Garden",
-      "city": "New York, NY 🇺🇸",
-      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-new-york-new-york-06-12-2026/event/3B00638E2D8583C5",
-      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. Non-transferable. Part of 'Two Legendary Voices' tour with Josh Groban.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_akon_jonesbeach_jul22",
-      "player": "Akon",
-      "sport": "celeb",
-      "date": "2026-07-22",
-      "time": "20:00",
-      "venue": "Northwell Health at Jones Beach Theater",
-      "city": "Wantagh, NY 🇺🇸",
-      "link": "https://www.ticketmaster.com/akon-meet-greet-vip-upgrade-ticket-wantagh-new-york-07-22-2026/event/1D00647AF3889BDE",
-      "img": "https://s1.ticketm.net/dam/a/ddd/591746f1-14e8-4fdf-a711-dbc4816cfddd_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade (concert ticket sold separately). Includes: meet & greet + photo, autographed memorabilia, exclusive VIP gift, early venue entry. Ne-Yo & Akon 'Nights Like This' Tour 2026.",
-      "source": "ticketmaster.com / vipnation.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_envogue_jonesbeach_sep15",
-      "player": "En Vogue",
-      "sport": "celeb",
-      "date": "2026-09-15",
-      "time": "19:30",
-      "venue": "Northwell at Jones Beach Theater",
-      "city": "Wantagh, NY 🇺🇸",
-      "link": "https://www.ticketmaster.com/en-vogue-meet-greet-vip-upgrade-wantagh-new-york-09-15-2026/event/1D0064762076B279",
-      "img": "https://s1.ticketm.net/dam/a/427/a554b54b-7d32-4c1a-a497-06f0bda39427_ARTIST_PAGE_3_2.jpg",
-      "notes": "VIP M&G upgrade ($250, concert ticket sold separately). Meet & greet with En Vogue group. Part of 'TLC & Salt-N-Pepa with En Vogue – IT'S ICONIC' tour.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_jhudson_hollywood_jun20",
-      "player": "Jennifer Hudson",
-      "sport": "celeb",
-      "date": "2026-06-20",
-      "time": "20:00",
-      "venue": "Hard Rock Live",
-      "city": "Hollywood, FL 🇺🇸",
-      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-hollywood-florida-06-20-2026/event/0D00638CE796D2A1",
-      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "VIP M&G upgrade ($300, separate concert ticket required). Includes: photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. Part of 'Two Legendary Voices' tour with Josh Groban.",
-      "source": "ticketmaster.com",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_elpartidazo_nyc_may10",
-      "player": "Rivaldo + Fernando Morientes – ElPartidazo Watch Party",
-      "sport": "soccer",
-      "date": "2026-05-10",
-      "time": "12:00",
-      "venue": "Pig Beach BBQ Queens",
-      "city": "Astoria (Queens), NY 🇺🇸",
-      "link": "https://www.eventbrite.es/e/elpartidazo-watch-party-fc-barcelona-vs-real-madrid-new-york-city-tickets-1986933699181",
-      "notes": "ElPartidazo LALIGA watch party — Barça vs Real Madrid (May 10). First 90 guests meet Rivaldo (FCB) + Morientes (RM) + exclusive scarf. Free RSVP. Organized by LALIGA North América.",
-      "source": "eventbrite.es / LALIGA North América",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_emmitt_fri",
-      "player": "Emmitt Smith",
-      "sport": "football",
-      "date": "2026-04-10",
-      "time": "15:30",
-      "venue": "Field of Dreams – The Forum Shops at Caesars",
-      "city": "Las Vegas, NV 🇺🇸",
-      "link": "https://www.instagram.com/fodcaesars/",
-      "img": "https://s1.ticketm.net/dam/c/03e/e15ef00f-2c87-4421-ae61-d740851a703e_105891_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "Meet & autograph signing 3:30–5:30 PM. Dallas Cowboys legend, 3× SB champ, NFL MVP 1993, Pro HOF 2010.",
-      "source": "fodcaesars (Instagram)",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_emmitt_sat",
-      "player": "Emmitt Smith",
-      "sport": "football",
-      "date": "2026-04-11",
-      "time": "13:30",
-      "venue": "The Forum Shops at Caesars Palace",
-      "city": "Las Vegas, NV 🇺🇸",
-      "link": "https://www.instagram.com/fodcaesars/",
-      "img": "https://s1.ticketm.net/dam/c/03e/e15ef00f-2c87-4421-ae61-d740851a703e_105891_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "Meet & autograph signing 1:30–3:00 PM. 3500 S Las Vegas Blvd. Dallas Cowboys legend, 3× SB champ, NFL MVP 1993, Pro HOF 2010.",
-      "source": "fodcaesars (Instagram)",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "manual_ligamon_1",
-      "player": "Robinson Canó + David Ortiz – Fan Zone Meet & Greet",
-      "sport": "baseball",
-      "date": "2026-04-11",
-      "venue": "Estadio Monumental",
-      "city": "Caracas, Venezuela 🇻🇪",
-      "link": "https://www.instagram.com/ligamonumental/",
-      "notes": "Fan Zone M&G – VIP salon access, photos + autographs with legends. 100 tickets only via @maketicket.ve and @redticket_ve. Kit includes ball, sharpie, entry, parking pass, bracelet.",
-      "source": "ligamonumental (Instagram)",
-      "addedAt": "2026-04-10"
-    },
-    {
-      "id": "live_1775838255149_t2k6i",
+      "id": "live_1776265094987_0r8vw",
       "player": "Champ Lamar Odom",
-      "title": "Don't miss your shot to meet 2x NBA LIVE ...",
+      "title": "Don't miss your shot to meet 2x NBA ...",
       "sport": "basketball",
       "date": "2026-05-01",
       "link": "https://www.facebook.com/primetimesports12/posts/-dont-miss-your-shot-to-meet-2x-nba-champ-lamar-odom-live-autograph-signing-at-g/1379418377546910/",
-      "notes": "Don't miss your shot to meet 2x NBA Champ Lamar Odom LIVE! Autograph signing at Great Northern Mall – May 1, 2026 🎟️ Tickets are going live — ...",
-      "source": "Web search",
+      "notes": "Don't miss your shot to meet 2x NBA Champ Lamar Odom LIVE! Autograph signing at Great Northern Mall – May 1, 2026 🎟️ Tickets are going live ...",
+      "source": "9 reactions · 1 week ago",
       "addedAt": "2026-04-10"
     },
     {
-      "id": "fiterman_shawn_kemp_public_autograph_event_fiterman_sports_league_city_tx",
-      "player": "Shawn Kemp",
-      "title": "PUBLIC AUTOGRAPH EVENT Fiterman Sports &#8211; League City TX",
-      "sport": "basketball",
-      "date": "2026-04-11",
-      "venue": "Fiterman Sports",
-      "city": "",
-      "link": "https://fitermansports.com/event/shawn-kemp-public-autograph-event-fiterman-sports-league-city-tx/",
-      "notes": "",
-      "source": "fitermansports.com",
-      "addedAt": "2026-04-03",
-      "linkBroken": true
-    },
-    {
-      "id": "fiterman_gary_payton_public_autograph_event_fiterman_sports_league_city_tx",
-      "player": "Gary Payton",
-      "title": "PUBLIC AUTOGRAPH EVENT Fiterman Sports &#8211; League City TX",
-      "sport": "basketball",
-      "date": "2026-04-11",
-      "venue": "Fiterman Sports",
-      "city": "",
-      "link": "https://fitermansports.com/event/gary-payton-public-autograph-event-fiterman-sports-league-city-tx/",
-      "notes": "",
-      "source": "fitermansports.com",
-      "addedAt": "2026-04-03",
-      "linkBroken": true
-    },
-    {
-      "id": "manual_mbutler_boston_apr18",
-      "player": "Malcolm Butler",
-      "sport": "football",
-      "date": "2026-04-18",
-      "venue": "Shriners Auditorium (Lucky's)",
-      "city": "Boston, MA 🇺🇸",
-      "link": "https://www.instagram.com/brian.oc7/",
-      "img": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16752.png",
-      "notes": "The Boston Show — autograph signing via Celebz Direct & Lundy Marketing Group.",
-      "source": "instagram.com/brian.oc7",
-      "addedAt": "2026-04-11"
-    },
-    {
-      "id": "manual_garypayton_seattle_apr21",
-      "player": "Gary Payton",
-      "sport": "basketball",
-      "date": "2026-04-21",
-      "time": "18:00",
-      "venue": "Simply Seattle (U Village)",
-      "city": "Seattle, WA 🇺🇸",
-      "link": "https://www.instagram.com/simplyseattle/",
-      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/254.png",
-      "notes": "VIP Experience + General Admission packages. Tickets available now. Hall of Famer 'The Glove'.",
-      "source": "instagram.com/simplyseattle",
-      "addedAt": "2026-04-11"
+      "id": "live_1776265252523_ij4x5",
+      "player": "Kick Off",
+      "title": "🎉⚽ the Celebration! 🤠🎈 Join us on May 2 2026 ...",
+      "sport": "soccer",
+      "date": "2026-05-02",
+      "link": "https://www.instagram.com/p/DW7bm8JjTdU/",
+      "notes": "Join us on May 2, 2026 for our 1st Annual End of Season Celebration! Get ready for a night where soccer meets cowboy spirit in the most ...",
+      "source": "7 likes · 5 days ago",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "fiterman_ric_flair_public_autograph_event_wrestlecon_las_vegas_nv",
@@ -738,8 +35,7 @@
       "link": "https://fitermansports.com/event/ric-flair-public-autograph-event-wrestlecon-las-vegas-nv/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-04-03",
-      "linkBroken": true
+      "addedAt": "2026-04-03"
     },
     {
       "id": "fiterman_jeremy_pena_public_autograph_event_fiterman_sports_league_city_tx",
@@ -752,8 +48,7 @@
       "link": "https://fitermansports.com/event/jeremy-pena-public-autograph-event-fiterman-sports-league-city-tx/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-04-03",
-      "linkBroken": true
+      "addedAt": "2026-04-03"
     },
     {
       "id": "fiterman_jose_altuve_public_autograph_event_fiterman_sports_league_city_tx",
@@ -766,8 +61,7 @@
       "link": "https://fitermansports.com/event/jose-altuve-public-autograph-event-fiterman-sports-league-city-tx/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-04-03",
-      "linkBroken": true
+      "addedAt": "2026-04-03"
     },
     {
       "id": "fiterman_earl_campbell_public_autograph_event_fiterman_sports_league_city_tx",
@@ -780,8 +74,7 @@
       "link": "https://fitermansports.com/event/earl-campbell-public-autograph-event-fiterman-sports-league-city-tx/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-04-03",
-      "linkBroken": true
+      "addedAt": "2026-04-03"
     },
     {
       "id": "fiterman_vince_young_public_autograph_event_fiterman_sports_league_city_tx",
@@ -794,8 +87,7 @@
       "link": "https://fitermansports.com/event/vince-young-public-autograph-event-fiterman-sports-league-city-tx/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-04-03",
-      "linkBroken": true
+      "addedAt": "2026-04-03"
     },
     {
       "id": "fiterman_ricky_williams_public_autograph_event_fiterman_sports_league_city_tx",
@@ -808,8 +100,7 @@
       "link": "https://fitermansports.com/event/ricky-williams-public-autograph-event-fiterman-sports-league-city-tx/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-04-03",
-      "linkBroken": true
+      "addedAt": "2026-04-03"
     },
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-christian-benford",
@@ -838,7 +129,20 @@
       "addedAt": "2026-04-10"
     },
     {
-      "id": "eb_1775838839943_v2a45",
+      "id": "inscriptagraphs_megan-keller-trading-card-mystery-pack-pre-order-ebay-live-autograph-signing-april-2026",
+      "player": "Megan Keller Trading",
+      "title": "PRE ORDER! Card Mystery Pack eBay Live Autograph Signing April 2026",
+      "sport": "other",
+      "date": "2026-04-24",
+      "venue": "Inscriptagraphs Memorabilia",
+      "city": "Las Vegas, NV",
+      "link": "https://inscriptagraphs.com/products/megan-keller-trading-card-mystery-pack-pre-order-ebay-live-autograph-signing-april-2026",
+      "notes": "PRE-ORDER! Megan Keller Trading Card Mystery Pack - eBay Live Autograph Signing April 2026",
+      "source": "inscriptagraphs.com",
+      "addedAt": "2026-04-15"
+    },
+    {
+      "id": "eb_1776265811190_j0dh0",
       "player": "Darcy Michael",
       "title": "Book Signing at Harvard Book Store",
       "sport": "book",
@@ -851,7 +155,7 @@
       "addedAt": "2026-04-03"
     },
     {
-      "id": "eb_1775838839943_03g1p",
+      "id": "eb_1776265811527_oifpw",
       "player": "Sara Hall",
       "title": "Book Signing at Harvard Book Store",
       "sport": "book",
@@ -864,33 +168,7 @@
       "addedAt": "2026-04-03"
     },
     {
-      "id": "eb_1775838839943_v51og",
-      "player": "Terasha Burrell",
-      "title": "Book Signing with",
-      "sport": "book",
-      "date": "2026-04-11",
-      "venue": "Onward Coffee",
-      "city": "Huntsville",
-      "link": "https://www.eventbrite.com/e/book-signing-with-terasha-burrell-tickets-1985140899870",
-      "notes": "Book Signing with Terasha Burrell",
-      "source": "eventbrite.com",
-      "addedAt": "2026-04-03"
-    },
-    {
-      "id": "eb_1775838839943_ke4by",
-      "player": "Jets icon Wayne Chrebet",
-      "title": "Meet & Greet w/ @ Pandora's Box Toys & Collectibles",
-      "sport": "other",
-      "date": "2026-04-12",
-      "venue": "Pandora's Box Toys & Collectibles",
-      "city": "Lafayette",
-      "link": "https://www.eventbrite.com/e/meet-greet-w-jets-icon-wayne-chrebet-pandoras-box-toys-collectibles-tickets-1983460078488",
-      "notes": "Meet & Greet w/ Jets icon Wayne Chrebet @ Pandora's Box Toys & Collectibles",
-      "source": "eventbrite.com",
-      "addedAt": "2026-04-03"
-    },
-    {
-      "id": "eb_1775838841210_qkcca",
+      "id": "eb_1776265811919_34ml2",
       "player": "Megan Lally",
       "title": "Book Signing",
       "sport": "book",
@@ -903,20 +181,20 @@
       "addedAt": "2026-04-10"
     },
     {
-      "id": "eb_1775838861164_omlp2",
-      "player": "Diamond Dallas Page",
-      "title": "Meet & Greet New England Fan Fest 11",
-      "sport": "wrestling",
-      "date": "2026-05-02",
-      "venue": "Ramada by Wyndham Seekonk Providence Area",
-      "city": "Seekonk",
-      "link": "https://www.eventbrite.com/e/diamond-dallas-page-meet-greet-new-england-fan-fest-11-tickets-1977677753398",
-      "notes": "Diamond Dallas Page Meet & Greet New England  Fan Fest 11",
+      "id": "eb_1776265812204_iprxx",
+      "player": "Terasha Burrell",
+      "title": "Book Signing with",
+      "sport": "book",
+      "date": "2026-05-16",
+      "venue": "Mend Coffee & Goods",
+      "city": "Atlanta",
+      "link": "https://www.eventbrite.com/e/book-signing-with-terasha-burrell-tickets-1985384183538",
+      "notes": "Book Signing with Terasha Burrell",
       "source": "eventbrite.com",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-15"
     },
     {
-      "id": "eb_1775838861370_4t6rs",
+      "id": "eb_1776265832732_3qwiw",
       "player": "Trish Stratus",
       "title": "Team Bestie Meet & Greet Packages",
       "sport": "wrestling",
@@ -925,6 +203,19 @@
       "city": "St. Augustine",
       "link": "https://www.eventbrite.com/e/team-bestie-meet-greet-packages-tickets-1982796186770",
       "notes": "Team Bestie Meet & Greet Packages",
+      "source": "eventbrite.com",
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "eb_1776265844765_sx6gs",
+      "player": "Diamond Dallas Page",
+      "title": "Meet & Greet New England Fan Fest 11",
+      "sport": "wrestling",
+      "date": "2026-05-02",
+      "venue": "Ramada by Wyndham Seekonk Providence Area",
+      "city": "Seekonk",
+      "link": "https://www.eventbrite.com/e/diamond-dallas-page-meet-greet-new-england-fan-fest-11-tickets-1977677753398",
+      "notes": "Diamond Dallas Page Meet & Greet New England  Fan Fest 11",
       "source": "eventbrite.com",
       "addedAt": "2026-04-10"
     },
@@ -939,8 +230,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/original-el-grande-americano",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_adam-pearce",
@@ -953,8 +243,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/adam-pearce",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_aj-lee",
@@ -967,8 +256,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/aj-lee",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_aj-styles",
@@ -981,8 +269,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/aj-styles",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_aleister-black",
@@ -995,8 +282,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/aleister-black",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_alexa-bliss",
@@ -1009,8 +295,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/alexa-bliss",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_asuka",
@@ -1023,8 +308,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/asuka",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_austin-theory",
@@ -1037,8 +321,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/austin-theory",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_bayley",
@@ -1051,8 +334,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/bayley",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_becky-lynch",
@@ -1065,8 +347,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/becky-lynch",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_big-e",
@@ -1079,8 +360,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/big-e",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_blake-monroe",
@@ -1093,8 +373,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/blake-monroe",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_booker-t",
@@ -1107,8 +386,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/booker-t",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_brandi-rhodes",
@@ -1121,8 +399,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/brandi-rhodes",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_brie-bella",
@@ -1135,8 +412,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/brie-bella",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_bronson-reed",
@@ -1149,8 +425,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/bronson-reed",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_carmelo-hayes",
@@ -1163,8 +438,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/carmelo-hayes",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_cathy-kelley",
@@ -1177,8 +451,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/cathy-kelley",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_charlotte-flair",
@@ -1191,8 +464,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/charlotte-flair",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_chelsea-green",
@@ -1205,8 +477,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/chelsea-green",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_cm-punk",
@@ -1219,8 +490,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/cm-punk",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_cody-rhodes",
@@ -1233,8 +503,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/cody-rhodes",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_damian-priest",
@@ -1247,8 +516,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/damian-priest",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_danhausen",
@@ -1261,8 +529,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/danhausen",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_dennis-rodman",
@@ -1275,8 +542,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/dennis-rodman",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_dominik-mysterio",
@@ -1289,8 +555,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/dominik-mysterio",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_drew-mcintyre",
@@ -1303,8 +568,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/drew-mcintyre",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_el-grande-americano",
@@ -1317,8 +581,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/el-grande-americano",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_el-hijo-de-vikingo",
@@ -1331,8 +594,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/el-hijo-de-vikingo",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_ethan-page",
@@ -1345,8 +607,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/ethan-page",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_fallon-henley",
@@ -1359,8 +620,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/fallon-henley",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_finn-balor",
@@ -1373,8 +633,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/finn-balor",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_giulia",
@@ -1387,8 +646,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/giulia",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_gunther",
@@ -1401,8 +659,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/gunther",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_honky-tonk-man",
@@ -1415,8 +672,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/honky-tonk-man",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_ilja-dragunov",
@@ -1429,8 +685,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/ilja-dragunov",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_iyo-sky",
@@ -1443,8 +698,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/iyo-sky",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_izzi-dame",
@@ -1457,8 +711,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/izzi-dame",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_jackie-redmond",
@@ -1471,8 +724,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jackie-redmond",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_jacob-fatu",
@@ -1485,8 +737,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jacob-fatu",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_jacy-jayne",
@@ -1499,8 +750,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jacy-jayne",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_jade-cargill",
@@ -1513,8 +763,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jade-cargill",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_jaida-parker",
@@ -1527,8 +776,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jaida-parker",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_jbl",
@@ -1541,12 +789,11 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jbl",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_jevon-evans",
-      "player": "Jey Uso",
+      "player": "Jeff Hardy",
       "title": "WWE World at WrestleMania 42",
       "sport": "wrestling",
       "date": "2026-04-16",
@@ -1555,8 +802,20 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jevon-evans",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "epic_wwe-world-at-wrestlemania-2026_jeff-hardy",
+      "player": "Jey Uso",
+      "title": "WWE World at WrestleMania 42",
+      "sport": "wrestling",
+      "date": "2026-04-16",
+      "venue": "Las Vegas Convention Center South Hall",
+      "city": "Las Vegas, NV",
+      "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jeff-hardy",
+      "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_jey-uso",
@@ -1569,8 +828,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jey-uso",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_jim-duggan",
@@ -1583,8 +841,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jim-duggan",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_jimmy-uso",
@@ -1597,12 +854,11 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jimmy-uso",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_joe-hendry",
-      "player": "Kairi Sane",
+      "player": "John Cena",
       "title": "WWE World at WrestleMania 42",
       "sport": "wrestling",
       "date": "2026-04-16",
@@ -1611,8 +867,20 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/joe-hendry",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "epic_wwe-world-at-wrestlemania-2026_john-cena",
+      "player": "Kairi Sane",
+      "title": "WWE World at WrestleMania 42",
+      "sport": "wrestling",
+      "date": "2026-04-16",
+      "venue": "Las Vegas Convention Center South Hall",
+      "city": "Las Vegas, NV",
+      "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/john-cena",
+      "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_kairi-sane",
@@ -1625,8 +893,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/kairi-sane",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_kane",
@@ -1639,8 +906,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/kane",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_kendal-grey",
@@ -1653,8 +919,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/kendal-grey",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_kit-wilson",
@@ -1667,12 +932,11 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/kit-wilson",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_kofi-kingston",
-      "player": "LA Knight",
+      "player": "La Catalina",
       "title": "WWE World at WrestleMania 42",
       "sport": "wrestling",
       "date": "2026-04-16",
@@ -1681,8 +945,20 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/kofi-kingston",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "epic_wwe-world-at-wrestlemania-2026_la-catalina",
+      "player": "LA Knight",
+      "title": "WWE World at WrestleMania 42",
+      "sport": "wrestling",
+      "date": "2026-04-16",
+      "venue": "Las Vegas Convention Center South Hall",
+      "city": "Las Vegas, NV",
+      "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/la-catalina",
+      "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_la-knight",
@@ -1695,8 +971,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/la-knight",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_la-parka",
@@ -1709,8 +984,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/la-parka",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_lita",
@@ -1723,12 +997,11 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/lita",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_liv-morgan",
-      "player": "Lola Vice",
+      "player": "Logan Paul",
       "title": "WWE World at WrestleMania 42",
       "sport": "wrestling",
       "date": "2026-04-16",
@@ -1737,8 +1010,20 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/liv-morgan",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "epic_wwe-world-at-wrestlemania-2026_logan-paul",
+      "player": "Lola Vice",
+      "title": "WWE World at WrestleMania 42",
+      "sport": "wrestling",
+      "date": "2026-04-16",
+      "venue": "Las Vegas Convention Center South Hall",
+      "city": "Las Vegas, NV",
+      "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/logan-paul",
+      "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_lola-vice",
@@ -1751,8 +1036,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/lola-vice",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_lyra-valkyria",
@@ -1765,12 +1049,11 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/lyra-valkyria",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_matt-cardona",
-      "player": "Maxxine Dupri",
+      "player": "Matt Hardy",
       "title": "WWE World at WrestleMania 42",
       "sport": "wrestling",
       "date": "2026-04-16",
@@ -1779,8 +1062,20 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/matt-cardona",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "epic_wwe-world-at-wrestlemania-2026_matt-hardy",
+      "player": "Maxxine Dupri",
+      "title": "WWE World at WrestleMania 42",
+      "sport": "wrestling",
+      "date": "2026-04-16",
+      "venue": "Las Vegas Convention Center South Hall",
+      "city": "Las Vegas, NV",
+      "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/matt-hardy",
+      "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_maxxine-dupri",
@@ -1819,8 +1114,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/mr-iguana",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_nattie",
@@ -1833,8 +1127,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/nattie",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_nick-aldis",
@@ -1847,8 +1140,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/nick-aldis",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_nikki-bella",
@@ -1861,8 +1153,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/nikki-bella",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_oba-femi",
@@ -1875,8 +1166,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/oba-femi",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_penta",
@@ -1902,8 +1192,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/psycho-clown",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_r-truth",
@@ -1916,8 +1205,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/r-truth",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_randy-orton",
@@ -1930,8 +1218,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/randy-orton",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_raquel-rodriguez",
@@ -1944,8 +1231,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/raquel-rodriguez",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_rey-fenix",
@@ -1958,8 +1244,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/rey-fenix",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_rey-mysterio",
@@ -1972,8 +1257,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/rey-mysterio",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_rhea-ripley",
@@ -1986,8 +1270,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/rhea-ripley",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_rick-steiner",
@@ -2000,8 +1283,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/rick-steiner",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_ricky-saints",
@@ -2014,8 +1296,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/ricky-saints",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_rob-van-dam",
@@ -2028,8 +1309,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/rob-van-dam",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_ron-simmons",
@@ -2042,8 +1322,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/ron-simmons",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_roxanne-perez",
@@ -2056,8 +1335,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/roxanne-perez",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_rusev",
@@ -2070,8 +1348,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/rusev",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_sami-zayn",
@@ -2097,12 +1374,11 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/scott-steiner",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_seth-rollins",
-      "player": "Sheamus",
+      "player": "Shawn Michaels",
       "title": "WWE World at WrestleMania 42",
       "sport": "wrestling",
       "date": "2026-04-16",
@@ -2111,8 +1387,20 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/seth-rollins",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "epic_wwe-world-at-wrestlemania-2026_shawn-michaels",
+      "player": "Sheamus",
+      "title": "WWE World at WrestleMania 42",
+      "sport": "wrestling",
+      "date": "2026-04-16",
+      "venue": "Las Vegas Convention Center South Hall",
+      "city": "Las Vegas, NV",
+      "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/shawn-michaels",
+      "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_sheamus",
@@ -2138,8 +1426,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/shiloh-hill",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_shinsuke-nakamura",
@@ -2152,8 +1439,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/shinsuke-nakamura",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_sol-ruca",
@@ -2179,8 +1465,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/solo-sikoa",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_stephanie-mcmahon",
@@ -2193,8 +1478,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/stephanie-mcmahon",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_stephanie-vaquer",
@@ -2207,8 +1491,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/stephanie-vaquer",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_stone-cold-steve-austin",
@@ -2221,8 +1504,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/stone-cold-steve-austin",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_the-boogeyman",
@@ -2235,8 +1517,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/the-boogeyman",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_the-miz",
@@ -2249,8 +1530,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/the-miz",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_tiffany-stratton",
@@ -2263,8 +1543,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/tiffany-stratton",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_torrie-wilson",
@@ -2290,8 +1569,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/trick-williams",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_trish-stratus",
@@ -2317,8 +1595,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/undertaker",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_wade-barrett",
@@ -2344,8 +1621,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/x-pac",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_xavier-woods",
@@ -2358,8 +1634,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/xavier-woods",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_zelina-vega",
@@ -2372,8 +1647,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/zelina-vega",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_aj-lee-and-cm-punk",
@@ -2399,12 +1673,11 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/jbl-and-ron-simmons",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_lash-legend-and-nia-jax",
-      "player": "MFTs and Solo Sikoa",
+      "player": "Matt and Jeff Hardy",
       "title": "WWE World at WrestleMania 42",
       "sport": "wrestling",
       "date": "2026-04-16",
@@ -2413,8 +1686,20 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/lash-legend-and-nia-jax",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "epic_wwe-world-at-wrestlemania-2026_matt-and-jeff-hardy",
+      "player": "MFTs and Solo Sikoa",
+      "title": "WWE World at WrestleMania 42",
+      "sport": "wrestling",
+      "date": "2026-04-16",
+      "venue": "Las Vegas Convention Center South Hall",
+      "city": "Las Vegas, NV",
+      "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/matt-and-jeff-hardy",
+      "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_mfts-and-solo-sikoa",
@@ -2427,8 +1712,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/mfts-and-solo-sikoa",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_mickie-james-and-trish-stratus",
@@ -2441,8 +1725,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/mickie-james-and-trish-stratus",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_nick-aldis-and-adam-pearce",
@@ -2455,8 +1738,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/nick-aldis-and-adam-pearce",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_nikki-bella-and-brie-bella",
@@ -2469,8 +1751,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/nikki-bella-and-brie-bella",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_rick-steiner-and-scott-steiner",
@@ -2483,8 +1764,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/rick-steiner-and-scott-steiner",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_seth-rollins-and-becky-lynch",
@@ -2497,8 +1777,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/seth-rollins-and-becky-lynch",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_street-profits",
@@ -2511,8 +1790,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/street-profits",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_the-new-day",
@@ -2525,8 +1803,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-world-at-wrestlemania-2026/2026/the-new-day",
       "notes": "WWE World at WrestleMania 42 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_wwe-world-at-wrestlemania-2026_the-undertaker-and-kane",
@@ -2881,7 +2158,7 @@
     },
     {
       "id": "epic_mcm-comic-con-london-may_linda-young",
-      "player": "Matt Lanter",
+      "player": "Luke Roberts",
       "title": "MCM Comic Con London May 2026",
       "sport": "celeb",
       "date": "2026-05-21",
@@ -2891,6 +2168,19 @@
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05"
+    },
+    {
+      "id": "epic_mcm-comic-con-london-may_luke-roberts",
+      "player": "Matt Lanter",
+      "title": "MCM Comic Con London May 2026",
+      "sport": "celeb",
+      "date": "2026-05-21",
+      "venue": "ExCel",
+      "city": "London",
+      "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/luke-roberts",
+      "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_mcm-comic-con-london-may_matt-lanter",
@@ -2972,7 +2262,7 @@
     },
     {
       "id": "epic_mcm-comic-con-london-may_rob-paulsen",
-      "player": "Shannon Chan-Kent",
+      "player": "Salome Gunnarsdottir",
       "title": "MCM Comic Con London May 2026",
       "sport": "celeb",
       "date": "2026-05-21",
@@ -2982,6 +2272,19 @@
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05"
+    },
+    {
+      "id": "epic_mcm-comic-con-london-may_salome-gunnarsdottir",
+      "player": "Shannon Chan-Kent",
+      "title": "MCM Comic Con London May 2026",
+      "sport": "celeb",
+      "date": "2026-05-21",
+      "venue": "ExCel",
+      "city": "London",
+      "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/salome-gunnarsdottir",
+      "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_mcm-comic-con-london-may_shannon-chan-kent",
@@ -3167,7 +2470,7 @@
     },
     {
       "id": "epic_mcm-comic-con-london-may_teamup-resident-evil-trio",
-      "player": "TeamUp - Star Wars Group",
+      "player": "TeamUp - Silent Hill Duo",
       "title": "MCM Comic Con London May 2026",
       "sport": "celeb",
       "date": "2026-05-21",
@@ -3177,6 +2480,19 @@
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-10"
+    },
+    {
+      "id": "epic_mcm-comic-con-london-may_teamup-silent-hill-duo",
+      "player": "TeamUp - Star Wars Group",
+      "title": "MCM Comic Con London May 2026",
+      "sport": "celeb",
+      "date": "2026-05-21",
+      "venue": "ExCel",
+      "city": "London",
+      "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/teamup-silent-hill-duo",
+      "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_mcm-comic-con-london-may_teamup-star-wars-group",
@@ -3228,8 +2544,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/alec-baldwin",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_billy-boyd",
@@ -3242,8 +2557,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/billy-boyd",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_bonnie-wright",
@@ -3256,8 +2570,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/bonnie-wright",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_brendan-wayne",
@@ -3270,8 +2583,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/brendan-wayne",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_cara-buono",
@@ -3284,8 +2596,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/cara-buono",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_cary-elwes",
@@ -3298,8 +2609,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/cary-elwes",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_catherine-bell",
@@ -3312,8 +2622,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/catherine-bell",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_cedric-yarbrough",
@@ -3326,8 +2635,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/cedric-yarbrough",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-denver_christopher-judge",
@@ -3340,8 +2648,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/christopher-judge",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_colin-odonoghue",
@@ -3354,8 +2661,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/colin-odonoghue",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_corey-feldman",
@@ -3368,8 +2674,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/corey-feldman",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_david-tennant",
@@ -3382,8 +2687,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/david-tennant",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_dean-norris",
@@ -3396,8 +2700,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/dean-norris",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_dominic-monaghan",
@@ -3410,8 +2713,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/dominic-monaghan",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_elijah-wood",
@@ -3424,8 +2726,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/elijah-wood",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_ethan-suplee",
@@ -3438,8 +2739,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/ethan-suplee",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_frank-grillo",
@@ -3452,8 +2752,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/frank-grillo",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_frank-welker",
@@ -3466,8 +2765,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/frank-welker",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_garrett-hedlund",
@@ -3480,8 +2778,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/garrett-hedlund",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_henry-ian-cusick",
@@ -3494,8 +2791,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/henry-ian-cusick",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_jaime-pressly",
@@ -3508,8 +2804,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/jaime-pressly",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_jamie-kennedy",
@@ -3522,8 +2817,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/jamie-kennedy",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_jamison-newlander",
@@ -3536,8 +2830,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/jamison-newlander",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_joe-pantoliano",
@@ -3550,8 +2843,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/joe-pantoliano",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_john-noble",
@@ -3564,8 +2856,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/john-noble",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_john-rhys-davies",
@@ -3578,8 +2869,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/john-rhys-davies",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_josh-holloway",
@@ -3592,8 +2882,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/josh-holloway",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_karl-urban",
@@ -3606,8 +2895,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/karl-urban",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_kerri-green",
@@ -3620,8 +2908,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/kerri-green",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_lee-waddell",
@@ -3634,8 +2921,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/lee-waddell",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_martha-plimpton",
@@ -3648,8 +2934,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/martha-plimpton",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_matthew-lillard",
@@ -3662,8 +2947,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/matthew-lillard",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_mike-colter",
@@ -3676,8 +2960,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/mike-colter",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_miranda-otto",
@@ -3690,8 +2973,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/miranda-otto",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_nolan-north",
@@ -3704,8 +2986,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/nolan-north",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_orlando-bloom",
@@ -3718,8 +2999,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/orlando-bloom",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_peter-cullen",
@@ -3732,8 +3012,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/peter-cullen",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_robert-davi",
@@ -3746,8 +3025,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/robert-davi",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_roger-clark",
@@ -3760,8 +3038,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/roger-clark",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_sam-witwer",
@@ -3774,8 +3051,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/sam-witwer",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-denver_sean-astin",
@@ -3788,8 +3064,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/sean-astin",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_skeet-ulrich",
@@ -3802,8 +3077,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/skeet-ulrich",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_thomas-lennon",
@@ -3816,8 +3090,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/thomas-lennon",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-denver_teamup-over-9000-dragon-ball",
@@ -3830,8 +3103,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-over-9000-dragon-ball",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-death-note",
@@ -3844,8 +3116,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-death-note",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-demon-slayer-team-up",
@@ -3858,8 +3129,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-demon-slayer-team-up",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-hazbin-hotel-the-vees",
@@ -3872,8 +3142,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-hazbin-hotel-the-vees",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-lost-team-up",
@@ -3886,8 +3155,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-lost-team-up",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-marvel-rivals-team-up",
@@ -3900,8 +3168,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-marvel-rivals-team-up",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-my-hero-academia",
@@ -3914,8 +3181,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-my-hero-academia",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-my-name-is-earl-duo",
@@ -3928,8 +3194,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-my-name-is-earl-duo",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-reno-911-duo",
@@ -3942,8 +3207,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-reno-911-duo",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-denver_teamup-star-wars-maul-shadow-lord",
@@ -3956,8 +3220,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-star-wars-maul-shadow-lord",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-goonies",
@@ -3970,8 +3233,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-goonies",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-goonies-saturday",
@@ -3984,8 +3246,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-goonies-saturday",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-denver_teamup-lotr-duo-eowyn-eomer",
@@ -3998,8 +3259,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-lotr-duo-eowyn-eomer",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-duo-eowyn-and-merry",
@@ -4012,8 +3272,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-lord-of-the-rings-duo-eowyn-and-merry",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-duo-frodo-and-sam",
@@ -4026,8 +3285,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-lord-of-the-rings-duo-frodo-and-sam",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-duo-merry-and-pippin",
@@ -4040,8 +3298,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-lord-of-the-rings-duo-merry-and-pippin",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-reunion",
@@ -4054,8 +3311,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-lord-of-the-rings-reunion",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-fellowship-reunion",
@@ -4068,8 +3324,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-lord-of-the-rings-fellowship-reunion",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-legolas-gimli",
@@ -4082,8 +3337,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-lord-of-the-rings-legolas-gimli",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-the-hobbits",
@@ -4096,8 +3350,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-lord-of-the-rings-the-hobbits",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lost-boys-the-frog-brothers",
@@ -4110,8 +3363,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-lost-boys-the-frog-brothers",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-transformers",
@@ -4124,8 +3376,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-transformers",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-scream-duo-billy-and-stu",
@@ -4138,8 +3389,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-scream-duo-billy-and-stu",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_teamup-scream-team-up-lee-waddell-in-costume",
@@ -4152,8 +3402,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-scream-team-up-lee-waddell-in-costume",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-denver_on-stage-with-orlando-bloom",
@@ -4166,8 +3415,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/on-stage-with-orlando-bloom",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_billy-boyd",
@@ -4180,8 +3428,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/billy-boyd",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_bonnie-wright",
@@ -4194,8 +3441,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/bonnie-wright",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_brendan-wayne",
@@ -4208,8 +3454,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/brendan-wayne",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_brent-spiner",
@@ -4222,8 +3467,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/brent-spiner",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_colin-odonoghue",
@@ -4236,12 +3480,11 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/colin-odonoghue",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_corey-feldman",
-      "player": "David Morrissey",
+      "player": "Dafne Keen",
       "title": "FAN EXPO Philadelphia 2026",
       "sport": "celeb",
       "date": "2026-05-29",
@@ -4250,8 +3493,20 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/corey-feldman",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
+    },
+    {
+      "id": "epic_fan-expo-philadelphia_dafne-keen",
+      "player": "David Morrissey",
+      "title": "FAN EXPO Philadelphia 2026",
+      "sport": "celeb",
+      "date": "2026-05-29",
+      "venue": "Pennsylvania Convention Center",
+      "city": "Philadelphia, PA",
+      "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/dafne-keen",
+      "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-15"
     },
     {
       "id": "epic_fan-expo-philadelphia_david-morrissey",
@@ -4264,8 +3519,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/david-morrissey",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-philadelphia_david-tennant",
@@ -4278,8 +3532,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/david-tennant",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_dean-norris",
@@ -4292,8 +3545,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/dean-norris",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_dominic-monaghan",
@@ -4306,8 +3558,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/dominic-monaghan",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_elijah-wood",
@@ -4320,8 +3571,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/elijah-wood",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_erica-durance",
@@ -4334,8 +3584,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/erica-durance",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_james-marsters",
@@ -4348,8 +3597,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/james-marsters",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_jamison-newlander",
@@ -4362,8 +3610,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/jamison-newlander",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_jim-cummings",
@@ -4376,8 +3623,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/jim-cummings",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_jim-lee",
@@ -4390,8 +3636,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/jim-lee",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_john-rhys-davies",
@@ -4404,8 +3649,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/john-rhys-davies",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_jonathan-frakes",
@@ -4418,8 +3662,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/jonathan-frakes",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_judith-hoag",
@@ -4432,8 +3675,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/judith-hoag",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_kerri-green",
@@ -4446,8 +3688,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/kerri-green",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_kristin-kreuk",
@@ -4460,8 +3701,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/kristin-kreuk",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_manny-jacinto",
@@ -4474,8 +3714,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/manny-jacinto",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_martha-plimpton",
@@ -4488,8 +3727,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/martha-plimpton",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_michael-rosenbaum",
@@ -4502,8 +3740,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/michael-rosenbaum",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_miranda-otto",
@@ -4516,8 +3753,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/miranda-otto",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_orlando-bloom",
@@ -4530,8 +3766,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/orlando-bloom",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_sean-astin",
@@ -4544,8 +3779,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/sean-astin",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_tom-welling",
@@ -4558,8 +3792,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/tom-welling",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_joe-quesada",
@@ -4572,8 +3805,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/joe-quesada",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_brina-palencia",
@@ -4586,8 +3818,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/brina-palencia",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_colleen-clinkenbeard",
@@ -4600,8 +3831,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/colleen-clinkenbeard",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_stephanie-young",
@@ -4614,8 +3844,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/stephanie-young",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-classic-sailor-moon",
@@ -4628,8 +3857,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-classic-sailor-moon",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-one-piece-straw-hats",
@@ -4642,8 +3870,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-one-piece-straw-hats",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-sailor-moon-x-sailor-moon",
@@ -4656,8 +3883,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-sailor-moon-x-sailor-moon",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville",
@@ -4670,8 +3896,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-smallville",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville-clark-and-lana",
@@ -4684,8 +3909,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-smallville-clark-and-lana",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville-clark-and-lois",
@@ -4698,8 +3922,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-smallville-clark-and-lois",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville-lex-and-lana",
@@ -4712,8 +3935,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-smallville-lex-and-lana",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville-superman-and-lex",
@@ -4726,8 +3948,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-smallville-superman-and-lex",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville-superman-lex-and-lana",
@@ -4740,8 +3961,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-smallville-superman-lex-and-lana",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville-women-of-smallville",
@@ -4754,8 +3974,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-smallville-women-of-smallville",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-star-trek-the-next-generation",
@@ -4768,8 +3987,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-star-trek-the-next-generation",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-goonies",
@@ -4782,8 +4000,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-the-goonies",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-duo-eowyn-and-merry",
@@ -4796,8 +4013,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-the-lord-of-the-rings-duo-eowyn-and-merry",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-duo-frodo-and-samwise",
@@ -4810,8 +4026,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-the-lord-of-the-rings-duo-frodo-and-samwise",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-duo-gimli-and-legolas",
@@ -4824,8 +4039,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-the-lord-of-the-rings-duo-gimli-and-legolas",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-duo-pippin-and-merry",
@@ -4838,8 +4052,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-the-lord-of-the-rings-duo-pippin-and-merry",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-fellowship-reunion",
@@ -4852,8 +4065,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-the-lord-of-the-rings-fellowship-reunion",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-reunion",
@@ -4866,8 +4078,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-the-lord-of-the-rings-reunion",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-the-hobbits",
@@ -4880,8 +4091,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-the-lord-of-the-rings-the-hobbits",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lost-boys-the-frog-brothers",
@@ -4894,8 +4104,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-the-lost-boys-the-frog-brothers",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-tmnt-shellabration",
@@ -4908,8 +4117,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-tmnt-shellabration",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-tmnt-shellabration-with-april",
@@ -4922,8 +4130,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-tmnt-shellabration-with-april",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_on-stage-with-orlando-bloom",
@@ -4936,8 +4143,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/on-stage-with-orlando-bloom",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_ultimate-backstage-orlando-bloom-experience",
@@ -4950,8 +4156,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/ultimate-backstage-orlando-bloom-experience",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_an-evening-with-the-hobbits",
@@ -4964,8 +4169,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/an-evening-with-the-hobbits",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_dan-panosian",
@@ -4978,8 +4182,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/dan-panosian",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_frank-miller",
@@ -4992,8 +4195,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/frank-miller",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_greg-capullo",
@@ -5006,8 +4208,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/greg-capullo",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_greg-capullo-dan-panosian-comic-experience",
@@ -5020,8 +4221,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/greg-capullo-dan-panosian-comic-experience",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_ultimate-greg-capullo-original-art-experience",
@@ -5034,8 +4234,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/ultimate-greg-capullo-original-art-experience",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "linkBroken": true
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-philadelphia_on-stage-with-orlando-bloom-1",
@@ -5048,8 +4247,436 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/on-stage-with-orlando-bloom-1",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
+      "addedAt": "2026-04-05"
+    },
+    {
+      "id": "manual_sarah_hoover_92ny_apr22",
+      "player": "Sarah Hoover",
+      "date": "2026-04-22",
+      "venue": "92nd Street Y (92NY)",
+      "city": "New York, NY",
+      "link": "https://www.92ny.org/event/sarah-hoover",
+      "img": "https://images.squarespace-cdn.com/content/v1/60aad742a488335a66311dce/1621814510532-91F82ZV16CFAX0D7BDE2/photo+credit+Carl+Timpone_BFA_BW.jpg",
+      "notes": "Book talk & signing — The Motherload Paperback Tour. Sarah Hoover in conversation with Chelsea Clinton. 7:00 PM. Ticket includes a copy of the paperback.",
+      "sport": "celeb",
+      "source": "92ny.org",
+      "addedAt": "2026-04-15"
+    },
+    {
+      "id": "manual_sabrina_manchester_may7",
+      "player": "Sabrina Claudio",
+      "date": "2026-05-07",
+      "venue": "O2 Ritz",
+      "city": "Manchester, UK 🇬🇧",
+      "link": "https://vipnation.eu/sabrinaclaudio",
+      "img": "https://s1.ticketm.net/dam/a/37c/8f9bd150-7a57-487a-9e05-320f85ab037c_ARTIST_PAGE_3_2.jpg",
+      "notes": "VIP M&G upgrade — Fall In Love With Her Tour. Includes: meet & greet + photo with Sabrina Claudio, signed tour poster, VIP laminate, early entry. GA standing ticket included.",
+      "sport": "celeb",
+      "source": "vipnation.com",
+      "addedAt": "2026-04-10",
       "linkBroken": true
+    },
+    {
+      "id": "manual_rush_seattle_oct10",
+      "player": "Rush",
+      "date": "2026-10-10",
+      "venue": "Climate Pledge Arena",
+      "city": "Seattle, WA 🇺🇸",
+      "link": "https://www.wearesuper.co/rushvip",
+      "img": "https://s1.ticketm.net/dam/a/6bd/c02199ad-8d22-4668-8973-f400d85826bd_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G — Fifty Something Tour. Includes: meet & greet + pro photo with Geddy Lee & Alex Lifeson, one autograph per guest, backstage rig rundown tour, Xanadu VIP lounge with complimentary appetizers + drinks. Concert ticket not included.",
+      "sport": "celeb",
+      "source": "vipnation.com",
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "manual_rush_chicago_jul16",
+      "player": "Rush",
+      "date": "2026-07-16",
+      "venue": "United Center",
+      "city": "Chicago, IL 🇺🇸",
+      "link": "https://www.ticketmaster.com/rush-fifty-something-chicago-illinois-07-16-2026/event/04006343C8524963",
+      "img": "https://s1.ticketm.net/dam/a/6bd/c02199ad-8d22-4668-8973-f400d85826bd_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G — Fifty Something Tour. Includes: meet & greet + pro photo with Geddy Lee & Alex Lifeson, one autograph per guest, backstage rig rundown tour, Xanadu VIP lounge with complimentary appetizers + drinks. Concert ticket not included.",
+      "sport": "celeb",
+      "source": "vipnation.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_kidcudi_la_jun26",
+      "player": "Kid Cudi",
+      "date": "2026-06-26",
+      "venue": "Kia Forum",
+      "city": "Los Angeles, CA 🇺🇸",
+      "link": "https://www.vipnation.com/tour/the-rebel-ragers-tour",
+      "img": "https://s1.ticketm.net/dam/a/b38/6bdf69cb-1b2e-4f1a-949f-78ff42766b38_ARTIST_PAGE_3_2.jpg",
+      "notes": "VIP M&G upgrade — The Rebel Ragers Tour. Includes: meet & greet + individual photo with Kid Cudi, pre-show VIP lounge, exclusive merch pack, VIP laminate, early entry. Concert ticket not included. Via vipnation.com.",
+      "sport": "celeb",
+      "source": "vipnation.com",
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "manual_kidcudi_denver_jun12",
+      "player": "Kid Cudi",
+      "date": "2026-06-12",
+      "venue": "Fiddler's Green Amphitheatre",
+      "city": "Denver, CO 🇺🇸",
+      "link": "https://www.ticketmaster.com/kid-cudi-presents-the-rebel-ragers-denver-colorado-06-12-2026/event/1E00642EE12FB895",
+      "img": "https://s1.ticketm.net/dam/a/b38/6bdf69cb-1b2e-4f1a-949f-78ff42766b38_ARTIST_PAGE_3_2.jpg",
+      "notes": "VIP M&G upgrade — The Rebel Ragers Tour. Includes: meet & greet + individual photo with Kid Cudi, pre-show VIP lounge, exclusive merch pack, VIP laminate, early entry. Concert ticket not included. Via vipnation.com.",
+      "sport": "celeb",
+      "source": "vipnation.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_inna_marbella_aug22",
+      "player": "Inna",
+      "sport": "celeb",
+      "date": "2026-08-22",
+      "venue": "TBD",
+      "city": "Marbella, Spain 🇪🇸",
+      "link": "https://www.ticketmaster.es/inna-meetgreet-upgrade-marbella-22-08-2026/event/1B00637E994F9A12",
+      "img": "https://s1.ticketm.net/dam/a/27a/ae5abbfd-91b3-4eb8-b3fd-743a87c3e27a_687141_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "Meet & Greet upgrade (concert ticket sold separately). Romanian pop star popular across Europe.",
+      "source": "ticketmaster.es",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_pitbull_liljon_prague_jul26",
+      "player": "Pitbull ft. Lil Jon",
+      "sport": "celeb",
+      "date": "2026-07-26",
+      "venue": "TBD",
+      "city": "Prague, Czech Republic 🇨🇿",
+      "link": "https://www.ticketmaster.cz/pitbull-lil-jon-meetgreet-upgrade-praha-26-07-2026/event/3B0063649967B2B2",
+      "img": "https://s1.ticketm.net/dam/a/918/bd324c03-b456-4cb9-87b2-fe8664cb1918_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "Pitbull – I'm Back! tour. Lil Jon M&G upgrade (concert ticket sold separately).",
+      "source": "ticketmaster.cz",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_liljon_arnhem_jul15",
+      "player": "Lil Jon",
+      "sport": "celeb",
+      "date": "2026-07-15",
+      "venue": "TBD",
+      "city": "Arnhem, Netherlands 🇳🇱",
+      "link": "https://www.ticketmaster.nl/lil-jon-vip-upgrades-arnhem-15-07-2026/event/1B00636499671E55",
+      "img": "https://s1.ticketm.net/dam/a/e80/626f2d86-3e5b-4db0-a124-06d084948e80_ARTIST_PAGE_3_2.jpg",
+      "notes": "Meet & Greet VIP upgrade (concert ticket sold separately).",
+      "source": "ticketmaster.nl",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_liljon_glasgow_jul1",
+      "player": "Lil Jon",
+      "sport": "celeb",
+      "date": "2026-07-01",
+      "venue": "TBD",
+      "city": "Glasgow, UK 🇬🇧",
+      "link": "https://www.ticketmaster.co.uk/lil-jon-vip-upgrades-glasgow-01-07-2026/event/3F00636499659C90",
+      "img": "https://s1.ticketm.net/dam/a/e80/626f2d86-3e5b-4db0-a124-06d084948e80_ARTIST_PAGE_3_2.jpg",
+      "notes": "Meet & Greet VIP upgrade (concert ticket sold separately).",
+      "source": "ticketmaster.co.uk",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_macygray_coventry_jun2",
+      "player": "Macy Gray",
+      "sport": "celeb",
+      "date": "2026-06-02",
+      "venue": "TBD",
+      "city": "Coventry, UK 🇬🇧",
+      "link": "https://www.ticketmaster.co.uk/macy-gray-vip-mg-upgrade-coventry-02-06-2026/event/1F00636E94967C5A",
+      "img": "https://s1.ticketm.net/dam/a/90d/6d1db0ea-5f58-47ec-9016-ae90300e990d_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade (concert ticket sold separately).",
+      "source": "ticketmaster.co.uk",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_floetry_chicago_apr15",
+      "player": "Floetry (+ Raheem DeVaughn & Teedra Moses)",
+      "sport": "celeb",
+      "date": "2026-04-15",
+      "venue": "The Chicago Theatre",
+      "city": "Chicago, IL 🇺🇸",
+      "link": "https://www.ticketmaster.com/floetry-meet-greet-experience-chicago-illinois-04-15-2026/event/04006391F19CDFC5",
+      "img": "https://s1.ticketm.net/dam/a/129/d206d44a-fec0-4227-844e-2badea4f5129_59741_ARTIST_PAGE_3_2.jpg",
+      "notes": "Say Yes Tour reunion M&G add-on. Meet & greet with Floetry (Marsha Ambrosius + Natalie Stewart). Special guests: Raheem DeVaughn, Teedra Moses.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_billmurray_dc_jun20",
+      "player": "Bill Murray & The Blood Brothers",
+      "sport": "celeb",
+      "date": "2026-06-20",
+      "venue": "TBD",
+      "city": "Washington, DC 🇺🇸",
+      "link": "https://www.ticketmaster.com/bill-murray-blood-brothers-pre-show-mg-washington-district-of-columbia-06-20-2026/event/15006469EB1F3E2A",
+      "img": "https://s1.ticketm.net/dam/a/b54/82b56fe3-7a5c-45a8-9e80-31c7bce60b54_ARTIST_PAGE_3_2.jpg",
+      "notes": "Pre-show M&G upgrade (concert ticket sold separately). Includes: meet & greet photo with Bill Murray + band, professional photo download within 3 hours, VIP lanyard, concert poster. No personal cameras.",
+      "source": "ticketmaster.com / livenation.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_jhudson_slc_jul3",
+      "date": "2026-07-03",
+      "time": "20:00",
+      "venue": "Maverik Center",
+      "city": "West Valley City, UT 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-west-valley-city-utah-07-03-2026/event/1E00638CCB84AB9B",
+      "player": "Jennifer Hudson",
+      "sport": "celeb",
+      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_jhudson_stpaul_jun28",
+      "date": "2026-06-28",
+      "time": "20:00",
+      "venue": "Xcel Energy Center",
+      "city": "Saint Paul, MN 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-saint-paul-minnesota-06-28-2026/event/0600638CD98F2875",
+      "player": "Jennifer Hudson",
+      "sport": "celeb",
+      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_jhudson_chicago_jun27",
+      "date": "2026-06-27",
+      "time": "20:00",
+      "venue": "Allstate Arena",
+      "city": "Rosemont (Chicago), IL 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-rosemont-illinois-06-27-2026/event/0400638CD98CAE33",
+      "player": "Jennifer Hudson",
+      "sport": "celeb",
+      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_jhudson_detroit_jun25",
+      "date": "2026-06-25",
+      "time": "20:00",
+      "venue": "Little Caesars Arena",
+      "city": "Detroit, MI 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-detroit-michigan-06-25-2026/event/0800638CE799A27D",
+      "player": "Jennifer Hudson",
+      "sport": "celeb",
+      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_jhudson_tampa_jun19",
+      "date": "2026-06-19",
+      "time": "20:00",
+      "venue": "Amalie Arena",
+      "city": "Tampa, FL 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-tampa-florida-06-19-2026/event/0D00638CE794D29D",
+      "player": "Jennifer Hudson",
+      "sport": "celeb",
+      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_jhudson_nashville_jun16",
+      "date": "2026-06-16",
+      "time": "20:00",
+      "venue": "Bridgestone Arena",
+      "city": "Nashville, TN 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-nashville-tennessee-06-16-2026/event/1B00638CD97FEBFD",
+      "player": "Jennifer Hudson",
+      "sport": "celeb",
+      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_jhudson_philly_jun7",
+      "date": "2026-06-07",
+      "time": "20:00",
+      "venue": "Wells Fargo Center",
+      "city": "Philadelphia, PA 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-philadelphia-pennsylvania-06-07-2026/event/3000638CE78DB9BD",
+      "player": "Jennifer Hudson",
+      "sport": "celeb",
+      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_jhudson_boston_jun6",
+      "date": "2026-06-06",
+      "time": "20:00",
+      "venue": "TD Garden",
+      "city": "Boston, MA 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-boston-massachusetts-06-06-2026/event/0100638CE78B218C",
+      "player": "Jennifer Hudson",
+      "sport": "celeb",
+      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. \"Two Legendary Voices\" tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_cardib_atlanta_apr17",
+      "player": "Cardi B",
+      "sport": "celeb",
+      "date": "2026-04-17",
+      "time": "19:30",
+      "venue": "State Farm Arena",
+      "city": "Atlanta, GA 🇺🇸",
+      "link": "https://www.ticketmaster.com/cardi-b-little-miss-drama-tour-atlanta-georgia-04-17-2026/event/0E00632FDD8241A3",
+      "img": "https://s1.ticketm.net/dam/a/bf7/4e7ec6d4-4396-427b-88f3-5f1b2a4c7bf7_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "'Imaginary Playerz' M&G upgrade ($900, concert ticket sold separately). Includes: intimate meet & greet, Drama Club pre-show party, photo ops, VIP merch bag, laminate, early entry. Little Miss Drama Tour.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_cardib_atlanta_apr18",
+      "player": "Cardi B",
+      "sport": "celeb",
+      "date": "2026-04-18",
+      "time": "19:30",
+      "venue": "State Farm Arena",
+      "city": "Atlanta, GA 🇺🇸",
+      "link": "https://www.ticketmaster.com/cardi-b-vip-upgrades-event-ticket-atlanta-georgia-04-18-2026/event/0E006391F18AA77B",
+      "img": "https://s1.ticketm.net/dam/a/bf7/4e7ec6d4-4396-427b-88f3-5f1b2a4c7bf7_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "'Imaginary Playerz' M&G upgrade ($900, concert ticket sold separately). Includes: intimate meet & greet, Drama Club pre-show party, photo ops, VIP merch bag, laminate, early entry. Little Miss Drama Tour — final night.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_jhudson_msg_jun12",
+      "player": "Jennifer Hudson",
+      "sport": "celeb",
+      "date": "2026-06-12",
+      "time": "20:00",
+      "venue": "Madison Square Garden",
+      "city": "New York, NY 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-new-york-new-york-06-12-2026/event/3B00638E2D8583C5",
+      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade ($300, concert ticket sold separately). Photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. Non-transferable. Part of 'Two Legendary Voices' tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_akon_jonesbeach_jul22",
+      "player": "Akon",
+      "sport": "celeb",
+      "date": "2026-07-22",
+      "time": "20:00",
+      "venue": "Northwell Health at Jones Beach Theater",
+      "city": "Wantagh, NY 🇺🇸",
+      "link": "https://www.ticketmaster.com/akon-meet-greet-vip-upgrade-ticket-wantagh-new-york-07-22-2026/event/1D00647AF3889BDE",
+      "img": "https://s1.ticketm.net/dam/a/ddd/591746f1-14e8-4fdf-a711-dbc4816cfddd_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade (concert ticket sold separately). Includes: meet & greet + photo, autographed memorabilia, exclusive VIP gift, early venue entry. Ne-Yo & Akon 'Nights Like This' Tour 2026.",
+      "source": "ticketmaster.com / vipnation.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_envogue_jonesbeach_sep15",
+      "player": "En Vogue",
+      "sport": "celeb",
+      "date": "2026-09-15",
+      "time": "19:30",
+      "venue": "Northwell at Jones Beach Theater",
+      "city": "Wantagh, NY 🇺🇸",
+      "link": "https://www.ticketmaster.com/en-vogue-meet-greet-vip-upgrade-wantagh-new-york-09-15-2026/event/1D0064762076B279",
+      "img": "https://s1.ticketm.net/dam/a/427/a554b54b-7d32-4c1a-a497-06f0bda39427_ARTIST_PAGE_3_2.jpg",
+      "notes": "VIP M&G upgrade ($250, concert ticket sold separately). Meet & greet with En Vogue group. Part of 'TLC & Salt-N-Pepa with En Vogue – IT'S ICONIC' tour.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_jhudson_hollywood_jun20",
+      "player": "Jennifer Hudson",
+      "sport": "celeb",
+      "date": "2026-06-20",
+      "time": "20:00",
+      "venue": "Hard Rock Live",
+      "city": "Hollywood, FL 🇺🇸",
+      "link": "https://www.ticketmaster.com/jennifer-hudson-vip-meet-and-greet-hollywood-florida-06-20-2026/event/0D00638CE796D2A1",
+      "img": "https://s1.ticketm.net/dam/a/f66/3c7c1d52-e838-489a-9eea-442cff30af66_RETINA_PORTRAIT_3_2.jpg",
+      "notes": "VIP M&G upgrade ($300, separate concert ticket required). Includes: photo + Polaroid, autograph, exclusive merch, VIP laminate, priority entry. Part of 'Two Legendary Voices' tour with Josh Groban.",
+      "source": "ticketmaster.com",
+      "addedAt": "2026-04-10",
+      "linkBroken": true
+    },
+    {
+      "id": "manual_elpartidazo_nyc_may10",
+      "player": "Rivaldo + Fernando Morientes – ElPartidazo Watch Party",
+      "sport": "soccer",
+      "date": "2026-05-10",
+      "time": "12:00",
+      "venue": "Pig Beach BBQ Queens",
+      "city": "Astoria (Queens), NY 🇺🇸",
+      "link": "https://www.eventbrite.es/e/elpartidazo-watch-party-fc-barcelona-vs-real-madrid-new-york-city-tickets-1986933699181",
+      "notes": "ElPartidazo LALIGA watch party — Barça vs Real Madrid (May 10). First 90 guests meet Rivaldo (FCB) + Morientes (RM) + exclusive scarf. Free RSVP. Organized by LALIGA North América.",
+      "source": "eventbrite.es / LALIGA North América",
+      "addedAt": "2026-04-10"
+    },
+    {
+      "id": "manual_mbutler_boston_apr18",
+      "player": "Malcolm Butler",
+      "sport": "football",
+      "date": "2026-04-18",
+      "venue": "Shriners Auditorium (Lucky's)",
+      "city": "Boston, MA 🇺🇸",
+      "link": "https://www.instagram.com/brian.oc7/",
+      "img": "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16752.png",
+      "notes": "The Boston Show — autograph signing via Celebz Direct & Lundy Marketing Group.",
+      "source": "instagram.com/brian.oc7",
+      "addedAt": "2026-04-11"
+    },
+    {
+      "id": "manual_garypayton_seattle_apr21",
+      "player": "Gary Payton",
+      "sport": "basketball",
+      "date": "2026-04-21",
+      "time": "18:00",
+      "venue": "Simply Seattle (U Village)",
+      "city": "Seattle, WA 🇺🇸",
+      "link": "https://www.instagram.com/simplyseattle/",
+      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/254.png",
+      "notes": "VIP Experience + General Admission packages. Tickets available now. Hall of Famer 'The Glove'.",
+      "source": "instagram.com/simplyseattle",
+      "addedAt": "2026-04-11"
     },
     {
       "id": "epic_fan-expo-anaheim_mark-hamill",
@@ -7997,20 +7624,6 @@
       "addedAt": "2026-04-05"
     },
     {
-      "id": "bball_damian_lillard_oakley_washington_square_mall_portland_apr11",
-      "player": "Damian Lillard",
-      "sport": "basketball",
-      "date": "2026-04-11",
-      "time": "4:00 PM – 5:00 PM PT",
-      "venue": "Oakley Store @ Washington Square Mall",
-      "city": "Portland, OR 🇺🇸",
-      "link": "https://www.instagram.com/damianlillard/",
-      "notes": "Purchase from the Damian Lillard Signature Series (Enigma Ink glasses) to receive a gift with purchase and priority access to meet Damian Lillard. Announced via @damianlillard Instagram.",
-      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/203081.png",
-      "source": "instagram.com/damianlillard",
-      "addedAt": "2026-04-05"
-    },
-    {
       "id": "boletomovil_kaka_cdmx_2026_04_18",
       "player": "Kaká",
       "title": "Firma de Autógrafos",
@@ -8357,48 +7970,6 @@
       "linkBroken": true
     },
     {
-      "id": "live_1775684431035_lmpaa",
-      "player": "Devin Harris",
-      "sport": "basketball",
-      "date": "2026-04-12",
-      "time": "17:30",
-      "venue": "Card Vault by Tom Brady — 3030 Nowitzki Way",
-      "city": "Dallas, TX 🇺🇸",
-      "link": "https://www.instagram.com/cardvaultbytombrady/",
-      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/2734.png",
-      "notes": "Free photos and autographed 8x10s. Appearing alongside Rolando Blackman. 5:30–6:30 PM.",
-      "addedAt": "2026-04-08T00:00:00.000Z",
-      "source": "cardvaultbytombrady — Instagram"
-    },
-    {
-      "id": "live_1775684431035_iknfw",
-      "player": "Obi Toppin",
-      "sport": "basketball",
-      "date": "2026-04-11",
-      "time": "16:00",
-      "venue": "Best Card Shop",
-      "city": "Indiana (location TBC)",
-      "link": "https://www.instagram.com/best_card_shop/",
-      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630167.png",
-      "notes": "Autograph signing. $40 per item. 4–5 PM. No exceptions, no drop-offs — must be present.",
-      "addedAt": "2026-04-08T00:00:00.000Z",
-      "source": "best_card_shop — Instagram"
-    },
-    {
-      "id": "live_1775684545746_okazaki",
-      "player": "Shinji Okazaki",
-      "sport": "soccer",
-      "date": "2026-04-14",
-      "time": "17:30",
-      "venue": "Football Factory NYC — 6 W 33rd St",
-      "city": "New York, NY 🇺🇸",
-      "link": "https://www.instagram.com/footballfactory_nyc/",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Shinji_Okazaki_Japan_2018.jpg/330px-Shinji_Okazaki_Japan_2018.jpg",
-      "notes": "Meet & greet and Q&A. Premier League champion with Leicester City 2015–16, Japan national team hero, Bundesliga legend. In collaboration with @sporta_japan and @newyorkfoxes.",
-      "addedAt": "2026-04-08T00:00:00.000Z",
-      "source": "newyorkfoxes — Instagram"
-    },
-    {
       "id": "live_1775684684805_94revival",
       "player": "USA × Brazil ’94 Legends",
       "sport": "soccer",
@@ -8538,6 +8109,5 @@
       "noMG": true,
       "linkBroken": true
     }
-  ],
-  "linkCheckedAt": "2026-04-13T11:13:36.268Z"
+  ]
 }
