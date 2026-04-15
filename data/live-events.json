@@ -1,7 +1,20 @@
 {
   "generatedAt": "2026-04-10T16:42:14.037Z",
-  "count": 626,
+  "count": 627,
   "events": [
+    {
+      "id": "manual_sarah_hoover_92ny_apr22",
+      "player": "Sarah Hoover",
+      "date": "2026-04-22",
+      "venue": "92nd Street Y (92NY)",
+      "city": "New York, NY",
+      "link": "https://www.92ny.org/event/sarah-hoover",
+      "img": "https://images.squarespace-cdn.com/content/v1/60aad742a488335a66311dce/1621814510532-91F82ZV16CFAX0D7BDE2/photo+credit+Carl+Timpone_BFA_BW.jpg",
+      "notes": "Book talk & signing — The Motherload Paperback Tour. Sarah Hoover in conversation with Chelsea Clinton. 7:00 PM. Ticket includes a copy of the paperback.",
+      "sport": "celeb",
+      "source": "92ny.org",
+      "addedAt": "2026-04-15"
+    },
     {
       "id": "manual_sabrina_manchester_may7",
       "player": "Sabrina Claudio",
