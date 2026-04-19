@@ -56,6 +56,9 @@ const ALL_QUERIES = [
   { q: 'site:tristarproductions.com autograph signing meet greet athlete',     lang: 'en' },
   { q: 'site:sportsworld-usa.com autograph signing athlete appearance',        lang: 'en' },
   { q: 'site:fathernsonssportsmemorabilia.com autograph signing appearance',   lang: 'en' },
+  // ── New organizers discovered via Instagram scouting ──
+  { q: 'site:bgautographs.com autograph signing athlete appearance 2026',      lang: 'en' },
+  { q: 'site:indycardexchange.com autograph signing athlete appearance 2026',  lang: 'en' },
   // ── New organizers discovered via deep scout ──
   { q: 'site:palmbeachautographs.com autograph signing public event',         lang: 'en' },
   { q: 'site:bighornautographs.com autograph signing athlete appearance',      lang: 'en' },
@@ -324,6 +327,11 @@ const MONITORED_PLAYERS = [
   'Usain Bolt',
   'Michael Phelps',
   'Katie Ledecky',
+  'Allen Iverson',
+  'Dennis Rodman',
+  'Larry Johnson',
+  'TJ McConnell',
+  'Cain Velasquez',
 ];
 
 // ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────
