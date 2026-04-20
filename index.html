@@ -1506,7 +1506,7 @@
       <h1>Meet &amp; Greet Events Finder<span class="h1-tag">2026</span></h1>
       <div class="ts-chip" id="tsChip" title="Events are automatically refreshed weekly">
         <span class="ts-dot stale" id="tsDot"></span>
-        <span id="tsLabel">Updated 15 Apr 2026 15:13</span>
+        <span id="tsLabel">Updated 20 Apr 2026 11:29</span>
       </div>
     </div>
   </div>
@@ -2368,7 +2368,7 @@
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
 const KEY        = 'mng_v39';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last server-side update
-const BUILT_AT = '2026-04-15T15:13:30.422Z'; // replaced by inject-static-html.js at build time
+const BUILT_AT = '2026-04-20T11:29:26.357Z'; // replaced by inject-static-html.js at build time
 const MS_6H    = 6 * 3600 * 1000;
 
 // ─── LANGUAGE MAP ─────────────────────────────────────────────────────────────
@@ -2381,28 +2381,7 @@ const LANG_NAMES = { fr:'French', it:'Italian', es:'Spanish', de:'German', pt:'P
 const SEEDS = [
 
   // ════════════ ⚽ SOCCER — USA ════════════
-  {
-    id:'su3b', sport:'soccer', addedAt:'2026-04-03',
-    img:'https://upload.wikimedia.org/wikipedia/commons/b/ba/Alan_Shearer_2008.jpg',
-    player:'Alan Shearer – Men in Blazers Live from Tampa Bay',
-    date:'2026-04-17', time:'20:00',
-    venue:'1920',
-    city:'Tampa, FL 🇺🇸',
-    link:'https://www.meninblazers.com/events-tours/men-in-blazers-live-from-tampa-bay-april-2026',
-    notes:'Men in Blazers Live show featuring Alan Shearer. Doors 7 PM, show 8 PM. Hosted by Roger Bennett.',
-    source:'meninblazers.com'
-  },
-  {
-    id:'su4', sport:'soccer', noMG:true,
-    player:'Premier League Mornings Live – Fan Festival Tampa Bay',
-    date:'2026-04-18', time:'09:00',
-    venue:'Armature Works',
-    city:'Tampa Bay, FL 🇺🇸',
-    link:'https://plmltampabaygen26.splashthat.com/',
-    notes:'FREE 2-day fan festival Apr 18–19 at Armature Works. Live USA Network broadcast with giant screens for Premier League matches. Free tickets required at link. USA Network hosts may appear — not confirmed in-person meet & greet.',
-    source:'Premier League Mornings Live — premierleague.com'
-  },
-  {
+      {
     id:'su5', sport:'soccer',
     player:'Midge Purce (NWSL) – Autograph & Photo Op, Fanatics Fest',
     date:'2026-07-16', time:'10:00',
@@ -2551,31 +2530,10 @@ const SEEDS = [
   },
 
   // ════════════ ⚽ SOCCER — LATIN AMERICA ════════════
-    {
-    id:'latam_mxbr1', sport:'soccer', lang:'es', noMG:true, addedAt:'2026-03-17',
-    img:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Ronaldinho_Brazil_2006.jpg/400px-Ronaldinho_Brazil_2006.jpg',
-    player:'México Leyendas vs Brasil Leyendas',
-    date:'2026-04-19', time:'17:00',
-    venue:'Estadio Banorte',
-    city:'Guadalajara 🇲🇽',
-    link:'https://fanki.com.mx',
-    notes:'Legends match at Estadio Banorte. Brazil: Ronaldinho, Kaká, Adriano, Marcelo, Sinha. Mexico: Rafa Márquez, Cuauhtémoc Blanco, Borgetti, Guardado, Pavel Pardo, Bofo Bautista, Maza Rodríguez. Tickets at fanki.com.mx. No fan M&G confirmed.',
-    source:'Fanki.com.mx — fanki.com.mx'
-  },
-
+    
   
   // ════════════ 🏀 BASKETBALL — IN-PERSON USA ════════════
-                        {
-    id:'fi3', sport:'wrestling',
-    player:'Ric Flair – Autograph Signing (WrestleCon Las Vegas)',
-    date:'2026-04-17', time:'10:00',
-    venue:'Horseshoe Hotel and Casino – WrestleCon',
-    city:'Las Vegas, NV 🇺🇸',
-    link:'https://fitermansports.com/event/ric-flair-public-autograph-event-wrestlecon-las-vegas-nv/',
-    notes:'Public signing 10 AM CDT. Meet & greet, photos + autographs with WWE Hall of Famer Ric Flair. Buy tickets at Fiterman Sports.',
-    source:'Fiterman Sports — fitermansports.com'
-  },
-  {
+                          {
     id:'fi4', sport:'baseball',
     player:'Jose Altuve + Jeremy Peña (Houston Astros)',
     date:'2026-04-25', time:'12:00',
@@ -2816,17 +2774,7 @@ const SEEDS = [
   // ════════════ 🏅 OTHER SPORTS — FAN EXPOS & SIGNINGS ════════════
   
   // ════════════ 🏅 OTHER SPORTS — MULTI-SPORT CARD SHOWS & NFL ════════════
-    {
-    id:'gt1', sport:'other',
-    player:'Justin Fields, Derrick Henry, Bo Jackson, Terry Bradshaw, Peter Forsberg, Teemu Selanne, Chris Mullin + more – GT Sports NJ Card Show',
-    date:'2026-04-17', time:'10:00',
-    venue:'NJ Convention & Expo Center',
-    city:'Edison, NJ 🇺🇸',
-    link:'https://www.gtsportsshows.com/',
-    notes:'Apr 17–19 2026. Major multi-sport card show. Confirmed celebrity guests: Justin Fields, Derrick Henry, Bo Jackson, Terry Bradshaw (NFL); Peter Forsberg, Teemu Selanne (NHL); Chris Mullin (NBA) + more. Buy autograph tickets per player at gtsportsshows.com.',
-    source:'GT Sports Shows — gtsportsshows.com'
-  },
-  {
+      {
     id:'nfl1', sport:'football',
     player:'NFL Players – NFL Draft Experience (free fan autograph stage)',
     date:'2026-04-23', time:'09:00',
@@ -3008,17 +2956,7 @@ const SEEDS = [
   },
 
   // ════════════ 🏟️ WWE / WRESTLING ════════════
-  {
-    id:'wwe1', sport:'wrestling',
-    player:'Stone Cold Steve Austin + CM Punk + Rhea Ripley + Tiffany Stratton – WWE World at WrestleMania 42',
-    date:'2026-04-16', time:'10:00',
-    venue:'Las Vegas Convention Center South Hall',
-    city:'Las Vegas, NV 🇺🇸',
-    link:'https://www.wweworld.com/',
-    notes:'Apr 16–20 2026. Five-day interactive fan experience. Superstar photo ops, autograph sessions, live podcast recordings, roundtable discussions. Confirmed: Stone Cold Steve Austin, CM Punk, AJ Lee, Rhea Ripley, Dominik Mysterio, Damian Priest, Tiffany Stratton, Stephanie McMahon. Hulkamania Forever activation. Largest WWE Superstore in WrestleMania history.',
-    source:'WWE World / Fanatics Events — wweworld.com'
-  },
-  {
+    {
     id:'wwe2', sport:'wrestling',
     player:'Becky Lynch + Cody Rhodes + Randy Orton + Rhea Ripley – WWE Zone, Fanatics Fest NYC',
     date:'2026-07-16', time:'10:00',
@@ -3224,17 +3162,7 @@ const SEEDS = [
   },
 
   // ── Additional signings — CraveTheAuto / PalmBeachAutographs / organizers ──
-                  {
-    id:'pba_brethart1', sport:'wrestling', addedAt:'2026-03-17',
-    player:'Bret "The Hitman" Hart (WWE Legend)',
-    date:'2026-04-18', time:'',
-    venue:'The Mall at Wellington Green',
-    city:'Wellington, FL 🇺🇸',
-    link:'https://www.palmbeachautographs.com/products/bret-hart-autograph-event-wellington-the-mall-at-wellington-green-in-store-public-signing-november-16th-2025',
-    notes:'In-store public signing. Auto from $30.',
-    source:'Palm Beach Autographs — palmbeachautographs.com'
-  },
-  {
+                    {
     id:'cta_80swrestling1', sport:'wrestling', addedAt:'2026-03-17',
     player:'Jake Roberts, Jim Duggan, Jerry Lawler, Koko B. Ware, Nikita Koloff & more – 80s Wrestling Con',
     date:'2026-05-16', time:'10:00',
@@ -3256,17 +3184,7 @@ const SEEDS = [
   },
 
   // ── Other NJ local venue signings ──
-  {
-    id:'njacs1', sport:'other', addedAt:'2026-04-03',
-    player:'Multi-Sport Legends – NJ Autograph & Card Show (GT Sports)',
-    date:'2026-04-17', time:'17:00',
-    venue:'NJ Convention & Expo Center',
-    city:'Edison, NJ 🇺🇸',
-    link:'https://www.showclix.com/event/new-jersey-spring-2026',
-    notes:'Apr 17 (5–9 PM, $10) · Apr 18 (10 AM–6 PM, $15) · Apr 19 (10 AM–4:30 PM, $15). Confirmed guests: Bo Jackson, Drew Brees, Justin Fields, Derrick Henry, Peter Forsberg, Teemu Selanne, Jordan Love, Terry Bradshaw, Bijan Robinson, Kyle Pitts, Rich Gannon, Mike Singletary + more.',
-    source:'GT Sports Shows — showclix.com/event/new-jersey-spring-2026'
-  },
-
+  
   // ── Tennis – Confirmed Autograph / Meet & Greet Events Only ──
   // RULE: Only add tennis events with a CONFIRMED autograph session, meet & greet,
   // or named player fan interaction. Fan zones, practice viewing, and general
@@ -3322,29 +3240,7 @@ const SEEDS = [
     notes:'Oct 24–Nov 1 2026 (ATP 500). Daily scheduled player autograph sessions and meet & greets at the Wiener Städtische booth in the fan zone inside Stadthalle. Specific player schedule announced on-site during the event.',
     source:'Erste Bank Open Vienna — erstebank-open.com'
   },
-  {
-    id:'soc_marcelo1', sport:'soccer',
-    player:'Marcelo Vieira – Firma de Autógrafos CDMX',
-    date:'2026-04-18', time:'',
-    venue:'TBA',
-    city:'Mexico City, Mexico',
-    link:'https://boletomovil.com/evento/firma-de-autografos-marcelo-cdmx-2026-04-18',
-    notes:'Apr 18 2026. Autograph signing with Real Madrid legend Marcelo Vieira in Mexico City. Tickets via Boletomovil.',
-    source:'boletomovil.com',
-    addedAt:'2026-03-20'
-  },
-  {
-    id:'pkl1', sport:'other',
-    player:'Andre Agassi + James Blake – Pickleball Slam 4',
-    date:'2026-04-15', time:'19:00',
-    venue:'Hard Rock Live at Seminole Hard Rock Hotel & Casino',
-    city:'Hollywood, FL 🇺🇸',
-    link:'https://www.ticketmaster.com/pickleball-slam-4-hollywood-florida-04-15-2026/event/0D006356E6D15760',
-    notes:'Apr 15 2026. Agassi & Blake vs. Anna Leigh Waters & Genie Bouchard. VIP courtside packages include meet & greet with legends. $1M prize purse. Live on ESPN 7pm ET.',
-    source:'thepickleballslam.com',
-    addedAt:'2026-03-20'
-  },
-  {
+      {
     id:'ten18', sport:'other',
     player:'Top ATP/WTA Stars – Cincinnati Open Autograph Sessions',
     date:'2026-08-11', time:'',
