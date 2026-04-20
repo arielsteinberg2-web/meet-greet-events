@@ -59,6 +59,8 @@ const ALL_QUERIES = [
   // ── New organizers discovered via Instagram scouting ──
   { q: 'site:bgautographs.com autograph signing athlete appearance 2026',      lang: 'en' },
   { q: 'site:indycardexchange.com autograph signing athlete appearance 2026',  lang: 'en' },
+  { q: 'site:luckycardshows.com autograph signing card show athlete 2026',     lang: 'en' },
+  { q: 'site:ultimatelegendsnight.com VIP meet greet legends event 2026',      lang: 'en' },
   // ── New organizers discovered via deep scout ──
   { q: 'site:palmbeachautographs.com autograph signing public event',         lang: 'en' },
   { q: 'site:bighornautographs.com autograph signing athlete appearance',      lang: 'en' },
@@ -332,6 +334,12 @@ const MONITORED_PLAYERS = [
   'Larry Johnson',
   'TJ McConnell',
   'Cain Velasquez',
+  'Javier Pastore',
+  'Kaká',
+  'Alessandro Del Piero',
+  'Andriy Shevchenko',
+  'Javier Saviola',
+  'Calvin Murphy',
 ];
 
 // ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────
