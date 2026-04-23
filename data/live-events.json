@@ -1,7 +1,61 @@
 {
   "generatedAt": "2026-04-20T11:29:26.357Z",
-  "count": 489,
+  "count": 493,
   "events": [
+    {
+      "id": "manual_villa_raul_jakarta_may18",
+      "player": "David Villa & Raúl González",
+      "date": "2026-05-18",
+      "venue": "D'Stadion PTK",
+      "city": "Jakarta, Indonesia 🇮🇩",
+      "link": "https://www.instagram.com/operaintermanagement/",
+      "img": "https://img.a.transfermarkt.technology/portrait/big/7928-1698143882.jpg",
+      "notes": "Class of Stars — coaching clinic + meet & greet with David Villa & Raúl González. Tickets Rp 4,500,000 via organizer Opera International Management.",
+      "sport": "soccer",
+      "source": "instagram.com/operaintermanagement",
+      "addedAt": "2026-04-23"
+    },
+    {
+      "id": "manual_villa_raul_dinner_jakarta_may19",
+      "player": "David Villa & Raúl González",
+      "date": "2026-05-19",
+      "venue": "Jakarta (TBD — see organizer)",
+      "city": "Jakarta, Indonesia 🇮🇩",
+      "link": "https://www.instagram.com/operaintermanagement/p/dinner",
+      "img": "https://img.a.transfermarkt.technology/portrait/big/7928-1698143882.jpg",
+      "notes": "Exclusive Dinner with David Villa & Raúl González. Limited seats. Organized by Opera International Management. Day after the Class of Stars clinic.",
+      "sport": "soccer",
+      "source": "instagram.com/operaintermanagement",
+      "addedAt": "2026-04-23"
+    },
+    {
+      "id": "manual_nate_robinson_clinic_apr18",
+      "player": "Nate Robinson",
+      "date": "2026-04-18",
+      "time": "10:30",
+      "venue": "Christ The King High School",
+      "city": "Middle Village, Queens, NY 🇺🇸",
+      "link": "https://www.instagram.com/christbelking/",
+      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/101161.png",
+      "notes": "Nate Robinson Basketball Clinic — $99 includes clinic, autograph, jersey, photo op. Boys & girls, all ages. Check-in 10:30am (youth) / 1pm (adult). Organized by Christ The King.",
+      "sport": "basketball",
+      "source": "instagram.com/christbelking",
+      "addedAt": "2026-04-23"
+    },
+    {
+      "id": "manual_rick_ross_barnesnoble_may10",
+      "player": "Rick Ross",
+      "date": "2026-05-10",
+      "time": "18:00",
+      "venue": "Barnes & Noble Union Square",
+      "city": "New York, NY 🇺🇸",
+      "link": "https://www.barnesandnoble.com/s/rick+ross+renaissance+of+a+boss",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Rick_Ross_2013.jpg/440px-Rick_Ross_2013.jpg",
+      "notes": "Rick Ross 'Renaissance of a Boss' book launch and signing at Barnes & Noble Union Square. 6:00 PM.",
+      "sport": "other",
+      "source": "barnesandnoble.com",
+      "addedAt": "2026-04-23"
+    },
     {
       "id": "live_1776684527451_pqe5c",
       "player": "Irina Rimes",

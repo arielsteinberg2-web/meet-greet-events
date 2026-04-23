@@ -299,6 +299,10 @@ const INSTAGRAM_ACCOUNTS = [
   'passlinearg',
   // ── UK — additional football signing organizers ──
   'exclusivememorabilia',
+  // ── Indonesia — soccer legends events ──
+  'operaintermanagement',  // Opera International Management — Class of Stars (Villa, Raúl) Jakarta
+  // ── Basketball clinics / youth events ──
+  'christbelking',         // Christ The King HS Queens NY — Nate Robinson clinic
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
@@ -340,6 +344,10 @@ const MONITORED_PLAYERS = [
   'Andriy Shevchenko',
   'Javier Saviola',
   'Calvin Murphy',
+  'David Villa',
+  'Raúl González',
+  'Nate Robinson',
+  'Rick Ross',
 ];
 
 // ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────
