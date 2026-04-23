@@ -149,6 +149,8 @@ const ALL_QUERIES = [
   { q: 'site:eventbrite.com "ElPartidazo" laliga legend watch party 2026',  lang: 'en' },
   // ── Europe — Spanish (verified: Real Madrid monthly, Getafe & Sevilla regular store signings) ──
   { q: 'site:realmadrid.com "sesión de firmas" futbolistas 2026',            lang: 'es' },
+  { q: 'site:futbol.entradas.com leyendas legends meet VIP 2026',            lang: 'es' },
+  { q: '"Corazón Classic Match" meet greet VIP experience autograph 2026',   lang: 'en' },
   { q: 'site:getafecf.com firma autografos 2026',                            lang: 'es' },
   { q: 'site:sevillafc.es "sesión de firmas" OR "firma autógrafos" 2026',   lang: 'es' },
   // ── Europe — Italian (verified: AC Milan & Juventus run regular player M&G at stores; TicketOne for legends) ──
@@ -268,6 +270,7 @@ const INSTAGRAM_ACCOUNTS = [
   'atleticodemadrid',
   'fcbarcelona',
   'realmadrid',
+  'fundacionrealmadrid',  // Real Madrid Foundation — posts Corazón Classic Match & legend M&G events
   'acmilan',
   'juventus',
   'inter',
@@ -1817,7 +1820,11 @@ async function main() {
     const checkSlice = [0, 1].map(offset => noMGEvents[(dayOfYear * 2 + offset) % noMGEvents.length]).filter(Boolean);
     console.log(`noMG check: ${checkSlice.map(e => e.player).join(', ')}`);
     for (const ev of checkSlice) {
-      const q = `"${ev.player}" meet greet autograph fan VIP signing 2026`;
+      // For long compound player names (legends matches), use a shorter search-friendly term
+      const searchName = ev.id === 'manual_corazon_classic_bernabeu_jun13'
+        ? '"Corazón Classic Match" VIP meet greet autograph experience 2026'
+        : `"${ev.player}" meet greet autograph fan VIP signing 2026`;
+      const q = searchName;
       const data = SERPER_KEY ? await fetchSerper(q) : null;
       if (!data || !data.organic_results) { await new Promise(r => setTimeout(r, 1000)); continue; }
       const mgHit = data.organic_results.find(r => {
