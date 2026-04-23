@@ -328,39 +328,16 @@ const INSTAGRAM_ACCOUNTS = [
   'operaintermanagement',  // Opera International Management — Class of Stars (Villa, Raúl) Jakarta
   // ── Basketball clinics / youth events ──
   'christbelking',         // Christ The King HS Queens NY — Nate Robinson clinic
-  // ── Soccer — global legends experience organizers ──
-  'worldlegendstour',      // World Legends Tour — international soccer legends M&G events
-  'classicfootballshirts', // Classic Football Shirts — hosts signing sessions with legends
-  'legendarymatches',      // Legendary Matches — legends match organizer with VIP packages
-  'soccerex',              // Soccer EX — global soccer business/fan events with player appearances
-  // ── Soccer — USA / MLS ──
-  'mlssoccer',             // MLS official — player appearances and fan events
-  'adidasfootball',        // Adidas Football — in-store soccer player appearances
-  'nikefootball',          // Nike Football — soccer player in-store events
-  'ussoccer',              // US Soccer Federation — fan events and player appearances
-  // ── Soccer — Latin America: Argentina ──
-  'ticketekargentina',     // Ticketek Argentina — major soccer legend event ticketing
-  'fanaticsar',            // Fanatics Argentina — soccer signing events
-  'eventosdefutbol_ar',    // Argentina soccer events organizer
-  // ── Soccer — Latin America: Colombia ──
-  'tuboleta',              // Tu Boleta — Colombia's main ticket platform for legends events
-  'eticket_co',            // eTicket Colombia — soccer fan events
-  // ── Soccer — Latin America: Peru ──
-  'teleticket',            // Teleticket — Peru's main ticket platform
-  'joinnus',               // Joinnus — Peruvian event platform with soccer legends events
-  // ── Soccer — Latin America: Uruguay/Paraguay ──
-  'redtickets_uy',         // Red Tickets Uruguay — soccer legends events
-  // ── Soccer — Middle East ──
-  'sff_sa',                // Saudi Football Federation — player appearances and fan events
-  'dubaisportscity',       // Dubai Sports City — hosts international soccer legends events
-  'qslofficial',           // Qatar Stars League — fan events with player appearances
-  // ── Soccer — Southeast Asia (beyond Indonesia) ──
-  'sportfive_apac',        // Sportfive Asia-Pacific — rights holder running soccer fan events
-  'footballsg',            // Football Association of Singapore — fan events
-  'inasgold',              // Indonesian soccer events organizer
-  // ── Soccer — France ──
-  'footnostalgie',         // Foot Nostalgie — French soccer legends events and signings
-  'francefoot_legends',    // French soccer legends events
+  // ── Soccer — global legends experience organizers (niche, signing-focused) ──
+  'classicfootballshirts', // Classic Football Shirts — regularly hosts player signing sessions
+  'iconsseries',           // already in list above — premium legends VIP experiences
+  // ── Soccer — Latin America: Argentina/Colombia/Peru (ticket platforms that post events) ──
+  'ticketekargentina',     // Ticketek Argentina — posts soccer legends event announcements
+  'tuboleta',              // Tu Boleta Colombia — posts soccer fan event announcements
+  'teleticket',            // Teleticket Peru — posts soccer legends event announcements
+  'joinnus',               // Joinnus Peru — event platform that posts soccer signings
+  // ── Soccer — France (niche signing-focused) ──
+  'footnostalgie',         // Foot Nostalgie — French soccer legends signings and events
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
