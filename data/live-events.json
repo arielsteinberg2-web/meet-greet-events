@@ -1,7 +1,22 @@
 {
   "generatedAt": "2026-04-20T11:29:26.357Z",
-  "count": 493,
+  "count": 494,
   "events": [
+    {
+      "id": "manual_corazon_classic_bernabeu_jun13",
+      "player": "Real Madrid Leyendas vs Inter Legends (Corazón Classic Match)",
+      "date": "2026-06-13",
+      "time": "12:00",
+      "venue": "Santiago Bernabéu",
+      "city": "Madrid, Spain 🇪🇸",
+      "link": "https://futbol.entradas.com/sports-web/Real_Madrid/Futbol/2025-2026/CCM_2026/REAL_MADRID_LEYENDAS_-_INTER_LEGENDS/?&lang=en",
+      "img": "https://img.a.transfermarkt.technology/portrait/big/48472-1698057967.jpg",
+      "notes": "Corazón Classic Match 2026 — 13th edition charity match for Fundación Real Madrid. Legends: Roberto Carlos, Marcelo, Zanetti, Cambiasso, Butragueño, Solari, Santillana + more. No M&G confirmed; VIP packages may exist via entradas.com.",
+      "sport": "soccer",
+      "noMG": true,
+      "source": "entradas.com / realmadrid.com",
+      "addedAt": "2026-04-23"
+    },
     {
       "id": "manual_villa_raul_jakarta_may18",
       "player": "David Villa & Raúl González",
