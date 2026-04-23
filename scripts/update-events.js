@@ -1367,6 +1367,31 @@ async function fetchSerper(q, attempts = 3, key = SERPER_KEY) {
   return null;
 }
 
+// ── Serper Image Search — fetch first Google Images result for a person name ──
+async function fetchSerperImage(name) {
+  const key = SERPER_KEY || SERPER_KEY2;
+  if (!key) return null;
+  try {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), 10000);
+    const r = await fetch('https://google.serper.dev/images', {
+      method: 'POST',
+      signal: ctrl.signal,
+      headers: { 'X-API-KEY': key, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ q: `${name} athlete player`, num: 5 }),
+    });
+    clearTimeout(t);
+    if (!r.ok) return null;
+    const data = await r.json();
+    // Pick first result with a direct image URL (not a stock/logo/site-icon)
+    const result = (data.images || []).find(img =>
+      img.imageUrl && /\.(jpg|jpeg|png|webp)/i.test(img.imageUrl)
+      && !/logo|icon|badge|crest|emblem|sponsor|brand/i.test(img.imageUrl)
+    );
+    return result?.imageUrl || null;
+  } catch { return null; }
+}
+
 // ── Ticketmaster Discovery API — search for VIP meet & greet upgrade events ──
 // Searches for events whose name contains "meet" and "greet" (or "vip upgrade").
 // Returns normalized event objects ready for deduplication + injection.
@@ -1824,13 +1849,14 @@ async function main() {
     console.log(`Wiki img enrichment: ${uniquePlayers.length} unique players without img`);
     for (const name of uniquePlayers) {
       const wasCached = WIKI_CACHE.has(name);
-      const { img } = await wikiLookup(name);
+      let { img } = await wikiLookup(name);
+      // Fallback: Google image search via Serper when Wikipedia has no thumbnail
+      if (!img) img = await fetchSerperImage(name);
       if (img) {
         for (const ev of finalEvents) {
           if (!ev.img && ev.player === name) ev.img = img;
         }
       }
-      // Small delay only for uncached players (cached ones return instantly)
       if (!wasCached) await new Promise(r => setTimeout(r, 300));
     }
   }
