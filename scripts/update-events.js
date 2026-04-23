@@ -1215,7 +1215,7 @@ async function wikiLookup(name) {
     if (!r.ok) { const v = { known: false, sport: null }; WIKI_CACHE.set(name, v); return v; }
     const data = await r.json();
     if (data.type === 'disambiguation' || data.type === 'no-extract') {
-      const v = { known: false, sport: null }; WIKI_CACHE.set(name, v); return v;
+      const v = { known: false, sport: null, img: null }; WIKI_CACHE.set(name, v); return v;
     }
     const desc    = (data.description || '').toLowerCase();
     const extract = (data.extract    || '').slice(0, 400).toLowerCase();
@@ -1223,17 +1223,18 @@ async function wikiLookup(name) {
     // Reject non-person articles (places, orgs, media)
     if (/\b(country|sovereign state|nation|city|town|municipality|village|county|state|province|region|island|ocean|river|mountain|organization|company|corporation|hotel|restaurant|school|university|song|album|film|movie|book|novel|television|tv series|podcast|band|group|duo|trio|franchise|team)\b/i.test(extract)) {
       console.log(`  [wiki-check] "${name}" — article is a place/org/media, not a person`);
-      const v = { known: false, sport: null }; WIKI_CACHE.set(name, v); return v;
+      const v = { known: false, sport: null, img: null }; WIKI_CACHE.set(name, v); return v;
     }
     const known = isPersonDesc || NOTABLE_RE.test(extract);
     const sport = sportFromWikiText(desc, extract);
+    const img   = data.thumbnail?.source || null;
     if (!known) console.log(`  [wiki-check] "${name}" — not a notable public figure: "${(data.extract||'').slice(0,120)}"`);
-    const v = { known, sport };
+    const v = { known, sport, img };
     WIKI_CACHE.set(name, v);
     return v;
   } catch {
     // Network error: be permissive
-    const v = { known: true, sport: null };
+    const v = { known: true, sport: null, img: null };
     WIKI_CACHE.set(name, v);
     return v;
   }
@@ -1812,6 +1813,27 @@ async function main() {
   }
 
   console.log(`Found ${future.length} live events this run; ${carried.length} carried from previous; ${finalEvents.length} total`);
+
+  // ── WIKI IMAGE ENRICHMENT — fill missing img from Wikipedia thumbnails ────────
+  // wikiLookup is already cached for players seen during this run; new calls are
+  // needed only for athletes (who skip wiki-check in parseOrganic). One call per
+  // unique player name. Skip multi-person entries (contain & / vs).
+  {
+    const toEnrich = finalEvents.filter(e => !e.img && e.player && !/\s+(&|vs\.?)\s+/i.test(e.player));
+    const uniquePlayers = [...new Set(toEnrich.map(e => e.player))];
+    console.log(`Wiki img enrichment: ${uniquePlayers.length} unique players without img`);
+    for (const name of uniquePlayers) {
+      const wasCached = WIKI_CACHE.has(name);
+      const { img } = await wikiLookup(name);
+      if (img) {
+        for (const ev of finalEvents) {
+          if (!ev.img && ev.player === name) ev.img = img;
+        }
+      }
+      // Small delay only for uncached players (cached ones return instantly)
+      if (!wasCached) await new Promise(r => setTimeout(r, 300));
+    }
+  }
 
   // ── noMG CHECKER — rotate through unconfirmed M&G events, search for updates ─
   const noMGEvents = finalEvents.filter(e => e.noMG && new Date(e.date + 'T12:00:00') >= today);
