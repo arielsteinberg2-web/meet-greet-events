@@ -179,6 +179,28 @@ const ALL_QUERIES = [
   { q: 'fanatics fest nyc 2026 athlete signing meet greet autograph javits',  lang: 'en' },
   { q: 'site:store.epic.leapevent.tech/fanatics-fest-nyc autograph signing meet greet athlete 2026', lang: 'en' },
   { q: '"fanatics fest" 2026 athlete signing meet greet VIP experience',      lang: 'en' },
+  // ── Soccer — broad Instagram discovery (catches unknown organizers) ──────────
+  { q: 'site:instagram.com "meet and greet" futbolista 2026',                sport: 'soccer', lang: 'es' },
+  { q: 'site:instagram.com "firma autógrafos" futbolista leyenda 2026',      sport: 'soccer', lang: 'es' },
+  { q: 'site:instagram.com "meet and greet" footballer soccer legend 2026',  sport: 'soccer', lang: 'en' },
+  { q: 'site:instagram.com autografi calciatore firma incontro fans 2026',   sport: 'soccer', lang: 'it' },
+  { q: 'site:instagram.com soccer legends "fan experience" OR "VIP" meet 2026', sport: 'soccer', lang: 'en' },
+  { q: 'site:instagram.com "encuentro con" futbolista firma fans 2026',      sport: 'soccer', lang: 'es' },
+  { q: 'site:instagram.com footballeur dédicace rencontre fans 2026',        sport: 'soccer', lang: 'fr' },
+  { q: 'site:instagram.com "meet and greet" futebol jogador lendas 2026',    sport: 'soccer', lang: 'pt' },
+  // ── Soccer — platform queries: Latin America (Argentina, Colombia, Peru) ────
+  { q: 'site:ticketek.com.ar futbolista leyenda meet greet firma 2026',      sport: 'soccer', lang: 'es' },
+  { q: 'site:tuboleta.com futbolista firma meet greet 2026',                 sport: 'soccer', lang: 'es' },
+  { q: 'site:teleticket.com.pe futbolista leyenda meet greet 2026',          sport: 'soccer', lang: 'es' },
+  { q: 'site:joinnus.com futbolista meet greet firma autografos 2026',       sport: 'soccer', lang: 'es' },
+  { q: 'futbolista meet greet firma autografos 2026 Colombia OR Peru OR Argentina OR Uruguay', sport: 'soccer', lang: 'es' },
+  // ── Soccer — platform queries: global ────────────────────────────────────────
+  { q: 'site:iconsseries.com VIP meet greet legends experience 2026',        sport: 'soccer', lang: 'en' },
+  { q: '"legends experience" soccer football VIP fan meet autograph 2026',   sport: 'soccer', lang: 'en' },
+  { q: 'soccer player "fan experience" "meet and greet" MLS appearance 2026', sport: 'soccer', lang: 'en' },
+  { q: 'site:mlssoccer.com player appearance fan event signing 2026',        sport: 'soccer', lang: 'en' },
+  { q: 'site:soccerex.com meet greet player experience appearance 2026',     sport: 'soccer', lang: 'en' },
+  { q: '"soccer legends" "meet and greet" OR "VIP experience" 2026',         sport: 'soccer', lang: 'en' },
 ];
 
 // ── INSTAGRAM ACCOUNTS — venue/organizer accounts to monitor via SerpAPI ──────
@@ -306,6 +328,39 @@ const INSTAGRAM_ACCOUNTS = [
   'operaintermanagement',  // Opera International Management — Class of Stars (Villa, Raúl) Jakarta
   // ── Basketball clinics / youth events ──
   'christbelking',         // Christ The King HS Queens NY — Nate Robinson clinic
+  // ── Soccer — global legends experience organizers ──
+  'worldlegendstour',      // World Legends Tour — international soccer legends M&G events
+  'classicfootballshirts', // Classic Football Shirts — hosts signing sessions with legends
+  'legendarymatches',      // Legendary Matches — legends match organizer with VIP packages
+  'soccerex',              // Soccer EX — global soccer business/fan events with player appearances
+  // ── Soccer — USA / MLS ──
+  'mlssoccer',             // MLS official — player appearances and fan events
+  'adidasfootball',        // Adidas Football — in-store soccer player appearances
+  'nikefootball',          // Nike Football — soccer player in-store events
+  'ussoccer',              // US Soccer Federation — fan events and player appearances
+  // ── Soccer — Latin America: Argentina ──
+  'ticketekargentina',     // Ticketek Argentina — major soccer legend event ticketing
+  'fanaticsar',            // Fanatics Argentina — soccer signing events
+  'eventosdefutbol_ar',    // Argentina soccer events organizer
+  // ── Soccer — Latin America: Colombia ──
+  'tuboleta',              // Tu Boleta — Colombia's main ticket platform for legends events
+  'eticket_co',            // eTicket Colombia — soccer fan events
+  // ── Soccer — Latin America: Peru ──
+  'teleticket',            // Teleticket — Peru's main ticket platform
+  'joinnus',               // Joinnus — Peruvian event platform with soccer legends events
+  // ── Soccer — Latin America: Uruguay/Paraguay ──
+  'redtickets_uy',         // Red Tickets Uruguay — soccer legends events
+  // ── Soccer — Middle East ──
+  'sff_sa',                // Saudi Football Federation — player appearances and fan events
+  'dubaisportscity',       // Dubai Sports City — hosts international soccer legends events
+  'qslofficial',           // Qatar Stars League — fan events with player appearances
+  // ── Soccer — Southeast Asia (beyond Indonesia) ──
+  'sportfive_apac',        // Sportfive Asia-Pacific — rights holder running soccer fan events
+  'footballsg',            // Football Association of Singapore — fan events
+  'inasgold',              // Indonesian soccer events organizer
+  // ── Soccer — France ──
+  'footnostalgie',         // Foot Nostalgie — French soccer legends events and signings
+  'francefoot_legends',    // French soccer legends events
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
@@ -1037,8 +1092,19 @@ const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0,
 const PLAYERS_TODAY = [0, 1, 2].map(offset =>
   MONITORED_PLAYERS[(dayOfYear * 3 + offset) % MONITORED_PLAYERS.length]
 );
+// Soccer players in MONITORED_PLAYERS — used to pass forceSport to parseOrganic
+const SOCCER_PLAYER_NAMES = new Set([
+  'Marcelo Vieira', 'Paolo Maldini', 'Alessandro Nesta', 'Thierry Henry',
+  'Kun Aguero', 'Angel Di Maria', 'Fabio Cannavaro', 'Gianluigi Buffon',
+  'Luis Suarez', 'Romario', 'Juan Veron', 'Antoine Griezmann', 'Sergio Ramos',
+  'Steven Gerrard', 'Hernan Crespo', 'Ivan Rakitic', 'Luka Modric', 'Rivaldo',
+  'Fernando Morientes', 'Roberto Carlos', 'Ronaldinho', 'Javier Pastore',
+  'Kaká', 'Alessandro Del Piero', 'Andriy Shevchenko', 'Javier Saviola',
+  'David Villa', 'Raúl González',
+]);
+
 const PLAYER_QUERIES = PLAYERS_TODAY.flatMap(name => [
-  { q: `"${name}" meet greet autograph signing fan 2026`, lang: 'en' },
+  { q: `"${name}" meet greet autograph signing fan 2026`, lang: 'en', sport: SOCCER_PLAYER_NAMES.has(name) ? 'soccer' : null },
 ]);
 
 // Pick 3 Instagram accounts to monitor today (rotating)
@@ -1451,12 +1517,15 @@ async function fetchTicketmasterMG() {
   return out.filter(e => { if (seen.has(e.link)) return false; seen.add(e.link); return true; });
 }
 
-async function parseOrganic(data, lang) {
+async function parseOrganic(data, lang, forceSport = null) {
   const out = [];
   for (const res of (data.organic_results || [])) {
     const combined = (res.title + ' ' + (res.snippet || '')).toLowerCase();
-    if (!RELEVANT_WORDS.some(w => combined.includes(w))) continue;
-    if (!combined.includes('2026')) continue;
+    // When forceSport is set (e.g. soccer player queries), relax the relevant-words check
+    // since snippets may not contain M&G keywords explicitly
+    if (!forceSport && !RELEVANT_WORDS.some(w => combined.includes(w))) continue;
+    if (forceSport && !combined.includes('2026') && !res.link?.includes('2026')) continue;
+    if (!forceSport && !combined.includes('2026')) continue;
     if (!res.link) continue;
     if (/mail-?in signing|ship your|private signing/.test(combined)) continue;
 
@@ -1488,7 +1557,8 @@ async function parseOrganic(data, lang) {
 
     // Wikipedia verification: only for celebs and non-athlete book authors.
     // Athletes (any sport) are trusted — their events are sport-specific queries.
-    const isAthlete = isBball || isNFL || isWrestling || isOther || isSoccer;
+    // forceSport also bypasses wiki check — we already know the query is sport-specific.
+    const isAthlete = forceSport || isBball || isNFL || isWrestling || isOther || isSoccer;
     const nameCandidates = extractCandidateNames(res.title, res.snippet);
     let playerName = null;
     if (isAthlete) {
@@ -1516,7 +1586,7 @@ async function parseOrganic(data, lang) {
       id:     `live_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,
       player: playerName,
       title:  deriveEventTitle(res.title || '', playerName) || undefined,
-      sport:  isTalkVenue ? 'talk' : isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isNFL ? 'football' : isWrestling ? 'wrestling' : isOther ? 'other' : isSoccer ? 'soccer' : 'other',
+      sport:  forceSport || (isTalkVenue ? 'talk' : isBook ? 'book' : isBball ? 'basketball' : isPol ? 'politics' : isCeleb ? 'celeb' : isNFL ? 'football' : isWrestling ? 'wrestling' : isOther ? 'other' : isSoccer ? 'soccer' : 'other'),
       ...(isTalkVenue && { noMG: true, venue: talkVenueNames[talkVenueKey] || '', city: 'New York, NY 🇺🇸' }),
       date:   eventDate,
       link:   res.link,
@@ -1665,7 +1735,7 @@ async function main() {
   const SPLIT5 = Math.ceil(Q * 5 / 7);
   const SPLIT6 = Math.ceil(Q * 6 / 7);
 
-  for (const [i, { q, lang }] of QUERIES.entries()) {
+  for (const [i, { q, lang, sport: forceSport }] of QUERIES.entries()) {
     let data;
     let keyLabel;
 
@@ -1718,7 +1788,7 @@ async function main() {
 
     console.log(`  [${keyLabel}] "${q.substring(0, 55)}"`);
     if (data && data !== 'dead') {
-      const found = await parseOrganic(data, lang);
+      const found = await parseOrganic(data, lang, forceSport || null);
       console.log(`    → ${found.length} results`);
       results.push(...found);
     } else {
