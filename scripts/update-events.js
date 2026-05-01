@@ -331,6 +331,8 @@ const INSTAGRAM_ACCOUNTS = [
   'operaintermanagement',  // Opera International Management — Class of Stars (Villa, Raúl) Jakarta
   // ── Southeast Asia — soccer legends events ──
   'allstarsports.asia',    // AllStar Sports Asia — runs "An Afternoon With" legend M&G events (SE Asia)
+  // ── Canada — soccer legends match events ──
+  'wearealivinglegends',   // Living Legends — organises Brazil/world legends vs local club matches (Toronto etc.)
   // ── Basketball clinics / youth events ──
   'christbelking',         // Christ The King HS Queens NY — Nate Robinson clinic
   // ── Soccer — global legends experience organizers (niche, signing-focused) ──
