@@ -338,6 +338,8 @@ const INSTAGRAM_ACCOUNTS = [
   'joinnus',               // Joinnus Peru — event platform that posts soccer signings
   // ── Soccer — France (niche signing-focused) ──
   'footnostalgie',         // Foot Nostalgie — French soccer legends signings and events
+  // ── Basketball — sports card / collectibles store events (NYC) ──
+  'cardvaultbytombrady',   // Card Vault by Tom Brady, Brooklyn NY — hosts NBA player signing/M&G events
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
@@ -383,6 +385,8 @@ const MONITORED_PLAYERS = [
   'Raúl González',
   'Nate Robinson',
   'Rick Ross',
+  'Noah Clowney',
+  'Aldair',
 ];
 
 // ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────

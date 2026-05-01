@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-04-30T11:51:43.200Z",
-  "count": 495,
+  "count": 497,
   "events": [
     {
       "id": "live_1777549460555_ft2ew",
@@ -7115,6 +7115,36 @@
       "sport": "soccer",
       "noMG": false,
       "source": "instagram.com/pierrearcidiacono / parcoursducoeur.com",
+      "addedAt": "2026-04-30"
+    },
+    {
+      "id": "manual_noah_clowney_card_vault_brooklyn_may9",
+      "player": "Noah Clowney",
+      "date": "2026-05-09",
+      "time": "13:00",
+      "venue": "Card Vault by Tom Brady — 80 Flatbush Ave",
+      "city": "Brooklyn, NY 🇺🇸",
+      "link": "https://www.universe.com",
+      "img": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641728.png",
+      "notes": "Brooklyn Nets forward Noah Clowney at Card Vault by Tom Brady (80 Flatbush Ave, Brooklyn). Fan meet & greet / signing event. Tickets at universe.com.",
+      "sport": "basketball",
+      "noMG": false,
+      "source": "instagram.com/cardvaultbytombrady",
+      "addedAt": "2026-04-30"
+    },
+    {
+      "id": "manual_aldair_special_guest_rome_may23",
+      "player": "Aldair",
+      "date": "2026-05-23",
+      "time": "TBD",
+      "venue": "TBD",
+      "city": "Rome, Italy 🇮🇹",
+      "link": "https://www.instagram.com/aldair/",
+      "img": "https://img.a.transfermarkt.technology/portrait/big/4303-1371055786.jpg",
+      "notes": "Aldair (former AS Roma & Brazil defender) appearing as Special Guest at a fan event in Rome on May 23, 2026. Meet & greet opportunity. Check @aldair or event organizer Instagram for details.",
+      "sport": "soccer",
+      "noMG": false,
+      "source": "Instagram",
       "addedAt": "2026-04-30"
     }
   ]
