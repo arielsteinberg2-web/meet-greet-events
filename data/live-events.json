@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-04-30T11:51:43.200Z",
-  "count": 491,
+  "count": 495,
   "events": [
     {
       "id": "live_1777549460555_ft2ew",
@@ -7056,6 +7056,66 @@
       "source": "penyes.fcbarcelona.com",
       "noMG": false,
       "linkBroken": true
+    },
+    {
+      "id": "manual_germany_nt_open_training_wake_forest_jun8",
+      "player": "Germany National Team",
+      "date": "2026-06-08",
+      "time": "TBD",
+      "venue": "Wake Forest University",
+      "city": "Winston-Salem, NC 🇺🇸",
+      "link": "https://www.instagram.com/topline90/",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Dfb-logo.svg/180px-Dfb-logo.svg.png",
+      "notes": "Germany National Team free open training session at Wake Forest University ahead of the 2026 World Cup. Photos and autograph signing to follow. Registration/ticket link TBD — monitor @topline90 on Instagram for details.",
+      "sport": "soccer",
+      "noMG": false,
+      "source": "instagram.com/topline90",
+      "addedAt": "2026-04-30"
+    },
+    {
+      "id": "manual_masters_football_european_champions_may31",
+      "player": "Masters Football European Champions 2026 (Hasselbaink, Pires, Fowler, Heskey & more)",
+      "date": "2026-05-31",
+      "time": "TBD",
+      "venue": "Arena (TBC)",
+      "city": "TBC 🇬🇧",
+      "link": "https://mastersfootball.com",
+      "img": "https://img.a.transfermarkt.technology/portrait/big/3619-1371055786.jpg",
+      "notes": "Masters Football — European Champions 2026. Players: Jimmy Floyd Hasselbaink, Carlo Cudicini, Winston Bogarde, Robert Pires, Stuart Elliott, Robbie Fowler, Shaka Hislop, Emile Heskey. May include fan meet & greet opportunities. Check mastersfootball.com for tickets and venue.",
+      "sport": "soccer",
+      "noMG": true,
+      "source": "mastersfootball.com / Instagram",
+      "addedAt": "2026-04-30"
+    },
+    {
+      "id": "manual_dc_united_japan_night_audi_field_may13",
+      "player": "Ujima Hosei & Kurokawa Keisuke (DC United)",
+      "date": "2026-05-13",
+      "time": "17:30",
+      "venue": "Audi Field",
+      "city": "Washington, DC 🇺🇸",
+      "link": "https://www.instagram.com/jaswdc/",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/DC_United_%282015%29.svg/180px-DC_United_%282015%29.svg.png",
+      "notes": "Japan Night — Support JASWDC at Audi Field. DC United match featuring Japanese players Ujima Hosei and Kurokawa Keisuke. Fan meet & greet opportunity with the Japanese players. Event organized by Japanese American Society of Washington DC (JASWDC).",
+      "sport": "soccer",
+      "noMG": false,
+      "source": "instagram.com/jaswdc",
+      "addedAt": "2026-04-30"
+    },
+    {
+      "id": "manual_jean_pierre_papin_parcours_du_coeur_paris_may24",
+      "player": "Jean-Pierre Papin",
+      "date": "2026-05-24",
+      "time": "TBD",
+      "venue": "Paris (Parcours du Cœur)",
+      "city": "Paris, France 🇫🇷",
+      "link": "https://www.parcoursducoeur.com",
+      "img": "https://img.a.transfermarkt.technology/portrait/big/4301-1372445795.jpg",
+      "notes": "Jean-Pierre Papin appearing as Guest at the Parcours du Cœur charity running event in Paris on Sunday May 24, 2026. Fan meet & greet opportunity. Check parcoursducoeur.com for registration details.",
+      "sport": "soccer",
+      "noMG": false,
+      "source": "instagram.com/pierrearcidiacono / parcoursducoeur.com",
+      "addedAt": "2026-04-30"
     }
   ]
 }
