@@ -99,6 +99,9 @@ const ALL_QUERIES = [
   { q: 'Atletico Madrid Barcelona Real Madrid fan event meet greet USA 2026',  lang: 'en' },
   { q: 'Premier League club fan tour USA meet greet event 2026',               lang: 'en' },
   // ── Talks venues ──
+  // SeatUnique / Fane — UK premium ticket platform for speaker/talks events (e.g. Usain Bolt at The O2)
+  { q: 'site:seatunique.com/culture-tickets/talks VIP meet greet sport athlete 2026', lang: 'en' },
+  { q: 'site:fane.co.uk sport athlete VIP meet greet 2026',                  lang: 'en' },
   { q: 'site:92ny.org "in conversation" OR "an evening with" 2026',           lang: 'en' },
   { q: 'site:92ny.org celebrity actor musician athlete author 2026',           lang: 'en' },
   { q: '92ny.org event celebrity famous actor musician athlete 2026',          lang: 'en' },

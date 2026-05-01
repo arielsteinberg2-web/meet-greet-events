@@ -7146,6 +7146,22 @@
       "noMG": false,
       "source": "Instagram",
       "addedAt": "2026-04-30"
+    },
+    {
+      "id": "manual_usain_bolt_fastest_man_ever_o2_london_jul22",
+      "player": "Usain Bolt",
+      "title": "Usain Bolt: Fastest Man Ever — VIP Meet & Greet",
+      "sport": "athletics",
+      "date": "2026-07-22",
+      "time": "19:30",
+      "venue": "The O2",
+      "city": "London, UK 🇬🇧",
+      "link": "https://www.seatunique.com/culture-tickets/talks/fane-tickets/a9521ecf#07023baa",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Usain_Bolt_competing_at_the_2009_World_Championships_in_Berlin.jpg/440px-Usain_Bolt_competing_at_the_2009_World_Championships_in_Berlin.jpg",
+      "notes": "Speaking event at The O2, London. VIP Meet & Greet (£1,999/pp): premium seating + meet & greet with professional photo op pre-show + champagne reception. VIP Premium (£375/pp): premium seating + memorabilia gift. Tickets via SeatUnique / Fane.",
+      "noMG": false,
+      "source": "seatunique.com",
+      "addedAt": "2026-05-01"
     }
   ]
 }
