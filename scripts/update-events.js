@@ -263,6 +263,8 @@ const INSTAGRAM_ACCOUNTS = [
   'nbastore',
   'wnba',
   'dallaswings',   // Paige Bueckers' team — announces brand-partnership fan events
+  // ── Soccer — TST (The Soccer Tournament) ──
+  'thesoccertournament', // TST — annual 7v7 tournament featuring USWNT/USMNT legend M&G experiences
   // ── Soccer charity / celebrity legends matches ──
   'socceraid',      // Soccer Aid for UNICEF — annual legends+celeb match (London Stadium); VIP/fan zone packages
   'fifaworldcup',   // FIFA World Cup 2026 — fan festivals in host cities (US/Canada/Mexico) with legend appearances
