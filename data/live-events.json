@@ -9318,6 +9318,22 @@
       "noMG": false,
       "source": "instagram.com/wearealivinglegends",
       "addedAt": "2026-05-01"
+    },
+    {
+      "id": "manual_tom_brady_georgetown_commencement_may16",
+      "player": "Tom Brady",
+      "title": "Georgetown University Commencement — School of Business",
+      "sport": "football",
+      "date": "2026-05-16",
+      "time": "14:30",
+      "venue": "Healy Lawn, Georgetown University",
+      "city": "Washington, DC 🇺🇸",
+      "link": "https://commencement.georgetown.edu/",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Tom_Brady_2023.jpg/440px-Tom_Brady_2023.jpg",
+      "notes": "Tom Brady delivers the commencement address to Georgetown's School of Business Class of 2026. Public ceremony at Healy Lawn, 2:30 PM. No meet & greet.",
+      "noMG": true,
+      "source": "georgetown.edu",
+      "addedAt": "2026-05-05"
     }
   ]
 }
