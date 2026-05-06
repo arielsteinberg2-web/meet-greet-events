@@ -1029,7 +1029,12 @@ async function fetchEventbriteEvents() {
           let player = null;
           for (const pat of titlePatterns) {
             const tm = name.match(pat);
-            if (tm && tm[1] && !NAME_SKIP.has(tm[1].split(' ')[0])) { player = tm[1].trim(); break; }
+            if (tm && tm[1]) {
+              const words = tm[1].trim().split(/\s+/);
+              if (!NAME_SKIP.has(words[0]) && !words.some(w => NOT_A_NAME_WORD.has(w.toLowerCase()))) {
+                player = tm[1].trim(); break;
+              }
+            }
           }
           // Fall back to Wikipedia-verified candidate
           if (!player) {
@@ -1173,9 +1178,12 @@ const NAME_SKIP = new Set([
 const NOT_A_NAME_WORD = new Set([
   'kangaroo','panda','bunny','bunny','easter','santa','claus','penguin','tiger',
   'lion','bear','wolf','fox','cat','dog','bird','fish','shark','eagle','hawk',
-  'indoor','outdoor','virtual','annual','official','local','national','regional',
+  'indoor','outdoor','outdoors','virtual','annual','official','local','national','regional',
   'open','closed','public','private','free','paid','live','online','hybrid',
   'holiday','seasonal','corporate','charity','benefit','fundraiser',
+  // Brand/org indicator words — names containing these are companies, not people
+  'business','overtime','fitness','media','network','productions','entertainment',
+  'studio','studios','group','company','brands','outdoors','athletics','adventures',
 ]);
 
 // Returns all candidate person names from a text, in order of appearance.
