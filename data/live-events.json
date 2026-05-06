@@ -9320,6 +9320,38 @@
       "addedAt": "2026-05-01"
     },
     {
+      "id": "manual_stephon_marbury_footlocker_queenscenter_may2",
+      "player": "Stephon Marbury",
+      "title": "Meet NBA Legend Stephon Marbury — Foot Locker Grand Opening",
+      "sport": "basketball",
+      "date": "2026-05-02",
+      "time": "13:00",
+      "venue": "Foot Locker — Queens Center (Levels 2 & 3, near JCPenney)",
+      "city": "Queens, NY 🇺🇸",
+      "link": "https://www.instagram.com/queenscentermall/",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stephon_Marbury_Knicks.jpg/440px-Stephon_Marbury_Knicks.jpg",
+      "notes": "Foot Locker grand opening at Queens Center. Free autograph & photo with NBA legend Stephon Marbury, 1–2 PM. First come, first served — limited to 1 autograph per person, no purchase necessary. Entry not guaranteed.",
+      "noMG": false,
+      "source": "instagram.com/queenscentermall",
+      "addedAt": "2026-05-05"
+    },
+    {
+      "id": "manual_javier_zanetti_cena_capitano_elgaucho_may7",
+      "player": "Javier Zanetti",
+      "title": "A Cena con il Capitano — Javier Zanetti at El Gaucho",
+      "sport": "soccer",
+      "date": "2026-05-07",
+      "time": "19:00",
+      "venue": "El Gaucho",
+      "city": "Italy 🇮🇹",
+      "link": "https://www.instagram.com/elgauchino/",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Javier_Zanetti_2019.jpg/440px-Javier_Zanetti_2019.jpg",
+      "notes": "\"A Cena con il Capitano\" — exclusive dinner & photo with Javier Zanetti at El Gaucho restaurant (Calle d'Aitona 11). Thursday 7 May 2026. Ticketed event (€100/€150). Via @elgauchino.",
+      "noMG": false,
+      "source": "instagram.com/elgauchino",
+      "addedAt": "2026-05-05"
+    },
+    {
       "id": "manual_tom_brady_georgetown_commencement_may16",
       "player": "Tom Brady",
       "title": "Georgetown University Commencement — School of Business",

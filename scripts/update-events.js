@@ -312,6 +312,7 @@ const INSTAGRAM_ACCOUNTS = [
   // ── Europe — Italian events ──
   'festivaldelcalcioitaliano',
   'fibersportsmemorabilia',
+  'elgauchino',            // El Gaucho restaurant Italy — hosts "A Cena con il Capitano" legend dinner events
   // ── Europe — Dutch signings ──
   'signedkits',
   // ── Europe — Austrian event calendar ──
@@ -333,6 +334,9 @@ const INSTAGRAM_ACCOUNTS = [
   'allstarsports.asia',    // AllStar Sports Asia — runs "An Afternoon With" legend M&G events (SE Asia)
   // ── Canada — soccer legends match events ──
   'wearealivinglegends',   // Living Legends — organises Brazil/world legends vs local club matches (Toronto etc.)
+  // ── Retail — Foot Locker grand openings / athlete in-store appearances ──
+  'queenscentermall',      // Queens Center mall — co-posts Foot Locker athlete grand opening appearances
+  'footlocker',            // Foot Locker official — announces NBA/athlete store grand opening appearances
   // ── Basketball clinics / youth events ──
   'christbelking',         // Christ The King HS Queens NY — Nate Robinson clinic
   // ── Soccer — global legends experience organizers (niche, signing-focused) ──
