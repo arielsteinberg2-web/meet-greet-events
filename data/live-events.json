@@ -14,7 +14,8 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-04-03",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Earl_campbell_shaggybevo.jpg/330px-Earl_campbell_shaggybevo.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Earl_campbell_shaggybevo.jpg/330px-Earl_campbell_shaggybevo.jpg",
+      "linkBroken": true
     },
     {
       "id": "fiterman_vince_young_public_autograph_event_fiterman_sports_league_city_tx",
@@ -28,7 +29,8 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-04-03",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/2/25/Vince-Young.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/2/25/Vince-Young.jpg",
+      "linkBroken": true
     },
     {
       "id": "fiterman_ricky_williams_public_autograph_event_fiterman_sports_league_city_tx",
@@ -42,7 +44,8 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-04-03",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ricky_Williams_February_2020.jpg/330px-Ricky_Williams_February_2020.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ricky_Williams_February_2020.jpg/330px-Ricky_Williams_February_2020.jpg",
+      "linkBroken": true
     },
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-john-tavares",
@@ -55,8 +58,7 @@
       "link": "https://tsebuffalo.com/products/autograph-ticket-get-any-item-of-yours-signed-in-person-by-john-tavares",
       "notes": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by John Tavares",
       "source": "tsebuffalo.com",
-      "addedAt": "2026-04-20",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/John_Tavares_playing_with_the_Maple_Leafs_in_2022_%28Quintin_Soloviev%29.jpg/330px-John_Tavares_playing_with_the_Maple_Leafs_in_2022_%28Quintin_Soloviev%29.jpg"
+      "addedAt": "2026-04-20"
     },
     {
       "id": "tse_copy-of-autograph-ticket-get-your-premium-item-signed-in-person-by-pat-lafontaine-includes-free-hof-03",
@@ -69,8 +71,7 @@
       "link": "https://tsebuffalo.com/products/copy-of-autograph-ticket-get-your-premium-item-signed-in-person-by-pat-lafontaine-includes-free-hof-03",
       "notes": "AUTOGRAPH TICKET: Get Your Premium Item Signed in Person by Pat LaFontaine",
       "source": "tsebuffalo.com",
-      "addedAt": "2026-04-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pat_LaFontaine%2C_1997.jpg/250px-Pat_LaFontaine%2C_1997.jpg"
+      "addedAt": "2026-04-10"
     },
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-spencer-brown",
@@ -83,8 +84,7 @@
       "link": "https://tsebuffalo.com/products/autograph-ticket-get-any-item-of-yours-signed-in-person-by-spencer-brown",
       "notes": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by Spencer Brown",
       "source": "tsebuffalo.com",
-      "addedAt": "2026-04-25",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/13/2025%2C_21%2C_Spencer_Brown.jpg"
+      "addedAt": "2026-04-25"
     },
     {
       "id": "tse_autograph-ticket-get-your-small-flat-up-to-11x14-or-puck-signed-in-person-by-gilbert-perreault",
@@ -96,8 +96,7 @@
       "link": "https://tsebuffalo.com/products/autograph-ticket-get-your-small-flat-up-to-11x14-or-puck-signed-in-person-by-gilbert-perreault",
       "notes": "AUTOGRAPH TICKET: Get Your Small Flat (up to 11x14) or Puck Signed in Person by Gilbert Perreault",
       "source": "tsebuffalo.com",
-      "addedAt": "2026-04-25",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/c/ca/PerreaultSabres.png"
+      "addedAt": "2026-04-25"
     },
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-rich-kilgour",
@@ -305,8 +304,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/brad-swaile",
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Brian_Drummond_by_Gage_Skidmore.jpg/960px-Brian_Drummond_by_Gage_Skidmore.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_mcm-comic-con-london-may_brian-drummond",
@@ -319,8 +317,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/brian-drummond",
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/e/e3/2021-06-01_ALBA_Berlin_gegen_ratiopharm_Ulm_%28Play-off-Halbfinale_3%2C_Basketball-Bundesliga_2020-21%29_by_Sandro_Halank%E2%80%93100.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_mcm-comic-con-london-may_cam-clarke",
@@ -388,8 +385,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/david-hayter",
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/5/52/Dee_Bradley_Baker_by_Gage_Skidmore_2.jpg"
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_mcm-comic-con-london-may_dee-bradley-baker",
@@ -402,8 +398,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/dee-bradley-baker",
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fwestminstercollegepa.sidearmsports.com%2Fimages%2F2024%2F5%2F23%2FDylan_Llewellyn_62__2.jpg&type=webp"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_mcm-comic-con-london-may_dylan-llewellyn",
@@ -472,8 +467,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/gabe-kunda",
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/James_Arnold_Taylor_at_Galaxy_Con_Columbus.jpg/960px-James_Arnold_Taylor_at_Galaxy_Con_Columbus.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_mcm-comic-con-london-may_james-arnold-taylor",
@@ -486,8 +480,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/james-arnold-taylor",
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sarah-Jane_Perry.jpg/960px-Sarah-Jane_Perry.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_mcm-comic-con-london-may_jane-perry",
@@ -514,8 +507,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/jason-narvy",
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://duhawks.com/images/2014/10/15/JohnBurgmeier.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_mcm-comic-con-london-may_john-burgmeier",
@@ -528,8 +520,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/john-burgmeier",
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Frichmond.sidearmsports.com%2Fimages%2F2011%2F7%2F20%2Feastman.jpg&width=120&height=180&type=webp"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_mcm-comic-con-london-may_kevin-eastman",
@@ -668,8 +659,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/renae-jacobs",
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/5/53/Richard_Horvitz_at_Galaxy_Con_Richmond_%28cropped%29.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_mcm-comic-con-london-may_richard-horvitz",
@@ -682,8 +672,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-london-may/2026/richard-horvitz",
       "notes": "MCM Comic Con London May 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://cdn.hourdetroit.com/wp-content/uploads/sites/20/2012/08/Rob-Paulsen-teaser.png"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_mcm-comic-con-london-may_rob-paulsen",
@@ -949,7 +938,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Annabeth_Gish_%2846484543405%29_%28cropped%29.jpg/960px-Annabeth_Gish_%2846484543405%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Annabeth_Gish_%2846484543405%29_%28cropped%29.jpg/960px-Annabeth_Gish_%2846484543405%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_billy-boyd",
@@ -963,7 +953,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Bonnie_Wright_by_Gage_Skidmore.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Bonnie_Wright_by_Gage_Skidmore.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_bonnie-wright",
@@ -977,7 +968,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.ytimg.com/vi/BDj48s5tLaQ/sddefault.jpg"
+      "img": "https://i.ytimg.com/vi/BDj48s5tLaQ/sddefault.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_brendan-wayne",
@@ -991,7 +983,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "http://www.supersportscenter.com/cdn/shop/files/s-l1600_f0e36f40-71a5-4382-b57c-266045b01a26_1024x1024.jpg?v=1744232922"
+      "img": "http://www.supersportscenter.com/cdn/shop/files/s-l1600_f0e36f40-71a5-4382-b57c-266045b01a26_1024x1024.jpg?v=1744232922",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_bryce-dallas-howard",
@@ -1005,7 +998,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-10",
-      "img": "https://m.media-amazon.com/images/M/MV5BOGQxZTdiNTEtNTQ5Yy00ZjhiLWFjYzYtMzczNGFmOWVkYmM2XkEyXkFqcGc@._V1_.jpg"
+      "img": "https://m.media-amazon.com/images/M/MV5BOGQxZTdiNTEtNTQ5Yy00ZjhiLWFjYzYtMzczNGFmOWVkYmM2XkEyXkFqcGc@._V1_.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_c-thomas-howell",
@@ -1019,7 +1013,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-10",
-      "img": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/cameroncrovetti/profile_pic.jpg"
+      "img": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/cameroncrovetti/profile_pic.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_cameron-crovetti",
@@ -1033,7 +1028,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/2/27/Cara_Buono_cbb_%28cropped%29.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_cara-buono",
@@ -1047,7 +1042,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://cdn2-sr-application.sportsrecruits.com/images/lacrosserecruits/2024/5/3318a7cec81c402e92ec71014fbceabd.jpg"
+      "img": "https://cdn2-sr-application.sportsrecruits.com/images/lacrosserecruits/2024/5/3318a7cec81c402e92ec71014fbceabd.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_catherine-bell",
@@ -1061,7 +1057,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://nsudemons.com/images/2026/3/8/MBKB_SLC_In-Game_7.jpeg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_cedric-yarbrough",
@@ -1075,7 +1071,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-10",
-      "img": "https://gopoly.com/images/2020/4/15/chris_judge_fball_2014_15.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_christopher-judge",
@@ -1089,7 +1085,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fwingatebulldogs.com%2Fimages%2F2010%2F3%2F6%2FO_Donoghue_Colin_MC_February_27.jpg&type=webp"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_colin-odonoghue",
@@ -1103,7 +1099,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Corey_Feldman_Photo_Op_GalaxyCon_Richmond_2023.jpg/330px-Corey_Feldman_Photo_Op_GalaxyCon_Richmond_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_corey-feldman",
@@ -1117,7 +1113,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://s.wsj.net/public/resources/images/RV-AB869_Duchov_G_20110304003025.jpg"
+      "img": "https://s.wsj.net/public/resources/images/RV-AB869_Duchov_G_20110304003025.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_david-duchovny",
@@ -1131,7 +1128,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/18/David_James_Elliott.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/1/18/David_James_Elliott.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_david-james-elliott",
@@ -1145,7 +1143,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/David_Tennant_-_Los_Angeles_Comic_Con_2025.jpg/330px-David_Tennant_-_Los_Angeles_Comic_Con_2025.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/David_Tennant_-_Los_Angeles_Comic_Con_2025.jpg/330px-David_Tennant_-_Los_Angeles_Comic_Con_2025.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_david-tennant",
@@ -1159,7 +1158,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://myvalleynews.com/wp-content/uploads/2025/08/08-08-25-SPORTS-Dean-Norris-Night-photo-1.jpg"
+      "img": "https://myvalleynews.com/wp-content/uploads/2025/08/08-08-25-SPORTS-Dean-Norris-Night-photo-1.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_dean-norris",
@@ -1173,7 +1173,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg/330px-Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg/330px-Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_dolph-lundgren",
@@ -1187,7 +1188,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://media.gettyimages.com/id/3042294/photo/dominic-monaghan-at-old-trafford.jpg?s=1024x1024&w=gi&k=20&c=puuFcWT7XgbuUdfJUgvVxo5H0c4t4Df7OOQWKPh-8SM="
+      "img": "https://media.gettyimages.com/id/3042294/photo/dominic-monaghan-at-old-trafford.jpg?s=1024x1024&w=gi&k=20&c=puuFcWT7XgbuUdfJUgvVxo5H0c4t4Df7OOQWKPh-8SM=",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_dominic-monaghan",
@@ -1201,7 +1203,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg/330px-Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_elijah-wood",
@@ -1215,7 +1217,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://hallofchampions.otterbein.edu/sites/default/files/styles/large/public/field/image/moriarty.jpg?itok=0_LY7g8c"
+      "img": "https://hallofchampions.otterbein.edu/sites/default/files/styles/large/public/field/image/moriarty.jpg?itok=0_LY7g8c",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_erin-moriarty",
@@ -1229,7 +1232,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://people.com/thmb/LpmvpGDpu7ROFBeDxyccxAf5dpc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/ethan-split-1-1fff604452d248b0a6d05bfa6d68b381.jpg"
+      "img": "https://people.com/thmb/LpmvpGDpu7ROFBeDxyccxAf5dpc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/ethan-split-1-1fff604452d248b0a6d05bfa6d68b381.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_ethan-suplee",
@@ -1243,7 +1247,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.ytimg.com/vi/gBqkuufYITA/maxresdefault.jpg"
+      "img": "https://i.ytimg.com/vi/gBqkuufYITA/maxresdefault.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_felicia-day",
@@ -1257,7 +1262,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Frank_Welker_Photo_Op_GalaxyCon_Raleigh_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Frank_Welker_Photo_Op_GalaxyCon_Raleigh_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_frank-welker",
@@ -1271,7 +1277,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://gosmithbears.com/images/2013/11/11/IMG_4598.jpg?width=300"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_gillian-anderson",
@@ -1285,7 +1291,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://i.ebayimg.com/images/g/fHoAAOSwq9FdESsi/s-l1200.jpg"
+      "img": "https://i.ebayimg.com/images/g/fHoAAOSwq9FdESsi/s-l1200.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_jaime-pressly",
@@ -1299,7 +1306,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://dealtownfc.co.uk/assets/img/players/A_B44I6833-removebg-preview.png"
+      "img": "https://dealtownfc.co.uk/assets/img/players/A_B44I6833-removebg-preview.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_jamie-kennedy",
@@ -1313,7 +1321,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.ebayimg.com/images/g/XR8AAOSwGLZj2C74/s-l400.jpg"
+      "img": "https://i.ebayimg.com/images/g/XR8AAOSwGLZj2C74/s-l400.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_jamison-newlander",
@@ -1327,7 +1336,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://joysauce.com/wp-content/uploads/2025/04/JiYoungYoo-HERO-min.jpg"
+      "img": "https://joysauce.com/wp-content/uploads/2025/04/JiYoungYoo-HERO-min.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_ji-young-yoo",
@@ -1341,7 +1351,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://media.abilitymagazine.com/wp-content/uploads/2020/05/18115714/Joey-pants-Pantoliano1.jpg"
+      "img": "https://media.abilitymagazine.com/wp-content/uploads/2020/05/18115714/Joey-pants-Pantoliano1.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_joe-pantoliano",
@@ -1355,7 +1366,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/4/4e/260321_John_Noble_03.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/4e/260321_John_Noble_03.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_john-noble",
@@ -1369,7 +1381,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://athletics.bellarmine.edu/images/2025/8/12/DaviesRhys2025.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_john-rhys-davies",
@@ -1383,7 +1395,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://m.media-amazon.com/images/M/MV5BMTkxMzM3ODQ1OV5BMl5BanBnXkFtZTgwNzgxMzA1NjE@._V1_.jpg"
+      "img": "https://m.media-amazon.com/images/M/MV5BMTkxMzM3ODQ1OV5BMl5BanBnXkFtZTgwNzgxMzA1NjE@._V1_.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_jonny-coyne",
@@ -1397,7 +1410,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://samfordsports.com/images/2024/7/31/Josh_Holloway.JPG"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_josh-holloway",
@@ -1411,7 +1424,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://assets.vogue.com/photos/5891120c4fe152611301fa8c/master/w_1600%2Cc_limit/2-karen-fukuhara.jpg"
+      "img": "https://assets.vogue.com/photos/5891120c4fe152611301fa8c/master/w_1600%2Cc_limit/2-karen-fukuhara.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_karen-fukuhara",
@@ -1425,7 +1439,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://hips.hearstapps.com/hmg-prod/images/60a8af03-59ca-43cd-889d-74ad13ab7531.jpg?crop=0.957xw:1xh;0.022xw,0xh&resize=980:*"
+      "img": "https://hips.hearstapps.com/hmg-prod/images/60a8af03-59ca-43cd-889d-74ad13ab7531.jpg?crop=0.957xw:1xh;0.022xw,0xh&resize=980:*",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_karl-urban",
@@ -1439,7 +1454,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/80/Kerri_Green_at_Rose_City_Comic_Con_02_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_kerri-green",
@@ -1453,7 +1468,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://bigquickly.com/newarticle/img/img2/lance-barber-weight-loss-1.png"
+      "img": "https://bigquickly.com/newarticle/img/img2/lance-barber-weight-loss-1.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_lance-barber",
@@ -1467,7 +1483,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://bigquickly.com/newarticle/img/img1/655-1-2.png"
+      "img": "https://bigquickly.com/newarticle/img/img1/655-1-2.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_laz-alonso",
@@ -1481,7 +1498,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://s3.amazonaws.com/rms-rmfiles-production/client_photos/athlete_1348063_profile.jpg"
+      "img": "https://s3.amazonaws.com/rms-rmfiles-production/client_photos/athlete_1348063_profile.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_lee-waddell",
@@ -1495,7 +1513,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://olympic.ca/wp-content/uploads/2011/09/linda-johnson-blair-1998_1340px.jpg?quality=100"
+      "img": "https://olympic.ca/wp-content/uploads/2011/09/linda-johnson-blair-1998_1340px.jpg?quality=100",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_linda-blair",
@@ -1509,7 +1528,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://hendrixwarriors.com/images/2017/2/3/MatthewLillard.jpg?width=300"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_matthew-lillard",
@@ -1523,7 +1542,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://hips.hearstapps.com/hmg-prod/images/screen-shot-2023-01-24-at-4-03-38-pm-1674674653.jpg?crop=0.327xw:0.616xh;0.215xw,0.00906xh&resize=1200:*"
+      "img": "https://hips.hearstapps.com/hmg-prod/images/screen-shot-2023-01-24-at-4-03-38-pm-1674674653.jpg?crop=0.327xw:0.616xh;0.215xw,0.00906xh&resize=1200:*",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_mike-colter",
@@ -1537,7 +1557,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Miranda_Otto_by_Gage_Skidmore.jpg/960px-Miranda_Otto_by_Gage_Skidmore.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_miranda-otto",
@@ -1551,7 +1571,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://www.racctrusted.com/media/__sized__/celebrity-images/Screen_Shot_2024-03-17_at_8.46.48_PM-crop-c0-5__0-5-400x400.png"
+      "img": "https://www.racctrusted.com/media/__sized__/celebrity-images/Screen_Shot_2024-03-17_at_8.46.48_PM-crop-c0-5__0-5-400x400.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_mitch-pileggi",
@@ -1565,7 +1586,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://www.athleteally.org/wp-content/uploads/2020/01/nick-lee-rect.png"
+      "img": "https://www.athleteally.org/wp-content/uploads/2020/01/nick-lee-rect.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_nicholas-lea",
@@ -1579,7 +1601,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://www.twincities.com/wp-content/uploads/2023/03/STP-L-BOYSBBPOY-0321-Winter-Cove.jpg?w=961&h=640"
+      "img": "https://www.twincities.com/wp-content/uploads/2023/03/STP-L-BOYSBBPOY-0321-Winter-Cove.jpg?w=961&h=640",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_nolan-north",
@@ -1593,7 +1616,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://media.gettyimages.com/id/113113242/photo/english-actor-orlando-bloom-plays-with-a.jpg?s=1024x1024&w=gi&k=20&c=OToYsxr92u2sVrrSBqtWTHeZxTQ5x8nwLK0qIIYN9Bo="
+      "img": "https://media.gettyimages.com/id/113113242/photo/english-actor-orlando-bloom-plays-with-a.jpg?s=1024x1024&w=gi&k=20&c=OToYsxr92u2sVrrSBqtWTHeZxTQ5x8nwLK0qIIYN9Bo=",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_orlando-bloom",
@@ -1607,7 +1631,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-181044-119961268.jpg"
+      "img": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-181044-119961268.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_pauly-shore",
@@ -1621,7 +1646,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-10",
-      "img": "https://bestfriends.org/sites/default/files/styles/image_small_mobile/public/image/Dogpool_FirstLook.jpg?itok=D9PKWc55"
+      "img": "https://bestfriends.org/sites/default/files/styles/image_small_mobile/public/image/Dogpool_FirstLook.jpg?itok=D9PKWc55",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_peggy-the-dog-aka-dogpool",
@@ -1635,7 +1661,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://www.shutterstock.com/editorial/image-editorial/OcTbIey2N5z7k0weNzk2NQ==/peter-cullen-javelin-thrower-action-white-city-550nw-9163085a.jpg"
+      "img": "https://www.shutterstock.com/editorial/image-editorial/OcTbIey2N5z7k0weNzk2NQ==/peter-cullen-javelin-thrower-action-white-city-550nw-9163085a.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_peter-cullen",
@@ -1649,7 +1676,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static01.nyt.com/athletic/uploads/wp/2022/10/20221940/01152022-Islanders-vs-Capitals-9-scaled.jpeg?width=1200&height=1200&fit=cover"
+      "img": "https://static01.nyt.com/athletic/uploads/wp/2022/10/20221940/01152022-Islanders-vs-Capitals-9-scaled.jpeg?width=1200&height=1200&fit=cover",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_ralph-macchio",
@@ -1663,7 +1691,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://images.sidearmdev.com/resize?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fbgsufalcons.com%2Fimages%2F2019%2F7%2F5%2FMinnich_Max1.jpg&height=300&type=webp"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_robert-patrick",
@@ -1677,7 +1705,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://www.dunfermlinepress.com/resources/images/12966517.jpg?type=og-image"
+      "img": "https://www.dunfermlinepress.com/resources/images/12966517.jpg?type=og-image",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_roger-clark",
@@ -1691,7 +1720,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://pbs.twimg.com/profile_images/947616948250013696/DGjRf-gT_400x400.jpg"
+      "img": "https://pbs.twimg.com/profile_images/947616948250013696/DGjRf-gT_400x400.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_sam-witwer",
@@ -1705,7 +1735,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-10",
-      "img": "https://hips.hearstapps.com/hmg-prod/images/sean-astin-800-1-1522429169.jpg?crop=0.669xw:0.892xh;0.207xw,0.108xh&resize=1200:*"
+      "img": "https://hips.hearstapps.com/hmg-prod/images/sean-astin-800-1-1522429169.jpg?crop=0.669xw:0.892xh;0.207xw,0.108xh&resize=1200:*",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_sean-astin",
@@ -1719,7 +1750,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://c8.alamy.com/comp/BJ0AM5/skeet-ulrich-hollywood-united-celebrity-match-before-chelsea-v-inter-BJ0AM5.jpg"
+      "img": "https://c8.alamy.com/comp/BJ0AM5/skeet-ulrich-hollywood-united-celebrity-match-before-chelsea-v-inter-BJ0AM5.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_skeet-ulrich",
@@ -1733,7 +1765,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Temuera_Morrison_Photo_Op_GalaxyCon_Richmond_2026.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Temuera_Morrison_Photo_Op_GalaxyCon_Richmond_2026.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_temuera-morrison",
@@ -1747,7 +1780,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-20",
-      "img": "https://www.ocala.com/gcdn/authoring/2007/08/30/NOSB/ghows-LK-d19167be-a4e6-418b-ae60-8036003196fe-0abe4b5c.jpeg?crop=749,423,x0,y0&width=749&height=423&format=pjpg&auto=webp"
+      "img": "https://www.ocala.com/gcdn/authoring/2007/08/30/NOSB/ghows-LK-d19167be-a4e6-418b-ae60-8036003196fe-0abe4b5c.jpeg?crop=749,423,x0,y0&width=749&height=423&format=pjpg&auto=webp",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_thomas-lennon",
@@ -1761,7 +1795,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-10",
-      "img": "https://m.media-amazon.com/images/M/MV5BOWQwZTgxNWUtMjA0MS00ZmJkLTkxZjMtNmNiMmJmMjgyZGFlXkEyXkFqcGc@._V1_.jpg"
+      "img": "https://m.media-amazon.com/images/M/MV5BOWQwZTgxNWUtMjA0MS00ZmJkLTkxZjMtNmNiMmJmMjgyZGFlXkEyXkFqcGc@._V1_.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_tomer-capone",
@@ -1775,7 +1810,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://i.ytimg.com/vi/5Ud577MiOFo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLANM0FjNz4fDTxrgLgo_XqPZQOoFw"
+      "img": "https://i.ytimg.com/vi/5Ud577MiOFo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLANM0FjNz4fDTxrgLgo_XqPZQOoFw",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_valorie-curry",
@@ -1789,7 +1825,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://people.com/thmb/fPMVkAqkiUnZIXBIwd7fV7q5zus=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/William-Davis-051826-e2d314f5183c4eed8b064770f60478d3.jpg"
+      "img": "https://people.com/thmb/fPMVkAqkiUnZIXBIwd7fV7q5zus=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/William-Davis-051826-e2d314f5183c4eed8b064770f60478d3.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_william-b-davis",
@@ -1803,7 +1840,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://images.maxpreps.com/editorial/article/3/9/c/39cdd217-d1f9-4d1a-b15e-7edd0bb830ad/081dd529-05f0-4d33-b545-18406645db28_original.jpg?version=638739228470439070"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_zoe-perry",
@@ -1817,7 +1854,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://static0.srcdn.com/wordpress/wp-content/uploads/2023/12/callum-turner-in-the-boys-in-the-boat.jpg?q=49&fit=contain&w=750&h=422&dpr=2"
+      "img": "https://static0.srcdn.com/wordpress/wp-content/uploads/2023/12/callum-turner-in-the-boys-in-the-boat.jpg?q=49&fit=contain&w=750&h=422&dpr=2",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-boys-cast-saturday-2",
@@ -1831,7 +1869,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://preview.redd.it/i-havens-seen-anyone-do-this-yet-so-heres-a-death-note-v0-0dvhx6772lic1.png?width=640&crop=smart&auto=webp&s=156c0b6695b971891047d8e5fb777fb0ee344089"
+      "img": "https://preview.redd.it/i-havens-seen-anyone-do-this-yet-so-heres-a-death-note-v0-0dvhx6772lic1.png?width=640&crop=smart&auto=webp&s=156c0b6695b971891047d8e5fb777fb0ee344089",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-death-note",
@@ -1845,7 +1884,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://preview.redd.it/what-olympic-sport-would-the-demon-slayer-charachters-be-v0-08exgfi3w7hd1.jpeg?auto=webp&s=9d915d9d2769633c0b74b2e20394dd51802c9f63"
+      "img": "https://preview.redd.it/what-olympic-sport-would-the-demon-slayer-charachters-be-v0-08exgfi3w7hd1.jpeg?auto=webp&s=9d915d9d2769633c0b74b2e20394dd51802c9f63",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-demon-slayer-team-up",
@@ -1859,7 +1899,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.ytimg.com/vi/L0KahbSUC34/maxresdefault.jpg"
+      "img": "https://i.ytimg.com/vi/L0KahbSUC34/maxresdefault.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-hazbin-hotel-the-vees",
@@ -1873,7 +1914,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,ar_4:3,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/jaguar_report/01kr41a25p0wscvgas4j.jpg"
+      "img": "https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,ar_4:3,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/jaguar_report/01kr41a25p0wscvgas4j.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-jag",
@@ -1887,7 +1929,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://teamup.money/wp-content/uploads/2022/11/teamup-budgettracker-1024x984.png"
+      "img": "https://teamup.money/wp-content/uploads/2022/11/teamup-budgettracker-1024x984.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-lost-team-up",
@@ -1901,7 +1944,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://staticg.sportskeeda.com/editor/2024/07/a3b9c-17223271009069-1920.jpg"
+      "img": "https://staticg.sportskeeda.com/editor/2024/07/a3b9c-17223271009069-1920.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-marvel-rivals-team-up",
@@ -1915,7 +1959,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://animeuknews.net/app/uploads/2021/03/My-Hero-Academia-team-up-missions-volume-1-cover.jpg"
+      "img": "https://animeuknews.net/app/uploads/2021/03/My-Hero-Academia-team-up-missions-volume-1-cover.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-my-hero-academia-1",
@@ -1929,7 +1974,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-10",
-      "img": "https://m.media-amazon.com/images/M/MV5BMTY5ODQ1NjI0Nl5BMl5BanBnXkFtZTcwODM3MTc5MQ@@._V1_.jpg"
+      "img": "https://m.media-amazon.com/images/M/MV5BMTY5ODQ1NjI0Nl5BMl5BanBnXkFtZTcwODM3MTc5MQ@@._V1_.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-my-name-is-earl-duo",
@@ -1943,7 +1989,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/en/9/9f/Over_9000%21.png"
+      "img": "https://upload.wikimedia.org/wikipedia/en/9/9f/Over_9000%21.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-over-9000-dragon-ball",
@@ -1957,7 +2004,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://www.denverpost.com/wp-content/uploads/2016/05/20070221__20070223_F6_AE23SCRENO1.jpg?w=1800&resize=1800,1800"
+      "img": "https://www.denverpost.com/wp-content/uploads/2016/05/20070221__20070223_F6_AE23SCRENO1.jpg?w=1800&resize=1800,1800",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-reno-911-duo",
@@ -1971,7 +2019,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-10",
-      "img": "http://res.cloudinary.com/ybmedia/image/upload/c_crop,e_improve,h_675,w_1200,x_0,y_0/c_fill,f_auto,h_900,q_auto,w_1600/v1/m/3/2/32f9231ce2c646122402016361defacd832ea6f2/Billy-and-Stu-Scream-1996-1.jpg"
+      "img": "http://res.cloudinary.com/ybmedia/image/upload/c_crop,e_improve,h_675,w_1200,x_0,y_0/c_fill,f_auto,h_900,q_auto,w_1600/v1/m/3/2/32f9231ce2c646122402016361defacd832ea6f2/Billy-and-Stu-Scream-1996-1.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-scream-duo-billy-and-stu",
@@ -1985,7 +2034,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9M_g4agpXJksZ77Lj4DZXaXLZVcCFQWL28m9a4sWFg2pNxXiP7DQVcdgew9EA-_KV5fYpTVZ8m9hybSifQNMqzWrpxEN2k_MSh-OFqj6HW4kGlMfHoY_DEPORcgwgiIFhFWp-jINO6zg/s640/IMG_6371.JPG"
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9M_g4agpXJksZ77Lj4DZXaXLZVcCFQWL28m9a4sWFg2pNxXiP7DQVcdgew9EA-_KV5fYpTVZ8m9hybSifQNMqzWrpxEN2k_MSh-OFqj6HW4kGlMfHoY_DEPORcgwgiIFhFWp-jINO6zg/s640/IMG_6371.JPG",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-scream-team-up-lee-waddell-in-costume",
@@ -1999,7 +2049,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://lumiere-a.akamaihd.net/v1/images/star-wars-maul-shadow-lord-character-posters-marrok-cro_3341b696.jpeg?width=1136"
+      "img": "https://lumiere-a.akamaihd.net/v1/images/star-wars-maul-shadow-lord-character-posters-marrok-cro_3341b696.jpeg?width=1136",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-star-wars-maul-shadow-lord",
@@ -2013,7 +2064,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-10",
-      "img": "https://preview.redd.it/billy-butcher-from-the-boys-is-a-charlton-and-west-ham-fan-v0-mqndmf4awk991.jpg?width=640&crop=smart&auto=webp&s=204ed3dfad7ed57933d03c8a095d902c0c8c8589"
+      "img": "https://preview.redd.it/billy-butcher-from-the-boys-is-a-charlton-and-west-ham-fan-v0-mqndmf4awk991.jpg?width=640&crop=smart&auto=webp&s=204ed3dfad7ed57933d03c8a095d902c0c8c8589",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-boys-butcher-duo",
@@ -2027,7 +2079,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://variety.com/wp-content/uploads/2022/07/The-Boys-1.jpg"
+      "img": "https://variety.com/wp-content/uploads/2022/07/The-Boys-1.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-boys-frenchie-kimiko",
@@ -2041,7 +2094,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/49bccef4-516e-4636-8542-cecb6f1fe1fb/the-boys-season-5-adds-stranger-things-actor-mason-dye-as-bombsight.jpg"
+      "img": "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/49bccef4-516e-4636-8542-cecb6f1fe1fb/the-boys-season-5-adds-stranger-things-actor-mason-dye-as-bombsight.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-boys-cast-friday-2",
@@ -2055,7 +2109,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/49bccef4-516e-4636-8542-cecb6f1fe1fb/the-boys-season-5-adds-stranger-things-actor-mason-dye-as-bombsight.jpg"
+      "img": "https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/49bccef4-516e-4636-8542-cecb6f1fe1fb/the-boys-season-5-adds-stranger-things-actor-mason-dye-as-bombsight.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-boys-cast-sunday-2",
@@ -2069,7 +2124,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/0/04/John_Matuszak.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/0/04/John_Matuszak.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-goonies",
@@ -2082,7 +2138,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/teamup-the-goonies",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-goonies-saturday",
@@ -2096,7 +2153,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-10",
-      "img": "https://sarahcradit.wordpress.com/wp-content/uploads/2013/04/ladyeowyn_of_rohan2614bro_n_sis_.jpg?w=640"
+      "img": "https://sarahcradit.wordpress.com/wp-content/uploads/2013/04/ladyeowyn_of_rohan2614bro_n_sis_.jpg?w=640",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-lotr-duo-eowyn-eomer",
@@ -2110,7 +2168,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://cdn11.bigcommerce.com/s-6k3asdl2tq/images/stencil/1280x1280/products/21242/29162/middleearth-mar14-eowynmerryfoot4myf__67408.1760037553.jpg?c=1"
+      "img": "https://cdn11.bigcommerce.com/s-6k3asdl2tq/images/stencil/1280x1280/products/21242/29162/middleearth-mar14-eowynmerryfoot4myf__67408.1760037553.jpg?c=1",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-duo-eowyn-and-merry",
@@ -2124,7 +2183,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.ytimg.com/vi/QFDaZsT4-sA/maxresdefault.jpg"
+      "img": "https://i.ytimg.com/vi/QFDaZsT4-sA/maxresdefault.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-duo-frodo-and-sam",
@@ -2138,7 +2198,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/merry-pippin-1627430069916-Cropped.png"
+      "img": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/merry-pippin-1627430069916-Cropped.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-duo-merry-and-pippin",
@@ -2152,7 +2213,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/rockcms/2022-07/lotr-hobbits-main-lc-220706-619ad7.jpg"
+      "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/rockcms/2022-07/lotr-hobbits-main-lc-220706-619ad7.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-reunion",
@@ -2166,7 +2228,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/rockcms/2022-07/lotr-hobbits-main-lc-220706-619ad7.jpg"
+      "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/rockcms/2022-07/lotr-hobbits-main-lc-220706-619ad7.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-fellowship-reunion",
@@ -2180,7 +2243,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static0.srcdn.com/wordpress/wp-content/uploads/2023/04/legolas-and-gimli-lord-of-the-rings.jpg"
+      "img": "https://static0.srcdn.com/wordpress/wp-content/uploads/2023/04/legolas-and-gimli-lord-of-the-rings.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-legolas-gimli",
@@ -2194,7 +2258,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://vancouverfamilymagazine.com/wp-content/uploads/2025/11/Screenshot-2025-11-13-120016.png"
+      "img": "https://vancouverfamilymagazine.com/wp-content/uploads/2025/11/Screenshot-2025-11-13-120016.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lord-of-the-rings-the-hobbits",
@@ -2208,7 +2273,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://autographpros.com/cdn/shop/products/Feldman-Corey-Frogbrothers-RW60526-thumbnail-1500x1500-100_1024x1024.jpg?v=1764998598"
+      "img": "https://autographpros.com/cdn/shop/products/Feldman-Corey-Frogbrothers-RW60526-thumbnail-1500x1500-100_1024x1024.jpg?v=1764998598",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-lost-boys-the-frog-brothers",
@@ -2222,7 +2288,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4nchQl13PiqArruGPL4-LDunCWyWSXS1LmEzVSfDXKwk8GcaxCmcft9OmV0s6seaMwM00ZLgB55exTFUPiHjcTnHWCw1XWuwurLsXccjXHGeRPxne_h8FV_BMHapTqc6ul8FI6emjTeYkO90R6p05KvsFzwRqGfZMv1GZpLVkNbqHRQnmt561VfYPdFk/w1200-h630-p-k-no-nu/cast-and-crew-of-the-outsiders-playing-football-1.jpg"
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4nchQl13PiqArruGPL4-LDunCWyWSXS1LmEzVSfDXKwk8GcaxCmcft9OmV0s6seaMwM00ZLgB55exTFUPiHjcTnHWCw1XWuwurLsXccjXHGeRPxne_h8FV_BMHapTqc6ul8FI6emjTeYkO90R6p05KvsFzwRqGfZMv1GZpLVkNbqHRQnmt561VfYPdFk/w1200-h630-p-k-no-nu/cast-and-crew-of-the-outsiders-playing-football-1.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-outsiders",
@@ -2236,7 +2303,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-10",
-      "img": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2026/03/418f2fa4-8adf-4bae-8ba5-4dea7de2b62f.197cd9deb1527c095c133aa40390c921-2.jpeg"
+      "img": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2026/03/418f2fa4-8adf-4bae-8ba5-4dea7de2b62f.197cd9deb1527c095c133aa40390c921-2.jpeg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-transformers",
@@ -2250,7 +2318,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://m.media-amazon.com/images/M/MV5BMTExNDQxMDU4MzJeQTJeQWpwZ15BbWU4MDEwNjc3NzIx._V1_.jpg"
+      "img": "https://m.media-amazon.com/images/M/MV5BMTExNDQxMDU4MzJeQTJeQWpwZ15BbWU4MDEwNjc3NzIx._V1_.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-x-files-cast",
@@ -2264,7 +2333,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/09/shut-up-mulder-im-playing-baseball-v0-14kh9gtqfm5d1-1.jpg?q=49&fit=crop&w=825&dpr=2"
+      "img": "https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/09/shut-up-mulder-im-playing-baseball-v0-14kh9gtqfm5d1-1.jpg?q=49&fit=crop&w=825&dpr=2",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-x-files-mulder-scully",
@@ -2278,7 +2348,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://static.wikia.nocookie.net/bigbangtheory/images/e/ed/Marcus_is_Disappointed_with_Missy.jpg/revision/latest?cb=20220927020221"
+      "img": "https://static.wikia.nocookie.net/bigbangtheory/images/e/ed/Marcus_is_Disappointed_with_Missy.jpg/revision/latest?cb=20220927020221",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-young-sheldon",
@@ -2292,7 +2363,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://thepopinsider.com/wp-content/uploads/sites/6/2025/10/FANEXPOHQ_LOTRHobbitEvent.jpg"
+      "img": "https://thepopinsider.com/wp-content/uploads/sites/6/2025/10/FANEXPOHQ_LOTRHobbitEvent.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_an-evening-with-the-hobbits",
@@ -2306,7 +2378,8 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2013/09/romeo_and_juliet.jpg?w=2000&h=1126&crop=1"
+      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2013/09/romeo_and_juliet.jpg?w=2000&h=1126&crop=1",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_on-stage-with-orlando-bloom",
@@ -2319,7 +2392,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-denver/2026/on-stage-with-orlando-bloom",
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_arthur-darvill",
@@ -2333,7 +2407,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/Arthur_Darvill.png?utm_source=simple.wikipedia.org&utm_campaign=index&utm_content=original"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/Arthur_Darvill.png?utm_source=simple.wikipedia.org&utm_campaign=index&utm_content=original",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_billy-boyd",
@@ -2347,7 +2422,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Bonnie_Wright_by_Gage_Skidmore.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Bonnie_Wright_by_Gage_Skidmore.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_bonnie-wright",
@@ -2361,7 +2437,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.ytimg.com/vi/BDj48s5tLaQ/sddefault.jpg"
+      "img": "https://i.ytimg.com/vi/BDj48s5tLaQ/sddefault.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_brendan-wayne",
@@ -2375,7 +2452,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://southpark.wiki.gg/images/thumb/BrentSpiner.jpg/300px-BrentSpiner.jpg?f967a3"
+      "img": "https://southpark.wiki.gg/images/thumb/BrentSpiner.jpg/300px-BrentSpiner.jpg?f967a3",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_brent-spiner",
@@ -2389,7 +2467,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Chrislambert2.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_christopher-lambert",
@@ -2403,7 +2481,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fwingatebulldogs.com%2Fimages%2F2010%2F3%2F6%2FO_Donoghue_Colin_MC_February_27.jpg&type=webp"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_colin-odonoghue",
@@ -2417,7 +2495,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Corey_Feldman_Photo_Op_GalaxyCon_Richmond_2023.jpg/330px-Corey_Feldman_Photo_Op_GalaxyCon_Richmond_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Corey_Feldman_Photo_Op_GalaxyCon_Richmond_2023.jpg/330px-Corey_Feldman_Photo_Op_GalaxyCon_Richmond_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_corey-feldman",
@@ -2430,7 +2509,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/corey-feldman",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_dafne-keen",
@@ -2444,7 +2524,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-15",
-      "img": "https://bcuathletics.com/images/2026/1/16/26_Morrissey_David.png"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_david-morrissey",
@@ -2458,7 +2538,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/David_Tennant_-_Los_Angeles_Comic_Con_2025.jpg/330px-David_Tennant_-_Los_Angeles_Comic_Con_2025.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/David_Tennant_-_Los_Angeles_Comic_Con_2025.jpg/330px-David_Tennant_-_Los_Angeles_Comic_Con_2025.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_david-tennant",
@@ -2472,7 +2553,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://myvalleynews.com/wp-content/uploads/2025/08/08-08-25-SPORTS-Dean-Norris-Night-photo-1.jpg"
+      "img": "https://myvalleynews.com/wp-content/uploads/2025/08/08-08-25-SPORTS-Dean-Norris-Night-photo-1.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_dean-norris",
@@ -2486,7 +2568,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://media.gettyimages.com/id/3042294/photo/dominic-monaghan-at-old-trafford.jpg?s=1024x1024&w=gi&k=20&c=puuFcWT7XgbuUdfJUgvVxo5H0c4t4Df7OOQWKPh-8SM="
+      "img": "https://media.gettyimages.com/id/3042294/photo/dominic-monaghan-at-old-trafford.jpg?s=1024x1024&w=gi&k=20&c=puuFcWT7XgbuUdfJUgvVxo5H0c4t4Df7OOQWKPh-8SM=",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_dominic-monaghan",
@@ -2500,7 +2583,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg/330px-Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_elijah-wood",
@@ -2514,7 +2597,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fwestminstercollegepa.sidearmsports.com%2Fimages%2F2020%2F3%2F24%2FWestminster_v_Grove_City_Baseball_151.JPG&type=webp"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_emilio-rivera",
@@ -2528,7 +2611,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-10",
-      "img": "https://i.ebayimg.com/images/g/bV8AAOSwBuFj3SDZ/s-l1200.jpg"
+      "img": "https://i.ebayimg.com/images/g/bV8AAOSwBuFj3SDZ/s-l1200.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_erica-durance",
@@ -2542,7 +2626,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static01.nyt.com/images/2009/08/23/us/marstersspan.jpg?year=2009&h=382&w=600&s=30754aee5f25f68982753367004b966fec27873076a3282d188bdedf46723093&k=ZQJBKqZ0VN&tw=1"
+      "img": "https://static01.nyt.com/images/2009/08/23/us/marstersspan.jpg?year=2009&h=382&w=600&s=30754aee5f25f68982753367004b966fec27873076a3282d188bdedf46723093&k=ZQJBKqZ0VN&tw=1",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_james-marsters",
@@ -2556,7 +2641,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.ebayimg.com/images/g/XR8AAOSwGLZj2C74/s-l400.jpg"
+      "img": "https://i.ebayimg.com/images/g/XR8AAOSwGLZj2C74/s-l400.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_jamison-newlander",
@@ -2570,7 +2656,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://www.hockeydb.com/ihdb/photos/jim-cummins-1996-35.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_jim-cummings",
@@ -2584,7 +2670,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://cuse.com/images/2002/6/13/J_Lee.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_jim-lee",
@@ -2598,7 +2684,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://m.media-amazon.com/images/M/MV5BMTY5MjQ5NDE4M15BMl5BanBnXkFtZTgwMzM1MDI4MzI@._V1_FMjpg_UX1000_.jpg"
+      "img": "https://m.media-amazon.com/images/M/MV5BMTY5MjQ5NDE4M15BMl5BanBnXkFtZTgwMzM1MDI4MzI@._V1_FMjpg_UX1000_.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_joe-quesada",
@@ -2612,7 +2699,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://athletics.bellarmine.edu/images/2025/8/12/DaviesRhys2025.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_john-rhys-davies",
@@ -2626,7 +2713,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://pennstatermag.com/sites/default/files/styles/max_650x650/public/2025-08/SO25%20cover.jpeg?itok=yWvP8Wwa"
+      "img": "https://pennstatermag.com/sites/default/files/styles/max_650x650/public/2025-08/SO25%20cover.jpeg?itok=yWvP8Wwa",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_jonathan-frakes",
@@ -2640,7 +2728,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://m.media-amazon.com/images/M/MV5BMTkxMzM3ODQ1OV5BMl5BanBnXkFtZTgwNzgxMzA1NjE@._V1_.jpg"
+      "img": "https://m.media-amazon.com/images/M/MV5BMTkxMzM3ODQ1OV5BMl5BanBnXkFtZTgwNzgxMzA1NjE@._V1_.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_jonny-coyne",
@@ -2654,7 +2743,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://variety.com/wp-content/uploads/2014/08/judith-hoag-teenage-mutant-ninja-turtles.jpg"
+      "img": "https://variety.com/wp-content/uploads/2014/08/judith-hoag-teenage-mutant-ninja-turtles.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_judith-hoag",
@@ -2668,7 +2758,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://hips.hearstapps.com/hmg-prod/images/wh0722-karengillan-2-1654875233.jpg?crop=1xw:0.5666792595391009xh;center,top&resize=1200:*"
+      "img": "https://hips.hearstapps.com/hmg-prod/images/wh0722-karengillan-2-1654875233.jpg?crop=1xw:0.5666792595391009xh;center,top&resize=1200:*",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_karen-gillan",
@@ -2682,7 +2773,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/80/Kerri_Green_at_Rose_City_Comic_Con_02_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_kerri-green",
@@ -2696,7 +2787,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://hips.hearstapps.com/hmg-prod/images/screen-shot-2022-02-28-at-4-20-21-pm-1646156863.png?crop=0.7673130193905817xw:1xh;center,top&resize=1200:*"
+      "img": "https://hips.hearstapps.com/hmg-prod/images/screen-shot-2022-02-28-at-4-20-21-pm-1646156863.png?crop=0.7673130193905817xw:1xh;center,top&resize=1200:*",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_manny-jacinto",
@@ -2710,7 +2802,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fbombers.ithaca.edu%2Fimages%2F2012%2F4%2F8%2Frosenbaum.jpg&type=webp"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_michael-rosenbaum",
@@ -2724,7 +2816,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Miranda_Otto_by_Gage_Skidmore.jpg/960px-Miranda_Otto_by_Gage_Skidmore.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Miranda_Otto_by_Gage_Skidmore.jpg/960px-Miranda_Otto_by_Gage_Skidmore.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_miranda-otto",
@@ -2738,7 +2831,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://img1.wsimg.com/isteam/ip/bff173b5-bb7c-4d67-8805-23387765619b/image-e0fb30b.jpeg"
+      "img": "https://img1.wsimg.com/isteam/ip/bff173b5-bb7c-4d67-8805-23387765619b/image-e0fb30b.jpeg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_mr-t",
@@ -2752,7 +2846,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://media.gettyimages.com/id/113113242/photo/english-actor-orlando-bloom-plays-with-a.jpg?s=1024x1024&w=gi&k=20&c=OToYsxr92u2sVrrSBqtWTHeZxTQ5x8nwLK0qIIYN9Bo="
+      "img": "https://media.gettyimages.com/id/113113242/photo/english-actor-orlando-bloom-plays-with-a.jpg?s=1024x1024&w=gi&k=20&c=OToYsxr92u2sVrrSBqtWTHeZxTQ5x8nwLK0qIIYN9Bo=",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_orlando-bloom",
@@ -2765,7 +2860,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/orlando-bloom",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_ron-perlman",
@@ -2779,7 +2875,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://hips.hearstapps.com/hmg-prod/images/sean-astin-800-1-1522429169.jpg?crop=0.669xw:0.892xh;0.207xw,0.108xh&resize=1200:*"
+      "img": "https://hips.hearstapps.com/hmg-prod/images/sean-astin-800-1-1522429169.jpg?crop=0.669xw:0.892xh;0.207xw,0.108xh&resize=1200:*",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_sean-astin",
@@ -2793,7 +2890,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Temuera_Morrison_Photo_Op_GalaxyCon_Richmond_2026.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Temuera_Morrison_Photo_Op_GalaxyCon_Richmond_2026.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_temuera-morrison",
@@ -2807,7 +2905,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-20",
-      "img": "https://gojaspers.com/images/2017/11/7/welling.jpeg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_tom-welling",
@@ -2821,7 +2919,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFYNFCviClO5yZYQFp8yw2f0E2nGhDvYgo47MeIKxGN1dy0Rew4x4zRIzAKItXEiS4384w70iCzIRBckK1U9A_WS5qgkD_4nLMPJnH07w_P1sSG56Q6e9j3hK5iikK0-t1U4cX/s1000/Kiran-Badloe-Avatar.png"
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFYNFCviClO5yZYQFp8yw2f0E2nGhDvYgo47MeIKxGN1dy0Rew4x4zRIzAKItXEiS4384w70iCzIRBckK1U9A_WS5qgkD_4nLMPJnH07w_P1sSG56Q6e9j3hK5iikK0-t1U4cX/s1000/Kiran-Badloe-Avatar.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-avatar-the-last-airbender",
@@ -2835,7 +2934,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:240,cw:1440,ch:1080,q:80,w:1440/tPyxwtSQQGYLfo8cFhxdaF.jpg"
+      "img": "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:240,cw:1440,ch:1080,q:80,w:1440/tPyxwtSQQGYLfo8cFhxdaF.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-avatar-the-last-airbender-in-costume",
@@ -2849,7 +2949,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://static.wikia.nocookie.net/sailormoon/images/1/1d/Rui_Saionji.png/revision/latest/thumbnail/width/360/height/360?cb=20140509231947"
+      "img": "https://static.wikia.nocookie.net/sailormoon/images/1/1d/Rui_Saionji.png/revision/latest/thumbnail/width/360/height/360?cb=20140509231947",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-classic-sailor-moon",
@@ -2863,7 +2964,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2025/04/Doctor-Who-2.jpg?fit=1200%2C675&quality=89&ssl=1"
+      "img": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2025/04/Doctor-Who-2.jpg?fit=1200%2C675&quality=89&ssl=1",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-doctor-who-duo",
@@ -2877,7 +2979,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-20",
-      "img": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2024/04/doctor-who-the-10-best-tardis-trios.jpg?w=1200&h=900&fit=crop"
+      "img": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2024/04/doctor-who-the-10-best-tardis-trios.jpg?w=1200&h=900&fit=crop",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-doctor-who-trio",
@@ -2891,7 +2994,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://static.wikia.nocookie.net/edwikia/images/3/3a/Vlcsnap-2019-05-15-09h30m04s369.png/revision/latest?cb=20190515133156"
+      "img": "https://static.wikia.nocookie.net/edwikia/images/3/3a/Vlcsnap-2019-05-15-09h30m04s369.png/revision/latest?cb=20190515133156",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-ed-edd-eddy",
@@ -2905,7 +3009,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-20",
-      "img": "https://preview.redd.it/i-found-this-image-of-the-straw-hat-crew-playing-their-v0-px8gstin74161.jpg?width=1080&crop=smart&auto=webp&s=b8a63471053826e93e67aded5b81aabf40146139"
+      "img": "https://preview.redd.it/i-found-this-image-of-the-straw-hat-crew-playing-their-v0-px8gstin74161.jpg?width=1080&crop=smart&auto=webp&s=b8a63471053826e93e67aded5b81aabf40146139",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-one-piece-straw-hats",
@@ -2919,7 +3024,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.redd.it/yrc1ia6seze21.jpg"
+      "img": "https://i.redd.it/yrc1ia6seze21.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-resident-evil-duo",
@@ -2933,7 +3039,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://i.ytimg.com/vi/b6QBfOi0iik/hqdefault.jpg"
+      "img": "https://i.ytimg.com/vi/b6QBfOi0iik/hqdefault.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-resident-evil-team-up",
@@ -2947,7 +3054,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-10",
-      "img": "https://preview.redd.it/the-senshis-sports-v0-h9zvipcad8d81.jpg?width=1080&crop=smart&auto=webp&s=3169cc0febe2c2678e9b33aaba6e082c731a2d12"
+      "img": "https://preview.redd.it/the-senshis-sports-v0-h9zvipcad8d81.jpg?width=1080&crop=smart&auto=webp&s=3169cc0febe2c2678e9b33aaba6e082c731a2d12",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-sailor-moon-x-sailor-moon",
@@ -2961,7 +3069,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static.wikia.nocookie.net/smallville/images/b/b6/Recruit1.jpg/revision/latest?cb=20060901052748"
+      "img": "https://static.wikia.nocookie.net/smallville/images/b/b6/Recruit1.jpg/revision/latest?cb=20060901052748",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville",
@@ -2975,7 +3084,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static.wikia.nocookie.net/smallville/images/b/b6/Recruit1.jpg/revision/latest?cb=20060901052748"
+      "img": "https://static.wikia.nocookie.net/smallville/images/b/b6/Recruit1.jpg/revision/latest?cb=20060901052748",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville-clark-and-lois",
@@ -2989,7 +3099,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://preview.redd.it/a-very-good-thread-on-why-clark-and-lex-being-friends-back-v0-fbqhhg0p9p6c1.jpg?width=640&crop=smart&auto=webp&s=18b292e4dab1b23c7148550d50e276287d0c3386"
+      "img": "https://preview.redd.it/a-very-good-thread-on-why-clark-and-lex-being-friends-back-v0-fbqhhg0p9p6c1.jpg?width=640&crop=smart&auto=webp&s=18b292e4dab1b23c7148550d50e276287d0c3386",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville-superman-and-lex",
@@ -3002,7 +3113,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-philadelphia/2026/teamup-smallville-superman-and-lex",
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-sons-of-anarchy-duo",
@@ -3016,7 +3128,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-10",
-      "img": "https://about.underarmour.com/content/ua/about/en/stories/2025/06/justin-jefferson-and-under-armour-team-up-and-take-off-at-inaugu/_jcr_content/root/container/multiimage/images/images3_1834458.coreimg.jpg"
+      "img": "https://about.underarmour.com/content/ua/about/en/stories/2025/06/justin-jefferson-and-under-armour-team-up-and-take-off-at-inaugu/_jcr_content/root/container/multiimage/images/images3_1834458.coreimg.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-star-trek-the-next-generation",
@@ -3030,7 +3143,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://images.seattletimes.com/wp-content/uploads/2016/08/92dd9079da2d4aebbdc3bf11fe21bbae.jpg?d=780x525"
+      "img": "https://images.seattletimes.com/wp-content/uploads/2016/08/92dd9079da2d4aebbdc3bf11fe21bbae.jpg?d=780x525",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-acolyte-duo",
@@ -3044,7 +3158,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-20",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/0/04/John_Matuszak.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/0/04/John_Matuszak.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-goonies",
@@ -3058,7 +3173,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://cdn11.bigcommerce.com/s-6k3asdl2tq/images/stencil/1280x1280/products/21242/29162/middleearth-mar14-eowynmerryfoot4myf__67408.1760037553.jpg?c=1"
+      "img": "https://cdn11.bigcommerce.com/s-6k3asdl2tq/images/stencil/1280x1280/products/21242/29162/middleearth-mar14-eowynmerryfoot4myf__67408.1760037553.jpg?c=1",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-duo-eowyn-and-merry",
@@ -3072,7 +3188,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.ytimg.com/vi/QFDaZsT4-sA/maxresdefault.jpg"
+      "img": "https://i.ytimg.com/vi/QFDaZsT4-sA/maxresdefault.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-duo-frodo-and-samwise",
@@ -3086,7 +3203,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/okI9QSDC6InQFJZXQPfBRkbQ1ke0lJENAEDxrI~tplv-photomode-video-share-card:630:630:20.jpeg?dr=9616&refresh_token=709b98fe&x-expires=1810782000&x-signature=qHEnyiE5prdJMeghbe6A0uAguUY%3D&t=4d5b0474&ps=13740610&shp=55bbe6a9&shcp=f07906a3&idc=useast8&ftpl=1"
+      "img": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/okI9QSDC6InQFJZXQPfBRkbQ1ke0lJENAEDxrI~tplv-photomode-video-share-card:630:630:20.jpeg?dr=9616&refresh_token=709b98fe&x-expires=1810782000&x-signature=qHEnyiE5prdJMeghbe6A0uAguUY%3D&t=4d5b0474&ps=13740610&shp=55bbe6a9&shcp=f07906a3&idc=useast8&ftpl=1",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-duo-gimli-and-legolas",
@@ -3100,7 +3218,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/merry-pippin-1627430069916-Cropped.png?w=1600&h=900&fit=crop"
+      "img": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/merry-pippin-1627430069916-Cropped.png?w=1600&h=900&fit=crop",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-duo-pippin-and-merry",
@@ -3114,7 +3233,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://preview.redd.it/three-lord-of-the-rings-legends-reunited-in-belfast-after-v0-08x2orc5k5td1.jpeg?width=640&crop=smart&auto=webp&s=9b218565229e359da0fe519b82e40fde2e8f071c"
+      "img": "https://preview.redd.it/three-lord-of-the-rings-legends-reunited-in-belfast-after-v0-08x2orc5k5td1.jpeg?width=640&crop=smart&auto=webp&s=9b218565229e359da0fe519b82e40fde2e8f071c",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-fellowship-reunion",
@@ -3128,7 +3248,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/rockcms/2022-07/lotr-hobbits-main-lc-220706-619ad7.jpg"
+      "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/rockcms/2022-07/lotr-hobbits-main-lc-220706-619ad7.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-reunion",
@@ -3142,7 +3263,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://vancouverfamilymagazine.com/wp-content/uploads/2025/11/Screenshot-2025-11-13-120016.png"
+      "img": "https://vancouverfamilymagazine.com/wp-content/uploads/2025/11/Screenshot-2025-11-13-120016.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lord-of-the-rings-the-hobbits",
@@ -3156,7 +3278,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://autographpros.com/cdn/shop/products/Feldman-Corey-Frogbrothers-RW60526-thumbnail-1500x1500-100_1024x1024.jpg?v=1764998598"
+      "img": "https://autographpros.com/cdn/shop/products/Feldman-Corey-Frogbrothers-RW60526-thumbnail-1500x1500-100_1024x1024.jpg?v=1764998598",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-the-lost-boys-the-frog-brothers",
@@ -3170,7 +3293,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://preview.redd.it/thoughts-on-turtle-team-up-v0-8rficrvb7wmg1.jpeg?width=640&crop=smart&auto=webp&s=1c58872bd5ec83477980b9d2bb977c365a5bdf0c"
+      "img": "https://preview.redd.it/thoughts-on-turtle-team-up-v0-8rficrvb7wmg1.jpeg?width=640&crop=smart&auto=webp&s=1c58872bd5ec83477980b9d2bb977c365a5bdf0c",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-tmnt-shellabration",
@@ -3184,7 +3308,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/576016/images/872872/mtgtmc107apriloneilhumanelement__97299.1772211257.500.750.jpg?c=2"
+      "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/576016/images/872872/mtgtmc107apriloneilhumanelement__97299.1772211257.500.750.jpg?c=2",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-tmnt-shellabration-with-april",
@@ -3198,7 +3323,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://thepopinsider.com/wp-content/uploads/sites/6/2025/10/FANEXPOHQ_LOTRHobbitEvent.jpg"
+      "img": "https://thepopinsider.com/wp-content/uploads/sites/6/2025/10/FANEXPOHQ_LOTRHobbitEvent.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_an-evening-with-the-hobbits",
@@ -3212,7 +3338,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://varsity.startribune.com/_next/image?url=https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fstartribunemedia%2F5FRG7OXQUFD5VGLG66SOP3KEOE.jpg&w=3840&q=75"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_frank-miller",
@@ -3226,7 +3352,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2013/09/romeo_and_juliet.jpg?w=2000&h=1126&crop=1"
+      "img": "https://www.hollywoodreporter.com/wp-content/uploads/2013/09/romeo_and_juliet.jpg?w=2000&h=1126&crop=1",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_on-stage-with-orlando-bloom",
@@ -3240,7 +3367,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://knect365.imgix.net/uploads/FXCH25-Orlando-Bloom-Announcement---Creative-700X350-ULTIMATE-9e7371026c550eba4f2022b8695f2351.png?auto=format&fit=max&w=412&dpr=5"
+      "img": "https://knect365.imgix.net/uploads/FXCH25-Orlando-Bloom-Announcement---Creative-700X350-ULTIMATE-9e7371026c550eba4f2022b8695f2351.png?auto=format&fit=max&w=412&dpr=5",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_ultimate-backstage-orlando-bloom-experience",
@@ -3254,7 +3382,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.redd.it/xaj2ho1io8u61.jpg"
+      "img": "https://i.redd.it/xaj2ho1io8u61.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_greg-capullo-dan-panosian-comic-experiences",
@@ -3268,7 +3397,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://static.wikia.nocookie.net/smallville/images/b/b6/Recruit1.jpg/revision/latest?cb=20060901052748"
+      "img": "https://static.wikia.nocookie.net/smallville/images/b/b6/Recruit1.jpg/revision/latest?cb=20060901052748",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_smallville-nights",
@@ -3282,7 +3412,8 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://cdn.comicarttracker.com/lc/_33/13372165.jpg"
+      "img": "https://cdn.comicarttracker.com/lc/_33/13372165.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_ahmed-best",
@@ -3296,7 +3427,7 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://okstate.com/images/2025/4/16/250227_MBB_BenAhmedVisit-34_16x9.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_billy-boyd",
@@ -3310,7 +3441,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://www.active-traveller.com/images/mpora-archive/blessed-1-680x452.jpg"
+      "img": "https://www.active-traveller.com/images/mpora-archive/blessed-1-680x452.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_brian-blessed",
@@ -3324,7 +3456,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://media.gettyimages.com/id/3042294/photo/dominic-monaghan-at-old-trafford.jpg?s=1024x1024&w=gi&k=20&c=puuFcWT7XgbuUdfJUgvVxo5H0c4t4Df7OOQWKPh-8SM="
+      "img": "https://media.gettyimages.com/id/3042294/photo/dominic-monaghan-at-old-trafford.jpg?s=1024x1024&w=gi&k=20&c=puuFcWT7XgbuUdfJUgvVxo5H0c4t4Df7OOQWKPh-8SM=",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_dominic-monaghan",
@@ -3338,7 +3471,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg/330px-Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg/330px-Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_elijah-wood",
@@ -3352,7 +3486,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Frank_Welker_Photo_Op_GalaxyCon_Raleigh_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Frank_Welker_Photo_Op_GalaxyCon_Raleigh_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_frank-welker",
@@ -3365,7 +3500,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-anaheim/2026/frank-welker",
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_giancarlo-esposito",
@@ -3379,7 +3515,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-10",
-      "img": "https://i.redd.it/jared-padalecki-appreciation-post-if-you-have-met-him-or-v0-nqd3jst0l5pa1.jpg?width=1098&format=pjpg&auto=webp&s=0a0880f96f6dfe4476f9c73c921ebb872a478e00"
+      "img": "https://i.redd.it/jared-padalecki-appreciation-post-if-you-have-met-him-or-v0-nqd3jst0l5pa1.jpg?width=1098&format=pjpg&auto=webp&s=0a0880f96f6dfe4476f9c73c921ebb872a478e00",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_jared-padalecki",
@@ -3393,7 +3530,7 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15",
-      "img": "https://images.sidearmdev.com/fit?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fesuwarriors.com%2Fimages%2F2014%2F1%2F20%2FMatt_Hamill_graphic12.jpg&height=450&width=800&type=jpeg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_mark-hamill",
@@ -3407,7 +3544,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://www.shutterstock.com/editorial/image-editorial/OcTbIey2N5z7k0weNzk2NQ==/peter-cullen-javelin-thrower-action-white-city-550nw-9163085a.jpg"
+      "img": "https://www.shutterstock.com/editorial/image-editorial/OcTbIey2N5z7k0weNzk2NQ==/peter-cullen-javelin-thrower-action-white-city-550nw-9163085a.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_peter-cullen",
@@ -3421,7 +3559,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://hips.hearstapps.com/hmg-prod/images/sean-astin-800-1-1522429169.jpg?crop=0.669xw:0.892xh;0.207xw,0.108xh&resize=1200:*"
+      "img": "https://hips.hearstapps.com/hmg-prod/images/sean-astin-800-1-1522429169.jpg?crop=0.669xw:0.892xh;0.207xw,0.108xh&resize=1200:*",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_sean-astin",
@@ -3435,7 +3574,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://i.redd.it/2uoxu1qloq941.jpg"
+      "img": "https://i.redd.it/2uoxu1qloq941.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_teamup-star-wars-the-phantom-menace",
@@ -3449,7 +3589,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-20",
-      "img": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/merry-pippin-1627430069916-Cropped.png"
+      "img": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/02/merry-pippin-1627430069916-Cropped.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_teamup-the-lord-of-the-rings-duo-merry-pippin",
@@ -3463,7 +3604,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://i.ebayimg.com/00/s/MTIxNFgxMTQy/z/uV4AAOSw-5NklKSI/$_57.PNG?set_id=880000500F"
+      "img": "https://i.ebayimg.com/00/s/MTIxNFgxMTQy/z/uV4AAOSw-5NklKSI/$_57.PNG?set_id=880000500F",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_teamup-the-lord-of-the-rings-frodo-sam",
@@ -3477,7 +3619,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://vancouverfamilymagazine.com/wp-content/uploads/2025/11/Screenshot-2025-11-13-120016.png"
+      "img": "https://vancouverfamilymagazine.com/wp-content/uploads/2025/11/Screenshot-2025-11-13-120016.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_teamup-the-lord-of-the-rings-the-hobbits",
@@ -3491,7 +3634,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2026/03/418f2fa4-8adf-4bae-8ba5-4dea7de2b62f.197cd9deb1527c095c133aa40390c921-2.jpeg"
+      "img": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2026/03/418f2fa4-8adf-4bae-8ba5-4dea7de2b62f.197cd9deb1527c095c133aa40390c921-2.jpeg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-anaheim_teamup-transformers",
@@ -3505,7 +3649,8 @@
       "notes": "FAN EXPO Anaheim: Special Edition 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mark_Hamill_by_Gage_Skidmore_4.jpg/960px-Mark_Hamill_by_Gage_Skidmore_4.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mark_Hamill_by_Gage_Skidmore_4.jpg/960px-Mark_Hamill_by_Gage_Skidmore_4.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_alexa-bliss",
@@ -3519,7 +3664,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Alexa_Bliss_080325_%28cropped%29.jpg/330px-Alexa_Bliss_080325_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Alexa_Bliss_080325_%28cropped%29.jpg/330px-Alexa_Bliss_080325_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_allen-iverson",
@@ -3533,7 +3679,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Army_Black_Knights_vs_New_York_Yankees_%288610352360%29_%28cropped%29.jpg/330px-Army_Black_Knights_vs_New_York_Yankees_%288610352360%29_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Army_Black_Knights_vs_New_York_Yankees_%288610352360%29_%28cropped%29.jpg/330px-Army_Black_Knights_vs_New_York_Yankees_%288610352360%29_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_andy-pettitte",
@@ -3547,7 +3694,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Anthony_Volpe_%2852073955522%29.jpg/330px-Anthony_Volpe_%2852073955522%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Anthony_Volpe_%2852073955522%29.jpg/330px-Anthony_Volpe_%2852073955522%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_anthony-volpe",
@@ -3561,7 +3709,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_213,q_auto:best/v1/people/669224/headshot/67/current"
+      "img": "https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_213,q_auto:best/v1/people/669224/headshot/67/current",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_austin-wells",
@@ -3575,7 +3724,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Barry_Sanders_2019.jpg/330px-Barry_Sanders_2019.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_barry-sanders",
@@ -3589,7 +3738,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Becky_Lynch_Galaxycon.jpg/330px-Becky_Lynch_Galaxycon.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_becky-lynch",
@@ -3603,7 +3752,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-06",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/BlakeSnell_%28cropped%29.jpg/330px-BlakeSnell_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/BlakeSnell_%28cropped%29.jpg/330px-BlakeSnell_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_blake-snell",
@@ -3617,7 +3767,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Brett_Favre_Super_Bowl_50.jpg/330px-Brett_Favre_Super_Bowl_50.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_brett-favre",
@@ -3631,7 +3781,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Bron_Breakker_-_WWE_Live_RTWM_Nottingham_March_2025_%28cropped%29.jpg/330px-Bron_Breakker_-_WWE_Live_RTWM_Nottingham_March_2025_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Bron_Breakker_-_WWE_Live_RTWM_Nottingham_March_2025_%28cropped%29.jpg/330px-Bron_Breakker_-_WWE_Live_RTWM_Nottingham_March_2025_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_bron-breakker",
@@ -3645,7 +3796,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Cam_Skattebo_Jan_2019.png"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_cam-skattebo",
@@ -3659,7 +3810,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://res.cloudinary.com/usopc-prod/image/upload/v1697141809/TeamUSA%20Assets/Athlete%20Profiles/Caroline%20Harvey%201124180/harvey_c_hero.png"
+      "img": "https://res.cloudinary.com/usopc-prod/image/upload/v1697141809/TeamUSA%20Assets/Athlete%20Profiles/Caroline%20Harvey%201124180/harvey_c_hero.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_caroline-kk-harvey",
@@ -3673,7 +3825,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/3/34/CC_Sabathia_pitching_against_Rays_9-8-16_%283%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_cc-sabathia",
@@ -3687,7 +3839,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://www.usatoday.com/gcdn/-mm-/7144dba557612babe1be23eddcce348a8ce4685b/c=0-286-2695-3880/local/-/media/2017/03/27/USATODAY/USATODAY/636262184022097997-RAW-02272017ca-1727.jpg"
+      "img": "https://www.usatoday.com/gcdn/-mm-/7144dba557612babe1be23eddcce348a8ce4685b/c=0-286-2695-3880/local/-/media/2017/03/27/USATODAY/USATODAY/636262184022097997-RAW-02272017ca-1727.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_charlotte-flair",
@@ -3701,7 +3854,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Chase_Utley_2009.jpg/1280px-Chase_Utley_2009.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Chase_Utley_2009.jpg/1280px-Chase_Utley_2009.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_chase-utley",
@@ -3715,7 +3869,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Cody_Bellinger_7_24_18_%28cropped%29.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_cody-bellinger",
@@ -3729,7 +3883,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://s3.amazonaws.com/rms-rmfiles-production/client_photos/athlete_201444_profile.jpg"
+      "img": "https://s3.amazonaws.com/rms-rmfiles-production/client_photos/athlete_201444_profile.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_cody-rhodes",
@@ -3743,7 +3898,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.ytimg.com/vi/IZAYjP0ksNQ/maxresdefault.jpg"
+      "img": "https://i.ytimg.com/vi/IZAYjP0ksNQ/maxresdefault.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_cooper-dejean",
@@ -3757,7 +3913,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/2/23/Cris_Carter_HOF.JPG"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_cris-carter",
@@ -3771,7 +3927,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static01.nyt.com/images/2023/01/15/magazine/15mag-danhausen-03/15mag-danhausen-03-mediumSquareAt3X.jpg"
+      "img": "https://static01.nyt.com/images/2023/01/15/magazine/15mag-danhausen-03/15mag-danhausen-03-mediumSquareAt3X.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_danhausen",
@@ -3785,7 +3942,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://cdn.britannica.com/51/271051-050-D9AF5433/Darryl-Strawberry-baseball-player-New-York-Mets-smiles-portrait-1983.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_darryl-strawberry",
@@ -3799,7 +3956,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/David_Ortiz_on_July_27%2C_2013.jpg/1280px-David_Ortiz_on_July_27%2C_2013.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/David_Ortiz_on_July_27%2C_2013.jpg/1280px-David_Ortiz_on_July_27%2C_2013.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_david-ortiz",
@@ -3813,7 +3971,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/WrightMarch2016.jpg/960px-WrightMarch2016.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/WrightMarch2016.jpg/960px-WrightMarch2016.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_david-wright",
@@ -3827,7 +3986,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Dennis_Rodman_02_%2834649289162%29_%28cropped%29.jpg/330px-Dennis_Rodman_02_%2834649289162%29_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Dennis_Rodman_02_%2834649289162%29_%28cropped%29.jpg/330px-Dennis_Rodman_02_%2834649289162%29_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_dennis-rodman",
@@ -3841,7 +4001,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Diana_Taurasi_2024_%28cropped%29.jpg/960px-Diana_Taurasi_2024_%28cropped%29.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_diana-taurasi",
@@ -3854,7 +4014,8 @@
       "link": "https://store.epic.leapevent.tech/fanatics-fest-nyc/2026/diana-taurasi",
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_dominik-mysterio",
@@ -3868,7 +4029,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/1981_Nashville_Don_Mattingly.jpg/250px-1981_Nashville_Don_Mattingly.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/1981_Nashville_Don_Mattingly.jpg/250px-1981_Nashville_Don_Mattingly.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_don-mattingly",
@@ -3882,7 +4044,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://dotorg.brightspotcdn.com/40/e3/ced1dab14e7b87702d13d1d86330/800x800-drew-mcintyre.jpg"
+      "img": "https://dotorg.brightspotcdn.com/40/e3/ced1dab14e7b87702d13d1d86330/800x800-drew-mcintyre.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_drew-mcintyre",
@@ -3896,7 +4059,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/2012_Packers_vs_Giants_-_Eli_Manning_2.jpg/250px-2012_Packers_vs_Giants_-_Eli_Manning_2.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_eli-manning",
@@ -3910,7 +4073,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/3/30/Freddie_Freeman_-_Dodgers_vs_Nationals_4-23-2024.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_freddie-freeman",
@@ -3924,7 +4087,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Grant_Hill_2007-12-08.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_grant-hill",
@@ -3938,7 +4101,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static01.nyt.com/athletic/uploads/wp/2026/05/18171330/TA-Peak_HenrikLundqvist-1024x683.jpg"
+      "img": "https://static01.nyt.com/athletic/uploads/wp/2026/05/18171330/TA-Peak_HenrikLundqvist-1024x683.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_henrik-lundqvist",
@@ -3952,7 +4116,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://b.fssta.com/uploads/application/wwe/headshots/io-shirai.png"
+      "img": "https://b.fssta.com/uploads/application/wwe/headshots/io-shirai.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_iyo-sky",
@@ -3966,7 +4131,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Jacob_Fatu_RR25_%28cropped%29.jpg/960px-Jacob_Fatu_RR25_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Jacob_Fatu_RR25_%28cropped%29.jpg/960px-Jacob_Fatu_RR25_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jacob-fatu",
@@ -3980,7 +4146,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://static01.nyt.com/athletic/uploads/wp/2023/05/17161511/USATSI_19704811-scaled-e1684354537617.jpg"
+      "img": "https://static01.nyt.com/athletic/uploads/wp/2023/05/17161511/USATSI_19704811-scaled-e1684354537617.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jahmyr-gibbs",
@@ -3994,7 +4161,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://lookaside.fbsbx.com/lookaside/crawler/threads/DV_WjNFjck4/0/image.jpg"
+      "img": "https://lookaside.fbsbx.com/lookaside/crawler/threads/DV_WjNFjck4/0/image.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jalen-brunson",
@@ -4008,7 +4176,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2025/11/1200/675/jameis-winston-giants-touchdown.jpg?ve=1&tl=1"
+      "img": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2025/11/1200/675/jameis-winston-giants-touchdown.jpg?ve=1&tl=1",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jameis-winston",
@@ -4022,7 +4191,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Folemisssports.com%2Fimages%2F2024%2F7%2F24%2FDart_Jaxson_2024.jpg&width=180&height=270&type=webp"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jaxson-dart",
@@ -4036,7 +4205,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://chicagolandsportshalloffame.com/wp-content/uploads/2024/12/sports-contributor-archive-2022.jpg"
+      "img": "https://chicagolandsportshalloffame.com/wp-content/uploads/2024/12/sports-contributor-archive-2022.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jerome-bettis",
@@ -4050,7 +4220,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://athletesquarterly.com/assets/Uploads/_resampled/ScaleHeightWyI2MjUiXQ/Screen-Shot-2016-02-05-at-11.54.49-AM.png"
+      "img": "https://athletesquarterly.com/assets/Uploads/_resampled/ScaleHeightWyI2MjUiXQ/Screen-Shot-2016-02-05-at-11.54.49-AM.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jerry-rice",
@@ -4064,7 +4235,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Jey_Uso_RR25_%281%29_%28cropped%29.jpg/330px-Jey_Uso_RR25_%281%29_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Jey_Uso_RR25_%281%29_%28cropped%29.jpg/330px-Jey_Uso_RR25_%281%29_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jey-uso",
@@ -4078,7 +4250,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static.foxnews.com/foxnews.com/content/uploads/2025/09/wwe-jimmy-uso-091825-5.jpg"
+      "img": "https://static.foxnews.com/foxnews.com/content/uploads/2025/09/wwe-jimmy-uso-091825-5.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jimmy-uso",
@@ -4092,7 +4265,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "http://static1.squarespace.com/static/5b2d6f2c55b02cb43fc0fed8/5b2d70692b6a2836bfbd720f/5b8323fa70a6ad58d043cc47/1535321877443/JoeHendry8x10.jpg?format=1500w"
+      "img": "http://static1.squarespace.com/static/5b2d6f2c55b02cb43fc0fed8/5b2d70692b6a2836bfbd720f/5b8323fa70a6ad58d043cc47/1535321877443/JoeHendry8x10.jpg?format=1500w",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_joe-hendry",
@@ -4106,7 +4280,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-985087970-1641411707.png?resize=980:*"
+      "img": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-985087970-1641411707.png?resize=980:*",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_joe-montana",
@@ -4120,7 +4295,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_213,q_auto:best/v1/people/120691/headshot/67/current"
+      "img": "https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_213,q_auto:best/v1/people/120691/headshot/67/current",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jorge-posada",
@@ -4134,7 +4310,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/9/90/Jos%C3%A9_Reyes_before_2016_NL_Wild_Card_Game.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jose-reyes",
@@ -4148,7 +4324,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://images2.minutemediacdn.com/image/upload/c_crop,x_711,y_140,w_1660,h_933/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/27/01kdh6r394hbp2cwbeff.jpg"
+      "img": "https://images2.minutemediacdn.com/image/upload/c_crop,x_711,y_140,w_1660,h_933/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/GettyImages/mmsport/27/01kdh6r394hbp2cwbeff.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_josh-hart",
@@ -4162,7 +4339,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Justin_Jefferson_Commanders_vs_Vikings_NOV2022.jpg/250px-Justin_Jefferson_Commanders_vs_Vikings_NOV2022.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Justin_Jefferson_Commanders_vs_Vikings_NOV2022.jpg/250px-Justin_Jefferson_Commanders_vs_Vikings_NOV2022.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_justin-jefferson",
@@ -4176,7 +4354,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://static01.nyt.com/athletic/uploads/wp/2026/02/23020823/GettyImages-2262581790-scaled-e1771849332899.jpg?width=1200&height=1200&fit=cover"
+      "img": "https://static01.nyt.com/athletic/uploads/wp/2026/02/23020823/GettyImages-2262581790-scaled-e1771849332899.jpg?width=1200&height=1200&fit=cover",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_karl-anthony-towns",
@@ -4190,7 +4369,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://cdn.britannica.com/63/243663-050-39A02916/Keith-Hernandez-New-York-Mets-Major-League-Baseball.jpg"
+      "img": "https://cdn.britannica.com/63/243663-050-39A02916/Keith-Hernandez-New-York-Mets-Major-League-Baseball.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_keith-hernandez",
@@ -4204,7 +4384,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://fadeawayworld.net/wp-content/uploads/2025/11/Klay-Thompson--1536x1024.jpg"
+      "img": "https://fadeawayworld.net/wp-content/uploads/2025/11/Klay-Thompson--1536x1024.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_klay-thompson",
@@ -4218,7 +4399,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Kyle_Tucker_%2848784910186%29_%28cropped%29.jpg/330px-Kyle_Tucker_%2848784910186%29_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Kyle_Tucker_%2848784910186%29_%28cropped%29.jpg/330px-Kyle_Tucker_%2848784910186%29_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_kyle-tucker",
@@ -4232,7 +4414,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://a57.foxsports.com/static-media.fox.com/fmc/prod/sports/4b9c14d4-997a-4d33-a877-7c6f043ed8d5/1290/724/b3neg0wkkk0g68id.jpg?ve=1&tl=1"
+      "img": "https://a57.foxsports.com/static-media.fox.com/fmc/prod/sports/4b9c14d4-997a-4d33-a877-7c6f043ed8d5/1290/724/b3neg0wkkk0g68id.jpg?ve=1&tl=1",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_la-knight",
@@ -4246,7 +4429,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://vasportshof.com/wp-content/uploads/2017/08/Taylor-Lawrence_solo.jpg"
+      "img": "https://vasportshof.com/wp-content/uploads/2017/08/Taylor-Lawrence_solo.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_lawrence-taylor",
@@ -4260,7 +4444,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fvillanova.com%2Fimages%2F2023%2F9%2F11%2FMorgan_2_sx0uK.jpg&type=webp"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_liv-morgan",
@@ -4274,7 +4458,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/9/90/Malik_Nabers_Giants_week_1_2025.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/9/90/Malik_Nabers_Giants_week_1_2025.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_malik-nabers",
@@ -4288,7 +4473,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://i.ebayimg.com/images/g/VVwAAeSwhORpvpD-/s-l400.jpg"
+      "img": "https://i.ebayimg.com/images/g/VVwAAeSwhORpvpD-/s-l400.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_marc-andre-fleury",
@@ -4302,7 +4488,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/3/36/Mariano_Rivera_allison_7_29_07.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_mariano-rivera",
@@ -4316,7 +4502,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Megan_Keller.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_megan-keller",
@@ -4330,7 +4516,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Michael_Irvin_by_Gage_Skidmore.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_michael-irvin",
@@ -4344,7 +4530,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://manginphotography.net/wp-content/uploads/2016/07/piazza012.jpg"
+      "img": "https://manginphotography.net/wp-content/uploads/2016/07/piazza012.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_mike-piazza",
@@ -4358,7 +4545,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Mike_Tyson_in_1987_cropped.jpg/250px-Mike_Tyson_in_1987_cropped.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Mike_Tyson_in_1987_cropped.jpg/250px-Mike_Tyson_in_1987_cropped.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_mike-tyson",
@@ -4372,7 +4560,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Odell_Beckham_Jr._%2853103730122%29_%28cropped%29.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_odell-beckham-jr",
@@ -4386,7 +4574,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/5/54/Paolo_Banchero.png"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/5/54/Paolo_Banchero.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_paolo-banchero",
@@ -4400,7 +4589,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Patrick_Ewing_2021_%28cropped%29.jpg/330px-Patrick_Ewing_2021_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Patrick_Ewing_2021_%28cropped%29.jpg/330px-Patrick_Ewing_2021_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_patrick-ewing",
@@ -4414,7 +4604,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Patrick_Kane_Red_Wings.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Patrick_Kane_Red_Wings.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_patrick-kane",
@@ -4428,7 +4619,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Paul_Pierce_2008-01-13_%28cropped%29.jpg/330px-Paul_Pierce_2008-01-13_%28cropped%29.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_paul-pierce",
@@ -4442,7 +4633,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://auprosports.com/wp-content/uploads/athletes/player-938.webp?v=20260224"
+      "img": "https://auprosports.com/wp-content/uploads/athletes/player-938.webp?v=20260224",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_penta",
@@ -4456,7 +4648,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://ca-times.brightspotcdn.com/dims4/default/32472e7/2147483647/strip/true/crop/3678x2451+0+0/resize/2000x1333!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2c%2F75%2F6fc429684185a9dc79f5431382a4%2Fe-tod41573.JPG"
+      "img": "https://ca-times.brightspotcdn.com/dims4/default/32472e7/2147483647/strip/true/crop/3678x2451+0+0/resize/2000x1333!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2c%2F75%2F6fc429684185a9dc79f5431382a4%2Fe-tod41573.JPG",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_puka-nacua",
@@ -4470,7 +4663,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Randy_Orton_RR24_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Randy_Orton_RR24_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_randy-orton",
@@ -4484,7 +4678,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ray-Lewis-2008-Steelers-regseason-game.jpg/330px-Ray-Lewis-2008-Steelers-regseason-game.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ray-Lewis-2008-Steelers-regseason-game.jpg/330px-Ray-Lewis-2008-Steelers-regseason-game.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_ray-lewis",
@@ -4498,7 +4693,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Rhea_Ripley_040724_%28cropped%29.jpg/330px-Rhea_Ripley_040724_%28cropped%29.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_rhea-ripley",
@@ -4512,7 +4707,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/15/Lipofsky-Roger-Clemens.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_roger-clemens",
@@ -4526,7 +4721,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://cdn.britannica.com/44/228344-050-9B21069E/American-basketball-player-Scottie-Pippen-1995.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_scottie-pippen",
@@ -4540,7 +4735,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://b.fssta.com/uploads/application/wwe/headshots/seth-rollins.png"
+      "img": "https://b.fssta.com/uploads/application/wwe/headshots/seth-rollins.png",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_seth-rollins",
@@ -4554,7 +4750,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://thewilsonwire.org/wp-content/uploads/2025/12/stephanievaquer-e1765134110901-1200x1138.jpg"
+      "img": "https://thewilsonwire.org/wp-content/uploads/2025/12/stephanievaquer-e1765134110901-1200x1138.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_stephanie-vaquer",
@@ -4568,7 +4765,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://nypost.com/wp-content/uploads/sites/2/2025/08/tffany-stratton-wwe-star-tiffany-110158985.jpg?w=819"
+      "img": "https://nypost.com/wp-content/uploads/sites/2/2025/08/tffany-stratton-wwe-star-tiffany-110158985.jpg?w=819",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_tiffany-stratton",
@@ -4582,7 +4780,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/4/42/Trae_Young_%282022_All-Star_Weekend%29_%28cropped%29.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_trae-young",
@@ -4596,7 +4794,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Trish_Stratus_RR25.jpg/250px-Trish_Stratus_RR25.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_trish-stratus",
@@ -4610,7 +4808,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/16/1_tyrese_haliburton_2025_%28cropped_2%29.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_tyrese-haliburton",
@@ -4624,7 +4822,7 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Will_Smith_%28American_football%29.JPG"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_will-smith",
@@ -4638,7 +4836,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://outsports-wp.b-cdn.net/uploads/2026/01/instajocks-jan-10-2026-b.png?width=772&height=434&aspect_ratio=1.78:1&crop_gravity=north"
+      "img": "https://outsports-wp.b-cdn.net/uploads/2026/01/instajocks-jan-10-2026-b.png?width=772&height=434&aspect_ratio=1.78:1&crop_gravity=north",
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_hot-flips",
@@ -4652,7 +4851,8 @@
       "notes": "Fanatics Fest NYC 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-10",
-      "img": "https://www.spenceloa.com/assets/images/photo/services/services-loa.jpg"
+      "img": "https://www.spenceloa.com/assets/images/photo/services/services-loa.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_mcm-comic-con-birmingham_britt-baron",
@@ -4679,8 +4879,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-birmingham/2026/bryce-papenbrook",
       "notes": "MCM Comic Con Birmingham 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/514792339_24406341528962992_6958584976690724759_n.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_mcm-comic-con-birmingham_cassandra-lee-morris",
@@ -4707,8 +4906,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-birmingham/2026/charlie-cox",
       "notes": "MCM Comic Con Birmingham 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/2/26/Deborah_Ann_Woll_Photo_Op_GalaxyCon_Raleigh_2024.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_mcm-comic-con-birmingham_deborah-ann-woll",
@@ -4735,8 +4933,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-birmingham/2026/john-eric-bentley",
       "notes": "MCM Comic Con Birmingham 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fhindscc.sidearmsports.com%2Fimages%2F2012%2F3%2F21%2FKirkThornton.jpg&type=webp"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_mcm-comic-con-birmingham_kirk-thornton",
@@ -4833,8 +5030,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/ashley-greene",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "img": "https://mkepanthers.com/images/2014/10/2/GREEN_Ashley.jpg?width=300"
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-boston_billy-boyd",
@@ -4847,8 +5043,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/billy-boyd",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://gopoly.com/images/2020/4/15/chris_judge_fball_2014_15.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-boston_christopher-judge",
@@ -5014,8 +5209,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/jason-marsden",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/4/4e/260321_John_Noble_03.jpg"
+      "addedAt": "2026-05-10"
     },
     {
       "id": "epic_fan-expo-boston_john-noble",
@@ -5028,8 +5222,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/john-noble",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://athletics.bellarmine.edu/images/2025/8/12/DaviesRhys2025.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-boston_john-rhys-davies",
@@ -5098,8 +5291,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/kellan-lutz",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/80/Kerri_Green_at_Rose_City_Comic_Con_02_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-boston_kerri-green",
@@ -5153,8 +5345,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/martha-plimpton",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://catamountsports.com/images/2022/8/12/Mel_Gibson.jpg?width=300"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-boston_mel-gibson",
@@ -5167,8 +5358,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/mel-gibson",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fbombers.ithaca.edu%2Fimages%2F2012%2F4%2F8%2Frosenbaum.jpg&type=webp"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-boston_michael-rosenbaum",
@@ -5251,8 +5441,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/sean-astin",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://gojaspers.com/images/2017/11/7/welling.jpeg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_fan-expo-boston_tom-welling",
@@ -5279,8 +5468,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/valorie-curry",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Vinessa_Shaw_%2853258037051%29.jpg"
+      "addedAt": "2026-05-10"
     },
     {
       "id": "epic_fan-expo-boston_vinessa-shaw",
@@ -5307,8 +5495,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/christian-borle",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20",
-      "img": "https://athletics.delval.edu/images/2025/8/20/J._Perez.JPG?width=300"
+      "addedAt": "2026-05-20"
     },
     {
       "id": "epic_fan-expo-boston_joel-perez",
@@ -5321,8 +5508,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/joel-perez",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Krystina_Alabado_Photo_Op_Animate%21_Columbus_2025.jpg/960px-Krystina_Alabado_Photo_Op_Animate%21_Columbus_2025.jpg"
+      "addedAt": "2026-05-20"
     },
     {
       "id": "epic_fan-expo-boston_krystina-alabado",
@@ -5335,8 +5521,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/krystina-alabado",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20",
-      "img": "https://athletics.chapman.edu/images/2026/2/11/Cooper__Lily_RESIZED.jpg?width=300"
+      "addedAt": "2026-05-20"
     },
     {
       "id": "epic_fan-expo-boston_teamup-hazbin-hotel-the-vees",
@@ -5950,8 +6135,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/bruce-mcgill",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://broadwaydirect.com/wp-content/uploads/2025/11/Exclusive_Chess_2401x3600_07-683x1024.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_colorado-springs-comic-con_bryce-pinkham",
@@ -5964,8 +6148,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/bryce-pinkham",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://maritimeathletics.com/images/2025/2/5/32-bartlett.JPG"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_colorado-springs-comic-con_chris-bartlett",
@@ -6006,8 +6189,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/dan-fogler",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/9/90/DaphneRubinVega.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_colorado-springs-comic-con_daphne-rubin-vega",
@@ -6089,8 +6271,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/janie-haddad-tompkins",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20",
-      "img": "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Frichmond.sidearmsports.com%2Fimages%2F2011%2F7%2F20%2Feastman.jpg&width=120&height=180&type=webp"
+      "addedAt": "2026-05-20"
     },
     {
       "id": "epic_colorado-springs-comic-con_kevin-eastman",
@@ -6131,8 +6312,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/kimiko-glenn",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://roanokemaroons.com/images/2023/6/13/kristen_maguire_fh_2012_13.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_colorado-springs-comic-con_kristen-mcguire",
@@ -6201,8 +6381,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/marisa-tomei",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/0/00/Matt_Ryan_%28basketball%29_%28cropped%29.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_colorado-springs-comic-con_matt-ryan",
@@ -6215,8 +6394,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/matt-ryan",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fusf.sidearmsports.com%2Fimages%2F2022%2F1%2F18%2FCavanaugh_Meghan_032121_WSOCvUCF_MH076.jpg&type=webp"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_colorado-springs-comic-con_megan-cavanagh",
@@ -6229,8 +6407,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/megan-cavanagh",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Melissa_Fahn_on_Otalku_at_Anime_USA_2015.jpg/330px-Melissa_Fahn_on_Otalku_at_Anime_USA_2015.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_colorado-springs-comic-con_melissa-fahn",
@@ -6313,8 +6490,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/patti-pelton",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/5/53/Richard_Horvitz_at_Galaxy_Con_Richmond_%28cropped%29.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_colorado-springs-comic-con_richard-horvitz",
@@ -6341,8 +6517,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/rider-strong",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdbukjj6eu5tsf.cloudfront.net%2Fsidearm.sites%2Flono.sidearmsports.com%2Fimages%2F2025%2F9%2F29%2F2025_ITA_Regional_MTEN_Marin_5.jpg&type=webp"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_colorado-springs-comic-con_sam-marin",
@@ -6355,8 +6530,7 @@
       "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/sam-marin",
       "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/11/Saraya_Bevis%2C_September_2022_%28cropped%29.jpg"
+      "addedAt": "2026-05-20"
     },
     {
       "id": "epic_colorado-springs-comic-con_saraya-fka-paige",
@@ -6453,8 +6627,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/brendan-wayne",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/2/27/Cara_Buono_cbb_%28cropped%29.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-canada_cara-buono",
@@ -6467,8 +6640,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/cara-buono",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fwingatebulldogs.com%2Fimages%2F2010%2F3%2F6%2FO_Donoghue_Colin_MC_February_27.jpg&type=webp"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-canada_colin-odonoghue",
@@ -6593,8 +6765,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/joe-quesada",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://athletics.bellarmine.edu/images/2025/8/12/DaviesRhys2025.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-canada_john-rhys-davies",
@@ -6607,8 +6778,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/john-rhys-davies",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10",
-      "img": "https://samfordsports.com/images/2024/7/31/Josh_Holloway.JPG"
+      "addedAt": "2026-05-10"
     },
     {
       "id": "epic_fan-expo-canada_josh-holloway",
@@ -6621,8 +6791,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/josh-holloway",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/80/Kerri_Green_at_Rose_City_Comic_Con_02_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-canada_kerri-green",
@@ -6649,8 +6818,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/martha-plimpton",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://catamountsports.com/images/2022/8/12/Mel_Gibson.jpg?width=300"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-canada_mel-gibson",
@@ -7040,8 +7208,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-dallas/2026/karl-urban",
       "notes": "FAN EXPO Dallas 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/8/80/Kerri_Green_at_Rose_City_Comic_Con_02_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-dallas_kerri-green",
@@ -7068,8 +7235,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-dallas/2026/martha-plimpton",
       "notes": "FAN EXPO Dallas 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Matthew_Lewis_%28footballer%29.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-dallas_matthew-lewis",
@@ -7082,8 +7248,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-dallas/2026/matthew-lewis",
       "notes": "FAN EXPO Dallas 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://catamountsports.com/images/2022/8/12/Mel_Gibson.jpg?width=300"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-dallas_mel-gibson",
@@ -7432,8 +7597,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/teamup-regular-show",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20",
-      "img": "https://fiusports.com/images/2018/7/12/31_Michael_Douglas.jpg"
+      "addedAt": "2026-05-20"
     },
     {
       "id": "epic_rhode-island-comic-con_michael-douglas",
@@ -7515,8 +7679,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/brandon-rogers",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://broadwaydirect.com/wp-content/uploads/2025/11/Exclusive_Chess_2401x3600_07-683x1024.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_rhode-island-comic-con_bryce-pinkham",
@@ -7543,8 +7706,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/catherine-bell",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://maritimeathletics.com/images/2025/2/5/32-bartlett.JPG"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_rhode-island-comic-con_chris-bartlett",
@@ -7571,8 +7733,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/cote-de-pablo",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/9/90/DaphneRubinVega.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_rhode-island-comic-con_daphne-rubin-vega",
@@ -7738,8 +7899,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/kimiko-glenn",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/WW_Chicago_2012_-_Lauren_Holly_01_%287785748370%29.jpg/960px-WW_Chicago_2012_-_Lauren_Holly_01_%287785748370%29.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_rhode-island-comic-con_lauren-holly",
@@ -7752,8 +7912,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/lauren-holly",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/LeslieRodriguezKritzer-byPhilipRomano.jpg/960px-LeslieRodriguezKritzer-byPhilipRomano.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_rhode-island-comic-con_leslie-rodriguez-kritzer",
@@ -7766,8 +7925,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/leslie-rodriguez-kritzer",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://gotiffindragons.com/images/2023/9/21/madison_lintz_wvball_2017_18.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_rhode-island-comic-con_madison-lintz",
@@ -7780,8 +7938,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/madison-lintz",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/0/00/Matt_Ryan_%28basketball%29_%28cropped%29.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_rhode-island-comic-con_matt-ryan",
@@ -7794,8 +7951,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/matt-ryan",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://angelosports.com/images/2011/12/2/Weatherly_Michael_5843.JPG?width=300"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_rhode-island-comic-con_michael-weatherly",
@@ -7864,8 +8020,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/patina-miller",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/6/67/2013_IPC_Athletics_World_Championships_-_26072013_-_Paul_Blake_of_Great-Britain_during_the_Men%27s_400m_-_T36_final.jpg"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_rhode-island-comic-con_paul-blake",
@@ -7892,8 +8047,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/paul-sun-hyung-lee",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/5/53/Richard_Horvitz_at_Galaxy_Con_Richmond_%28cropped%29.jpg"
+      "addedAt": "2026-05-10"
     },
     {
       "id": "epic_rhode-island-comic-con_richard-horvitz",
@@ -7920,8 +8074,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/sam-haft",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdbukjj6eu5tsf.cloudfront.net%2Fsidearm.sites%2Flono.sidearmsports.com%2Fimages%2F2025%2F9%2F29%2F2025_ITA_Regional_MTEN_Marin_5.jpg&type=webp"
+      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_rhode-island-comic-con_sam-marin",
@@ -7948,8 +8101,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/sam-witwer",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-15",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/4/45/Gold_medal_ceremony_at_the_world_student_games_after_re-run.jpg"
+      "addedAt": "2026-05-15"
     },
     {
       "id": "epic_rhode-island-comic-con_simon-williamson",
@@ -8061,8 +8213,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "linkBroken": true,
-      "img": "https://gosmithbears.com/images/2013/11/11/IMG_4598.jpg?width=300"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_henry-ian-cusick",
@@ -8106,8 +8257,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
-      "linkBroken": true,
-      "img": "https://images.maxpreps.com/editorial/article/3/9/c/39cdd217-d1f9-4d1a-b15e-7edd0bb830ad/081dd529-05f0-4d33-b545-18406645db28_original.jpg?version=638739228470439070"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_teamup-the-karate-kid",
@@ -8186,8 +8336,7 @@
       "link": "https://www.eventbrite.com/e/bcmc-chicago-makers-meet-greet-tickets-1986224698541",
       "notes": "BCMC Chicago Makers Meet & Greet",
       "source": "eventbrite.com",
-      "addedAt": "2026-05-10",
-      "img": "https://depaulbluedemons.com/images/2025/4/21/GpEkZsYXoAAy7Iw.jpeg"
+      "addedAt": "2026-05-10"
     },
     {
       "id": "eb_1778411794824_hyi5n",
@@ -8304,8 +8453,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "linkBroken": true,
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fbombers.ithaca.edu%2Fimages%2F2012%2F4%2F8%2Frosenbaum.jpg&type=webp"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_teamup-smallville-clark-and-lana",
@@ -8377,8 +8525,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/billy-boyd",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/1/17/Billy_Boyd%2C_1928_%28cropped%29.jpg"
+      "addedAt": "2026-04-03"
     },
     {
       "id": "epic_fan-expo-chicago_brendan-wayne",
@@ -8433,8 +8580,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/colby-minifie",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fwingatebulldogs.com%2Fimages%2F2010%2F3%2F6%2FO_Donoghue_Colin_MC_February_27.jpg&type=webp"
+      "addedAt": "2026-05-10"
     },
     {
       "id": "epic_fan-expo-chicago_colin-odonoghue",
@@ -8558,8 +8704,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/erin-moriarty",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fstevens.sidearmsports.com%2Fimages%2F2025%2F2%2F26%2FConnelly_Eastern_03272024.jpg&type=webp"
+      "addedAt": "2026-05-10"
     },
     {
       "id": "epic_fan-expo-chicago_jake-connelly",
@@ -8628,8 +8773,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/joe-pantoliano",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/5/5e/John_Conduit_Carpenter_1908_Olympics_01.jpg"
+      "addedAt": "2026-04-03"
     },
     {
       "id": "epic_fan-expo-chicago_john-carpenter",
@@ -8642,8 +8786,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/john-carpenter",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/4/4e/260321_John_Noble_03.jpg"
+      "addedAt": "2026-04-03"
     },
     {
       "id": "epic_fan-expo-chicago_john-noble",
@@ -8767,8 +8910,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/martha-plimpton",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03",
-      "img": "https://catamountsports.com/images/2022/8/12/Mel_Gibson.jpg?width=300"
+      "addedAt": "2026-04-03"
     },
     {
       "id": "epic_fan-expo-chicago_mel-gibson",
@@ -8781,8 +8923,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/mel-gibson",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://images.sidearmdev.com/convert?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fbombers.ithaca.edu%2Fimages%2F2012%2F4%2F8%2Frosenbaum.jpg&type=webp"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-chicago_michael-rosenbaum",
@@ -8851,8 +8992,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/oliver-phelps",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Omri_Katz_Photo_Op_Nightmare_Weekend_Richmond_2023.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-chicago_omri-katz",
@@ -8977,8 +9117,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/valorie-curry",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Vinessa_Shaw_%2853258037051%29.jpg"
+      "addedAt": "2026-05-10"
     },
     {
       "id": "epic_fan-expo-chicago_vinessa-shaw",
@@ -9423,8 +9562,7 @@
       "link": "https://www.eventbrite.com/e/kyle-schwarber-private-autograph-signing-65-tickets-1987836158461",
       "notes": "Kyle Schwarber Private Autograph Signing 6/5",
       "source": "eventbrite.com",
-      "addedAt": "2026-05-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/9/94/Kyle_Schwarber_taking_a_practice_swing%2C_August_13%2C_2022.jpg"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "eb_1777981002284_fviic",
@@ -9467,8 +9605,7 @@
       "notes": "FAN EXPO Denver 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "linkBroken": true,
-      "img": "https://hendrixwarriors.com/images/2017/2/3/MatthewLillard.jpg?width=300"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-denver_frame-your-photo",
@@ -9496,8 +9633,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/christian-borle",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://athletics.delval.edu/images/2025/8/20/J._Perez.JPG?width=300"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-canada_joel-perez",
@@ -9524,8 +9660,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/krystina-alabado",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05",
-      "img": "https://athletics.chapman.edu/images/2026/2/11/Cooper__Lily_RESIZED.jpg?width=300"
+      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-canada_lilli-cooper",
@@ -9667,8 +9802,7 @@
       "notes": "FAN EXPO Philadelphia 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "linkBroken": true,
-      "img": "https://gofrogs.com/images/2024/7/30/8_Stephanie_Young_VB_2024-12426-EDIT.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-philadelphia_stephanie-young",
@@ -10146,8 +10280,7 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/kenn-scott",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Robbie_Rist_%2854691476914%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+      "addedAt": "2026-04-10"
     },
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-the-hobbits",
@@ -10201,8 +10334,7 @@
       "notes": "Matt Le Tissier In Conversation — Q&A, meet & greet, photo opportunity. Bournemouth Life Centre.",
       "source": "eventbrite.co.uk",
       "addedAt": "2026-04-06",
-      "linkBroken": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Matt_Le_Tissier_2022.png"
+      "linkBroken": true
     },
     {
       "id": "soc_merson_swindon_may29_2026",
@@ -10230,8 +10362,7 @@
       "link": "https://billetterie.clermontfoot.com/fr/nos-offres/match_des_l%C3%A9gendes",
       "notes": "Match des Légendes — 35e anniversaire Clermont Foot. Robert Pirès, Emmanuel Petit, Franck Leboeuf, Éric Carrière, Steve Savidan. Séances de dédicaces (autograph sessions) + Fan Zone + concert.",
       "source": "billetterie.clermontfoot.com",
-      "addedAt": "2026-04-06",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Robert_Pires_2011.jpg"
+      "addedAt": "2026-04-06"
     },
     {
       "id": "nscc_2026_rosemont_jul29",
@@ -10424,8 +10555,7 @@
       "notes": "Fanatics Fest NYC 2026 — July 16-19 at the Javits Center. Autograph signing / meet & greet.",
       "source": "fanaticsfest.com",
       "addedAt": "2026-04-06",
-      "linkBroken": true,
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Midge_Purce_during_Gotham_Angel_City_Sep_7_25-084_%28cropped%29.jpg/960px-Midge_Purce_during_Gotham_Angel_City_Sep_7_25-084_%28cropped%29.jpg"
+      "linkBroken": true
     },
     {
       "id": "epic_fanatics-fest-nyc_jordan-chiles",
@@ -10593,5 +10723,6 @@
       "source": "tst7v7.com",
       "addedAt": "2026-05-05"
     }
-  ]
+  ],
+  "linkCheckedAt": "2026-05-25T10:20:19.224Z"
 }
