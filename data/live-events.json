@@ -7058,6 +7058,36 @@
       "noMG": false,
       "source": "legendsinsession.com",
       "addedAt": "2026-05-31"
+    },
+    {
+      "id": "manual_rio_ferdinand_fanaticsfest_jul17",
+      "player": "Rio Ferdinand",
+      "title": "Rio Ferdinand — Photo Op at Fanatics Fest NYC 2026",
+      "sport": "soccer",
+      "date": "2026-07-17",
+      "venue": "Javits Center",
+      "city": "New York, NY 🇺🇸",
+      "link": "https://www.fanaticsfest.com/talent",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Rio_Ferdinand_2009.jpg/440px-Rio_Ferdinand_2009.jpg",
+      "notes": "Rio Ferdinand paid photo op at Fanatics Fest NYC 2026. Friday July 17, 2026. Javits Center, NYC. Tickets at fanaticsfest.com.",
+      "noMG": false,
+      "source": "fanaticsfest.com",
+      "addedAt": "2026-05-31"
+    },
+    {
+      "id": "manual_roberto_carlos_fanaticsfest_jul18",
+      "player": "Roberto Carlos",
+      "title": "Roberto Carlos — Photo Op at Fanatics Fest NYC 2026",
+      "sport": "soccer",
+      "date": "2026-07-18",
+      "venue": "Javits Center",
+      "city": "New York, NY 🇺🇸",
+      "link": "https://www.fanaticsfest.com/talent",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Roberto_Carlos_2012.jpg/440px-Roberto_Carlos_2012.jpg",
+      "notes": "Roberto Carlos paid photo ops + Fanatics Games at Fanatics Fest NYC 2026. Saturday July 18, 2026. Javits Center, NYC. Tickets on sale soon at fanaticsfest.com.",
+      "noMG": false,
+      "source": "fanaticsfest.com",
+      "addedAt": "2026-05-31"
     }
   ]
 }

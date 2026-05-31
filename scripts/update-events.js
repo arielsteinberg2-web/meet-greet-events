@@ -185,6 +185,8 @@ const ALL_QUERIES = [
   { q: 'fanatics fest nyc 2026 athlete signing meet greet autograph javits',  lang: 'en' },
   { q: 'site:store.epic.leapevent.tech/fanatics-fest-nyc autograph signing meet greet athlete 2026', lang: 'en' },
   { q: '"fanatics fest" 2026 athlete signing meet greet VIP experience',      lang: 'en' },
+  { q: 'site:fanaticsfest.com talent soccer football player photo op signing 2026', lang: 'en' },
+  { q: 'fanatics fest NYC 2026 new talent announcement soccer football legend photo op', lang: 'en' },
   // ── Soccer — broad Instagram discovery (catches unknown organizers) ──────────
   { q: 'site:instagram.com "meet and greet" futbolista 2026',                sport: 'soccer', lang: 'es' },
   { q: 'site:instagram.com "firma autógrafos" futbolista leyenda 2026',      sport: 'soccer', lang: 'es' },
