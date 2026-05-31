@@ -91,6 +91,9 @@ const ALL_QUERIES = [
   { q: 'site:fanki.com.mx futbolista leyendas partido meet 2026',             lang: 'es' },
   { q: 'site:boletomovil.com firma autografos futbolista meet greet 2026',    lang: 'es' },
   { q: 'site:shopwss.com meet greet legend athlete event 2026',               lang: 'en' },
+  { q: 'site:legendsinsession.com athlete meet greet VIP legend event 2026', lang: 'en' },
+  { q: '"Ghana Black Stars" OR "Asamoah Gyan" meet greet fan experience USA 2026', lang: 'en' },
+  { q: '"S&B Sports Collectibles" OR "dlaportesportscollectibles" autograph signing athlete 2026', lang: 'en' },
   { q: 'site:ll12.vip/event LALIGA legend meet greet watch party',           lang: 'en' },
   { q: 'site:meninblazers.com events live soccer legend guest 2026',          lang: 'en' },
   // ── Club fan tours — catch official club-run fan experiences (e.g. Casa Atleti) ──
@@ -353,6 +356,12 @@ const INSTAGRAM_ACCOUNTS = [
   'footnostalgie',         // Foot Nostalgie — French soccer legends signings and events
   // ── Basketball — sports card / collectibles store events (NYC) ──
   'cardvaultbytombrady',   // Card Vault by Tom Brady, Brooklyn NY — hosts NBA player signing/M&G events
+  // ── USA — new signing organizers discovered May 2026 ──
+  'dlaportesportscollectibles', // S&B Sports Collectibles — Allen Iverson/Jalen Carter-style NBA signing events (Montgomery Mall area)
+  'horacegrant54',              // Horace Grant official — posts own signing/M&G appearances
+  'legendsinsession',           // Legends in Session — Chicago legends basketball fan events
+  'champions_impact_official',  // Champions Impact Korea — FC Barcelona & legends M&G events (SE Asia)
+  'adesadako',                  // Ghana Black Stars Experience — legends M&G events USA
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
@@ -400,6 +409,11 @@ const MONITORED_PLAYERS = [
   'Rick Ross',
   'Noah Clowney',
   'Aldair',
+  'Jalen Carter',
+  'Asamoah Gyan',
+  'Stephen Appiah',
+  'Cobi Jones',
+  'Horace Grant',
 ];
 
 // ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────
