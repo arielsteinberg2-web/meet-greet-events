@@ -409,6 +409,7 @@ const MONITORED_PLAYERS = [
   'Rick Ross',
   'Noah Clowney',
   'Aldair',
+  'Jordi Alba',
 ];
 
 // ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────
