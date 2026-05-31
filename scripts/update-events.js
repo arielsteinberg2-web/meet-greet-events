@@ -409,11 +409,6 @@ const MONITORED_PLAYERS = [
   'Rick Ross',
   'Noah Clowney',
   'Aldair',
-  'Jalen Carter',
-  'Asamoah Gyan',
-  'Stephen Appiah',
-  'Cobi Jones',
-  'Horace Grant',
 ];
 
 // ── LL12 CITY MONITOR — direct-fetch every known city page daily ──────────────
