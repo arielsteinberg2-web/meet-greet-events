@@ -364,6 +364,19 @@ const INSTAGRAM_ACCOUNTS = [
   'legendsinsession',           // Legends in Session — Chicago legends basketball fan events
   'champions_impact_official',  // Champions Impact Korea — FC Barcelona & legends M&G events (SE Asia)
   'adesadako',                  // Ghana Black Stars Experience — legends M&G events USA
+  // ── USA — organizers discovered June 2026 scouting ──
+  'dsportscollectibles',        // D Sports Collectibles — Eagles/NFL player autograph signings (Montgomery Mall PA)
+  'ballinspro88',               // Ballins Pro — NBA legend in-store signing events (Yonkers NY)
+  'mvps',                       // MVPs.com — athlete meet & greet partnerships (Harry Maguire Times Square etc.)
+  'bevmo',                      // BevMo retail — alcohol-brand-partnership athlete M&G events (Luis Hernández etc.)
+  'thesamahfoundation',         // Samah Foundation — USMNT legends reunion & soccer celebration events
+  'floridapremier_fc',          // Florida Premier FC — Tampa Bay soccer player M&G events
+  'tudn',                       // TUDN Spanish-language sports network — hosts Mexico soccer legend fan shop M&G events
+  // ── Southeast Asia — soccer legends events (June 2026) ──
+  'mancingapore',               // Manchester United Singapore supporters — Berbatov-style legends breakfast M&G events
+  'aeonmallmalaysia',           // AEON Mall Malaysia — hosts international soccer legend meet & greet events
+  // ── Soccer — World Cup 2026 USA experience events ──
+  'uniportsoccer',              // Uniport Soccer — Portugal Futebol Experience events (Fernando Meira etc.)
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
