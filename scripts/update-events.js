@@ -376,7 +376,13 @@ const INSTAGRAM_ACCOUNTS = [
   'mancingapore',               // Manchester United Singapore supporters — Berbatov-style legends breakfast M&G events
   'aeonmallmalaysia',           // AEON Mall Malaysia — hosts international soccer legend meet & greet events
   // ── Soccer — World Cup 2026 USA experience events ──
-  'uniportsoccer',              // Uniport Soccer — Portugal Futebol Experience events (Fernando Meira etc.)
+  'uniportsoccer',              // Uniport Soccer — Portugal Futebol Experience events (Fernando Meira, Quaresma etc.)
+  // ── Soccer — Mexico / Latin America — Panini & brand signing events ──
+  'panini_mx',                  // Panini Mexico — hosts Copa América-era autograph signings (Zague, Héctor Moreno etc.)
+  // ── USA — sports retail World Cup 2026 activations ──
+  'lids',                       // Lids — sports retail stores hosting soccer player M&G events (NYC locations etc.)
+  // ── Basketball — Antetokounmpo family foundation (Greece) ──
+  'antetokounbros',             // Antetokounmpo Brothers foundation — basketball M&G events in Greece
 ];
 
 // ── MONITORED PLAYERS — add names here to track them individually ─────────────
