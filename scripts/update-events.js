@@ -371,16 +371,16 @@ const INSTAGRAM_ACCOUNTS = [
   'bevmo',                      // BevMo retail — alcohol-brand-partnership athlete M&G events (Luis Hernández etc.)
   'thesamahfoundation',         // Samah Foundation — USMNT legends reunion & soccer celebration events
   'floridapremier_fc',          // Florida Premier FC — Tampa Bay soccer player M&G events
-  'tudn',                       // TUDN Spanish-language sports network — hosts Mexico soccer legend fan shop M&G events
+  'tudn',                       // TUDN Spanish-language sports network — Mexico soccer legend fan shop M&G events
   // ── Southeast Asia — soccer legends events (June 2026) ──
-  'mancingapore',               // Manchester United Singapore supporters — Berbatov-style legends breakfast M&G events
-  'aeonmallmalaysia',           // AEON Mall Malaysia — hosts international soccer legend meet & greet events
+  'mancingapore',               // Manchester United Singapore supporters — legends breakfast M&G events
+  'aeonmallmalaysia',           // AEON Mall Malaysia — hosts international soccer legend M&G events
   // ── Soccer — World Cup 2026 USA experience events ──
-  'uniportsoccer',              // Uniport Soccer — Portugal Futebol Experience events (Fernando Meira, Quaresma etc.)
+  'uniportsoccer',              // Uniport Soccer — Portugal Futebol Experience events (Meira, Quaresma etc.)
   // ── Soccer — Mexico / Latin America — Panini & brand signing events ──
-  'panini_mx',                  // Panini Mexico — hosts Copa América-era autograph signings (Zague, Héctor Moreno etc.)
+  'panini_mx',                  // Panini Mexico — Copa América-era autograph signings (Zague, Héctor Moreno etc.)
   // ── USA — sports retail World Cup 2026 activations ──
-  'lids',                       // Lids — sports retail stores hosting soccer player M&G events (NYC locations etc.)
+  'lids',                       // Lids — sports retail stores hosting soccer player M&G events (NYC etc.)
   // ── Basketball — Antetokounmpo family foundation (Greece) ──
   'antetokounbros',             // Antetokounmpo Brothers foundation — basketball M&G events in Greece
 ];
