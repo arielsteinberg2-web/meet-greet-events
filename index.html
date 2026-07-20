@@ -1506,7 +1506,7 @@
       <h1>Meet &amp; Greet Events Finder<span class="h1-tag">2026</span></h1>
       <div class="ts-chip" id="tsChip" title="Events are automatically refreshed weekly">
         <span class="ts-dot stale" id="tsDot"></span>
-        <span id="tsLabel">Updated 15 Jul 2026 12:14</span>
+        <span id="tsLabel">Updated 20 Jul 2026 12:56</span>
       </div>
     </div>
   </div>
@@ -2368,7 +2368,7 @@
 // ─── STORAGE KEYS ─────────────────────────────────────────────────────────────
 const KEY        = 'mng_v39';  // bump version → forces fresh seed load
 const UPDATE_KEY = 'mng_last_auto'; // timestamp of last server-side update
-const BUILT_AT = '2026-07-15T12:14:54.210Z'; // replaced by inject-static-html.js at build time
+const BUILT_AT = '2026-07-20T12:56:23.488Z'; // replaced by inject-static-html.js at build time
 const MS_6H    = 6 * 3600 * 1000;
 
 // ─── LANGUAGE MAP ─────────────────────────────────────────────────────────────
@@ -2381,17 +2381,7 @@ const LANG_NAMES = { fr:'French', it:'Italian', es:'Spanish', de:'German', pt:'P
 const SEEDS = [
 
   // ════════════ ⚽ SOCCER — USA ════════════
-      {
-    id:'su5', sport:'soccer',
-    player:'Midge Purce (NWSL) – Autograph & Photo Op, Fanatics Fest',
-    date:'2026-07-16', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
-    notes:'Confirmed for autographs and photo ops at Fanatics Fest NYC (Jul 16–19). Buy GA first ($70–$240), then autograph session separately at fanaticsfest.com/talent.',
-    source:'Fanatics Fest — fanaticsfest.com/talent'
-  },
-
+      
   // ════════════ ⚽ SOCCER — UK 🇬🇧 (Superstar Speakers) ════════════
                       
   // ════════════ ⚽ SOCCER — UK 🇬🇧 (Legends 7) ════════════
@@ -2425,97 +2415,7 @@ const SEEDS = [
   // ════════════ 🏀 BASKETBALL — IN-PERSON USA ════════════
                             
   // ════════════ 🏀 BASKETBALL — FANATICS FEST NYC Jul 16–19 ════════════
-  {
-    id:'bf8', sport:'basketball',
-    player:'Jalen Brunson – Fanatics Fest NYC',
-    date:'2026-07-16', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
-    notes:'Day TBA. Buy GA then check fanaticsfest.com/talent.',
-    source:'Fanatics Fest — fanaticsfest.com/talent'
-  },
-  {
-    id:'bf9', sport:'basketball',
-    player:'Karl-Anthony Towns – Fanatics Fest NYC',
-    date:'2026-07-16', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
-    notes:'Day TBA. Buy GA then check fanaticsfest.com/talent.',
-    source:'Fanatics Fest — fanaticsfest.com/talent'
-  },
-  {
-    id:'bf10', sport:'basketball',
-    player:'Josh Hart + Draymond Green – Fanatics Fest NYC',
-    date:'2026-07-16', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
-    notes:'Days TBA. Buy GA then check fanaticsfest.com/talent for confirmed sessions.',
-    source:'Fanatics Fest — fanaticsfest.com/talent'
-  },
-  {
-    id:'bf1', sport:'basketball',
-    player:'Trae Young – Autographs & Photo Op (Fri Jul 17)',
-    date:'2026-07-17', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
-    notes:'Friday Jul 17. Step 1: Buy GA ($70/day). Step 2: Add Trae Young autograph session at fanaticsfest.com/talent. Sessions sell out fast.',
-    source:'Fanatics Fest — fanaticsfest.com/talent'
-  },
-  {
-    id:'bf2', sport:'basketball',
-    player:'Allen Iverson – Autographs & Photo Op (Fri Jul 17)',
-    date:'2026-07-17', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
-    notes:'Friday Jul 17. GA ($70) + separate autograph session at fanaticsfest.com/talent.',
-    source:'Fanatics Fest — fanaticsfest.com/talent'
-  },
-  {
-    id:'bf3', sport:'basketball',
-    player:'Klay Thompson – Autographs & Photo Op (Fri Jul 17)',
-    date:'2026-07-17', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
-    notes:'Friday Jul 17. GA ($70) + session at fanaticsfest.com/talent.',
-    source:'Fanatics Fest — fanaticsfest.com/talent'
-  },
-  {
-    id:'bf4', sport:'basketball',
-    player:'Paolo Banchero – Autographs & Photo Op (Fri Jul 17)',
-    date:'2026-07-17', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
-    notes:'Friday Jul 17. GA ($70) + session at fanaticsfest.com/talent.',
-    source:'Fanatics Fest — fanaticsfest.com/talent'
-  },
-  {
-    id:'bf5', sport:'basketball',
-    player:'Patrick Ewing – Autographs & Photo Op (Sat Jul 18)',
-    date:'2026-07-18', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
-    notes:'Saturday Jul 18. GA ($80/Sat) + session at fanaticsfest.com/talent.',
-    source:'Fanatics Fest — fanaticsfest.com/talent'
-  },
-  {
-    id:'bf6', sport:'basketball',
-    player:'Grant Hill – Autographs & Photo Op (Sat Jul 18)',
-    date:'2026-07-18', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://tickets.fanaticsevents.com/tickets/fanatics-fest-nyc-2026',
-    notes:'Saturday Jul 18. GA ($80) + session at fanaticsfest.com/talent.',
-    source:'Fanatics Fest — fanaticsfest.com/talent'
-  },
-
+                  
   // ════════════ ⚽ SOCCER — ITALY 🇮🇹 ════════════
     
   // ════════════ ⚽ SOCCER — POLAND 🇵🇱 ════════════
@@ -2612,17 +2512,7 @@ const SEEDS = [
   },
 
   // ════════════ 🏟️ WWE / WRESTLING ════════════
-    {
-    id:'wwe2', sport:'wrestling',
-    player:'Becky Lynch + Cody Rhodes + Randy Orton + Rhea Ripley – WWE Zone, Fanatics Fest NYC',
-    date:'2026-07-16', time:'10:00',
-    venue:'Jacob K. Javits Convention Center',
-    city:'New York, NY 🇺🇸',
-    link:'https://www.fanaticsfest.com/',
-    notes:'Jul 16–19 2026. WWE zone at Fanatics Fest with 11 named superstars: Becky Lynch, Bianca Belair, Charlotte Flair, Cody Rhodes, IYO SKY, Jey Uso, Liv Morgan, Randy Orton, Rhea Ripley, Stephanie Vaquer, Tiffany Stratton. Autograph sessions and photo ops at interactive zones. GA badge required ($70–$240) + autograph sessions extra.',
-    source:'WWE.com / Fanatics Inc — fanaticsfest.com'
-  },
-
+    
   // ════════════ 🥊 BOXING / MMA ════════════
       
   // ════════════ ⭐ CELEBRITY — UK Conventions ════════════
