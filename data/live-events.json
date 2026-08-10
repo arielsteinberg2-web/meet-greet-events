@@ -23,7 +23,8 @@
       "link": "https://www.eventbrite.com/d/tx--the-colony/midget-wrestling/",
       "notes": "Friday Night Pro Wrestling in Dallas! Mon, Oct 26 • 8:00 PM Downtown. August 18, 2026 (Matinee) Tue, Aug 18 • 1:30 PM Grapevine. Meet and greet wwe 9.",
       "source": "https://www.eventbrite.com › tx--the-colony › midget-...",
-      "addedAt": "2026-06-25"
+      "addedAt": "2026-06-25",
+      "linkBroken": true
     },
     {
       "id": "fiterman_sam_leavitt_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -35,7 +36,8 @@
       "link": "https://fitermansports.com/event/sam-leavitt-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_lamar_brown_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -47,7 +49,8 @@
       "link": "https://fitermansports.com/event/lamar-brown-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_treydez_green_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -59,7 +62,8 @@
       "link": "https://fitermansports.com/event/treydez-green-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_harlem_berry_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -72,7 +76,8 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-06-30",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Harlem_Berry_on_Enjoy_Life.jpg/330px-Harlem_Berry_on_Enjoy_Life.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Harlem_Berry_on_Enjoy_Life.jpg/330px-Harlem_Berry_on_Enjoy_Life.jpg",
+      "linkBroken": true
     },
     {
       "id": "fiterman_winston_watkins_jr_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -84,7 +89,8 @@
       "link": "https://fitermansports.com/event/winston-watkins-jr-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_coach_o_public_autograph_event_lauberge_casino_baton_rouge_la_copy",
@@ -96,7 +102,8 @@
       "link": "https://fitermansports.com/event/coach-o-public-autograph-event-lauberge-casino-baton-rouge-la-copy/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_whit_weeks_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -109,7 +116,8 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-06-30",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg/330px-092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg/330px-092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "fiterman_zach_weeks_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -121,7 +129,8 @@
       "link": "https://fitermansports.com/event/zach-weeks-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_fiterman_sports_trade_night_all_ages_welcome_league_city_tx",
@@ -134,7 +143,8 @@
       "link": "https://fitermansports.com/event/fiterman-sports-trade-night-all-ages-welcome-league-city-tx/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-07-30",
+      "linkBroken": true
     },
     {
       "id": "tse_autograph-ticket-get-your-premium-item-signed-by-greg-rousseau",
@@ -147,8 +157,7 @@
       "link": "https://tsebuffalo.com/products/autograph-ticket-get-your-premium-item-signed-by-greg-rousseau",
       "notes": "AUTOGRAPH TICKET: Get Your Premium Item Signed in Person by Greg Rousseau",
       "source": "tsebuffalo.com",
-      "addedAt": "2026-07-25",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/2022_FanDuel_Best_WR_Poll_-_Greg_Rousseau_%28cropped%29.png/330px-2022_FanDuel_Best_WR_Poll_-_Greg_Rousseau_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-07-25"
     },
     {
       "id": "tse_autograph-ticket-get-your-premium-item-signed-in-person-by-dion-dawkins",
@@ -161,8 +170,7 @@
       "link": "https://tsebuffalo.com/products/autograph-ticket-get-your-premium-item-signed-in-person-by-dion-dawkins",
       "notes": "AUTOGRAPH TICKET: Get Your Premium Item Signed in Person by  Dion Dawkins",
       "source": "tsebuffalo.com",
-      "addedAt": "2026-07-25",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dion_Dawkins.png/330px-Dion_Dawkins.png"
+      "addedAt": "2026-07-25"
     },
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-deone-walker",
@@ -320,8 +328,7 @@
       "link": "https://store.epic.leapevent.tech/mcm-comic-con-birmingham/2026/alex-jordan",
       "notes": "MCM Comic Con Birmingham 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/AlexJordanMCMLondonComicCon2025.jpg/330px-AlexJordanMCMLondonComicCon2025.jpg"
+      "addedAt": "2026-06-05"
     },
     {
       "id": "epic_mcm-comic-con-birmingham_anjali-bhimani",
@@ -841,7 +848,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/ashley-greene",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_billy-boyd",
@@ -854,7 +862,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/billy-boyd",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_brent-spiner",
@@ -867,7 +876,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/brent-spiner",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_cameron-crovetti",
@@ -880,7 +890,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/cameron-crovetti",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_chris-evans",
@@ -893,7 +904,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/chris-evans",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_christopher-judge",
@@ -906,7 +918,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/christopher-judge",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_colby-minifie",
@@ -919,7 +932,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/colby-minifie",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_colin-odonoghue",
@@ -932,7 +946,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/colin-odonoghue",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_corey-feldman",
@@ -945,7 +960,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/corey-feldman",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_dafne-keen",
@@ -958,7 +974,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/dafne-keen",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_danny-glover",
@@ -971,7 +988,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/danny-glover",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_dean-norris",
@@ -984,7 +1002,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/dean-norris",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_dominic-monaghan",
@@ -997,7 +1016,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/dominic-monaghan",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_elijah-wood",
@@ -1010,7 +1030,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/elijah-wood",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_erica-durance",
@@ -1023,7 +1044,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/erica-durance",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_erin-moriarty",
@@ -1036,7 +1058,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/erin-moriarty",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_frank-grillo",
@@ -1049,7 +1072,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/frank-grillo",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_gates-mcfadden",
@@ -1062,7 +1086,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/gates-mcfadden",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_henry-ian-cusick",
@@ -1075,7 +1100,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/henry-ian-cusick",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_jackson-rathbone",
@@ -1088,7 +1114,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/jackson-rathbone",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_james-marsters",
@@ -1101,7 +1128,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/james-marsters",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_jamison-newlander",
@@ -1114,7 +1142,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/jamison-newlander",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_jason-marsden",
@@ -1127,7 +1156,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/jason-marsden",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_john-rhys-davies",
@@ -1140,7 +1170,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/john-rhys-davies",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_jonathan-frakes",
@@ -1153,7 +1184,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/jonathan-frakes",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_josh-holloway",
@@ -1166,7 +1198,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/josh-holloway",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_judith-hoag",
@@ -1179,7 +1212,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/judith-hoag",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_karl-urban",
@@ -1192,7 +1226,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/karl-urban",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_kellan-lutz",
@@ -1205,7 +1240,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/kellan-lutz",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_kerri-green",
@@ -1218,7 +1254,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/kerri-green",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_kristin-kreuk",
@@ -1231,7 +1268,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/kristin-kreuk",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_laz-alonso",
@@ -1244,7 +1282,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/laz-alonso",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_mara-wilson",
@@ -1257,7 +1296,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/mara-wilson",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_mel-gibson",
@@ -1270,7 +1310,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/mel-gibson",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_michael-rosenbaum",
@@ -1283,7 +1324,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/michael-rosenbaum",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_omri-katz",
@@ -1296,7 +1338,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/omri-katz",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_orlando-bloom",
@@ -1309,7 +1352,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/orlando-bloom",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_peggy-the-dog-aka-dogpool",
@@ -1322,7 +1366,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/peggy-the-dog-aka-dogpool",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_peter-facinelli",
@@ -1335,7 +1380,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/peter-facinelli",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_rob-colletti",
@@ -1348,7 +1394,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/rob-colletti",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_sean-astin",
@@ -1362,7 +1409,8 @@
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Tom_Welling_at_Galaxy_Con_Richmond.jpg/330px-Tom_Welling_at_Galaxy_Con_Richmond.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Tom_Welling_at_Galaxy_Con_Richmond.jpg/330px-Tom_Welling_at_Galaxy_Con_Richmond.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_tom-welling",
@@ -1375,7 +1423,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/tom-welling",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_valorie-curry",
@@ -1388,7 +1437,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/valorie-curry",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_vinessa-shaw",
@@ -1401,7 +1451,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/vinessa-shaw",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_william-shatner",
@@ -1414,7 +1465,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/william-shatner",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-hazbin-hotel-the-vees",
@@ -1427,7 +1479,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-hazbin-hotel-the-vees",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-hocus-pocus",
@@ -1440,7 +1493,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-hocus-pocus",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-hocus-pocus-max-allison",
@@ -1453,7 +1507,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-hocus-pocus-max-allison",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-hocus-pocus-max-binx",
@@ -1466,7 +1521,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-hocus-pocus-max-binx",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-lethal-weapon",
@@ -1479,7 +1535,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-lethal-weapon",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-lost",
@@ -1492,7 +1549,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-lost",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-my-hero-academia",
@@ -1505,7 +1563,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-my-hero-academia",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-naruto-duo",
@@ -1518,7 +1577,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-naruto-duo",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-smallville",
@@ -1531,7 +1591,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-smallville",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-smallville-clark-and-lana",
@@ -1544,7 +1605,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-smallville-clark-and-lana",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-smallville-clark-and-lois",
@@ -1557,7 +1619,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-smallville-clark-and-lois",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-smallville-lex-and-lana",
@@ -1570,7 +1633,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-smallville-lex-and-lana",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-smallville-superman-and-lex",
@@ -1583,7 +1647,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-smallville-superman-and-lex",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-smallville-superman-lex-lana",
@@ -1596,7 +1661,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-smallville-superman-lex-lana",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-star-trek-the-next-generation",
@@ -1609,7 +1675,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-star-trek-the-next-generation",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-star-trek-the-next-generation-duo",
@@ -1622,7 +1689,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-star-trek-the-next-generation-duo",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-boys-friday-1",
@@ -1635,7 +1703,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-boys-friday-1",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-boys-saturday",
@@ -1648,7 +1717,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-boys-saturday",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-boys-1",
@@ -1661,7 +1731,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-boys-1",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-boys-the-butcher-team-up",
@@ -1674,7 +1745,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-boys-the-butcher-team-up",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-goonies",
@@ -1687,7 +1759,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-goonies",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lord-of-the-rings-fellowship-reunion",
@@ -1700,7 +1773,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lord-of-the-rings-fellowship-reunion",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lord-of-the-rings-reunion-friday",
@@ -1713,7 +1787,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lord-of-the-rings-reunion-friday",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lord-of-the-rings-reunion-1",
@@ -1726,7 +1801,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lord-of-the-rings-reunion-1",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lord-of-the-rings-reunion-sunday-1",
@@ -1739,7 +1815,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lord-of-the-rings-reunion-sunday-1",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lord-of-the-rings-frodo-and-samwise",
@@ -1752,7 +1829,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lord-of-the-rings-frodo-and-samwise",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lord-of-the-rings-legloas-gimli",
@@ -1765,7 +1843,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lord-of-the-rings-legloas-gimli",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lord-of-the-rings-pippin-and-merry",
@@ -1778,7 +1857,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lord-of-the-rings-pippin-and-merry",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lord-of-the-rings-the-hobbits",
@@ -1791,7 +1871,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lord-of-the-rings-the-hobbits",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lord-of-the-rings-the-hobbits-and-gimli",
@@ -1804,7 +1885,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lord-of-the-rings-the-hobbits-and-gimli",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lord-of-the-rings-the-hobbits-and-legolas",
@@ -1817,7 +1899,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lord-of-the-rings-the-hobbits-and-legolas",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-the-lost-boys-the-frog-brothers",
@@ -1830,7 +1913,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-the-lost-boys-the-frog-brothers",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-tmnt-shellabration",
@@ -1843,7 +1927,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-tmnt-shellabration",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-tmnt-shellabration-1",
@@ -1856,7 +1941,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-tmnt-shellabration-1",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-tmnt-shellabration-with-april",
@@ -1869,7 +1955,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-tmnt-shellabration-with-april",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-tmnt-shellabration-with-april-1",
@@ -1882,7 +1969,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-tmnt-shellabration-with-april-1",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-twilight",
@@ -1895,7 +1983,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-twilight",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-twilight-friday",
@@ -1908,7 +1997,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-twilight-friday",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-twilight-duo-emmett-carlisle-baseball-edition",
@@ -1921,7 +2011,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-twilight-duo-emmett-carlisle-baseball-edition",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_teamup-twilight-duo-jasper-alice",
@@ -1934,7 +2025,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/teamup-twilight-duo-jasper-alice",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_an-evening-with-the-hobbits",
@@ -1947,7 +2039,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/an-evening-with-the-hobbits",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_chris-evans-live",
@@ -1960,7 +2053,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/chris-evans-live",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_on-stage-with-orlando-bloom",
@@ -1973,7 +2067,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/on-stage-with-orlando-bloom",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_second-breakfast",
@@ -1986,7 +2081,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/second-breakfast",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_colin-odonoghue-vip-meet-and-greet-1",
@@ -1999,7 +2095,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/colin-odonoghue-vip-meet-and-greet-1",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-07-30",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-boston_frame-your-photo",
@@ -2012,7 +2109,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-boston/2026/frame-your-photo",
       "notes": "FAN EXPO Boston 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_ashley-greene",
@@ -2025,7 +2123,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/ashley-greene",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_ax",
@@ -2038,7 +2137,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/ax",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_billy-boyd",
@@ -2051,7 +2151,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/billy-boyd",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_billy-gunn",
@@ -2064,7 +2165,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/billy-gunn",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_brendan-wayne",
@@ -2077,7 +2179,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/brendan-wayne",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_brent-spiner",
@@ -2090,7 +2193,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/brent-spiner",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_cameron-crovetti",
@@ -2103,7 +2207,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/cameron-crovetti",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_cara-buono",
@@ -2116,7 +2221,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/cara-buono",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_catherine-bell",
@@ -2129,7 +2235,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/catherine-bell",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_christian-borle",
@@ -2142,7 +2249,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/christian-borle",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_christopher-lambert",
@@ -2155,7 +2263,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/christopher-lambert",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_colby-minifie",
@@ -2168,7 +2277,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/colby-minifie",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_colin-odonoghue",
@@ -2181,7 +2291,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/colin-odonoghue",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_corey-feldman",
@@ -2194,7 +2305,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/corey-feldman",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_danny-glover",
@@ -2207,7 +2319,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/danny-glover",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_dean-cundey",
@@ -2220,7 +2333,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/dean-cundey",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_dean-norris",
@@ -2234,7 +2348,8 @@
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-08-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg/330px-Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg/330px-Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_dolph-lundgren",
@@ -2247,7 +2362,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/dolph-lundgren",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_dominic-monaghan",
@@ -2260,7 +2376,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/dominic-monaghan",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_elijah-wood",
@@ -2273,7 +2390,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/elijah-wood",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_erica-durance",
@@ -2286,7 +2404,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/erica-durance",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_erin-moriarty",
@@ -2299,7 +2418,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/erin-moriarty",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_frank-grillo",
@@ -2312,7 +2432,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/frank-grillo",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_frank-welker",
@@ -2325,7 +2446,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/frank-welker",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_gates-mcfadden",
@@ -2338,7 +2460,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/gates-mcfadden",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_henry-ian-cusick",
@@ -2351,7 +2474,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/henry-ian-cusick",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_jaime-pressly",
@@ -2364,7 +2488,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/jaime-pressly",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_jake-connelly",
@@ -2377,7 +2502,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/jake-connelly",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_james-oliver-phelps",
@@ -2390,7 +2516,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/james-oliver-phelps",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_james-phelps",
@@ -2403,7 +2530,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/james-phelps",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_jamison-newlander",
@@ -2416,7 +2544,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/jamison-newlander",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_jared-padalecki",
@@ -2429,7 +2558,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/jared-padalecki",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_jason-marsden",
@@ -2442,7 +2572,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/jason-marsden",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_jim-beaver",
@@ -2455,7 +2586,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/jim-beaver",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_joe-pantoliano",
@@ -2468,7 +2600,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/joe-pantoliano",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_john-carpenter",
@@ -2481,7 +2614,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/john-carpenter",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_john-noble",
@@ -2494,7 +2628,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/john-noble",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_john-rhys-davies",
@@ -2507,7 +2642,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/john-rhys-davies",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_johnny-yong-bosch",
@@ -2520,7 +2656,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/johnny-yong-bosch",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_josh-holloway",
@@ -2533,7 +2670,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/josh-holloway",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_judith-hoag",
@@ -2546,7 +2684,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/judith-hoag",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_karen-fukuhara",
@@ -2559,7 +2698,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/karen-fukuhara",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_karl-urban",
@@ -2572,7 +2712,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/karl-urban",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_keith-david",
@@ -2585,7 +2726,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/keith-david",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_kentaro-ito",
@@ -2598,7 +2740,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/kentaro-ito",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_kerri-green",
@@ -2611,7 +2754,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/kerri-green",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_kurt-russell",
@@ -2624,7 +2768,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/kurt-russell",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_lance-barber",
@@ -2637,7 +2782,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/lance-barber",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_laz-alonso",
@@ -2650,7 +2796,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/laz-alonso",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_lil-bro-impala",
@@ -2663,7 +2810,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/lil-bro-impala",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_mark-pellegrino",
@@ -2676,7 +2824,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/mark-pellegrino",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_mark-sheppard",
@@ -2689,7 +2838,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/mark-sheppard",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_martha-plimpton",
@@ -2702,7 +2852,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/martha-plimpton",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_mel-gibson",
@@ -2715,7 +2866,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/mel-gibson",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_michael-johnston",
@@ -2728,7 +2880,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/michael-johnston",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_michael-rosenbaum",
@@ -2741,7 +2894,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/michael-rosenbaum",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_mr-t",
@@ -2754,7 +2908,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/mr-t",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_nick-castle",
@@ -2767,7 +2922,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/nick-castle",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_oliver-phelps",
@@ -2780,7 +2936,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/oliver-phelps",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_omri-katz",
@@ -2793,7 +2950,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/omri-katz",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_pauly-shore",
@@ -2806,7 +2964,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/pauly-shore",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_peggy-the-dog-aka-dogpool",
@@ -2819,7 +2978,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/peggy-the-dog-aka-dogpool",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_peter-facinelli",
@@ -2832,7 +2992,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/peter-facinelli",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_pj-soles",
@@ -2845,7 +3006,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/pj-soles",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_raegan-revord",
@@ -2858,7 +3020,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/raegan-revord",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_road-dogg",
@@ -2871,7 +3034,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/road-dogg",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_rob-colletti",
@@ -2884,7 +3048,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/rob-colletti",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_robert-davi",
@@ -2897,7 +3062,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/robert-davi",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_ron-perlman",
@@ -2911,7 +3077,8 @@
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-03",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Sam_Raimi_Photo_Op_GalaxyCon_Raleigh_2024_%28cropped%29.jpg/330px-Sam_Raimi_Photo_Op_GalaxyCon_Raleigh_2024_%28cropped%29.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Sam_Raimi_Photo_Op_GalaxyCon_Raleigh_2024_%28cropped%29.jpg/330px-Sam_Raimi_Photo_Op_GalaxyCon_Raleigh_2024_%28cropped%29.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_sam-raimi",
@@ -2924,7 +3091,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/sam-raimi",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_sam-witwer",
@@ -2937,7 +3105,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/sam-witwer",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_sean-astin",
@@ -2950,7 +3119,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/sean-astin",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_smash",
@@ -2963,7 +3133,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/smash",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_thora-birch",
@@ -2977,7 +3148,8 @@
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-08-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Tom_Welling_at_Galaxy_Con_Richmond.jpg/330px-Tom_Welling_at_Galaxy_Con_Richmond.jpg"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Tom_Welling_at_Galaxy_Con_Richmond.jpg/330px-Tom_Welling_at_Galaxy_Con_Richmond.jpg",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_tom-welling",
@@ -2990,7 +3162,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/tom-welling",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_tomer-capone",
@@ -3003,7 +3176,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/tomer-capone",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_tommy-lee-wallace",
@@ -3016,7 +3190,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/tommy-lee-wallace",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_troy-baker",
@@ -3029,7 +3204,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/troy-baker",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_valorie-curry",
@@ -3042,7 +3218,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/valorie-curry",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_vinessa-shaw",
@@ -3055,7 +3232,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/vinessa-shaw",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_walter-koenig",
@@ -3068,7 +3246,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/walter-koenig",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_william-shatner",
@@ -3081,7 +3260,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/william-shatner",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_zoe-perry",
@@ -3094,7 +3274,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/zoe-perry",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_oliver-james-phelps",
@@ -3107,7 +3288,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/oliver-james-phelps",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_robbie-rist",
@@ -3120,7 +3302,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/robbie-rist",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_william-baldwin",
@@ -3133,7 +3316,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/william-baldwin",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-backdraft",
@@ -3146,7 +3330,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-backdraft",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-death-note",
@@ -3159,7 +3344,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-death-note",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-demolition",
@@ -3172,7 +3358,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-demolition",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-demon-slayer",
@@ -3185,7 +3372,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-demon-slayer",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-dolph-lundgren-mr-t",
@@ -3198,7 +3386,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-dolph-lundgren-mr-t",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-dragon-ball-z",
@@ -3211,7 +3400,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-dragon-ball-z",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-encino-man",
@@ -3224,7 +3414,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-encino-man",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-hazbin-hotel",
@@ -3237,7 +3428,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-hazbin-hotel",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-hocus-pocus-cast-sunday",
@@ -3250,7 +3442,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-hocus-pocus-cast-sunday",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-hocus-pocus-quad",
@@ -3263,7 +3456,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-hocus-pocus-quad",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-hocus-pocus-max-allison",
@@ -3276,7 +3470,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-hocus-pocus-max-allison",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-legendary-duo",
@@ -3289,7 +3484,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-legendary-duo",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-lethal-weapon",
@@ -3302,7 +3498,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-lethal-weapon",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-lost-1",
@@ -3315,7 +3512,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-lost-1",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-my-hero-academia-all-might-heroes-and-villains",
@@ -3328,7 +3526,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-my-hero-academia-all-might-heroes-and-villains",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-my-hero-academia-heroes-and-villains",
@@ -3341,7 +3540,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-my-hero-academia-heroes-and-villains",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-new-age-outlaws",
@@ -3354,7 +3554,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-new-age-outlaws",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-one-piece-anime",
@@ -3367,7 +3568,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-one-piece-anime",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-one-piece-universe",
@@ -3380,7 +3582,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-one-piece-universe",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-smallville-duo-superman-and-lex",
@@ -3393,7 +3596,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-smallville-duo-superman-and-lex",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-smallville-trio",
@@ -3406,7 +3610,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-smallville-trio",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-smallville-clark-and-lois",
@@ -3419,7 +3624,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-smallville-clark-and-lois",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-star-trek-the-next-generation",
@@ -3432,7 +3638,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-star-trek-the-next-generation",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-star-wars-maul-shadow-lord-team-up",
@@ -3445,7 +3652,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-star-wars-maul-shadow-lord-team-up",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-stranger-things",
@@ -3458,7 +3666,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-stranger-things",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-sub-dub-shinobi",
@@ -3471,7 +3680,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-sub-dub-shinobi",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-sub-dub-soul-reapers",
@@ -3484,7 +3694,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-sub-dub-soul-reapers",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-supernatural",
@@ -3497,7 +3708,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-supernatural",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-supernatural-sam-bobby",
@@ -3510,7 +3722,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-supernatural-sam-bobby",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-supernatural-sam-crowley",
@@ -3523,7 +3736,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-supernatural-sam-crowley",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-supernatural-sam-lucifer",
@@ -3536,7 +3750,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-supernatural-sam-lucifer",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-10"
+      "addedAt": "2026-06-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-boys-the-butcher-team-up",
@@ -3549,7 +3764,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-boys-the-butcher-team-up",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-boys-3",
@@ -3562,7 +3778,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-boys-3",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-boys-friday-3",
@@ -3575,7 +3792,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-boys-friday-3",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-boys-frenchie-kimiko",
@@ -3588,7 +3806,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-boys-frenchie-kimiko",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-goonies-cast",
@@ -3601,7 +3820,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-goonies-cast",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-duo-frodo-and-samwise",
@@ -3614,7 +3834,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-lord-of-the-rings-duo-frodo-and-samwise",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-duo-pippin-and-merry",
@@ -3627,7 +3848,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-lord-of-the-rings-duo-pippin-and-merry",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-reunion-friday",
@@ -3640,7 +3862,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-lord-of-the-rings-reunion-friday",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-reunion-upgrade",
@@ -3653,7 +3876,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-lord-of-the-rings-reunion-upgrade",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-fellowship-reunion",
@@ -3666,7 +3890,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-lord-of-the-rings-fellowship-reunion",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-lord-of-the-rings-the-hobbits",
@@ -3679,7 +3904,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-lord-of-the-rings-the-hobbits",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-lost-boys-the-frog-brothers",
@@ -3692,7 +3918,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-lost-boys-the-frog-brothers",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-thing-duo",
@@ -3705,7 +3932,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-thing-duo",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-the-thing-trio",
@@ -3718,7 +3946,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-the-thing-trio",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-tmnt-shellabration",
@@ -3731,7 +3960,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-tmnt-shellabration",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-tmnt-shellabration-with-april",
@@ -3744,7 +3974,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-tmnt-shellabration-with-april",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-twilight",
@@ -3757,7 +3988,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-twilight",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_teamup-young-sheldon",
@@ -3770,7 +4002,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/teamup-young-sheldon",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_an-evening-with-the-hobbits",
@@ -3783,7 +4016,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/an-evening-with-the-hobbits",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_frank-miller",
@@ -3796,7 +4030,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/frank-miller",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_kurt-russell-live",
@@ -3809,7 +4044,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/kurt-russell-live",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_second-breakfast",
@@ -3822,7 +4058,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/second-breakfast",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_greg-capullo-scott-snyder-comic-experience",
@@ -3835,7 +4072,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/greg-capullo-scott-snyder-comic-experience",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-chicago_smallville-nights",
@@ -3848,7 +4086,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-chicago/2026/smallville-nights",
       "notes": "FAN EXPO Chicago 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_alan-ritchson",
@@ -3861,7 +4100,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/alan-ritchson",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_ben-starr",
@@ -3874,7 +4114,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/ben-starr",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
+      "addedAt": "2026-07-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_billy-boyd",
@@ -3887,7 +4128,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/billy-boyd",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_brendan-wayne",
@@ -3900,7 +4142,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/brendan-wayne",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_brenton-thwaites",
@@ -3913,7 +4156,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/brenton-thwaites",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_bruce-dickinson",
@@ -3926,7 +4170,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/bruce-dickinson",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-20"
+      "addedAt": "2026-07-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_cara-buono",
@@ -3939,7 +4184,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/cara-buono",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_casper-van-dien",
@@ -3952,7 +4198,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/casper-van-dien",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_catherine-bell",
@@ -3965,7 +4212,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/catherine-bell",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_christopher-judge",
@@ -3978,7 +4226,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/christopher-judge",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
+      "addedAt": "2026-07-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_christopher-lambert",
@@ -3991,7 +4240,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/christopher-lambert",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_colin-odonoghue",
@@ -4004,7 +4254,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/colin-odonoghue",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-10"
+      "addedAt": "2026-04-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_corey-feldman",
@@ -4017,7 +4268,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/corey-feldman",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_david-wenham",
@@ -4030,7 +4282,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/david-wenham",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_dean-norris",
@@ -4043,7 +4296,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/dean-norris",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_denise-richards",
@@ -4056,7 +4310,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/denise-richards",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_dina-meyer",
@@ -4069,7 +4324,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/dina-meyer",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_dominic-monaghan",
@@ -4082,7 +4338,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/dominic-monaghan",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_elijah-wood",
@@ -4095,7 +4352,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/elijah-wood",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_erin-moriarty",
@@ -4108,7 +4366,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/erin-moriarty",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-15"
+      "addedAt": "2026-05-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_gideon-adlon",
@@ -4121,7 +4380,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/gideon-adlon",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
+      "addedAt": "2026-07-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_henry-ian-cusick",
@@ -4134,7 +4394,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/henry-ian-cusick",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_jake-busey",
@@ -4147,7 +4408,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/jake-busey",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_jamison-newlander",
@@ -4160,7 +4422,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/jamison-newlander",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_jennifer-english",
@@ -4173,7 +4436,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/jennifer-english",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
+      "addedAt": "2026-07-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_ji-young-yoo",
@@ -4186,7 +4450,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/ji-young-yoo",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
+      "addedAt": "2026-06-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_jim-cummings",
@@ -4199,7 +4464,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/jim-cummings",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
+      "addedAt": "2026-07-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_joe-pantoliano",
@@ -4212,7 +4478,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/joe-pantoliano",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_joe-quesada",
@@ -4225,7 +4492,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/joe-quesada",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_john-cena",
@@ -4238,7 +4506,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/john-cena",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
+      "addedAt": "2026-07-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_john-rhys-davies",
@@ -4251,7 +4520,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/john-rhys-davies",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
+      "addedAt": "2026-05-10",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_kerri-green",
@@ -4264,7 +4534,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/kerri-green",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_martha-plimpton",
@@ -4277,7 +4548,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/martha-plimpton",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_may-hong",
@@ -4290,7 +4562,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/may-hong",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_mel-gibson",
@@ -4303,7 +4576,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/mel-gibson",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_michael-ironside",
@@ -4316,7 +4590,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/michael-ironside",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_michael-johnston",
@@ -4329,7 +4604,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/michael-johnston",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_mike-colter",
@@ -4342,7 +4618,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/mike-colter",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-20"
+      "addedAt": "2026-06-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_mr-t",
@@ -4355,7 +4632,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/mr-t",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-20"
+      "addedAt": "2026-07-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_oded-fehr",
@@ -4368,7 +4646,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/oded-fehr",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_rob-colletti",
@@ -4381,7 +4660,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/rob-colletti",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-20"
+      "addedAt": "2026-07-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_robert-davi",
@@ -4394,7 +4674,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/robert-davi",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_sam-witwer",
@@ -4407,7 +4688,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/sam-witwer",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_sean-astin",
@@ -4420,7 +4702,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/sean-astin",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_william-fichtner",
@@ -4433,7 +4716,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/william-fichtner",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_frank-miller-special-event",
@@ -4446,7 +4730,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/frank-miller-special-event",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_colin-odonoghue-vip-meet-and-greet",
@@ -4459,7 +4744,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/colin-odonoghue-vip-meet-and-greet",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
+      "addedAt": "2026-07-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_john-cena-live",
@@ -4472,7 +4758,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/john-cena-live",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
+      "addedAt": "2026-07-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_second-breakfast",
@@ -4485,7 +4772,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/second-breakfast",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-20"
+      "addedAt": "2026-07-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_hobbits-autograph-4-pack",
@@ -4498,7 +4786,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/hobbits-autograph-4-pack",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-chainsaw-man-duo",
@@ -4511,7 +4800,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-chainsaw-man-duo",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-clair-obscur-expedition-33",
@@ -4524,7 +4814,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-clair-obscur-expedition-33",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
+      "addedAt": "2026-07-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-death-note",
@@ -4537,7 +4828,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-death-note",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
+      "addedAt": "2026-07-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-hazbin-hotel-cast",
@@ -4550,7 +4842,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-hazbin-hotel-cast",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-highlander-ii-the-quickening-duo",
@@ -4563,7 +4856,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-highlander-ii-the-quickening-duo",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-20"
+      "addedAt": "2026-07-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-k-pop-demon-hunters-duo",
@@ -4576,7 +4870,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-k-pop-demon-hunters-duo",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-lost-trio",
@@ -4589,7 +4884,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-lost-trio",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-one-piece-duo",
@@ -4602,7 +4898,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-one-piece-duo",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
+      "addedAt": "2026-05-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-one-piece-universe",
@@ -4615,7 +4912,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-one-piece-universe",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-20"
+      "addedAt": "2026-07-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-rico-carmen-and-dizzy",
@@ -4628,7 +4926,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-rico-carmen-and-dizzy",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-roughnecks-team-up",
@@ -4641,7 +4940,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-roughnecks-team-up",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-starship-troopers-cast",
@@ -4654,7 +4954,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-starship-troopers-cast",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
+      "addedAt": "2026-06-15",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-the-goonies-cast",
@@ -4667,7 +4968,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-the-goonies-cast",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
+      "addedAt": "2026-05-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-reunion",
@@ -4680,7 +4982,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-the-lord-of-the-rings-reunion",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-20"
+      "addedAt": "2026-07-20",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-reunion-sunday-1",
@@ -4693,7 +4996,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-the-lord-of-the-rings-reunion-sunday-1",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-05"
+      "addedAt": "2026-08-05",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-frodo-samwise",
@@ -4706,7 +5010,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-the-lord-of-the-rings-frodo-samwise",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-pippin-merry",
@@ -4719,7 +5024,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-the-lord-of-the-rings-pippin-merry",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-the-hobbits",
@@ -4732,7 +5038,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-the-lord-of-the-rings-the-hobbits",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-03"
+      "addedAt": "2026-04-03",
+      "linkBroken": true
     },
     {
       "id": "epic_fan-expo-canada_teamup-the-lord-of-the-rings-the-hobbits-and-gimli",
@@ -4745,7 +5052,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-canada/2026/teamup-the-lord-of-the-rings-the-hobbits-and-gimli",
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-20"
+      "addedAt": "2026-07-20",
+      "linkBroken": true
     },
     {
       "id": "epic_rose-city-comic-con_alan-tudyk",
@@ -10758,5 +11066,6 @@
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/LilliCooper-byPhilipRomano.jpg/330px-LilliCooper-byPhilipRomano.jpg",
       "linkBroken": true
     }
-  ]
+  ],
+  "linkCheckedAt": "2026-08-10T07:52:17.527Z"
 }
