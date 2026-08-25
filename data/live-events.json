@@ -1,19 +1,17 @@
 {
-  "generatedAt": "2026-08-20T10:59:41.015Z",
-  "count": 679,
+  "generatedAt": "2026-08-25T11:14:31.103Z",
+  "count": 627,
   "events": [
     {
-      "id": "live_1787222757646_ik0oy",
-      "player": "Rod Wave",
-      "title": "Tickets 2026 2027 Concert Tour Dates",
-      "sport": "other",
-      "date": "2026-09-17",
-      "link": "https://concerts.livenation.com/rod-wave-tickets/artist/2663489?efeat_seg=0&list_view=1",
-      "notes": "Fridayy VIP Meet & Greet Upgrade (Event Ticket Sold Separately). Lineup. Rod Wave · FRIDAYY. Venue. Lenovo Center. September 17, 2026. Sep17. Thursday 08:00 PM ...",
-      "source": "Web search",
-      "addedAt": "2026-08-15",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Beautiful_Mind_Tour_Pittsburgh%2C_PA_4.jpg/330px-Beautiful_Mind_Tour_Pittsburgh%2C_PA_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "linkBroken": true
+      "id": "live_1787654716497_sixzm",
+      "player": "Cheering Queers",
+      "title": ": WNBA Watch Party Meetup",
+      "sport": "basketball",
+      "date": "2026-08-30",
+      "link": "https://www.eventbrite.com/e/cheering-queers-wnba-watch-party-meetup-tickets-1997618951057",
+      "notes": "... WNBA Watch Party Meetup - Sunday, August 30, 2026 at Eclipse Brewing, Merchantville, NJ. Find event and ticket information.",
+      "source": "https://www.eventbrite.com › cheering-queers-wnba-wa...",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "fiterman_sam_leavitt_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -25,8 +23,7 @@
       "link": "https://fitermansports.com/event/sam-leavitt-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30",
-      "linkBroken": true
+      "addedAt": "2026-06-30"
     },
     {
       "id": "fiterman_lamar_brown_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -38,8 +35,7 @@
       "link": "https://fitermansports.com/event/lamar-brown-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30",
-      "linkBroken": true
+      "addedAt": "2026-06-30"
     },
     {
       "id": "fiterman_treydez_green_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -51,8 +47,7 @@
       "link": "https://fitermansports.com/event/treydez-green-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30",
-      "linkBroken": true
+      "addedAt": "2026-06-30"
     },
     {
       "id": "fiterman_harlem_berry_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -65,8 +60,7 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-06-30",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Harlem_Berry_on_Enjoy_Life.jpg/330px-Harlem_Berry_on_Enjoy_Life.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "linkBroken": true
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Harlem_Berry_on_Enjoy_Life.jpg/330px-Harlem_Berry_on_Enjoy_Life.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "fiterman_winston_watkins_jr_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -78,8 +72,7 @@
       "link": "https://fitermansports.com/event/winston-watkins-jr-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30",
-      "linkBroken": true
+      "addedAt": "2026-06-30"
     },
     {
       "id": "fiterman_coach_o_public_autograph_event_lauberge_casino_baton_rouge_la_copy",
@@ -91,8 +84,7 @@
       "link": "https://fitermansports.com/event/coach-o-public-autograph-event-lauberge-casino-baton-rouge-la-copy/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30",
-      "linkBroken": true
+      "addedAt": "2026-06-30"
     },
     {
       "id": "fiterman_whit_weeks_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -105,8 +97,7 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-06-30",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg/330px-092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "linkBroken": true
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg/330px-092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "fiterman_zach_weeks_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -118,8 +109,7 @@
       "link": "https://fitermansports.com/event/zach-weeks-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30",
-      "linkBroken": true
+      "addedAt": "2026-06-30"
     },
     {
       "id": "fiterman_livvy_dunne_public_autograph_event_lauberge_grand_ballroom_baton_rouge_la",
@@ -131,8 +121,7 @@
       "link": "https://fitermansports.com/event/livvy-dunne-public-autograph-event-lauberge-grand-ballroom-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "fiterman_corey_barber_jr_public_autograph_event_lauberge_grand_ballroom_baton_rouge_la",
@@ -144,8 +133,7 @@
       "link": "https://fitermansports.com/event/corey-barber-jr-public-autograph-event-lauberge-grand-ballroom-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-08-15",
-      "linkBroken": true
+      "addedAt": "2026-08-15"
     },
     {
       "id": "fiterman_vip_fast_pass_lauberge_grand_ballroom_baton_rouge_la",
@@ -157,8 +145,7 @@
       "link": "https://fitermansports.com/event/vip-fast-pass-lauberge-grand-ballroom-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-08-15",
-      "linkBroken": true
+      "addedAt": "2026-08-15"
     },
     {
       "id": "tse_autograph-ticket-get-your-premium-item-signed-by-greg-rousseau",
@@ -238,6 +225,18 @@
       "addedAt": "2026-08-10"
     },
     {
+      "id": "tse_autograph-ticket-get-your-flat-up-to-16x20-or-mini-helmet-signed-in-person-by-skyler-bell-copy",
+      "player": "Dee Alford",
+      "sport": "other",
+      "date": "2026-09-24",
+      "venue": "",
+      "city": "Buffalo, NY",
+      "link": "https://tsebuffalo.com/products/autograph-ticket-get-your-flat-up-to-16x20-or-mini-helmet-signed-in-person-by-skyler-bell-copy",
+      "notes": "AUTOGRAPH TICKET: Get Your Flat (up to 16x20) or Mini Helmet Signed in Person by Dee Alford",
+      "source": "tsebuffalo.com",
+      "addedAt": "2026-08-25"
+    },
+    {
       "id": "tse_autograph-ticket-get-your-premium-item-signed-in-person-by-skyler-bell-copy",
       "player": "Skyler Bell",
       "sport": "other",
@@ -250,33 +249,59 @@
       "addedAt": "2026-08-10"
     },
     {
-      "id": "tse_autograph-ticket-get-your-flat-up-to-16x20-or-mini-helmet-signed-in-person-by-dee-alford-copy",
-      "player": "Dee Alford",
-      "title": "AUTOGRAPH TICKET: Get Your Premium Item Signed in Person by",
+      "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-ocyrus-torrence-1",
+      "player": "Yours Signed",
+      "title": "AUTOGRAPH TICKET: Get Any Item of in Person by O'Cyrus Torrence",
       "sport": "other",
-      "date": "2026-09-24",
-      "venue": "",
+      "date": "2026-09-06",
+      "venue": "The Rally on The River : 359 Ganson Street, Buffalo, NY 14",
       "city": "Buffalo, NY",
-      "link": "https://tsebuffalo.com/products/autograph-ticket-get-your-flat-up-to-16x20-or-mini-helmet-signed-in-person-by-dee-alford-copy",
-      "notes": "AUTOGRAPH TICKET: Get Your Premium Item Signed in Person by Dee Alford",
+      "link": "https://tsebuffalo.com/products/autograph-ticket-get-any-item-of-yours-signed-in-person-by-ocyrus-torrence-1",
+      "notes": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by O'Cyrus Torrence",
       "source": "tsebuffalo.com",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-25"
     },
     {
-      "id": "eb_1787222851779_1xmu1",
-      "player": "Wyatt Milum",
-      "title": "Autograph Signing",
+      "id": "tse_autograph-ticket-get-your-premium-item-signed-in-person-by-terrel-bernard-1",
+      "player": "Terrel Bernard",
+      "title": "AUTOGRAPH TICKET: Get Your Premium Item Signed in Person by",
       "sport": "other",
-      "date": "2026-09-02",
-      "venue": "Sports Mania",
-      "city": "Jacksonville Beach",
-      "link": "https://www.eventbrite.com/e/wyatt-milum-autograph-signing-tickets-1996891089002",
-      "notes": "Wyatt Milum Autograph Signing",
+      "date": "2026-09-06",
+      "venue": "The Rally on The River : 359 Ganson Street, Buffalo, NY 14",
+      "city": "Buffalo, NY",
+      "link": "https://tsebuffalo.com/products/autograph-ticket-get-your-premium-item-signed-in-person-by-terrel-bernard-1",
+      "notes": "AUTOGRAPH TICKET: Get Your Premium Item Signed in Person by Terrel Bernard",
+      "source": "tsebuffalo.com",
+      "addedAt": "2026-08-25"
+    },
+    {
+      "id": "eb_1787655745361_8a3mx",
+      "player": "Jonathan Bowlan",
+      "title": "Autograph signing 9/5",
+      "sport": "other",
+      "date": "2026-09-05",
+      "venue": "Deptford Mall",
+      "city": "Deptford",
+      "link": "https://www.eventbrite.com/e/jonathan-bowlan-autograph-signing-95-tickets-1998434075115",
+      "notes": "Jonathan Bowlan Autograph signing 9/5",
       "source": "eventbrite.com",
       "addedAt": "2026-08-20"
     },
     {
-      "id": "eb_1787222851850_6q8jm",
+      "id": "eb_1787655745480_q9jjt",
+      "player": "Ben McDonald",
+      "title": "Autograph Signing Sunday September 20 2026 Westminster MD",
+      "sport": "other",
+      "date": "2026-09-20",
+      "venue": "TownMall of Westminster- TCC Event Center (Dick's Sporting Goods wing)",
+      "city": "Westminster",
+      "link": "https://www.eventbrite.com/e/ben-mcdonald-autograph-signing-sunday-september-20-2026-westminster-md-tickets-1998401197778",
+      "notes": "Ben McDonald Autograph Signing- Sunday September 20, 2026 Westminster, MD",
+      "source": "eventbrite.com",
+      "addedAt": "2026-08-20"
+    },
+    {
+      "id": "eb_1787655745882_8n98x",
       "player": "Dolph Lundgren",
       "title": "Book Signing",
       "sport": "book",
@@ -290,137 +315,20 @@
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg/330px-Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
-      "id": "eb_1787222851921_1ynzb",
-      "player": "Jonathan Bowlan",
-      "title": "Autograph signing 9/5",
-      "sport": "other",
-      "date": "2026-09-05",
-      "venue": "Deptford Mall",
-      "city": "Deptford",
-      "link": "https://www.eventbrite.com/e/jonathan-bowlan-autograph-signing-95-tickets-1998434075115",
-      "notes": "Jonathan Bowlan Autograph signing 9/5",
-      "source": "eventbrite.com",
-      "addedAt": "2026-08-20"
-    },
-    {
-      "id": "eb_1787222851991_na5zo",
-      "player": "EK Unmasked Launch and",
-      "title": "Book Signing Experience",
+      "id": "eb_1787655746233_stlfc",
+      "player": "Dementia Daughter",
+      "title": "Book Signing",
       "sport": "book",
-      "date": "2026-08-22",
-      "venue": "5420 W Plano Pkwy",
-      "city": "Plano",
-      "link": "https://www.eventbrite.com/e/ek-unmasked-launch-and-book-signing-experience-tickets-1995176379259",
-      "notes": "EK Unmasked Launch and Book Signing Experience",
+      "date": "2026-09-08",
+      "venue": "The State",
+      "city": "Rancho Cucamonga",
+      "link": "https://www.eventbrite.com/e/dementia-daughter-book-signing-tickets-1998390256051",
+      "notes": "Dementia Daughter Book Signing",
       "source": "eventbrite.com",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-08-25"
     },
     {
-      "id": "eb_1787222851991_npyeg",
-      "player": "Amy Buchanan",
-      "title": "Book Release & Signing with",
-      "sport": "other",
-      "date": "2026-08-22",
-      "venue": "Decatur Library, DeKalb County Public Library",
-      "city": "Decatur",
-      "link": "https://www.eventbrite.com/e/book-release-signing-with-amy-buchanan-tickets-1992298444278",
-      "notes": "Book Release & Signing with Amy Buchanan",
-      "source": "eventbrite.com",
-      "addedAt": "2026-06-30"
-    },
-    {
-      "id": "eb_1787222852132_dkk10",
-      "player": "Ben McDonald",
-      "title": "Autograph Signing Sunday September 20 2026 Westminster MD",
-      "sport": "other",
-      "date": "2026-09-20",
-      "venue": "TownMall of Westminster- TCC Event Center (Dick's Sporting Goods wing)",
-      "city": "Westminster",
-      "link": "https://www.eventbrite.com/e/ben-mcdonald-autograph-signing-sunday-september-20-2026-westminster-md-tickets-1998401197778",
-      "notes": "Ben McDonald Autograph Signing- Sunday September 20, 2026 Westminster, MD",
-      "source": "eventbrite.com",
-      "addedAt": "2026-08-20"
-    },
-    {
-      "id": "eb_1787222865031_csimg",
-      "player": "PROJECT IMG",
-      "title": "MEET&GREET MIAMI CHAPTER",
-      "sport": "other",
-      "date": "2026-08-22",
-      "venue": "8455 NW 53rd St",
-      "city": "Doral",
-      "link": "https://www.eventbrite.com/e/project-img-meetgreet-miami-chapter-tickets-1997926821907",
-      "notes": "PROJECT IMG MEET&GREET- MIAMI CHAPTER",
-      "source": "eventbrite.com",
-      "addedAt": "2026-08-20"
-    },
-    {
-      "id": "eb_1787222875559_52ccc",
-      "player": "Big Event EXS",
-      "title": "Meet & Greet Opportunity",
-      "sport": "other",
-      "date": "2026-11-14",
-      "venue": "Suffolk Credit Union Arena",
-      "city": "Brentwood",
-      "link": "https://www.eventbrite.com/e/big-event-exs-meet-greet-opportunity-tickets-1992592870916",
-      "notes": "Big Event EXS Meet & Greet Opportunity",
-      "source": "eventbrite.com",
-      "addedAt": "2026-06-30"
-    },
-    {
-      "id": "eb_1787222875880_tkmnj",
-      "player": "Manchester United",
-      "title": "Meet & Greet: Andy Cole",
-      "sport": "other",
-      "date": "2026-08-21",
-      "venue": "Pelé Soccer - Times Square",
-      "city": "New York",
-      "link": "https://www.eventbrite.com/e/manchester-united-meet-greet-andy-cole-registration-1997978681019",
-      "notes": "Manchester United Meet & Greet: Andy Cole",
-      "source": "eventbrite.com",
-      "addedAt": "2026-08-20"
-    },
-    {
-      "id": "eb_1787222875952_lq3g3",
-      "player": "AAMU vs TSU Legacy Showdown Alumni",
-      "title": "Meet & Greet",
-      "sport": "other",
-      "date": "2026-09-11",
-      "venue": "Louis Crews Stadium",
-      "city": "Huntsville",
-      "link": "https://www.eventbrite.com/e/aamu-vs-tsu-legacy-showdown-alumni-meet-greet-tickets-1995605321236",
-      "notes": "AAMU vs TSU Legacy Showdown Alumni Meet & Greet",
-      "source": "eventbrite.com",
-      "addedAt": "2026-08-15"
-    },
-    {
-      "id": "eb_1787222876021_nw1lq",
-      "player": "Supervisor Matt Dorsey",
-      "title": "District 6 Meet & Greet with",
-      "sport": "other",
-      "date": "2026-08-31",
-      "venue": "Underdogs Cantina",
-      "city": "San Francisco",
-      "link": "https://www.eventbrite.com/e/district-6-meet-greet-with-supervisor-matt-dorsey-tickets-1996003451053",
-      "notes": "District 6 Meet & Greet with Supervisor Matt Dorsey",
-      "source": "eventbrite.com",
-      "addedAt": "2026-08-20"
-    },
-    {
-      "id": "eb_1787222886342_nwpnn",
-      "player": "Shamicka Toney",
-      "title": "Book Signing & Talk",
-      "sport": "book",
-      "date": "2026-08-29",
-      "venue": "Da Book Joint",
-      "city": "Chicago",
-      "link": "https://www.eventbrite.com/e/shamicka-toney-book-signing-talk-tickets-1990832672114",
-      "notes": "Shamicka Toney Book Signing & Talk",
-      "source": "eventbrite.com",
-      "addedAt": "2026-06-25"
-    },
-    {
-      "id": "eb_1787222886945_kjnl3",
+      "id": "eb_1787655746233_2brw8",
       "player": "FanGrrrl Romance Recs Premier",
       "title": "Book Signing 2026",
       "sport": "book",
@@ -433,7 +341,86 @@
       "addedAt": "2026-08-10"
     },
     {
-      "id": "eb_1787222886945_c6l1k",
+      "id": "eb_1787655805352_z9jqr",
+      "player": "Big Event EXS",
+      "title": "Meet & Greet Opportunity",
+      "sport": "other",
+      "date": "2026-11-14",
+      "venue": "Suffolk Credit Union Arena",
+      "city": "Brentwood",
+      "link": "https://www.eventbrite.com/e/big-event-exs-meet-greet-opportunity-tickets-1992592870916",
+      "notes": "Big Event EXS Meet & Greet Opportunity",
+      "source": "eventbrite.com",
+      "addedAt": "2026-06-30"
+    },
+    {
+      "id": "eb_1787655809753_n2kkj",
+      "player": "AAMU vs TSU Legacy Showdown Alumni",
+      "title": "Meet & Greet",
+      "sport": "other",
+      "date": "2026-09-11",
+      "venue": "Louis Crews Stadium",
+      "city": "Huntsville",
+      "link": "https://www.eventbrite.com/e/aamu-vs-tsu-legacy-showdown-alumni-meet-greet-tickets-1995605321236",
+      "notes": "AAMU vs TSU Legacy Showdown Alumni Meet & Greet",
+      "source": "eventbrite.com",
+      "addedAt": "2026-08-15"
+    },
+    {
+      "id": "eb_1787655811234_g75z9",
+      "player": "Supervisor Matt Dorsey",
+      "title": "District 6 Meet & Greet with",
+      "sport": "other",
+      "date": "2026-08-31",
+      "venue": "Underdogs Cantina",
+      "city": "San Francisco",
+      "link": "https://www.eventbrite.com/e/district-6-meet-greet-with-supervisor-matt-dorsey-tickets-1996003451053",
+      "notes": "District 6 Meet & Greet with Supervisor Matt Dorsey",
+      "source": "eventbrite.com",
+      "addedAt": "2026-08-20"
+    },
+    {
+      "id": "eb_1787655830063_7ecbh",
+      "player": "Shamicka Toney",
+      "title": "Book Signing & Talk",
+      "sport": "book",
+      "date": "2026-08-29",
+      "venue": "Da Book Joint",
+      "city": "Chicago",
+      "link": "https://www.eventbrite.com/e/shamicka-toney-book-signing-talk-tickets-1990832672114",
+      "notes": "Shamicka Toney Book Signing & Talk",
+      "source": "eventbrite.com",
+      "addedAt": "2026-06-25"
+    },
+    {
+      "id": "eb_1787655830063_ywoag",
+      "player": "MEET AND GREET",
+      "title": "BOOK SIGNING WITH AUTHOR DR. CLARISSA LAWRENCE",
+      "sport": "book",
+      "date": "2026-10-10",
+      "venue": "Gathering At The Gage",
+      "city": "West Allis",
+      "link": "https://www.eventbrite.com/e/meet-and-greet-book-signing-with-author-dr-clarissa-lawrence-tickets-1998618233939",
+      "notes": "MEET AND GREET BOOK SIGNING WITH AUTHOR DR. CLARISSA LAWRENCE",
+      "source": "eventbrite.com",
+      "addedAt": "2026-08-25"
+    },
+    {
+      "id": "eb_1787655830063_phvys",
+      "player": "Colin Kaepernick",
+      "title": "Book Signing with Urban Reads Bookstore",
+      "sport": "book",
+      "date": "2026-09-25",
+      "venue": "Coppin State University James Weldon Johnson Auditorium",
+      "city": "Baltimore",
+      "link": "https://www.eventbrite.com/e/colin-kaepernick-book-signing-with-urban-reads-bookstore-tickets-1998224120134",
+      "notes": "Colin Kaepernick Book Signing with Urban Reads Bookstore",
+      "source": "eventbrite.com",
+      "addedAt": "2026-08-25",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Colin_Kaepernick_2026ACLU.png/330px-Colin_Kaepernick_2026ACLU.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    },
+    {
+      "id": "eb_1787655830185_lwhtq",
       "player": "Dolph Lundgren",
       "title": "Book Signing at Venice's Gold's Gym",
       "sport": "book",
@@ -445,6 +432,20 @@
       "source": "eventbrite.com",
       "addedAt": "2026-08-20",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg/330px-Dolph_Lundgren_Photo_Op_GalaxyCon_Richmond_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    },
+    {
+      "id": "eb_1787655830252_847rr",
+      "player": "Victoria Christopher Murray",
+      "title": "Brunch & Book Signing with",
+      "sport": "book",
+      "date": "2026-09-13",
+      "venue": "Metropolitan Baptist Church",
+      "city": "Largo",
+      "link": "https://www.eventbrite.com/e/brunch-book-signing-with-victoria-christopher-murray-tickets-1997479877083",
+      "notes": "Brunch & Book Signing with Victoria Christopher Murray",
+      "source": "eventbrite.com",
+      "addedAt": "2026-08-25",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Victoria_Christopher_Murray_2024_%28cropped%29.jpg/330px-Victoria_Christopher_Murray_2024_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_long-beach-comic-con_billy-west",
@@ -1163,7 +1164,7 @@
     },
     {
       "id": "epic_rose-city-comic-con_stephen-amell",
-      "player": "Tom Skerritt",
+      "player": "Tony Amendola",
       "title": "Rose City Comic Con 2026",
       "sport": "celeb",
       "date": "2026-09-11",
@@ -1173,19 +1174,6 @@
       "notes": "Rose City Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-07-30"
-    },
-    {
-      "id": "epic_rose-city-comic-con_tom-skerritt",
-      "player": "Tony Amendola",
-      "title": "Rose City Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-09-11",
-      "venue": "Oregon Convention Center",
-      "city": "Portland, OR",
-      "link": "https://store.epic.leapevent.tech/rose-city-comic-con/2026/tom-skerritt",
-      "notes": "Rose City Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
     },
     {
       "id": "epic_rose-city-comic-con_tony-amendola",
@@ -1254,26 +1242,13 @@
     },
     {
       "id": "epic_rose-city-comic-con_zeno-robinson",
-      "player": "TeamUp - Alien",
-      "title": "Rose City Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-09-11",
-      "venue": "Oregon Convention Center",
-      "city": "Portland, OR",
-      "link": "https://store.epic.leapevent.tech/rose-city-comic-con/2026/zeno-robinson",
-      "notes": "Rose City Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
-    },
-    {
-      "id": "epic_rose-city-comic-con_teamup-alien",
       "player": "TeamUp - Beastars Duo",
       "title": "Rose City Comic Con 2026",
       "sport": "celeb",
       "date": "2026-09-11",
       "venue": "Oregon Convention Center",
       "city": "Portland, OR",
-      "link": "https://store.epic.leapevent.tech/rose-city-comic-con/2026/teamup-alien",
+      "link": "https://store.epic.leapevent.tech/rose-city-comic-con/2026/zeno-robinson",
       "notes": "Rose City Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-07-25"
@@ -1448,1319 +1423,6 @@
       "addedAt": "2026-07-25"
     },
     {
-      "id": "epic_los-angeles-comic-con_aaron-paul",
-      "player": "Aaron Paul",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/aaron-paul",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_angela-kinsey",
-      "player": "Arden Cho",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/angela-kinsey",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_arden-cho",
-      "player": "Billy West",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/arden-cho",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-10",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_billy-west",
-      "player": "Dean Norris",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/billy-west",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_dean-norris",
-      "player": "Eman Esfandi",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/dean-norris",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_eman-esfandi",
-      "player": "Graham McTavish",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/eman-esfandi",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_graham-mctavish",
-      "player": "Grant O’Rourke",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/graham-mctavish",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_grant-orourke",
-      "player": "Hayden Christensen",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/grant-orourke",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_hayden-christensen",
-      "player": "Ji-young Yoo",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/hayden-christensen",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-30",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_ji-young-yoo",
-      "player": "John DiMaggio",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/ji-young-yoo",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-10",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_john-dimaggio",
-      "player": "Maurice LaMarche",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/john-dimaggio",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_maurice-lamarche",
-      "player": "May Hong",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/maurice-lamarche",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_may-hong",
-      "player": "Natasha Liu Bordizzo",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/may-hong",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-10",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_natasha-liu-bordizzo",
-      "player": "Nicolas Cage",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/natasha-liu-bordizzo",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_nicolas-cage",
-      "player": "Phil LaMarr",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/nicolas-cage",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_phil-lamarr",
-      "player": "Rainn Wilson",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/phil-lamarr",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Rainn_Wilson_GalaxyCon_Raleigh_July%2C_25%2C_2026_132.jpg/330px-Rainn_Wilson_GalaxyCon_Raleigh_July%2C_25%2C_2026_132.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_rainn-wilson",
-      "player": "Rosario Dawson",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/rainn-wilson",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_rosario-dawson",
-      "player": "Sam Heughan",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/rosario-dawson",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_sam-heughan",
-      "player": "Stephen Walters",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/sam-heughan",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_stephen-walters",
-      "player": "Tony Hale",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/stephen-walters",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_tony-hale",
-      "player": "TeamUp - Ahsoka - Ahsoka &amp; Sabine",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/tony-hale",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-ahsoka-rosario-natasha",
-      "player": "TeamUp - Ahsoka - Ahsoka, Sabine, &amp; Ezra",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-rosario-natasha",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-ahsoka-rosario-natasha-eman",
-      "player": "TeamUp - Ahsoka - Anakin &amp; Ahsoka",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-rosario-natasha-eman",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-ahsoka-hayden-rosario",
-      "player": "TeamUp - Ahsoka - Sabine &amp; Ezra",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-hayden-rosario",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-ahsoka-natasha-eman",
-      "player": "TeamUp - Kpop Demon Hunters",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-natasha-eman",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-kpop-demon-hunters",
-      "player": "TeamUp - The Office - Dwight &amp; Angela",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-kpop-demon-hunters",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-the-office-dwight-angela",
-      "player": "The Sam Heughan Experience",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-the-office-dwight-angela",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_the-sam-heughan-experience",
-      "player": "TeamUp - Outlander Cast",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/the-sam-heughan-experience",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-outlander-cast",
-      "player": "TeamUp - Outlander: Dougal, Rupert, Angus",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-cast",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-outlander-6",
-      "player": "TeamUp - Outlander: Jaime &amp; Angus",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-6",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-outlander-4",
-      "player": "TeamUp - Outlander: Jaime &amp; Dougal",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-4",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-outlander-2",
-      "player": "TeamUp - Outlander: Jaime &amp; Rupert",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-2",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-outlander-3",
-      "player": "TeamUp - Outlander: Jamie, Rupert, &amp; Angus",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-3",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-outlander-5",
-      "player": "TeamUp - Outlander: Rupert &amp; Angus",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-5",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "linkBroken": true
-    },
-    {
-      "id": "epic_los-angeles-comic-con_teamup-outlander-7",
-      "player": "SWAU Authentication",
-      "title": "Los Angeles Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-10-30",
-      "venue": "Los Angeles Convention Center",
-      "city": "Los Angeles, CA",
-      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-7",
-      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
-    },
-    {
-      "id": "live_1786789750634_n0lpb",
-      "player": "Quincy St",
-      "title": "WRESTLING Meet And Greets",
-      "sport": "wrestling",
-      "date": "2026-08-29",
-      "link": "https://www.facebook.com/groups/346340149619250/",
-      "notes": "special autograph and photo signing event! Saturday, August 29, 2026 12:00 PM – 4:00 PM 13 W. Quincy St., Westmont, IL Autographs: $50 each Photos: $50 each ...",
-      "source": "33.1K+ followers",
-      "addedAt": "2026-08-15"
-    },
-    {
-      "id": "eb_1786791128478_396tt",
-      "player": "Jacob Gonzalez",
-      "title": "Pittsburgh Pirates Jacob Gonalez autograph session. Sept. 14 2026",
-      "sport": "baseball",
-      "date": "2026-09-14",
-      "venue": "Baseball Card Castle",
-      "city": "Cranberry Township",
-      "link": "https://www.eventbrite.com/e/pittsburgh-pirates-jacob-gonalez-autograph-session-sept-142026-tickets-1997509444520",
-      "notes": "Pittsburgh Pirates Jacob Gonalez autograph session. Sept. 14,2026",
-      "source": "eventbrite.com",
-      "addedAt": "2026-08-15"
-    },
-    {
-      "id": "eb_1786791152906_ubmb3",
-      "player": "Aprende Peque",
-      "title": "Aprende Peque Meet & Greet",
-      "sport": "other",
-      "date": "2026-08-29",
-      "venue": "The Playground Museum",
-      "city": "Santee",
-      "link": "https://www.eventbrite.com/e/aprende-peque-meet-greet-san-diego-august-29-saturday-tickets-1995780559378",
-      "notes": "Aprende Peque Meet & Greet – San Diego | August 29 (Saturday)",
-      "source": "eventbrite.com",
-      "addedAt": "2026-08-15"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_james-spence-authentication",
-      "player": "James Spence Authentication",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/james-spence-authentication",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_minty-lewis",
-      "player": "TeamUp - A LEAGUE OF THEIR OWN",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/minty-lewis",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-a-league-of-their-own",
-      "player": "TeamUp - Boy Meets World",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-a-league-of-their-own",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-hazbin-hotelhelluva-boss-universe",
-      "player": "TeamUp - HELLUVA BOSS",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-hazbin-hotelhelluva-boss-universe",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-helluva-boss",
-      "player": "TeamUp - KILLER KROSS AND SCARLETT",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-helluva-boss",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-10"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-killer-kross-and-scarlett",
-      "player": "TeamUp - New Zoo Revue Duo",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-killer-kross-and-scarlett",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-new-zoo-revue-duo",
-      "player": "TeamUp - New Zoo Revue Trio (W/ Freddie The Frog)",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-new-zoo-revue-duo",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-new-zoo-revue-trio-w-freddie-the-frog",
-      "player": "TeamUp - Regular Show",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-new-zoo-revue-trio-w-freddie-the-frog",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-regular-show",
-      "player": "TeamUp - THE BOYS",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-regular-show",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-the-boys",
-      "player": "TeamUp - THE FLASH",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-the-boys",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-the-flash",
-      "player": "Amir Talai",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-the-flash",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_amir-talai",
-      "player": "Andrew Caldwell",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/amir-talai",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_andrew-caldwell",
-      "player": "Andy Black",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/andrew-caldwell",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_andy-black",
-      "player": "Anne Ramsay",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/andy-black",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_anne-ramsay",
-      "player": "Bitty Schram",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/anne-ramsay",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_bitty-schram",
-      "player": "Blake Roman",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/bitty-schram",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_blake-roman",
-      "player": "Bryce Pinkham",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/blake-roman",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_bryce-pinkham",
-      "player": "Chris Bartlett",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/bryce-pinkham",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_chris-bartlett",
-      "player": "Clifford Chapin",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/chris-bartlett",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_clifford-chapin",
-      "player": "Dan Fogler",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/clifford-chapin",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_dan-fogler",
-      "player": "Danielle Nicolet",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/dan-fogler",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_danielle-nicolet",
-      "player": "Daphne Rubin-Vega",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/danielle-nicolet",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/DaphneRubinVega-byPhilipRomano.jpg/330px-DaphneRubinVega-byPhilipRomano.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_daphne-rubin-vega",
-      "player": "David Sobolov",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/daphne-rubin-vega",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_david-sobolov",
-      "player": "Doug Momary",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/david-sobolov",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_doug-momary",
-      "player": "Emily Peden",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/doug-momary",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_emily-peden",
-      "player": "Giancarlo Esposito",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/emily-peden",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_giancarlo-esposito",
-      "player": "Jaimie Alexander",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/giancarlo-esposito",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_jaimie-alexander",
-      "player": "Janie Haddad Tompkins",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/jaimie-alexander",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_janie-haddad-tompkins",
-      "player": "Jason Faunt",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/janie-haddad-tompkins",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Jason_Faunt_by_Gage_Skidmore.jpg/330px-Jason_Faunt_by_Gage_Skidmore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_jason-faunt",
-      "player": "Jim Beaver",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/jason-faunt",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_jim-beaver",
-      "player": "Joel David Moore",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/jim-beaver",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_joel-david-moore",
-      "player": "Kevin Eastman",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/joel-david-moore",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-15"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_kevin-eastman",
-      "player": "Kimiko Glenn",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/kevin-eastman",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_kimiko-glenn",
-      "player": "Leslie Rodriguez Kritzer",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/kimiko-glenn",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_leslie-rodriguez-kritzer",
-      "player": "Lori Petty",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/leslie-rodriguez-kritzer",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_lori-petty",
-      "player": "Mae Whitman",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/lori-petty",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_mae-whitman",
-      "player": "Matt Ryan",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/mae-whitman",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_matt-ryan",
-      "player": "Megan Cavanagh",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/matt-ryan",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_megan-cavanagh",
-      "player": "Melise Jow",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/megan-cavanagh",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_melise-jow",
-      "player": "Mick Foley",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/melise-jow",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Mick_Foley_Photo_Op_GalaxyCon_Oklahoma_City_2024.jpg/330px-Mick_Foley_Photo_Op_GalaxyCon_Oklahoma_City_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_mick-foley",
-      "player": "Mickie James",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/mick-foley",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_mickie-james",
-      "player": "Nicky Jones",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/mickie-james",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_nicky-jones",
-      "player": "Pam Grier",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/nicky-jones",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_pam-grier",
-      "player": "Patina Miller",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/pam-grier",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_patina-miller",
-      "player": "Patti Pelton",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/patina-miller",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_patti-pelton",
-      "player": "Rider Strong",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/patti-pelton",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_rider-strong",
-      "player": "Ross Marquand",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/rider-strong",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_ross-marquand",
-      "player": "Sam Marin",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/ross-marquand",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_sam-marin",
-      "player": "Saraya aka Paige",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/sam-marin",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_saraya-aka-paige",
-      "player": "Shaun Weiss",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/saraya-aka-paige",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_shaun-weiss",
-      "player": "Stephen Costantino",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/shaun-weiss",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_stephen-costantino",
-      "player": "Vivian Nixon Williams",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/stephen-costantino",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_vivian-nixon-williams",
-      "player": "Will Friedle",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/vivian-nixon-williams",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_will-friedle",
-      "player": "William Salyers",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/will-friedle",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-20"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_william-salyers",
-      "player": "Amber Lee Connors",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/william-salyers",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_amber-lee-connors",
-      "player": "David Matranga",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/amber-lee-connors",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/David_Matranga_GalaxyCon_Nashville_052026-20.jpg/330px-David_Matranga_GalaxyCon_Nashville_052026-20.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_david-matranga",
-      "player": "Killer Kross",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/david-matranga",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Karrion_Kross%2C_WrestleMania_XL_%282%29.jpg/330px-Karrion_Kross%2C_WrestleMania_XL_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_killer-kross-autograph",
-      "player": "Kristen McGuire",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/killer-kross-autograph",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_kristen-mcguire",
-      "player": "Patricia Patts",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/kristen-mcguire",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_patricia-patts",
-      "player": "Scarlett",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/patricia-patts",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
-    },
-    {
       "id": "epic_new-york-comic-con_ariana-richards",
       "player": "Ariana Richards",
       "title": "New York Comic Con 2026",
@@ -2771,8 +1433,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/ariana-richards",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_bd-wong",
@@ -2785,8 +1446,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/bd-wong",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_ben-starr",
@@ -2799,8 +1459,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/ben-starr",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_bitsie-tulloch",
@@ -2813,8 +1472,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/bitsie-tulloch",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_erica-durance",
@@ -2827,8 +1485,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/erica-durance",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_hayden-christensen",
@@ -2841,8 +1498,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/hayden-christensen",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_ian-mcdiarmid",
@@ -2855,8 +1511,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/ian-mcdiarmid",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_jamie-kennedy",
@@ -2869,8 +1524,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/jamie-kennedy",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_jennifer-english",
@@ -2883,8 +1537,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/jennifer-english",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_joe-lo-truglio",
@@ -2897,8 +1550,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/joe-lo-truglio",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_joseph-mazzello",
@@ -2911,8 +1563,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/joseph-mazzello",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_kane-hodder",
@@ -2925,8 +1576,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/kane-hodder",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_kristin-kreuk",
@@ -2939,8 +1589,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/kristin-kreuk",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_lee-waddell",
@@ -2953,12 +1602,11 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/lee-waddell",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_lena-headey",
-      "player": "Matthew Lillard",
+      "player": "Matt Smith",
       "title": "New York Comic Con 2026",
       "sport": "celeb",
       "date": "2026-10-08",
@@ -2967,12 +1615,24 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/lena-headey",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_new-york-comic-con_matt-smith",
+      "player": "Matthew Lillard",
+      "title": "New York Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-08",
+      "venue": "Jacob Javits Convention Center",
+      "city": "New York, NY",
+      "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/matt-smith",
+      "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_new-york-comic-con_matthew-lillard",
-      "player": "Melissa Fumero",
+      "player": "Melissa Benoist",
       "title": "New York Comic Con 2026",
       "sport": "celeb",
       "date": "2026-10-08",
@@ -2981,8 +1641,20 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/matthew-lillard",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_new-york-comic-con_melissa-benoist",
+      "player": "Melissa Fumero",
+      "title": "New York Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-08",
+      "venue": "Jacob Javits Convention Center",
+      "city": "New York, NY",
+      "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/melissa-benoist",
+      "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_new-york-comic-con_melissa-fumero",
@@ -2995,8 +1667,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/melissa-fumero",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_michael-cudlitz",
@@ -3009,8 +1680,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/michael-cudlitz",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_michael-rosenbaum",
@@ -3023,9 +1693,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/michael-rosenbaum",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Mick_Foley_Photo_Op_GalaxyCon_Oklahoma_City_2024.jpg/330px-Mick_Foley_Photo_Op_GalaxyCon_Oklahoma_City_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_mick-foley",
@@ -3038,8 +1706,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/mick-foley",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_nancy-allen",
@@ -3052,12 +1719,11 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/nancy-allen",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_nicolas-cage",
-      "player": "Nolan North",
+      "player": "Nikolaj Coster-Waldau",
       "title": "New York Comic Con 2026",
       "sport": "celeb",
       "date": "2026-10-08",
@@ -3066,12 +1732,24 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/nicolas-cage",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_new-york-comic-con_nikolaj-coster-waldau",
+      "player": "Nolan North",
+      "title": "New York Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-08",
+      "venue": "Jacob Javits Convention Center",
+      "city": "New York, NY",
+      "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/nikolaj-coster-waldau",
+      "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_new-york-comic-con_nolan-north",
-      "player": "Peter Weller",
+      "player": "Paul Bettany",
       "title": "New York Comic Con 2026",
       "sport": "celeb",
       "date": "2026-10-08",
@@ -3080,8 +1758,20 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/nolan-north",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_new-york-comic-con_paul-bettany",
+      "player": "Peter Weller",
+      "title": "New York Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-08",
+      "venue": "Jacob Javits Convention Center",
+      "city": "New York, NY",
+      "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/paul-bettany",
+      "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_new-york-comic-con_peter-weller",
@@ -3094,8 +1784,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/peter-weller",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_skeet-ulrich",
@@ -3108,8 +1797,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/skeet-ulrich",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_tom-welling",
@@ -3122,8 +1810,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/tom-welling",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_tyler-hoechlin",
@@ -3136,8 +1823,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/tyler-hoechlin",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_wayne-knight",
@@ -3150,8 +1836,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/wayne-knight",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_yuri-lowenthal",
@@ -3164,8 +1849,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/yuri-lowenthal",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_alyson-leigh-rosenfeld",
@@ -3178,8 +1862,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/alyson-leigh-rosenfeld",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_emily-rose",
@@ -3192,8 +1875,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/emily-rose",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_haven-burton-paschall",
@@ -3206,8 +1888,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/haven-burton-paschall",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_jen-taylor",
@@ -3220,8 +1901,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/jen-taylor",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_kirsty-rider",
@@ -3234,8 +1914,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/kirsty-rider",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_mike-liscio",
@@ -3248,8 +1927,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/mike-liscio",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_rich-keeble",
@@ -3262,8 +1940,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/rich-keeble",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_richard-mcgonagle",
@@ -3276,8 +1953,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/richard-mcgonagle",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_sarah-natochenny",
@@ -3290,8 +1966,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/sarah-natochenny",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_steve-downes",
@@ -3304,8 +1979,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/steve-downes",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-clair-obscur-group",
@@ -3318,8 +1992,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-clair-obscur-group",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-halo-duo",
@@ -3332,8 +2005,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-halo-duo",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-jurassic-park-group",
@@ -3346,8 +2018,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-jurassic-park-group",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-pokemon-xy",
@@ -3360,8 +2031,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-pokemon-xy",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-pro-wrestling",
@@ -3374,8 +2044,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-pro-wrestling",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-robocop-duo",
@@ -3388,8 +2057,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-robocop-duo",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-scream-group",
@@ -3402,8 +2070,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-scream-group",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-smallville",
@@ -3416,8 +2083,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-smallville",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-star-wars-revenge-of-the-sith-duo",
@@ -3430,8 +2096,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-star-wars-revenge-of-the-sith-duo",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-superman-lois-duo",
@@ -3444,12 +2109,11 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-superman-lois-duo",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_teamup-superman-lois-trio",
-      "player": "TeamUp - Uncharted Trio",
+      "player": "TeamUp - The Lannister Duo",
       "title": "New York Comic Con 2026",
       "sport": "celeb",
       "date": "2026-10-08",
@@ -3458,8 +2122,20 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-superman-lois-trio",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_new-york-comic-con_teamup-the-lannister-duo",
+      "player": "TeamUp - Uncharted Trio",
+      "title": "New York Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-08",
+      "venue": "Jacob Javits Convention Center",
+      "city": "New York, NY",
+      "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-the-lannister-duo",
+      "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_new-york-comic-con_teamup-uncharted-trio",
@@ -3472,8 +2148,7 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/teamup-uncharted-trio",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_new-york-comic-con_hot-flips-top-loaders",
@@ -3486,8 +2161,462 @@
       "link": "https://store.epic.leapevent.tech/new-york-comic-con/2026/hot-flips-top-loaders",
       "notes": "New York Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10",
-      "linkBroken": true
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_aaron-paul",
+      "player": "Aaron Paul",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/aaron-paul",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_angela-kinsey",
+      "player": "Arden Cho",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/angela-kinsey",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_arden-cho",
+      "player": "Billy West",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/arden-cho",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_billy-west",
+      "player": "Dean Norris",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/billy-west",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-15"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_dean-norris",
+      "player": "Eman Esfandi",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/dean-norris",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_eman-esfandi",
+      "player": "Graham McTavish",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/eman-esfandi",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_graham-mctavish",
+      "player": "Grant O’Rourke",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/graham-mctavish",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_grant-orourke",
+      "player": "Hayden Christensen",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/grant-orourke",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_hayden-christensen",
+      "player": "Ji-young Yoo",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/hayden-christensen",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_ji-young-yoo",
+      "player": "John DiMaggio",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/ji-young-yoo",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_john-dimaggio",
+      "player": "Maurice LaMarche",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/john-dimaggio",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-15"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_maurice-lamarche",
+      "player": "May Hong",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/maurice-lamarche",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-15"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_may-hong",
+      "player": "Natasha Liu Bordizzo",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/may-hong",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_natasha-liu-bordizzo",
+      "player": "Nicolas Cage",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/natasha-liu-bordizzo",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_nicolas-cage",
+      "player": "Phil LaMarr",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/nicolas-cage",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_phil-lamarr",
+      "player": "Rainn Wilson",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/phil-lamarr",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-15"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_rainn-wilson",
+      "player": "Rosario Dawson",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/rainn-wilson",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_rosario-dawson",
+      "player": "Sam Heughan",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/rosario-dawson",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_sam-heughan",
+      "player": "Stephen Walters",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/sam-heughan",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_stephen-walters",
+      "player": "Tony Hale",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/stephen-walters",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_tony-hale",
+      "player": "TeamUp - Ahsoka - Ahsoka &amp; Sabine",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/tony-hale",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-ahsoka-rosario-natasha",
+      "player": "TeamUp - Ahsoka - Ahsoka, Sabine, &amp; Ezra",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-rosario-natasha",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-ahsoka-rosario-natasha-eman",
+      "player": "TeamUp - Ahsoka - Anakin &amp; Ahsoka",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-rosario-natasha-eman",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-ahsoka-hayden-rosario",
+      "player": "TeamUp - Ahsoka - Sabine &amp; Ezra",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-hayden-rosario",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-ahsoka-natasha-eman",
+      "player": "TeamUp - Kpop Demon Hunters",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-natasha-eman",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-kpop-demon-hunters",
+      "player": "TeamUp - The Office - Dwight &amp; Angela",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-kpop-demon-hunters",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-the-office-dwight-angela",
+      "player": "The Sam Heughan Experience",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-the-office-dwight-angela",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_the-sam-heughan-experience",
+      "player": "TeamUp - Outlander Cast",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/the-sam-heughan-experience",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-outlander-cast",
+      "player": "TeamUp - Outlander: Dougal, Rupert, Angus",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-cast",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-outlander-6",
+      "player": "TeamUp - Outlander: Jaime &amp; Angus",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-6",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-outlander-4",
+      "player": "TeamUp - Outlander: Jaime &amp; Dougal",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-4",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-outlander-2",
+      "player": "TeamUp - Outlander: Jaime &amp; Rupert",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-2",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-outlander-3",
+      "player": "TeamUp - Outlander: Jamie, Rupert, &amp; Angus",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-3",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-outlander-5",
+      "player": "TeamUp - Outlander: Rupert &amp; Angus",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-5",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_los-angeles-comic-con_teamup-outlander-7",
+      "player": "SWAU Authentication",
+      "title": "Los Angeles Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-10-30",
+      "venue": "Los Angeles Convention Center",
+      "city": "Los Angeles, CA",
+      "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-7",
+      "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-10"
     },
     {
       "id": "epic_rhode-island-comic-con_james-spence-authentication",
@@ -3647,7 +2776,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_teamup-boy-meets-world",
-      "player": "TeamUp - Clair Obscur: Expedition 33",
+      "player": "TeamUp - CHOWDER",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -3657,6 +2786,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-08-15"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_teamup-chowder",
+      "player": "TeamUp - Clair Obscur: Expedition 33",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/teamup-chowder",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_teamup-clair-obscur-expedition-33",
@@ -3699,7 +2841,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_teamup-hazbin-hotelhelluva-boss-universe",
-      "player": "TeamUp - HELLUVA BOSS",
+      "player": "TeamUp - HEELS: Duo",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -3711,8 +2853,21 @@
       "addedAt": "2026-04-05"
     },
     {
+      "id": "epic_rhode-island-comic-con_teamup-heels-duo",
+      "player": "TeamUp - HELLUVA BOSS",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/teamup-heels-duo",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
+    },
+    {
       "id": "epic_rhode-island-comic-con_teamup-helluva-boss",
-      "player": "TeamUp - JAG: Duo",
+      "player": "TeamUp - INVADER ZIM",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -3724,8 +2879,21 @@
       "addedAt": "2026-06-30"
     },
     {
+      "id": "epic_rhode-island-comic-con_teamup-invader-zim",
+      "player": "TeamUp - JAG: Duo",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/teamup-invader-zim",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
+    },
+    {
       "id": "epic_rhode-island-comic-con_teamup-jag-duo",
-      "player": "TeamUp - K-POP DEMON HUNTERS",
+      "player": "TeamUp - JAG: Trio",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -3735,6 +2903,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_teamup-jag-trio",
+      "player": "TeamUp - K-POP DEMON HUNTERS",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/teamup-jag-trio",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_teamup-k-pop-demon-hunters",
@@ -3751,7 +2932,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_teamup-karate-kid-duo",
-      "player": "TeamUp - Maul Duo",
+      "player": "TeamUp - Little House on the Prairie: Duo",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -3761,6 +2942,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_teamup-little-house-on-the-prairie-duo",
+      "player": "TeamUp - Maul Duo",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/teamup-little-house-on-the-prairie-duo",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_teamup-maul-duo",
@@ -3868,7 +3062,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_teamup-stranger-things",
-      "player": "TeamUp - Who Framed ROGER RABBIT",
+      "player": "TeamUp - STRANGER THINGS ANIMATED: Duo",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -3878,6 +3072,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_teamup-stranger-things-animated-duo",
+      "player": "TeamUp - Who Framed ROGER RABBIT",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/teamup-stranger-things-animated-duo",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_teamup-who-framed-roger-rabbit",
@@ -4089,7 +3296,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_blake-roman",
-      "player": "Brandon Rogers",
+      "player": "Bob Gale",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4101,8 +3308,21 @@
       "addedAt": "2026-04-05"
     },
     {
+      "id": "epic_rhode-island-comic-con_bob-gale",
+      "player": "Brandon Rogers",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/bob-gale",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
+    },
+    {
       "id": "epic_rhode-island-comic-con_brandon-rogers",
-      "player": "Bryce Pinkham",
+      "player": "Braxton Quinney",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4112,6 +3332,32 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_braxton-quinney",
+      "player": "Brooklyn Davey",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/braxton-quinney",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_brooklyn-davey",
+      "player": "Bryce Pinkham",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/brooklyn-davey",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_bryce-pinkham",
@@ -4241,8 +3487,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/daniela-ruah",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/DaphneRubinVega-byPhilipRomano.jpg/330px-DaphneRubinVega-byPhilipRomano.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-07-25"
     },
     {
       "id": "epic_rhode-island-comic-con_daphne-rubin-vega",
@@ -4385,8 +3630,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/george-takei",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gordon_Cormier_GalaxyCon_Raleigh_2024.jpg/330px-Gordon_Cormier_GalaxyCon_Raleigh_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-08-15"
     },
     {
       "id": "epic_rhode-island-comic-con_gordon-cormier",
@@ -4403,7 +3647,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_graham-mctavish",
-      "player": "Heather Graham",
+      "player": "Greg Cipes",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4413,6 +3657,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-08-15"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_greg-cipes",
+      "player": "Heather Graham",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/greg-cipes",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_heather-graham",
@@ -4452,8 +3709,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/ian-ousley",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Jack_De_Sena_at_Animate%21_Raleigh_2026_%2855151994061%29.jpg/330px-Jack_De_Sena_at_Animate%21_Raleigh_2026_%2855151994061%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-06-30"
     },
     {
       "id": "epic_rhode-island-comic-con_jack-de-sena",
@@ -4522,7 +3778,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_joanna-cassidy",
-      "player": "John Ratzenberger",
+      "player": "John DiMaggio",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4532,6 +3788,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_john-dimaggio",
+      "player": "John Ratzenberger",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/john-dimaggio",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_john-ratzenberger",
@@ -4574,7 +3843,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_katrina-law",
-      "player": "Kevin Del Aquila",
+      "player": "Kelli Berglund",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4586,17 +3855,17 @@
       "addedAt": "2026-05-05"
     },
     {
-      "id": "epic_rhode-island-comic-con_kevin-del-aquila",
+      "id": "epic_rhode-island-comic-con_kelli-berglund",
       "player": "Kevin Durand",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
       "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
       "city": "Providence, RI",
-      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/kevin-del-aquila",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/kelli-berglund",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_kevin-durand",
@@ -4639,7 +3908,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_lauren-holly",
-      "player": "Leslie Rodriguez Kritzer",
+      "player": "Madison Lintz",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4649,19 +3918,6 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_rhode-island-comic-con_leslie-rodriguez-kritzer",
-      "player": "Madison Lintz",
-      "title": "Rhode Island Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-11-06",
-      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
-      "city": "Providence, RI",
-      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/leslie-rodriguez-kritzer",
-      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
     },
     {
       "id": "epic_rhode-island-comic-con_madison-lintz",
@@ -4678,7 +3934,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_mae-whitman",
-      "player": "Maria Zhang",
+      "player": "Maggie Grace",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4688,6 +3944,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-06-30"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_maggie-grace",
+      "player": "Maria Zhang",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/maggie-grace",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_maria-zhang",
@@ -4730,7 +3999,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_may-hong",
-      "player": "Melissa Gilbert",
+      "player": "Melissa Fahn",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4740,6 +4009,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-07-05"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_melissa-fahn",
+      "player": "Melissa Gilbert",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/melissa-fahn",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_melissa-gilbert",
@@ -4778,8 +4060,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/michaela-jill-murphy",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Mick_Foley_Photo_Op_GalaxyCon_Oklahoma_City_2024.jpg/330px-Mick_Foley_Photo_Op_GalaxyCon_Oklahoma_City_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-06-30"
     },
     {
       "id": "epic_rhode-island-comic-con_mick-foley",
@@ -4822,7 +4103,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_nick-apostolides",
-      "player": "Nolan North",
+      "player": "Nicky Jones",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4832,6 +4113,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-08-10"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_nicky-jones",
+      "player": "Nolan North",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/nicky-jones",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_nolan-north",
@@ -4848,7 +4142,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_patina-miller",
-      "player": "Paul Blake",
+      "player": "Patrick Labyorteaux",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4858,6 +4152,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-05"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_patrick-labyorteaux",
+      "player": "Paul Blake",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/patrick-labyorteaux",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_paul-blake",
@@ -4926,7 +4233,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_rider-strong",
-      "player": "Robert John Burke",
+      "player": "Rikki Simons",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -4936,6 +4243,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-08-15"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_rikki-simons",
+      "player": "Robert John Burke",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/rikki-simons",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_robert-john-burke",
@@ -5069,7 +4389,7 @@
     },
     {
       "id": "epic_rhode-island-comic-con_vivian-nixon-williams",
-      "player": "Will Friedle",
+      "player": "Vivienne Medrano",
       "title": "Rhode Island Comic Con 2026",
       "sport": "celeb",
       "date": "2026-11-06",
@@ -5079,6 +4399,19 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-15"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_vivienne-medrano",
+      "player": "Will Friedle",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/vivienne-medrano",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-08-25"
     },
     {
       "id": "epic_rhode-island-comic-con_will-friedle",
@@ -5120,6 +4453,134 @@
       "addedAt": "2026-07-30"
     },
     {
+      "id": "live_1787222757646_ik0oy",
+      "player": "Rod Wave",
+      "title": "Tickets 2026 2027 Concert Tour Dates",
+      "sport": "other",
+      "date": "2026-09-17",
+      "link": "https://concerts.livenation.com/rod-wave-tickets/artist/2663489?efeat_seg=0&list_view=1",
+      "notes": "Fridayy VIP Meet & Greet Upgrade (Event Ticket Sold Separately). Lineup. Rod Wave · FRIDAYY. Venue. Lenovo Center. September 17, 2026. Sep17. Thursday 08:00 PM ...",
+      "source": "Web search",
+      "addedAt": "2026-08-15",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Beautiful_Mind_Tour_Pittsburgh%2C_PA_4.jpg/330px-Beautiful_Mind_Tour_Pittsburgh%2C_PA_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
+    },
+    {
+      "id": "tse_autograph-ticket-get-your-flat-up-to-16x20-or-mini-helmet-signed-in-person-by-dee-alford-copy",
+      "player": "Dee Alford",
+      "title": "AUTOGRAPH TICKET: Get Your Premium Item Signed in Person by",
+      "sport": "other",
+      "date": "2026-09-24",
+      "venue": "",
+      "city": "Buffalo, NY",
+      "link": "https://tsebuffalo.com/products/autograph-ticket-get-your-flat-up-to-16x20-or-mini-helmet-signed-in-person-by-dee-alford-copy",
+      "notes": "AUTOGRAPH TICKET: Get Your Premium Item Signed in Person by Dee Alford",
+      "source": "tsebuffalo.com",
+      "addedAt": "2026-08-10"
+    },
+    {
+      "id": "eb_1787222851779_1xmu1",
+      "player": "Wyatt Milum",
+      "title": "Autograph Signing",
+      "sport": "other",
+      "date": "2026-09-02",
+      "venue": "Sports Mania",
+      "city": "Jacksonville Beach",
+      "link": "https://www.eventbrite.com/e/wyatt-milum-autograph-signing-tickets-1996891089002",
+      "notes": "Wyatt Milum Autograph Signing",
+      "source": "eventbrite.com",
+      "addedAt": "2026-08-20"
+    },
+    {
+      "id": "epic_rose-city-comic-con_tom-skerritt",
+      "player": "Tony Amendola",
+      "title": "Rose City Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-09-11",
+      "venue": "Oregon Convention Center",
+      "city": "Portland, OR",
+      "link": "https://store.epic.leapevent.tech/rose-city-comic-con/2026/tom-skerritt",
+      "notes": "Rose City Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "epic_rose-city-comic-con_teamup-alien",
+      "player": "TeamUp - Beastars Duo",
+      "title": "Rose City Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-09-11",
+      "venue": "Oregon Convention Center",
+      "city": "Portland, OR",
+      "link": "https://store.epic.leapevent.tech/rose-city-comic-con/2026/teamup-alien",
+      "notes": "Rose City Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-07-25"
+    },
+    {
+      "id": "live_1786789750634_n0lpb",
+      "player": "Quincy St",
+      "title": "WRESTLING Meet And Greets",
+      "sport": "wrestling",
+      "date": "2026-08-29",
+      "link": "https://www.facebook.com/groups/346340149619250/",
+      "notes": "special autograph and photo signing event! Saturday, August 29, 2026 12:00 PM – 4:00 PM 13 W. Quincy St., Westmont, IL Autographs: $50 each Photos: $50 each ...",
+      "source": "33.1K+ followers",
+      "addedAt": "2026-08-15"
+    },
+    {
+      "id": "eb_1786791128478_396tt",
+      "player": "Jacob Gonzalez",
+      "title": "Pittsburgh Pirates Jacob Gonalez autograph session. Sept. 14 2026",
+      "sport": "baseball",
+      "date": "2026-09-14",
+      "venue": "Baseball Card Castle",
+      "city": "Cranberry Township",
+      "link": "https://www.eventbrite.com/e/pittsburgh-pirates-jacob-gonalez-autograph-session-sept-142026-tickets-1997509444520",
+      "notes": "Pittsburgh Pirates Jacob Gonalez autograph session. Sept. 14,2026",
+      "source": "eventbrite.com",
+      "addedAt": "2026-08-15"
+    },
+    {
+      "id": "eb_1786791152906_ubmb3",
+      "player": "Aprende Peque",
+      "title": "Aprende Peque Meet & Greet",
+      "sport": "other",
+      "date": "2026-08-29",
+      "venue": "The Playground Museum",
+      "city": "Santee",
+      "link": "https://www.eventbrite.com/e/aprende-peque-meet-greet-san-diego-august-29-saturday-tickets-1995780559378",
+      "notes": "Aprende Peque Meet & Greet – San Diego | August 29 (Saturday)",
+      "source": "eventbrite.com",
+      "addedAt": "2026-08-15"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_kevin-del-aquila",
+      "player": "Kevin Durand",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/kevin-del-aquila",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-05"
+    },
+    {
+      "id": "epic_rhode-island-comic-con_leslie-rodriguez-kritzer",
+      "player": "Madison Lintz",
+      "title": "Rhode Island Comic Con 2026",
+      "sport": "celeb",
+      "date": "2026-11-06",
+      "venue": "RHODE ISLAND CONVENTION CENTER  & AMICA MUTUAL PAVILION",
+      "city": "Providence, RI",
+      "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/leslie-rodriguez-kritzer",
+      "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-04-05"
+    },
+    {
       "id": "live_1786360891005_j4djn",
       "player": "Costa Blanca",
       "title": "Thursday 10 September 2026 🎟️ Tickets On Sale Now! Torrevieja ...",
@@ -5155,59 +4616,6 @@
       "notes": "Talk and Book Signing with Bestselling Author Jennifer Hillier",
       "source": "eventbrite.com",
       "addedAt": "2026-08-10"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_david-acord",
-      "player": "David Matranga",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/david-acord",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/David_Matranga_GalaxyCon_Nashville_052026-20.jpg/330px-David_Matranga_GalaxyCon_Nashville_052026-20.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_erika-henningsen",
-      "player": "Giancarlo Esposito",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/erika-henningsen",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_killer-kross",
-      "player": "Kimiko Glenn",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/killer-kross",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_scarlett-bordeaux",
-      "player": "Shaun Weiss",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/scarlett-bordeaux",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
     },
     {
       "id": "epic_fan-expo-canada_alan-ritchson",
@@ -5375,7 +4783,8 @@
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-10",
-      "linkBroken": true
+      "linkBroken": true,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Corey_Feldman_at_Rose_City_Comic_Con_02.jpg/330px-Corey_Feldman_at_Rose_City_Comic_Con_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_fan-expo-canada_corey-feldman",
@@ -5459,7 +4868,8 @@
       "notes": "FAN EXPO Canada 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-03",
-      "linkBroken": true
+      "linkBroken": true,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg/330px-Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_fan-expo-canada_elijah-wood",
@@ -7227,7 +6637,8 @@
       "notes": "FAN EXPO Dallas 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-04-03",
-      "linkBroken": true
+      "linkBroken": true,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg/330px-Elijah_Wood_at_the_2025_Sundance_Film_Festival_%28cropped%292.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_fan-expo-dallas_elijah-wood",
@@ -8492,19 +7903,6 @@
       "addedAt": "2026-07-25"
     },
     {
-      "id": "epic_colorado-springs-comic-con_saraya-fka-paige",
-      "player": "Scarlett",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/saraya-fka-paige",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
       "id": "epic_fan-expo-canada_teamup-star-wars-maul-shadow-lord-cast",
       "player": "TeamUp - Star Wars: Maul - Shadow Lord Team Up",
       "title": "FAN EXPO Canada 2026",
@@ -8546,58 +7944,6 @@
       "addedAt": "2026-06-05",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Ric_Flair_Photo_Op_GalaxyCon_Richmond_2025.jpg/330px-Ric_Flair_Photo_Op_GalaxyCon_Richmond_2025.jpg",
       "linkBroken": true
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-hunter-duo-photo-with-fred-stepfanie",
-      "player": "TeamUp - KILLER KROSS AND SCARLETT",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-hunter-duo-photo-with-fred-stepfanie",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_fred-dryer",
-      "player": "Jaimie Alexander",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/fred-dryer",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_matthew-g-taylor",
-      "player": "Megan Cavanagh",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/matthew-g-taylor",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-10"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_stepfanie-kramer",
-      "player": "Vivian Nixon Williams",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/stepfanie-kramer",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
     },
     {
       "id": "epic_fan-expo-dallas_corey-feldman",
@@ -8710,72 +8056,6 @@
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-07-10"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-invader-zim",
-      "player": "TeamUp - KILLER KROSS AND SCARLETT",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-invader-zim",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_kayla-compton",
-      "player": "Kevin Eastman",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/kayla-compton",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_melissa-fahn",
-      "player": "Mick Foley",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/melissa-fahn",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Mick_Foley_Photo_Op_GalaxyCon_Oklahoma_City_2024.jpg/330px-Mick_Foley_Photo_Op_GalaxyCon_Oklahoma_City_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_richard-horvitz",
-      "player": "Rider Strong",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/richard-horvitz",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_rikki-simons",
-      "player": "Sam Marin",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/rikki-simons",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30"
     },
     {
       "id": "epic_fan-expo-canada_josh-holloway",
@@ -8902,58 +8182,6 @@
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-05-05",
       "linkBroken": true
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_teamup-my-cousin-vinny",
-      "player": "TeamUp - New Zoo Revue Duo",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/teamup-my-cousin-vinny",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_bruce-mcgill",
-      "player": "Bryce Pinkham",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/bruce-mcgill",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-05-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_marisa-tomei",
-      "player": "Matt Ryan",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/marisa-tomei",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
-    },
-    {
-      "id": "epic_colorado-springs-comic-con_rick-cosnett",
-      "player": "Rider Strong",
-      "title": "Colorado Springs Comic Con 2026",
-      "sport": "celeb",
-      "date": "2026-08-21",
-      "venue": "Broadmoor World Arena",
-      "city": "Colorado Springs, CO",
-      "link": "https://store.epic.leapevent.tech/colorado-springs-comic-con/2026/rick-cosnett",
-      "notes": "Colorado Springs Comic Con 2026 — meet & greet / autograph signing",
-      "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-05"
     },
     {
       "id": "epic_fan-expo-dallas_alessandro-juliani",
@@ -9124,20 +8352,6 @@
       "addedAt": "2026-04-10"
     },
     {
-      "id": "manual_inna_marbella_aug22",
-      "player": "Inna",
-      "sport": "celeb",
-      "date": "2026-08-22",
-      "venue": "TBD",
-      "city": "Marbella, Spain 🇪🇸",
-      "link": "https://www.ticketmaster.es/inna-meetgreet-upgrade-marbella-22-08-2026/event/1B00637E994F9A12",
-      "img": "https://s1.ticketm.net/dam/a/27a/ae5abbfd-91b3-4eb8-b3fd-743a87c3e27a_687141_RETINA_PORTRAIT_3_2.jpg",
-      "notes": "Meet & Greet upgrade (concert ticket sold separately). Romanian pop star popular across Europe.",
-      "source": "ticketmaster.es",
-      "addedAt": "2026-04-10",
-      "linkBroken": true
-    },
-    {
       "id": "manual_envogue_jonesbeach_sep15",
       "player": "En Vogue",
       "sport": "celeb",
@@ -9152,6 +8366,5 @@
       "addedAt": "2026-04-10",
       "linkBroken": true
     }
-  ],
-  "linkCheckedAt": "2026-08-24T07:06:00.115Z"
+  ]
 }
