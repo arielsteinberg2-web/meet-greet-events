@@ -12,7 +12,8 @@
       "notes": "Fridayy VIP Meet & Greet Upgrade (Event Ticket Sold Separately). Lineup. Rod Wave · FRIDAYY. Venue. Lenovo Center. September 17, 2026. Sep17. Thursday 08:00 PM ...",
       "source": "Web search",
       "addedAt": "2026-08-15",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Beautiful_Mind_Tour_Pittsburgh%2C_PA_4.jpg/330px-Beautiful_Mind_Tour_Pittsburgh%2C_PA_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Beautiful_Mind_Tour_Pittsburgh%2C_PA_4.jpg/330px-Beautiful_Mind_Tour_Pittsburgh%2C_PA_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "tse_autograph-ticket-get-your-premium-item-signed-by-greg-rousseau",
@@ -79,8 +80,7 @@
       "link": "https://tsebuffalo.com/products/vip-autograph-ticket-get-your-premium-item-signed-in-person-by-alford-bell-igbinosun-and-hairston-copy",
       "notes": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by Maxwell Hairston",
       "source": "tsebuffalo.com",
-      "addedAt": "2026-08-10",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/MaxwellHairston2.png/330px-MaxwellHairston2.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-08-10"
     },
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-ocyrus-torrence-1",
@@ -143,8 +143,7 @@
       "link": "https://tsebuffalo.com/products/autograph-ticket-get-your-premium-item-signed-in-person-by-terrel-bernard-1",
       "notes": "AUTOGRAPH TICKET: Get Your Premium Item Signed in Person by Terrel Bernard",
       "source": "tsebuffalo.com",
-      "addedAt": "2026-08-25",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Terrel_Bernard_2025_%28cropped%29.jpg/330px-Terrel_Bernard_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-08-25"
     },
     {
       "id": "eb_1788101664731_36ju2",
@@ -341,8 +340,7 @@
       "link": "https://store.epic.leapevent.tech/rose-city-comic-con/2026/ben-browder",
       "notes": "Rose City Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Caitlin_Glass_at_WonderCon_2026.jpg/330px-Caitlin_Glass_at_WonderCon_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-07-25"
     },
     {
       "id": "epic_rose-city-comic-con_caitlin-glass",
@@ -1669,7 +1667,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/aaron-paul",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_angela-kinsey",
@@ -1682,7 +1681,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/angela-kinsey",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_arden-cho",
@@ -1695,7 +1695,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/arden-cho",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-10"
+      "addedAt": "2026-07-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_billy-west",
@@ -1708,7 +1709,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/billy-west",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15"
+      "addedAt": "2026-08-15",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_bob-odenkirk",
@@ -1721,7 +1723,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/bob-odenkirk",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-30"
+      "addedAt": "2026-08-30",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_dean-norris",
@@ -1734,7 +1737,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/dean-norris",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_eman-esfandi",
@@ -1747,7 +1751,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/eman-esfandi",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_graham-mctavish",
@@ -1760,7 +1765,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/graham-mctavish",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_grant-orourke",
@@ -1773,7 +1779,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/grant-orourke",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_hayden-christensen",
@@ -1786,7 +1793,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/hayden-christensen",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-07-30",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_ji-young-yoo",
@@ -1799,7 +1807,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/ji-young-yoo",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-10"
+      "addedAt": "2026-07-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_john-dimaggio",
@@ -1812,7 +1821,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/john-dimaggio",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15"
+      "addedAt": "2026-08-15",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_maurice-lamarche",
@@ -1825,7 +1835,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/maurice-lamarche",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15"
+      "addedAt": "2026-08-15",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_may-hong",
@@ -1838,7 +1849,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/may-hong",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-10"
+      "addedAt": "2026-07-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_natasha-liu-bordizzo",
@@ -1851,7 +1863,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/natasha-liu-bordizzo",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_nicolas-cage",
@@ -1864,7 +1877,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/nicolas-cage",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_phil-lamarr",
@@ -1877,7 +1891,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/phil-lamarr",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15"
+      "addedAt": "2026-08-15",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_rainn-wilson",
@@ -1890,7 +1905,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/rainn-wilson",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_rosario-dawson",
@@ -1903,7 +1919,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/rosario-dawson",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_sam-heughan",
@@ -1916,7 +1933,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/sam-heughan",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_stephen-walters",
@@ -1930,7 +1948,8 @@
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-07-25",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Tony_Hale_at_the_2024_Toronto_International_Film_Festival_%28cropped%29.jpg/330px-Tony_Hale_at_the_2024_Toronto_International_Film_Festival_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Tony_Hale_at_the_2024_Toronto_International_Film_Festival_%28cropped%29.jpg/330px-Tony_Hale_at_the_2024_Toronto_International_Film_Festival_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_tony-hale",
@@ -1943,7 +1962,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/tony-hale",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-ahsoka-rosario-natasha",
@@ -1956,7 +1976,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-rosario-natasha",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-ahsoka-rosario-natasha-eman",
@@ -1969,7 +1990,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-rosario-natasha-eman",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-ahsoka-hayden-rosario",
@@ -1982,7 +2004,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-hayden-rosario",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-ahsoka-natasha-eman",
@@ -1995,7 +2018,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-ahsoka-natasha-eman",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-kpop-demon-hunters",
@@ -2008,7 +2032,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-kpop-demon-hunters",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-the-office-dwight-angela",
@@ -2021,7 +2046,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-the-office-dwight-angela",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_the-sam-heughan-experience",
@@ -2034,7 +2060,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/the-sam-heughan-experience",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-outlander-cast",
@@ -2047,7 +2074,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-cast",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-outlander-6",
@@ -2060,7 +2088,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-6",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-outlander-4",
@@ -2073,7 +2102,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-4",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-outlander-2",
@@ -2086,7 +2116,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-2",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-outlander-3",
@@ -2099,7 +2130,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-3",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-outlander-5",
@@ -2112,7 +2144,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-5",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-outlander-7",
@@ -2125,7 +2158,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-7",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-10",
+      "linkBroken": true
     },
     {
       "id": "live_1787654716497_sixzm",
@@ -2148,7 +2182,8 @@
       "link": "https://fitermansports.com/event/sam-leavitt-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_lamar_brown_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -2160,7 +2195,8 @@
       "link": "https://fitermansports.com/event/lamar-brown-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_treydez_green_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -2172,7 +2208,8 @@
       "link": "https://fitermansports.com/event/treydez-green-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_harlem_berry_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -2185,7 +2222,8 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-06-30",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Harlem_Berry_on_Enjoy_Life.jpg/330px-Harlem_Berry_on_Enjoy_Life.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Harlem_Berry_on_Enjoy_Life.jpg/330px-Harlem_Berry_on_Enjoy_Life.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "fiterman_winston_watkins_jr_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -2197,7 +2235,8 @@
       "link": "https://fitermansports.com/event/winston-watkins-jr-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_coach_o_public_autograph_event_lauberge_casino_baton_rouge_la_copy",
@@ -2209,7 +2248,8 @@
       "link": "https://fitermansports.com/event/coach-o-public-autograph-event-lauberge-casino-baton-rouge-la-copy/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_whit_weeks_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -2222,7 +2262,8 @@
       "notes": "",
       "source": "fitermansports.com",
       "addedAt": "2026-06-30",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg/330px-092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg/330px-092323_LSU_v_Arkansas_027_%2853533974350%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "fiterman_zach_weeks_public_autograph_event_lauberge_casino_baton_rouge_la",
@@ -2234,7 +2275,8 @@
       "link": "https://fitermansports.com/event/zach-weeks-public-autograph-event-lauberge-casino-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "linkBroken": true
     },
     {
       "id": "fiterman_livvy_dunne_public_autograph_event_lauberge_grand_ballroom_baton_rouge_la",
@@ -2246,7 +2288,8 @@
       "link": "https://fitermansports.com/event/livvy-dunne-public-autograph-event-lauberge-grand-ballroom-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-10",
+      "linkBroken": true
     },
     {
       "id": "fiterman_corey_barber_jr_public_autograph_event_lauberge_grand_ballroom_baton_rouge_la",
@@ -2258,7 +2301,8 @@
       "link": "https://fitermansports.com/event/corey-barber-jr-public-autograph-event-lauberge-grand-ballroom-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-08-15"
+      "addedAt": "2026-08-15",
+      "linkBroken": true
     },
     {
       "id": "fiterman_vip_fast_pass_lauberge_grand_ballroom_baton_rouge_la",
@@ -2270,7 +2314,8 @@
       "link": "https://fitermansports.com/event/vip-fast-pass-lauberge-grand-ballroom-baton-rouge-la/",
       "notes": "",
       "source": "fitermansports.com",
-      "addedAt": "2026-08-15"
+      "addedAt": "2026-08-15",
+      "linkBroken": true
     },
     {
       "id": "eb_1787655745882_8n98x",
@@ -4518,7 +4563,8 @@
       "link": "https://www.eventbrite.com/e/wyatt-milum-autograph-signing-tickets-1996891089002",
       "notes": "Wyatt Milum Autograph Signing",
       "source": "eventbrite.com",
-      "addedAt": "2026-08-20"
+      "addedAt": "2026-08-20",
+      "linkBroken": true
     },
     {
       "id": "epic_rose-city-comic-con_tom-skerritt",
@@ -7217,5 +7263,6 @@
       "addedAt": "2026-04-10",
       "linkBroken": true
     }
-  ]
+  ],
+  "linkCheckedAt": "2026-08-31T13:00:46.477Z"
 }
