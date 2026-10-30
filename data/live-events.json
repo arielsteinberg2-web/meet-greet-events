@@ -1,7 +1,57 @@
 {
-  "generatedAt": "2026-10-25T14:32:57.725Z",
+  "generatedAt": "2026-10-30T16:44:43.771Z",
   "count": 326,
   "events": [
+    {
+      "id": "live_1793378254774_rxu2z",
+      "player": "Limited Edition",
+      "title": "Top Meet & Greet Events 2026",
+      "sport": "basketball",
+      "date": "2026-11-30",
+      "link": "/goto?url=CAESVwHrOzAV4W1qNffj5JspMwVYEG4nUxn4hPQr3UuTv18Y3rdr8pP3iDcjXiFggf6zn4XCwj-YQM1ye9L6h1e6-EQr1aR3g3uC8IHf6NAxW7f3ExOlmO2KJw",
+      "notes": "New York Knicks Autographed Fanatics Authentic 2026 NBA. Limited Edition of 500 Reserve Now. Ships on or before Monday, November 30, 2026.",
+      "source": "https://meetandgreet.events",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-tj-sanders",
+      "player": "TJ Sanders",
+      "title": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by",
+      "sport": "other",
+      "date": "2026-11-21",
+      "venue": "3170 Orchard Park Rd, Orchard Park, NY 14127",
+      "city": "Buffalo, NY",
+      "link": "https://tsebuffalo.com/products/autograph-ticket-get-any-item-of-yours-signed-in-person-by-tj-sanders",
+      "notes": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by TJ Sanders",
+      "source": "tsebuffalo.com",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-tj-parker",
+      "player": "TJ Parker",
+      "title": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by",
+      "sport": "other",
+      "date": "2026-11-21",
+      "venue": "3170 Orchard Park Rd, Orchard Park, NY 14127",
+      "city": "Buffalo, NY",
+      "link": "https://tsebuffalo.com/products/autograph-ticket-get-any-item-of-yours-signed-in-person-by-tj-parker",
+      "notes": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by TJ Parker",
+      "source": "tsebuffalo.com",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-john-fina",
+      "player": "John Fina",
+      "title": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by",
+      "sport": "other",
+      "date": "2026-11-21",
+      "venue": "3170 Orchard Park Rd, Orchard Park, NY 14127",
+      "city": "Buffalo, NY",
+      "link": "https://tsebuffalo.com/products/autograph-ticket-get-any-item-of-yours-signed-in-person-by-john-fina",
+      "notes": "AUTOGRAPH TICKET: Get Any Item of Yours Signed in Person by John Fina",
+      "source": "tsebuffalo.com",
+      "addedAt": "2026-10-30"
+    },
     {
       "id": "live_1792937584615_jhru6",
       "player": "Limited Edition",
@@ -98,20 +148,6 @@
       "linkBroken": true
     },
     {
-      "id": "eb_1792938442100_3381t",
-      "player": "Ana Huang",
-      "title": "The Keeper Book Signing and Q&A with @ Tuscany Falls Mokena IL",
-      "sport": "book",
-      "date": "2026-10-28",
-      "venue": "Tuscany Falls Banquets",
-      "city": "Mokena",
-      "link": "https://www.eventbrite.com/e/the-keeper-book-signing-and-qa-with-ana-huang-tuscany-falls-mokena-il-tickets-1997690038682",
-      "notes": "The Keeper Book Signing and Q&A with Ana Huang @ Tuscany Falls, Mokena, IL",
-      "source": "eventbrite.com",
-      "addedAt": "2026-09-10",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Signature_of_Ana_Huang.svg/330px-Signature_of_Ana_Huang.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-    },
-    {
       "id": "eb_1792938442951_dgdza",
       "player": "TCC Event Center Sports Card Show and",
       "title": "Autograph Signings",
@@ -162,19 +198,6 @@
       "notes": "ALPFA Fort Worth Meet + Greet",
       "source": "eventbrite.com",
       "addedAt": "2026-10-20"
-    },
-    {
-      "id": "eb_1792938451538_777wt",
-      "player": "Bartolo Col",
-      "title": "Meet & Greet with ón",
-      "sport": "other",
-      "date": "2026-10-25",
-      "venue": "2600 Flatbush Ave",
-      "city": "Brooklyn",
-      "link": "https://www.eventbrite.com/e/meet-greet-with-bartolo-colon-tickets-2002241469133",
-      "notes": "Meet & Greet with Bartolo Colón",
-      "source": "eventbrite.com",
-      "addedAt": "2026-10-05"
     },
     {
       "id": "eb_1792938458645_dmzip",
@@ -2059,7 +2082,8 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/dascha-polanco",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-09-15"
+      "addedAt": "2026-09-15",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/David_James_Elliot_at_Fan_Expo_Denver_2026.jpg/330px-David_James_Elliot_at_Fan_Expo_Denver_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_rhode-island-comic-con_david-james-elliott",
@@ -2111,7 +2135,8 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/duncan-watson",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-10-20"
+      "addedAt": "2026-10-20",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Elizabeth_Yu_%2853895845803%29.jpg/330px-Elizabeth_Yu_%2853895845803%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_rhode-island-comic-con_elizabeth-yu",
@@ -2163,7 +2188,8 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/erika-henningsen",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-04-05"
+      "addedAt": "2026-04-05",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/What%27s_Happening_partial_cast_1977.JPG/330px-What%27s_Happening_partial_cast_1977.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_rhode-island-comic-con_ernest-lee-thomas",
@@ -2176,7 +2202,8 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/ernest-lee-thomas",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-09-15"
+      "addedAt": "2026-09-15",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Gordon_Cormier_%2853937079494%29.jpg/330px-Gordon_Cormier_%2853937079494%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_rhode-island-comic-con_gordon-cormier",
@@ -2228,7 +2255,8 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/heather-graham",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-06-30"
+      "addedAt": "2026-06-30",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Henry_Winkler_%2843968252532%29.jpg/330px-Henry_Winkler_%2843968252532%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_rhode-island-comic-con_henry-winkler",
@@ -3544,19 +3572,6 @@
       "addedAt": "2026-10-15"
     },
     {
-      "id": "eb_1792508900770_lt7h6",
-      "player": "Painting In The Spirit",
-      "title": "Book Signing",
-      "sport": "book",
-      "date": "2026-10-28",
-      "venue": "114 Kerr St NW",
-      "city": "Concord",
-      "link": "https://www.eventbrite.com/e/painting-in-the-spirit-book-signing-tickets-2003473308598",
-      "notes": "Painting In The Spirit Book Signing",
-      "source": "eventbrite.com",
-      "addedAt": "2026-10-20"
-    },
-    {
       "id": "epic_rhode-island-comic-con_teamup-arrow-trio",
       "player": "TeamUp - AVATAR ANIMATED GROUP",
       "title": "Rhode Island Comic Con 2026",
@@ -3739,7 +3754,8 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/david-humphrey",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-10-05"
+      "addedAt": "2026-10-05",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/David_James_Elliot_at_Fan_Expo_Denver_2026.jpg/330px-David_James_Elliot_at_Fan_Expo_Denver_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_rhode-island-comic-con_greg-cipes",
@@ -4086,19 +4102,6 @@
       "linkBroken": true
     },
     {
-      "id": "eb_1789913905395_zgiti",
-      "player": "RED SOX Mickey Gasper",
-      "title": "Meet & Greet AFTERPARTY SUGAR FACTORY",
-      "sport": "other",
-      "date": "2026-10-26",
-      "venue": "Sugar Factory Boston",
-      "city": "Boston",
-      "link": "https://www.eventbrite.com/e/red-sox-mickey-gasper-meet-greet-afterparty-sugar-factory-tickets-2001255554235",
-      "notes": "RED SOX Mickey Gasper Meet & Greet AFTERPARTY SUGAR FACTORY",
-      "source": "eventbrite.com",
-      "addedAt": "2026-09-20"
-    },
-    {
       "id": "epic_rhode-island-comic-con_ariel-winter",
       "player": "Ben Starr",
       "title": "Rhode Island Comic Con 2026",
@@ -4122,7 +4125,8 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/george-takei",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15"
+      "addedAt": "2026-08-15",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Gordon_Cormier_%2853937079494%29.jpg/330px-Gordon_Cormier_%2853937079494%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_rhode-island-comic-con_graham-mctavish",
@@ -4306,6 +4310,5 @@
       "addedAt": "2026-04-30",
       "img": "https://static01.nyt.com/athletic/uploads/wp/2019/12/05130830/GettyImages-969741776.jpg?width=1200&height=900&fit=cover"
     }
-  ],
-  "linkCheckedAt": "2026-10-26T12:27:03.802Z"
+  ]
 }
