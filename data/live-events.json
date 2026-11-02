@@ -768,7 +768,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-boba-fett-temuera-daniel",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-10-05"
+      "addedAt": "2026-10-05",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-breaking-bad",
@@ -837,7 +838,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-nobody-bob-chris",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-09-10"
+      "addedAt": "2026-09-10",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-the-office-dwight-angela",
@@ -962,7 +964,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-3",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-07-25"
+      "addedAt": "2026-07-25",
+      "linkBroken": true
     },
     {
       "id": "epic_los-angeles-comic-con_teamup-outlander-5",
@@ -989,7 +992,8 @@
       "link": "https://store.epic.leapevent.tech/los-angeles-comic-con/2026/teamup-outlander-7",
       "notes": "Los Angeles Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-10"
+      "addedAt": "2026-08-10",
+      "linkBroken": true
     },
     {
       "id": "epic_rhode-island-comic-con_james-spence-authentication",
@@ -3582,8 +3586,7 @@
       "link": "https://store.epic.leapevent.tech/rhode-island-comic-con/2026/teamup-arrow-trio",
       "notes": "Rhode Island Comic Con 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-08-15",
-      "linkBroken": true
+      "addedAt": "2026-08-15"
     },
     {
       "id": "epic_rhode-island-comic-con_teamup-k-pop-demon-hunters",
@@ -4310,5 +4313,6 @@
       "addedAt": "2026-04-30",
       "img": "https://static01.nyt.com/athletic/uploads/wp/2019/12/05130830/GettyImages-969741776.jpg?width=1200&height=900&fit=cover"
     }
-  ]
+  ],
+  "linkCheckedAt": "2026-11-02T14:59:44.734Z"
 }
