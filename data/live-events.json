@@ -2314,7 +2314,8 @@
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Alexa_Bliss_RR25_%281%29_%28cropped%29.jpg/330px-Alexa_Bliss_RR25_%281%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Alexa_Bliss_RR25_%281%29_%28cropped%29.jpg/330px-Alexa_Bliss_RR25_%281%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_becky-lynch",
@@ -2327,7 +2328,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/becky-lynch",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_blake-monroe",
@@ -2340,7 +2342,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/blake-monroe",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_booker-t",
@@ -2353,7 +2356,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/booker-t",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_bron-breakker",
@@ -2367,7 +2371,8 @@
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Charlotte_Flair_Photo_Op_GalaxyCon_Raleigh_2019.jpg/330px-Charlotte_Flair_Photo_Op_GalaxyCon_Raleigh_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Charlotte_Flair_Photo_Op_GalaxyCon_Raleigh_2019.jpg/330px-Charlotte_Flair_Photo_Op_GalaxyCon_Raleigh_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_charlotte-flair",
@@ -2380,7 +2385,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/charlotte-flair",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_chelsea-green",
@@ -2394,7 +2400,8 @@
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Damien_Priest_Las_Vegas_Fall_20925.jpg/330px-Damien_Priest_Las_Vegas_Fall_20925.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Damien_Priest_Las_Vegas_Fall_20925.jpg/330px-Damien_Priest_Las_Vegas_Fall_20925.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_damian-priest",
@@ -2407,7 +2414,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/damian-priest",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_danhausen",
@@ -2421,7 +2429,8 @@
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/El_Grande_Americano_-_August_2025.jpg/330px-El_Grande_Americano_-_August_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/El_Grande_Americano_-_August_2025.jpg/330px-El_Grande_Americano_-_August_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_el-grande-americano",
@@ -2435,7 +2444,8 @@
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Fatal_influence_%28cropped%29.jpg/330px-Fatal_influence_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Fatal_influence_%28cropped%29.jpg/330px-Fatal_influence_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_fatal-influence",
@@ -2449,7 +2459,8 @@
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Finn_Balor_2024_%28cropped%29.jpg/330px-Finn_Balor_2024_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Finn_Balor_2024_%28cropped%29.jpg/330px-Finn_Balor_2024_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_finn-balor",
@@ -2462,7 +2473,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/finn-balor",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_gunther",
@@ -2476,7 +2488,8 @@
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Jack_Cartwheel_in_June_2024.jpg/330px-Jack_Cartwheel_in_June_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Jack_Cartwheel_in_June_2024.jpg/330px-Jack_Cartwheel_in_June_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_jack-cartwheel",
@@ -2490,7 +2503,8 @@
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Jacy_Jayne_2023.jpg/330px-Jacy_Jayne_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Jacy_Jayne_2023.jpg/330px-Jacy_Jayne_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_jacy-jayne",
@@ -2503,7 +2517,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/jacy-jayne",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_jade-cargill",
@@ -2516,7 +2531,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/jade-cargill",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_jade-cargill-with-michin-b-fab",
@@ -2529,7 +2545,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/jade-cargill-with-michin-b-fab",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_jevon-evans",
@@ -2542,7 +2559,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/jevon-evans",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_kane",
@@ -2555,7 +2573,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/kane",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_kendal-grey",
@@ -2568,7 +2587,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/kendal-grey",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_mini-vikingo",
@@ -2581,7 +2601,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/mini-vikingo",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_mr-iguana",
@@ -2594,7 +2615,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/mr-iguana",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_omos",
@@ -2607,7 +2629,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/omos",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_paige",
@@ -2620,7 +2643,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/paige",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_penta",
@@ -2633,7 +2657,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/penta",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_perros-del-mal",
@@ -2646,7 +2671,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/perros-del-mal",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_psycho-clown",
@@ -2659,7 +2685,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/psycho-clown",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_r-truth",
@@ -2672,7 +2699,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/r-truth",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_rey-fenix",
@@ -2685,7 +2713,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/rey-fenix",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_seth-rollins",
@@ -2698,7 +2727,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/seth-rollins",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_seth-rollins-becky-lynch",
@@ -2711,7 +2741,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/seth-rollins-becky-lynch",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_stephanie-vaquer",
@@ -2724,7 +2755,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/stephanie-vaquer",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_tatum-paxley",
@@ -2750,7 +2782,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/the-miz",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_trick-williams",
@@ -2763,7 +2796,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/trick-williams",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "linkBroken": true
     },
     {
       "id": "epic_wwe-survivor-series_undertaker",
@@ -4237,5 +4271,6 @@
       "addedAt": "2026-04-30",
       "img": "https://static01.nyt.com/athletic/uploads/wp/2019/12/05130830/GettyImages-969741776.jpg?width=1200&height=900&fit=cover"
     }
-  ]
+  ],
+  "linkCheckedAt": "2026-11-09T15:29:18.071Z"
 }
