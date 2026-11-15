@@ -1,19 +1,7 @@
 {
-  "generatedAt": "2026-11-10T17:57:25.312Z",
-  "count": 115,
+  "generatedAt": "2026-11-15T17:05:55.098Z",
+  "count": 127,
   "events": [
-    {
-      "id": "live_1794332535530_cgm77",
-      "player": "Rod Wave",
-      "title": "Tickets 2026 2027 Concert Tour Dates",
-      "sport": "other",
-      "date": "2026-11-14",
-      "link": "https://concerts.livenation.com/rod-wave-tickets/artist/2663489?efeat_seg=0&list_view=1",
-      "notes": "Fridayy VIP Meet & Greet Upgrade (Event Ticket Sold Separately). Lineup. Rod Wave · FRIDAYY. Venue. Kia Center. November 14, 2026. Nov14. Saturday 08:30 PMSat8: ...",
-      "source": "https://concerts.livenation.com › Concerts › Hip-Hop/Rap",
-      "addedAt": "2026-11-10",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Beautiful_Mind_Tour_Pittsburgh%2C_PA_4.jpg/330px-Beautiful_Mind_Tour_Pittsburgh%2C_PA_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-    },
     {
       "id": "tse_autograph-ticket-get-any-item-of-yours-signed-in-person-by-tj-sanders",
       "player": "TJ Sanders",
@@ -54,21 +42,7 @@
       "addedAt": "2026-10-30"
     },
     {
-      "id": "eb_1794333191484_u71li",
-      "player": "Tom Kenny",
-      "title": "Signing at Toy Tokyo NYC Nov 10",
-      "sport": "celeb",
-      "date": "2026-11-10",
-      "venue": "Toy Tokyo",
-      "city": "New York",
-      "link": "https://www.eventbrite.com/e/tom-kenny-signing-at-toy-tokyo-nyc-nov-10-tickets-2004108646912",
-      "notes": "Tom Kenny  Signing at Toy Tokyo NYC Nov 10",
-      "source": "eventbrite.com",
-      "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_Kenny_by_Gage_Skidmore_2.jpg/330px-Tom_Kenny_by_Gage_Skidmore_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-    },
-    {
-      "id": "eb_1794333192076_001tl",
+      "id": "eb_1794762189320_v4awd",
       "player": "Tom Kenny",
       "title": "Collector's Outlet Signing Nov 29th",
       "sport": "celeb",
@@ -82,60 +56,47 @@
       "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_Kenny_by_Gage_Skidmore_2.jpg/330px-Tom_Kenny_by_Gage_Skidmore_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
-      "id": "eb_1794333192616_44dk8",
-      "player": "Trevor Connelly",
-      "title": "& Marc Gatcomb Autograph Signing in Las Vegas!",
-      "sport": "other",
-      "date": "2026-11-10",
-      "venue": "Inscriptagraphs Memorabilia - Retail Store",
-      "city": "Las Vegas",
-      "link": "https://www.eventbrite.com/e/trevor-connelly-marc-gatcomb-autograph-signing-in-las-vegas-tickets-2003939761772",
-      "notes": "Trevor Connelly & Marc Gatcomb Autograph Signing in Las Vegas!",
+      "id": "eb_1794762189321_a2vc9",
+      "player": "Tom Kenny",
+      "title": "Session 2 Collector's Outlet Signing Nov 29th",
+      "sport": "celeb",
+      "date": "2026-11-29",
+      "venue": "COLLECTORS OUTLET",
+      "city": "Downey",
+      "link": "https://www.eventbrite.com/e/session-2-collectors-outlet-tom-kenny-signing-nov-29th-tickets-2004524308166",
+      "notes": "Session 2  Collector's Outlet  Tom Kenny  Signing Nov 29th",
       "source": "eventbrite.com",
-      "addedAt": "2026-11-10"
+      "addedAt": "2026-11-15",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tom_Kenny_by_Gage_Skidmore_2.jpg/330px-Tom_Kenny_by_Gage_Skidmore_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
-      "id": "eb_1794333193078_3dn2e",
-      "player": "Jeff Garlin",
-      "title": "Best Seat in the House Book Signing 11/15/26",
+      "id": "eb_1794762189510_tk9tx",
+      "player": "TCC Event Center Sports Card Show and",
+      "title": "Autograph Signings",
+      "sport": "other",
+      "date": "2026-12-05",
+      "venue": "TownMall of Westminster- TCC Event Center (Dick's Sporting Goods wing)",
+      "city": "Westminster",
+      "link": "https://www.eventbrite.com/e/tcc-event-center-sports-card-show-and-autograph-signings-tickets-2003639969084",
+      "notes": "TCC Event Center Sports Card Show and Autograph Signings",
+      "source": "eventbrite.com",
+      "addedAt": "2026-10-25"
+    },
+    {
+      "id": "eb_1794762190828_4s769",
+      "player": "Jodi Marie",
+      "title": "Book Signing with",
       "sport": "book",
       "date": "2026-11-15",
-      "venue": "Leica Gallery Los Angeles",
-      "city": "West Hollywood",
-      "link": "https://www.eventbrite.com/e/jeff-garlin-best-seat-in-the-house-book-signing-111526-tickets-2002838460751",
-      "notes": "Jeff Garlin -Best Seat in the House -Book Signing 11/15/26",
+      "venue": "Story & Song Bookstore Bistro / Center for Arts & Culture",
+      "city": "Fernandina Beach",
+      "link": "https://www.eventbrite.com/e/book-signing-with-jodi-marie-tickets-2002397229015",
+      "notes": "Book Signing with Jodi Marie",
       "source": "eventbrite.com",
-      "addedAt": "2026-11-10",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Jeff_Garlin_2024_Curb_Your_Enthusiasm_premiere_%28cropped%29.png/330px-Jeff_Garlin_2024_Curb_Your_Enthusiasm_premiere_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-09-30"
     },
     {
-      "id": "eb_1794333208562_uvx23",
-      "player": "Big Event EXS",
-      "title": "Meet & Greet Opportunity",
-      "sport": "other",
-      "date": "2026-11-14",
-      "venue": "Suffolk Credit Union Arena",
-      "city": "Brentwood",
-      "link": "https://www.eventbrite.com/e/big-event-exs-meet-greet-opportunity-tickets-1992592870916",
-      "notes": "Big Event EXS Meet & Greet Opportunity",
-      "source": "eventbrite.com",
-      "addedAt": "2026-06-30"
-    },
-    {
-      "id": "eb_1794333208827_7ujns",
-      "player": "Kuzco Da Foo",
-      "title": "Meet & Greet Putting the Game on the Table",
-      "sport": "other",
-      "date": "2026-11-20",
-      "venue": "Gas Lab Recording Studio/Event Space",
-      "city": "Columbia",
-      "link": "https://www.eventbrite.com/e/kuzco-da-foo-meet-greet-putting-the-game-on-the-table-tickets-2002780554552",
-      "notes": "Kuzco Da Foo Meet & Greet | Putting the Game on the Table",
-      "source": "eventbrite.com",
-      "addedAt": "2026-11-05"
-    },
-    {
-      "id": "eb_1794333209093_nv6b4",
+      "id": "eb_1794762200526_7f3ye",
       "player": "UGLY SWEATER",
       "title": "MEET & GREET",
       "sport": "other",
@@ -148,20 +109,72 @@
       "addedAt": "2026-11-10"
     },
     {
-      "id": "eb_1794333224476_ox71o",
-      "player": "Icesis Couture",
-      "title": "Meet & Greet with The Couture Collection at Hardwicks",
+      "id": "eb_1794762200545_rc7cs",
+      "player": "Kuzco Da Foo",
+      "title": "Meet & Greet Putting the Game on the Table",
       "sport": "other",
       "date": "2026-11-20",
-      "venue": "Hardwicks",
-      "city": "Jacksonville",
-      "link": "https://www.eventbrite.com/e/meet-greet-with-icesis-couture-the-couture-collection-at-hardwicks-tickets-2004250103011",
-      "notes": "Meet & Greet with Icesis Couture | The Couture Collection at Hardwicks",
+      "venue": "Gas Lab Recording Studio/Event Space",
+      "city": "Columbia",
+      "link": "https://www.eventbrite.com/e/kuzco-da-foo-meet-greet-putting-the-game-on-the-table-tickets-2002780554552",
+      "notes": "Kuzco Da Foo Meet & Greet | Putting the Game on the Table",
       "source": "eventbrite.com",
-      "addedAt": "2026-11-10"
+      "addedAt": "2026-11-05"
     },
     {
-      "id": "eb_1794333234718_30502",
+      "id": "eb_1794762200566_k2zha",
+      "player": "Mama Ruby",
+      "title": "Meet & Greet",
+      "sport": "other",
+      "date": "2026-12-27",
+      "venue": "515 Avenue of the States",
+      "city": "Chester",
+      "link": "https://www.eventbrite.com/e/mama-ruby-meet-greet-tickets-2004415691290",
+      "notes": "Mama Ruby Meet & Greet",
+      "source": "eventbrite.com",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "eb_1794762200606_ybuwf",
+      "player": "Odin VIP",
+      "title": "Meet&Greet",
+      "sport": "other",
+      "date": "2027-01-30",
+      "venue": "Whisky a Go Go",
+      "city": "West Hollywood",
+      "link": "https://www.eventbrite.com/e/odin-vip-meetgreet-tickets-2003042209168",
+      "notes": "Odin VIP Meet&Greet",
+      "source": "eventbrite.com",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "eb_1794762205896_bwat3",
+      "player": "IRONMAN Champion",
+      "title": "Meet & Greet",
+      "sport": "other",
+      "date": "2026-12-03",
+      "venue": "Trek Bicycle Madison West",
+      "city": "Madison",
+      "link": "https://www.eventbrite.com/e/ironman-champion-meet-greet-tickets-2004453999872",
+      "notes": "IRONMAN Champion Meet & Greet",
+      "source": "eventbrite.com",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "eb_1794762206031_rcsr6",
+      "player": "Badminton Legend Pullela Gopichand",
+      "title": "Meet & Greet with !",
+      "sport": "other",
+      "date": "2026-11-15",
+      "venue": "TopShot",
+      "city": "Cedar Park",
+      "link": "https://www.eventbrite.com/e/meet-greet-with-badminton-legend-pullela-gopichand-tickets-2004686887445",
+      "notes": "Meet & Greet with Badminton Legend Pullela Gopichand!",
+      "source": "eventbrite.com",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "eb_1794762214444_901zn",
       "player": "Talk and",
       "title": "Book Signing with Danielle Fishel Rider Strong and Will Friedle",
       "sport": "book",
@@ -174,56 +187,17 @@
       "addedAt": "2026-09-25"
     },
     {
-      "id": "eb_1794333234784_98um4",
-      "player": "Talk and",
-      "title": "Book Signing with Bestselling Author Grant Snider",
+      "id": "eb_1794762214566_n1j6d",
+      "player": "Legendary Melba Moore",
+      "title": "Book Signing &Live Performances The Tribute To The L",
       "sport": "book",
-      "date": "2026-11-10",
-      "venue": "Half Price Books",
-      "city": "Dallas",
-      "link": "https://www.eventbrite.com/e/talk-and-book-signing-with-bestselling-author-grant-snider-tickets-2002093313997",
-      "notes": "Talk and Book Signing with Bestselling Author Grant Snider",
+      "date": "2026-11-20",
+      "venue": "West Indian Social Club of Hartford, Inc",
+      "city": "Hartford",
+      "link": "https://www.eventbrite.com/e/legendary-melba-moore-book-signing-live-performances-the-tribute-to-the-l-tickets-2003945596223",
+      "notes": "Legendary Melba Moore Book Signing &Live Performances The Tribute To The L",
       "source": "eventbrite.com",
-      "addedAt": "2026-11-05"
-    },
-    {
-      "id": "eb_1794333235117_k2tpy",
-      "player": "Gayle Brown at Novel in the Neighborhood",
-      "title": "Author Talk + Book Signing with",
-      "sport": "book",
-      "date": "2026-11-10",
-      "venue": "8507 Old County Rd 54",
-      "city": "New Port Richey",
-      "link": "https://www.eventbrite.com/e/author-talk-book-signing-with-gayle-brown-at-novel-in-the-neighborhood-tickets-2002605138879",
-      "notes": "Author Talk + Book Signing with Gayle Brown at Novel in the Neighborhood",
-      "source": "eventbrite.com",
-      "addedAt": "2026-11-10"
-    },
-    {
-      "id": "eb_1794333235183_oxvac",
-      "player": "Surviving Myself",
-      "title": "Book Signing",
-      "sport": "book",
-      "date": "2026-11-13",
-      "venue": "Almond and Oat",
-      "city": "Las Vegas",
-      "link": "https://www.eventbrite.com/e/surviving-myself-book-signing-tickets-1998467391766",
-      "notes": "Surviving Myself Book Signing",
-      "source": "eventbrite.com",
-      "addedAt": "2026-11-10"
-    },
-    {
-      "id": "eb_1794333235249_1icq3",
-      "player": "Judd Winick",
-      "title": "Reading and Book Signing with",
-      "sport": "book",
-      "date": "2026-12-05",
-      "venue": "The International Library of Youth Writing",
-      "city": "San Francisco",
-      "link": "https://www.eventbrite.com/e/reading-and-book-signing-with-judd-winick-tickets-2004042296456",
-      "notes": "Reading and Book Signing with Judd Winick",
-      "source": "eventbrite.com",
-      "addedAt": "2026-11-10"
+      "addedAt": "2026-11-15"
     },
     {
       "id": "epic_wwe-survivor-series_alexa-bliss",
@@ -291,7 +265,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/booker-t",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Breakker_vs_Rollins_%28cropped-2%29.jpg/330px-Breakker_vs_Rollins_%28cropped-2%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_wwe-survivor-series_bron-breakker",
@@ -318,7 +293,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/charlotte-flair",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Chelsea_Green_Las_Vegas_2025_%28cropped%29.jpg/330px-Chelsea_Green_Las_Vegas_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_wwe-survivor-series_chelsea-green",
@@ -331,7 +307,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/chelsea-green",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Damien_Priest_Las_Vegas_Fall_20925.jpg/330px-Damien_Priest_Las_Vegas_Fall_20925.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_wwe-survivor-series_damian-priest",
@@ -448,7 +425,8 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/jacy-jayne",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05"
+      "addedAt": "2026-11-05",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/4/47/All_Elite_Wrestling_TBS_Champion_-_Jade_Cargill_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
     },
     {
       "id": "epic_wwe-survivor-series_jade-cargill",
@@ -504,7 +482,7 @@
     },
     {
       "id": "epic_wwe-survivor-series_kendal-grey",
-      "player": "Liv Morgan",
+      "player": "Kevin Owens",
       "title": "WWE Survivor Series 2026",
       "sport": "wrestling",
       "date": "2026-11-27",
@@ -514,6 +492,20 @@
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-05"
+    },
+    {
+      "id": "epic_wwe-survivor-series_kevin-owens",
+      "player": "Liv Morgan",
+      "title": "WWE Survivor Series 2026",
+      "sport": "wrestling",
+      "date": "2026-11-27",
+      "venue": "George R. Brown Convention Center",
+      "city": "Houston, TX",
+      "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/kevin-owens",
+      "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Big_E%2C_Liv_Morgan_%26_Tyler_Breeze_%281%29_%28cropped_2%29.jpg/330px-Big_E%2C_Liv_Morgan_%26_Tyler_Breeze_%281%29_%28cropped_2%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_wwe-survivor-series_liv-morgan",
@@ -530,7 +522,7 @@
     },
     {
       "id": "epic_wwe-survivor-series_lola-vice",
-      "player": "Mini Vikingo",
+      "player": "Matt Cardona",
       "title": "WWE Survivor Series 2026",
       "sport": "wrestling",
       "date": "2026-11-27",
@@ -540,6 +532,32 @@
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-10"
+    },
+    {
+      "id": "epic_wwe-survivor-series_matt-cardona",
+      "player": "Maxxine Dupri",
+      "title": "WWE Survivor Series 2026",
+      "sport": "wrestling",
+      "date": "2026-11-27",
+      "venue": "George R. Brown Convention Center",
+      "city": "Houston, TX",
+      "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/matt-cardona",
+      "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "epic_wwe-survivor-series_maxxine-dupri",
+      "player": "Mini Vikingo",
+      "title": "WWE Survivor Series 2026",
+      "sport": "wrestling",
+      "date": "2026-11-27",
+      "venue": "George R. Brown Convention Center",
+      "city": "Houston, TX",
+      "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/maxxine-dupri",
+      "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
     },
     {
       "id": "epic_wwe-survivor-series_mini-vikingo",
@@ -643,8 +661,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/psycho-clown",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/R-Truth_2024_%28cropped%29.jpg/330px-R-Truth_2024_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-11-05"
     },
     {
       "id": "epic_wwe-survivor-series_r-truth",
@@ -670,8 +687,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/raquel-rodriguez",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-10",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Rey_Fenix_%28cropped%29.jpg/330px-Rey_Fenix_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-11-10"
     },
     {
       "id": "epic_wwe-survivor-series_rey-fenix",
@@ -684,8 +700,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/rey-fenix",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Roxanne_Perez_RR25.jpg/330px-Roxanne_Perez_RR25.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-11-05"
     },
     {
       "id": "epic_wwe-survivor-series_roxanne-perez",
@@ -712,8 +727,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/sami-zayn",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-10",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Seth_Rollins_July_2019.jpg/330px-Seth_Rollins_July_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-11-10"
     },
     {
       "id": "epic_wwe-survivor-series_seth-rollins",
@@ -739,8 +753,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/seth-rollins-becky-lynch",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-05",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Sol_Ruca_as_women%27s_IC_Champion_%28cropped%29.jpg/330px-Sol_Ruca_as_women%27s_IC_Champion_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-11-05"
     },
     {
       "id": "epic_wwe-survivor-series_sol-ruca",
@@ -753,8 +766,7 @@
       "link": "https://store.epic.leapevent.tech/wwe-survivor-series/2026/sol-ruca",
       "notes": "WWE Survivor Series 2026 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-11-10",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Stephanie_Vaquer%2C_April_2024_2.jpg/330px-Stephanie_Vaquer%2C_April_2024_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      "addedAt": "2026-11-10"
     },
     {
       "id": "epic_wwe-survivor-series_stephanie-vaquer",
@@ -862,7 +874,7 @@
     },
     {
       "id": "epic_fan-expo-new-orleans_teamup-hocus-pocus-max-allison",
-      "player": "TeamUp - Supernatural",
+      "player": "TeamUp - Once Upon a Time",
       "title": "FAN EXPO New Orleans 2027",
       "sport": "celeb",
       "date": "2027-01-08",
@@ -872,6 +884,19 @@
       "notes": "FAN EXPO New Orleans 2027 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-10-10"
+    },
+    {
+      "id": "epic_fan-expo-new-orleans_teamup-once-upon-a-time",
+      "player": "TeamUp - Supernatural",
+      "title": "FAN EXPO New Orleans 2027",
+      "sport": "celeb",
+      "date": "2027-01-08",
+      "venue": "New Orleans Ernest N. Morial Convention Center",
+      "city": "New Orleans, LA",
+      "link": "https://store.epic.leapevent.tech/fan-expo-new-orleans/2027/teamup-once-upon-a-time",
+      "notes": "FAN EXPO New Orleans 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
     },
     {
       "id": "epic_fan-expo-new-orleans_teamup-supernatural",
@@ -1040,7 +1065,8 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-new-orleans/2027/jason-marsden",
       "notes": "FAN EXPO New Orleans 2027 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-10-10"
+      "addedAt": "2026-10-10",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Stuttgart_2024_-_ComicCon_-_Jennifer_English_-_by-RaBoe_005.jpg/330px-Stuttgart_2024_-_ComicCon_-_Jennifer_English_-_by-RaBoe_005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
     },
     {
       "id": "epic_fan-expo-new-orleans_jennifer-english",
@@ -1057,7 +1083,7 @@
     },
     {
       "id": "epic_fan-expo-new-orleans_jim-beaver",
-      "player": "Mark Pellegrino",
+      "player": "Lana Parrilla",
       "title": "FAN EXPO New Orleans 2027",
       "sport": "celeb",
       "date": "2027-01-08",
@@ -1067,6 +1093,19 @@
       "notes": "FAN EXPO New Orleans 2027 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-09-30"
+    },
+    {
+      "id": "epic_fan-expo-new-orleans_lana-parrilla",
+      "player": "Mark Pellegrino",
+      "title": "FAN EXPO New Orleans 2027",
+      "sport": "celeb",
+      "date": "2027-01-08",
+      "venue": "New Orleans Ernest N. Morial Convention Center",
+      "city": "New Orleans, LA",
+      "link": "https://store.epic.leapevent.tech/fan-expo-new-orleans/2027/lana-parrilla",
+      "notes": "FAN EXPO New Orleans 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
     },
     {
       "id": "epic_fan-expo-new-orleans_mark-pellegrino",
@@ -1199,8 +1238,21 @@
       "addedAt": "2026-10-25"
     },
     {
+      "id": "epic_fan-expo-portland_brandon-rogers",
+      "player": "Brandon Rogers",
+      "title": "FAN EXPO Portland 2027",
+      "sport": "celeb",
+      "date": "2027-01-29",
+      "venue": "Oregon Convention Center",
+      "city": "Portland, OR",
+      "link": "https://store.epic.leapevent.tech/fan-expo-portland/2027/brandon-rogers",
+      "notes": "FAN EXPO Portland 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
+    },
+    {
       "id": "epic_fan-expo-portland_colin-odonoghue",
-      "player": "Colin O'Donoghue",
+      "player": "David W. Collins",
       "title": "FAN EXPO Portland 2027",
       "sport": "celeb",
       "date": "2027-01-29",
@@ -1226,7 +1278,7 @@
     },
     {
       "id": "epic_fan-expo-portland_dolph-lundgren",
-      "player": "Jason Marsden",
+      "player": "Harvey Guillen",
       "title": "FAN EXPO Portland 2027",
       "sport": "celeb",
       "date": "2027-01-29",
@@ -1236,6 +1288,19 @@
       "notes": "FAN EXPO Portland 2027 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
       "addedAt": "2026-11-05"
+    },
+    {
+      "id": "epic_fan-expo-portland_harvey-guillen",
+      "player": "Jason Marsden",
+      "title": "FAN EXPO Portland 2027",
+      "sport": "celeb",
+      "date": "2027-01-29",
+      "venue": "Oregon Convention Center",
+      "city": "Portland, OR",
+      "link": "https://store.epic.leapevent.tech/fan-expo-portland/2027/harvey-guillen",
+      "notes": "FAN EXPO Portland 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
     },
     {
       "id": "epic_fan-expo-portland_jason-marsden",
@@ -1304,7 +1369,7 @@
     },
     {
       "id": "epic_fan-expo-portland_vinessa-shaw",
-      "player": "TeamUp - Hocus Pocus",
+      "player": "Vivienne Medrano",
       "title": "FAN EXPO Portland 2027",
       "sport": "celeb",
       "date": "2027-01-29",
@@ -1316,8 +1381,34 @@
       "addedAt": "2026-10-15"
     },
     {
+      "id": "epic_fan-expo-portland_vivienne-medrano",
+      "player": "TeamUp - Helluva Boss Cast",
+      "title": "FAN EXPO Portland 2027",
+      "sport": "celeb",
+      "date": "2027-01-29",
+      "venue": "Oregon Convention Center",
+      "city": "Portland, OR",
+      "link": "https://store.epic.leapevent.tech/fan-expo-portland/2027/vivienne-medrano",
+      "notes": "FAN EXPO Portland 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "epic_fan-expo-portland_teamup-helluva-boss-cast",
+      "player": "TeamUp - Hocus Pocus",
+      "title": "FAN EXPO Portland 2027",
+      "sport": "celeb",
+      "date": "2027-01-29",
+      "venue": "Oregon Convention Center",
+      "city": "Portland, OR",
+      "link": "https://store.epic.leapevent.tech/fan-expo-portland/2027/teamup-helluva-boss-cast",
+      "notes": "FAN EXPO Portland 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
+    },
+    {
       "id": "epic_fan-expo-portland_teamup-hocus-pocus",
-      "player": "TeamUp - Star Wars: Maul - Shadow Lord",
+      "player": "TeamUp - I.M.P",
       "title": "FAN EXPO Portland 2027",
       "sport": "celeb",
       "date": "2027-01-29",
@@ -1329,8 +1420,73 @@
       "addedAt": "2026-11-05"
     },
     {
-      "id": "epic_fan-expo-vancouver_dolph-lundgren",
+      "id": "epic_fan-expo-portland_teamup-imp",
+      "player": "TeamUp - Moxxie &amp; Millie",
+      "title": "FAN EXPO Portland 2027",
+      "sport": "celeb",
+      "date": "2027-01-29",
+      "venue": "Oregon Convention Center",
+      "city": "Portland, OR",
+      "link": "https://store.epic.leapevent.tech/fan-expo-portland/2027/teamup-imp",
+      "notes": "FAN EXPO Portland 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "epic_fan-expo-portland_teamup-moxxie-millie",
+      "player": "TeamUp - Star Wars: Maul - Shadow Lord",
+      "title": "FAN EXPO Portland 2027",
+      "sport": "celeb",
+      "date": "2027-01-29",
+      "venue": "Oregon Convention Center",
+      "city": "Portland, OR",
+      "link": "https://store.epic.leapevent.tech/fan-expo-portland/2027/teamup-moxxie-millie",
+      "notes": "FAN EXPO Portland 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "epic_fan-expo-portland_teamup-star-wars-maul-shadow-lord",
+      "player": "TeamUp - Stolas &amp; Blitzø",
+      "title": "FAN EXPO Portland 2027",
+      "sport": "celeb",
+      "date": "2027-01-29",
+      "venue": "Oregon Convention Center",
+      "city": "Portland, OR",
+      "link": "https://store.epic.leapevent.tech/fan-expo-portland/2027/teamup-star-wars-maul-shadow-lord",
+      "notes": "FAN EXPO Portland 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "epic_fan-expo-vancouver_ben-starr",
+      "player": "Ben Starr",
+      "title": "FAN EXPO Vancouver 2027",
+      "sport": "celeb",
+      "date": "2027-02-13",
+      "venue": "Vancouver Convention Centre",
+      "city": "Vancouver, BC",
+      "link": "https://store.epic.leapevent.tech/fan-expo-vancouver/2027/ben-starr",
+      "notes": "FAN EXPO Vancouver 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "epic_fan-expo-vancouver_colin-odonoghue",
       "player": "Dolph Lundgren",
+      "title": "FAN EXPO Vancouver 2027",
+      "sport": "celeb",
+      "date": "2027-02-13",
+      "venue": "Vancouver Convention Centre",
+      "city": "Vancouver, BC",
+      "link": "https://store.epic.leapevent.tech/fan-expo-vancouver/2027/colin-odonoghue",
+      "notes": "FAN EXPO Vancouver 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "epic_fan-expo-vancouver_dolph-lundgren",
+      "player": "Famke Janssen",
       "title": "FAN EXPO Vancouver 2027",
       "sport": "celeb",
       "date": "2027-02-13",
@@ -1343,7 +1499,7 @@
     },
     {
       "id": "epic_fan-expo-vancouver_famke-janssen",
-      "player": "Joe Quesada",
+      "player": "Jennifer English",
       "title": "FAN EXPO Vancouver 2027",
       "sport": "celeb",
       "date": "2027-02-13",
@@ -1352,7 +1508,21 @@
       "link": "https://store.epic.leapevent.tech/fan-expo-vancouver/2027/famke-janssen",
       "notes": "FAN EXPO Vancouver 2027 — meet & greet / autograph signing",
       "source": "store.epic.leapevent.tech",
-      "addedAt": "2026-10-15"
+      "addedAt": "2026-10-15",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Stuttgart_2024_-_ComicCon_-_Jennifer_English_-_by-RaBoe_005.jpg/330px-Stuttgart_2024_-_ComicCon_-_Jennifer_English_-_by-RaBoe_005.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    },
+    {
+      "id": "epic_fan-expo-vancouver_jennifer-english",
+      "player": "Joe Quesada",
+      "title": "FAN EXPO Vancouver 2027",
+      "sport": "celeb",
+      "date": "2027-02-13",
+      "venue": "Vancouver Convention Centre",
+      "city": "Vancouver, BC",
+      "link": "https://store.epic.leapevent.tech/fan-expo-vancouver/2027/jennifer-english",
+      "notes": "FAN EXPO Vancouver 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
     },
     {
       "id": "epic_fan-expo-vancouver_joe-quesada",
@@ -1368,6 +1538,59 @@
       "addedAt": "2026-11-05"
     },
     {
+      "id": "epic_fan-expo-vancouver_colin-odonoghue-vip-meet-and-greet",
+      "player": "TeamUp - Clair Obscur: Expedition 33 Duo",
+      "title": "FAN EXPO Vancouver 2027",
+      "sport": "celeb",
+      "date": "2027-02-13",
+      "venue": "Vancouver Convention Centre",
+      "city": "Vancouver, BC",
+      "link": "https://store.epic.leapevent.tech/fan-expo-vancouver/2027/colin-odonoghue-vip-meet-and-greet",
+      "notes": "FAN EXPO Vancouver 2027 — meet & greet / autograph signing",
+      "source": "store.epic.leapevent.tech",
+      "addedAt": "2026-11-15"
+    },
+    {
+      "id": "eb_1794333193078_3dn2e",
+      "player": "Jeff Garlin",
+      "title": "Best Seat in the House Book Signing 11/15/26",
+      "sport": "book",
+      "date": "2026-11-15",
+      "venue": "Leica Gallery Los Angeles",
+      "city": "West Hollywood",
+      "link": "https://www.eventbrite.com/e/jeff-garlin-best-seat-in-the-house-book-signing-111526-tickets-2002838460751",
+      "notes": "Jeff Garlin -Best Seat in the House -Book Signing 11/15/26",
+      "source": "eventbrite.com",
+      "addedAt": "2026-11-10",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Jeff_Garlin_2024_Curb_Your_Enthusiasm_premiere_%28cropped%29.png/330px-Jeff_Garlin_2024_Curb_Your_Enthusiasm_premiere_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    },
+    {
+      "id": "eb_1794333224476_ox71o",
+      "player": "Icesis Couture",
+      "title": "Meet & Greet with The Couture Collection at Hardwicks",
+      "sport": "other",
+      "date": "2026-11-20",
+      "venue": "Hardwicks",
+      "city": "Jacksonville",
+      "link": "https://www.eventbrite.com/e/meet-greet-with-icesis-couture-the-couture-collection-at-hardwicks-tickets-2004250103011",
+      "notes": "Meet & Greet with Icesis Couture | The Couture Collection at Hardwicks",
+      "source": "eventbrite.com",
+      "addedAt": "2026-11-10"
+    },
+    {
+      "id": "eb_1794333235249_1icq3",
+      "player": "Judd Winick",
+      "title": "Reading and Book Signing with",
+      "sport": "book",
+      "date": "2026-12-05",
+      "venue": "The International Library of Youth Writing",
+      "city": "San Francisco",
+      "link": "https://www.eventbrite.com/e/reading-and-book-signing-with-judd-winick-tickets-2004042296456",
+      "notes": "Reading and Book Signing with Judd Winick",
+      "source": "eventbrite.com",
+      "addedAt": "2026-11-10"
+    },
+    {
       "id": "live_1793901394622_5blhn",
       "player": "Limited Edition",
       "title": "Top Meet & Greet Events 2026",
@@ -1377,45 +1600,6 @@
       "notes": "New York Knicks Autographed Fanatics Authentic 2026 NBA. Limited Edition of 500 Reserve Now. Ships on or before Monday, November 30, 2026. https://store.nba.com",
       "source": "https://meetandgreet.events",
       "addedAt": "2026-10-25"
-    },
-    {
-      "id": "eb_1793902525232_y4jm0",
-      "player": "TCC Event Center Sports Card Show and",
-      "title": "Autograph Signings",
-      "sport": "other",
-      "date": "2026-12-05",
-      "venue": "TownMall of Westminster- TCC Event Center (Dick's Sporting Goods wing)",
-      "city": "Westminster",
-      "link": "https://www.eventbrite.com/e/tcc-event-center-sports-card-show-and-autograph-signings-tickets-2003639969084",
-      "notes": "TCC Event Center Sports Card Show and Autograph Signings",
-      "source": "eventbrite.com",
-      "addedAt": "2026-10-25"
-    },
-    {
-      "id": "eb_1793902526555_7bbf2",
-      "player": "Shokocon Presents First Form",
-      "title": "Signing Event with Jason Douglas",
-      "sport": "other",
-      "date": "2026-11-14",
-      "venue": "Franklin Park Mall",
-      "city": "Toledo",
-      "link": "https://www.eventbrite.com/e/shokocon-presents-first-form-signing-event-with-jason-douglas-tickets-2003267453881",
-      "notes": "Shokocon Presents First Form Signing Event with Jason Douglas",
-      "source": "eventbrite.com",
-      "addedAt": "2026-10-20"
-    },
-    {
-      "id": "eb_1793902546804_i76l5",
-      "player": "Jodi Marie",
-      "title": "Book Signing with",
-      "sport": "book",
-      "date": "2026-11-15",
-      "venue": "Story & Song Bookstore Bistro / Center for Arts & Culture",
-      "city": "Fernandina Beach",
-      "link": "https://www.eventbrite.com/e/book-signing-with-jodi-marie-tickets-2002397229015",
-      "notes": "Book Signing with Jodi Marie",
-      "source": "eventbrite.com",
-      "addedAt": "2026-09-30"
     },
     {
       "id": "live_1793378254774_rxu2z",
@@ -1479,30 +1663,6 @@
       "addedAt": "2026-06-05",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Ric_Flair_Photo_Op_GalaxyCon_Richmond_2025.jpg/330px-Ric_Flair_Photo_Op_GalaxyCon_Richmond_2025.jpg",
       "linkBroken": true
-    },
-    {
-      "id": "live_1778411272485_dm5a5",
-      "player": "Harry Redknapp Thursday",
-      "title": "An Audience With 10th ... Instagram",
-      "sport": "soccer",
-      "date": "2026-11-10",
-      "link": "https://www.instagram.com/p/DYGh-vRDDKf/",
-      "notes": "Meet and greet available 10 November 2026 #premierleague #ImACeleb #Derby. more. View 1 comment · April 17. OCR. 12 Vaillant LIVE Derby HARRY ...",
-      "source": "Web search",
-      "addedAt": "2026-05-10",
-      "img": "https://static01.nyt.com/athletic/uploads/wp/2019/12/05130830/GettyImages-969741776.jpg?width=1200&height=900&fit=cover"
-    },
-    {
-      "id": "live_1778411272485_i66y6",
-      "player": "Harry Redknapp Thursday",
-      "title": "An Audience With 10th September 2026 ...",
-      "sport": "soccer",
-      "date": "2026-11-10",
-      "link": "https://www.instagram.com/p/DXms6kXis0e/",
-      "notes": "Manager Pete Wild has paid tribute to the legendary former player and ... Meet and greet available 10 November 2026 #premierleague ...",
-      "source": "Web search",
-      "addedAt": "2026-04-30",
-      "img": "https://static01.nyt.com/athletic/uploads/wp/2019/12/05130830/GettyImages-969741776.jpg?width=1200&height=900&fit=cover"
     }
   ]
 }
